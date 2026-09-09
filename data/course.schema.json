@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Blackspirits/open-learning-index/blob/main/data/course.schema.json",
+  "title": "Open Learning Index course dataset",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "title",
+      "provider",
+      "category",
+      "level",
+      "primary_language",
+      "other_languages",
+      "url",
+      "free_access",
+      "certificate",
+      "academic_credits",
+      "self_paced",
+      "status",
+      "quality_components",
+      "recommendation_score",
+      "why_recommended",
+      "evidence",
+      "last_verified",
+      "review_status",
+      "quality_score",
+      "review_interval_days",
+      "next_review"
+    ],
+    "properties": {
+      "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+      "title": {"type": "string", "minLength": 1},
+      "provider": {"type": "string", "minLength": 1},
+      "category": {"type": "string", "minLength": 1},
+      "level": {"type": "string", "minLength": 1},
+      "primary_language": {"type": "string", "minLength": 2},
+      "other_languages": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+      "url": {"type": "string", "format": "uri"},
+      "free_access": {"enum": ["F0_FULL_CREDENTIAL", "F1_FULL_ASSESSMENTS", "F2_CONTENT_ONLY", "F3_PARTIAL_PREVIEW"]},
+      "certificate": {"type": "string"},
+      "academic_credits": {"type": "string"},
+      "self_paced": {"type": "boolean"},
+      "status": {"enum": ["active", "active_archive", "retired", "unavailable"]},
+      "quality_components": {
+        "type": "object",
+        "required": ["pedagogy", "depth", "practice", "materials", "currency", "expertise", "accessibility"],
+        "additionalProperties": false,
+        "properties": {
+          "pedagogy": {"type": "number", "minimum": 0, "maximum": 10},
+          "depth": {"type": "number", "minimum": 0, "maximum": 10},
+          "practice": {"type": "number", "minimum": 0, "maximum": 10},
+          "materials": {"type": "number", "minimum": 0, "maximum": 10},
+          "currency": {"type": "number", "minimum": 0, "maximum": 10},
+          "expertise": {"type": "number", "minimum": 0, "maximum": 10},
+          "accessibility": {"type": "number", "minimum": 0, "maximum": 10}
+        }
+      },
+      "recommendation_score": {"type": "number", "minimum": 0, "maximum": 10},
+      "why_recommended": {"type": "string", "minLength": 20},
+      "evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "format": "uri"}, "uniqueItems": true},
+      "last_verified": {"type": "string", "format": "date"},
+      "review_status": {"type": "string"},
+      "quality_score": {"type": "number", "minimum": 0, "maximum": 10},
+      "review_interval_days": {"type": "integer", "minimum": 30, "maximum": 730},
+      "next_review": {"type": "string", "format": "date"}
+    },
+    "additionalProperties": true
+  }
+}
