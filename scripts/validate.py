@@ -6,7 +6,8 @@ from datetime import date
 ROOT=Path(__file__).resolve().parents[1]
 COURSES=ROOT/'data/courses.json'
 COURSE_SCHEMA=ROOT/'data/course.schema.json'
-CANDIDATES=ROOT/'data/candidates.json'
+LEGACY_CANDIDATES=ROOT/'data/candidates.json'
+CANDIDATE_DIR=ROOT/'data/candidates'
 CANDIDATE_SCHEMA=ROOT/'data/candidate.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
 
@@ -32,14 +33,26 @@ def validate_schema(data, schema_path, label):
         print('NOTE: jsonschema not installed; running invariant checks only.')
         return 0
 
+def load_candidate_sources():
+    paths=[]
+    if LEGACY_CANDIDATES.exists():
+        paths.append(LEGACY_CANDIDATES)
+    if CANDIDATE_DIR.exists():
+        paths.extend(sorted(CANDIDATE_DIR.glob('*.json')))
+    return paths
+
 def main():
     errors=0
     courses=json.loads(COURSES.read_text(encoding='utf-8'))
-    candidates=json.loads(CANDIDATES.read_text(encoding='utf-8')) if CANDIDATES.exists() else []
-
     errors += validate_schema(courses, COURSE_SCHEMA, 'courses')
-    if candidates:
-        errors += validate_schema(candidates, CANDIDATE_SCHEMA, 'candidates')
+
+    candidate_sources=load_candidate_sources()
+    candidates=[]
+    for source in candidate_sources:
+        batch=json.loads(source.read_text(encoding='utf-8'))
+        label=f'candidates:{source.relative_to(ROOT)}'
+        errors += validate_schema(batch, CANDIDATE_SCHEMA, label)
+        candidates.extend(batch)
 
     ids=set(); urls=set()
     for c in courses:
@@ -55,14 +68,14 @@ def main():
 
     candidate_ids=set(); candidate_urls=set()
     for c in candidates:
-        if c['id'] in candidate_ids: errors += fail(f'duplicate candidate id: {c["id"]}')
+        if c['id'] in candidate_ids: errors += fail(f'duplicate candidate id across candidate pool: {c["id"]}')
         candidate_ids.add(c['id'])
-        if c['url'] in candidate_urls: errors += fail(f'duplicate candidate canonical URL: {c["url"]}')
+        if c['url'] in candidate_urls: errors += fail(f'duplicate candidate canonical URL across candidate pool: {c["url"]}')
         candidate_urls.add(c['url'])
         if c['id'] in ids: errors += fail(f'candidate id already exists in approved/reference courses: {c["id"]}')
         if c['url'] in urls: errors += fail(f'candidate URL already exists in approved/reference courses: {c["url"]}')
 
     if errors: return 1
-    print(f'OK: {len(courses)} courses and {len(candidates)} candidates validated.')
+    print(f'OK: {len(courses)} courses and {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s) validated.')
     return 0
 if __name__=='__main__': raise SystemExit(main())
