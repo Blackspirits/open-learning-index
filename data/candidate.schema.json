@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Open Learning Index candidate dataset",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "title",
+      "provider",
+      "category",
+      "primary_language",
+      "url",
+      "apparent_free_access",
+      "stage",
+      "evidence_url",
+      "discovered_on",
+      "reason"
+    ],
+    "properties": {
+      "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+      "title": {"type": "string", "minLength": 2},
+      "provider": {"type": "string", "minLength": 2},
+      "category": {
+        "type": "string",
+        "enum": [
+          "ai-data",
+          "arts-design",
+          "business-entrepreneurship",
+          "computer-science",
+          "cybersecurity-it",
+          "engineering-electronics",
+          "finance-economics",
+          "health-medicine",
+          "history-culture",
+          "humanities-philosophy",
+          "languages",
+          "marketing-sales",
+          "math-statistics",
+          "natural-sciences",
+          "project-product-leadership",
+          "psychology-behavior",
+          "writing-communication"
+        ]
+      },
+      "primary_language": {"type": "string", "minLength": 2},
+      "target_language": {"type": "string", "minLength": 2},
+      "language_notes": {"type": "string"},
+      "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+      "apparent_free_access": {
+        "type": "string",
+        "enum": [
+          "F0_FULL_CREDENTIAL",
+          "F1_FULL_ASSESSMENTS",
+          "F2_CONTENT_ONLY",
+          "F3_PARTIAL_OR_TRIAL",
+          "UNVERIFIED"
+        ]
+      },
+      "stage": {
+        "type": "string",
+        "enum": ["discovered", "shallow_screen", "deep_review", "rejected", "promoted"]
+      },
+      "evidence_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+      "discovered_on": {"type": "string", "format": "date"},
+      "reason": {"type": "string", "minLength": 20},
+      "notes": {"type": "string"}
+    }
+  }
+}
