@@ -1,0 +1,52 @@
+# Open Learning Index
+
+> A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
+
+**Status:** v0.1 — foundation and methodology calibration. Current records are reference fixtures, not the final Top 100.
+
+## Goal
+
+Review roughly **300–500 serious candidates** across technology, sciences, mathematics, business, finance, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
+
+The project separates **absolute quality** from **recommendation**, records exactly what “free” means, tracks instruction/subtitle languages, and re-verifies courses on a risk-based schedule so the rankings do not become stale.
+
+## Start here
+
+- [`AUDIT.md`](AUDIT.md) — architecture decisions and risks.
+- [`docs/methodology.md`](docs/methodology.md) — scoring and free-access taxonomy.
+- [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
+- [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
+- [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
+- [`data/courses.json`](data/courses.json) — canonical dataset.
+- [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
+
+## Free access taxonomy
+
+| Code | Meaning | Main ranking |
+|---|---|---:|
+| F0 | Full learning path + free completion credential | ✅ |
+| F1 | Full path + meaningful free assessment/labs | ✅ |
+| F2 | Substantive teaching content free; no free formal completion path | ✅ |
+| F3 | Preview/trial/partial access only | ❌ |
+
+## Maintenance promise
+
+The index is **not a frozen “Top 100”**.
+
+- Automated structural checks: every push/PR.
+- Discovery scan for new candidates: monthly.
+- Fast-moving courses (AI, software, cybersecurity, cloud): usually every 60–90 days.
+- Active general courses: every 120–180 days.
+- Stable archival/fundamental courses: up to 365 days.
+- Full methodology and ranking recalibration: annually.
+- Immediate review when a link breaks, pricing/free access changes, or credible evidence is reported.
+
+A course that becomes F3-only is removed from the main ranking but kept in history. A course whose review is substantially overdue is flagged stale and can be temporarily excluded until re-verified.
+
+## Data philosophy
+
+`courses.json` is the source of truth. CSV and future README/site views are generated from it. Never maintain the same facts independently in multiple formats.
+
+## Licensing
+
+Repository code/scripts: MIT. Curated metadata and original editorial annotations: CC BY 4.0. Course materials remain owned/licensed by their respective providers.
