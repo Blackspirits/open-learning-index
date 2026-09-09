@@ -1,0 +1,87 @@
+[
+  {
+    "id": "ai-data",
+    "name": "AI & Data",
+    "freshness": "fast"
+  },
+  {
+    "id": "arts-design",
+    "name": "Arts & Design",
+    "freshness": "medium"
+  },
+  {
+    "id": "business-entrepreneurship",
+    "name": "Business & Entrepreneurship",
+    "freshness": "medium"
+  },
+  {
+    "id": "computer-science",
+    "name": "Computer Science & Software",
+    "freshness": "fast"
+  },
+  {
+    "id": "cybersecurity-it",
+    "name": "Cybersecurity & IT",
+    "freshness": "fast"
+  },
+  {
+    "id": "engineering-electronics",
+    "name": "Engineering & Electronics",
+    "freshness": "medium"
+  },
+  {
+    "id": "finance-economics",
+    "name": "Finance & Economics",
+    "freshness": "medium"
+  },
+  {
+    "id": "health-medicine",
+    "name": "Health & Medicine",
+    "freshness": "fast"
+  },
+  {
+    "id": "history-culture",
+    "name": "History & Culture",
+    "freshness": "slow"
+  },
+  {
+    "id": "humanities-philosophy",
+    "name": "Humanities & Philosophy",
+    "freshness": "slow"
+  },
+  {
+    "id": "languages",
+    "name": "Languages",
+    "freshness": "medium"
+  },
+  {
+    "id": "marketing-sales",
+    "name": "Marketing & Sales",
+    "freshness": "fast"
+  },
+  {
+    "id": "math-statistics",
+    "name": "Mathematics & Statistics",
+    "freshness": "slow"
+  },
+  {
+    "id": "natural-sciences",
+    "name": "Natural Sciences",
+    "freshness": "medium"
+  },
+  {
+    "id": "project-product-leadership",
+    "name": "Project, Product & Leadership",
+    "freshness": "medium"
+  },
+  {
+    "id": "psychology-behavior",
+    "name": "Psychology & Behaviour",
+    "freshness": "medium"
+  },
+  {
+    "id": "writing-communication",
+    "name": "Writing & Communication",
+    "freshness": "medium"
+  }
+]
