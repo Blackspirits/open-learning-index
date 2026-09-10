@@ -10,6 +10,8 @@ CATEGORIES=ROOT/'data/categories.json'
 LEGACY_CANDIDATES=ROOT/'data/candidates.json'
 CANDIDATE_DIR=ROOT/'data/candidates'
 CANDIDATE_SCHEMA=ROOT/'data/candidate.schema.json'
+SCREENING_DIR=ROOT/'data/screening'
+SCREENING_SCHEMA=ROOT/'data/screening.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
 
 def fail(msg):
@@ -41,6 +43,11 @@ def load_candidate_sources():
     if CANDIDATE_DIR.exists():
         paths.extend(sorted(CANDIDATE_DIR.glob('*.json')))
     return paths
+
+def load_screening_sources():
+    if not SCREENING_DIR.exists():
+        return []
+    return sorted(SCREENING_DIR.glob('*.json'))
 
 def main():
     errors=0
@@ -86,7 +93,35 @@ def main():
         if c['id'] in ids: errors += fail(f'candidate id already exists in approved/reference courses: {c["id"]}')
         if c['url'] in urls: errors += fail(f'candidate URL already exists in approved/reference courses: {c["url"]}')
 
+    screening_sources=load_screening_sources()
+    screenings=[]
+    for source in screening_sources:
+        records=json.loads(source.read_text(encoding='utf-8'))
+        label=f'screening:{source.relative_to(ROOT)}'
+        errors += validate_schema(records, SCREENING_SCHEMA, label)
+        screenings.extend(records)
+
+    screen_ids=set(); current_candidate_ids=set()
+    all_screen_ids={s.get('screen_id') for s in screenings}
+    for s in screenings:
+        sid=s['screen_id']
+        cid=s['candidate_id']
+        if sid in screen_ids:
+            errors += fail(f'duplicate screening id: {sid}')
+        screen_ids.add(sid)
+        if cid not in candidate_ids:
+            errors += fail(f'{sid}: screening references unknown candidate {cid}')
+        if s['is_current']:
+            if cid in current_candidate_ids:
+                errors += fail(f'multiple current screenings for candidate: {cid}')
+            current_candidate_ids.add(cid)
+        supersedes=s.get('supersedes_screen_id')
+        if supersedes and supersedes not in all_screen_ids:
+            errors += fail(f'{sid}: supersedes unknown screening {supersedes}')
+        if supersedes == sid:
+            errors += fail(f'{sid}: cannot supersede itself')
+
     if errors: return 1
-    print(f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), and {len(allowed_categories)} categories validated.')
+    print(f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), {len(screenings)} screening records, and {len(allowed_categories)} categories validated.')
     return 0
 if __name__=='__main__': raise SystemExit(main())
