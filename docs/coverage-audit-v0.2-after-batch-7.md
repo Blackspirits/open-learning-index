@@ -61,7 +61,7 @@ A final targeted pass should favour traditions, regions and intellectual histori
 
 ### Mathematics & Statistics
 
-The category grows from 10 to 14. The additions are not filler: MIT probability/statistics, discrete mathematics, calculus and differential equations are serious challengers. Candidate volume is now sufficient because incumbent quality is unusually high.
+The category grows from 10 to 14. The additions are not filler: MIT probability/statistics, real analysis, complex analysis and number theory are serious challengers with substantial exercises or assessment material. Candidate volume is now sufficient because incumbent quality is unusually high.
 
 ### Computer Science & Software
 
