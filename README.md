@@ -2,13 +2,13 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery, evidence gathering and first coverage audit. **246 discovery candidates + 17 reference fixtures = 263 researched learning experiences.** Current reference records are calibration fixtures, not the final Top 100.
+**Status:** v0.2 — targeted discovery + shallow screening. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** The first 15 candidates have entered the shallow-screening decision ledger; current reference records are calibration fixtures, not the final Top 100.
 
 ## Goal
 
 Review a broad evidence-based candidate universe across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
 
-The original discovery target was **300–500 serious candidates**. After the first formal coverage audit at 246 candidates, the project moved to a hybrid strategy: begin shallow screening in saturated categories while continuing targeted discovery in weak ones. The current evidence-based stopping target is roughly **320–350 candidates**, with expansion toward 400–500 only if a later saturation audit still finds meaningful blind spots.
+The original discovery target was **300–500 serious candidates**. After formal coverage audits, the project moved to a hybrid strategy: shallow screening is now the primary workstream while discovery continues only for documented gaps and credible category-leader challengers. The current evidence-based stopping target remains roughly **320–350 candidates**, with expansion toward 400–500 only if a later saturation audit still finds meaningful blind spots.
 
 The project separates **absolute quality** from **recommendation**, records exactly what “free” means, tracks instruction/subtitle languages, and re-verifies courses on a risk-based schedule so the rankings do not become stale.
 
@@ -20,10 +20,13 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
+- [`docs/coverage-audit-v0.2-after-batch-7.md`](docs/coverage-audit-v0.2-after-batch-7.md) — second saturation audit after crossing 300 researched experiences.
+- [`docs/screening/shallow-01.md`](docs/screening/shallow-01.md) — first real shallow-screening tranche and decisions.
 - [`data/categories.json`](data/categories.json) — authoritative category registry.
 - [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
 - [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
-- [`data/candidates/`](data/candidates/) — discovery batches awaiting screening.
+- [`data/candidates/`](data/candidates/) — immutable discovery batches.
+- [`data/screening/`](data/screening/) — evidence-backed shallow-screening decision ledger.
 
 ## Free access taxonomy
 
@@ -33,6 +36,16 @@ The project separates **absolute quality** from **recommendation**, records exac
 | F1 | Full path + meaningful free assessment/labs | ✅ |
 | F2 | Substantive teaching content free; no free formal completion path | ✅ |
 | F3 | Preview/trial/partial access only | ❌ |
+
+## Review pipeline
+
+1. **Discovery** — collect serious candidates without assigning final scores.
+2. **Shallow screening** — verify access, completeness, evidence, languages, assessment/credential mechanics, obvious currency issues and redundancy.
+3. **Deep review** — score teaching quality, depth, practice, materials, currency, expertise and accessibility with direct alternatives in view.
+4. **Head-to-head admission** — a course enters only if it beats or materially complements the incumbent field.
+5. **Publish and maintain** — global/category rankings plus scheduled re-verification.
+
+Shallow decisions are `advance`, `hold` or `reject`. They are recorded separately from discovery intake so the full research history remains auditable.
 
 ## Maintenance promise
 
@@ -50,7 +63,7 @@ A course that becomes F3-only is removed from the main ranking but kept in histo
 
 ## Data philosophy
 
-`courses.json` is the source of truth for approved/reference records. Discovery candidates stay separate until review. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
+`courses.json` is the source of truth for approved/reference records. Discovery batches are immutable research intake; `data/screening/` records review decisions. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
 
 ## Licensing
 
