@@ -2,11 +2,13 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery and evidence gathering. **205 discovery candidates + 17 reference fixtures = 222 researched learning experiences.** Current reference records are calibration fixtures, not the final Top 100.
+**Status:** v0.2 — discovery, evidence gathering and first coverage audit. **246 discovery candidates + 17 reference fixtures = 263 researched learning experiences.** Current reference records are calibration fixtures, not the final Top 100.
 
 ## Goal
 
-Review roughly **300–500 serious candidates** across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
+Review a broad evidence-based candidate universe across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
+
+The original discovery target was **300–500 serious candidates**. After the first formal coverage audit at 246 candidates, the project moved to a hybrid strategy: begin shallow screening in saturated categories while continuing targeted discovery in weak ones. The current evidence-based stopping target is roughly **320–350 candidates**, with expansion toward 400–500 only if a later saturation audit still finds meaningful blind spots.
 
 The project separates **absolute quality** from **recommendation**, records exactly what “free” means, tracks instruction/subtitle languages, and re-verifies courses on a risk-based schedule so the rankings do not become stale.
 
@@ -17,6 +19,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
+- [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
 - [`data/categories.json`](data/categories.json) — authoritative category registry.
 - [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
 - [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
