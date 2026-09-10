@@ -41,9 +41,15 @@ French-original additions include *La Musique, quelle Histoire !*, *Les hiérogl
 - **MIT 14.03 Microeconomic Theory and Public Policy (Fall 2025)** provides a current rigorous policy-oriented microeconomics benchmark.
 - **MSE's Academy of Money** combines practical personal finance, quizzes and a free Open University badge/statement, while clearly requiring UK-jurisdiction caveats.
 - **C'est quoi l'éco ?** offers a French-original economics pathway whose course participation and successful-completion attestation are explicitly free.
-- **MIT 18.05** and **6.042J** add interactive Open Learning Library components to already strong MIT mathematics material.
+- **MIT 18.05, 18.100A, 18.04 and 18.781** add probability/statistics, real analysis, complex analysis and number theory as serious mathematics challengers rather than filler.
 - **The Missing Semester 2026** supplies current command-line, tooling, debugging, Git, shipping, agentic-coding and code-quality material that conventional CS curricula often omit.
 - **Berkeley CS 61A/61C Fall 2026** are strong current public-course candidates, but their exact fully public learner path must be separated from Berkeley-only infrastructure during shallow review.
+
+## Validation-driven cleanup
+
+The first CI pass correctly identified six discovery overlaps already present in earlier batches: Yale HIST 234, Yale HIST 119, Yale PHIL 181, MIT 6.042J, MIT 18.01SC and MIT 18.03SC. Duplicate protection was not weakened.
+
+Those six slots were replaced with **Yale HIST 251**, **Yale HIST 276**, **MIT 24.00 Problems of Philosophy**, **MIT 18.100A Real Analysis**, **MIT 18.04 Complex Variables with Applications**, and **MIT 18.781 Theory of Numbers**. This preserves the 40-candidate target while increasing actual marginal coverage.
 
 ## Evidence caveats
 
