@@ -10,7 +10,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/view.php?id=706",
     "discovered_on": "2026-09-10",
-    "reason": "Substantial 46-hour psychology foundation covering research methods, emotion, development, memory and psychopathology with a free final exam and certificate."
+    "reason": "Substantial psychology foundation with research methods, development, memory and psychopathology, plus a free final exam and certificate."
   },
   {
     "id": "mit-9-00-introduction-psychology",
@@ -23,8 +23,8 @@
     "stage": "discovered",
     "evidence_url": "https://ocw.mit.edu/courses/9-00-introduction-to-psychology-fall-2004/",
     "discovered_on": "2026-09-10",
-    "reason": "MIT survey of human behaviour and mental life with lecture audio, notes, written assignments and exams spanning biological, cognitive and social perspectives.",
-    "notes": "Archive course from 2004; deep review must compare dated examples and science with current alternatives."
+    "reason": "MIT survey of human behaviour and mental life with lectures, notes, assignments and exams across biological, cognitive and social perspectives.",
+    "notes": "Archive course; deep review must compare dated examples and science with current alternatives."
   },
   {
     "id": "openlearn-forensic-psychology",
@@ -37,20 +37,20 @@
     "stage": "discovered",
     "evidence_url": "https://www.open.edu/openlearn/health-sports-psychology/forensic-psychology",
     "discovered_on": "2026-09-10",
-    "reason": "Eight-week applied psychology course on eyewitness cognition and miscarriages of justice with weekly quizzes, a free badge and statement of participation."
+    "reason": "Eight-week applied psychology course on eyewitness cognition and miscarriages of justice with quizzes, badge and participation statement."
   },
   {
-    "id": "openlearn-psychology-around-world",
-    "title": "Psychology around the world",
+    "id": "openlearn-making-sense-ourselves",
+    "title": "Making sense of ourselves",
     "provider": "The Open University / OpenLearn",
     "category": "psychology-behavior",
     "primary_language": "en",
-    "url": "https://www.open.edu/openlearn/health-sports-psychology/psychology-around-the-world",
+    "url": "https://www.open.edu/openlearn/health-sports-psychology/making-sense-ourselves",
     "apparent_free_access": "F0_FULL_CREDENTIAL",
     "stage": "discovered",
-    "evidence_url": "https://www.open.edu/openlearn/health-sports-psychology/psychology-around-the-world/content-section-0?intro=1",
+    "evidence_url": "https://www.open.edu/openlearn/health-sports-psychology/making-sense-ourselves",
     "discovered_on": "2026-09-10",
-    "reason": "Cross-cultural psychology course examining thoughts, emotions and behaviour across societies, providing a useful corrective to overly Western introductory curricula."
+    "reason": "Intermediate psychology sampler using prejudice, relationships, perception and childhood to demonstrate different research questions and methods."
   },
   {
     "id": "openlearn-investigating-psychology",
@@ -63,20 +63,20 @@
     "stage": "discovered",
     "evidence_url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=66031&section=",
     "discovered_on": "2026-09-10",
-    "reason": "Intermediate course on psychological questions, research methods, competing perspectives and the historical and social context of psychological enquiry."
+    "reason": "Intermediate course on psychological questions, methods, perspectives and the historical and social context of psychological enquiry."
   },
   {
-    "id": "openlearn-starting-with-psychology",
-    "title": "Starting with psychology",
+    "id": "openlearn-living-psychology-animal-minds",
+    "title": "Living psychology: animal minds",
     "provider": "The Open University / OpenLearn",
     "category": "psychology-behavior",
     "primary_language": "en",
-    "url": "https://www.open.edu/openlearn/health-sports-psychology/psychology/starting-psychology",
+    "url": "https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0",
     "apparent_free_access": "F0_FULL_CREDENTIAL",
     "stage": "discovered",
-    "evidence_url": "https://www.open.edu/openlearn/health-sports-psychology/psychology/starting-psychology/content-section---introduction-2",
+    "evidence_url": "https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0",
     "discovered_on": "2026-09-10",
-    "reason": "Accessible introduction to how psychologists explain thought, emotion and behaviour, with exercises and a free statement of participation."
+    "reason": "Twelve-hour comparative-psychology course on animal cognition, emotion, theory of mind and research methods with free participation recognition."
   },
   {
     "id": "nau-saude-mental-bem-estar-ensino-superior",
@@ -89,7 +89,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/",
     "discovered_on": "2026-09-10",
-    "reason": "Portuguese course covering mental-health concepts, stress, coping, resilience and first-response support with module assessments and a completion certificate."
+    "reason": "Portuguese course covering mental-health concepts, stress, coping, resilience and first-response support with assessments and a completion certificate."
   },
   {
     "id": "openlearn-introduction-child-psychology",
@@ -102,8 +102,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.open.edu/openlearn/education-development/childhood-youth/introduction-child-psychology",
     "discovered_on": "2026-09-10",
-    "reason": "Eight-hour introduction to developmental theories, research questions and applied child psychology with activities and a free statement of participation.",
-    "notes": "Core theory is stable, but the course was first published in 2014 and should be checked for research currency."
+    "reason": "Introduction to developmental theories, research questions and applied child psychology with activities and a free participation statement."
   },
   {
     "id": "nau-competencia-digital-docente-avaliacao",
@@ -116,20 +115,20 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/competencia-dig-docente-avaliacao/",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-seven-hour Portuguese teacher-development course on digital assessment, with online activities, final evaluation and a free completion certificate."
+    "reason": "Portuguese teacher-development course on digital assessment with online activities, final evaluation and a free completion certificate."
   },
   {
-    "id": "openlearn-take-your-teaching-online",
-    "title": "Take your teaching online",
+    "id": "openlearn-open-education",
+    "title": "Open education",
     "provider": "The Open University / OpenLearn",
     "category": "education-teaching",
     "primary_language": "en",
-    "url": "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/",
+    "url": "https://www.open.edu/openlearn/education-development/open-education/content-section-0?intro=1",
     "apparent_free_access": "F0_FULL_CREDENTIAL",
     "stage": "discovered",
-    "evidence_url": "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/",
+    "evidence_url": "https://www.open.edu/openlearn/education-development/open-education/content-section-0?intro=1",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-four-hour badged course from a distance-learning specialist on effective, inclusive online teaching, tool selection, pedagogy and evaluation with CPD recognition."
+    "reason": "Advanced multiweek course on OER, MOOCs, open pedagogy, sustainability and learner networks with free participation recognition."
   },
   {
     "id": "openlearn-teaching-learning-tricky-topics",
@@ -142,7 +141,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.open.edu/openlearn/mod/oucontent/view.php?id=97189&section=_unit1.1.1",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-four-hour badged course focused on difficult concepts, learner misconceptions and teaching strategies, with quizzes and a free Open University digital badge."
+    "reason": "Badged course on difficult concepts, misconceptions and teaching strategies, with structured activities and quizzes."
   },
   {
     "id": "british-council-understanding-language-systems",
@@ -155,7 +154,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-understanding-language-systems",
     "discovered_on": "2026-09-10",
-    "reason": "Current free teacher-development course on functional language, grammar and classroom presentation, with workbook, self-study modules and completion certificate."
+    "reason": "Current free teacher-development course on functional language, grammar and classroom presentation with workbook and completion certificate."
   },
   {
     "id": "esep-developing-students-ai-literacy",
@@ -168,8 +167,8 @@
     "stage": "discovered",
     "evidence_url": "https://school-education.ec.europa.eu/en/learn/courses/developing-students-ai-literacy",
     "discovered_on": "2026-09-10",
-    "reason": "New 2026 teacher course on AI-literacy frameworks, ethics, curriculum integration and assessment, with practical action planning for classroom use.",
-    "notes": "The official page exposes a Join course flow; free-access and credential mechanics require shallow verification."
+    "reason": "New teacher course on AI-literacy frameworks, ethics, curriculum integration and assessment with practical classroom action planning.",
+    "notes": "Complete free-access and credential mechanics require shallow verification."
   },
   {
     "id": "nau-ciberseguranca-nas-escolas",
@@ -182,7 +181,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-nas-escolas/",
     "discovered_on": "2026-09-10",
-    "reason": "Portuguese school-focused cybersecurity course covering threats, cybercrime and institutional practice, with a free completion certificate and digital seal."
+    "reason": "Portuguese school-focused cybersecurity course covering threats, cybercrime and institutional practice with a completion certificate and digital seal."
   },
   {
     "id": "openclassrooms-apprenez-a-apprendre",
@@ -195,7 +194,7 @@
     "stage": "discovered",
     "evidence_url": "https://openclassrooms.com/fr/courses/4312781-apprenez-a-apprendre",
     "discovered_on": "2026-09-10",
-    "reason": "Freshly updated six-hour French course on learning strategy, memory, self-directed planning and study habits with quizzes and practical exercises."
+    "reason": "Fresh French course on learning strategy, memory, self-directed planning and study habits with quizzes and practical exercises."
   },
   {
     "id": "coe-help-ai-human-rights",
@@ -208,7 +207,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.coe.int/en/web/artificial-intelligence/-/updated-help-online-course-on-artificial-intelligence-and-human-rights-is-now-available-and-opened-for-enrolment-to-interested-participants",
     "discovered_on": "2026-09-10",
-    "reason": "Updated human-rights course aligned with current European AI legal instruments, using interactive material, knowledge tests and reflective exercises with a free statement of accomplishment."
+    "reason": "Updated human-rights course aligned with European AI legal instruments, interactive material and knowledge tests with free accomplishment recognition."
   },
   {
     "id": "coe-help-cybercrime-electronic-evidence",
@@ -222,7 +221,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.coe.int/en/web/help/-/cybercrime-and-electronic-evidence-council-of-europe-help-course-for-eu-judges-prosecutors-and-lawyers",
     "discovered_on": "2026-09-10",
-    "reason": "Ten-hour legal course on cybercrime, electronic evidence and the Budapest Convention, available for self-learning with an electronic statement of accomplishment."
+    "reason": "Legal course on cybercrime, electronic evidence and the Budapest Convention with self-learning and electronic accomplishment recognition."
   },
   {
     "id": "coe-help-data-protection-privacy-rights",
@@ -235,8 +234,8 @@
     "stage": "discovered",
     "evidence_url": "https://www.coe.int/en/web/help/courses",
     "discovered_on": "2026-09-10",
-    "reason": "Interactive European data-protection course covering Council of Europe and EU legal frameworks plus ECtHR and CJEU case law, available through HELP self-learning.",
-    "notes": "Course has older origins; deep review must check whether modules fully reflect current GDPR and Convention 108+ practice."
+    "reason": "Interactive European data-protection course covering Council of Europe and EU frameworks plus ECtHR and CJEU case law.",
+    "notes": "Deep review must check current GDPR and Convention 108+ coverage."
   },
   {
     "id": "coe-help-introduction-echr-ecthr",
@@ -249,7 +248,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.coe.int/en/web/help/-/updated-council-of-europe-help-course-on-introduction-to-the-european-convention-on-human-rights-and-the-european-court-of-human-rights-with-new-modul",
     "discovered_on": "2026-09-10",
-    "reason": "Core Council of Europe self-learning course explaining the European Convention on Human Rights, the Court and execution of judgments, with free completion recognition."
+    "reason": "Core self-learning course explaining the European Convention on Human Rights, the Court and execution of judgments with completion recognition."
   },
   {
     "id": "coe-help-freedom-expression",
@@ -262,7 +261,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.coe.int/en/web/help/-/freedom-of-expression-a-help-available-now-in-our-online-plaftorm-for-free",
     "discovered_on": "2026-09-10",
-    "reason": "Approximately nine-hour Article 10 course with four substantive modules, quizzes and a free electronic HELP statement of accomplishment."
+    "reason": "Article 10 course with substantive modules, quizzes and a free electronic HELP statement of accomplishment."
   },
   {
     "id": "coe-help-protection-safety-journalists",
@@ -270,13 +269,13 @@
     "provider": "Council of Europe HELP",
     "category": "law-public-policy",
     "primary_language": "en",
-    "language_notes": "English plus multiple translated versions; exact currently available language list must be normalised during shallow review.",
+    "language_notes": "English plus multiple translated versions; exact active languages require shallow verification.",
     "url": "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania",
     "apparent_free_access": "F0_FULL_CREDENTIAL",
     "stage": "discovered",
     "evidence_url": "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania",
     "discovered_on": "2026-09-10",
-    "reason": "Ten-hour course on legal standards, threats, state obligations and mechanisms protecting journalists, with self-learning access and an electronic statement of accomplishment."
+    "reason": "Course on legal standards, threats, state obligations and mechanisms protecting journalists with self-learning and accomplishment recognition."
   },
   {
     "id": "nau-direitos-deveres-digital",
@@ -290,7 +289,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/direitos-e-deveres-no-digital/",
     "discovered_on": "2026-09-10",
-    "reason": "Current Portuguese digital-citizenship course covering EU rights, data protection, expression, online ethics, fraud and cyberbullying with mandatory tests."
+    "reason": "Portuguese digital-citizenship course covering EU rights, data protection, expression, online ethics, fraud and cyberbullying with mandatory tests."
   },
   {
     "id": "nau-consumidor-ciberseguro",
@@ -303,7 +302,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/",
     "discovered_on": "2026-09-10",
-    "reason": "Practical Portuguese course on safer online shopping, payment methods, fraud and EU consumer rights with assessed activities and a completion certificate."
+    "reason": "Practical Portuguese course on safer online shopping, payment methods, fraud and EU consumer rights with assessed activities and certificate."
   },
   {
     "id": "saylor-bus402-project-management",
@@ -316,7 +315,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/bus402",
     "discovered_on": "2026-09-10",
-    "reason": "Fifty-two-hour project-management foundation covering initiation through closure, PMI-style process groups and people skills, with free assessment and certificate."
+    "reason": "Long-form project-management foundation covering initiation through closure, process groups and people skills with free assessment and certificate."
   },
   {
     "id": "saylor-prdv224-leadership-teams",
@@ -329,7 +328,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/view.php?id=1286",
     "discovered_on": "2026-09-10",
-    "reason": "Nine-hour management course on leadership, influence, team formation, collaboration and conflict, with free final exam and course certificate."
+    "reason": "Management course on leadership, influence, team formation, collaboration and conflict with free final exam and certificate."
   },
   {
     "id": "saylor-prdv228-decision-making",
@@ -342,7 +341,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/view.php?id=1302",
     "discovered_on": "2026-09-10",
-    "reason": "Compact practical management course teaching decision types, structured decision processes, methods and team involvement with free completion certification."
+    "reason": "Practical course teaching decision types, structured processes, methods and team involvement with free completion certification."
   },
   {
     "id": "saylor-prdv231-ethical-leadership",
@@ -355,7 +354,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/view.php?id=1309",
     "discovered_on": "2026-09-10",
-    "reason": "Eleven-hour course connecting classical virtue ethics with modern leadership traits and cultural perspectives, with free assessment and certificate."
+    "reason": "Course connecting classical virtue ethics with modern leadership traits and cultural perspectives with free assessment and certificate."
   },
   {
     "id": "openclassrooms-initiez-vous-gestion-projet",
@@ -368,7 +367,7 @@
     "stage": "discovered",
     "evidence_url": "https://openclassrooms.com/courses/8744811-initiez-vous-a-la-gestion-de-projet",
     "discovered_on": "2026-09-10",
-    "reason": "Current French project-management introduction with practical planning, WBS/Gantt-style tools, day-to-day steering, evaluation and a course quiz."
+    "reason": "Current French project-management introduction with planning tools, day-to-day steering, evaluation and course quiz."
   },
   {
     "id": "openclassrooms-manage-team",
@@ -381,7 +380,7 @@
     "stage": "discovered",
     "evidence_url": "https://openclassrooms.com/fr/courses/7494031-manage-a-team",
     "discovered_on": "2026-09-10",
-    "reason": "Eight-hour management toolbox on goals, task planning, meetings, interviews, motivation and recruitment, designed around practical daily team leadership."
+    "reason": "Management toolbox on goals, task planning, meetings, interviews, motivation and recruitment designed around daily team leadership."
   },
   {
     "id": "saylor-prdv211-foundations-human-communication",
@@ -394,7 +393,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/prdv211",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-hour communication survey covering message, audience, medium, culture and communication theory, with a free certificate and structured assessments."
+    "reason": "Communication survey covering message, audience, medium, culture and theory with structured assessments and free certificate."
   },
   {
     "id": "saylor-prdv008-presentations",
@@ -407,7 +406,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/view.php?id=870",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-three-hour presentation course covering audience analysis, evidence, structure, delivery, visual aids, online speaking and anxiety management with free certificate."
+    "reason": "Presentation course covering audience, evidence, structure, delivery, visual aids, online speaking and anxiety management with free certificate."
   },
   {
     "id": "saylor-prdv107-crisis-communication",
@@ -420,7 +419,7 @@
     "stage": "discovered",
     "evidence_url": "https://learn.saylor.org/course/view.php?id=749",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-hour applied communication course on crisis teams, preparation, social media, strategic messaging and writing a tested crisis plan, with free certificate."
+    "reason": "Applied course on crisis teams, preparation, social media, strategic messaging and crisis-plan writing with free certificate."
   },
   {
     "id": "openclassrooms-charge-communication",
@@ -433,7 +432,7 @@
     "stage": "discovered",
     "evidence_url": "https://openclassrooms.com/fr/courses/8634991-decouvrez-le-metier-de-charge-de-communication",
     "discovered_on": "2026-09-10",
-    "reason": "French communication course covering market context, multichannel strategy, content execution and project management with videos and quizzes available on a free account."
+    "reason": "French communication course covering market context, multichannel strategy, content execution and project management with videos and quizzes."
   },
   {
     "id": "nau-academia-empreendedorismo",
@@ -446,8 +445,8 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/academia-de-empreendedorismo/",
     "discovered_on": "2026-09-10",
-    "reason": "Thirty-hour Portuguese entrepreneurship programme covering teams, marketing, value proposition, lean startup, finance, legal/IP and pitching, with assessment and one ECTS.",
-    "notes": "Official page states the course is fully free and awards a diploma plus 1 ECTS at 75% completion; shallow review must confirm current enrolment availability."
+    "reason": "Portuguese entrepreneurship programme covering teams, marketing, lean startup, finance, legal/IP and pitching with assessment and academic credit.",
+    "notes": "Official page advertises free access, diploma and 1 ECTS; current enrolment availability must be reconfirmed."
   },
   {
     "id": "nau-gestao-vendas",
@@ -460,7 +459,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/gestao-de-vendas/",
     "discovered_on": "2026-09-10",
-    "reason": "Portuguese sales course covering customer approach, sales stages, techniques and effective communication, with an assessment threshold for a completion certificate."
+    "reason": "Portuguese sales course covering customer approach, sales stages, techniques and effective communication with assessed completion."
   },
   {
     "id": "nau-saude-populacoes-futuro-sustentavel",
@@ -473,7 +472,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/saude-das-populacoes-para-um-futuro-sustentavel/",
     "discovered_on": "2026-09-10",
-    "reason": "Twenty-hour Portuguese population-health course with videos, quizzes and final assessment spanning determinants, policy, diversity, prevention and digital health, awarding two ECTS."
+    "reason": "Portuguese population-health course spanning determinants, policy, prevention and digital health with quizzes, final assessment and academic credit."
   },
   {
     "id": "nau-inteligencia-artificial-machine-learning",
@@ -487,8 +486,7 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/inteligencia-artificial-e-machine-learning/",
     "discovered_on": "2026-09-10",
-    "reason": "Eight-hour bilingual AI/ML course spanning supervised, unsupervised and reinforcement learning, deep learning, tools, model evaluation, applications and ethics with required tests.",
-    "notes": "Assessment is explicit but the public page does not clearly state the completion credential; keep F1 until verified."
+    "reason": "Bilingual AI/ML course spanning supervised, unsupervised and reinforcement learning, deep learning, evaluation, applications and ethics with tests."
   },
   {
     "id": "nau-introducao-inteligencia-artificial",
@@ -502,22 +500,20 @@
     "stage": "discovered",
     "evidence_url": "https://www.nau.edu.pt/pt/curso/introducao-a-inteligencia-artificial/",
     "discovered_on": "2026-09-10",
-    "reason": "Three-hour bilingual AI introduction covering foundations, learning techniques, neural networks, NLP and ethics with module tests and a final assessment.",
-    "notes": "The public page describes assessment but not an explicit free credential, so discovery classification remains F1."
+    "reason": "Bilingual AI introduction covering foundations, learning techniques, neural networks, NLP and ethics with module tests and final assessment."
   },
   {
-    "id": "google-machine-learning-crash-course",
-    "title": "Machine Learning Crash Course",
-    "provider": "Google for Developers",
+    "id": "huggingface-audio-course",
+    "title": "Audio Course",
+    "provider": "Hugging Face",
     "category": "ai-data",
     "primary_language": "en",
-    "language_notes": "Official localisation includes French and other translated interfaces; exact full-course language parity must be checked during shallow review.",
-    "url": "https://developers.google.com/machine-learning/crash-course",
-    "apparent_free_access": "F1_FULL_ASSESSMENTS",
+    "url": "https://huggingface.co/learn/audio-course/chapter0/introduction",
+    "apparent_free_access": "F0_FULL_CREDENTIAL",
     "stage": "discovered",
-    "evidence_url": "https://developers.google.com/machine-learning/crash-course",
+    "evidence_url": "https://huggingface.co/learn/audio-course/chapter8/certification",
     "discovered_on": "2026-09-10",
-    "reason": "Refreshed practical machine-learning curriculum with animated explanations, interactive visualisations, browser-based Colab programming exercises and quizzes across modern ML topics."
+    "reason": "Hands-on audio machine-learning course covering audio data, transformers, classification, ASR and TTS with completely free completion and excellence certificates."
   },
   {
     "id": "huggingface-agents-course",
@@ -531,7 +527,7 @@
     "stage": "discovered",
     "evidence_url": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
     "discovered_on": "2026-09-10",
-    "reason": "Current hands-on agents curriculum covering agent foundations, smolagents, LlamaIndex, LangGraph, agentic RAG and a benchmarked final project with completely free certification."
+    "reason": "Hands-on agents curriculum covering agent foundations, frameworks, agentic RAG and a benchmarked final project with completely free certification."
   },
   {
     "id": "huggingface-deep-rl-course",
@@ -544,6 +540,6 @@
     "stage": "discovered",
     "evidence_url": "https://huggingface.co/learn/deep-rl-course/en/unit0/introduction",
     "discovered_on": "2026-09-10",
-    "reason": "Free self-paced deep reinforcement-learning course with practical assignments across Q-learning, policy gradients, PPO, Unity and multi-agent methods plus free completion and honours certificates."
+    "reason": "Free self-paced deep reinforcement-learning course with practical assignments and free completion and honours certificates."
   }
 ]
