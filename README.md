@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — targeted discovery + shallow screening. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** The first 15 candidates have entered the shallow-screening decision ledger; current reference records are calibration fixtures, not the final Top 100.
+**Status:** v0.2 — targeted discovery + shallow screening. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** **42 candidates have now been shallow-screened** across two tranches; current reference records are calibration fixtures, not the final Top 100.
 
 ## Goal
 
@@ -21,7 +21,8 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
 - [`docs/coverage-audit-v0.2-after-batch-7.md`](docs/coverage-audit-v0.2-after-batch-7.md) — second saturation audit after crossing 300 researched experiences.
-- [`docs/screening/shallow-01.md`](docs/screening/shallow-01.md) — first real shallow-screening tranche and decisions.
+- [`docs/screening/shallow-01.md`](docs/screening/shallow-01.md) — first shallow-screening calibration tranche.
+- [`docs/screening/shallow-02.md`](docs/screening/shallow-02.md) — first deliberately selective mixed-provider screening tranche.
 - [`data/categories.json`](data/categories.json) — authoritative category registry.
 - [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
 - [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
