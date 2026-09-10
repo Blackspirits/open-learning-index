@@ -33,18 +33,20 @@ Presence in this batch is not endorsement. No new candidate receives a Quality S
 - British Council TeachingEnglish
 - European School Education Platform
 - OpenClassrooms
-- Google for Developers
 - Hugging Face
 
 ## Strong discovery signals
 
 - **Council of Europe HELP** provides an unusually strong model for genuinely free legal education: public self-learning, knowledge tests and downloadable Statements of Accomplishment. The updated **Artificial Intelligence and Human Rights** course is especially current.
 - **NAU** materially improves the index's Portuguese-European coverage. Several candidates combine free assessment and certificates; the NOVA entrepreneurship course advertises **1 ECTS**, while *Saúde das Populações para um Futuro Sustentável* advertises **2 ECTS**.
-- **Hugging Face AI Agents Course** and **Deep Reinforcement Learning Course** have completely free certification processes tied to hands-on assignments rather than passive video completion.
-- **Google Machine Learning Crash Course** is a refreshed, practical curriculum with interactive exercises, Colab programming and quizzes, making it a credible challenger in the AI/Data category.
+- **Hugging Face AI Agents Course**, **Audio Course** and **Deep Reinforcement Learning Course** use completely free certification processes tied to hands-on assignments rather than passive video completion.
 - **Saylor PSYCH101** and **BUS402** add long-form, assessed, free-certificate alternatives in psychology and project management.
-- **OpenLearn Forensic psychology** and **Take your teaching online** combine substantial study time, quizzes and free badges/statements rather than functioning as short awareness modules.
+- **OpenLearn Forensic psychology** provides an eight-week applied pathway with quizzes and recognition, while **Open education** adds a substantial advanced treatment of OER, MOOCs and open pedagogy.
 - **OpenClassrooms Apprenez à apprendre** was updated in September 2026 and provides a useful French-original learning-skills candidate with quizzes and practical exercises.
+
+## Validation-driven replacements
+
+The first CI run detected four proposals that overlapped earlier research: two OpenLearn psychology entries, an OpenLearn online-teaching URL, and Google Machine Learning Crash Course, which already exists among the reference/approved records. Duplicate protections were kept intact. Those four slots were replaced with **Making sense of ourselves**, **Living psychology: animal minds**, **Open education**, and the **Hugging Face Audio Course**.
 
 ## Evidence caveats
 
