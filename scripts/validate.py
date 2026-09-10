@@ -6,6 +6,7 @@ from datetime import date
 ROOT=Path(__file__).resolve().parents[1]
 COURSES=ROOT/'data/courses.json'
 COURSE_SCHEMA=ROOT/'data/course.schema.json'
+CATEGORIES=ROOT/'data/categories.json'
 LEGACY_CANDIDATES=ROOT/'data/candidates.json'
 CANDIDATE_DIR=ROOT/'data/candidates'
 CANDIDATE_SCHEMA=ROOT/'data/candidate.schema.json'
@@ -44,6 +45,12 @@ def load_candidate_sources():
 def main():
     errors=0
     courses=json.loads(COURSES.read_text(encoding='utf-8'))
+    categories=json.loads(CATEGORIES.read_text(encoding='utf-8'))
+    category_ids=[c['id'] for c in categories]
+    if len(category_ids) != len(set(category_ids)):
+        errors += fail('duplicate category id in data/categories.json')
+    allowed_categories=set(category_ids)
+
     errors += validate_schema(courses, COURSE_SCHEMA, 'courses')
 
     candidate_sources=load_candidate_sources()
@@ -56,6 +63,8 @@ def main():
 
     ids=set(); urls=set()
     for c in courses:
+        if c['category'] not in allowed_categories:
+            errors += fail(f'{c["id"]}: unknown course category {c["category"]}')
         if c['id'] in ids: errors += fail(f'duplicate course id: {c["id"]}')
         ids.add(c['id'])
         if c['url'] in urls: errors += fail(f'duplicate course canonical URL: {c["url"]}')
@@ -68,6 +77,8 @@ def main():
 
     candidate_ids=set(); candidate_urls=set()
     for c in candidates:
+        if c['category'] not in allowed_categories:
+            errors += fail(f'{c["id"]}: unknown candidate category {c["category"]}')
         if c['id'] in candidate_ids: errors += fail(f'duplicate candidate id across candidate pool: {c["id"]}')
         candidate_ids.add(c['id'])
         if c['url'] in candidate_urls: errors += fail(f'duplicate candidate canonical URL across candidate pool: {c["url"]}')
@@ -76,6 +87,6 @@ def main():
         if c['url'] in urls: errors += fail(f'candidate URL already exists in approved/reference courses: {c["url"]}')
 
     if errors: return 1
-    print(f'OK: {len(courses)} courses and {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s) validated.')
+    print(f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), and {len(allowed_categories)} categories validated.')
     return 0
 if __name__=='__main__': raise SystemExit(main())

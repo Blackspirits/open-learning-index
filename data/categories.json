@@ -25,6 +25,11 @@
     "freshness": "fast"
   },
   {
+    "id": "education-teaching",
+    "name": "Education & Teaching",
+    "freshness": "medium"
+  },
+  {
     "id": "engineering-electronics",
     "name": "Engineering & Electronics",
     "freshness": "medium"
@@ -52,6 +57,11 @@
   {
     "id": "languages",
     "name": "Languages",
+    "freshness": "medium"
+  },
+  {
+    "id": "law-public-policy",
+    "name": "Law & Public Policy",
     "freshness": "medium"
   },
   {

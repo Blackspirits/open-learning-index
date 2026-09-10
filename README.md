@@ -2,11 +2,11 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.1 — foundation and methodology calibration. Current records are reference fixtures, not the final Top 100.
+**Status:** v0.2 — discovery and evidence gathering. **205 discovery candidates + 17 reference fixtures = 222 researched learning experiences.** Current reference records are calibration fixtures, not the final Top 100.
 
 ## Goal
 
-Review roughly **300–500 serious candidates** across technology, sciences, mathematics, business, finance, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
+Review roughly **300–500 serious candidates** across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
 
 The project separates **absolute quality** from **recommendation**, records exactly what “free” means, tracks instruction/subtitle languages, and re-verifies courses on a risk-based schedule so the rankings do not become stale.
 
@@ -17,8 +17,10 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
-- [`data/courses.json`](data/courses.json) — canonical dataset.
+- [`data/categories.json`](data/categories.json) — authoritative category registry.
+- [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
 - [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
+- [`data/candidates/`](data/candidates/) — discovery batches awaiting screening.
 
 ## Free access taxonomy
 
@@ -45,7 +47,7 @@ A course that becomes F3-only is removed from the main ranking but kept in histo
 
 ## Data philosophy
 
-`courses.json` is the source of truth. CSV and future README/site views are generated from it. Never maintain the same facts independently in multiple formats.
+`courses.json` is the source of truth for approved/reference records. Discovery candidates stay separate until review. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
 
 ## Licensing
 

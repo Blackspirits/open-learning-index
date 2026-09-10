@@ -1,12 +1,18 @@
 # Data Model
 
-`data/courses.json` is canonical. `courses.csv` is generated.
+`data/courses.json` is canonical for approved/reference course records. Discovery candidates live in `data/candidates.json` and versioned files under `data/candidates/` until promotion. `courses.csv` is generated.
 
 ## Core identity
 
 - `id` — stable slug, never recycled.
 - `title`, `provider`, `category`, `level`.
 - `url` — canonical official learning URL when possible.
+
+## Category registry
+
+`data/categories.json` is the authoritative taxonomy registry. Every course and candidate `category` must reference one of its IDs; CI rejects unregistered categories.
+
+Categories are allowed to evolve when discovery exposes a real information-architecture problem. New categories require an explicit taxonomy change rather than silently inventing strings inside course records. Existing records are reclassified deliberately during review so taxonomy migrations remain auditable.
 
 ## Languages
 
@@ -37,7 +43,8 @@ Future versions may split audio, subtitles and interface language into dedicated
 
 ## Invariants
 
-- IDs and canonical URLs must be unique.
+- IDs and canonical URLs must be unique across their relevant pools.
+- Every category must exist in `data/categories.json`.
 - Scores must remain inside 0–10.
 - Quality Score must equal the weighted components within rounding tolerance.
 - `next_review` must not precede `last_verified`.
