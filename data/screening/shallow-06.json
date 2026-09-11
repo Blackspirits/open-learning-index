@@ -1,0 +1,781 @@
+[
+  {
+    "screen_id": "shallow-06-yale-clcv-205-ancient-greek-history",
+    "candidate_id": "yale-clcv-205-ancient-greek-history",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/classics/clcv-205",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/classics/clcv-205"
+    ],
+    "rationale": "The full Yale survey exposes a coherent syllabus, twenty-four class sessions and formal assessment requirements, giving it enough depth to merit direct comparison despite its archive age.",
+    "flags": [
+      "archive-course",
+      "western-canon",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-yale-hist-234-epidemics",
+    "candidate_id": "yale-hist-234-epidemics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-234",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-234"
+    ],
+    "rationale": "The course remains a substantial medical-history sequence with a complete lecture arc and assessments; its historical subject matter limits the currency risk enough to justify deep review.",
+    "flags": [
+      "archive-course",
+      "historical-health-content",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-saylor-hist103-world-history",
+    "candidate_id": "saylor-hist103-world-history",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/hist103",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/hist103"
+    ],
+    "rationale": "A long-form comparative world-history pathway with structured units, assessments and a free completion certificate offers a coherent alternative to lecture-only historical archives.",
+    "flags": [
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-openlearn-empires-power-resistance-legacies",
+    "candidate_id": "openlearn-empires-power-resistance-legacies",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/empires-power-resistance-legacies/content-section-overview",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn statement of participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/empires-power-resistance-legacies/content-section-overview"
+    ],
+    "rationale": "The 2024 course gives the pool a current, critical treatment of imperial power, resistance and legacies with source-analysis activities and free completion recognition.",
+    "flags": [
+      "introductory-level"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-khan-world-history",
+    "candidate_id": "khan-world-history",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.khanacademy.org/humanities/world-history",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal course certificate verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.khanacademy.org/humanities/world-history"
+    ],
+    "rationale": "Its broad unit structure and embedded practice provide a mastery-oriented world-history pathway that is pedagogically distinct from university lecture archives and merits deeper comparison.",
+    "flags": [
+      "broad-survey",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-openlearn-what-do-historians-do",
+    "candidate_id": "openlearn-what-do-historians-do",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/what-do-historians-do/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn statement of participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/what-do-historians-do/content-section-0"
+    ],
+    "rationale": "A recent advanced-level course focused on evidence, interpretation and historical practice adds methodological value that topic-survey history courses do not duplicate.",
+    "flags": [
+      "short-duration",
+      "advanced-level"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-saylor-hist363-global-industrialization",
+    "candidate_id": "saylor-hist363-global-industrialization",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/hist363",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/hist363"
+    ],
+    "rationale": "The substantial global treatment of industrialisation across regions, combined with assessment and free certification, broadens the pool beyond Europe- and US-centred survey courses.",
+    "flags": [
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-fun-hieroglyphes-egyptiens",
+    "candidate_id": "fun-hieroglyphes-egyptiens",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Optional verified certificate is separate from free learning access; no free formal credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/"
+    ],
+    "rationale": "A French-original specialist Egyptology course with ten modules, expert instruction and quizzes adds both linguistic and subject diversity while remaining a coherent free learning path.",
+    "flags": [
+      "optional-paid-certificate",
+      "specialist-scope"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-yale-plsc-114-political-philosophy",
+    "candidate_id": "yale-plsc-114-political-philosophy",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/political-science/plsc-114",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/political-science/plsc-114"
+    ],
+    "rationale": "The primary-text sequence remains a rigorous introduction to political philosophy and deserves deep comparison, although Western-canon concentration must be penalised at the portfolio level.",
+    "flags": [
+      "archive-course",
+      "western-canon",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-yale-phil-181-human-nature",
+    "candidate_id": "yale-phil-181-human-nature",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/philosophy/phil-181",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/philosophy/phil-181"
+    ],
+    "rationale": "The philosophy component is strong, but the course explicitly integrates then-recent cognitive-science findings and readings from an older evidence base; scientific currency must be checked before advancement.",
+    "flags": [
+      "archive-course",
+      "cognitive-science-currency-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-openlearn-what-is-politics",
+    "candidate_id": "openlearn-what-is-politics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/society-politics-law/what-politics/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn statement of participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/society-politics-law/what-politics/content-section-0"
+    ],
+    "rationale": "A fifteen-hour intermediate course built around competing concepts of politics and political actors provides a structured contemporary foundation with free completion recognition.",
+    "flags": [
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-saylor-polsc101-political-science",
+    "candidate_id": "saylor-polsc101-political-science",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=46",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=46"
+    ],
+    "rationale": "The unusually large political-science survey combines theory, institutions, governance and political behaviour with assessment and a free certificate, clearly clearing the shallow depth threshold.",
+    "flags": [
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-mit-24-00-problems-philosophy",
+    "candidate_id": "mit-24-00-problems-philosophy",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/"
+    ],
+    "rationale": "The course spans major philosophical problems with lecture material and substantive written assignments, providing enough breadth and practice for direct comparison with other introductory philosophy candidates.",
+    "flags": [
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-saylor-phil102-critical-thinking-logic",
+    "candidate_id": "saylor-phil102-critical-thinking-logic",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1255",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1255"
+    ],
+    "rationale": "A structured long-form route through argument analysis, reasoning and logic with final assessment and free certification fills a practical critical-thinking role distinct from survey philosophy.",
+    "flags": [
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-mit-24-231-ethics",
+    "candidate_id": "mit-24-231-ethics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/24-231-ethics-fall-2009/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/24-231-ethics-fall-2009/"
+    ],
+    "rationale": "Despite its age, the stable core questions of normative ethics and moral responsibility are supported by extensive notes and substantive writing assignments, so archive age alone does not justify rejection.",
+    "flags": [
+      "archive-course",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-fun-boite-outils-philosophie-politique",
+    "candidate_id": "fun-boite-outils-philosophie-politique",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/boite-a-outils-de-philosophie-politique/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FUN digital badge after successful completion of the required modules",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/boite-a-outils-de-philosophie-politique/"
+    ],
+    "rationale": "The French-original modular course combines conceptual political-philosophy tools, quizzes, bibliographies and a free completion badge, adding useful language and pedagogical diversity.",
+    "flags": [
+      "free-digital-badge",
+      "module-based"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-yale-plsc-270-capitalism",
+    "candidate_id": "yale-plsc-270-capitalism",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/political-science/plsc-270",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/political-science/plsc-270"
+    ],
+    "rationale": "The interdisciplinary treatment of capitalism is substantial, but a course framed around the 2008 crisis now competes with much newer economics material; currency and comparative value need explicit review.",
+    "flags": [
+      "archive-course",
+      "economics-currency-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-mru-principles-microeconomics",
+    "candidate_id": "mru-principles-microeconomics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.mru.org/courses/principles-of-microeconomics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MRU certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.mru.org/courses/principles-of-microeconomics"
+    ],
+    "rationale": "Ninety-plus lessons, extensive quizzes and interactives form a complete modern microeconomics pathway with free certification, making it a strong candidate for head-to-head review.",
+    "flags": [
+      "provider-authored"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-khan-financial-literacy",
+    "candidate_id": "khan-financial-literacy",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.khanacademy.org/college-careers-more/financial-literacy",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal course certificate verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.khanacademy.org/college-careers-more/financial-literacy"
+    ],
+    "rationale": "The broad practical curriculum and mastery-oriented assessments justify deep review, while US-specific financial assumptions should be separated from transferable money-management concepts during scoring.",
+    "flags": [
+      "jurisdiction-specific",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-saylor-econ101-principles-microeconomics",
+    "candidate_id": "saylor-econ101-principles-microeconomics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/econ101",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/econ101"
+    ],
+    "rationale": "A full introductory microeconomics sequence with structured assessment and free certification is sufficiently complete to compete against MRU and academic alternatives in deep review.",
+    "flags": [
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-mru-money-skills",
+    "candidate_id": "mru-money-skills",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.mru.org/courses/money-skills",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MRU certificate of completion",
+    "completeness": "substantive",
+    "evidence": [
+      "https://learn.mru.org/courses/money-skills"
+    ],
+    "rationale": "Only seven lessons across a few narrow money topics make this materially less comprehensive than stronger personal-finance candidates already in the pool, so deep review would add little value.",
+    "flags": [
+      "limited-scope",
+      "redundancy-risk"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-mit-14-03-microeconomic-theory-public-policy-2025",
+    "candidate_id": "mit-14-03-microeconomic-theory-public-policy-2025",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/"
+    ],
+    "rationale": "The recent MIT course combines rigorous intermediate microeconomics with policy applications, problem sets and examinations, making it a high-value advanced challenger despite no credential.",
+    "flags": [
+      "advanced-prerequisites",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-mit-14-454-economic-crises-2026",
+    "candidate_id": "mit-14-454-economic-crises-2026",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/"
+    ],
+    "rationale": "A current graduate-level economics course with problem sets and solutions adds unusually fresh depth on crises and clearly deserves specialist deep review.",
+    "flags": [
+      "graduate-level",
+      "advanced-prerequisites",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-openlearn-mse-academy-of-money",
+    "candidate_id": "openlearn-mse-academy-of-money",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/mses-academy-money",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn statement of participation and digital badge",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/mses-academy-money"
+    ],
+    "rationale": "The course is practical and complete, but UK-specific tax, borrowing, mortgage, investment and pension material was last updated in 2022; currentness must be rechecked before advancement.",
+    "flags": [
+      "uk-specific",
+      "personal-finance-currency-review",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-saylor-bus205-business-law",
+    "candidate_id": "saylor-bus205-business-law",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1259",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1259"
+    ],
+    "rationale": "The thirty-nine-hour course is substantial and credentialled, but US business law is jurisdiction-sensitive and changeable; legal currency must be verified before spending a deep-review slot.",
+    "flags": [
+      "us-law",
+      "jurisdiction-specific",
+      "legal-currency-review",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-wipo-dl101-intellectual-property",
+    "candidate_id": "wipo-dl101-intellectual-property",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://welc.wipo.int/acc/index.jsf?cc=DL101E&lang=en&page=courseCatalog.xhtml",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free WIPO Academy completion certificate after successful course assessment",
+    "completeness": "complete",
+    "evidence": [
+      "https://welc.wipo.int/acc/index.jsf?cc=DL101E&lang=en&page=courseCatalog.xhtml",
+      "https://welc.wipo.int/acc/index.jsf?lang=en&page=wipoDLCatalog.xhtml"
+    ],
+    "rationale": "WIPO currently lists a fifty-five-hour free course with assessment and certification, providing authoritative international intellectual-property coverage strong enough for deep review.",
+    "flags": [
+      "scheduled-enrolment",
+      "registration-window"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-coe-help-self-learning-catalogue",
+    "candidate_id": "coe-help-self-learning-catalogue",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/courses",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "HELP self-learning courses can issue individual electronic statements of accomplishment",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.coe.int/en/web/help/courses",
+      "https://www.coe.int/en/web/help/help-training-platform"
+    ],
+    "rationale": "This record is an umbrella catalogue rather than one comparable learning experience, while individual HELP courses already exist in the pool; retaining it would create structural redundancy in ranking.",
+    "flags": [
+      "umbrella-catalogue",
+      "not-single-course",
+      "redundancy-risk"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-openlearn-scottish-parliament-law-making",
+    "candidate_id": "openlearn-scottish-parliament-law-making",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/society-politics-law/politics/the-scottish-parliament-and-law-making/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and statement of participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/society-politics-law/politics/the-scottish-parliament-and-law-making/"
+    ],
+    "rationale": "The eight-week course is pedagogically substantial, but Scottish constitutional and legislative material is jurisdiction-specific and the course was last updated in 2020, requiring a legal-currency check.",
+    "flags": [
+      "scotland-specific",
+      "jurisdiction-specific",
+      "legal-currency-review",
+      "last-updated-2020"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-coe-help-ai-human-rights",
+    "candidate_id": "coe-help-ai-human-rights",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://help.elearning.ext.coe.int/enrol/index.php?id=7331",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Electronic HELP Statement of Accomplishment after completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://help.elearning.ext.coe.int/enrol/index.php?id=7331",
+      "https://www.coe.int/en/web/artificial-intelligence/-/updated-help-online-course-on-artificial-intelligence-and-human-rights-is-now-available-and-opened-for-enrolment-to-interested-participants"
+    ],
+    "rationale": "The course was updated in 2025, is open for self-learning, uses interactive knowledge tests and reflective exercises, and awards an electronic statement, making it a current high-value legal-tech candidate.",
+    "flags": [
+      "european-framework",
+      "fast-moving-law"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-coe-help-introduction-echr-ecthr",
+    "candidate_id": "coe-help-introduction-echr-ecthr",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/-/updated-council-of-europe-help-course-on-introduction-to-the-european-convention-on-human-rights-and-the-european-court-of-human-rights-with-new-modul",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "HELP self-learning Statement of Accomplishment is available at platform level; current course-specific route requires re-verification",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/updated-council-of-europe-help-course-on-introduction-to-the-european-convention-on-human-rights-and-the-european-court-of-human-rights-with-new-modul",
+      "https://rm.coe.int/course-brief-intro-to-echr/16809e0a8c"
+    ],
+    "rationale": "The course is structurally complete, but the currently surfaced course brief still states that all 47 Council of Europe member states have ratified the ECHR; that stale factual claim requires version and learner-route verification.",
+    "flags": [
+      "legal-currency-review",
+      "last-updated-2020",
+      "stale-factual-claim"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-nau-direitos-deveres-digital",
+    "candidate_id": "nau-direitos-deveres-digital",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/direitos-e-deveres-no-digital/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free formal completion credential is not explicitly verified on the current public course page",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/direitos-e-deveres-no-digital/"
+    ],
+    "rationale": "The current four-hour Portuguese course provides twelve modules plus mandatory module and final tests on digital rights, data protection, expression, ethics and fraud, filling a valuable pt-PT gap.",
+    "flags": [
+      "credential-unverified",
+      "eu-law-context"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-06-nau-consumidor-ciberseguro",
+    "candidate_id": "nau-consumidor-ciberseguro",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "NAU completion certificate after meeting the required activity threshold",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/"
+    ],
+    "rationale": "The practical pt-PT consumer-security path is useful and certified, but it combines changeable cyber-risk guidance with jurisdiction-sensitive consumer law; source currency should be checked before deep review.",
+    "flags": [
+      "eu-consumer-law",
+      "legal-currency-review",
+      "cybersecurity-currency-review",
+      "legacy-source-material"
+    ],
+    "is_current": true
+  }
+]

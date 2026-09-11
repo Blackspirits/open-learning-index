@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — targeted discovery + shallow screening. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** **117 candidates have now been shallow-screened** across five tranches; current reference records are calibration fixtures, not the final Top 100.
+**Status:** v0.2 — targeted discovery + shallow screening. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** **149 candidates have now been shallow-screened** across six tranches; current reference records are calibration fixtures, not the final Top 100.
 
 ## Goal
 
@@ -26,6 +26,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/screening/shallow-03.md`](docs/screening/shallow-03.md) — currency-sensitive psychology, health and education screening tranche.
 - [`docs/screening/shallow-04.md`](docs/screening/shallow-04.md) — arts/design, languages and communication screening tranche.
 - [`docs/screening/shallow-05.md`](docs/screening/shallow-05.md) — natural sciences, engineering/electronics and mathematics/statistics screening tranche.
+- [`docs/screening/shallow-06.md`](docs/screening/shallow-06.md) — history/culture, humanities/philosophy, finance/economics and law/public-policy screening tranche.
 - [`data/categories.json`](data/categories.json) — authoritative category registry.
 - [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
 - [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
