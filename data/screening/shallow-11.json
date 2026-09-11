@@ -1,0 +1,381 @@
+[
+  {
+    "screen_id": "shallow-11-openlearn-lottery-of-birth",
+    "candidate_id": "openlearn-lottery-of-birth",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/health-sports-psychology/lottery-birth",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/health-sports-psychology/lottery-birth"
+    ],
+    "rationale": "This four-week postgraduate-level interdisciplinary course is substantial and distinctive, but it was last updated in 2020 and relies on demographic, health-policy and inequality evidence that can age materially; retain it for a targeted currency check before deep review.",
+    "flags": [
+      "interdisciplinary",
+      "postgraduate-level",
+      "health-inequality",
+      "last-updated-2020",
+      "currency-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-openlearn-intro-cyber-security",
+    "candidate_id": "openlearn-intro-cyber-security",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/digital-computing/introduction-cyber-security-stay-safe-online",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/digital-computing/introduction-cyber-security-stay-safe-online"
+    ],
+    "rationale": "Updated in March 2026, this 24-hour eight-week course combines weekly quizzes with current coverage of threats, malware, network security, cryptography, identity theft and risk management, plus a free badge and CPD-recognised participation statement.",
+    "flags": [
+      "updated-2026",
+      "24-hours",
+      "eight-weeks",
+      "badged-course",
+      "cpd-recognised"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-hubspot-content-marketing",
+    "candidate_id": "hubspot-content-marketing",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://academy.hubspot.com/courses/content-marketing",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HubSpot Academy certification",
+    "completeness": "complete",
+    "evidence": [
+      "https://academy.hubspot.com/courses/content-marketing"
+    ],
+    "rationale": "The current course provides 14 lessons, 54 videos, 11 quizzes and about 8 hours 23 minutes of structured study across content strategy, creation, repurposing, promotion and measurement. Despite provider concentration, its depth justifies direct finalist comparison.",
+    "flags": [
+      "content-marketing",
+      "8-plus-hours",
+      "free-certification",
+      "provider-concentration",
+      "fast-moving-content"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-microsoft-learn-ai-security-fundamentals",
+    "candidate_id": "microsoft-learn-ai-security-fundamentals",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Microsoft Learn progress and module assessments; no formal free certificate verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/"
+    ],
+    "rationale": "The 2026-relevant learning path covers AI-specific security controls, prompt injection, jailbreaking, data exfiltration and testing, but at only about 2 hours 10 minutes across three modules it needs a direct depth comparison before earning scarce cybersecurity finalist space.",
+    "flags": [
+      "ai-security",
+      "fast-moving-content",
+      "2-hours-10-minutes",
+      "depth-comparison",
+      "vendor-authored"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-aws-cloud-essentials-learning-plan",
+    "candidate_id": "aws-cloud-essentials-learning-plan",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://aws.amazon.com/training/learn-about/cloud-practitioner/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "AWS Skill Builder learning-plan assessment and digital badge route; paid AWS Certification is separate",
+    "completeness": "complete",
+    "evidence": [
+      "https://aws.amazon.com/training/learn-about/cloud-practitioner/",
+      "https://aws.amazon.com/blogs/training-and-certification/june-2025-new-offerings/"
+    ],
+    "rationale": "AWS maintains current free cloud-foundation training and assessment, but this candidate is primarily a broad cloud-computing fundamentals pathway covering services, architecture, pricing and support rather than a cybersecurity course. It is a taxonomy mismatch for this finalist pool.",
+    "flags": [
+      "taxonomy-mismatch",
+      "cloud-fundamentals",
+      "vendor-authored",
+      "cybersecurity-secondary"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-fao-improving-nutrition-agri-food",
+    "candidate_id": "fao-improving-nutrition-agri-food",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=307",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FAO digital badge after final exam with at least 75%",
+    "completeness": "complete",
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=307"
+    ],
+    "rationale": "This five-lesson specialist course uses realistic scenarios to connect agriculture, food systems, malnutrition and nutrition-sensitive policy and programmes, and it includes a final assessed digital badge. Its systems-level nutrition role is distinct from the clinical-research survivors.",
+    "flags": [
+      "nutrition",
+      "food-systems",
+      "specialist-policy",
+      "assessed",
+      "digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-ibm-skillsbuild-cybersecurity-fundamentals",
+    "candidate_id": "ibm-skillsbuild-cybersecurity-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://skillsbuild.org/learning-catalog?topic=security",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild digital credential after completing the pathway and passing the final assessment",
+    "completeness": "complete",
+    "evidence": [
+      "https://skillsbuild.org/learning-catalog?topic=security",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/cybersecurity-fundamentals"
+    ],
+    "rationale": "The current IBM pathway is roughly seven hours and spans threat actors, attacks, social engineering, cryptography, prevention, detection, response, careers and emerging AI impacts, with an 80%-threshold industry credential. That breadth clears the foundational cybersecurity bar.",
+    "flags": [
+      "cybersecurity-foundations",
+      "7-hours",
+      "industry-credential",
+      "assessed",
+      "multilingual-provider"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-tghn-introduction-gclp",
+    "candidate_id": "tghn-introduction-gclp",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://globalhealthtrainingcentre.tghn.org/good-clinical-laboratory-practice/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free certificate after achieving at least 80% in the final quiz",
+    "completeness": "complete",
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/good-clinical-laboratory-practice/"
+    ],
+    "rationale": "Although only about 60–120 minutes, this is a tightly scoped professional standards course rather than a broad introduction. It directly applies GCLP principles to clinical-trial laboratories, requires prior GCP knowledge and verifies completion through an 80% final quiz.",
+    "flags": [
+      "professional-specialist",
+      "clinical-laboratory-practice",
+      "assessed",
+      "free-certificate",
+      "prerequisite-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-whoacademy-chemical-hazards-part-2",
+    "candidate_id": "whoacademy-chemical-hazards-part-2",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://whoacademy.org/coursewares/course-v1%3AWHOA%2B0037B_CHEMHAZ_EN%2B2024?source=edX",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal credential independently verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.who.int/news/item/06-06-2025-new-who-online-course-series-strengthens-readiness-for-chemical-hazards"
+    ],
+    "rationale": "WHO launched this course in 2025 as the second part of a current four-part chemical-hazards sequence. It teaches interpretation of environmental, clinical and classification evidence for early incident assessment, adding a distinct professional emergency-readiness role.",
+    "flags": [
+      "chemical-hazards",
+      "current-2025-series",
+      "professional-specialist",
+      "series-member",
+      "credential-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-openlearn-living-psychology-animal-minds",
+    "candidate_id": "openlearn-living-psychology-animal-minds",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0"
+    ],
+    "rationale": "This 12-hour intermediate comparative-psychology course is methodologically richer than a simple sampler, but it was last updated in 2018 and discusses empirical animal-cognition and Theory-of-Mind research where the evidence base has continued to move. Hold for scientific-currency review.",
+    "flags": [
+      "comparative-psychology",
+      "animal-cognition",
+      "12-hours",
+      "last-updated-2018",
+      "scientific-currency-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-openlearn-introduction-child-psychology",
+    "candidate_id": "openlearn-introduction-child-psychology",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/childhood-youth/introduction-child-psychology",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/childhood-youth/introduction-child-psychology"
+    ],
+    "rationale": "The eight-hour course is explicitly an adapted extract from a broader Open University module and was last updated in 2020. Its introductory developmental-psychology coverage is both narrower and less current than stronger psychology survivors already in the pool.",
+    "flags": [
+      "adapted-extract",
+      "introductory-depth",
+      "last-updated-2020",
+      "redundancy-risk",
+      "psychology-currency-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-openlearn-open-education",
+    "candidate_id": "openlearn-open-education",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/open-education/content-section-0?intro=1",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/open-education/content-section-0?active-tab=content-tab"
+    ],
+    "rationale": "The seven-week course was first published in 2012 and centres on OER, MOOCs and open-course practice from an era before major changes in platform economics, generative AI, licensing practice and digital pedagogy. Its historical value does not outweigh avoidable currency risk.",
+    "flags": [
+      "open-education",
+      "published-2012",
+      "dated-digital-pedagogy",
+      "currency-risk"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-openlearn-teaching-learning-tricky-topics",
+    "candidate_id": "openlearn-teaching-learning-tricky-topics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/education/teaching-and-learning-tricky-topics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/learning/teaching-and-learning-tricky-topics/content-section-overview"
+    ],
+    "rationale": "This 24-hour eight-week intermediate course is practice-led rather than merely theoretical: it develops threshold-concept diagnosis, needs analysis, structured mapping, quiz design and learning-design interventions with weekly activities and a free badge.",
+    "flags": [
+      "24-hours",
+      "eight-weeks",
+      "practice-led",
+      "threshold-concepts",
+      "badged-course"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-11-nau-gestao-vendas",
+    "candidate_id": "nau-gestao-vendas",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/gestao-de-vendas/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU completion certificate at a stated threshold of 50%",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/gestao-de-vendas/"
+    ],
+    "rationale": "The current pt-PT course is well structured across five modules and has assessed certification, but at only two hours it is too shallow to displace the stronger sales and marketing survivors already present. Language coverage alone is not sufficient for advancement.",
+    "flags": [
+      "pt-pt",
+      "2-hours",
+      "sales",
+      "limited-depth",
+      "redundancy-risk",
+      "free-certificate"
+    ],
+    "is_current": true
+  }
+]
