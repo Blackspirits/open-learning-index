@@ -7,13 +7,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learningmusic.ableton.com/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://learningmusic.ableton.com/"],
+    "evidence": [
+      "https://learningmusic.ableton.com/"
+    ],
     "rationale": "Browser-native interactive teaching turns rhythm, harmony, basslines, melody and structure into direct practice, giving the course unusually strong experiential pedagogy for beginners.",
-    "flags": ["language-variants-review", "no-formal-credential"],
+    "flags": [
+      "language-variants-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -24,13 +31,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learningsynths.ableton.com/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://learningsynths.ableton.com/"],
+    "evidence": [
+      "https://learningsynths.ableton.com/"
+    ],
     "rationale": "Interactive sound manipulation provides a materially different and practice-led route into synthesis fundamentals rather than a passive reference or video-only tutorial sequence.",
-    "flags": ["language-metadata-incomplete", "no-formal-credential"],
+    "flags": [
+      "language-metadata-incomplete",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -41,13 +55,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.musictheory.net/lessons",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://www.musictheory.net/lessons"],
+    "evidence": [
+      "https://www.musictheory.net/lessons"
+    ],
     "rationale": "The structured sequence spans notation, rhythm, scales, intervals, chords and harmonic analysis and is paired with interactive exercises, so it merits deeper comparison with university alternatives.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -58,13 +78,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://studio.blender.org/training/blender-fundamentals-45-lts/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://studio.blender.org/training/blender-fundamentals-45-lts/"],
+    "evidence": [
+      "https://studio.blender.org/training/blender-fundamentals-45-lts/"
+    ],
     "rationale": "Official current Blender 4.5 LTS instruction covers the full core 3D workflow and includes practical assignments, making it a strong practice-led candidate despite no certificate.",
-    "flags": ["software-version-sensitive", "no-formal-credential"],
+    "flags": [
+      "software-version-sensitive",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -75,13 +102,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free OpenLearn statement of participation",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory"],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory"
+    ],
     "rationale": "Its university-level structured theory pathway, quizzes and free completion recognition remain strong; the 2019 update date is not itself disqualifying for stable core music theory.",
-    "flags": ["pedagogy-comparison-needed"],
+    "flags": [
+      "pedagogy-comparison-needed"
+    ],
     "is_current": true
   },
   {
@@ -92,14 +125,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.canva.com/design-school/courses/canva-essentials",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Canva Design School digital certification",
     "completeness": "complete",
-    "evidence": ["https://www.canva.com/design-school/courses/canva-essentials"],
+    "evidence": [
+      "https://www.canva.com/design-school/courses/canva-essentials"
+    ],
     "rationale": "The course is current, practical and certified, but it is primarily tool-specific; advancement depends on whether it adds enough transferable design learning beyond Canva workflow training.",
-    "flags": ["vendor-tool-specific", "transferability-review"],
-    "is_current": true
+    "flags": [
+      "vendor-tool-specific",
+      "transferability-review"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-04-canva-graphic-design-essentials",
@@ -109,13 +149,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.canva.com/design-school/courses/graphic-design-essentials",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Canva Design School digital certification",
     "completeness": "complete",
-    "evidence": ["https://www.canva.com/design-school/courses/graphic-design-essentials"],
+    "evidence": [
+      "https://www.canva.com/design-school/courses/graphic-design-essentials"
+    ],
     "rationale": "Typography, colour, composition and design-principle instruction is more transferable than pure product onboarding, and the free assessment/certification route justifies deep review.",
-    "flags": ["vendor-authored"],
+    "flags": [
+      "vendor-authored"
+    ],
     "is_current": true
   },
   {
@@ -126,13 +172,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.figma.com/resource-library/getting-started-in-design/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://www.figma.com/resource-library/getting-started-in-design/"],
+    "evidence": [
+      "https://www.figma.com/resource-library/getting-started-in-design/"
+    ],
     "rationale": "The curriculum reaches beyond product onboarding into research, ethics, accessibility, UI systems and prototyping with hands-on exercises, making it a plausible design finalist.",
-    "flags": ["vendor-authored", "no-formal-credential"],
+    "flags": [
+      "vendor-authored",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -143,13 +196,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.khanacademy.org/pixar",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal course certificate verified",
     "completeness": "complete",
-    "evidence": ["https://www.khanacademy.org/pixar"],
+    "evidence": [
+      "https://www.khanacademy.org/pixar"
+    ],
     "rationale": "Project-based animation lessons connect storytelling, modelling, rigging, simulation, lighting and rendering with mathematics and science, providing unusually broad creative-technical practice.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -160,13 +219,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://graphics.stanford.edu/courses/cs178/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No public completion credential",
     "completeness": "substantive",
-    "evidence": ["https://graphics.stanford.edu/courses/cs178/"],
+    "evidence": [
+      "https://graphics.stanford.edu/courses/cs178/"
+    ],
     "rationale": "The intellectual content is strong, but obsolete Flash-era components and legacy delivery create substantial usability friction that is avoidable in a current best-of-world learning index.",
-    "flags": ["obsolete-tooling", "legacy-usability", "no-formal-credential"],
+    "flags": [
+      "obsolete-tooling",
+      "legacy-usability",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -177,13 +244,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/complete-spanish",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": ["https://www.languagetransfer.org/complete-spanish"],
+    "evidence": [
+      "https://www.languagetransfer.org/complete-spanish"
+    ],
     "rationale": "The complete reasoning-led audio method is pedagogically distinctive and avoids rote phrase memorisation, giving it enough depth and originality to justify deep language-learning review.",
-    "flags": ["audio-first", "no-formal-credential"],
+    "flags": [
+      "audio-first",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -194,13 +268,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/greek",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": ["https://www.languagetransfer.org/greek"],
+    "evidence": [
+      "https://www.languagetransfer.org/greek"
+    ],
     "rationale": "A complete freely downloadable Greek course using active structural reasoning is distinctive enough to survive screening despite lacking formal assessment or certification.",
-    "flags": ["audio-first", "no-formal-credential"],
+    "flags": [
+      "audio-first",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -211,13 +292,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/swahili",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": ["https://www.languagetransfer.org/swahili"],
+    "evidence": [
+      "https://www.languagetransfer.org/swahili"
+    ],
     "rationale": "The complete guided-reasoning Swahili sequence broadens language diversity and offers a coherent full course rather than a short sampler, so it merits deeper review.",
-    "flags": ["audio-first", "no-formal-credential"],
+    "flags": [
+      "audio-first",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -228,13 +316,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/french",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "partial",
-    "evidence": ["https://www.languagetransfer.org/french"],
+    "evidence": [
+      "https://www.languagetransfer.org/french"
+    ],
     "rationale": "The method is strong but this is explicitly an introductory rather than complete curriculum, and stronger full French pathways already exist in the candidate pool.",
-    "flags": ["introductory-scope", "redundancy-risk"],
+    "flags": [
+      "introductory-scope",
+      "redundancy-risk"
+    ],
     "is_current": true
   },
   {
@@ -245,13 +340,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/italian",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "partial",
-    "evidence": ["https://www.languagetransfer.org/italian"],
+    "evidence": [
+      "https://www.languagetransfer.org/italian"
+    ],
     "rationale": "Its reasoning-led pedagogy is useful, but the explicitly introductory scope is too limited for the selective finalist pool when the project is ranking complete learning experiences.",
-    "flags": ["introductory-scope"],
+    "flags": [
+      "introductory-scope"
+    ],
     "is_current": true
   },
   {
@@ -262,13 +363,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/turkish",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "partial",
-    "evidence": ["https://www.languagetransfer.org/turkish"],
+    "evidence": [
+      "https://www.languagetransfer.org/turkish"
+    ],
     "rationale": "The course teaches structural reasoning well but remains an introductory sequence rather than a complete pathway, so it does not clear the depth threshold for final review.",
-    "flags": ["introductory-scope"],
+    "flags": [
+      "introductory-scope"
+    ],
     "is_current": true
   },
   {
@@ -279,14 +386,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/arabic",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "partial",
-    "evidence": ["https://www.languagetransfer.org/arabic"],
+    "evidence": [
+      "https://www.languagetransfer.org/arabic"
+    ],
     "rationale": "The reasoning-led approach is promising, but shallow review must resolve both limited scope and which Arabic variety is actually taught before deciding whether it fills a unique gap.",
-    "flags": ["introductory-scope", "language-variety-unresolved"],
-    "is_current": true
+    "flags": [
+      "introductory-scope",
+      "language-variety-unresolved"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-04-language-transfer-complete-german-unfinished",
@@ -296,13 +410,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.languagetransfer.org/german",
     "observed_free_access": "F3_PARTIAL_OR_TRIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "partial",
-    "evidence": ["https://www.languagetransfer.org/german"],
+    "evidence": [
+      "https://www.languagetransfer.org/german"
+    ],
     "rationale": "The provider explicitly describes Complete German as unfinished, so the experience fails the project's completeness and F3 main-ranking eligibility requirements regardless of lesson quality.",
-    "flags": ["unfinished", "f3-ineligible"],
+    "flags": [
+      "unfinished",
+      "f3-ineligible"
+    ],
     "is_current": true
   },
   {
@@ -313,13 +434,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://minato-jf.jp/CourseDetail/Index/KC26_MGRS_A101_EN01",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No free formal credential confirmed during screening",
     "completeness": "complete",
-    "evidence": ["https://minato-jf.jp/CourseDetail/Index/KC26_MGRS_A101_EN01"],
+    "evidence": [
+      "https://minato-jf.jp/CourseDetail/Index/KC26_MGRS_A101_EN01"
+    ],
     "rationale": "A structured forty-eight-hour A1 Japanese pathway covers all four skills with assignments and tests, giving it substantially more depth than vocabulary-app style resources.",
-    "flags": ["time-limited-access-after-start", "credential-unconfirmed"],
+    "flags": [
+      "time-limited-access-after-start",
+      "credential-unconfirmed"
+    ],
     "is_current": true
   },
   {
@@ -330,13 +458,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://apprendre.tv5monde.com/en/collection-all",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["fr"],
+    "instruction_languages": [
+      "fr"
+    ],
     "subtitle_languages": [],
     "credential": "No formal completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://apprendre.tv5monde.com/en/collection-all"],
+    "evidence": [
+      "https://apprendre.tv5monde.com/en/collection-all"
+    ],
     "rationale": "Hundreds of authentic-video beginner exercises inside a broader A1–B2 platform provide substantial target-language exposure and practice, making it a strong free French-learning candidate.",
-    "flags": ["canonical-path-review", "no-formal-credential"],
+    "flags": [
+      "canonical-path-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -347,13 +482,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learngerman.dw.com/en/nicos-weg/c-36519789",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["de"],
+    "instruction_languages": [
+      "de"
+    ],
     "subtitle_languages": [],
     "credential": "No formal free completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://learngerman.dw.com/en/nicos-weg/c-36519789"],
+    "evidence": [
+      "https://learngerman.dw.com/en/nicos-weg/c-36519789"
+    ],
     "rationale": "The story-driven A1–B1 sequence combines video, grammar, vocabulary and extensive interactive practice over multiple CEFR levels, clearly passing the completeness threshold.",
-    "flags": ["interface-languages-review", "no-formal-credential"],
+    "flags": [
+      "interface-languages-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -364,13 +506,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/prdv211",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Saylor course-completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/prdv211"],
+    "evidence": [
+      "https://learn.saylor.org/course/prdv211"
+    ],
     "rationale": "A broad communication-theory and practice course with structured assessment and free certification adds a general foundation distinct from the narrower professional-writing pathways.",
-    "flags": ["curated-oer"],
+    "flags": [
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -381,13 +529,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=870",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Saylor course-completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/view.php?id=870"],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=870"
+    ],
     "rationale": "The course covers audience analysis, structure, evidence, delivery, visual aids, online speaking and anxiety management with assessment, making it a coherent specialist path.",
-    "flags": ["curated-oer"],
+    "flags": [
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -398,13 +552,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=749",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Saylor course-completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/view.php?id=749"],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=749"
+    ],
     "rationale": "Crisis preparation, social-media response, strategic messaging and crisis-plan writing form a distinct applied communication pathway with assessment and free completion recognition.",
-    "flags": ["curated-oer", "currency-review"],
+    "flags": [
+      "curated-oer",
+      "currency-review"
+    ],
     "is_current": true
   },
   {
@@ -415,13 +576,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://openclassrooms.com/fr/courses/8634991-decouvrez-le-metier-de-charge-de-communication",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["fr"],
+    "instruction_languages": [
+      "fr"
+    ],
     "subtitle_languages": [],
     "credential": "Course quiz available; free formal certificate not verified",
     "completeness": "substantive",
-    "evidence": ["https://openclassrooms.com/fr/courses/8634991-decouvrez-le-metier-de-charge-de-communication"],
+    "evidence": [
+      "https://openclassrooms.com/fr/courses/8634991-decouvrez-le-metier-de-charge-de-communication"
+    ],
     "rationale": "The material is useful career orientation and communication overview, but it is less pedagogically deep than the specialist communication courses already surviving screening.",
-    "flags": ["career-orientation", "redundancy-risk"],
+    "flags": [
+      "career-orientation",
+      "redundancy-risk"
+    ],
     "is_current": true
   }
 ]
