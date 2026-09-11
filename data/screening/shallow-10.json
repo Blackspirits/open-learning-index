@@ -404,7 +404,7 @@
       "completeness-unverified",
       "credential-unverified"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-freecodecamp-a2-professional-spanish",
@@ -458,7 +458,7 @@
       "completeness-unverified",
       "credential-unverified"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-wipo-ip-panorama-2",
