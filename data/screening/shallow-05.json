@@ -7,13 +7,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; MIT OpenCourseWare materials",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/"
+    ],
     "rationale": "Purpose-built independent-study mechanics with lectures, worked problems and assessment material remains a serious foundational physics candidate despite lacking a credential.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -24,13 +30,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; MIT OpenCourseWare materials",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/"
+    ],
     "rationale": "The self-study chemistry package includes substantial teaching, problem sets and exam solutions, so its age does not justify shallow rejection before scientific-currency comparison.",
-    "flags": ["archive-course", "science-currency-review", "no-formal-credential"],
+    "flags": [
+      "archive-course",
+      "science-currency-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -41,13 +55,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; MIT OpenCourseWare materials",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/"
+    ],
     "rationale": "Molecular and cellular biology is taught through a complete university sequence with recitations, assignments and exams, warranting deep review against newer mastery-based alternatives.",
-    "flags": ["science-currency-review", "no-formal-credential"],
+    "flags": [
+      "science-currency-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -58,13 +79,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; Open Yale course materials",
     "completeness": "complete",
-    "evidence": ["https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122"],
+    "evidence": [
+      "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122"
+    ],
     "rationale": "The course is broad and academically strong, but evolutionary biology and ecology have accumulated meaningful evidence since the archive recording, so currency must be checked before deep-review admission.",
-    "flags": ["archive-course", "science-currency-review"],
+    "flags": [
+      "archive-course",
+      "science-currency-review"
+    ],
     "is_current": true
   },
   {
@@ -75,13 +103,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/bio101",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Saylor course-completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/bio101"],
+    "evidence": [
+      "https://learn.saylor.org/course/bio101"
+    ],
     "rationale": "A substantial molecular and cellular biology curriculum with structured assessment, final exam and free completion certificate merits direct comparison with MIT and Khan alternatives.",
-    "flags": ["curated-oer", "science-currency-review"],
+    "flags": [
+      "curated-oer",
+      "science-currency-review"
+    ],
     "is_current": true
   },
   {
@@ -92,13 +127,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=1238",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Free Saylor course-completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/view.php?id=1238"],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1238"
+    ],
     "rationale": "The long-form general chemistry pathway has structured assessment and free certification, giving it enough substance to compete with stronger-brand university materials in deep review.",
-    "flags": ["curated-oer", "science-currency-review"],
+    "flags": [
+      "curated-oer",
+      "science-currency-review"
+    ],
     "is_current": true
   },
   {
@@ -109,13 +151,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://science.nasa.gov/open-science/training/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "NASA Open Science 101 digital badge and certificate",
     "completeness": "complete",
-    "evidence": ["https://science.nasa.gov/open-science/training/"],
+    "evidence": [
+      "https://science.nasa.gov/open-science/training/"
+    ],
     "rationale": "Current, authoritative training in reproducible and ethical open-science practice with assessment and recognition fills a distinct scientific-practice role rather than duplicating a subject survey.",
-    "flags": ["taxonomy-fit-review"],
+    "flags": [
+      "taxonomy-fit-review"
+    ],
     "is_current": true
   },
   {
@@ -126,13 +174,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.khanacademy.org/ap-biology",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal course certificate verified",
     "completeness": "complete",
-    "evidence": ["https://www.khanacademy.org/ap-biology"],
+    "evidence": [
+      "https://www.khanacademy.org/ap-biology"
+    ],
     "rationale": "Broad biology coverage combined with mastery practice, quizzes, unit tests and a course challenge gives independent learners stronger formative assessment than many archive courses.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -143,13 +197,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.khanacademy.org/science/ap-chemistry-beta",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal course certificate verified",
     "completeness": "complete",
-    "evidence": ["https://www.khanacademy.org/science/ap-chemistry-beta"],
+    "evidence": [
+      "https://www.khanacademy.org/science/ap-chemistry-beta"
+    ],
     "rationale": "A mastery-enabled chemistry curriculum with extensive skills practice, quizzes and unit tests is complete enough to merit head-to-head review against MIT and Saylor chemistry paths.",
-    "flags": ["beta-label-review", "no-formal-credential"],
+    "flags": [
+      "beta-label-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -160,13 +221,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; MIT OpenCourseWare materials",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/"
+    ],
     "rationale": "The integrated software, circuits, signals, control and robotics curriculum includes substantial laboratory work and remains unusually broad, so it survives despite archive age.",
-    "flags": ["archive-course", "tooling-currency-review", "no-formal-credential"],
+    "flags": [
+      "archive-course",
+      "tooling-currency-review",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -177,13 +246,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.nordicsemi.com/courses/nrf-connect-sdk-fundamentals/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Nordic Developer Academy completion certificate",
     "completeness": "complete",
-    "evidence": ["https://academy.nordicsemi.com/courses/nrf-connect-sdk-fundamentals/"],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/nrf-connect-sdk-fundamentals/"
+    ],
     "rationale": "Current hands-on embedded development covers Zephyr RTOS, devicetree, Kconfig, peripherals and concurrency with quizzes and certification, providing strong practical depth.",
-    "flags": ["hardware-required-for-full-practice", "vendor-ecosystem"],
+    "flags": [
+      "hardware-required-for-full-practice",
+      "vendor-ecosystem"
+    ],
     "is_current": true
   },
   {
@@ -194,13 +270,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Nordic Developer Academy completion certificate",
     "completeness": "complete",
-    "evidence": ["https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/"],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/"
+    ],
     "rationale": "Protocol fundamentals are tied to real firmware exercises, quizzes and certification; hardware cost is a practical-access penalty to score later rather than an automatic shallow rejection.",
-    "flags": ["hardware-required-for-full-practice", "vendor-ecosystem"],
+    "flags": [
+      "hardware-required-for-full-practice",
+      "vendor-ecosystem"
+    ],
     "is_current": true
   },
   {
@@ -211,14 +294,22 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Nordic Developer Academy completion certificate",
     "completeness": "complete",
-    "evidence": ["https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/"],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/"
+    ],
     "rationale": "The educational path is complete and certified, but full LTE-M/NB-IoT practice may depend on specific hardware and connectivity, so the true zero-cost learner journey requires verification.",
-    "flags": ["hardware-required-for-full-practice", "connectivity-cost-review", "vendor-ecosystem"],
-    "is_current": true
+    "flags": [
+      "hardware-required-for-full-practice",
+      "connectivity-cost-review",
+      "vendor-ecosystem"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-05-nordic-wifi-fundamentals",
@@ -228,14 +319,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.nordicsemi.com/courses/wi-fi-fundamentals/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Nordic Developer Academy completion certificate",
     "completeness": "complete",
-    "evidence": ["https://academy.nordicsemi.com/courses/wi-fi-fundamentals/"],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/wi-fi-fundamentals/"
+    ],
     "rationale": "The course appears pedagogically complete, but its practical value is closely tied to supported development hardware; independent-learner completion without additional purchase needs explicit verification.",
-    "flags": ["hardware-required-for-full-practice", "vendor-ecosystem"],
-    "is_current": true
+    "flags": [
+      "hardware-required-for-full-practice",
+      "vendor-ecosystem"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-05-nordic-matter-fundamentals",
@@ -245,14 +343,22 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.nordicsemi.com/courses/matter-fundamentals/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "Nordic Developer Academy completion certificate",
     "completeness": "complete",
-    "evidence": ["https://academy.nordicsemi.com/courses/matter-fundamentals/"],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/matter-fundamentals/"
+    ],
     "rationale": "Matter is current and relevant, but the course is both hardware- and vendor-ecosystem dependent; deep-review admission should wait until practical completion requirements are fully mapped.",
-    "flags": ["hardware-required-for-full-practice", "vendor-ecosystem", "fast-moving-standard"],
-    "is_current": true
+    "flags": [
+      "hardware-required-for-full-practice",
+      "vendor-ecosystem",
+      "fast-moving-standard"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-05-harvard-stat110-probability",
@@ -262,13 +368,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://stat110.hsites.harvard.edu/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal free completion credential verified",
     "completeness": "complete",
-    "evidence": ["https://stat110.hsites.harvard.edu/"],
+    "evidence": [
+      "https://stat110.hsites.harvard.edu/"
+    ],
     "rationale": "Full lectures, extensive problem material and a free companion text make Stat 110 a rigorous probability benchmark that clearly deserves deep comparison despite no credential.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -279,13 +391,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; MIT OpenCourseWare materials",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/"
+    ],
     "rationale": "Rigorous statistical foundations, applications and assignment material provide enough depth for direct comparison with Harvard and MIT interactive probability/statistics alternatives.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -296,13 +414,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No formal certificate verified; interactive assessment and progress tracking available",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/"
+    ],
     "rationale": "Independent-study design, interactive questions and problem checking combine rigorous mathematics with unusually strong learner feedback, making it a likely high-tier contender.",
-    "flags": ["no-formal-credential"],
+    "flags": [
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -313,13 +437,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "No certificate; MIT OpenCourseWare materials",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/"
+    ],
     "rationale": "A proof-oriented package with lecture videos, recitations, assignments and exams provides a complete advanced mathematics experience and warrants deep review despite high prerequisites.",
-    "flags": ["advanced-prerequisites", "no-formal-credential"],
+    "flags": [
+      "advanced-prerequisites",
+      "no-formal-credential"
+    ],
     "is_current": true
   },
   {
@@ -330,13 +461,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://matlabacademy.mathworks.com/details/optimization-onramp/optim",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "MathWorks course certificate",
     "completeness": "complete",
-    "evidence": ["https://matlabacademy.mathworks.com/details/optimization-onramp/optim", "https://www.mathworks.com/learn/training/online-courses-faq.html"],
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/optimization-onramp/optim",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
     "rationale": "Browser-based optimisation exercises, automated feedback and a free certificate give the course strong accessibility and practice value; MATLAB dependence is a scoring factor rather than a shallow failure.",
-    "flags": ["vendor-tool-specific", "transferability-review"],
+    "flags": [
+      "vendor-tool-specific",
+      "transferability-review"
+    ],
     "is_current": true
   }
 ]
