@@ -1,0 +1,763 @@
+[
+  {
+    "screen_id": "shallow-07-mit-6-0001-python",
+    "candidate_id": "mit-6-0001-python",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"
+    ],
+    "rationale": "The pedagogy and problem sets remain strong, but the course explicitly targets Python 3.5; for a best-current-resources index, that avoidable runtime age makes modern introductory alternatives materially preferable.",
+    "flags": [
+      "archive-course",
+      "obsolete-runtime",
+      "redundancy-risk",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-mit-6-006-algorithms",
+    "candidate_id": "mit-6-006-algorithms",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+    ],
+    "rationale": "Algorithms and data-structure fundamentals are comparatively stable, and the complete package of lectures, recitations, problem sets, solutions, exams and programming work remains deep enough for direct finalist comparison.",
+    "flags": [
+      "archive-course",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-nand2tetris",
+    "candidate_id": "nand2tetris",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nand2tetris.org/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free standalone completion certificate verified; optional platform credentials are separate",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nand2tetris.org/"
+    ],
+    "rationale": "The free twelve-project progression builds a computer and software stack from first principles using openly available lectures, project materials and tools, creating unusually strong integrative practice.",
+    "flags": [
+      "project-based",
+      "no-free-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-odin-foundations",
+    "candidate_id": "odin-foundations",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.theodinproject.com/paths/foundations/courses/foundations",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.theodinproject.com/paths/foundations/courses/foundations"
+    ],
+    "rationale": "A coherent hands-on introduction to command line, Git, HTML, CSS and JavaScript culminates in multiple real projects, making it substantially more useful than passive beginner web tutorials.",
+    "flags": [
+      "project-based",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-odin-full-stack-javascript",
+    "candidate_id": "odin-full-stack-javascript",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.theodinproject.com/paths/full-stack-javascript",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.theodinproject.com/paths/full-stack-javascript"
+    ],
+    "rationale": "The long-form path spans advanced HTML/CSS, JavaScript, React, databases and Node with many portfolio projects, giving the pool a current end-to-end web-development curriculum.",
+    "flags": [
+      "project-based",
+      "web-stack-currency-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-unity-junior-programmer",
+    "candidate_id": "unity-junior-programmer",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.unity.com/pathway/junior-programmer",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Unity Learn pathway badge / digital credential after completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.unity.com/pathway/junior-programmer"
+    ],
+    "rationale": "The current Unity 6.3 pathway combines C# programming, debugging, optimisation, version control and multiple projects over an estimated twelve weeks, with completion recognition.",
+    "flags": [
+      "vendor-tool-specific",
+      "software-version-sensitive",
+      "project-based"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-saylor-cs101-programming-i",
+    "candidate_id": "saylor-cs101-programming-i",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/cs101",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/cs101"
+    ],
+    "rationale": "The current Java-based introductory programming course provides a structured twenty-six-hour pathway, assessment and a free completion certificate, warranting comparison with other beginner programming routes.",
+    "flags": [
+      "curated-oer",
+      "language-specific-java"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-freecodecamp-responsive-web-design-v9",
+    "candidate_id": "freecodecamp-responsive-web-design-v9",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/responsive-web-design-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp Responsive Web Design Certification",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/responsive-web-design-v9/"
+    ],
+    "rationale": "The current certification combines structured HTML/CSS instruction with workshops, labs and portfolio-style projects, providing a fully free assessed route rather than a tutorial collection.",
+    "flags": [
+      "project-based",
+      "curriculum-version-sensitive"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-freecodecamp-javascript-v9",
+    "candidate_id": "freecodecamp-javascript-v9",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/javascript-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp JavaScript Certification",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/javascript-v9/"
+    ],
+    "rationale": "The active v9 JavaScript curriculum integrates theory, workshops, labs, quizzes and projects with a free certification path, making it a strong practice-led programming candidate.",
+    "flags": [
+      "project-based",
+      "curriculum-version-sensitive"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-freecodecamp-python-v9",
+    "candidate_id": "freecodecamp-python-v9",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/python-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp Python Certification",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/python-v9/"
+    ],
+    "rationale": "The current Python curriculum replaces older archived material with structured lessons, labs and practical projects plus a free certification route, so it clearly merits deep comparison.",
+    "flags": [
+      "project-based",
+      "curriculum-version-sensitive"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-freecodecamp-relational-databases-v9",
+    "candidate_id": "freecodecamp-relational-databases-v9",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/relational-databases-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp Relational Databases Certification",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/relational-databases-v9/"
+    ],
+    "rationale": "The current relational-database certification emphasises hands-on command-line and database work rather than passive video learning, adding a practical specialist path with free completion recognition.",
+    "flags": [
+      "project-based",
+      "curriculum-version-sensitive"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-mit-missing-semester-2026",
+    "candidate_id": "mit-missing-semester-2026",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://missing.csail.mit.edu/2026/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://missing.csail.mit.edu/2026/"
+    ],
+    "rationale": "The 2026 edition directly addresses shell tooling, Git, debugging, profiling, packaging, agentic coding and code quality, filling practical computing gaps that conventional CS courses often leave untouched.",
+    "flags": [
+      "current-2026",
+      "professional-tooling",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-berkeley-cs61a-fall-2026",
+    "candidate_id": "berkeley-cs61a-fall-2026",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://cs61a.org/fa26/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No public completion credential for independent learners",
+    "completeness": "complete",
+    "evidence": [
+      "https://cs61a.org/fa26/"
+    ],
+    "rationale": "The current Berkeley course publicly exposes substantial readings, slides, videos, labs, homework and projects, leaving enough of the learning path usable independently despite enrolled-student submission services.",
+    "flags": [
+      "institution-services-limited",
+      "current-term-course",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-berkeley-cs61c-fall-2026",
+    "candidate_id": "berkeley-cs61c-fall-2026",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://cs61c.org/fa26/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No public completion credential for independent learners",
+    "completeness": "substantive",
+    "evidence": [
+      "https://cs61c.org/fa26/"
+    ],
+    "rationale": "The public notes, slides, discussions and assignment descriptions are substantial, but central project and lab workflows rely on Berkeley-specific Hive, repository, autograding or submission infrastructure; independent practical completeness needs verification.",
+    "flags": [
+      "institution-infrastructure-required",
+      "public-completeness-review",
+      "current-term-course",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-fun-web-semantique-donnees",
+    "candidate_id": "fun-web-semantique-donnees",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/web-semantique-et-web-de-donnees/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FUN digital badge after successful completion requirements",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/web-semantique-et-web-de-donnees/"
+    ],
+    "rationale": "The French-original Inria course provides seven weeks of semantic-web and linked-data teaching with demonstrations, graded quizzes and exercises plus a free badge, adding specialist and language diversity.",
+    "flags": [
+      "specialist-scope",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-fastai-practical-deep-learning",
+    "candidate_id": "fastai-practical-deep-learning",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://course.fast.ai/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal free completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://course.fast.ai/"
+    ],
+    "rationale": "The project-first pedagogy, notebooks and book remain unusually strong, but the flagship material is from 2022 in a very fast-moving deep-learning ecosystem; framework and model currency should be checked before advancement.",
+    "flags": [
+      "ai-currency-review",
+      "framework-version-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-microsoft-learn-ai-concepts",
+    "candidate_id": "microsoft-learn-ai-concepts",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Microsoft Learn module assessments and profile achievements; no free professional certification exam",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.microsoft.com/en-us/training/paths/ai-concepts/"
+    ],
+    "rationale": "The current seven-module pathway spans generative AI, agents, vision, speech, NLP, extraction and RAG with embedded knowledge checks, giving it broad contemporary foundation value.",
+    "flags": [
+      "vendor-authored",
+      "fast-moving-ai"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-microsoft-learn-develop-ai-agents",
+    "candidate_id": "microsoft-learn-develop-ai-agents",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Microsoft Learn module assessments and profile achievements; no free professional certification exam",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/"
+    ],
+    "rationale": "A current intermediate path covering tools, MCP, knowledge integration, workflows and multi-agent patterns provides timely hands-on agent development material, although Azure dependence will affect transferability scoring.",
+    "flags": [
+      "vendor-ecosystem",
+      "fast-moving-ai",
+      "cloud-dependency-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-microsoft-learn-ai-901",
+    "candidate_id": "microsoft-learn-ai-901",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en",
+      "ar",
+      "zh-CN",
+      "zh-TW",
+      "fr",
+      "de",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "ru",
+      "es"
+    ],
+    "subtitle_languages": [],
+    "credential": "Self-directed course is free; associated professional certification exam is not treated as a free course credential",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.microsoft.com/en-us/training/courses/ai-901t00"
+    ],
+    "rationale": "The one-day course is current and broadly localised, but it is tightly Azure-specific and overlaps the stronger Microsoft AI Concepts pathway; comparative depth and marginal value should be resolved before advancement.",
+    "flags": [
+      "vendor-ecosystem",
+      "short-duration",
+      "redundancy-review",
+      "paid-exam-separate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-ibm-skillsbuild-ai-fundamentals",
+    "candidate_id": "ibm-skillsbuild-ai-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://skillsbuild.org/college-students/course-catalog/artificial-intelligence-fundamentals",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Artificial Intelligence Fundamentals digital credential",
+    "completeness": "complete",
+    "evidence": [
+      "https://skillsbuild.org/college-students/course-catalog/artificial-intelligence-fundamentals"
+    ],
+    "rationale": "A stable course-specific route now resolves the discovery ambiguity, and the structured AI foundations, simulations and recognised free IBM digital credential justify deep review.",
+    "flags": [
+      "vendor-authored",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-ibm-skillsbuild-data-fundamentals",
+    "candidate_id": "ibm-skillsbuild-data-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://skillsbuild.org/college-students/course-catalog/data-fundamentals",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en",
+      "ar",
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Data Fundamentals digital credential",
+    "completeness": "complete",
+    "evidence": [
+      "https://skillsbuild.org/college-students/course-catalog/data-fundamentals"
+    ],
+    "rationale": "The seven-hour course has a stable course-specific path, covers analytics, cleaning, visualisation and data-science methods, and culminates in an IBM digital credential.",
+    "flags": [
+      "vendor-authored",
+      "short-duration",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-mathworks-machine-learning-onramp",
+    "candidate_id": "mathworks-machine-learning-onramp",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/machine-learning-onramp/machinelearning",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/machine-learning-onramp/machinelearning"
+    ],
+    "rationale": "Browser-native classification exercises, automated feedback and a free certificate create a strong practical introduction to the ML workflow; MATLAB dependence is a later transferability factor rather than a shallow failure.",
+    "flags": [
+      "vendor-tool-specific",
+      "transferability-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-mathworks-deep-learning-onramp",
+    "candidate_id": "mathworks-deep-learning-onramp",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning"
+    ],
+    "rationale": "The interactive browser course teaches image classification, pretrained networks and transfer learning with automated feedback and free certification, giving it useful hands-on value despite MATLAB specificity.",
+    "flags": [
+      "vendor-tool-specific",
+      "fast-moving-ai",
+      "transferability-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-cisco-introduction-data-science",
+    "candidate_id": "cisco-introduction-data-science",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.netacad.com/courses/introduction-data-science",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Cisco Networking Academy digital badge after successful completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.netacad.com/courses/introduction-data-science"
+    ],
+    "rationale": "The six-hour introductory course combines practice labs, videos, knowledge checks, quizzes and a final exam with a free badge, making it a compact but genuinely assessed entry point.",
+    "flags": [
+      "short-duration",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-cisco-data-analytics-essentials",
+    "candidate_id": "cisco-data-analytics-essentials",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.netacad.com/courses/data-analytics-essentials",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Cisco Networking Academy Data Analytics Essentials digital badge",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.netacad.com/courses/data-analytics-essentials"
+    ],
+    "rationale": "Roughly thirty hours of applied analytics across Excel, SQL and Tableau with labs, module exams and a final exam provides enough depth and assessment to be a serious practical contender.",
+    "flags": [
+      "tool-specific-components",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-nau-inteligencia-artificial-machine-learning",
+    "candidate_id": "nau-inteligencia-artificial-machine-learning",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/inteligencia-artificial-e-machine-learning/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Academia Portugal Digital / NAU digital certificate after completion requirements",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/inteligencia-artificial-e-machine-learning/"
+    ],
+    "rationale": "The eight-hour bilingual pt-PT/English course covers supervised, unsupervised and reinforcement learning, deep learning, evaluation, applications and ethics with mandatory tests and a final assessment.",
+    "flags": [
+      "pt-pt",
+      "fast-moving-ai",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-nau-introducao-inteligencia-artificial",
+    "candidate_id": "nau-introducao-inteligencia-artificial",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/introducao-a-inteligencia-artificial/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Academia Portugal Digital / NAU digital certificate after completion requirements",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/introducao-a-inteligencia-artificial/"
+    ],
+    "rationale": "Although short, the three-hour bilingual pt-PT/English introduction combines foundations, learning techniques, neural networks, NLP, ethics and mandatory assessment, filling a valuable localisation gap.",
+    "flags": [
+      "pt-pt",
+      "short-duration",
+      "fast-moving-ai",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-huggingface-audio-course",
+    "candidate_id": "huggingface-audio-course",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://huggingface.co/learn/audio-course/chapter0/introduction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Hugging Face completion certificate at the stated threshold, with an excellence tier for full completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://huggingface.co/learn/audio-course/chapter0/introduction",
+      "https://huggingface.co/learn/audio-course/chapter8/certification"
+    ],
+    "rationale": "The course is hands-on and fully open with free certification, but it dates from a 2023-era audio-transformer stack; model, library and notebook currency should be checked before it consumes a deep-review slot.",
+    "flags": [
+      "ai-currency-review",
+      "library-version-review",
+      "credential-bearing"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-huggingface-agents-course",
+    "candidate_id": "huggingface-agents-course",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en",
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Hugging Face fundamentals or full-course certification according to completion path",
+    "completeness": "complete",
+    "evidence": [
+      "https://huggingface.co/learn/agents-course/en/unit0/introduction"
+    ],
+    "rationale": "The actively maintained course combines agent foundations, frameworks, agentic RAG, hands-on assignments and a final challenge with completely free certification, making it a high-value current contender.",
+    "flags": [
+      "fast-moving-ai",
+      "living-course",
+      "credential-bearing",
+      "language-variants-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-07-huggingface-deep-rl-course",
+    "candidate_id": "huggingface-deep-rl-course",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://huggingface.co/learn/deep-rl-course/en/unit0/introduction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Hugging Face completion and honours certificates remain described by the course",
+    "completeness": "substantive",
+    "evidence": [
+      "https://huggingface.co/learn/deep-rl-course/en/unit0/introduction"
+    ],
+    "rationale": "Most theory and practical material remains accessible, but the provider now labels the course low-maintenance and explicitly notes a non-functional unit and retired leaderboard; usable completion must be mapped before advancement.",
+    "flags": [
+      "low-maintenance",
+      "broken-course-feature",
+      "ai-currency-review",
+      "completeness-review"
+    ],
+    "is_current": true
+  }
+]
