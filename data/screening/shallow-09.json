@@ -1,0 +1,820 @@
+[
+  {
+    "screen_id": "shallow-09-mit-6-042j-math-cs",
+    "candidate_id": "mit-6-042j-math-cs",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"
+    ],
+    "rationale": "A rigorous discrete-mathematics foundation for computing with lecture videos, an open textbook, problem sets and exams; the core material is stable and fills a distinct role not covered by the existing probability/statistics survivors.",
+    "flags": [
+      "stable-foundations",
+      "discrete-mathematics",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mit-18-01sc-calculus",
+    "candidate_id": "mit-18-01sc-calculus",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/"
+    ],
+    "rationale": "This independent-study edition combines lectures, recitations, worked examples, problem sets and exams with solutions; single-variable calculus is stable enough that the 2010 date does not materially weaken the learning package.",
+    "flags": [
+      "self-study-designed",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mit-18-02sc-multivariable-calculus",
+    "candidate_id": "mit-18-02sc-multivariable-calculus",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/"
+    ],
+    "rationale": "The self-study sequence supplies lecture videos, notes, problem sets, exams and solutions across multivariable and vector calculus, giving independent learners a complete and still-current mathematical progression.",
+    "flags": [
+      "self-study-designed",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mit-18-03sc-differential-equations",
+    "candidate_id": "mit-18-03sc-differential-equations",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/"
+    ],
+    "rationale": "Lecture and problem-solving videos, notes, problem sets and exams form a purpose-built self-study route through differential equations for science and engineering; the underlying mathematics remains stable.",
+    "flags": [
+      "self-study-designed",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-cmu-oli-probability-statistics",
+    "candidate_id": "cmu-oli-probability-statistics",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.cmu.edu/corecompetencies/infodataliteracy/resources-and-tools/probabilityandstatistics/index.html",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.cmu.edu/corecompetencies/infodataliteracy/resources-and-tools/probabilityandstatistics/index.html",
+      "https://oli.cmu.edu/"
+    ],
+    "rationale": "The current CMU page documents interactive simulations, tutors and targeted feedback, but its learner-access instructions are oriented toward educator setup while surfaced direct OLI registration evidence is legacy-dated; independent free access must be re-verified.",
+    "flags": [
+      "access-path-review",
+      "interactive-learning",
+      "redundancy-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-cmu-oli-statistical-reasoning",
+    "candidate_id": "cmu-oli-statistical-reasoning",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.cmu.edu/corecompetencies/infodataliteracy/resources-and-tools/statisticalreasoning/index.html",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal credential verified; open-and-free independent learner access",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.cmu.edu/corecompetencies/infodataliteracy/resources-and-tools/statisticalreasoning/index.html",
+      "https://oli.cmu.edu/jcourse/webui/guest/join.do?section=statreasoning"
+    ],
+    "rationale": "Twelve modules combine simulations, worked walk-throughs, computer tutors, hints and immediate feedback, and CMU still exposes an Open + Free independent-learner route; this is pedagogically distinct from lecture-heavy statistics courses.",
+    "flags": [
+      "interactive-learning",
+      "open-free-registration"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-khan-statistics-probability",
+    "candidate_id": "khan-statistics-probability",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.khanacademy.org/math/statistics-probability/statistics-probability",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.khanacademy.org/math/statistics-probability/statistics-probability"
+    ],
+    "rationale": "The broad statistics and probability curriculum remains actively available with mastery points, quizzes, unit tests and a course challenge, giving beginners a practice-rich route distinct from more rigorous university probability courses.",
+    "flags": [
+      "mastery-learning",
+      "no-formal-credential",
+      "redundancy-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mit-18-04-complex-variables",
+    "candidate_id": "mit-18-04-complex-variables",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/"
+    ],
+    "rationale": "A complete applied complex-analysis course with lecture and problem-solving notes, recitations, problem sets, exams and solutions fills an advanced mathematics niche not duplicated by the current survivor pool.",
+    "flags": [
+      "advanced-prerequisites",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mit-18-781-theory-of-numbers",
+    "candidate_id": "mit-18-781-theory-of-numbers",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/"
+    ],
+    "rationale": "Lecture notes, problem sets and exams with solutions support a rigorous elementary route through primes, congruences and Diophantine equations; the stable subject and distinctive scope justify direct deep-review comparison.",
+    "flags": [
+      "stable-foundations",
+      "number-theory",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-yale-phys-200-physics-i",
+    "candidate_id": "yale-phys-200-physics-i",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/physics/phys-200",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/physics/phys-200"
+    ],
+    "rationale": "Despite its 2006 recording, the course gives a thorough quantitative sequence through mechanics, relativity, gravitation, thermodynamics and waves; these foundations are stable and the scope complements rather than merely repeats the MIT mechanics survivor.",
+    "flags": [
+      "archive-course",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-yale-phys-201-physics-ii",
+    "candidate_id": "yale-phys-201-physics-ii",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/physics/phys-201",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/physics/phys-201"
+    ],
+    "rationale": "The complete continuation covers electricity, magnetism, optics and quantum mechanics with a full lecture sequence and examinations; its foundational physics content remains suitable for deep comparison despite archive age.",
+    "flags": [
+      "archive-course",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-fao-intro-climate-smart-agriculture",
+    "candidate_id": "fao-intro-climate-smart-agriculture",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=439&lang=en",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "FAO digital badge certificate after successful final test",
+    "completeness": "complete",
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=439&lang=en",
+      "https://elearning.fao.org/course/view.php?id=1380"
+    ],
+    "rationale": "FAO provides a technical but accessible treatment of climate impacts, adaptation, mitigation and the five-step climate-smart agriculture process; the current series documents final tests and digital badges for successful completion.",
+    "flags": [
+      "climate-currency-review",
+      "free-digital-badge",
+      "applied-science"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-eu-climate-action-academy",
+    "candidate_id": "eu-climate-action-academy",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://academy.europa.eu/courses/eu-climate-action-academy?lang=en",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificate of participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://academy.europa.eu/courses/eu-climate-action-academy?lang=en"
+    ],
+    "rationale": "The European Commission course was last published in September 2026 and is actively expanding modules across climate action, communication, citizen science, AI, policy and misinformation, with a participation certificate.",
+    "flags": [
+      "current-2026",
+      "climate-action",
+      "policy-overlap"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-yale-chem-125a-organic-chemistry-i",
+    "candidate_id": "yale-chem-125a-organic-chemistry-i",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/chemistry/chem-125a",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/chemistry/chem-125a"
+    ],
+    "rationale": "The first-semester sequence develops structure, bonding and mechanism from experimental evidence and includes problem sets and examinations; organic-chemistry fundamentals are stable enough to survive the 2008 recording date.",
+    "flags": [
+      "archive-course",
+      "chemistry-currency-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-yale-chem-125b-organic-chemistry-ii",
+    "candidate_id": "yale-chem-125b-organic-chemistry-ii",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/chemistry/chem-125b",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/chemistry/chem-125b"
+    ],
+    "rationale": "The continuation covers reaction mechanisms, spectroscopy, synthesis and natural molecules with problem sets and exams, forming a complete second-semester experience whose core chemistry remains relevant.",
+    "flags": [
+      "archive-course",
+      "chemistry-currency-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-yale-astr-160-frontiers-astrophysics",
+    "candidate_id": "yale-astr-160-frontiers-astrophysics",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/astronomy/astr-160",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/astronomy/astr-160",
+      "https://oyc.yale.edu/astronomy/astr-160/update-1"
+    ],
+    "rationale": "The course was explicitly built around rapidly advancing frontiers in exoplanets, black holes and dark energy and was recorded in 2007; even its later update notes acknowledge extensive subsequent research, making the scientific-state content too stale for a best-current index.",
+    "flags": [
+      "archive-course",
+      "frontier-science-obsolete",
+      "science-currency-failure",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-yale-beng-100-biomedical-engineering",
+    "candidate_id": "yale-beng-100-biomedical-engineering",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/biomedical-engineering/beng-100",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/biomedical-engineering/beng-100"
+    ],
+    "rationale": "The 25-lecture package is broad and academically substantial, but its 2008 treatment includes medical technologies, product development, patents and FDA approval where scientific and regulatory context has changed materially; a currency audit is required.",
+    "flags": [
+      "archive-course",
+      "biomedical-currency-review",
+      "regulatory-currency-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-hp-life-3d-printing",
+    "candidate_id": "hp-life-3d-printing",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/18-3d-printing",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/18-3d-printing",
+      "https://www.life-global.org/categorylist/2-t%282%29",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "The course is current, free and credentialed, but it is a compact business-oriented introduction to using 3D printing for prototypes and products rather than a technically deep additive-manufacturing course; it does not clear the engineering finalist bar.",
+    "flags": [
+      "business-oriented",
+      "limited-technical-depth",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mathworks-matlab-onramp",
+    "candidate_id": "mathworks-matlab-onramp",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free course certificate and shareable progress report",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "rationale": "MathWorks keeps Onramp courses free without expiration, and this browser-based foundation teaches MATLAB through hands-on work with automated feedback and completion recognition; its vendor dependence is a later scoring penalty, not a shallow blocker.",
+    "flags": [
+      "vendor-tool-specific",
+      "interactive-practice",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mathworks-simulink-onramp",
+    "candidate_id": "mathworks-simulink-onramp",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/simulink-onramp/simulink",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free course certificate and shareable progress report",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/simulink-onramp/simulink",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "rationale": "The free interactive pathway teaches model-based design through block diagrams, signal inspection, algorithms and a project, providing practical engineering value that is distinct from basic MATLAB programming.",
+    "flags": [
+      "vendor-tool-specific",
+      "interactive-practice",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mathworks-stateflow-onramp",
+    "candidate_id": "mathworks-stateflow-onramp",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/stateflow-onramp/stateflow",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free course certificate and shareable progress report",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/stateflow-onramp/stateflow",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "rationale": "State-machine and supervisory-control training is current and hands-on, but it is a narrow product-specific extension of Simulink; its marginal value must be compared with broader control and embedded-systems survivors before deep review.",
+    "flags": [
+      "vendor-tool-specific",
+      "specialist-scope",
+      "redundancy-review",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mathworks-image-processing-onramp",
+    "candidate_id": "mathworks-image-processing-onramp",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free course certificate and shareable progress report",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "rationale": "The course offers real browser-based image manipulation, segmentation and batch-processing practice with automated feedback, but it is strongly MATLAB-specific and overlaps broader computer-vision learning; transferability and marginal value need comparison.",
+    "flags": [
+      "vendor-tool-specific",
+      "transferability-review",
+      "redundancy-review",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-mathworks-signal-processing-onramp",
+    "candidate_id": "mathworks-signal-processing-onramp",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/signal-processing-onramp/signalprocessing",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free course certificate and shareable progress report",
+    "completeness": "complete",
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/signal-processing-onramp/signalprocessing",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "rationale": "Spectral analysis, preprocessing, filtering and signal measurements are taught through browser-based exercises with automated feedback and a certificate, creating enough transferable signal-processing practice to justify deeper comparison.",
+    "flags": [
+      "vendor-tool-specific",
+      "interactive-practice",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-unity-essentials",
+    "candidate_id": "unity-essentials",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.unity.com/pathway/unity-essentials",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free shareable Unity Pathway badge issued through Credly",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.unity.com/pathway/unity-essentials",
+      "https://learn.unity.com/pathway/unity-essentials/completed"
+    ],
+    "rationale": "The current foundational pathway uses guided room-building projects across editor, 3D, audio, programming, 2D and publishing skills, and completion earns a shareable Credly badge; it is a coherent practice-led entry route.",
+    "flags": [
+      "vendor-tool-specific",
+      "project-based",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-unity-creative-core",
+    "candidate_id": "unity-creative-core",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.unity.com/pathway/creative-core",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free shareable Unity Pathway badge",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.unity.com/pathway/creative-core",
+      "https://learn.unity.com/pathways"
+    ],
+    "rationale": "The ten-week free pathway goes beyond product onboarding into lighting, materials, VFX, animation, audio, UI and independent project work, with a shareable Pathway credential and multiple language variants.",
+    "flags": [
+      "vendor-tool-specific",
+      "project-based",
+      "free-digital-badge",
+      "language-variants-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-openlearn-art-visual-culture",
+    "candidate_id": "openlearn-art-visual-culture",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern"
+    ],
+    "rationale": "The ten-hour intermediate course is structured and freely completable, but its last update was 2018 and its survey remains predominantly Western; it should be compared directly with the broader current Khan art-history route before advancement.",
+    "flags": [
+      "older-update",
+      "western-canon",
+      "redundancy-review",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-openlearn-making-sense-art-history",
+    "candidate_id": "openlearn-making-sense-art-history",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/making-sense-art-history",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/making-sense-art-history"
+    ],
+    "rationale": "The introductory visual-analysis material is useful but dates from 2012 and is now directly dominated by broader, more current art-history candidates that teach comparable interpretation skills while providing substantially greater scope.",
+    "flags": [
+      "older-course",
+      "redundancy-dominated",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-khan-ap-college-art-history",
+    "candidate_id": "khan-ap-college-art-history",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.khanacademy.org/humanities/ap-art-history",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.khanacademy.org/humanities/ap-art-history"
+    ],
+    "rationale": "The current twelve-unit curriculum spans global prehistory through contemporary art across Europe, the Americas, Africa, Asia and the Pacific, with a large multimedia corpus and structured analytical frameworks.",
+    "flags": [
+      "global-coverage",
+      "broad-survey",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-openlearn-freelance-creative-arts",
+    "candidate_id": "openlearn-freelance-creative-arts",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/a-freelance-career-the-creative-arts",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free digital badge and Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/a-freelance-career-the-creative-arts"
+    ],
+    "rationale": "The 24-hour badged 2021 course addresses the practical transition from creative skill to sustainable freelance work, including audience, marketing, business planning and self-employment; it fills a career-practice role absent from the artistic-technique survivors.",
+    "flags": [
+      "career-practice",
+      "free-digital-badge",
+      "business-overlap"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-openlearn-business-of-film",
+    "candidate_id": "openlearn-business-of-film",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/film/the-business-film",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/film/the-business-film"
+    ],
+    "rationale": "The course is substantial, but its core material was written for FutureLearn in 2015 and last updated in 2020; film financing, distribution, platforms and industry economics have shifted enough that a best-current index should prefer newer alternatives.",
+    "flags": [
+      "industry-currency-failure",
+      "older-update",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-openlearn-picturing-family",
+    "candidate_id": "openlearn-picturing-family",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/visual-art/picturing-the-family/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/visual-art/picturing-the-family/content-section-0"
+    ],
+    "rationale": "The twelve-hour course teaches photographs as biased primary sources requiring contextual and critical interpretation; these stable visual-literacy and historical-analysis skills remain distinctive despite the 2019 update date.",
+    "flags": [
+      "photography-analysis",
+      "stable-foundations",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-09-openlearn-recording-music-sound",
+    "candidate_id": "openlearn-recording-music-sound",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/recording-music-and-sound/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/recording-music-and-sound/content-section-0"
+    ],
+    "rationale": "History, microphone placement, noise control and recording logs remain useful, but the practical course was last updated in 2018 in a technology-sensitive creative field; current recording workflows and tools need a targeted currency check.",
+    "flags": [
+      "audio-production",
+      "technology-currency-review",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  }
+]
