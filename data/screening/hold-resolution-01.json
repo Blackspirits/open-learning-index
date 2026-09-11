@@ -1,0 +1,477 @@
+[
+  {
+    "screen_id": "hold-resolution-01-fortinet-fortigate-operator",
+    "candidate_id": "fortinet-fortigate-operator",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "NSE 3 certification requires the online FortiGate Operator exam; a zero-cost exam claim is not relied on here",
+    "completeness": "complete",
+    "evidence": [
+      "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator",
+      "https://helpdesk.training.fortinet.com/support/solutions/articles/73000524101-are-all-courses-available-online-",
+      "https://helpdesk.training.fortinet.com/support/solutions/articles/73000665753-what-are-the-new-certification-requirements-"
+    ],
+    "rationale": "The current eight-hour FortiOS 7.6 course is substantial, self-paced and explicitly free at NSE 3. The unresolved credential cost no longer blocks advancement because the course is conservatively classified as F1 rather than claiming a free NSE 3 credential.",
+    "flags": [
+      "fortios-7-6",
+      "vendor-authored",
+      "credential-cost-not-relied-on",
+      "access-tier-downgraded"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-01-fortinet-fortigate-operator"
+  },
+  {
+    "screen_id": "hold-resolution-01-british-council-communicative-tasks",
+    "candidate_id": "british-council-communicative-tasks",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-communicative-tasks",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free British Council TeachingEnglish completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-communicative-tasks"
+    ],
+    "rationale": "The course is actively enrolable through 30 September 2026, is explicitly free, takes 9–12 hours and awards a free certificate after full module completion. Its time-bounded availability should be monitored, but it is currently a valid complete learner route.",
+    "flags": [
+      "active-run-2026",
+      "time-bounded-access",
+      "9-12-hours",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-british-council-communicative-tasks"
+  },
+  {
+    "screen_id": "hold-resolution-01-british-council-understanding-language-systems",
+    "candidate_id": "british-council-understanding-language-systems",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-understanding-language-systems",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free British Council TeachingEnglish completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-understanding-language-systems"
+    ],
+    "rationale": "The current run is explicitly free and enrolable until 30 September 2026, with 9–12 hours of structured teacher development, workbook support and a completion certificate. Availability is time-bounded but no longer an unresolved blocker.",
+    "flags": [
+      "active-run-2026",
+      "time-bounded-access",
+      "9-12-hours",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-british-council-understanding-language-systems"
+  },
+  {
+    "screen_id": "hold-resolution-01-esep-developing-students-ai-literacy",
+    "candidate_id": "esep-developing-students-ai-literacy",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://school-education.ec.europa.eu/en/learn/courses/developing-students-ai-literacy",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Digital course certificate is explicitly described; zero-cost learner access remains unproven on the public page",
+    "completeness": "complete",
+    "evidence": [
+      "https://school-education.ec.europa.eu/en/learn/courses/developing-students-ai-literacy"
+    ],
+    "rationale": "The August 2026 self-paced version is current, 15–20 hours and certificate-bearing, but the official public page still does not explicitly state that enrolment and completion are free. The project must not infer F0 from provider identity or a visible Join button.",
+    "flags": [
+      "updated-2026",
+      "15-20-hours",
+      "certificate-confirmed",
+      "free-access-unverified",
+      "carry-forward-hold"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-esep-developing-students-ai-literacy"
+  },
+  {
+    "screen_id": "hold-resolution-01-openclassrooms-apprenez-a-apprendre",
+    "candidate_id": "openclassrooms-apprenez-a-apprendre",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://openclassrooms.com/fr/courses/4312781-apprenez-a-apprendre",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://openclassrooms.com/fr/courses/4312781-apprenez-a-apprendre"
+    ],
+    "rationale": "The course is unusually fresh, openly accessible and assessment-rich, but its six-hour learning-to-learn content is a cross-cutting personal study skill rather than teacher education. Without a suitable category and amid stronger education finalists, retaining it would distort taxonomy rather than improve coverage.",
+    "flags": [
+      "fr-original",
+      "updated-2026",
+      "taxonomy-mismatch",
+      "cross-cutting-skill",
+      "6-hours"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-openclassrooms-apprenez-a-apprendre"
+  },
+  {
+    "screen_id": "hold-resolution-01-canva-essentials",
+    "candidate_id": "canva-essentials",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.canva.com/design-school/courses/canva-essentials",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Canva digital certification after a 19-question test",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.canva.com/design-school/courses/canva-essentials"
+    ],
+    "rationale": "The course is current, free and well assessed, but it is a one-hour product-onboarding path focused on navigating Canva and its workflow. The pool already contains the more transferable Graphic Design Essentials candidate, so another tool-proficiency finalist is not justified.",
+    "flags": [
+      "vendor-tool-specific",
+      "1-hour",
+      "product-onboarding",
+      "redundancy-review-resolved",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-04-canva-essentials"
+  },
+  {
+    "screen_id": "hold-resolution-01-language-transfer-intro-arabic",
+    "candidate_id": "language-transfer-intro-arabic",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.languagetransfer.org/arabic",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.languagetransfer.org/arabic"
+    ],
+    "rationale": "The reasoning-led audio method is valuable, but the provider itself labels this path Intro to Arabic and separately offers Egyptian Arabic vocabulary cards without clearly defining the course variety. Its introductory and unresolved-variety scope does not meet the completeness bar used for language finalists.",
+    "flags": [
+      "introductory-scope",
+      "arabic-variety-unresolved",
+      "language-completeness-bar",
+      "no-credential"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-04-language-transfer-intro-arabic"
+  },
+  {
+    "screen_id": "hold-resolution-01-nordic-cellular-iot-fundamentals",
+    "candidate_id": "nordic-cellular-iot-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/"
+    ],
+    "rationale": "The course is a current 8–10 hour certified learning path with substantial LTE-M/NB-IoT, MQTT, CoAP and GNSS practice. Compatible nRF91 hardware and cellular connectivity are genuinely required for the hands-on work; this is now an explicit accessibility penalty for deep review rather than an unresolved access fact.",
+    "flags": [
+      "hardware-required-for-full-practice",
+      "connectivity-required",
+      "vendor-ecosystem",
+      "8-10-hours",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-05-nordic-cellular-iot-fundamentals"
+  },
+  {
+    "screen_id": "hold-resolution-01-nordic-wifi-fundamentals",
+    "candidate_id": "nordic-wifi-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://academy.nordicsemi.com/courses/wi-fi-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/wi-fi-fundamentals/"
+    ],
+    "rationale": "The current 8–10 hour route is complete, assessed and certified. It explicitly requires Nordic Wi-Fi development hardware, with extra hardware for some power-management work; the dependency is now known and should be scored under accessibility rather than left as an unresolved blocker.",
+    "flags": [
+      "hardware-required-for-full-practice",
+      "vendor-ecosystem",
+      "8-10-hours",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-05-nordic-wifi-fundamentals"
+  },
+  {
+    "screen_id": "hold-resolution-01-nordic-matter-fundamentals",
+    "candidate_id": "nordic-matter-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://academy.nordicsemi.com/courses/matter-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/matter-fundamentals/"
+    ],
+    "rationale": "The current 6–8 hour Matter course clearly documents the required Thread or Wi-Fi development kits and, on Windows/macOS, a Raspberry Pi for full exercises. The course remains a strong current technical pathway; hardware cost is explicit and will be penalised in accessibility during deep review.",
+    "flags": [
+      "hardware-required-for-full-practice",
+      "vendor-ecosystem",
+      "fast-moving-standard",
+      "6-8-hours",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-05-nordic-matter-fundamentals"
+  },
+  {
+    "screen_id": "hold-resolution-01-coe-help-introduction-echr-ecthr",
+    "candidate_id": "coe-help-introduction-echr-ecthr",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/-/updated-council-of-europe-help-course-on-introduction-to-the-european-convention-on-human-rights-and-the-european-court-of-human-rights-with-new-modul",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Council of Europe HELP completion recognition; exact current mechanics are secondary to the currency failure",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/updated-council-of-europe-help-course-on-introduction-to-the-european-convention-on-human-rights-and-the-european-court-of-human-rights-with-new-modul"
+    ],
+    "rationale": "The official course page remains the March 2020 update and still states that the Council of Europe has 47 member states, a fact that became stale after Russia ceased membership. For a foundational legal course, unresolved core institutional currency is a blocker serious enough to reject rather than deepen-review.",
+    "flags": [
+      "legal-currency-failure",
+      "stale-factual-claim",
+      "last-updated-2020",
+      "echr"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-06-coe-help-introduction-echr-ecthr"
+  },
+  {
+    "screen_id": "hold-resolution-01-berkeley-cs61c-fall-2026",
+    "candidate_id": "berkeley-cs61c-fall-2026",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://cs61c.org/fa26/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No public independent-learner credential",
+    "completeness": "partial",
+    "evidence": [
+      "https://cs61c.org/fa26/",
+      "https://cs61c.org/fa26/labs/lab00/",
+      "https://cs61c.org/fa26/projects/proj1/"
+    ],
+    "rationale": "The public notes and assignment descriptions are excellent, but Fall 2026 practical work explicitly requires Berkeley instructional accounts, campus VPN/Hive machines, private repositories, Gradar and Gradescope. The independent learner cannot reproduce the central lab/project path, so public completeness is insufficient.",
+    "flags": [
+      "institution-infrastructure-required",
+      "independent-route-incomplete",
+      "current-term-course",
+      "no-formal-credential"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-07-berkeley-cs61c-fall-2026"
+  },
+  {
+    "screen_id": "hold-resolution-01-huggingface-deep-rl-course",
+    "candidate_id": "huggingface-deep-rl-course",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://huggingface.co/learn/deep-rl-course/en/unit0/introduction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Hugging Face completion or honours certificate",
+    "completeness": "substantive",
+    "evidence": [
+      "https://huggingface.co/learn/deep-rl-course/unit0/introduction",
+      "https://huggingface.co/learn/deep-rl-course/unit7/introduction"
+    ],
+    "rationale": "The provider now explicitly labels the course low-maintenance, confirms Unit 7 is non-functional and the leaderboard is retired. Most material remains usable and certification is free, but a broken/low-maintenance pathway in a fast-moving AI field no longer clears the best-current-course bar.",
+    "flags": [
+      "low-maintenance",
+      "broken-course-feature",
+      "retired-leaderboard",
+      "fast-moving-ai",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-07-huggingface-deep-rl-course"
+  },
+  {
+    "screen_id": "hold-resolution-01-fun-la-musique-quelle-histoire",
+    "candidate_id": "fun-la-musique-quelle-histoire",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential confirmed; free enrolment and self-assessment are current",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/"
+    ],
+    "rationale": "The official FUN page currently accepts free enrolment until 25 October 2026 and keeps the course open until 1 November 2026. The 15-hour French-original six-week path is therefore currently accessible; its time-bounded status becomes a monitoring concern rather than a screening blocker.",
+    "flags": [
+      "fr-original",
+      "active-run-2026",
+      "time-bounded-access",
+      "15-hours",
+      "self-assessment"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-08-fun-la-musique-quelle-histoire"
+  },
+  {
+    "screen_id": "hold-resolution-01-cmu-oli-probability-statistics",
+    "candidate_id": "cmu-oli-probability-statistics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oli.cmu.edu/courses/probability-statistics-open-free/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No tests, college credit or certificate in the Open & Free independent-learner version",
+    "completeness": "complete",
+    "evidence": [
+      "https://oli.cmu.edu/courses/probability-statistics-open-free/",
+      "https://oli.cmu.edu/jcourse/webui/guest/join.do?section=probstat"
+    ],
+    "rationale": "CMU now exposes an explicit Open & Free independent-learner route that is free forever and includes expository text, simulations, case studies, interactive exercises and StatTutor labs. Scored tests and certificates are omitted, so F2 is the accurate access tier.",
+    "flags": [
+      "independent-learner-route",
+      "interactive-learning",
+      "free-forever",
+      "access-tier-corrected",
+      "no-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-09-cmu-oli-probability-statistics"
+  },
+  {
+    "screen_id": "hold-resolution-01-freecodecamp-a1-professional-spanish",
+    "candidate_id": "freecodecamp-a1-professional-spanish",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/a1-professional-spanish",
+    "observed_free_access": "F3_PARTIAL_OR_TRIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completed free certification path established for the beta A1 Spanish curriculum",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/a1-professional-spanish",
+      "https://www.freecodecamp.org/news/2025-freecodecamp-year-in-review/"
+    ],
+    "rationale": "freeCodeCamp continues to describe A1 Spanish as a public beta, while its own launch communication distinguishes the fully live English certifications from the beta Spanish curriculum. The index requires complete language pathways, so beta availability is not enough.",
+    "flags": [
+      "spanish-a1",
+      "public-beta",
+      "incomplete-pathway",
+      "language-completeness-bar"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-10-freecodecamp-a1-professional-spanish"
+  },
+  {
+    "screen_id": "hold-resolution-01-freecodecamp-a1-professional-chinese",
+    "candidate_id": "freecodecamp-a1-professional-chinese",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/a1-professional-chinese",
+    "observed_free_access": "F3_PARTIAL_OR_TRIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completed free certification path established for the beta A1 Mandarin Chinese curriculum",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/a1-professional-chinese",
+      "https://www.freecodecamp.org/news/2025-freecodecamp-year-in-review/"
+    ],
+    "rationale": "freeCodeCamp continues to describe the A1 Mandarin Chinese curriculum as public beta rather than a fully live certification. Given the project's strict completeness rule for language learning, the route is not ready for deep-review admission.",
+    "flags": [
+      "chinese-a1",
+      "public-beta",
+      "incomplete-pathway",
+      "language-completeness-bar"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-10-freecodecamp-a1-professional-chinese"
+  }
+]

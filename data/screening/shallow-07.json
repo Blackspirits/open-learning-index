@@ -342,7 +342,7 @@
       "current-term-course",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-07-fun-web-semantique-donnees",
@@ -758,6 +758,6 @@
       "ai-currency-review",
       "completeness-review"
     ],
-    "is_current": true
+    "is_current": false
   }
 ]

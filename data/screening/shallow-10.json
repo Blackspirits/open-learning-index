@@ -404,7 +404,7 @@
       "completeness-unverified",
       "credential-unverified"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-freecodecamp-a2-professional-spanish",
@@ -430,7 +430,7 @@
       "not-production-ready",
       "incomplete"
     ],
-    "is_current": false
+    "is_current": true
   },
   {
     "screen_id": "shallow-10-freecodecamp-a1-professional-chinese",
@@ -458,7 +458,7 @@
       "completeness-unverified",
       "credential-unverified"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-wipo-ip-panorama-2",
@@ -782,6 +782,6 @@
       "no-current-enrolment",
       "time-bounded-course"
     ],
-    "is_current": false
+    "is_current": true
   }
 ]
