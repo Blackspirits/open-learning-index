@@ -1,0 +1,787 @@
+[
+  {
+    "screen_id": "shallow-10-openlearn-start-writing-fiction",
+    "candidate_id": "openlearn-start-writing-fiction",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction"
+    ],
+    "rationale": "Updated in May 2026, this 12-hour practical creative-writing course provides exercises on character, setting and genre plus a free participation statement; it fills a distinct practice-led writing role and deserves deep comparison.",
+    "flags": [
+      "updated-2026",
+      "creative-writing",
+      "practice-led",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-openlearn-french-1",
+    "candidate_id": "openlearn-french-1",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/languages/getting-started-french-1",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.open.edu/openlearn/languages/getting-started-french-1"
+    ],
+    "rationale": "The provider explicitly describes this six-hour, two-week course as an extract from the beginning of a fuller Beginners French course. That scope is too limited beside complete French pathways already surviving in the pool.",
+    "flags": [
+      "extract-only",
+      "limited-scope",
+      "redundancy-risk",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-hp-life-starting-small-business",
+    "candidate_id": "hp-life-starting-small-business",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/17-starting-a-small-business",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/17-starting-a-small-business",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "The course is current, practical, free and credentialed, but its introductory small-business coverage is already served more deeply by Saylor, MIT, OpenLearn and the current NAU entrepreneurship pathway; another broad starter adds insufficient finalist value.",
+    "flags": [
+      "introductory",
+      "provider-redundancy",
+      "depth-comparison",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-hp-life-social-entrepreneurship",
+    "candidate_id": "hp-life-social-entrepreneurship",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/318-social-entrepreneurship",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/318-social-entrepreneurship",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "Its applied focus on social impact, stakeholder needs and sustainable venture design is distinctive and current, but HP LIFE courses are compact; retain it only if deep comparison confirms enough depth beyond the stronger general entrepreneurship survivors.",
+    "flags": [
+      "social-entrepreneurship",
+      "compact-course",
+      "depth-comparison",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-hp-life-design-thinking",
+    "candidate_id": "hp-life-design-thinking",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/16-design-thinking",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/16-design-thinking",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "The current free course teaches a transferable human-centred problem-solving process rather than pure product onboarding, but its compact scope must beat broader innovation and entrepreneurship alternatives before consuming a finalist slot.",
+    "flags": [
+      "design-thinking",
+      "transferable-skills",
+      "compact-course",
+      "depth-comparison",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-hp-life-inventory-management",
+    "candidate_id": "hp-life-inventory-management",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/37-inventory-management",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/37-inventory-management",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "Inventory control is useful and the course is current and certified, but this narrow treatment is substantially dominated by the deeper Saylor Operations Management pathway already advanced, which includes inventory within a broader operations curriculum.",
+    "flags": [
+      "narrow-scope",
+      "redundancy-risk",
+      "operations-management",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-hp-life-effective-presentations",
+    "candidate_id": "hp-life-effective-presentations",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/12-effective-presentations",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/12-effective-presentations",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "This is a valid current workplace microcourse, but presentation design and delivery are already covered by substantially deeper advanced communication candidates, including Saylor PRDV008; a free certificate does not overcome the redundancy and depth gap.",
+    "flags": [
+      "microcourse",
+      "presentation-skills",
+      "redundancy-risk",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-hp-life-business-email",
+    "candidate_id": "hp-life-business-email",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/414-business-email",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/course/414-business-email",
+      "https://www.life-global.org/en/help"
+    ],
+    "rationale": "The current course is only about 30 minutes and focuses narrowly on professional email. It is useful workplace training, but it is far too small to compete with the deeper professional-writing and workplace-communication pathways already advanced.",
+    "flags": [
+      "microcourse",
+      "very-short",
+      "limited-scope",
+      "redundancy-risk",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-openlearn-entrepreneurship-ideas-reality",
+    "candidate_id": "openlearn-entrepreneurship-ideas-reality",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/entrepreneurship-ideas-reality",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/entrepreneurship-ideas-reality"
+    ],
+    "rationale": "Updated in March 2026, this 24-hour eight-session pathway combines business models, funding, risk, capability building, case studies, quizzes and pitching with a free badge, making it a current and substantial entrepreneurship challenger.",
+    "flags": [
+      "updated-2026",
+      "24-hours",
+      "badged-course",
+      "case-studies",
+      "free-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-openlearn-how-learn-language",
+    "candidate_id": "openlearn-how-learn-language",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/languages/how-learn-language",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/languages/how-learn-language"
+    ],
+    "rationale": "This 24-hour eight-week metacognitive course teaches goal setting, motivation, vocabulary strategies, four-skill development, resource evaluation and virtual immersion. Its role is complementary to language-specific courses rather than redundant with them.",
+    "flags": [
+      "metacognition",
+      "24-hours",
+      "language-learning-strategy",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-openlearn-essay-report-writing",
+    "candidate_id": "openlearn-essay-report-writing",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/essay-and-report-writing-skills",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/essay-and-report-writing-skills"
+    ],
+    "rationale": "The material was last updated in 2019, but the core academic-writing skills are stable and the 15-hour structure covers interpreting tasks, planning, drafting, essays and reports with enough depth to justify direct deep comparison.",
+    "flags": [
+      "academic-writing",
+      "stable-skills",
+      "15-hours",
+      "last-updated-2019",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-fao-intro-trade-food-security-nutrition",
+    "candidate_id": "fao-intro-trade-food-security-nutrition",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=961&lang=en",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FAO digital badge after final exam with at least 75%",
+    "completeness": "complete",
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=961&lang=en"
+    ],
+    "rationale": "Although compact, this specialist FAO course has a clearly bounded policy-learning objective, two substantive lessons and a final assessed certification path. Its trade, food-security and nutrition intersection is not duplicated by the general economics survivors.",
+    "flags": [
+      "specialist-policy",
+      "assessed",
+      "digital-badge",
+      "food-security",
+      "trade-policy"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-freecodecamp-a2-english-developers",
+    "candidate_id": "freecodecamp-a2-english-developers",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/a2-english-for-developers",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp certification after the final exam",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/a2-english-for-developers",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+    ],
+    "rationale": "The A2 English curriculum is live as a full developer-oriented pathway with a final certification exam. Its technical and professional context gives it a materially different audience and practice model from general-purpose language courses.",
+    "flags": [
+      "english-a2",
+      "developer-context",
+      "certification-exam",
+      "beta-label",
+      "complete-pathway"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-freecodecamp-b1-english-developers",
+    "candidate_id": "freecodecamp-b1-english-developers",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/b1-english-for-developers",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp certification after the final exam",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/b1-english-for-developers",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md"
+    ],
+    "rationale": "The B1 curriculum is live as a complete intermediate English-for-developers pathway with a final certification exam, extending beyond basic vocabulary into technical and professional communication and earning deep-review eligibility.",
+    "flags": [
+      "english-b1",
+      "developer-context",
+      "certification-exam",
+      "beta-label",
+      "complete-pathway"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-freecodecamp-a1-professional-spanish",
+    "candidate_id": "freecodecamp-a1-professional-spanish",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/a1-professional-spanish",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certification availability remains unverified while the curriculum is labelled Beta",
+    "completeness": "unknown",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/a1-professional-spanish",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/packages/shared/src/config/curriculum.ts"
+    ],
+    "rationale": "The curriculum is exposed in the current production stage but still carries a Beta label, and the original rollout was incomplete. Hold until the full A1 scope and certification mechanics are verified end to end rather than inferred from the route existing.",
+    "flags": [
+      "spanish-a1",
+      "beta",
+      "completeness-unverified",
+      "credential-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-freecodecamp-a2-professional-spanish",
+    "candidate_id": "freecodecamp-a2-professional-spanish",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/a2-professional-spanish",
+    "observed_free_access": "F3_PARTIAL_OR_TRIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No current production certification path verified",
+    "completeness": "partial",
+    "evidence": [
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/packages/shared/src/config/curriculum.ts"
+    ],
+    "rationale": "The upstream curriculum configuration still places A2 Professional Spanish in the Upcoming stage and explicitly keeps Upcoming content out of normal production unless feature-enabled. It therefore cannot enter the current finalist pool as a complete public course.",
+    "flags": [
+      "spanish-a2",
+      "upcoming",
+      "not-production-ready",
+      "incomplete"
+    ],
+    "is_current": false
+  },
+  {
+    "screen_id": "shallow-10-freecodecamp-a1-professional-chinese",
+    "candidate_id": "freecodecamp-a1-professional-chinese",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.freecodecamp.org/learn/a1-professional-chinese",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certification availability remains unverified while the curriculum is labelled Beta",
+    "completeness": "unknown",
+    "evidence": [
+      "https://www.freecodecamp.org/learn/a1-professional-chinese",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/packages/shared/src/config/curriculum.ts"
+    ],
+    "rationale": "The current repository exposes A1 Chinese in production but still labels the pathway Beta, while the original rollout only exposed part of the planned course. Hold until completeness and certification are directly verified.",
+    "flags": [
+      "chinese-a1",
+      "beta",
+      "completeness-unverified",
+      "credential-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-wipo-ip-panorama-2",
+    "candidate_id": "wipo-ip-panorama-2",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://welc.wipo.int/acc/index.jsf?cc=DL_IPPanoramaE&lang=en&page=courseCatalog.xhtml",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate for the open-access IP Panorama 2.0 course",
+    "completeness": "complete",
+    "evidence": [
+      "https://welc.wipo.int/acc/index.jsf?cc=DL_IPPanoramaE&lang=en&page=courseCatalog.xhtml"
+    ],
+    "rationale": "The 2026 WIPO catalogue exposes a current 20-hour free open-access course with interactive micro-learning and real-world IP business cases. Discovery overstated the access tier: WIPO explicitly lists no certificate, so this advances as F2.",
+    "flags": [
+      "intellectual-property",
+      "20-hours",
+      "current-2026-session",
+      "access-tier-corrected",
+      "no-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-openlearn-legal-skills-debates-scotland",
+    "candidate_id": "openlearn-legal-skills-debates-scotland",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/society-politics-law/law/legal-skills-and-debates-scotland",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/society-politics-law/law/legal-skills-and-debates-scotland/content-section-overview"
+    ],
+    "rationale": "The 24-hour badged course has substantial legal reasoning, legislation, judgments, precedent, human-rights and writing practice, but it is Scotland-specific and was last updated in 2020. Current legal accuracy must be audited before advancement.",
+    "flags": [
+      "scotland-specific",
+      "jurisdiction-specific",
+      "legal-currency-review",
+      "last-updated-2020",
+      "badged-course"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-coe-help-cybercrime-electronic-evidence",
+    "candidate_id": "coe-help-cybercrime-electronic-evidence",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/-/cybercrime-and-electronic-evidence-council-of-europe-help-course-for-eu-judges-prosecutors-and-lawyers",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic HELP Statement of Accomplishment",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/cybercrime-and-electronic-evidence-council-of-europe-help-course-for-eu-judges-prosecutors-and-lawyers",
+      "https://www.coe.int/en/web/help/-/2026-help-annual-network-conference-in-strasbourg-conference-report"
+    ],
+    "rationale": "The HELP course is a substantial self-learning route on cybercrime, electronic evidence and the Budapest Convention, and the Council of Europe explicitly reported the Cybercrime course as updated in 2026, resolving the main legal-currency risk.",
+    "flags": [
+      "cybercrime-law",
+      "electronic-evidence",
+      "updated-2026",
+      "multilingual",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-coe-help-data-protection-privacy-rights",
+    "candidate_id": "coe-help-data-protection-privacy-rights",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/help-in-the-28/-/asset_publisher/P9UGYu6INris/content/new-and-free-help-in-the-28-course-on-data-protection-and-privacy-rights",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic HELP Statement of Accomplishment",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/help-courses",
+      "https://www.coe.int/en/web/help/-/2026-help-annual-network-conference-in-strasbourg-conference-report"
+    ],
+    "rationale": "The Council of Europe explicitly reported Data Protection and Privacy Rights as an updated HELP course in 2026. That current revision materially reduces the GDPR, Convention 108+ and case-law staleness risk and justifies deep review.",
+    "flags": [
+      "data-protection",
+      "privacy-rights",
+      "updated-2026",
+      "gdpr",
+      "convention-108-plus",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-coe-help-freedom-expression",
+    "candidate_id": "coe-help-freedom-expression",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/-/freedom-of-expression-a-help-available-now-in-our-online-plaftorm-for-free",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic HELP Statement of Accomplishment",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/freedom-of-expression-a-help-available-now-in-our-online-plaftorm-for-free"
+    ],
+    "rationale": "The rebuilt course is substantive, free and assessed, but its surfaced update is from 2020 and Article 10 case law continues to evolve. Keep it on hold until the learner-facing version is checked for current ECtHR doctrine and recent cases.",
+    "flags": [
+      "freedom-of-expression",
+      "article-10",
+      "legal-currency-review",
+      "last-updated-2020",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-coe-help-protection-safety-journalists",
+    "candidate_id": "coe-help-protection-safety-journalists",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic HELP Statement of Accomplishment",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania"
+    ],
+    "rationale": "A current April 2026 launch confirms a roughly 10-hour, five-module course covering threats, legal standards and protection mechanisms for journalists, with translated versions and an electronic Statement of Accomplishment.",
+    "flags": [
+      "journalist-safety",
+      "freedom-of-expression",
+      "current-2026-launch",
+      "10-hours",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-nau-academia-empreendedorismo",
+    "candidate_id": "nau-academia-empreendedorismo",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/academia-de-empreendedorismo/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free diploma plus 1 ECTS after achieving at least 75%",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/academia-de-empreendedorismo/"
+    ],
+    "rationale": "This current 30-hour NOVA pathway is fully free, self-paced and original pt-PT, with 18 video lessons, per-lesson quizzes, business-model, finance, legal/IP and pitching coverage, plus a diploma and 1 ECTS at the stated threshold.",
+    "flags": [
+      "pt-pt",
+      "30-hours",
+      "academic-credit",
+      "assessed",
+      "free-diploma"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-saylor-econ102-principles-macroeconomics",
+    "candidate_id": "saylor-econ102-principles-macroeconomics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/econ102",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course completion certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/econ102"
+    ],
+    "rationale": "The current 27-hour macroeconomics course covers national income, growth, unemployment, inflation, business cycles and fiscal and monetary policy, with structured assessment, free certification and college-credit recommendation.",
+    "flags": [
+      "macroeconomics",
+      "27-hours",
+      "free-certificate",
+      "college-credit-recommended",
+      "assessed"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-mru-principles-macroeconomics",
+    "candidate_id": "mru-principles-macroeconomics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.mru.org/courses/principles-of-macroeconomics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MRU certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.mru.org/courses/principles-of-macroeconomics"
+    ],
+    "rationale": "The large specialist sequence combines dozens of lessons, quizzes and interactives across growth, finance, unemployment, inflation, business cycles and monetary and fiscal policy; its practice density makes it a serious macroeconomics finalist.",
+    "flags": [
+      "macroeconomics",
+      "interactive-practice",
+      "large-sequence",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-mru-everyday-economics",
+    "candidate_id": "mru-everyday-economics",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.mru.org/courses/everyday-economics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MRU certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.mru.org/courses/everyday-economics"
+    ],
+    "rationale": "The course is valid, current and accessible, but its short topical collection is less systematic and substantially shallower than the microeconomics, macroeconomics and specialised development pathways already surviving; deep review would add little incremental value.",
+    "flags": [
+      "limited-depth",
+      "topical-survey",
+      "redundancy-risk",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-mru-development-economics",
+    "candidate_id": "mru-development-economics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.mru.org/courses/development-economics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MRU certificate of completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.mru.org/courses/development-economics"
+    ],
+    "rationale": "This unusually broad development-economics sequence spans growth, firms, trade, corruption, aid, poverty, health, education, migration and environment with extensive lessons and quizzes, giving the category a distinct long-form specialist challenger.",
+    "flags": [
+      "development-economics",
+      "large-sequence",
+      "broad-coverage",
+      "assessed",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-10-fun-cest-quoi-leco",
+    "candidate_id": "fun-cest-quoi-leco",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/cest-quoi-leco/",
+    "observed_free_access": "F3_PARTIAL_OR_TRIAL",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free successful-completion attestation was tied to active course sessions",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/cest-quoi-leco/"
+    ],
+    "rationale": "The French-original 21-hour course has a good interview-and-quiz structure, but the available session is archived and no current enrolment/completion run is exposed. A past free attestation cannot substitute for a current public learner path.",
+    "flags": [
+      "fr-original",
+      "archived",
+      "no-current-enrolment",
+      "time-bounded-course"
+    ],
+    "is_current": false
+  }
+]
