@@ -1,0 +1,816 @@
+[
+  {
+    "screen_id": "shallow-08-yale-hist-119-civil-war",
+    "candidate_id": "yale-hist-119-civil-war",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-119",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-119"
+    ],
+    "rationale": "The complete 27-lecture sequence, syllabus, papers and final exam provide unusually deep coverage of the Civil War and Reconstruction; the historical subject is stable enough that archive age does not outweigh its pedagogical depth.",
+    "flags": [
+      "archive-course",
+      "us-history",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-hist-210-early-middle-ages",
+    "candidate_id": "yale-hist-210-early-middle-ages",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-210",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-210"
+    ],
+    "rationale": "The 22-lecture course combines a coherent historical arc, substantial readings and formal assessment across late antiquity and the early medieval period, filling a period-specific gap without a material currency problem.",
+    "flags": [
+      "archive-course",
+      "european-history",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-female-protest-suffrage",
+    "candidate_id": "openlearn-female-protest-suffrage",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/the-history-female-protest-and-suffrage-the-uk/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/the-history-female-protest-and-suffrage-the-uk/"
+    ],
+    "rationale": "This 10-hour 2021 course teaches both suffrage history and the analysis of primary and secondary sources, adding active historical-method practice plus free completion recognition rather than lecture-only consumption.",
+    "flags": [
+      "free-statement-of-participation",
+      "source-analysis",
+      "uk-history"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-hist-251-early-modern-england",
+    "candidate_id": "yale-hist-251-early-modern-england",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-251",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-251"
+    ],
+    "rationale": "The course is complete and academically strong, but it is another archive-heavy Western history specialist in a pool already rich in Yale material; advancement should depend on a direct redundancy comparison rather than prestige alone.",
+    "flags": [
+      "archive-course",
+      "western-canon",
+      "redundancy-review",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-hist-202-european-civilization",
+    "candidate_id": "yale-hist-202-european-civilization",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-202",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-202"
+    ],
+    "rationale": "A broad European survey remains educational, but the archive is materially redundant with stronger current world-history and global-history survivors while adding further Western-canon concentration; it no longer justifies expensive deep review.",
+    "flags": [
+      "archive-course",
+      "western-canon",
+      "redundancy-dominated",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-hist-116-american-revolution",
+    "candidate_id": "yale-hist-116-american-revolution",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-116",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-116"
+    ],
+    "rationale": "The complete Yale sequence gives a focused political, social and military treatment of the American Revolution with university-level structure and assessment, sufficiently distinct from the Civil War course to merit direct comparison.",
+    "flags": [
+      "archive-course",
+      "us-history",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-hist-276-france-since-1871",
+    "candidate_id": "yale-hist-276-france-since-1871",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/history/hist-276",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-276"
+    ],
+    "rationale": "The course is substantial, but its 2007 recording covers relatively modern history where historiography and bibliography have moved meaningfully; a scholarship-currency review is needed before it consumes a deep-review slot.",
+    "flags": [
+      "archive-course",
+      "modern-history-currency-review",
+      "france-history",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-herodotus-invention-history",
+    "candidate_id": "openlearn-herodotus-invention-history",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/herodotus-and-the-invention-history",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/herodotus-and-the-invention-history"
+    ],
+    "rationale": "Published in 2024, the six-hour course uses Herodotus to teach source evaluation, competing accounts and historical enquiry, giving it a current methodological role distinct from a conventional ancient-history survey.",
+    "flags": [
+      "free-statement-of-participation",
+      "historical-method",
+      "short-duration"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-enlightenment",
+    "candidate_id": "openlearn-enlightenment",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/history-art/the-enlightenment/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/history-art/the-enlightenment/content-section-0"
+    ],
+    "rationale": "Although last updated in 2019, this 16-hour intermediate course offers structured cross-disciplinary treatment of Enlightenment science, religion, art and culture with completion recognition; the underlying historical content is comparatively stable.",
+    "flags": [
+      "free-statement-of-participation",
+      "intermediate-level",
+      "older-update"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-hist362-modern-revolutions",
+    "candidate_id": "saylor-hist362-modern-revolutions",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/hist362",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/hist362"
+    ],
+    "rationale": "The current 39-hour course provides a structured comparative study of modern revolutions with assessment and a free certificate, offering more active learning and cross-case comparison than another single-region lecture archive.",
+    "flags": [
+      "free-certificate",
+      "comparative-history",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-fun-la-musique-quelle-histoire",
+    "candidate_id": "fun-la-musique-quelle-histoire",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/"
+    ],
+    "rationale": "The French-original 15-hour course has a coherent six-chapter structure, activities and self-assessment, but the official page still describes access as running only until a course-closing date without exposing a clearly current session window; availability must be resolved.",
+    "flags": [
+      "french-original",
+      "time-bounded-access",
+      "session-status-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-socy-151-social-theory",
+    "candidate_id": "yale-socy-151-social-theory",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/sociology/socy-151",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/sociology/socy-151"
+    ],
+    "rationale": "The complete 25-lecture survey of foundational social thought includes substantial readings, tests and an essay; because the core thinkers and conceptual history are stable, its 2009 archive age does not erase its depth.",
+    "flags": [
+      "archive-course",
+      "social-theory",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-engl-310-modern-poetry",
+    "candidate_id": "yale-engl-310-modern-poetry",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/english/engl-310",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/english/engl-310"
+    ],
+    "rationale": "The 25-lecture course provides sustained close reading across major modern poets, multiple critical methods, papers and examinations; literary-analysis fundamentals are stable enough for the archive to remain a serious deep-review candidate.",
+    "flags": [
+      "archive-course",
+      "literary-analysis",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-engl-220-milton",
+    "candidate_id": "yale-engl-220-milton",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/english/engl-220",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "partial",
+    "evidence": [
+      "https://oyc.yale.edu/english/engl-220"
+    ],
+    "rationale": "The available material is academically strong but the public session sequence omits several numbered lectures and the topic is narrow relative to complete literature candidates; an incomplete specialist archive is not competitive enough for deep review.",
+    "flags": [
+      "archive-course",
+      "partial-lecture-archive",
+      "specialist-scope",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-ital-310-dante",
+    "candidate_id": "yale-ital-310-dante",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/italian-language-and-literature/ital-310",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/italian-language-and-literature/ital-310"
+    ],
+    "rationale": "The full course pairs close reading of the Divine Comedy and minor works with political, philosophical and theological context, providing a coherent specialist humanities experience strong enough to justify comparison despite its archive age.",
+    "flags": [
+      "archive-course",
+      "specialist-literature",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-human-rights-law",
+    "candidate_id": "openlearn-human-rights-law",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/society-politics-law/human-rights-and-law/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/society-politics-law/human-rights-and-law/content-section-0"
+    ],
+    "rationale": "The 20-hour course remains fully accessible, but it was last updated in 2019 and explicitly teaches UK human-rights law and the Human Rights Act; legal currency and the temporary humanities categorisation must be resolved before advancement.",
+    "flags": [
+      "free-statement-of-participation",
+      "legal-currency-review",
+      "category-taxonomy-review",
+      "uk-law"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-rlst-145-hebrew-bible",
+    "candidate_id": "yale-rlst-145-hebrew-bible",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/religious-studies/rlst-145",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/religious-studies/rlst-145"
+    ],
+    "rationale": "The course uses historical-critical, source, redaction and literary methods within Ancient Near Eastern context and includes substantial assessment, making it a rigorous academic religious-studies resource rather than devotional instruction.",
+    "flags": [
+      "archive-course",
+      "religious-studies",
+      "historical-critical-method",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-rlst-152-new-testament",
+    "candidate_id": "yale-rlst-152-new-testament",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/religious-studies/rlst-152",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/religious-studies/rlst-152"
+    ],
+    "rationale": "The complete course studies early Christianity and New Testament literature historically rather than devotionally, with a clear academic framework and substantial university-level reading and assessment.",
+    "flags": [
+      "archive-course",
+      "religious-studies",
+      "historical-literary-method",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-yale-engl-300-theory-literature",
+    "candidate_id": "yale-engl-300-theory-literature",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://oyc.yale.edu/english/engl-300",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; Open Yale Courses archive",
+    "completeness": "complete",
+    "evidence": [
+      "https://oyc.yale.edu/english/engl-300"
+    ],
+    "rationale": "The extensive lecture sequence covers formalism, structuralism, deconstruction, psychoanalysis, critical theory, feminism, African-American and post-colonial criticism with papers and exams, providing unusually broad theory depth.",
+    "flags": [
+      "archive-course",
+      "literary-theory",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-phil103-moral-political-philosophy",
+    "candidate_id": "saylor-phil103-moral-political-philosophy",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/phil103",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/phil103"
+    ],
+    "rationale": "The 50-hour course is a substantial structured route through moral and political philosophy, includes assessment, a free certificate and college-credit recommendation, and provides a useful non-archive comparator to Yale and MIT.",
+    "flags": [
+      "free-certificate",
+      "college-credit-recommended",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-phil203-environmental-ethics",
+    "candidate_id": "saylor-phil203-environmental-ethics",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1257",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1257"
+    ],
+    "rationale": "The 49-hour course combines environmental ethics, justice, world views and sustainability with structured learning, assessment and a free certificate, adding a distinctive applied-ethics niche with enough depth for deep review.",
+    "flags": [
+      "free-certificate",
+      "applied-ethics",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-mit-24-01-classics-western-philosophy",
+    "candidate_id": "mit-24-01-classics-western-philosophy",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2016/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "completeness": "substantive",
+    "evidence": [
+      "https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2016/"
+    ],
+    "rationale": "The notes and written assignments are useful, but the course lacks a full teaching-media layer and substantially overlaps stronger already-advanced MIT philosophy candidates while adding further Western-canon concentration.",
+    "flags": [
+      "western-canon",
+      "limited-teaching-media",
+      "redundancy-dominated",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-hp-life-effective-leadership",
+    "candidate_id": "hp-life-effective-leadership",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.life-global.org/course/13-effective-leadership",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.life-global.org/en/allcourses",
+      "https://www.life-global.org/news/5761"
+    ],
+    "rationale": "Launched in 2024 and still actively listed by HP LIFE, the course covers self-awareness, leadership strategies, teams, communication, ethics and change and has a current free Certificate of Completion path.",
+    "flags": [
+      "free-certificate",
+      "current-course",
+      "leadership"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-step-up-leadership",
+    "candidate_id": "openlearn-step-up-leadership",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/leadership-management/step-leadership",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/leadership-management/step-leadership"
+    ],
+    "rationale": "The four-hour course is coherent but was last updated in 2020 and is explicitly framed around policing leadership; stronger, newer and broader leadership survivors make its marginal value too small for deep review.",
+    "flags": [
+      "short-duration",
+      "policing-context",
+      "redundancy-dominated",
+      "older-update"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-managing-people",
+    "candidate_id": "openlearn-managing-people",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/leadership-management/managing-and-managing-people",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/leadership-management/managing-and-managing-people"
+    ],
+    "rationale": "This eight-hour advanced introduction was last updated in 2019 and is now directly dominated by newer practical management candidates with comparable or better coverage, quizzes and more current workplace framing.",
+    "flags": [
+      "older-update",
+      "redundancy-dominated",
+      "management"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openlearn-project-management-journey",
+    "candidate_id": "openlearn-project-management-journey",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Statement of Participation on completion",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey"
+    ],
+    "rationale": "The 35-hour advanced course is substantial and includes risk, life cycles and agile approaches, but it was last updated in 2016; project-management frameworks have evolved enough that a currency audit is required.",
+    "flags": [
+      "project-management-currency-review",
+      "older-update",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-bus402-project-management",
+    "candidate_id": "saylor-bus402-project-management",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/bus402",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/bus402"
+    ],
+    "rationale": "The current 52-hour course covers project process groups from initiation through closure, explicitly references PMI's Talent Triangle, includes assessment, a free certificate and college-credit recommendation, and clearly clears the depth threshold.",
+    "flags": [
+      "free-certificate",
+      "college-credit-recommended",
+      "project-management",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-prdv224-leadership-teams",
+    "candidate_id": "saylor-prdv224-leadership-teams",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1286",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1286"
+    ],
+    "rationale": "The nine-hour course has useful coverage of motivation, collaboration, team formation and conflict plus a free certificate, but the category now contains stronger current leadership and team-management candidates; head-to-head marginal value must be established.",
+    "flags": [
+      "free-certificate",
+      "redundancy-review",
+      "team-leadership"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-prdv228-decision-making",
+    "candidate_id": "saylor-prdv228-decision-making",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1302",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1302"
+    ],
+    "rationale": "The four-hour course is accessible and credentialed but remains a compact introduction to basic decision types and tools; in a crowded leadership category it is too narrow and shallow to justify deep review over stronger comprehensive alternatives.",
+    "flags": [
+      "short-duration",
+      "specialist-scope",
+      "redundancy-dominated",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-saylor-prdv231-ethical-leadership",
+    "candidate_id": "saylor-prdv231-ethical-leadership",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1309",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor certificate",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1309"
+    ],
+    "rationale": "The 11-hour course has a coherent virtue-ethics and leadership focus with a free certificate, but it is specialised and overlaps ethics content in broader leadership courses; its incremental value should be tested head-to-head.",
+    "flags": [
+      "free-certificate",
+      "specialist-scope",
+      "redundancy-review",
+      "ethical-leadership"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openclassrooms-initiez-vous-gestion-projet",
+    "candidate_id": "openclassrooms-initiez-vous-gestion-projet",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://openclassrooms.com/courses/8744811-initiez-vous-a-la-gestion-de-projet",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free certificate verified; course content and quiz are free",
+    "completeness": "complete",
+    "evidence": [
+      "https://openclassrooms.com/courses/8744811-initiez-vous-a-la-gestion-de-projet"
+    ],
+    "rationale": "Updated in December 2025, this French-original free-access course teaches project basics, planning, day-to-day steering and evaluation with an end quiz; its currency and language diversity justify deeper comparison despite the compact four-hour scope.",
+    "flags": [
+      "french-original",
+      "current-2025",
+      "compact-course",
+      "free-assessment"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-08-openclassrooms-manage-team",
+    "candidate_id": "openclassrooms-manage-team",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-11",
+    "canonical_url": "https://openclassrooms.com/fr/courses/7494031-manage-a-team",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free certificate verified; course content and quizzes are free",
+    "completeness": "complete",
+    "evidence": [
+      "https://openclassrooms.com/fr/courses/7494031-manage-a-team"
+    ],
+    "rationale": "Updated in January 2025, the eight-hour free-access course covers delegation, meetings, feedback, performance, prioritisation, recruitment and onboarding across three assessed sections, making it a current practical management candidate.",
+    "flags": [
+      "current-2025",
+      "management",
+      "free-assessments"
+    ],
+    "is_current": true
+  }
+]
