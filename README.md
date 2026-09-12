@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **206 advance / 4 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for one archived NAU course and two IBM SkillsBuild learner routes. **24 current Deep Reviews** are complete: 12 calibration records plus the first 12-course scaled volatile-technology batch.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **206 advance / 4 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for one archived NAU course and two IBM SkillsBuild learner routes. **36 current Deep Reviews** are complete: 12 calibration records plus two 12-course scaled review batches.
 
 ## Goal
 
@@ -20,6 +20,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/deep-review-protocol.md`](docs/deep-review-protocol.md) — evidence and scoring rules for Phase 3.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
+- [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
