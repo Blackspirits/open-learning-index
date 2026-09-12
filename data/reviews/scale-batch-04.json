@@ -1,0 +1,525 @@
+[
+  {
+    "review_id": "deep-05-harvard-stat110-probability",
+    "candidate_id": "harvard-stat110-probability",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://stat110.hsites.harvard.edu/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified for the independent public route",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Full university probability course built around lectures, an openly available companion book, handouts, eleven strategic-practice/homework sets with solutions and exam material, covering combinatorics, conditional probability, distributions, expectation, transformations, joint distributions and stochastic-process foundations.",
+    "prerequisites": "Single-variable calculus and mathematical maturity; multivariable calculus is helpful for later continuous-distribution material",
+    "required_resources": "Web browser and PDF/video access; no paid software or platform is required",
+    "component_evidence": {
+      "pedagogy": "The course is organized around Joe Blitzstein's story-based explanations and strategic-practice problems that deliberately teach learners how to choose probability methods rather than only execute formulas.",
+      "depth": "Stat 110 develops a rigorous undergraduate probability sequence from counting and conditional probability through random variables, expectation, joint distributions and advanced applications.",
+      "practice": "Eleven substantial strategic-practice/homework sets, solutions and exam-style materials provide sustained mathematical problem solving rather than passive lecture consumption.",
+      "materials": "The public site combines a free probability book, lecture videos, handouts, practice sets and solutions in a coherent reusable package.",
+      "currency": "The core probability mathematics is highly stable, so the age of some recorded material has little impact on correctness or relevance; examples and presentation remain serviceable.",
+      "expertise": "Joe Blitzstein is a Harvard statistics professor and the course/book materials reflect deep subject expertise in undergraduate probability and mathematical explanation.",
+      "accessibility": "All core materials are free and self-paced, but calculus prerequisites and mathematically demanding problem sets create a meaningful barrier for complete beginners."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9.4,
+      "practice": 9.3,
+      "materials": 9.5,
+      "currency": 9.1,
+      "expertise": 9.7,
+      "accessibility": 8.2
+    },
+    "quality_score": 9.28,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "A category-leader candidate for learners who want rigorous probability and are comfortable with calculus. MIT 18.05 is the stronger all-in-one probability-and-statistics route with interactive checking; Stat 110 is stronger when probability depth itself is the goal.",
+    "comparators": [
+      "mit-18-05-probability-statistics",
+      "cmu-oli-probability-statistics"
+    ],
+    "evidence": [
+      "https://stat110.hsites.harvard.edu/",
+      "https://stat110.hsites.harvard.edu/search"
+    ],
+    "flags": [
+      "stable-foundations",
+      "problem-heavy",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-18-650-statistics-applications",
+    "candidate_id": "mit-18-650-statistics-applications",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Advanced undergraduate statistics course covering parametric inference, maximum likelihood, method of moments, hypothesis testing, goodness of fit, regression, Bayesian statistics, principal component analysis and generalized linear models, with lectures, notes, problem sets and exams.",
+    "prerequisites": "Probability theory at approximately MIT 18.440 level plus linear algebra including matrices, vectors and eigenvalues",
+    "required_resources": "Web browser/PDF/video access and mathematical working tools; no paid statistics package is required by the public OCW route",
+    "component_evidence": {
+      "pedagogy": "The course consistently derives statistical methods from their mathematical foundations and ties the theory back to formulation and interpretation of applied statistical problems.",
+      "depth": "Its treatment of estimation, testing, regression, Bayesian methods, PCA and generalized linear models is substantially deeper than introductory statistics courses.",
+      "practice": "Problem sets, a midterm and final exam require extended derivation and application, though the archive does not provide the interactive feedback found in OLI or MIT 18.05.",
+      "materials": "MIT OCW supplies lecture videos, detailed notes, syllabus, problem sets and assessment material in a complete academic archive.",
+      "currency": "The theoretical statistical methods are durable and remain current, while some application examples and tooling context are less contemporary than a newly taught applied-data course.",
+      "expertise": "Philippe Rigollet is a specialist in statistics and machine learning, and the course is a mathematically rigorous MIT statistics offering.",
+      "accessibility": "The materials are fully free, but prerequisite probability and linear algebra are substantial and the archive assumes a high degree of independent mathematical study."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 9.3,
+      "practice": 9,
+      "materials": 9.1,
+      "currency": 8.9,
+      "expertise": 9.7,
+      "accessibility": 7.5
+    },
+    "quality_score": 9.01,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "Excellent for mathematically prepared learners who want statistical theory behind modern methods. It is not the default introductory recommendation because the prerequisites are much higher and the learner-support design is less autonomous than MIT 18.05 or CMU OLI.",
+    "comparators": [
+      "mit-18-05-probability-statistics"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/",
+      "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/pages/syllabus/"
+    ],
+    "flags": [
+      "advanced-prerequisites",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-18-05-probability-statistics",
+    "candidate_id": "mit-18-05-probability-statistics",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal free completion certificate verified; free Open Learning Library route supports interactive questions, problem checkers and progress tracking",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Rigorous introductory probability-and-statistics course covering combinatorics, random variables, distributions, Bayesian inference, confidence intervals, hypothesis testing and linear regression, with readings, lecture material, problem sets, solutions, exams and a free interactive Open Learning Library version.",
+    "prerequisites": "Single-variable calculus and comfort with algebra; basic multivariable ideas are useful but not a formal barrier to most of the course",
+    "required_resources": "Web browser; free Open Learning Library account is optional for progress tracking, with no paid software or hardware required",
+    "component_evidence": {
+      "pedagogy": "The course combines structured readings, worked examples, online reading questions and problem checkers so independent learners receive repeated feedback instead of relying only on lecture videos.",
+      "depth": "It develops both probability and statistical inference at a rigorous undergraduate level, including Bayesian inference, testing, confidence intervals and regression.",
+      "practice": "Problem sets, activity assignments, exams, solutions and interactive problem checking provide unusually strong practice and self-correction for a free university course.",
+      "materials": "OCW and the Open Learning Library together provide readings, notes, assignments, exams, solutions, interactive components and progress tracking in a highly complete package.",
+      "currency": "The 2022 edition is recent for a mathematically stable subject and includes a modern independent-learning wrapper that remains publicly accessible.",
+      "expertise": "The course is authored and taught by MIT mathematics instructors with direct expertise in probability, statistics and quantitative instruction.",
+      "accessibility": "The route is free, supports anonymous viewing or free progress tracking and has no specialist software dependency; calculus remains the main prerequisite barrier."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.2,
+      "practice": 9.5,
+      "materials": 9.3,
+      "currency": 9.3,
+      "expertise": 9.5,
+      "accessibility": 9.1
+    },
+    "quality_score": 9.36,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "The strongest all-round probability-and-statistics recommendation in the current family: rigorous enough for university study, but unusually well adapted to independent learners through interactive questions and problem checkers.",
+    "comparators": [
+      "harvard-stat110-probability",
+      "cmu-oli-probability-statistics",
+      "khan-statistics-probability"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/"
+    ],
+    "flags": [
+      "interactive-learning",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-18-100a-real-analysis",
+    "candidate_id": "mit-18-100a-real-analysis",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Proof-oriented real-analysis course covering sequences and series, continuity, differentiability, Riemann integration, sequences and series of functions, uniform convergence and interchange of limit operations, with lecture videos, notes, recitations, twelve assignments, a midterm and final assignment.",
+    "prerequisites": "Multivariable calculus at approximately MIT 18.02 level; learners must be ready to write and understand mathematical proofs",
+    "required_resources": "Web browser/PDF/video access; a freely downloadable analysis textbook is provided, with no paid software required",
+    "component_evidence": {
+      "pedagogy": "Lectures, recitations and a large sequence of written assignments deliberately train proof construction and mathematical reasoning rather than only presenting theorems.",
+      "depth": "The course offers a full rigorous undergraduate foundation in real analysis, including convergence, continuity, differentiation, integration and uniformity.",
+      "practice": "Twelve assignments plus a take-home midterm and final assignment make proof writing and problem solving central to the course.",
+      "materials": "The public package includes lecture videos, complete notes, recitation notes, assignments, exams and a free PDF textbook, and can be downloaded for offline study.",
+      "currency": "The mathematical content is highly stable and the 2020 edition is recent enough that age has effectively no substantive impact on subject quality.",
+      "expertise": "MIT mathematics instruction and a specialist real-analysis course design provide strong subject expertise; the materials are purpose-built for proof-oriented undergraduate study.",
+      "accessibility": "Everything is free, but multivariable-calculus prerequisites and the abrupt transition to proof-based mathematics make this unsuitable for most beginners."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.5,
+      "practice": 9.3,
+      "materials": 9.3,
+      "currency": 9.2,
+      "expertise": 9.5,
+      "accessibility": 7.8
+    },
+    "quality_score": 9.23,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A very strong free real-analysis course for learners who are already mathematically prepared. The recommendation penalty is almost entirely prerequisite difficulty, not course quality.",
+    "comparators": [],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/",
+      "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/syllabus/",
+      "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/assignments-and-exams/"
+    ],
+    "flags": [
+      "proof-heavy",
+      "advanced-prerequisites",
+      "stable-foundations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-6-042j-math-cs",
+    "candidate_id": "mit-6-042j-math-cs",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal free completion credential verified",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Undergraduate discrete-mathematics course for computer science covering mathematical definitions and proofs, sets and functions, graph theory, state machines, modular arithmetic, counting and discrete probability, with lectures, open textbook, problem sets and exams.",
+    "prerequisites": "Comfort with algebra and introductory programming/computer-science thinking is useful; no advanced continuous mathematics is required",
+    "required_resources": "Web browser/PDF/video access; all core textbook and assignment materials are freely available",
+    "component_evidence": {
+      "pedagogy": "The course explicitly connects proof methods and discrete structures to later computer-science use, combining lecture explanation with a substantial open textbook and problem solving.",
+      "depth": "It provides a full undergraduate treatment of proof, graphs, modular arithmetic, counting and probability rather than a short discrete-math survey.",
+      "practice": "Problem sets and exams require repeated proof construction, combinatorial reasoning and probability work, making active mathematical reasoning central.",
+      "materials": "MIT supplies lecture videos, notes, a complete open textbook, problem sets and exams, and also exposes the course through the free Open Learning Library.",
+      "currency": "Discrete mathematics and proof methods are highly stable; the 2015 date does not materially reduce subject relevance for modern computer science.",
+      "expertise": "The course is authored by MIT computer-science and mathematics faculty with direct expertise in formal reasoning and theoretical CS foundations.",
+      "accessibility": "All materials are free and the subject has modest formal prerequisites, but proof-based reasoning is demanding and there is no formal independent-learner credential."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.3,
+      "practice": 9.2,
+      "materials": 9.5,
+      "currency": 9,
+      "expertise": 9.6,
+      "accessibility": 8.7
+    },
+    "quality_score": 9.27,
+    "recommendation_score": 9.4,
+    "recommendation_rationale": "A category-leader candidate for discrete mathematics in computer science. It is especially valuable before algorithms and theoretical CS because the course integrates proofs, combinatorics, graphs and probability in one complete free package.",
+    "comparators": [
+      "mit-6-006-algorithms"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
+      "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/resources/mit6_042js15_textbook/"
+    ],
+    "flags": [
+      "stable-foundations",
+      "discrete-mathematics",
+      "open-textbook",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-18-01sc-calculus",
+    "candidate_id": "mit-18-01sc-calculus",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare Scholar materials",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "OCW Scholar single-variable calculus course explicitly designed for independent study, with lecture videos and notes, recitation/problem-solving videos, detailed worked examples, problem sets and solutions, exams and solutions and interactive Mathlets.",
+    "prerequisites": "Strong high-school algebra, geometry and precalculus; no prior calculus required",
+    "required_resources": "Web browser/PDF/video access; some legacy Java Mathlets may have modern-browser compatibility limits, but the core course does not depend on them",
+    "component_evidence": {
+      "pedagogy": "OCW Scholar was explicitly built for independent learners, and the course layers lecture explanation, recitation strategy, worked examples and self-checkable exercises rather than simply publishing classroom artifacts.",
+      "depth": "It provides a complete university single-variable calculus sequence through differentiation, integration, approximation and applications.",
+      "practice": "Problem sets, worked examples, recitation videos, multiple exams and full solutions create exceptional opportunities for deliberate mathematical practice.",
+      "materials": "The package is unusually complete: lectures, notes, problem-solving videos, worked examples, problem sets, exams, solutions and optional interactive Mathlets.",
+      "currency": "Single-variable calculus is extremely stable, so the 2010 teaching date has negligible conceptual cost; only optional legacy applet technology shows age.",
+      "expertise": "The course was developed by MIT mathematics faculty and a dedicated OCW Scholar content team specifically to support independent mathematical study.",
+      "accessibility": "The course is free, self-paced and begins from precalculus-level preparation, with extensive solutions; the main minor friction is older optional interactive technology."
+    },
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.2,
+      "practice": 9.6,
+      "materials": 9.5,
+      "currency": 8.9,
+      "expertise": 9.5,
+      "accessibility": 9.2
+    },
+    "quality_score": 9.38,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "A top-tier free single-variable calculus recommendation. Its age is largely irrelevant because the subject is stable and the Scholar format remains exceptionally complete for autonomous study.",
+    "comparators": [],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/download/"
+    ],
+    "flags": [
+      "self-study-designed",
+      "stable-foundations",
+      "solution-rich",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-18-02sc-multivariable-calculus",
+    "candidate_id": "mit-18-02sc-multivariable-calculus",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare Scholar materials",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "OCW Scholar multivariable-calculus course designed for independent study, covering vectors and matrices, partial derivatives, multiple integrals, vector fields, line and surface integrals and core theorems, with lectures, recitations, practice problems, problem sets, exams and solutions.",
+    "prerequisites": "Single-variable calculus equivalent to MIT 18.01",
+    "required_resources": "Web browser/PDF/video access; no paid software or specialist hardware required",
+    "component_evidence": {
+      "pedagogy": "The Scholar design separates conceptual lectures from recitation-style problem solving and gives learners explicit practice pathways rather than assuming classroom support.",
+      "depth": "The course provides a full undergraduate multivariable and vector-calculus sequence with linear-algebra foundations, multiple integration and vector-field analysis.",
+      "practice": "Practice sessions, problem sets, multiple exams and extensive solutions support sustained independent problem solving and error correction.",
+      "materials": "The course includes lecture and recitation videos, notes, practice problems, assignments, exams and detailed solutions in a downloadable package.",
+      "currency": "Multivariable calculus is highly stable and the 2010 date does not weaken the mathematical content; presentation technology is older but nonessential.",
+      "expertise": "MIT mathematics faculty and OCW Scholar developers designed the sequence specifically as a complete independent-learning package.",
+      "accessibility": "The course is entirely free and self-paced, but it assumes a solid single-variable-calculus foundation and is more demanding than introductory alternatives."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.3,
+      "practice": 9.6,
+      "materials": 9.4,
+      "currency": 8.9,
+      "expertise": 9.5,
+      "accessibility": 8.9
+    },
+    "quality_score": 9.36,
+    "recommendation_score": 9.4,
+    "recommendation_rationale": "A leading free multivariable-calculus route for independent learners, especially for those continuing from MIT 18.01SC. The main barrier is prerequisite difficulty rather than course design.",
+    "comparators": [],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/download/"
+    ],
+    "flags": [
+      "self-study-designed",
+      "stable-foundations",
+      "solution-rich",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-mit-18-03sc-differential-equations",
+    "candidate_id": "mit-18-03sc-differential-equations",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate; MIT OpenCourseWare Scholar materials",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Independent-study differential-equations course for science and engineering with lectures, notes, practice problems, recitation/problem-solving videos, problem sets and solutions, interactive demonstrations and full exams with solutions.",
+    "prerequisites": "Single-variable calculus; familiarity with vectors and basic linear algebra is useful",
+    "required_resources": "Web browser/PDF/video access; some legacy Java Mathlets are optional and may require modern substitutes",
+    "component_evidence": {
+      "pedagogy": "The course is explicitly built for independent study and combines conceptual lectures with targeted problem-solving videos, practice exercises and self-checkable assignments.",
+      "depth": "It covers first-order equations, linear systems, second-order equations, transforms, numerical ideas and qualitative behaviour at a substantial undergraduate level.",
+      "practice": "Practice problems, problem sets, recitation videos and a full set of exams with solutions give learners repeated opportunities to solve and verify differential-equation work.",
+      "materials": "MIT provides lectures, notes, problem-solving videos, assignments, solutions, exams, practice exams and optional interactive Mathlets in a complete archive.",
+      "currency": "Differential-equation foundations are highly stable; the 2011 date has little conceptual cost, with age visible mainly in optional Java-based demonstrations.",
+      "expertise": "The course was developed by MIT mathematics faculty and OCW Scholar contributors with extensive experience teaching differential equations to science and engineering students.",
+      "accessibility": "All core materials are free and self-paced, but calculus prerequisites and some optional legacy interactive technology create moderate friction."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.4,
+      "practice": 9.6,
+      "materials": 9.4,
+      "currency": 8.9,
+      "expertise": 9.5,
+      "accessibility": 8.8
+    },
+    "quality_score": 9.37,
+    "recommendation_score": 9.4,
+    "recommendation_rationale": "A category-leader candidate for independent differential-equations study: unusually complete, solution-rich and explicitly designed for self-learners. Its age is not a substantive weakness in this stable subject.",
+    "comparators": [],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/"
+    ],
+    "flags": [
+      "self-study-designed",
+      "stable-foundations",
+      "solution-rich",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-cmu-oli-statistical-reasoning",
+    "candidate_id": "cmu-oli-statistical-reasoning",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://oli.cmu.edu/courses/statistical-reasoning-copy/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No tests, college credit or certificate in the Open & Free independent-learner version",
+    "academic_credits": "None for the Open & Free route",
+    "self_paced": true,
+    "scope_notes": "Full-semester introductory statistics course using a streamlined empirical treatment of probability, covering exploratory data analysis, sampling and study design, relative-frequency probability and statistical inference through expository text, simulations, case studies, interactive exercises and StatTutor labs.",
+    "prerequisites": "Basic algebra; no prior statistics knowledge required",
+    "required_resources": "Modern browser plus one supported statistics tool for activities: free R or a learner-provided alternative such as Excel, Minitab, TI calculator or StatCrunch",
+    "component_evidence": {
+      "pedagogy": "The course was designed around statistical reasoning rather than formula memorisation and integrates simulations, cases, interactive exercises and tutor feedback throughout the full-semester sequence.",
+      "depth": "It covers the core introductory statistics arc in substantial depth but deliberately gives probability a lighter empirical treatment than CMU Probability & Statistics.",
+      "practice": "Interactive learning exercises, simulations and StatTutor labs provide frequent applied practice and feedback even though scored tests are omitted from the Open & Free route.",
+      "materials": "CMU exposes the complete expository material, simulations, case studies, exercises, labs and software instructions in a self-paced Open & Free package.",
+      "currency": "The course was last updated in 2017; introductory statistical reasoning remains stable, although software interfaces and data contexts are older than current offerings.",
+      "expertise": "Carnegie Mellon OLI applies learning-science research and university statistics expertise to a course explicitly built for interactive independent study.",
+      "accessibility": "The course is free forever, self-paced and requires only basic algebra; free R is supported, though the lack of scored tests and certificates reduces formal completion structure."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8.7,
+      "practice": 9.2,
+      "materials": 9,
+      "currency": 8.2,
+      "expertise": 9.2,
+      "accessibility": 9
+    },
+    "quality_score": 8.97,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A very strong beginner statistics route, especially for learners who benefit from simulation and tutor feedback. CMU Probability & Statistics is the better choice when a classical probability foundation is desired.",
+    "comparators": [
+      "cmu-oli-probability-statistics",
+      "mit-18-05-probability-statistics",
+      "khan-statistics-probability"
+    ],
+    "evidence": [
+      "https://oli.cmu.edu/courses/statistical-reasoning-copy/",
+      "https://oli.cmu.edu/jcourse/webui/guest/join.do?section=statreasoning"
+    ],
+    "flags": [
+      "interactive-learning",
+      "free-forever",
+      "no-certificate",
+      "stable-foundations"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-05-khan-statistics-probability",
+    "candidate_id": "khan-statistics-probability",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.khanacademy.org/math/statistics-probability/statistics-probability",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Broad mastery-based statistics and probability curriculum with more than 150 tracked skills across categorical and quantitative data, distributions, study design, probability, random variables, sampling distributions, confidence intervals, significance testing and regression, using exercises, quizzes, unit tests and a course challenge.",
+    "prerequisites": "Basic algebra; designed to be accessible to secondary-school and introductory college learners",
+    "required_resources": "Modern web browser and optional free Khan Academy account for mastery/progress tracking; no paid software required",
+    "component_evidence": {
+      "pedagogy": "Short explanations and worked examples are tightly coupled to mastery exercises, quizzes and unit tests, giving learners immediate iteration rather than long lecture-first blocks.",
+      "depth": "The curriculum is broad and covers the main introductory statistics/probability sequence, but its modular skill format provides less sustained theoretical development than MIT or CMU full-semester courses.",
+      "practice": "More than 150 tracked skills, repeated quizzes, unit tests and a course challenge make formative practice and mastery checking exceptionally strong.",
+      "materials": "Khan Academy integrates explanatory videos/articles, exercises, hints, quizzes, tests and mastery tracking in a polished actively maintained platform.",
+      "currency": "The course is actively maintained and its statistics foundations are stable, so learners face little content-staleness risk.",
+      "expertise": "Khan Academy has extensive experience in mastery-based mathematics instruction and maintains a large standards-aligned quantitative curriculum, though the course is less faculty-specialist-driven than university offerings.",
+      "accessibility": "The full course is free, browser-based, beginner-friendly and usable with very low technical friction, with optional accounts for progress tracking."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.1,
+      "practice": 9.2,
+      "materials": 8.8,
+      "currency": 9,
+      "expertise": 8.8,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.81,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "The strongest low-friction recommendation for beginners who need lots of guided practice and mastery feedback. MIT 18.05 and CMU are stronger for coherent university-level depth.",
+    "comparators": [
+      "cmu-oli-probability-statistics",
+      "cmu-oli-statistical-reasoning",
+      "mit-18-05-probability-statistics"
+    ],
+    "evidence": [
+      "https://www.khanacademy.org/statistics-probability"
+    ],
+    "flags": [
+      "mastery-learning",
+      "practice-heavy",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  }
+]
