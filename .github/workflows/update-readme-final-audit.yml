@@ -1,0 +1,51 @@
+name: Update README for Final Audit
+
+on:
+  push:
+    branches:
+      - audit/final-coverage-v0.2
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: ${{ !contains(github.event.head_commit.message, 'Update README after final coverage audit') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/final-coverage-v0.2
+      - name: Update project status and audit links
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('README.md')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace(
+            '**Status:** v0.2 — targeted discovery + shallow screening. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** **All 286 candidates have now been shallow-screened** across eleven tranches. Hold resolution is underway: **200 advance / 34 hold / 52 reject** are the current decisions; reference records remain calibration fixtures, not the final Top 100.',
+            '**Status:** v0.2 — shallow screening and hold resolution complete. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** Current decisions are **205 advance / 2 hold / 79 reject**. The final saturation audit stops broad discovery and authorises only one 8–12 candidate corrective micro-wave before deep review.'
+          )
+          s=s.replace(
+            'The original discovery target was **300–500 serious candidates**. After formal coverage audits, the project moved to a hybrid strategy: shallow screening is now the primary workstream while discovery continues only for documented gaps and credible category-leader challengers. The current evidence-based stopping target remains roughly **320–350 candidates**, with expansion toward 400–500 only if a later saturation audit still finds meaningful blind spots.',
+            'The original discovery target was **300–500 serious candidates**, later narrowed to roughly 320–350. Completed screening supersedes that numerical target: at 286 candidates the pool already contains 207 active survivors for an intended 100–150-resource index. Broad discovery is therefore stopped; only a capped corrective micro-wave for documented Arabic/Mandarin and exceptional geographic gaps remains before deep review.'
+          )
+          anchor='- [`docs/screening/hold-resolution-01.md`](docs/screening/hold-resolution-01.md) — resolves objective access, availability, hardware, beta-status and public-completeness blockers.\n'
+          insert=(anchor+
+            '- [`docs/screening/hold-resolution-02.md`](docs/screening/hold-resolution-02.md) — resolves the remaining comparative/currentness holds and carries forward only two evidence-constrained cases.\n'
+            '- [`docs/coverage-audit-v0.2-final.md`](docs/coverage-audit-v0.2-final.md) — final saturation decision after all 286 candidates were screened and holds resolved.\n'
+            '- [`docs/coverage-audit-v0.2-final-snapshot.md`](docs/coverage-audit-v0.2-final-snapshot.md) — generated evidence snapshot behind the final audit.\n')
+          if anchor not in s:
+            raise SystemExit('README anchor missing')
+          s=s.replace(anchor,insert,1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - run: python scripts/validate.py
+      - name: Commit README and remove helper workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/update-readme-final-audit.yml
+          git add README.md
+          git commit -m "Update README after final coverage audit"
+          git push origin HEAD:audit/final-coverage-v0.2
