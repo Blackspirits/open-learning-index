@@ -1,0 +1,566 @@
+[
+  {
+    "review_id": "deep-12-mit-15-390-new-enterprises",
+    "candidate_id": "mit-15-390-new-enterprises",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Graduate entrepreneurship course on opportunity identification, market segmentation, customer research, competitive positioning, product planning, go-to-market, sales, finance, team formation and legal/organizational issues, built around developing a startup business plan and investor pitch.",
+    "prerequisites": "No formal OCW prerequisite stated, but the original MIT course was designed for graduate learners building technology-based ventures",
+    "required_resources": "General-purpose computer and browser; spreadsheet use is helpful for the financial template; no paid platform is required",
+    "component_evidence": {
+      "pedagogy": "The course is explicitly learn-by-doing: students progress through venture creation by building the essential parts of a business plan and investor pitch rather than only studying entrepreneurship concepts.",
+      "depth": "A semester-length graduate course covers customer discovery, market sizing, competition, product, sales, finance, people and legal/organizational issues at substantial depth.",
+      "practice": "Twelve assignments, evaluation sheets, financial templates and a final business-plan structure provide unusually strong applied practice for an openly available entrepreneurship course.",
+      "materials": "OCW exposes syllabus, calendar, readings, lecture notes, tutorial videos, assignments, evaluation sheets and downloadable course files in a highly complete package.",
+      "currency": "The course was taught in Spring 2013. Core opportunity/customer and venture-planning methods remain valuable, but startup financing, legal context, digital distribution and contemporary venture-building practice have changed materially.",
+      "expertise": "William Aulet, Howard Anderson and Matt Marx bring strong MIT Sloan entrepreneurship, venture and strategy expertise.",
+      "accessibility": "All materials are open and downloadable, but the graduate, technology-venture orientation and substantial project workload raise the entry barrier."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9,
+      "practice": 9.6,
+      "materials": 9,
+      "currency": 6.8,
+      "expertise": 9.7,
+      "accessibility": 8.4
+    },
+    "quality_score": 9.02,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "An outstanding project-heavy entrepreneurship course for durable startup fundamentals, but its 2013 venture ecosystem and legal/finance context require modern supplementation. Prefer newer alternatives for a current all-in-one startup playbook.",
+    "comparators": [
+      "mit-15-393-nuts-bolts-new-ventures",
+      "openlearn-entrepreneurship-ideas-reality"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/",
+      "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/pages/syllabus/",
+      "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/download/"
+    ],
+    "flags": [
+      "entrepreneurship",
+      "graduate-level",
+      "project-heavy",
+      "business-plan",
+      "archive-2013",
+      "currency-penalty",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-mit-15-393-nuts-bolts-new-ventures",
+    "candidate_id": "mit-15-393-nuts-bolts-new-ventures",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Current MIT IAP entrepreneurship course covering customer identification, venture/business models, sales, people and organizational issues, legal issues, negotiation, financing sources, financial projections and common startup mistakes through practitioner-led sessions.",
+    "prerequisites": "No formal prerequisite stated; designed for learners considering for-profit, social or development ventures",
+    "required_resources": "General-purpose computer and browser; no paid platform or specialist software required",
+    "component_evidence": {
+      "pedagogy": "The compact course is organized around concrete startup execution problems and practitioner-led sessions, moving from customer discovery through business model, people/legal issues, negotiation, finance and common failure modes.",
+      "depth": "Six core sessions provide a broad practical startup toolkit, but the compressed IAP format is less deep than a semester-long venture-development course.",
+      "practice": "The public OCW route is rich in worked practitioner examples and decision frameworks but exposes little formal learner assessment or project structure compared with MIT 15.390.",
+      "materials": "OCW provides lecture videos, notes, readings, editable files and current venture resources in a coherent downloadable package.",
+      "currency": "The course was taught in January 2025, and OCW added an additional innovation session in 2026, giving unusually strong currentness for entrepreneurship.",
+      "expertise": "Joseph Hadzima and invited speakers have direct venture-launch, legal, financing and operating experience, giving the course strong practitioner authority.",
+      "accessibility": "All materials are open and self-paced, with no credential or paid account requirement and limited formal prerequisites."
+    },
+    "quality_components": {
+      "pedagogy": 8.9,
+      "depth": 8.3,
+      "practice": 7.5,
+      "materials": 9.1,
+      "currency": 9.8,
+      "expertise": 9.4,
+      "accessibility": 9
+    },
+    "quality_score": 8.67,
+    "recommendation_score": 9,
+    "recommendation_rationale": "One of the best current free startup-execution courses: concise, practitioner-led and unusually fresh. It is less practice-intensive than MIT 15.390 or OpenLearn's structured badged route, but stronger on contemporary startup execution.",
+    "comparators": [
+      "mit-15-390-new-enterprises",
+      "openlearn-entrepreneurship-ideas-reality"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/",
+      "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/pages/calendar/",
+      "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/resources/lecture-videos/"
+    ],
+    "flags": [
+      "entrepreneurship",
+      "iap-2025",
+      "updated-2026",
+      "practitioner-led",
+      "startup-execution",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-openlearn-entrepreneurship-ideas-reality",
+    "candidate_id": "openlearn-entrepreneurship-ideas-reality",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/entrepreneurship-ideas-reality",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation and digital badge after completing the course and required quizzes",
+    "academic_credits": "No academic credit for the OpenLearn route; 24 CPD points are available as continuing-professional-development evidence",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-hour, eight-session entrepreneurship course covering idea generation, entrepreneur capability, business models, customers and markets, value proposition, resources and capabilities, finance, business structures, risk, growth, networks and pitching.",
+    "prerequisites": "No formal prerequisites; Level 2 intermediate course suitable for aspiring and early-stage entrepreneurs",
+    "required_resources": "Browser; free OpenLearn account for progress, quizzes, activities and rewards; downloadable Word, PDF, EPUB and other formats are available",
+    "component_evidence": {
+      "pedagogy": "The eight-session sequence follows the venture journey from ideas through business model, customers, value proposition, resources, finance, growth and pitching, using case studies and practical entrepreneur advice.",
+      "depth": "Twenty-four hours provides meaningful breadth across the core early-stage entrepreneurship decisions while remaining accessible to non-specialists.",
+      "practice": "Interactive quizzes, compulsory badge quizzes, case-based activities, a Business Model Canvas, profit-and-loss resources and pitch-building tasks create strong applied practice with automated feedback.",
+      "materials": "OpenLearn provides structured text, case studies, downloadable formats, business tools, quizzes, references and further reading in a highly complete package.",
+      "currency": "The course was formally updated on 3 March 2026, a strong currentness signal for startup practice and business-model content.",
+      "expertise": "The Open University combines academic business education with practitioner case material and continuing-professional-development design.",
+      "accessibility": "The content can be started without sign-up, is fully free, self-paced and downloadable; a free account unlocks quizzes, tracking, badge and Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.5,
+      "practice": 9,
+      "materials": 9.5,
+      "currency": 9.8,
+      "expertise": 9.1,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.08,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "The strongest general entrepreneurship recommendation in the current survivor pool: current, structured, practice-rich and accessible without sacrificing useful depth. MIT 15.393 is better for a compact practitioner-led startup perspective; MIT 15.390 is deeper but dated.",
+    "comparators": [
+      "mit-15-393-nuts-bolts-new-ventures",
+      "mit-15-390-new-enterprises",
+      "nau-academia-empreendedorismo"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/entrepreneurship-ideas-reality",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=109138",
+      "https://www.open.edu/openlearn/mod/quiz/view.php?id=83283"
+    ],
+    "flags": [
+      "entrepreneurship",
+      "24-hours",
+      "updated-2026",
+      "case-studies",
+      "interactive-quizzes",
+      "free-badge",
+      "downloadable"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-saylor-bus300-operations-management",
+    "candidate_id": "saylor-bus300-operations-management",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/bus300",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; optional ACE-recommended credit exam uses a separate paid proctoring route",
+    "academic_credits": "ACE-recommended credit is available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Thirty-eight-hour operations-management course spanning operations strategy, product and process design, supply-chain management, lean/JIT systems, capacity and facility layout, work systems, inventory and quality management.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate; optional mobile offline access",
+    "component_evidence": {
+      "pedagogy": "The nine-unit sequence progresses from operations strategy into process, supply chain, lean, capacity, inventory and quality, with repeated self-testing and application-oriented outcomes.",
+      "depth": "Thirty-eight hours covers the main undergraduate operations-management domains with meaningful breadth.",
+      "practice": "Auto-graded unit assessments and a free final exam provide regular checking, though the public route exposes less project-based operational analysis than a case-heavy university course.",
+      "materials": "Saylor curates articles, lectures and videos into a complete structured course; source consistency is lower than a single-faculty course but coverage is broad.",
+      "currency": "The syllabus was last modified on 2 October 2025, an important currentness signal for supply-chain, lean and operations practice.",
+      "expertise": "Saylor's faculty-reviewed open curriculum is credible, though course-level instructor expertise is less transparent than named university faculty.",
+      "accessibility": "The course, assessments and certificate are free and self-paced; optional ACE proctoring is clearly separate."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8.8,
+      "practice": 8.6,
+      "materials": 8.3,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.68,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A strong, current and substantial free operations-management foundation with assessment and a certificate. It is the clear survivor for this subtopic after shallower or older alternatives were removed at screening.",
+    "comparators": [
+      "openlearn-understanding-operations-management",
+      "hp-life-inventory-management"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/bus300",
+      "https://learn.saylor.org/mod/page/view.php?id=89357"
+    ],
+    "flags": [
+      "operations-management",
+      "38-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-saylor-bus305-entrepreneurship",
+    "candidate_id": "saylor-bus305-entrepreneurship",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1326",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after the free final exam",
+    "academic_credits": "No academic credit verified for the free route",
+    "self_paced": true,
+    "scope_notes": "Thirty-nine-hour five-unit entrepreneurship foundation covering opportunity viability, team building, business planning, marketing strategy, accounting/tax basics, venture finance, growth and exit strategies.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate",
+    "component_evidence": {
+      "pedagogy": "The course follows a logical venture-building sequence from entrepreneurship fundamentals and teams into business planning, marketing and financing, with explicit learning outcomes and self-testing.",
+      "depth": "Thirty-nine hours gives solid breadth across small-business and entrepreneurship fundamentals, although each functional area remains introductory.",
+      "practice": "Unit assessments and a free final exam support retention; the course teaches business-plan construction but exposes less authentic project execution than MIT 15.390 or OpenLearn's activity-rich route.",
+      "materials": "Saylor curates textbooks, videos, webpages and activities into a complete structured path, though source uniformity is mixed.",
+      "currency": "The syllabus was last modified on 2 October 2025, providing a strong currentness signal for entrepreneurship, marketing and financing content.",
+      "expertise": "The curriculum is faculty-reviewed and structured, but named specialist entrepreneurship faculty are less visible than in MIT or Open University alternatives.",
+      "accessibility": "The full course, assessments and certificate are free, self-paced and require no specialist software."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8.5,
+      "practice": 8.6,
+      "materials": 8.3,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.62,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A strong conventional entrepreneurship course with current maintenance and free certification. OpenLearn is the better general recommendation because its case studies, interactive tasks and 2026 update produce a richer learner experience.",
+    "comparators": [
+      "openlearn-entrepreneurship-ideas-reality",
+      "mit-15-393-nuts-bolts-new-ventures",
+      "nau-academia-empreendedorismo"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1326",
+      "https://learn.saylor.org/mod/page/view.php?id=98713"
+    ],
+    "flags": [
+      "entrepreneurship",
+      "39-hours",
+      "updated-2025",
+      "free-certificate",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-hp-life-effective-leadership",
+    "candidate_id": "hp-life-effective-leadership",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.life-global.org/course/13-effective-leadership",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HP LIFE Certificate of Completion",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Compact leadership microcourse on leadership versus management, leadership strategies, team building, communication, organizational change, ethics, self-awareness and developing a personal leadership philosophy.",
+    "prerequisites": "No formal prerequisites; intended for broad workforce and entrepreneurship learners",
+    "required_resources": "Browser or HP LIFE mobile app and free learner account; no paid software required",
+    "component_evidence": {
+      "pedagogy": "The course uses a concise skills-oriented progression and a self-awareness quiz to connect leadership concepts to personal strengths, weaknesses and a leadership philosophy.",
+      "depth": "HP LIFE courses are designed as short stand-alone modules of roughly 30–60 minutes, so the course can only introduce leadership concepts rather than develop them deeply.",
+      "practice": "A short self-assessment/quiz adds active reflection, but there is little evidence of extended scenarios, projects, coached practice or sustained team-leadership exercises.",
+      "materials": "The module is clear and accessible within HP LIFE, but its intentionally compact format provides fewer substantial learning assets than longer leadership courses.",
+      "currency": "HP LIFE announced the current Effective Leadership course in January 2024 and continues actively promoting it in 2026, so its workplace framing is current.",
+      "expertise": "HP Foundation provides credible workforce-skills training, though course-level named leadership faculty and research grounding are less transparent than Open University alternatives.",
+      "accessibility": "The course is free, very short, mobile-accessible, multilingual at platform level and includes a free completion certificate."
+    },
+    "quality_components": {
+      "pedagogy": 7.8,
+      "depth": 5.8,
+      "practice": 7,
+      "materials": 7.5,
+      "currency": 9,
+      "expertise": 8,
+      "accessibility": 9.8
+    },
+    "quality_score": 7.45,
+    "recommendation_score": 7.8,
+    "recommendation_rationale": "A useful ultra-low-friction leadership primer, but it is a microcourse rather than a serious leadership-development pathway. OpenLearn Leadership and followership should be preferred when the learner can invest more time.",
+    "comparators": [
+      "openlearn-leadership-followership",
+      "openclassrooms-manage-team",
+      "saylor-prdv231-ethical-leadership"
+    ],
+    "evidence": [
+      "https://www.life-global.org/course/13-effective-leadership",
+      "https://www.life-global.org/news/5761"
+    ],
+    "flags": [
+      "leadership",
+      "microcourse",
+      "launched-2024",
+      "free-certificate",
+      "multilingual-platform",
+      "limited-depth"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-openclassrooms-initiez-vous-gestion-projet",
+    "candidate_id": "openclassrooms-initiez-vous-gestion-projet",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://openclassrooms.com/fr/courses/8744811-initiez-vous-a-la-gestion-de-projet",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified for the open-access route; course quiz is freely accessible",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Four-hour French-language introduction to running a first project from objectives and planning through day-to-day steering, team coordination, evaluation and communicating results.",
+    "prerequisites": "None",
+    "required_resources": "Modern browser and free OpenClassrooms access; no specialist software or paid service required for core course content",
+    "component_evidence": {
+      "pedagogy": "The course is organised around one concrete outcome—piloting a first project end to end—and translates concepts into a simple sequence of planning, steering and evaluation steps.",
+      "depth": "Four hours provides a useful beginner orientation but cannot cover project-management methods, risk, budgeting, stakeholder management and delivery frameworks at substantial depth.",
+      "practice": "The route includes practical tools and a cumulative quiz, providing more application than passive content but less sustained practice than Saylor BUS402.",
+      "materials": "OpenClassrooms provides a focused, professionally produced sequence with a clear syllabus and practical method framing.",
+      "currency": "The course was updated on 4 December 2025, giving a strong currentness signal.",
+      "expertise": "Instructor Pierre-Benoît Lagoeyte is a project manager, instructional designer and adult trainer with more than a decade of relevant experience.",
+      "accessibility": "The course is free/open-access, only four hours, has no prerequisites and is delivered in French, providing useful language diversity."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 6.7,
+      "practice": 7.7,
+      "materials": 8.2,
+      "currency": 9.7,
+      "expertise": 8.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.07,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "The best low-friction French introduction to project management in the pool, but Saylor BUS402 is far deeper and should be preferred for a full foundation.",
+    "comparators": [
+      "saylor-bus402-project-management"
+    ],
+    "evidence": [
+      "https://openclassrooms.com/fr/courses/8744811-initiez-vous-a-la-gestion-de-projet"
+    ],
+    "flags": [
+      "project-management",
+      "fr-original",
+      "4-hours",
+      "updated-2025",
+      "free-assessment",
+      "no-free-credential-verified"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-openclassrooms-manage-team",
+    "candidate_id": "openclassrooms-manage-team",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://openclassrooms.com/fr/courses/7494031-manage-a-team",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified for the open-access route; module quizzes are freely accessible",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Eight-hour practical people-management course on entering a management role, adapting management style, delegation, meetings, communication, goals, performance monitoring, reviews, feedback, motivation, prioritisation, recruitment and onboarding.",
+    "prerequisites": "No formal prerequisites stated; designed for new or aspiring managers",
+    "required_resources": "Modern browser and free OpenClassrooms access; no specialist software required",
+    "component_evidence": {
+      "pedagogy": "The three-part toolbox follows the daily manager journey from organizing team work to performance support and hiring/onboarding, keeping concepts tied to concrete managerial actions.",
+      "depth": "Eight hours offers useful operational breadth for new managers but does not reach the theory, reflection or longitudinal development depth of a 24-hour leadership programme.",
+      "practice": "Three section quizzes and scenario-oriented management tasks create regular applied checking, although there is no extended coached leadership project.",
+      "materials": "The course provides a coherent practical toolkit with clearly structured lessons and assessment checkpoints.",
+      "currency": "The course was updated on 23 January 2025 and addresses current management workflows and team practices.",
+      "expertise": "The named instructors bring management, innovation, business-development, advisory and mentoring experience.",
+      "accessibility": "The course is free/open-access, self-paced, only eight hours and requires no specialist tools or formal prerequisites."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 7.4,
+      "practice": 8,
+      "materials": 8.4,
+      "currency": 9.4,
+      "expertise": 8.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.31,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A strong practical toolbox for new managers. It is more immediately operational than OpenLearn Leadership and followership, but the OpenLearn course is deeper, more reflective and better as a general leadership-development recommendation.",
+    "comparators": [
+      "openlearn-leadership-followership",
+      "hp-life-effective-leadership"
+    ],
+    "evidence": [
+      "https://openclassrooms.com/fr/courses/7494031-manage-a-team"
+    ],
+    "flags": [
+      "management",
+      "8-hours",
+      "updated-2025",
+      "free-assessments",
+      "no-free-credential-verified"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-openlearn-leadership-followership",
+    "candidate_id": "openlearn-leadership-followership",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/learning/leadership-and-followership",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation after completing the course and required quizzes",
+    "academic_credits": "No academic credit for the OpenLearn route; 24 CPD points are available as continuing-professional-development evidence",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-hour, eight-week leadership-development course covering leadership and followership concepts, styles, context, skills, common challenges, future leadership, reflective practice, leadership journaling and a personal action plan.",
+    "prerequisites": "No formal prerequisites; Level 1 introductory course for aspiring or current leaders",
+    "required_resources": "Browser and optional free OpenLearn account for tracking, quizzes, activities, badge and statement; downloadable Word, PDF, EPUB and other formats are available",
+    "component_evidence": {
+      "pedagogy": "The course combines academic leadership theory with reflection, case material, weekly quizzes, a leadership journal and a personal development plan, creating a coherent theory-to-self-development progression.",
+      "depth": "Eight weeks at roughly three hours per week gives meaningful breadth across leadership styles, context, followership, challenges and future leadership while remaining introductory.",
+      "practice": "Weekly quizzes, reflective activities, self-assessment, leadership journaling and an action plan provide sustained practice directly tied to personal leadership development.",
+      "materials": "OpenLearn supplies videos, structured readings, references, a toolkit, downloadable formats, quizzes and continuing-professional-development resources.",
+      "currency": "The course was first published and updated on 2 January 2024 and explicitly addresses technological developments, global change and emerging leadership styles.",
+      "expertise": "The Open University combines academic leadership research with professional-development pedagogy and CPD accreditation.",
+      "accessibility": "The course is fully free, self-paced, downloadable, beginner-friendly and provides a free badge and Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.5,
+      "practice": 9,
+      "materials": 9.4,
+      "currency": 9.3,
+      "expertise": 9.2,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.05,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "The strongest general leadership-development route in the current pool: substantial, reflective, practice-rich and accessible. OpenClassrooms is better for a compact new-manager toolbox; Saylor Ethical Leadership is a narrower ethics complement.",
+    "comparators": [
+      "openclassrooms-manage-team",
+      "hp-life-effective-leadership",
+      "saylor-prdv231-ethical-leadership"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/learning/leadership-and-followership",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=147525"
+    ],
+    "flags": [
+      "leadership",
+      "followership",
+      "24-hours",
+      "published-2024",
+      "reflection-heavy",
+      "free-badge",
+      "downloadable"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-12-saylor-bus402-project-management",
+    "candidate_id": "saylor-bus402-project-management",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/bus402",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; optional ACE-recommended credit exam uses a separate paid proctoring route",
+    "academic_credits": "ACE-recommended college credit available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Fifty-two-hour project-management foundation spanning initiating, planning, executing, monitoring/controlling and closing process groups plus project-manager people skills and PMI Talent Triangle framing.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate; optional mobile offline access",
+    "component_evidence": {
+      "pedagogy": "The five-unit course follows the full project life cycle and integrates process knowledge with people skills, giving learners a coherent start-to-finish project-management structure.",
+      "depth": "Fifty-two hours provides substantial foundation-level depth across project phases, terminology, tools and interpersonal competencies.",
+      "practice": "Auto-graded assessments and a free final exam create repeated checking; the route is less simulation- or capstone-heavy than experiential project programmes.",
+      "materials": "Saylor curates open readings, videos and activities into a full course with syllabus, assessments and current project-management terminology.",
+      "currency": "The syllabus was last modified on 2 October 2025 and explicitly references PMI's current Talent Triangle framing, supporting strong currentness.",
+      "expertise": "Saylor provides a structured faculty-reviewed curriculum, though named project-management instructor expertise is less transparent than PMI-authored training.",
+      "accessibility": "The course, assessments and certificate are free and self-paced; optional paid ACE proctoring is clearly separated from the core route."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 9,
+      "practice": 8.7,
+      "materials": 8.3,
+      "currency": 9.3,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.75,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "The strongest long-form project-management foundation among current discovery survivors. OpenClassrooms is a better four-hour French primer, while PMI KICKOFF remains a strong reference-fixture option for a much shorter authoritative introduction.",
+    "comparators": [
+      "openclassrooms-initiez-vous-gestion-projet"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/bus402",
+      "https://learn.saylor.org/mod/page/view.php?id=84751"
+    ],
+    "flags": [
+      "project-management",
+      "52-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  }
+]
