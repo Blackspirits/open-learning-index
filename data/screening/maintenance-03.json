@@ -1,0 +1,30 @@
+[
+  {
+    "screen_id": "maintenance-03-cmu-oli-statistical-reasoning",
+    "candidate_id": "cmu-oli-statistical-reasoning",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://oli.cmu.edu/courses/statistical-reasoning-copy/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No tests, college credit or certificate in the Open & Free independent-learner version",
+    "completeness": "complete",
+    "evidence": [
+      "https://oli.cmu.edu/courses/statistical-reasoning-copy/",
+      "https://oli.cmu.edu/jcourse/webui/guest/join.do?section=statreasoning"
+    ],
+    "rationale": "CMU's current Open & Free route is complete for independent study and includes expository text, simulations, case studies, interactive exercises and StatTutor labs, but explicitly omits scored tests, instructor tools, credit and certificates. F2 matches the taxonomy and the treatment already applied to CMU Probability & Statistics.",
+    "flags": [
+      "interactive-learning",
+      "free-forever",
+      "access-tier-corrected",
+      "no-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-09-cmu-oli-statistical-reasoning"
+  }
+]
