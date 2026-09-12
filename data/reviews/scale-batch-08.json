@@ -1,0 +1,173 @@
+[
+  {
+    "review_id": "deep-09-openlearn-take-teaching-online",
+    "candidate_id": "openlearn-take-teaching-online",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation and digital badge after completion and required quizzes; course also states 24 CPD points",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Eight-week, approximately 24-hour intermediate course on effective online teaching, covering learner preparation, synchronous/asynchronous design, learning technologies, inclusion, accessibility, wellbeing, collaboration, online assessment and professional practice.",
+    "prerequisites": "No formal prerequisites; designed for educators, trainers, support staff and education leaders moving teaching partly or fully online",
+    "required_resources": "Modern browser; a free OpenLearn account is needed for progress tracking, quizzes, badge and Statement of Participation; downloadable offline formats are available",
+    "component_evidence": {
+      "pedagogy": "The course is explicitly designed around the experience of online learners and educators, combining research, teacher reflections, practical decisions and weekly progression rather than presenting a catalogue of digital tools.",
+      "depth": "Eight weeks and roughly 24 hours provide substantial professional-development depth across pedagogy, learner support, technology selection, inclusion, assessment and changing educator practice.",
+      "practice": "Weekly quizzes, activities, reflection, planning and an end-of-course badge quiz require learners to apply decisions to their own teaching context, although no externally reviewed classroom capstone is documented.",
+      "materials": "OpenLearn provides structured weekly content, videos, research references, quizzes, activities and unusually broad downloadable formats including PDF, EPUB, HTML and IMS Common Cartridge.",
+      "currency": "The course was last formally updated in October 2022. Core online-teaching principles remain current, but named digital platforms and parts of the technology landscape have changed since then.",
+      "expertise": "The Open University has extensive institutional experience in online and distance education, and the course explicitly draws on its research and long-running online-teaching practice.",
+      "accessibility": "The full course is free, self-paced, downloadable and can be started without registration; a free account unlocks assessment, progress tracking, statement and badge."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8.7,
+      "practice": 8.9,
+      "materials": 9.4,
+      "currency": 8.2,
+      "expertise": 9.7,
+      "accessibility": 9.7
+    },
+    "quality_score": 9.04,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "The strongest broad teacher-development course in the current Education survivor family: substantial, evidence-informed and genuinely designed for independent practice. Its main caveat is the 2022 technology snapshot, not pedagogy.",
+    "comparators": [
+      "openlearn-teaching-learning-tricky-topics",
+      "british-council-communicative-tasks",
+      "british-council-how-adapt-resources"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=138072"
+    ],
+    "flags": [
+      "online-teaching",
+      "24-hours",
+      "eight-weeks",
+      "badge",
+      "cpd",
+      "updated-2022",
+      "downloadable"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-09-british-council-how-adapt-resources",
+    "candidate_id": "british-council-how-adapt-resources",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-how-adapt-resources",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free British Council TeachingEnglish certificate of achievement after successful completion of the self-study modules",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current 9–12-hour three-module English-teacher CPD course on evaluating teaching resources, adapting and selecting lesson plans for context and inclusion, and using learners' own knowledge and contributions as classroom resources.",
+    "prerequisites": "Practising or developing English-language teachers; British Council TeachingEnglish courses are professional-development rather than initial teaching qualifications",
+    "required_resources": "Free TeachingEnglish account and browser; workbook is free, while Facebook community and live-event participation are optional",
+    "component_evidence": {
+      "pedagogy": "The sequence moves from evaluating materials to adapting lesson plans and then treating learners themselves as resources, keeping every module tied to concrete classroom decisions.",
+      "depth": "Nine to twelve hours across three focused modules provides useful CPD depth but is intentionally narrower than a full methodology course or qualification.",
+      "practice": "Learners analyse resources, adapt plans, consider inclusion and use a workbook/action-planning layer to transfer ideas to real classes; public evidence does not show a large independently assessed capstone.",
+      "materials": "Three self-study modules, a free workbook, TeachingEnglish resource links, optional community support and expert live-event recordings provide a strong reusable package.",
+      "currency": "This is a new current course in the 2026–27 TeachingEnglish programme, open through March 2027, and its focus on inclusive contextual adaptation is directly relevant to present teaching practice.",
+      "expertise": "The course sits inside the British Council TeachingEnglish professional-development framework and is supported by a specialist ELT teacher-development programme with global classroom experience.",
+      "accessibility": "Course, workbook and certificate are free, self-paced within the active window and require only a free account; the main access limitation is the time-bounded annual course window."
+    },
+    "quality_components": {
+      "pedagogy": 8.9,
+      "depth": 7.8,
+      "practice": 8.5,
+      "materials": 9,
+      "currency": 9.7,
+      "expertise": 9.1,
+      "accessibility": 9.3
+    },
+    "quality_score": 8.73,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A very strong practical recommendation for English teachers who need to evaluate and adapt materials to local learners rather than simply consume ready-made lesson plans. Its focused 9–12-hour scope is the main depth limit.",
+    "comparators": [
+      "british-council-communicative-tasks",
+      "british-council-understanding-language-systems",
+      "openlearn-take-teaching-online"
+    ],
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-how-adapt-resources"
+    ],
+    "flags": [
+      "teacher-development",
+      "9-12-hours",
+      "current-2026-27-run",
+      "free-certificate",
+      "workbook",
+      "time-bounded-access"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-09-british-council-helping-teachers-learn",
+    "candidate_id": "british-council-helping-teachers-learn",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-helping-teachers-learn",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free British Council TeachingEnglish certificate of achievement after successful completion of the self-study modules",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current 9–12-hour three-module teacher-educator course on understanding teacher learning and training, facilitating communities of practice and collaborative learning, and supporting teacher autonomy and self-directed professional development.",
+    "prerequisites": "Designed for teacher educators or teachers developing teacher-educator responsibilities",
+    "required_resources": "Free TeachingEnglish account and browser; free workbook included; Facebook community and live events are optional enrichment",
+    "component_evidence": {
+      "pedagogy": "The course progresses from planning effective teacher learning to collaborative communities of practice and then autonomous professional learning, creating a coherent teacher-educator development arc.",
+      "depth": "Nine to twelve hours gives substantive orientation to teacher education but remains a compact CPD course rather than a full trainer-development programme.",
+      "practice": "The workbook includes reflection, action planning and prompts to apply new ideas, and participant examples show transfer into communities of practice; formal public evidence of a major assessed project is limited.",
+      "materials": "Self-study modules are reinforced by a 2025 workbook, action-plan/reflection sections, optional professional community and live-event resources.",
+      "currency": "The course is active in the 2026–27 programme through March 2027 and the current workbook is dated 2025, supporting strong present relevance.",
+      "expertise": "British Council TeachingEnglish provides specialist international teacher-development support and frames this course specifically for teacher educators and professional-learning leadership.",
+      "accessibility": "The course, workbook and certificate are free and self-paced during the active run, with only a free account required; the annual access window is the main friction."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.8,
+      "practice": 8.4,
+      "materials": 9,
+      "currency": 9.5,
+      "expertise": 9.1,
+      "accessibility": 9.3
+    },
+    "quality_score": 8.64,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A strong specialist recommendation for teachers moving into mentoring or teacher-educator roles. It adds a distinct professional-development function rather than duplicating classroom-methodology courses, but its compact duration caps depth.",
+    "comparators": [
+      "british-council-communicative-tasks",
+      "british-council-understanding-language-systems",
+      "openlearn-take-teaching-online"
+    ],
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-helping-teachers-learn",
+      "https://www.teachingenglish.org.uk/sites/teacheng/files/2025-04/Helping_teachers_to_learn_workbook_2025.pdf"
+    ],
+    "flags": [
+      "teacher-educator",
+      "9-12-hours",
+      "current-2026-27-run",
+      "free-certificate",
+      "workbook",
+      "time-bounded-access"
+    ],
+    "is_current": true
+  }
+]
