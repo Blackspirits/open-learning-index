@@ -1,0 +1,479 @@
+[
+  {
+    "review_id": "deep-06-nau-saude-mental-bem-estar-ensino-superior",
+    "candidate_id": "nau-saude-mental-bem-estar-ensino-superior",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificado de participação gratuito após média mínima de 60% nos testes dos quatro módulos",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso de 12 horas e quatro módulos sobre saúde mental no ensino superior, depressão, ansiedade, comportamentos aditivos, stress, coping, resiliência, Primeira Ajuda em Saúde Mental e recursos de apoio.",
+    "prerequisites": "Sem pré-requisitos formais; dirigido sobretudo a estudantes do ensino superior",
+    "required_resources": "Navegador moderno e conta NAU gratuita para avaliação, acompanhamento e certificação; sem software pago",
+    "component_evidence": {
+      "pedagogy": "A sequência progride de conceitos e reconhecimento de sinais para gestão de stress, resiliência e intervenção inicial, combinando teoria com abordagens práticas.",
+      "depth": "Doze horas dão cobertura substantiva para literacia e resposta inicial, mas não equivalem a formação clínica nem a um curso universitário completo de psicopatologia.",
+      "practice": "Cada módulo termina com teste de questões fechadas e o curso inclui planeamento de Primeira Ajuda em Saúde Mental e análise de situações de risco; não há prática simulada extensa verificada.",
+      "materials": "A página oficial documenta objetivos, plano modular, equipa, avaliação e licença; a experiência é estruturada na NAU, mas não há pacote aberto comparável a OCW.",
+      "currency": "A rota está ativa em 2026 e aborda apoio e encaminhamento atuais; saúde mental exige vigilância apertada de atualização clínica e terminológica.",
+      "expertise": "A equipa inclui doutorados em Enfermagem e Psicologia e mestres em Enfermagem de Saúde Mental/Psiquiatria e Psicologia do Stress e Bem-Estar, ligada à ESEUL.",
+      "accessibility": "É gratuito, em português, ao ritmo do estudante, com 12 horas e certificado gratuito; o foco contextual é o ensino superior português."
+    },
+    "quality_components": {
+      "pedagogy": 8.3,
+      "depth": 7.8,
+      "practice": 7.4,
+      "materials": 8.2,
+      "currency": 9.4,
+      "expertise": 9.2,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.28,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "Forte opção lusófona para literacia e resposta inicial em saúde mental no ensino superior. Não sobe mais porque não é formação clínica e a prática verificada é sobretudo conceptual e baseada em testes.",
+    "comparators": [],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/"
+    ],
+    "flags": [
+      "mental-health-currency",
+      "portuguese",
+      "assessed-modules",
+      "not-clinical-training"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-tghn-ich-gcp-e6-r3",
+    "candidate_id": "tghn-ich-gcp-e6-r3",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificado gratuito após pelo menos 80% na avaliação final",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso profissional de oito módulos e cerca de 180 minutos, reestruturado para ICH E6(R3), cobrindo princípios GCP, intervenientes, desenho, iniciação, execução, gestão de risco, encerramento e reflexão final.",
+    "prerequisites": "Concebido também para participantes com menos experiência em investigação clínica",
+    "required_resources": "Navegador moderno e conta TGHN gratuita para progresso e certificação; sem software pago",
+    "component_evidence": {
+      "pedagogy": "A versão R3 integra os princípios de GCP em situações reais das várias fases da investigação, em vez de os ensinar como regras isoladas.",
+      "depth": "Oito módulos cobrem o ciclo essencial de GCP, mas a duração aproximada de três horas limita a profundidade comparativamente a formações extensas.",
+      "practice": "Há aplicação a decisões de estudo e gestão de risco e uma avaliação final certificada; não foi verificado projeto ou simulação longa.",
+      "materials": "Inclui oito módulos, prefácio, recursos adicionais e glossário numa sequência profissional coerente e atualmente mantida.",
+      "currency": "Foi reestruturado para refletir a versão final da ICH E6(R3) publicada em 6 de janeiro de 2025, tornando a atualidade um ponto excecionalmente forte.",
+      "expertise": "Editores e revisores incluem especialistas em investigação clínica, ética, regulação e saúde pública de vários países; a TGHN é centro colaborador da OMS.",
+      "accessibility": "Gratuito, autoformativo e disponível em inglês, espanhol, francês e português, com certificado gratuito; a variante do português não é especificada."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 7.8,
+      "practice": 7.8,
+      "materials": 8.7,
+      "currency": 10,
+      "expertise": 9.6,
+      "accessibility": 9.3
+    },
+    "quality_score": 8.62,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "Candidato mais forte do lote para uma necessidade profissional bem definida: GCP atualizada para E6(R3). A Recommendation supera a Quality porque a curta duração limita profundidade, mas a atualidade e aplicabilidade são excecionais.",
+    "comparators": [
+      "tghn-introduction-gclp",
+      "whoacademy-good-practices-clinical-trials"
+    ],
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/"
+    ],
+    "flags": [
+      "professional-specialist",
+      "current-2025-guideline",
+      "multilingual",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-tghn-research-ethics-v2",
+    "candidate_id": "tghn-research-ethics-v2",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificação gratuita com limiar mínimo de 80%; a página oficial descreve quizzes e certificados por módulo",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Dez módulos de 15 a 30 minutos sobre princípios de ética em investigação, riscos e benefícios, desenho, vulnerabilidade, obrigações perante participantes, envolvimento comunitário, privacidade, consentimento informado e outros dilemas éticos.",
+    "prerequisites": "Sem pré-requisitos formais; orientado a profissionais e investigadores em saúde",
+    "required_resources": "Navegador moderno e conta TGHN gratuita para progresso, quizzes e certificados; sem software pago",
+    "component_evidence": {
+      "pedagogy": "A estrutura recomenda estudar cada tópico em sequência e fazer o quiz logo após o módulo; os recursos adicionais incluem estudos de caso, referências e documentos-chave.",
+      "depth": "Dez módulos cobrem um arco ético amplo e coerente para investigação em saúde, embora cada módulo individual seja relativamente curto.",
+      "practice": "Cada módulo inclui quiz para testar conhecimento e obter certificação, complementado por estudos de caso; não há projeto prolongado verificado.",
+      "materials": "A TGHN disponibiliza dez módulos, introdução, estudos de caso, documentos-chave e glossário numa rota estruturada.",
+      "currency": "O curso foi atualizado com a TGHN e está ativo, mas a página pública não fornece uma data de revisão tão precisa como o GCP R3.",
+      "expertise": "O conteúdo foi originalmente desenvolvido pela OMS e adaptado/atualizado pela TGHN; a página esclarece corretamente que o curso não é acreditado pela OMS.",
+      "accessibility": "Gratuito, autoformativo e dividido em módulos curtos, com certificação sem pagamento obrigatório; a oferta verificada é apenas em inglês."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 8,
+      "practice": 8.1,
+      "materials": 8.6,
+      "currency": 8.7,
+      "expertise": 9.4,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.46,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "Forte recomendação para investigadores e equipas de saúde que precisam de base prática e certificada em ética. Fica abaixo do GCP R3 em atualidade datada e em intensidade de prática.",
+    "comparators": [
+      "tghn-ich-gcp-e6-r3",
+      "tghn-introduction-gclp"
+    ],
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/"
+    ],
+    "flags": [
+      "professional-specialist",
+      "ethics",
+      "free-certificate",
+      "who-adapted-not-who-accredited"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-tghn-data-life-cycle",
+    "candidate_id": "tghn-data-life-cycle",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://globalhealthtrainingcentre.tghn.org/data-sharing-v2/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificado eletrónico gratuito por módulo após pelo menos 80% no respetivo quiz",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Relaunch atualizado do anterior Data Sharing course, com módulo introdutório e seis módulos publicados sobre princípios de partilha, gestão de dados, ética, governança/acesso, qualidade, custos e repositórios; 45 a 60 minutos por módulo.",
+    "prerequisites": "Dirigido a investigadores em início de carreira, pós-graduandos e pessoal de apoio; não pretende formar data managers ou estatísticos",
+    "required_resources": "Navegador moderno e conta TGHN gratuita para quizzes e certificados; sem software pago",
+    "component_evidence": {
+      "pedagogy": "Os módulos podem ser feitos isoladamente ou como percurso interligado e oferecem orientação prática para decisões reais de gestão e partilha de dados de saúde.",
+      "depth": "Sete unidades disponíveis dão uma base útil de várias horas, mas o próprio curso limita o objetivo a fundamentos e orientação prática.",
+      "practice": "Cada módulo tem quiz e certificação; não há evidência pública de exercícios com datasets, construção de planos de gestão ou projeto cumulativo.",
+      "materials": "Os módulos são peer-reviewed, incluem referências atuais e orientação prática e identificam autores e revisores; expansões futuras continuam planeadas.",
+      "currency": "O relaunch atualizou cada módulo com referências recentes e orientação prática, um ponto forte numa área de governança e partilha em mudança.",
+      "expertise": "Os módulos são escritos por especialistas e revistos por pares; a equipa inclui profissionais de gestão de dados e bioética ligados a MORU, Oxford e parceiros.",
+      "accessibility": "Gratuito, modular e autoformativo, com certificado por módulo; a oferta verificada é em inglês e o estado 'under development' exige distinguir o atual do futuro."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 8.3,
+      "practice": 7.6,
+      "materials": 8.7,
+      "currency": 9.5,
+      "expertise": 9.5,
+      "accessibility": 9.1
+    },
+    "quality_score": 8.46,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "Excelente fundamento para investigadores que precisam de gerir e partilhar dados de saúde responsavelmente. Não deve ser apresentado como formação completa de data management e a ausência de projeto aplicado limita a Recommendation.",
+    "comparators": [],
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/data-sharing-v2/"
+    ],
+    "flags": [
+      "professional-specialist",
+      "current-relaunch",
+      "module-certificates",
+      "course-expanding"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-whoacademy-chemical-hazards-part-1",
+    "candidate_id": "whoacademy-chemical-hazards-part-1",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://whoacademy.org/coursewares/course-v1%3AWHOA%2B0037A_CHEMHAZ_EN%2B2024?source=edX",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Nenhum credencial formal gratuito verificado independentemente na rota pública",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Primeira parte de uma série OMS sobre riscos químicos para profissionais de saúde e emergência; distingue químicos comuns e agentes de guerra, introduz químicos industriais tóxicos e exemplos de libertações acidentais e intencionais.",
+    "prerequisites": "Sem pré-requisitos formais publicados; introdução especializada para profissionais de saúde e emergência",
+    "required_resources": "Navegador com JavaScript e acesso à WHO Academy; inclui uso de ferramenta digital de identificação e mitigação de ameaças químicas",
+    "component_evidence": {
+      "pedagogy": "A OMS enquadra Part I como fundação de uma sequência progressiva e liga conceitos de perigo químico a exemplos reais de libertações.",
+      "depth": "É uma introdução de âmbito deliberadamente limitado dentro de uma série; não cobre avaliação e resposta operacional completas.",
+      "practice": "A fonte oficial confirma experiência prática com uma ferramenta digital para identificar e mitigar ameaças químicas.",
+      "materials": "A série é atual e estruturada, mas a plataforma WHO Academy depende de JavaScript e não expõe publicamente todos os materiais, avaliações ou sequência interna.",
+      "currency": "Foi lançado na nova série de 2025 para prontidão perante incidentes químicos, com relevância operacional atual.",
+      "expertise": "Curso desenvolvido pela OMS para profissionais de saúde e resposta a emergências num domínio diretamente ligado a segurança química e saúde pública.",
+      "accessibility": "A OMS confirma acesso gratuito, mas a rota exige JavaScript, a oferta verificada é em inglês e a credencial/avaliação não pôde ser verificada."
+    },
+    "quality_components": {
+      "pedagogy": 8.1,
+      "depth": 6.8,
+      "practice": 8.2,
+      "materials": 7.6,
+      "currency": 9.8,
+      "expertise": 9.8,
+      "accessibility": 8.8
+    },
+    "quality_score": 8.19,
+    "recommendation_score": 8,
+    "recommendation_rationale": "Bom curso introdutório para profissionais que precisam de prontidão química, sobretudo pela prática com ferramenta digital e atualidade. A Recommendation é limitada pelo âmbito de Part I e pela fraca transparência pública da plataforma.",
+    "comparators": [
+      "whoacademy-chemical-hazards-part-2"
+    ],
+    "evidence": [
+      "https://www.who.int/news/item/06-06-2025-new-who-online-course-series-strengthens-readiness-for-chemical-hazards",
+      "https://whoacademy.org/coursewares/course-v1%3AWHOA%2B0037A_CHEMHAZ_EN%2B2024?source=edX"
+    ],
+    "flags": [
+      "professional-specialist",
+      "chemical-hazards",
+      "series-member",
+      "credential-unverified",
+      "javascript-dependent"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-openlearn-forensic-psychology",
+    "candidate_id": "openlearn-forensic-psychology",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/health-sports-psychology/forensic-psychology",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Statement of Participation e badge digital gratuitos após conclusão e aprovação nos quizzes de badge; 24 pontos CPD indicados",
+    "academic_credits": "Nenhum crédito académico formal; o badge não é acreditado pela Open University",
+    "self_paced": true,
+    "scope_notes": "Curso de 24 horas e oito semanas sobre testemunho ocular, cognição, memória, erros de identificação, investigação criminal e erros judiciários, usando vídeos de testemunhas e uma investigação aplicada.",
+    "prerequisites": "Nenhum; curso introdutório para interessados em psicologia e/ou investigação criminal",
+    "required_resources": "Navegador moderno; conta OpenLearn gratuita para quizzes, progresso, statement e badge; sem software pago",
+    "component_evidence": {
+      "pedagogy": "A aprendizagem gira em torno de uma investigação aplicada com vídeos de testemunhas, decisões de investigação, explicações psicológicas e reflexão sobre erros judiciários.",
+      "depth": "Vinte e quatro horas e oito semanas aprofundam um domínio específico de psicologia forense, com foco consistente em memória, testemunho e investigação.",
+      "practice": "Há quizzes semanais, quizzes de badge nas semanas 4 e 8, feedback e tarefas de avaliação da evidência; os quizzes de badge exigem pelo menos 50%.",
+      "materials": "Combina texto, vídeo, atividades, referências, quizzes, recursos descarregáveis, statement e badge numa rota de baixa fricção.",
+      "currency": "Foi atualizado pela última vez em janeiro de 2020. A ciência de memória/testemunho mantém valor, mas procedimentos, exemplos e desenvolvimentos do campo podem ter evoluído.",
+      "expertise": "O autor Graham Pike é Professor de Forensic Cognition na Open University e o curso está integrado no seu ensino de psicologia.",
+      "accessibility": "Gratuito, sem pré-requisitos e autoformativo, com feedback e credenciais gratuitas; pode iniciar-se sem conta e a conta gratuita ativa reconhecimento."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.4,
+      "practice": 9.2,
+      "materials": 9,
+      "currency": 7,
+      "expertise": 9.4,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.79,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "Um dos melhores cursos aplicados do lote: prática frequente, narrativa investigativa e 24 horas de trabalho real. A atualização de 2020 impede uma Recommendation ainda mais alta.",
+    "comparators": [],
+    "evidence": [
+      "https://www.open.edu/openlearn/health-sports-psychology/forensic-psychology",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=70526&section=3"
+    ],
+    "flags": [
+      "applied-psychology",
+      "badge",
+      "weekly-quizzes",
+      "currency-watch"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-openlearn-psychology-around-world",
+    "candidate_id": "openlearn-psychology-around-world",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/health-sports-psychology/psychology-around-the-world",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Statement of Participation gratuito após conclusão",
+    "academic_credits": "Nenhum crédito académico formal",
+    "self_paced": true,
+    "scope_notes": "Curso introdutório de seis horas, publicado e atualizado em julho de 2025, sobre variação cultural em pensamento, memória e perceção, bem-estar, desenvolvimento infantil e limitações históricas da psicologia WEIRD.",
+    "prerequisites": "Nenhum; nível introdutório",
+    "required_resources": "Navegador moderno; conta OpenLearn gratuita para progresso, statement, quizzes e atividades; materiais descarregáveis em vários formatos",
+    "component_evidence": {
+      "pedagogy": "Usa exemplos culturais concretos para desafiar generalizações e liga cognição, bem-estar, desenvolvimento infantil e história disciplinar à validade intercultural.",
+      "depth": "Seis horas dão uma introdução coerente e rara em perspetivas globais, mas não substituem um curso geral de psicologia ou módulo universitário completo.",
+      "practice": "A página confirma quizzes e atividades para registados, mas não expõe avaliação cumulativa ou projeto com rigor comparável aos cursos mais intensivos.",
+      "materials": "Oferece conteúdo estruturado, atividades, quizzes, referências, glossário, statement e downloads em PDF, EPUB, Word e HTML.",
+      "currency": "Publicado e atualizado em 1 de julho de 2025, com foco explícito em limitações WEIRD e perspetivas culturais diversas.",
+      "expertise": "É adaptação do curso D110 da Open University e integra psicologia cultural e do desenvolvimento no currículo atual da instituição.",
+      "accessibility": "Gratuito, curto, introdutório, iniciável sem registo e descarregável; uma conta gratuita desbloqueia progresso, quizzes e Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.1,
+      "practice": 7.5,
+      "materials": 8.9,
+      "currency": 9.8,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.36,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "Não substitui um curso geral, mas é um complemento de grande valor porque corrige o viés para amostras e conceitos WEIRD. A curta duração limita profundidade, não relevância.",
+    "comparators": [
+      "mit-9-00sc-intro-psychology",
+      "saylor-psych101-introduction-psychology"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/health-sports-psychology/psychology-around-the-world"
+    ],
+    "flags": [
+      "global-perspectives",
+      "current-2025",
+      "short-course",
+      "downloadable"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-mit-9-00sc-intro-psychology",
+    "candidate_id": "mit-9-00sc-intro-psychology",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado; materiais MIT OpenCourseWare",
+    "academic_credits": "Nenhum crédito académico para estudantes independentes",
+    "self_paced": true,
+    "scope_notes": "Curso universitário completo de introdução à psicologia, explicitamente concebido para autoestudo, cobrindo perceção, emoção, aprendizagem, memória, cognição, desenvolvimento infantil, personalidade, psicopatologia e interação social.",
+    "prerequisites": "Sem pré-requisitos formais; curso undergraduate introdutório",
+    "required_resources": "Navegador, PDF e vídeo; materiais descarregáveis e sem software pago",
+    "component_evidence": {
+      "pedagogy": "Foi desenhado para estudo independente e articula aulas, leituras, Check Yourself com perguntas objetivas e curtas, discussões e recursos adicionais por sessão.",
+      "depth": "Cobre um semestre universitário amplo, com forte componente de neurociência e método científico, muito além de cursos introdutórios curtos.",
+      "practice": "Inclui autoavaliação por sessão, três exames com soluções, questões extra de exame e trabalhos opcionais de escrita analítica baseados em fontes científicas.",
+      "materials": "O arquivo oferece vídeos, notas, livro aberto, leituras, discussões, exames, soluções, revisão e download do curso numa coleção excecionalmente completa.",
+      "currency": "O curso é de 2011. Fundamentos mantêm valor, mas psicopatologia, terminologia, evidência empírica e enquadramentos clínicos/sociais evoluíram o suficiente para penalização material.",
+      "expertise": "É lecionado por John Gabrieli, professor no Department of Brain and Cognitive Sciences do MIT, com forte orientação para neurociência cognitiva e método científico.",
+      "accessibility": "Todo o núcleo é gratuito e desenhado para autoestudo, sem conta ou software pago; a idade de referências exige seleção crítica adicional."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.2,
+      "practice": 9.5,
+      "materials": 9.6,
+      "currency": 5.8,
+      "expertise": 9.5,
+      "accessibility": 9
+    },
+    "quality_score": 9.01,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "Melhor pacote pedagógico geral do lote, mas não a melhor recomendação universal em 2026. Para estrutura e prática é excecional; para um primeiro curso atual, Saylor é mais seguro.",
+    "comparators": [
+      "saylor-psych101-introduction-psychology",
+      "openlearn-psychology-around-world"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/",
+      "https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/pages/syllabus/syllabus/",
+      "https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/resources/exam-solutions/"
+    ],
+    "flags": [
+      "self-study-designed",
+      "archive-course",
+      "psychology-currency-penalty",
+      "solution-rich",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-06-saylor-psych101-introduction-psychology",
+    "candidate_id": "saylor-psych101-introduction-psychology",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=706",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificado Saylor gratuito após aprovação no Certificate Final Exam com pelo menos 70%",
+    "academic_credits": "O percurso gratuito não concede crédito automaticamente; a opção ACE Recommended Credit exige exame proctorizado com taxa de 5 USD",
+    "self_paced": true,
+    "scope_notes": "Curso autoformativo de cerca de 46 horas e onze unidades cobrindo fundamentos científicos, bases biológicas, perceção, aprendizagem, cognição, desenvolvimento, motivação, emoção, personalidade, clínica, social, organizacional e saúde/stress.",
+    "prerequisites": "Sem pré-requisitos formais; curso introdutório",
+    "required_resources": "Navegador ou dispositivo móvel e conta Saylor gratuita para avaliações e exame final; o percurso educativo e certificado não exigem pagamento",
+    "component_evidence": {
+      "pedagogy": "Organiza artigos, aulas e vídeos por resultados de aprendizagem e fornece notas de orientação sobre o que observar e como os recursos se integram.",
+      "depth": "Quarenta e seis horas e onze unidades dão cobertura ampla de introdução à psicologia, incluindo métodos, bases biológicas, cognição, desenvolvimento, clínica, social e saúde.",
+      "practice": "Há avaliações de fim de unidade reutilizáveis e um exame final gratuito com limiar de 70%; a prática é frequente, mas predominantemente objetiva e sem projeto longo.",
+      "materials": "Todos os materiais são gratuitos e curados numa sequência única; o modelo OER integra várias fontes e tem menor consistência autoral do que um curso unitário.",
+      "currency": "O syllabus foi modificado em setembro de 2025, declara foco em investigação bem sustentada e tendências atuais e diz que conteúdo assistido por IA é revisto por faculty e especialistas.",
+      "expertise": "Saylor declara revisão por faculty e subject matter experts; a curadoria é ativa, embora haja menos detalhe público sobre autores individuais do que em MIT ou OpenLearn.",
+      "accessibility": "Totalmente gratuito, autoformativo, web/mobile, com exame final e certificado gratuitos e opção de app offline; o crédito ACE pago está claramente separado."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 8.8,
+      "practice": 8.5,
+      "materials": 8.2,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.57,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A recomendação mais equilibrada do lote para uma introdução geral atual: 46 horas, avaliações por unidade, exame e certificado gratuitos e syllabus revisto em 2025. MIT é pedagogicamente mais rico, mas menos atual.",
+    "comparators": [
+      "mit-9-00sc-intro-psychology",
+      "openlearn-psychology-around-world"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=706",
+      "https://learn.saylor.org/mod/page/view.php?id=61840"
+    ],
+    "flags": [
+      "current-2025-syllabus",
+      "free-certificate",
+      "unit-assessments",
+      "optional-paid-credit"
+    ],
+    "is_current": true
+  }
+]
