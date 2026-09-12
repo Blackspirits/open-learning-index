@@ -1,0 +1,781 @@
+[
+  {
+    "review_id": "deep-13-mit-8-01sc-classical-mechanics",
+    "candidate_id": "mit-8-01sc-classical-mechanics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Purpose-built twelve-week self-study mechanics sequence covering vectors, kinematics, Newton's laws, circular motion, constraints, drag, momentum, work and energy, collisions, rotation, torque and angular momentum, with an online textbook, videos, demos, worked examples and twelve problem sets.",
+    "prerequisites": "No prerequisite; MIT 18.01SC Single Variable Calculus is listed as a corequisite",
+    "required_resources": "General-purpose computer/browser; downloadable course package available; no paid platform required",
+    "component_evidence": {
+      "pedagogy": "The OCW version is explicitly reorganized for independent study into weekly lessons, short videos, demonstrations, worked examples, textbook readings and problem sets rather than being a raw lecture archive.",
+      "depth": "Twelve weeks cover the full first-semester classical-mechanics foundation through translational and rotational dynamics.",
+      "practice": "Twelve substantial problem sets and many worked examples provide sustained quantitative practice tightly aligned to each week's material.",
+      "materials": "The course includes an online textbook, videos, demonstrations, readings, worked examples and downloadable assignments in a coherent self-study package.",
+      "currency": "Classical mechanics is exceptionally stable; the 2016 teaching date creates negligible conceptual obsolescence for this foundational syllabus.",
+      "expertise": "The MIT Physics teaching team combines faculty and specialist instructional expertise in introductory physics.",
+      "accessibility": "All materials are open and downloadable, but calculus is a corequisite and the quantitative workload is substantial."
+    },
+    "quality_components": {
+      "pedagogy": 9.6,
+      "depth": 9.4,
+      "practice": 9.4,
+      "materials": 9.6,
+      "currency": 9.5,
+      "expertise": 9.7,
+      "accessibility": 8.8
+    },
+    "quality_score": 9.48,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "The strongest mechanics recommendation in the current Natural Sciences pool: purpose-built for self-study, rigorous and practice-rich, with almost no meaningful currency penalty because the core subject is stable.",
+    "comparators": [
+      "yale-phys-200-physics-i"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+      "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/syllabus/",
+      "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/pages/assignments/"
+    ],
+    "flags": [
+      "classical-mechanics",
+      "12-weeks",
+      "problem-set-heavy",
+      "calculus-corequisite",
+      "stable-foundations",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-mit-5-111sc-chemical-science",
+    "candidate_id": "mit-5-111sc-chemical-science",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Comprehensive first-year chemistry course covering atomic structure, bonding, thermodynamics, equilibrium, acid-base chemistry, transition metals, oxidation-reduction and kinetics, with lecture videos/notes, clicker questions, problem sets, practice exams, four exams and a final with solutions.",
+    "prerequisites": "No advanced prerequisite stated on the public OCW route; designed as first-year undergraduate chemistry",
+    "required_resources": "General-purpose computer/browser; downloadable course package available; no paid software required",
+    "component_evidence": {
+      "pedagogy": "The course combines lectures, clicker-style conceptual questions, worked chemical reasoning and frequent problem solving across a clear conceptual progression.",
+      "depth": "The five-unit sequence reaches from quantum/atomic structure through bonding, thermodynamics, equilibrium, transition-metal chemistry and kinetics.",
+      "practice": "Problem sets with solutions are paired with multiple practice exams, four term exams and a final exam with solutions, giving unusually strong independent practice.",
+      "materials": "Lecture videos, notes, problem sets, solutions, exam materials and instructor insights make this one of the most complete free general-chemistry packages available.",
+      "currency": "General-chemistry foundations are stable; the 2014 date modestly affects examples but not the central scientific framework.",
+      "expertise": "Catherine Drennan is a senior MIT chemistry professor with deep subject and teaching expertise.",
+      "accessibility": "The course is fully open and downloadable but academically demanding and lacks guided grading or a credential."
+    },
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.4,
+      "practice": 9.6,
+      "materials": 9.6,
+      "currency": 9,
+      "expertise": 9.8,
+      "accessibility": 8.7
+    },
+    "quality_score": 9.45,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "An exceptional rigorous general-chemistry foundation. Khan is easier for mastery-style practice and Saylor is more current and certificate-bearing, but MIT remains the strongest deep academic package.",
+    "comparators": [
+      "khan-ap-college-chemistry",
+      "saylor-chem101-general-chemistry"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
+      "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/resources/problem-sets/",
+      "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/resources/exam-solutions/"
+    ],
+    "flags": [
+      "general-chemistry",
+      "archive-2014",
+      "problem-set-heavy",
+      "exam-solutions",
+      "stable-foundations",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-mit-7-016-intro-biology",
+    "candidate_id": "mit-7-016-intro-biology",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Full MIT introductory molecular and cellular biology subject covering biochemistry, molecular biology, genetics, cell biology, microbiology and related biomedical applications, with lectures, recitations, six problem sets, three exams and solutions.",
+    "prerequisites": "No advanced prerequisite stated on the public OCW route; intended as undergraduate introductory biology",
+    "required_resources": "General-purpose computer/browser; no paid platform required",
+    "component_evidence": {
+      "pedagogy": "Lectures are reinforced by dedicated recitation/problem-solving notes, connecting biological concepts to quantitative and mechanistic reasoning.",
+      "depth": "The course covers a substantial university foundation in biochemistry, molecular biology, genetics and cell biology rather than a survey of disconnected topics.",
+      "practice": "Six problem sets with solutions, twenty-plus recitation notes and three exams with solutions create a strong practice structure.",
+      "materials": "OCW exposes lectures, readings, recitations, assignments, exams and study materials in a complete package.",
+      "currency": "The 2018 course remains sound on core molecular biology, but this field evolves faster than physics or basic chemistry, so contemporary genomics and methods require supplementation.",
+      "expertise": "The MIT Biology faculty team has direct research expertise in molecular, cellular and biochemical biology.",
+      "accessibility": "All materials are open, but the university-level depth, dense scientific vocabulary and absence of automated mastery support create meaningful friction."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.2,
+      "practice": 9.5,
+      "materials": 9.4,
+      "currency": 8.4,
+      "expertise": 9.7,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.25,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A superb rigorous biology foundation, especially for learners who want university-style problem solving. Khan is a better general self-study recommendation in 2026 because it is more current and provides continuous mastery feedback.",
+    "comparators": [
+      "khan-ap-college-biology",
+      "saylor-bio101-molecular-cellular-biology"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/",
+      "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/pages/assignments/",
+      "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/resources/exams/"
+    ],
+    "flags": [
+      "molecular-biology",
+      "archive-2018",
+      "problem-set-heavy",
+      "exam-solutions",
+      "science-currency-penalty",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-saylor-bio101-molecular-cellular-biology",
+    "candidate_id": "saylor-bio101-molecular-cellular-biology",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/bio101",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; optional ACE-recommended credit exam uses separate paid proctoring",
+    "academic_credits": "ACE-recommended college credit available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Thirty-six-hour molecular and cellular biology foundation covering basic chemistry, biological molecules, membranes, enzymes and metabolism, cellular respiration, photosynthesis, mitosis, meiosis, Mendelian genetics and gene expression.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate; optional mobile offline access",
+    "component_evidence": {
+      "pedagogy": "The course moves from chemistry and biomolecules into cellular structures, metabolism, reproduction and genetics in a clear cumulative sequence.",
+      "depth": "Thirty-six hours provides a substantial introductory molecular/cellular foundation, though less academic depth than MIT 7.016.",
+      "practice": "Auto-graded assessments and a free final exam provide repeated retrieval and cumulative checking.",
+      "materials": "Saylor curates textbooks, videos, webpages and activities into a complete course, though source consistency is mixed.",
+      "currency": "The syllabus was last modified on 26 September 2025, a strong maintenance signal for a fast-changing biological field.",
+      "expertise": "The course is faculty-reviewed, but course-level named research-faculty expertise is less transparent than at MIT.",
+      "accessibility": "The course, final exam and certificate are free; the optional paid ACE proctoring route is clearly separate."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 8.6,
+      "practice": 8.6,
+      "materials": 8.3,
+      "currency": 9.1,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.6,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A strong current structured biology foundation with free assessment and certification. Khan is better for mastery feedback; MIT is better for depth and university-style problem solving.",
+    "comparators": [
+      "khan-ap-college-biology",
+      "mit-7-016-intro-biology"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/bio101",
+      "https://learn.saylor.org/mod/page/view.php?id=91289"
+    ],
+    "flags": [
+      "molecular-biology",
+      "36-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-saylor-chem101-general-chemistry",
+    "candidate_id": "saylor-chem101-general-chemistry",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1238",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; optional ACE-recommended credit exam uses separate paid proctoring",
+    "academic_credits": "ACE-recommended college credit available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Seventy-three-hour general chemistry curriculum covering matter and measurement, atoms, bonding, formulas and equations, states of matter, thermochemistry/thermodynamics, acid-base and redox chemistry and nuclear chemistry.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate",
+    "component_evidence": {
+      "pedagogy": "The long-form sequence progresses systematically from matter and atomic structure into bonding, reactions, thermodynamics and acid-base/redox chemistry.",
+      "depth": "Seventy-three hours gives substantial introductory depth and breadth across the standard general-chemistry curriculum.",
+      "practice": "Auto-graded unit assessments and a free final exam provide consistent cumulative practice, though there is no equivalent of an in-person laboratory.",
+      "materials": "Saylor curates a complete set of open readings, videos, webpages and activities, with some variability across source materials.",
+      "currency": "The syllabus was last modified on 26 September 2025; most general-chemistry fundamentals are stable, giving strong currentness.",
+      "expertise": "Faculty-reviewed course design is credible, although named specialist instructor authorship is less transparent than MIT or Yale.",
+      "accessibility": "The full course, final exam and certificate are free; optional ACE proctoring is clearly separated."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 9,
+      "practice": 8.7,
+      "materials": 8.4,
+      "currency": 9.1,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.73,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A strong current long-form chemistry foundation with a free certificate. MIT offers richer academic materials and Khan stronger mastery feedback, while Saylor provides the most conventional current certificate-bearing route.",
+    "comparators": [
+      "mit-5-111sc-chemical-science",
+      "khan-ap-college-chemistry"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1238",
+      "https://learn.saylor.org/mod/page/view.php?id=87235"
+    ],
+    "flags": [
+      "general-chemistry",
+      "73-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-khan-ap-college-biology",
+    "candidate_id": "khan-ap-college-biology",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.khanacademy.org/ap-biology",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal Khan Academy course-completion certificate verified",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current AP/College Biology curriculum with 11 units and 54 tracked skills covering chemistry of life, cell structure/function, energetics, cell communication/cycle, heredity, gene expression, natural selection and ecology, plus simulations, worked AP free-response examples and a course challenge.",
+    "prerequisites": "No formal prerequisites stated; intended for AP/introductory college biology",
+    "required_resources": "Modern browser and optional free Khan account for mastery tracking; no paid software required",
+    "component_evidence": {
+      "pedagogy": "Concept explanations, simulations, worked free-response examples and mastery progression support both conceptual understanding and exam-style application.",
+      "depth": "The course covers the core AP/college biology domains across eleven structured units, although it is less research-oriented than MIT 7.016.",
+      "practice": "Frequent quizzes, unit tests, skill tracking and a cumulative course challenge create excellent formative assessment.",
+      "materials": "Khan integrates videos, articles, simulations, practice and standards mappings in a consistent platform.",
+      "currency": "The course is active and aligned to current AP/college biology content in 2026; contemporary platform maintenance reduces staleness risk.",
+      "expertise": "Khan Academy has strong science-instruction design, though named research-faculty authorship is less visible than at MIT.",
+      "accessibility": "The course is fully free, browser-based and beginner-friendly, with no credential requirement or specialist tools."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.5,
+      "practice": 9.5,
+      "materials": 9.1,
+      "currency": 9.4,
+      "expertise": 8.9,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.08,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "The best general self-study biology recommendation in the current pool because current content is paired with exceptional mastery feedback. MIT remains stronger for university-depth problem solving.",
+    "comparators": [
+      "mit-7-016-intro-biology",
+      "saylor-bio101-molecular-cellular-biology"
+    ],
+    "evidence": [
+      "https://www.khanacademy.org/ap-biology/"
+    ],
+    "flags": [
+      "biology",
+      "11-units",
+      "54-skills",
+      "mastery-assessment",
+      "simulations",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-khan-ap-college-chemistry",
+    "candidate_id": "khan-ap-college-chemistry",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.khanacademy.org/science/ap-chemistry-beta",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal Khan Academy course-completion certificate verified",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current AP/College Chemistry curriculum with nine units and 66 tracked skills across atomic structure, bonding, intermolecular forces, reactions, kinetics, thermodynamics, equilibrium, acids/bases and electrochemistry, with quizzes, unit tests and a cumulative course challenge.",
+    "prerequisites": "No formal prerequisites stated; intended for AP/introductory college chemistry",
+    "required_resources": "Modern browser and optional free Khan account for mastery tracking; no paid software required",
+    "component_evidence": {
+      "pedagogy": "The course breaks chemistry into skill-level lessons and repeatedly moves learners from explanation to practice, quiz and unit-level synthesis.",
+      "depth": "Nine units provide complete AP/college general-chemistry coverage across structure, reactions, kinetics, thermodynamics and equilibrium.",
+      "practice": "Dense skill practice, quizzes, unit tests and the course challenge create one of the strongest formative-assessment systems in the chemistry pool.",
+      "materials": "Videos, articles, worked examples and mastery practice are integrated in a consistent learner platform.",
+      "currency": "The live course is current in 2026 and actively used for AP preparation, keeping standards and examples comparatively fresh.",
+      "expertise": "Khan Academy has strong science curriculum and instructional-design expertise, though specialist instructor attribution is less transparent than MIT.",
+      "accessibility": "The route is free, browser-based and low-friction, with no paid tools or certificate gate."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.6,
+      "practice": 9.6,
+      "materials": 9.1,
+      "currency": 9.4,
+      "expertise": 8.9,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.12,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "The strongest low-friction chemistry self-study route in the pool for continuous feedback and mastery. MIT 5.111 remains stronger for academic depth and exam-style rigor.",
+    "comparators": [
+      "mit-5-111sc-chemical-science",
+      "saylor-chem101-general-chemistry"
+    ],
+    "evidence": [
+      "https://www.khanacademy.org/science/ap-chemistry-beta"
+    ],
+    "flags": [
+      "chemistry",
+      "9-units",
+      "66-skills",
+      "mastery-assessment",
+      "course-challenge",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-nasa-open-science-101",
+    "candidate_id": "nasa-open-science-101",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://science.nasa.gov/open-science/training/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "NASA Open Science digital badge and certificate after successful completion",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately twelve-hour, five-module course on open-science principles, FAIR practice, tools/resources, open data, open code, open results, collaboration, ethics, licensing, repositories, version control, preregistration and AI in open-science workflows.",
+    "prerequisites": "No formal prerequisites; designed for researchers, students, managers and the general public",
+    "required_resources": "Modern browser and free registration on a supported NASA learning platform; no paid software required",
+    "component_evidence": {
+      "pedagogy": "The five-module sequence moves from principles into concrete data, code and research-output workflows rather than treating open science as policy-only awareness.",
+      "depth": "Twelve hours provides meaningful depth in scientific-practice skills across data, software, results, collaboration and ethics, though it is cross-disciplinary rather than a natural-science subject course.",
+      "practice": "NASA materials document knowledge checks, reflection, tool demonstrations, workflow activities, case studies and practical planning artifacts.",
+      "materials": "The course integrates current guidance on FAIR data, repositories, licensing, persistent identifiers, version control and open research practices.",
+      "currency": "NASA's training page was updated on 28 May 2026 and the current course explicitly includes AI and contemporary open-science tooling.",
+      "expertise": "NASA Science and its Transform to Open Science program have direct institutional authority in modern scientific-data and research-practice standards.",
+      "accessibility": "The course is public, self-paced, free and credential-bearing, with no specialist disciplinary prerequisite."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.3,
+      "practice": 8.8,
+      "materials": 9.2,
+      "currency": 9.9,
+      "expertise": 9.8,
+      "accessibility": 9.6
+    },
+    "quality_score": 9.04,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "An excellent scientific-practice course and the strongest open-science route in the index. It is not a substitute for disciplinary science, so its recommendation should be interpreted as cross-disciplinary research-skills training.",
+    "comparators": [
+      "eu-climate-action-academy",
+      "fao-intro-climate-smart-agriculture"
+    ],
+    "evidence": [
+      "https://science.nasa.gov/open-science/training/",
+      "https://assets.science.nasa.gov/content/dam/science/cds/researchers/nac/science-committee/2025/2024.10_NAC-Science-Committee-Presentations_Integrated_public_TAGGED.pdf"
+    ],
+    "flags": [
+      "open-science",
+      "12-hours",
+      "updated-2026",
+      "research-practice",
+      "free-badge",
+      "taxonomy-fit-review"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-fao-intro-climate-smart-agriculture",
+    "candidate_id": "fao-intro-climate-smart-agriculture",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=439&lang=en",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "FAO digital badge certificate after successful completion of the final test in the Climate-Smart Agriculture series",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately ninety-minute four-lesson primer on climate change and global warming, impacts on agriculture and food security, adaptation and mitigation in agriculture and the five-step climate-smart agriculture implementation process.",
+    "prerequisites": "No formal prerequisites; technical perspective written for the general public and policy/development audiences",
+    "required_resources": "Current browser; downloadable Windows version available; no additional paid software required",
+    "component_evidence": {
+      "pedagogy": "The course uses short interactive lessons and a clear progression from climate science into agricultural impacts and implementation of the CSA approach.",
+      "depth": "Four lessons totaling roughly ninety minutes provide a useful orientation but cannot cover climate science, agronomy or adaptation planning in depth.",
+      "practice": "Interactive exercises and a final test provide basic application and checking, but there is no substantial project or data-analysis component.",
+      "materials": "FAO provides a coherent self-paced course embedded in a larger Climate-Smart Agriculture series with further specialist pathways.",
+      "currency": "The course remains active, but its public page exposes no clear recent revision date; climate evidence and agricultural adaptation practice evolve, so currentness is intentionally scored conservatively.",
+      "expertise": "FAO has exceptional institutional expertise in agriculture, food security, climate adaptation and development practice.",
+      "accessibility": "The course is free, short, self-paced, technically accessible and certificate-bearing."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 6.8,
+      "practice": 7.5,
+      "materials": 8.4,
+      "currency": 7.4,
+      "expertise": 9.6,
+      "accessibility": 9.4
+    },
+    "quality_score": 7.92,
+    "recommendation_score": 8,
+    "recommendation_rationale": "A useful authoritative primer for climate-smart agriculture, especially as an entry point to FAO's wider series. Its short duration and unclear update date prevent a stronger recommendation.",
+    "comparators": [
+      "eu-climate-action-academy"
+    ],
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=439&lang=en",
+      "https://elearning.fao.org/course/view.php?id=1380"
+    ],
+    "flags": [
+      "climate-smart-agriculture",
+      "90-minutes",
+      "applied-science",
+      "update-date-unverified",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-eu-climate-action-academy",
+    "candidate_id": "eu-climate-action-academy",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://academy.europa.eu/courses/eu-climate-action-academy?lang=en",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "European Commission EU Academy certificate of participation",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Actively expanding European Commission academy covering citizen engagement, behavioural change, climate communication, community mobilisation, citizen science, youth climate leadership, AI for climate solutions, EU climate policy and climate disinformation/misinformation.",
+    "prerequisites": "No formal prerequisites; designed for citizens and climate-action participants",
+    "required_resources": "Modern browser and free EU Academy enrolment; no specialist software required",
+    "component_evidence": {
+      "pedagogy": "The modular pathway connects climate knowledge to communication, citizen science, community action, technology and policy, encouraging application beyond passive awareness.",
+      "depth": "The academy now spans multiple substantial modules, but its centre of gravity is climate action and engagement rather than deep climate science.",
+      "practice": "Citizen-science, communication and community-action modules imply applied tasks, but the public route does not expose a rigorous graded assessment structure comparable with academic science courses.",
+      "materials": "The European Commission provides a broad, actively growing set of current modules across climate action, communication, AI and misinformation.",
+      "currency": "The course was last published on 9 September 2026 and is still adding modules, giving exceptional currentness.",
+      "expertise": "The European Commission has direct policy and institutional expertise in EU climate action, while disciplinary science depth is less central than in a university science course.",
+      "accessibility": "The academy is free, self-paced, broad-audience and certificate-bearing with no formal prerequisites."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 7.7,
+      "practice": 8,
+      "materials": 8.7,
+      "currency": 10,
+      "expertise": 9.2,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.53,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A highly current and useful climate-action academy, especially for communication, citizen science and EU policy. It should not be mistaken for a deep climate-science course.",
+    "comparators": [
+      "fao-intro-climate-smart-agriculture",
+      "nasa-open-science-101"
+    ],
+    "evidence": [
+      "https://academy.europa.eu/courses/eu-climate-action-academy?lang=en"
+    ],
+    "flags": [
+      "climate-action",
+      "last-published-2026",
+      "policy-overlap",
+      "citizen-science",
+      "ai-and-misinformation",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-yale-chem-125a-organic-chemistry-i",
+    "candidate_id": "yale-chem-125a-organic-chemistry-i",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/chemistry/chem-125a",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent Open Yale Courses learners",
+    "self_paced": true,
+    "scope_notes": "Full first-semester organic chemistry sequence using experimental evidence and the history of chemical ideas to develop molecular structure, bonding, orbitals, stereochemistry, conformational analysis, reactivity and reaction mechanisms, with problem sets and multiple examinations.",
+    "prerequisites": "Introductory chemistry background is strongly advisable; no separate public prerequisite is stated on the OYC page",
+    "required_resources": "Browser; lecture video/audio/transcripts and course files are freely accessible",
+    "component_evidence": {
+      "pedagogy": "McBride's course builds organic chemistry from evidence, models and mechanism rather than rote reaction memorisation, using historical experiments to explain why structural ideas emerged.",
+      "depth": "A full semester reaches deeply into bonding, stereochemistry, energy, molecular structure and reaction mechanism.",
+      "practice": "Problem sets, three midterms, a final and posted exam solutions provide substantial independent practice.",
+      "materials": "Complete lecture video/audio/transcripts plus readings, problem sets, presentations and exam materials make the archive unusually rich.",
+      "currency": "Recorded in 2008, but the core structural and mechanistic foundations remain highly stable; modern synthetic methods and contemporary spectroscopy practice still require supplementation.",
+      "expertise": "J. Michael McBride is a highly experienced Yale physical-organic chemist and distinguished undergraduate teacher.",
+      "accessibility": "All materials are open, but the conceptual style is demanding and there is no automated feedback or credential."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9.1,
+      "practice": 9,
+      "materials": 8.8,
+      "currency": 8.2,
+      "expertise": 9.8,
+      "accessibility": 8.5
+    },
+    "quality_score": 9.03,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A distinctive and rigorous organic-chemistry foundation that teaches mechanism and scientific reasoning exceptionally well. Its archive age matters less than in frontier science, but modern synthesis/spectroscopy supplementation is still advisable.",
+    "comparators": [
+      "yale-chem-125b-organic-chemistry-ii",
+      "mit-5-111sc-chemical-science"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/chemistry/chem-125a",
+      "https://oyc.yale.edu/chemistry/chem-125a/exam-1"
+    ],
+    "flags": [
+      "organic-chemistry",
+      "archive-2008",
+      "mechanism-focused",
+      "exam-heavy",
+      "stable-foundations",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-yale-chem-125b-organic-chemistry-ii",
+    "candidate_id": "yale-chem-125b-organic-chemistry-ii",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/chemistry/chem-125b",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent Open Yale Courses learners",
+    "self_paced": true,
+    "scope_notes": "Second-semester continuation emphasizing reaction rates/mechanisms, substitution, stereochemistry, spectroscopy, synthesis, oxidation/reduction and complex organic molecules, supported by problem sets, three midterms and a final.",
+    "prerequisites": "Freshman Organic Chemistry I or equivalent",
+    "required_resources": "Browser; lecture video/audio/transcripts and course files are freely accessible",
+    "component_evidence": {
+      "pedagogy": "The continuation uses mechanistic reasoning, energy, stereochemical evidence and synthesis problems to connect reactions rather than presenting disconnected named transformations.",
+      "depth": "A full second semester develops substantial mechanism, spectroscopy and synthesis depth.",
+      "practice": "Problem sets, three midterms and a large cumulative final provide sustained assessment practice.",
+      "materials": "Lecture media, transcripts, assignments and exams form a complete archival course experience.",
+      "currency": "The 2009-era material remains strong for core organic mechanism and synthesis logic, but contemporary reagents, methods and instrumentation require supplementation.",
+      "expertise": "J. Michael McBride brings deep physical-organic chemistry expertise and a highly developed teaching approach.",
+      "accessibility": "All content is free, but the course assumes the first semester and offers no automated feedback or credential."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.2,
+      "practice": 9,
+      "materials": 8.8,
+      "currency": 8.2,
+      "expertise": 9.8,
+      "accessibility": 8.4
+    },
+    "quality_score": 9.02,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong continuation for learners who complete CHEM 125a or equivalent. The mechanistic and synthesis reasoning remains valuable, though contemporary synthetic methods should be added separately.",
+    "comparators": [
+      "yale-chem-125a-organic-chemistry-i"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/chemistry/chem-125b"
+    ],
+    "flags": [
+      "organic-chemistry",
+      "archive-course",
+      "second-semester",
+      "exam-heavy",
+      "stable-foundations",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-yale-phys-200-physics-i",
+    "candidate_id": "yale-phys-200-physics-i",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/physics/phys-200",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent Open Yale Courses learners",
+    "self_paced": true,
+    "scope_notes": "Full quantitative first physics sequence covering Newtonian mechanics, gravitation, special relativity, oscillations/waves, fluid mechanics and thermodynamics, with weekly homework, problem-set solutions, a midterm and final.",
+    "prerequisites": "Good preparation in physics and mathematics; single-variable calculus is used throughout",
+    "required_resources": "Browser; video, audio, transcripts and downloadable problem/exam materials are freely accessible",
+    "component_evidence": {
+      "pedagogy": "Shankar emphasizes derivation, quantitative reasoning and problem solving, repeatedly connecting equations to physical interpretation.",
+      "depth": "The course goes beyond mechanics into relativity, waves, fluids and thermodynamics, giving broad first-semester university depth.",
+      "practice": "Weekly homework with posted solutions plus midterm and final examination materials provide a strong quantitative practice path.",
+      "materials": "Complete lectures, searchable transcripts, problem sets, exam materials and readings make the archive highly usable.",
+      "currency": "Recorded in 2006, but almost all covered foundations are stable and remain standard undergraduate physics.",
+      "expertise": "Ramamurti Shankar is a distinguished Yale theoretical physicist and widely recognized physics educator.",
+      "accessibility": "The materials are fully open, but calculus and the high quantitative level create a substantial beginner barrier."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.2,
+      "practice": 9.1,
+      "materials": 8.9,
+      "currency": 9.2,
+      "expertise": 9.7,
+      "accessibility": 8.2
+    },
+    "quality_score": 9.2,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "An excellent broad quantitative first physics course. MIT 8.01 is the better mechanics-specific self-study package, while Yale is stronger for a broader mechanics-to-thermodynamics first sequence.",
+    "comparators": [
+      "mit-8-01sc-classical-mechanics",
+      "yale-phys-201-physics-ii"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/physics/phys-200",
+      "https://oyc.yale.edu/physics/phys-200/exam-2"
+    ],
+    "flags": [
+      "physics",
+      "archive-2006",
+      "calculus",
+      "stable-foundations",
+      "problem-solving",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-13-yale-phys-201-physics-ii",
+    "candidate_id": "yale-phys-201-physics-ii",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/physics/phys-201",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent Open Yale Courses learners",
+    "self_paced": true,
+    "scope_notes": "Full second physics sequence covering electrostatics, electric potential, circuits, magnetism, Maxwell equations, electromagnetic waves, geometrical/wave optics and introductory quantum mechanics, with weekly homework, midterm and final examinations.",
+    "prerequisites": "PHYS 200 or equivalent; single-variable calculus, elementary vectors and complex numbers",
+    "required_resources": "Browser; video, audio, transcripts and downloadable course materials are freely accessible",
+    "component_evidence": {
+      "pedagogy": "The course derives electromagnetism, optics and quantum ideas through sustained mathematical reasoning and worked physical examples.",
+      "depth": "Twenty-five lectures cover a full second-semester physics curriculum through Maxwell theory and introductory quantum mechanics.",
+      "practice": "Weekly homework plus midterm/final exams supply regular quantitative checking, though independent learners receive no live feedback.",
+      "materials": "Complete lecture media, transcripts, problem resources and exams create a coherent archival course.",
+      "currency": "The central electromagnetism, optics and introductory quantum framework is stable; the archive age has little effect on the core curriculum.",
+      "expertise": "Ramamurti Shankar brings deep theoretical-physics expertise and strong pedagogical clarity.",
+      "accessibility": "All content is free, but the required first-course physics and mathematics create significant prerequisite friction."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.2,
+      "practice": 9.1,
+      "materials": 8.9,
+      "currency": 9,
+      "expertise": 9.7,
+      "accessibility": 8
+    },
+    "quality_score": 9.14,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A rigorous and still-current second-semester physics sequence with exceptional teaching. Its recommendation is limited mainly by prerequisite burden rather than age.",
+    "comparators": [
+      "yale-phys-200-physics-i"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/physics/phys-201",
+      "https://oyc.yale.edu/physics/phys-201/exam-2"
+    ],
+    "flags": [
+      "physics",
+      "electromagnetism",
+      "quantum-introduction",
+      "archive-course",
+      "stable-foundations",
+      "advanced-prerequisites",
+      "no-credential"
+    ],
+    "is_current": true
+  }
+]
