@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **205 advance / 5 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for one archived NAU course, two IBM SkillsBuild learner routes and one time-gated FUN session. **86 current Deep Reviews** are complete: 12 calibration records plus 74 scaled reviews across seven post-calibration batches.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **203 advance / 6 hold / 81 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for two archived NAU courses, one legacy-currency NAU education course, two IBM SkillsBuild learner routes and one time-gated FUN session. **86 current Deep Reviews** are complete: 12 calibration records plus 74 scaled reviews across seven post-calibration batches.
 
 ## Goal
 
