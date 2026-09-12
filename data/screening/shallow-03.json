@@ -459,7 +459,7 @@
     "flags": [
       "jurisdiction-sensitive-health-policy"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-03-fao-nutrition-food-security-livelihoods",
