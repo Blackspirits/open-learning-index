@@ -1,0 +1,444 @@
+[
+  {
+    "review_id": "deep-07-yale-clcv-205-ancient-greek-history",
+    "candidate_id": "yale-clcv-205-ancient-greek-history",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://oyc.yale.edu/classics/clcv-205",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses archive",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-lecture Yale survey of Greek history from the Bronze Age through the end of the classical period, using translated primary sources and modern scholarship alongside political, military, intellectual and cultural history.",
+    "prerequisites": "No formal prerequisites; university-level reading load and historical analysis are expected",
+    "required_resources": "Web browser for lectures, audio and transcripts; several assigned books and readings are not bundled as a complete free reading pack",
+    "component_evidence": {
+      "pedagogy": "The course builds a chronological narrative around sustained interpretation of Herodotus, Thucydides, Plutarch and modern scholarship, giving learners repeated exposure to evidence and historical argument rather than isolated facts.",
+      "depth": "Twenty-four 75-minute class sessions plus substantial primary and secondary reading cover institutions, war, democracy, colonisation and political development at a full undergraduate-survey level.",
+      "practice": "The original Yale course required a midterm, final and written paper, but the independent archive does not provide instructor feedback or a modern self-checking assessment layer, limiting autonomous practice.",
+      "materials": "Open Yale Courses provides the complete lecture sequence with video, audio and transcripts plus the syllabus, but several assigned readings and books must be sourced separately.",
+      "currency": "Ancient Greek history is a relatively stable domain, yet archaeology and historiography have advanced materially since the course was recorded in 2007, so the archive should not be treated as fully current scholarship.",
+      "expertise": "Donald Kagan was Sterling Professor of Classics and History at Yale and an internationally prominent historian of ancient Greece and the Peloponnesian War.",
+      "accessibility": "The lecture archive is freely available without enrolment, but the age of the course, university reading load and separately sourced readings create more friction than current integrated platforms."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 9,
+      "practice": 6.5,
+      "materials": 8.5,
+      "currency": 7.3,
+      "expertise": 9.7,
+      "accessibility": 7.8
+    },
+    "quality_score": 8.21,
+    "recommendation_score": 8.2,
+    "recommendation_rationale": "A strong specialist archive for learners who want a traditional, deep survey of ancient Greek history. It is less attractive as a first recommendation than current interactive history routes because independent practice is weak and the historiography is dated.",
+    "comparators": [
+      "khan-world-history",
+      "yale-hist-210-early-middle-ages"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/classics/clcv-205",
+      "https://oyc.yale.edu/classics/clcv-205/lecture-1"
+    ],
+    "flags": [
+      "archive-course",
+      "ancient-history",
+      "western-canon",
+      "separate-reading-materials",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-yale-hist-234-epidemics",
+    "candidate_id": "yale-hist-234-epidemics",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://oyc.yale.edu/history/hist-234",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses archive",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twenty-six-lecture history course on epidemic disease and society from plague and smallpox through cholera, tuberculosis, influenza, HIV/AIDS and the then-recent SARS and swine-flu experience, with public-health, ethics and cultural themes.",
+    "prerequisites": "No formal prerequisites; substantial historical reading and writing were expected in the original Yale course",
+    "required_resources": "Web browser for lectures, audio and transcripts; the original reading list includes books and articles not all bundled freely with the archive",
+    "component_evidence": {
+      "pedagogy": "Frank Snowden consistently treats epidemics as biological, social, political and cultural events, using comparison across diseases to build historical reasoning rather than a simple chronology.",
+      "depth": "The twenty-six lectures cover disease history, public-health systems, medical ideas, ethics, literature and social response, supported by weekly readings and substantial original course requirements.",
+      "practice": "The campus course required weekly reading responses, a six-to-eight-page paper, a midterm and final, but the public archive lacks an interactive assessment or feedback mechanism for independent learners.",
+      "materials": "Lectures are available with video, audio and transcripts, and the syllabus exposes a rich reading programme; some readings and the companion book must be sourced separately.",
+      "currency": "The historical treatment remains valuable, but the course was recorded in 2010 and ends with SARS, avian influenza and swine flu; it therefore predates COVID-19 and major subsequent work on pandemic history and public-health response.",
+      "expertise": "Frank Snowden is a Yale historian whose scholarship specialises in epidemics, medicine and public health, with major books and recognised work in the history of disease.",
+      "accessibility": "The archive is free and self-paced with transcripts, but the reading burden, lack of autonomous assessment and dated concluding frame reduce usability for a general learner."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 9.3,
+      "practice": 6.8,
+      "materials": 8.8,
+      "currency": 6.5,
+      "expertise": 9.8,
+      "accessibility": 8
+    },
+    "quality_score": 8.38,
+    "recommendation_score": 8.3,
+    "recommendation_rationale": "Still one of the strongest free historical treatments of epidemics, especially for depth and comparative framing. Recommendation is capped because a 2010 endpoint is a material weakness in a field transformed by COVID-19 and later scholarship.",
+    "comparators": [],
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-234",
+      "https://oyc.yale.edu/history/hist-234/lecture-1"
+    ],
+    "flags": [
+      "archive-course",
+      "historical-health-content",
+      "pandemic-currency-penalty",
+      "separate-reading-materials",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-saylor-hist103-world-history",
+    "candidate_id": "saylor-hist103-world-history",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.saylor.org/course/hist103",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after at least 70% on the free final exam",
+    "academic_credits": "No academic credit automatically granted by the free completion route",
+    "self_paced": true,
+    "scope_notes": "Fifty-hour, fourteen-unit comparative world-history course from 1600 to the present, covering global trade, empires, revolutions, industrialisation, world wars, decolonisation, the Cold War and contemporary global challenges.",
+    "prerequisites": "No formal prerequisites; introductory college-level history",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments, progress tracking, final exam and certificate",
+    "component_evidence": {
+      "pedagogy": "Saylor organises diverse articles, lectures, videos, primary sources and images around unit outcomes, with guidance explaining what to extract from each resource and how it fits the course.",
+      "depth": "Fourteen units and an estimated fifty hours provide substantial chronological and thematic coverage of modern world history, including non-Western regions and global interactions.",
+      "practice": "Reusable end-of-unit assessments, an unlimited practice exam and a free graded final exam provide frequent knowledge checks, although practice is predominantly auto-graded rather than essay- or source-analysis-heavy.",
+      "materials": "All linked learning materials are free, curated into a coherent pathway, and supported by a syllabus and resource list; source consistency varies because the course aggregates multiple OER providers.",
+      "currency": "The syllabus was last modified on 3 October 2025 and includes a contemporary-world unit, giving the route unusually strong maintenance for a broad free history survey.",
+      "expertise": "The course is faculty- and subject-matter-expert-curated within Saylor's OER model, though individual authorship is less unified and transparent than a single-faculty university course.",
+      "accessibility": "The full route, assessments, final exam and certificate are free, self-paced and mobile-accessible, with an optional app that can support offline study."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 8.8,
+      "practice": 8.6,
+      "materials": 8.3,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.65,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong current recommendation for learners who specifically want modern world history from 1600 onward with a structured completion path and free certificate. Khan/OER Project is pedagogically richer and broader across the human past.",
+    "comparators": [
+      "khan-world-history",
+      "saylor-hist363-global-industrialization"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/hist103",
+      "https://learn.saylor.org/mod/page/view.php?id=70066"
+    ],
+    "flags": [
+      "current-2025-syllabus",
+      "broad-survey",
+      "free-certificate",
+      "unit-assessments",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-openlearn-empires-power-resistance-legacies",
+    "candidate_id": "openlearn-empires-power-resistance-legacies",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/empires-power-resistance-legacies/content-section-overview",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Eight-hour introductory course organised around power, resistance and legacies across multiple empires, using archives, maps, conquest, racial ideologies, Ottoman cultural power, anti-colonial resistance and contested memories of empire.",
+    "prerequisites": "None; Level 1 introductory course",
+    "required_resources": "Modern browser; free OpenLearn account for progress tracking, quizzes, activities and Statement of Participation",
+    "component_evidence": {
+      "pedagogy": "The course uses three recurring analytical concepts and repeatedly asks learners to read sources critically, including reading colonial archives against the grain and comparing different forms of power and resistance.",
+      "depth": "Eight hours cannot provide a comprehensive global history of empire, but the four-session structure gives a coherent conceptual introduction with multiple geographic and chronological cases.",
+      "practice": "Learners work through source-analysis activities, image and archive exercises, quizzes and reflective tasks rather than consuming only exposition, giving strong practice for a short course.",
+      "materials": "The course combines structured text, primary-source extracts, images, downloadable resources, glossaries, activities and references in an integrated OpenLearn format.",
+      "currency": "First published and updated in January 2024, the course reflects current historiographical attention to colonial archives, racial ideologies, resistance, memory and contested imperial legacies.",
+      "expertise": "The listed authors include Open University historians specialising in Black, African and Caribbean history, imperial/global history and empire, including Katie Donington, John Slight and Karl Hack.",
+      "accessibility": "The course is free, introductory, self-paced and can be started without registration; a free account unlocks progress tracking, activities, quizzes and the Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 7.3,
+      "practice": 8.5,
+      "materials": 9,
+      "currency": 9.7,
+      "expertise": 9.5,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.72,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "An excellent short complement to broad history surveys: current, source-aware and deliberately critical about empire. It should not replace a long-form world-history course, but its marginal value is high because it teaches interpretive habits many surveys underemphasise.",
+    "comparators": [
+      "khan-world-history",
+      "saylor-hist103-world-history",
+      "saylor-hist363-global-industrialization"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/empires-power-resistance-legacies/content-section-overview",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=142147&section=3"
+    ],
+    "flags": [
+      "current-2024",
+      "imperial-history",
+      "source-analysis",
+      "free-statement-of-participation",
+      "introductory-level"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-khan-world-history",
+    "candidate_id": "khan-world-history",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.khanacademy.org/humanities/world-history",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal course completion credential verified",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current nine-unit World History Project pathway spanning historical method, early humans, agrarian societies, empires and beliefs, regional networks, industrialisation, global conflict and modern globalisation with videos, texts, activities and embedded practice.",
+    "prerequisites": "None; designed primarily for secondary-school world-history learners but usable independently",
+    "required_resources": "Modern browser; free Khan Academy account is optional for progress tracking, with no paid software or content required",
+    "component_evidence": {
+      "pedagogy": "The curriculum deliberately teaches historical thinking through recurring notebooks, claim testing, comparison, sourcing, causation, continuity-and-change activities, debates and evidence-based narrative construction.",
+      "depth": "Nine units span human history from early humans to the present and connect political, social, economic, environmental and cultural change across regions; the breadth is substantial even though it is designed below specialist university level.",
+      "practice": "Frequent embedded practice questions are combined with writing prompts, debates, simulations, notebook work and source-analysis activities, producing unusually rich active practice for a free survey.",
+      "materials": "The current World History Project ecosystem supplies a large integrated collection of videos, texts, graphic biographies, activities and teacher-developed historical-thinking tools, with the Khan route presenting them in a learner-friendly sequence.",
+      "currency": "The route is actively served in 2026 and current World History Project materials include recent revisions and contemporary framing through globalisation and present-day historical questions.",
+      "expertise": "World History Project materials are authored and edited by professional historians and educators; lead author Trevor Getz is Professor of African and World History at San Francisco State University.",
+      "accessibility": "The course is fully free, browser-based, low-friction and rich in short multimodal materials; no credential is offered, but learning and assessment do not require payment."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.1,
+      "practice": 9.5,
+      "materials": 9.4,
+      "currency": 9.7,
+      "expertise": 9.3,
+      "accessibility": 9.7
+    },
+    "quality_score": 9.39,
+    "recommendation_score": 9.6,
+    "recommendation_rationale": "The category-leader candidate in this comparison family. It combines broad world-history coverage with stronger historical-thinking practice than Saylor and much better currency and self-study feedback than the Yale archives.",
+    "comparators": [
+      "saylor-hist103-world-history",
+      "openlearn-what-do-historians-do"
+    ],
+    "evidence": [
+      "https://www.khanacademy.org/humanities/world-history",
+      "https://www.oerproject.com/World-History-Origins",
+      "https://www.oerproject.com/All-Courses"
+    ],
+    "flags": [
+      "category-leader-candidate",
+      "broad-survey",
+      "historical-thinking",
+      "practice-heavy",
+      "actively-maintained",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-openlearn-what-do-historians-do",
+    "candidate_id": "openlearn-what-do-historians-do",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/what-do-historians-do/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Six-hour Level 3 course on historical practice, using landscape history, material culture, infant-health evidence and criminal-justice historiography to show how historians formulate questions, use different source types and challenge public understandings of the past.",
+    "prerequisites": "No formal prerequisites, but the course is pitched at advanced/postgraduate-study level",
+    "required_resources": "Modern browser; free OpenLearn account for quizzes, activities, progress and Statement of Participation; downloadable formats are available",
+    "component_evidence": {
+      "pedagogy": "Rather than surveying a period, the course puts learners inside historical practice through contrasting case studies and asks them to see how questions, evidence traditions and revisionist debates produce historical knowledge.",
+      "depth": "The conceptual level is advanced and connects to postgraduate history study, but the six-hour duration necessarily limits how far each method and historiographical debate can be developed.",
+      "practice": "Activities require learners to interpret landscapes, objects, advertisements, legal history and competing historical claims, with quizzes available to registered learners; this is strong applied practice for the course length.",
+      "materials": "The route provides structured text, images, activities, references, further reading, quizzes and multiple downloadable offline formats, making the short course unusually reusable.",
+      "currency": "Published and updated in May 2023, it reflects current methodological teaching and is not materially dependent on rapidly changing factual content.",
+      "expertise": "The course is adapted from Open University postgraduate history study and exposes learners to established historical methods, source criticism and historiographical debate.",
+      "accessibility": "It is free, self-paced, downloadable and available without registration for reading; a free account unlocks full activities, progress tracking and the Statement of Participation, though the advanced level raises the intellectual barrier."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 7.4,
+      "practice": 8.7,
+      "materials": 9.1,
+      "currency": 9.5,
+      "expertise": 9.4,
+      "accessibility": 9.3
+    },
+    "quality_score": 8.76,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A high-value methodological complement rather than a survey-course replacement. It is particularly useful for learners who already know some history and want to understand how historians build and contest knowledge from evidence.",
+    "comparators": [
+      "khan-world-history",
+      "saylor-hist103-world-history"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/what-do-historians-do/content-section-0",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=139388&section=2"
+    ],
+    "flags": [
+      "historical-method",
+      "advanced-level",
+      "short-course",
+      "source-analysis",
+      "free-statement-of-participation"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-saylor-hist363-global-industrialization",
+    "candidate_id": "saylor-hist363-global-industrialization",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.saylor.org/course/hist363",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after at least 70% on the free final exam",
+    "academic_credits": "No academic credit automatically granted by the free completion route",
+    "self_paced": true,
+    "scope_notes": "Sixty-five-hour, eight-unit global history of industrialisation from ancient and early-modern antecedents through capitalism, the Industrial Revolution, labour, mass production, war and alternative industrialisation models, with economic, social and environmental analysis.",
+    "prerequisites": "No formal prerequisites; prior general history knowledge is helpful but not required",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments, progress tracking, final exam and certificate",
+    "component_evidence": {
+      "pedagogy": "The course is organised chronologically and thematically, with primary sources, secondary scholarship and multimedia framed by unit outcomes and notes that tell learners what to extract from each resource.",
+      "depth": "An estimated sixty-five hours across eight substantial units support deeper treatment of industrialisation than a general world-history survey, including comparative regional and social consequences.",
+      "practice": "End-of-unit assessments, an unlimited practice exam and the final graded exam give repeated retrieval practice, while source-interpretation learning outcomes add analytical intent even though most verification is auto-graded.",
+      "materials": "All learning resources are free and curated into one route with a resource list and syllabus, though the multi-provider OER model produces less stylistic coherence than a single-authored course.",
+      "currency": "The syllabus was last modified on 3 October 2025, so its framing and linked material have recent maintenance despite the historically stable core subject.",
+      "expertise": "Saylor's faculty and subject-matter-expert curation supports the course, but named authorial expertise is less transparent than in specialist university archives.",
+      "accessibility": "The 65-hour commitment is substantial, but the full route, repeated assessments, final exam and certificate are free, self-paced and mobile-accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 9,
+      "practice": 8.7,
+      "materials": 8.3,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.71,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "One of the strongest free specialist routes for learners who want industrialisation as a global process rather than a single British or European story. Its assessment is less analytical than the best university writing-based courses, but currency and completion structure are excellent.",
+    "comparators": [
+      "saylor-hist103-world-history",
+      "openlearn-empires-power-resistance-legacies"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/hist363",
+      "https://learn.saylor.org/mod/page/view.php?id=67178"
+    ],
+    "flags": [
+      "current-2025-syllabus",
+      "industrial-history",
+      "global-perspective",
+      "free-certificate",
+      "unit-assessments",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-07-yale-hist-210-early-middle-ages",
+    "candidate_id": "yale-hist-210-early-middle-ages",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://oyc.yale.edu/history/hist-210",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses archive",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twenty-two-lecture Yale course covering Western Europe and the Mediterranean from Diocletian to around 1000, including Rome's transformation, Christianity, Byzantium, Islam, the Franks, monasticism, Charlemagne and Viking-era Europe.",
+    "prerequisites": "No formal prerequisites; university-level reading and historical writing are expected",
+    "required_resources": "Web browser for lectures, audio and transcripts; the original syllabus relies on multiple books and a course packet not bundled as a complete free reading set",
+    "component_evidence": {
+      "pedagogy": "Paul Freedman repeatedly foregrounds historical interpretation, periodisation and primary-source problems, moving from Rome through Christian, Byzantine, Islamic and Carolingian worlds rather than presenting a simple decline narrative.",
+      "depth": "Twenty-two full lectures plus a demanding original reading programme and research-paper expectation provide substantial undergraduate depth across late antiquity and the early medieval period.",
+      "practice": "The original course required a short paper, midterm, section participation and a fifteen-to-twenty-page research paper, but independent learners receive no feedback and the archive does not reproduce a self-checking practice system.",
+      "materials": "Video, audio, transcripts and syllabus are freely available and coherent; however, important assigned books and course-pack readings must be sourced independently.",
+      "currency": "The course was recorded in 2011. The subject is comparatively stable and its interpretive framing remains useful, but medieval and late-antique scholarship has continued to evolve, so some historiography is no longer current.",
+      "expertise": "Paul Freedman is a Yale professor and specialist in medieval social history, Spain, peasantry, trade and material culture, with substantial research and teaching experience in the period.",
+      "accessibility": "The archive is free and self-paced, but reading acquisition, a demanding research orientation and the absence of feedback or free completion recognition create significant friction."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 9.2,
+      "practice": 7,
+      "materials": 8.5,
+      "currency": 7.8,
+      "expertise": 9.7,
+      "accessibility": 7.8
+    },
+    "quality_score": 8.48,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A strong period-specific university archive with better historiographical framing than a passive lecture series, but current interactive surveys are easier to recommend broadly. It remains valuable for learners specifically targeting late antiquity and the early Middle Ages.",
+    "comparators": [
+      "yale-clcv-205-ancient-greek-history",
+      "khan-world-history"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-210",
+      "https://oyc.yale.edu/history/hist-210/lecture-1"
+    ],
+    "flags": [
+      "archive-course",
+      "medieval-history",
+      "european-history",
+      "research-paper-model",
+      "separate-reading-materials",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  }
+]
