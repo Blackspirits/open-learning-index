@@ -1,0 +1,30 @@
+name: Build Final Coverage Snapshot
+
+on:
+  push:
+    branches:
+      - audit/final-coverage-v0.2
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: ${{ !contains(github.event.head_commit.message, 'Generate final coverage snapshot') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/final-coverage-v0.2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/build_final_coverage_snapshot.py
+      - name: Commit snapshot and remove helper files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm scripts/build_final_coverage_snapshot.py .github/workflows/build-final-coverage-snapshot.yml
+          git add docs/coverage-audit-v0.2-final-snapshot.md
+          git commit -m "Generate final coverage snapshot"
+          git push origin HEAD:audit/final-coverage-v0.2
