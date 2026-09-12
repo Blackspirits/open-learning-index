@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **202 advance / 7 hold / 81 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for two archived NAU courses, one legacy-currency NAU education course, two IBM SkillsBuild learner routes, one time-gated FUN session and one legal-currentness HELP course. **145 current Deep Reviews** are complete: 12 calibration records plus 133 scaled reviews across thirteen post-calibration batches.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **202 advance / 7 hold / 81 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for two archived NAU courses, one legacy-currency NAU education course, two IBM SkillsBuild learner routes, one time-gated FUN session and one legal-currentness HELP course. **150 current Deep Reviews** are complete: 12 calibration records plus 138 scaled reviews across fourteen post-calibration batches.
 
 ## Goal
 
@@ -32,6 +32,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-11.md`](docs/reviews/scale-batch-11.md) — complete current Business & Entrepreneurship and Project, Product & Leadership `advance` families.
 - [`docs/reviews/scale-batch-12.md`](docs/reviews/scale-batch-12.md) — complete current Natural Sciences `advance` family with subject-sensitive scientific-currentness handling.
 - [`docs/reviews/scale-batch-13.md`](docs/reviews/scale-batch-13.md) — complete current Humanities & Philosophy `advance` family with archive-age, representation and writing-practice checks.
+- [`docs/reviews/scale-batch-14.md`](docs/reviews/scale-batch-14.md) — complete current Engineering & Electronics `advance` family with hardware, vendor-lock and tooling-currentness checks.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.

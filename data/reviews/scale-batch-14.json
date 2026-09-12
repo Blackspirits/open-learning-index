@@ -1,0 +1,284 @@
+[
+  {
+    "review_id": "deep-15-mit-6-01sc-eecs-i",
+    "candidate_id": "mit-6-01sc-eecs-i",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Integrated undergraduate EECS course spanning software engineering, state machines, circuits, signals/systems, control, probability, Bayesian reasoning and robotics through substantial software/design labs, homework, nano-quizzes and exams.",
+    "prerequisites": "No formal prerequisite stated, but the course assumes willingness to program and do substantial quantitative engineering work.",
+    "required_resources": "General-purpose computer and browser. Much of the course can be completed without physical hardware, but some design-lab work originally used ActivMedia Pioneer 3-DX robots and legacy lib601 tooling that are not realistically available to most current learners.",
+    "component_evidence": {
+      "pedagogy": "The course integrates theory with software and design labs, problem solving, robotics and iterative system design rather than separating programming, circuits and control into disconnected lectures.",
+      "depth": "A semester-length MIT introduction covers unusually broad EECS foundations including software, circuits, signals, control and probabilistic reasoning.",
+      "practice": "Software labs, design labs, homework, nano-quizzes, two midterms and a final created a strong practice structure; OCW exposes many assignments and exams, though the original online tutor is unavailable.",
+      "materials": "Lecture and recitation videos, open course notes/textbook, software/design labs, problem sets, problem-solving videos and exam solutions form an exceptionally complete archive.",
+      "currency": "The 2011 tooling is a serious limitation: lib601, old Python-era workflow and Pioneer robot references are legacy, even though signals, control and circuit concepts remain useful.",
+      "expertise": "The course was developed by a deep MIT EECS faculty team including Leslie Kaelbling, Jacob White, Harold Abelson, Dennis Freeman, Tomas Lozano-Perez and Isaac Chuang.",
+      "accessibility": "All materials are open, but some labs cannot be reproduced fully without obsolete hardware and the legacy software stack creates substantial friction."
+    },
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.4,
+      "practice": 9.2,
+      "materials": 9.6,
+      "currency": 5.8,
+      "expertise": 9.8,
+      "accessibility": 7.3
+    },
+    "quality_score": 8.98,
+    "recommendation_score": 7.9,
+    "recommendation_rationale": "Still an outstanding systems-engineering learning experience, but no longer a clean default recommendation in 2026 because the original software/hardware lab stack is materially obsolete. Best used for durable concepts with modern tooling substituted where possible.",
+    "comparators": [
+      "nordic-nrf-connect-sdk-fundamentals",
+      "mathworks-simulink-onramp"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/",
+      "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/syllabus/",
+      "https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/software-and-tools/"
+    ],
+    "flags": [
+      "eecs",
+      "archive-2011",
+      "legacy-tooling",
+      "robot-hardware-friction",
+      "strong-practice",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-15-nordic-bluetooth-low-energy-fundamentals",
+    "candidate_id": "nordic-bluetooth-low-energy-fundamentals",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion after all topics and quizzes are completed",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current six-lesson, 8–10 hour embedded Bluetooth LE course covering protocol layers, GAP, ATT/GATT, advertising, connections, services/characteristics, security and packet sniffing with many hands-on firmware exercises.",
+    "prerequisites": "Basic C, some embedded-development experience, and at least Lesson 1 of nRF Connect SDK Fundamentals; the rest of that prerequisite course is recommended.",
+    "required_resources": "Computer, smartphone/tablet, Nordic development kit, nRF Connect SDK/VS Code tooling, and extra sniffer-compatible hardware for parts of Lesson 6.",
+    "component_evidence": {
+      "pedagogy": "Every protocol concept is paired with hands-on device work such as advertising configuration, connection tuning, custom GATT services, security and packet capture.",
+      "depth": "Six substantial lessons give strong fundamentals across the Bluetooth LE stack without becoming an advanced RF/protocol-specification course.",
+      "practice": "The course contains many build/flash/debug exercises plus a quiz in every lesson, creating excellent applied practice.",
+      "materials": "Nordic provides versioned lessons, exercises, tooling instructions, SDK guidance and certificate tracking in one coherent developer pathway.",
+      "currency": "The course currently supports nRF Connect SDK v3.4.0 back to v2.3.0 and current Nordic nRF54/nRF53/nRF52 hardware, giving excellent 2026 currentness.",
+      "expertise": "Nordic Semiconductor is a major Bluetooth LE chipset and platform vendor with direct protocol/implementation expertise.",
+      "accessibility": "Course access and certificate are free, but the complete practical route requires specific Nordic development hardware, a smartphone and installed vendor tooling."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8.5,
+      "practice": 9.5,
+      "materials": 9.2,
+      "currency": 10,
+      "expertise": 9.7,
+      "accessibility": 6.8
+    },
+    "quality_score": 9.13,
+    "recommendation_score": 8.3,
+    "recommendation_rationale": "A superb current hands-on Bluetooth LE course for learners who can accept Nordic hardware and ecosystem dependence. The hardware requirement and vendor-specific APIs prevent it from being a universal electronics recommendation.",
+    "comparators": [
+      "nordic-nrf-connect-sdk-fundamentals",
+      "nordic-wifi-fundamentals",
+      "nordic-cellular-iot-fundamentals"
+    ],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/",
+      "https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/lessons/get-your-certificate-2/"
+    ],
+    "flags": [
+      "bluetooth-le",
+      "8-10-hours",
+      "current-sdk",
+      "hardware-required",
+      "vendor-ecosystem",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-15-mathworks-matlab-onramp",
+    "candidate_id": "mathworks-matlab-onramp",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate and shareable progress report",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Interactive MATLAB foundation covering commands, variables, scripts, debugging, vectors/matrices, indexing, array operations, functions, documentation, plots, data import, logical arrays, control flow and a final stellar-motion/spectra project.",
+    "prerequisites": "None",
+    "required_resources": "Modern browser and free MathWorks account; no MATLAB licence is required for the browser-based Onramp route.",
+    "component_evidence": {
+      "pedagogy": "Concepts are introduced directly inside the working environment and immediately reinforced through executable exercises and small tasks.",
+      "depth": "The course is intentionally foundational but covers enough language, array, plotting, import and programming workflow to support follow-on engineering courses.",
+      "practice": "Hands-on browser exercises provide automated feedback throughout, culminating in a small applied project on stellar motion and spectra.",
+      "materials": "The integrated browser MATLAB environment, lessons, documentation links, feedback and progress tracking form a polished self-study package.",
+      "currency": "The live MathWorks Academy course is current in 2026 and teaches the maintained MATLAB environment rather than an archived version.",
+      "expertise": "MathWorks is the developer of MATLAB and has direct product/workflow expertise.",
+      "accessibility": "The Onramp is free for everyone, has no expiration, needs no local licence and runs in the browser; the main limitation is dependence on a proprietary ecosystem."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 7.8,
+      "practice": 9.6,
+      "materials": 9,
+      "currency": 9.8,
+      "expertise": 9.3,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.08,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "An excellent free interactive MATLAB introduction and one of the best product-specific engineering onramps. Recommendation is capped because skills transfer imperfectly outside MATLAB.",
+    "comparators": [
+      "mathworks-simulink-onramp",
+      "mathworks-signal-processing-onramp"
+    ],
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "flags": [
+      "matlab",
+      "interactive",
+      "browser-lab",
+      "automated-feedback",
+      "vendor-specific",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-15-mathworks-simulink-onramp",
+    "candidate_id": "mathworks-simulink-onramp",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/simulink-onramp/simulink",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate and shareable progress report",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Interactive Simulink introduction covering blocks/signals, simulation, signal inspection, math/logic algorithms, MATLAB integration, dynamic systems, discrete/continuous systems and projects on automotive modes, thermostats and a peregrine-falcon dive.",
+    "prerequisites": "No formal prerequisite stated; MATLAB familiarity is helpful for the MATLAB-integration section.",
+    "required_resources": "Modern browser and free MathWorks account; the online Onramp does not require a local Simulink licence.",
+    "component_evidence": {
+      "pedagogy": "The course teaches model-based design through immediate construction and simulation of block-diagram systems rather than passive explanation.",
+      "depth": "It moves beyond basic interface use into discrete and continuous dynamic systems and multiple applied projects, though it remains an introductory product course.",
+      "practice": "Hands-on exercises with automated feedback and three applied mini-projects provide strong learning-by-doing.",
+      "materials": "Browser-based Simulink access, integrated lessons, project tasks, documentation and progress tracking form a coherent package.",
+      "currency": "The live MathWorks course is current in 2026 and aligned with the supported Simulink environment.",
+      "expertise": "MathWorks is the developer of Simulink and has direct model-based-design expertise.",
+      "accessibility": "Free browser-based access removes licence friction, but the skills are tied to a proprietary engineering ecosystem."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8,
+      "practice": 9.5,
+      "materials": 9.1,
+      "currency": 9.8,
+      "expertise": 9.4,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.12,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The strongest MathWorks engineering Onramp in the current pool: unusually good practice and project design for a free vendor course. It remains product-specific rather than a general controls/modeling curriculum.",
+    "comparators": [
+      "mathworks-matlab-onramp",
+      "mit-6-01sc-eecs-i"
+    ],
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/simulink-onramp/simulink",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "flags": [
+      "simulink",
+      "model-based-design",
+      "interactive",
+      "three-projects",
+      "vendor-specific",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-15-mathworks-signal-processing-onramp",
+    "candidate_id": "mathworks-signal-processing-onramp",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/signal-processing-onramp/signalprocessing",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate and shareable progress report",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Interactive practical signal-processing introduction covering signal import/inspection, preprocessing, resampling/alignment, spectral and time-frequency analysis, filtering, measurements and generated MATLAB code.",
+    "prerequisites": "Basic MATLAB familiarity is beneficial",
+    "required_resources": "Modern browser and free MathWorks account; no local MATLAB licence required for the online course.",
+    "component_evidence": {
+      "pedagogy": "The course follows a realistic signal workflow from importing data through cleaning, spectral analysis, filtering and measurement.",
+      "depth": "It provides useful practical breadth but remains an Onramp rather than a full DSP theory course.",
+      "practice": "Hands-on browser exercises with automated feedback provide continuous application of each processing step.",
+      "materials": "Signal Analyzer workflows, code generation, examples and integrated browser MATLAB create a polished practice environment.",
+      "currency": "The live 2026 MathWorks course reflects current MATLAB signal-processing workflows.",
+      "expertise": "MathWorks has direct expertise in MATLAB and signal-processing tooling.",
+      "accessibility": "Free and browser-based with no licence requirement, though MATLAB familiarity and vendor dependence modestly reduce transferability."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 7.8,
+      "practice": 9.4,
+      "materials": 9,
+      "currency": 9.8,
+      "expertise": 9.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.99,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A very strong practical signal-processing starter for MATLAB users. It should not replace a full DSP theory course, but its hands-on workflow and automated feedback are excellent.",
+    "comparators": [
+      "mathworks-matlab-onramp",
+      "mathworks-simulink-onramp"
+    ],
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/signal-processing-onramp/signalprocessing",
+      "https://www.mathworks.com/learn/training/online-courses-faq.html"
+    ],
+    "flags": [
+      "signal-processing",
+      "interactive",
+      "spectral-analysis",
+      "filtering",
+      "vendor-specific",
+      "free-certificate"
+    ],
+    "is_current": true
+  }
+]
