@@ -618,7 +618,7 @@
     ],
     "rationale": "Twenty-seven hours of Portuguese university-authored training with two substantial assessed tasks, rubrics and current treatment of AI, analytics and digital assessment warrant deep review.",
     "flags": [],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-03-british-council-understanding-language-systems",
@@ -689,7 +689,7 @@
     "flags": [
       "fast-moving-content"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-03-openclassrooms-apprenez-a-apprendre",
