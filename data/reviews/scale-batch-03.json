@@ -1,0 +1,538 @@
+[
+  {
+    "review_id": "deep-04-nordic-wifi-fundamentals",
+    "candidate_id": "nordic-wifi-fundamentals",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://academy.nordicsemi.com/courses/wi-fi-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Six-lesson, eight-to-ten-hour embedded Wi-Fi course covering Wi-Fi 6 fundamentals and security, provisioning, Nordic network APIs, sockets and throughput, MQTT/TLS, HTTP/TLS and power-saving behaviour through quizzes and hardware exercises.",
+    "prerequisites": "nRF Connect SDK Fundamentals Lesson 1, basic C and some embedded-development experience; later SDK lessons are recommended",
+    "required_resources": "nRF7002 DK or nRF7002 EK with nRF5340 DK, smartphone or tablet, computer, Nordic tooling and additional hardware for some power-management work",
+    "component_evidence": {
+      "pedagogy": "The course progresses from protocol and security concepts into provisioning, networking, application protocols and power management, with each lesson pairing theory with explicit exercises and quizzes.",
+      "depth": "Within a fundamental course it develops a useful embedded Wi-Fi stack from radio/protocol concepts through host interaction, sockets, secure application protocols and power management.",
+      "practice": "Hands-on work includes provisioning devices, establishing connections through shell and APIs, measuring throughput, using secure MQTT and HTTP and configuring power-saving modes on real hardware.",
+      "materials": "Nordic provides versioned lessons, objectives, software and hardware requirements, quizzes, code-oriented exercises and supported SDK ranges in one maintained academy route.",
+      "currency": "The course explicitly teaches Wi-Fi 6 features and supports current nRF Connect SDK versions, which is strong currency for a version-sensitive embedded networking stack.",
+      "expertise": "Nordic develops the nRF70 hardware, SDK integration and Wi-Fi tooling taught in the course, providing direct implementation expertise.",
+      "accessibility": "Learning and certification are free, but meaningful completion requires specific Nordic development boards, a mobile device and additional hardware for some exercises, creating substantial cost and setup friction."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.5,
+      "practice": 9.5,
+      "materials": 9,
+      "currency": 9.7,
+      "expertise": 9.6,
+      "accessibility": 6.2
+    },
+    "quality_score": 8.99,
+    "recommendation_score": 8.1,
+    "recommendation_rationale": "Technically excellent for embedded developers already using Nordic hardware. It is not a broad default Wi-Fi course because the full practical pathway depends on specific boards and a vendor toolchain.",
+    "comparators": [
+      "nordic-cellular-iot-fundamentals",
+      "nordic-matter-fundamentals",
+      "nordic-nrf-connect-sdk-fundamentals"
+    ],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/wi-fi-fundamentals/"
+    ],
+    "flags": [
+      "hardware-required",
+      "vendor-ecosystem",
+      "fast-moving-stack",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-nordic-cellular-iot-fundamentals",
+    "candidate_id": "nordic-cellular-iot-fundamentals",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Eight-lesson, eight-to-ten-hour hands-on cellular-IoT course covering LTE-M and NB-IoT, power saving, AT commands, Nordic modem and socket APIs, MQTT/TLS, CoAP/DTLS, GNSS, modem tracing and a final nRF91 tracker project.",
+    "prerequisites": "nRF Connect SDK Fundamentals Lesson 1, basic C and embedded-development experience; additional SDK lessons are recommended",
+    "required_resources": "Compatible nRF91-series development hardware, LTE-M or NB-IoT nano-SIM/connectivity, computer, nRF Connect SDK, Nordic desktop/command-line tools, Visual Studio Code and terminal tooling",
+    "component_evidence": {
+      "pedagogy": "Eight lessons build from cellular theory and modem control into networking, secure cloud protocols, GNSS, debugging and a final tracker project, giving the sequence a clear cumulative structure.",
+      "depth": "The course covers both LTE-M and NB-IoT plus power states, firmware architecture, sockets, secure protocols, GNSS and modem tracing at a meaningful embedded-developer level.",
+      "practice": "Every major topic is paired with hardware work, including live cellular links, AT commands, MQTT/TLS, CoAP/DTLS, GNSS acquisition, modem-trace decoding and a final tracker project.",
+      "materials": "Nordic exposes detailed objectives, quizzes, exercises, version requirements, hardware lists and maintained SDK compatibility in the same course route.",
+      "currency": "The course supports current nRF Connect SDK versions and teaches present Nordic nRF91 hardware, LTE-M/NB-IoT practice and modern secure IoT protocols.",
+      "expertise": "Nordic develops the cellular hardware, modem integration and SDK taught throughout the course, giving unusually direct first-party technical expertise.",
+      "accessibility": "The educational route and certificate are free, but full participation requires specific cellular development hardware, a suitable SIM/network and a substantial local SDK/toolchain setup."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.8,
+      "practice": 9.6,
+      "materials": 9,
+      "currency": 9.7,
+      "expertise": 9.6,
+      "accessibility": 6
+    },
+    "quality_score": 9.09,
+    "recommendation_score": 8.2,
+    "recommendation_rationale": "A very strong specialist route for nRF91 cellular-IoT development, with better end-to-end project depth than most short vendor courses. Hardware, connectivity and vendor dependence prevent a broader recommendation.",
+    "comparators": [
+      "nordic-wifi-fundamentals",
+      "nordic-matter-fundamentals",
+      "nordic-nrf-connect-sdk-fundamentals"
+    ],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/cellular-iot-fundamentals/"
+    ],
+    "flags": [
+      "hardware-required",
+      "connectivity-required",
+      "vendor-ecosystem",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-cmu-oli-probability-statistics",
+    "candidate_id": "cmu-oli-probability-statistics",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://oli.cmu.edu/courses/probability-statistics-open-free/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No tests, college credit or completion certificate in the Open & Free independent-learner version",
+    "academic_credits": "None for the Open & Free independent-learner route",
+    "self_paced": true,
+    "scope_notes": "Independent-study equivalent of a one-semester introductory statistics course covering exploratory analysis, study design, classical probability, random variables, sampling distributions, estimation, hypothesis testing and inference for relationships, with simulations and StatTutor labs.",
+    "prerequisites": "Basic algebra; no prior statistics knowledge required",
+    "required_resources": "Internet browser plus one supported statistics tool for activities: free R or a learner-provided alternative such as Excel, Minitab, TI calculator or StatCrunch",
+    "component_evidence": {
+      "pedagogy": "OLI integrates exposition with simulations, case studies, interactive exercises and computer-tutor feedback, making statistical reasoning active rather than lecture-only.",
+      "depth": "The course is explicitly designed as a full college-semester introduction and covers descriptive statistics, probability, sampling, study design and several forms of statistical inference.",
+      "practice": "Interactive learning exercises, simulations and StatTutor labs provide repeated applied work and immediate guidance even though the Open & Free route omits scored tests.",
+      "materials": "The independent route includes the full expository material, cases, simulations, software instructions and tutoring activities in a research-informed learning platform.",
+      "currency": "The course was last updated in 2017, but its introductory probability and statistical-inference foundations are comparatively stable; the age matters mainly for software examples and contemporary data contexts.",
+      "expertise": "Carnegie Mellon OLI is built around learning-science research and university-level instructional design, strongly aligned with the course's quantitative pedagogy.",
+      "accessibility": "The route is free forever, self-paced and requires only basic algebra; no certificate is offered and learners must supply a statistical tool, but free R is explicitly supported."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.1,
+      "practice": 9.2,
+      "materials": 9.1,
+      "currency": 8.3,
+      "expertise": 9.3,
+      "accessibility": 8.8
+    },
+    "quality_score": 9.1,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "A category-leader candidate for rigorous independent introductory statistics because it combines semester-level depth with simulations and tutoring. Khan is easier for mastery-style practice; CMU is stronger as a coherent college-course experience.",
+    "comparators": [
+      "cmu-oli-statistical-reasoning",
+      "khan-statistics-probability"
+    ],
+    "evidence": [
+      "https://oli.cmu.edu/courses/probability-statistics-open-free/"
+    ],
+    "flags": [
+      "stable-foundations",
+      "interactive-learning",
+      "no-credential",
+      "free-forever"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-british-council-communicative-tasks",
+    "candidate_id": "british-council-communicative-tasks",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-communicative-tasks",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free British Council TeachingEnglish completion certificate after all required modules and resources are completed",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current nine-to-twelve-hour teacher-development course with three core modules on genre, communicative speaking/listening activities and task-based learning, supported by a workbook, community resources and practical classroom-design outcomes.",
+    "prerequisites": "English-language teachers or teacher educators; British Council states course content is designed for teachers with at least B1 English",
+    "required_resources": "Free TeachingEnglish account and browser; Facebook is optional for the community and live-event layer, not required for course completion or the certificate",
+    "component_evidence": {
+      "pedagogy": "The course moves from understanding genre to designing communicative speaking/listening work and then task-based learning, with outcomes centred on producing classroom-ready teaching decisions rather than passive awareness.",
+      "depth": "Nine to twelve hours across three specialist modules gives useful professional-development depth but remains a focused CPD course rather than a full methodology qualification.",
+      "practice": "Learners are asked to plan writing stages, create communicative activities, select assessment tasks and design real-world tasks, providing meaningful applied teacher practice though no major capstone is documented.",
+      "materials": "A dedicated workbook, self-study modules, TeachingEnglish resources, optional expert events and an online professional community create a strong support package.",
+      "currency": "The course is actively running in 2026 with a current learner route and ongoing TeachingEnglish support, and task-based/communicative pedagogy remains directly relevant to current ELT practice.",
+      "expertise": "The British Council TeachingEnglish programme is a specialist international teacher-development provider with established ELT expertise and an explicit professional-development framework.",
+      "accessibility": "The course, workbook and certificate are free and self-paced within the open window, with only a free account required; its main limitation is time-bounded availability."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 7.8,
+      "practice": 8.2,
+      "materials": 8.8,
+      "currency": 9.2,
+      "expertise": 9.1,
+      "accessibility": 9.1
+    },
+    "quality_score": 8.56,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A strong practical CPD recommendation for English-language teachers who want communicative and task-based classroom design. The main drawback is that enrolment and completion are tied to the current course window.",
+    "comparators": [
+      "british-council-understanding-language-systems",
+      "openlearn-teaching-learning-tricky-topics"
+    ],
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-communicative-tasks",
+      "https://www.teachingenglish.org.uk/training/courses/training-courses-faqs"
+    ],
+    "flags": [
+      "time-bounded-access",
+      "teacher-development",
+      "free-certificate",
+      "active-2026-run"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-british-council-understanding-language-systems",
+    "candidate_id": "british-council-understanding-language-systems",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-understanding-language-systems",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free British Council TeachingEnglish completion certificate after all required modules and resources are completed",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current nine-to-twelve-hour teacher-development course covering functional language, grammar knowledge and learner difficulties, and effective presentation of language use and form across three self-study modules plus workbook support.",
+    "prerequisites": "English-language teachers or teacher educators; British Council states course content is designed for teachers with at least B1 English",
+    "required_resources": "Free TeachingEnglish account and browser; optional Facebook community and live-event resources are not required for completion",
+    "component_evidence": {
+      "pedagogy": "The three modules progress from functional language into grammar analysis and classroom presentation, explicitly linking subject knowledge to reflective teaching decisions.",
+      "depth": "The course gives a focused professional treatment of functional language and grammar over nine to twelve hours, substantial for CPD but narrower than a full language-teaching qualification.",
+      "practice": "Learners reflect on grammar difficulties and practical presentation choices and use workbook activities, although the public evidence shows less design-heavy applied work than Communicative Tasks.",
+      "materials": "Three structured modules, a downloadable workbook, TeachingEnglish resources, community support and optional expert events form a useful reusable professional package.",
+      "currency": "The course is actively available in 2026; the workbook is dated 2024, and the grammar/functional-language teaching principles themselves are relatively stable.",
+      "expertise": "British Council TeachingEnglish has specialist ELT and teacher-development expertise and maps the course to its professional-development framework.",
+      "accessibility": "The full course and certificate are free, self-paced within the active window and usable with a browser and free account; time-bounded availability is the main access cost."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8,
+      "practice": 7.9,
+      "materials": 8.8,
+      "currency": 8.9,
+      "expertise": 9.1,
+      "accessibility": 9.1
+    },
+    "quality_score": 8.49,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A strong free option for practising English teachers who need more confidence with functional language and grammar pedagogy. Communicative Tasks has slightly stronger observable applied-design practice.",
+    "comparators": [
+      "british-council-communicative-tasks",
+      "openlearn-teaching-learning-tricky-topics"
+    ],
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-understanding-language-systems",
+      "https://www.teachingenglish.org.uk/training/courses/training-courses-faqs"
+    ],
+    "flags": [
+      "time-bounded-access",
+      "teacher-development",
+      "free-certificate",
+      "active-2026-run"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-fao-improving-nutrition-agri-food",
+    "candidate_id": "fao-improving-nutrition-agri-food",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=307",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FAO digital badge after completing the course and scoring at least 75% on the final exam",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Five-lesson professional course using realistic scenarios to connect malnutrition, agriculture and food systems with nutrition-sensitive policy, investments and programmes, including principles, intervention examples and international initiatives.",
+    "prerequisites": "Designed for professionals working across agriculture, food systems, development, government and related policy/programme roles; no formal prerequisite is stated",
+    "required_resources": "Modern web browser; a downloadable Windows version is also offered without additional software",
+    "component_evidence": {
+      "pedagogy": "The course uses two realistic scenarios and a progression from why nutrition matters through food-system mechanisms, principles, interventions and enabling policy context.",
+      "depth": "Five lessons provide useful systems-level coverage for professionals, but the course is compact and does not approach the depth of a university nutrition, public-health or food-systems sequence.",
+      "practice": "Scenario-based learning and intervention examples create applied reasoning, and a final exam verifies learning, but there is no extended project or field assignment.",
+      "materials": "FAO provides a structured online course, downloadable option, professional examples, course summary and an integrated certification assessment.",
+      "currency": "The route remains active, but the course belongs to an older FAO nutrition-sensitive agriculture series and the public page does not document a recent substantive refresh in a policy and health-adjacent domain.",
+      "expertise": "FAO has direct international expertise in agriculture, food systems, nutrition-sensitive policy and programme design, closely matching the subject taught.",
+      "accessibility": "The course and badge are free, browser-based and self-paced with no specialist software or hardware, making it highly accessible to its professional audience."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 7.4,
+      "practice": 7.8,
+      "materials": 8.4,
+      "currency": 7.5,
+      "expertise": 9.6,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.16,
+    "recommendation_score": 8.1,
+    "recommendation_rationale": "A useful specialist professional course for nutrition-sensitive agriculture and food-system policy. Its scenario design and FAO expertise are strong, but compact scope and uncertain update recency keep it below broader modern programmes.",
+    "comparators": [
+      "fao-nutrition-food-security-livelihoods"
+    ],
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=307",
+      "https://www.fao.org/nutrition/policies-programmes/e-learning/en/"
+    ],
+    "flags": [
+      "professional-specialist",
+      "scenario-based",
+      "free-badge",
+      "currency-review"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-fao-nutrition-food-security-livelihoods",
+    "candidate_id": "fao-nutrition-food-security-livelihoods",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=194",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FAO digital badge after completing the course and scoring at least 75% on the final exam",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Very short foundational module, approximately thirty to thirty-five minutes, introducing food and nutrition concepts, nutrient requirements, forms and causes of malnutrition, food security and livelihoods for professionals entering nutrition-sensitive work.",
+    "prerequisites": "None stated; intended as a basic-concepts foundation for professionals from multiple sectors",
+    "required_resources": "Modern web browser; no specialist hardware or software required",
+    "component_evidence": {
+      "pedagogy": "The course is deliberately scoped as a basic-concepts primer and gives learners a coherent vocabulary before later nutrition-sensitive programming modules.",
+      "depth": "At roughly half an hour, it cannot develop nutrition science, food-security analysis or livelihoods frameworks beyond concise foundational definitions and relationships.",
+      "practice": "The current route includes a final certification quiz, but the very short module leaves little room for substantial applied exercises, cases or project work.",
+      "materials": "FAO provides a stable multilingual course page, core conceptual content and integrated badge assessment with minimal access friction.",
+      "currency": "FAO still actively hosts and certifies the course, but public FAO listings date the content to 2015; basic definitions are durable, yet the age deserves a meaningful penalty in nutrition and policy contexts.",
+      "expertise": "FAO is an authoritative international source for food security, livelihoods and nutrition-sensitive programming, strongly aligned with the course content.",
+      "accessibility": "The course is free, very short, browser-based, multilingual and credential-bearing with no specialist prerequisites or tools."
+    },
+    "quality_components": {
+      "pedagogy": 7.8,
+      "depth": 5.8,
+      "practice": 5.5,
+      "materials": 8.3,
+      "currency": 6.8,
+      "expertise": 9.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 7.15,
+    "recommendation_score": 6.9,
+    "recommendation_rationale": "Useful as a quick prerequisite or terminology refresher, but too short and old to compete as a standalone top learning resource. The deeper FAO nutrition-sensitive food-systems course is the stronger recommendation.",
+    "comparators": [
+      "fao-improving-nutrition-agri-food"
+    ],
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=194",
+      "https://www.fao.org/nutrition/e-learning-courses/en/"
+    ],
+    "flags": [
+      "microcourse",
+      "published-2015",
+      "free-badge",
+      "multilingual"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-tghn-introduction-gclp",
+    "candidate_id": "tghn-introduction-gclp",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://globalhealthtrainingcentre.tghn.org/good-clinical-laboratory-practice/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en",
+      "es",
+      "fr",
+      "pt"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free certificate after achieving at least 80% in the final quiz",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Sixty-to-120-minute peer-reviewed professional introduction to Good Clinical Laboratory Practice, distinguishing GCP, GLP and GCLP and explaining GCLP principles, benefits and application across the clinical-trial laboratory process.",
+    "prerequisites": "ICH Good Clinical Practice",
+    "required_resources": "Web browser and free Global Health Training Centre access; no specialist hardware or paid software required",
+    "component_evidence": {
+      "pedagogy": "The course is narrowly structured around distinctions, principles and implementation of GCLP and concludes with an assessed final quiz, making it coherent for a professional standards orientation.",
+      "depth": "One to two hours can establish terminology and implementation principles but cannot provide the in-depth laboratory-practice treatment of the full multi-module GCLP series.",
+      "practice": "The final quiz checks understanding, but the introduction does not document sustained cases, laboratory simulations or implementation projects.",
+      "materials": "The route includes referenced guidance, glossary and related resources and sits inside a larger peer-reviewed GCLP module sequence.",
+      "currency": "The course remains live and professionally relevant, but the public introduction page does not document a recent major content revision; that uncertainty matters in regulated clinical-research training.",
+      "expertise": "The course was developed with clinical-operations organisations and multiple technical peer reviewers within The Global Health Network's professional research-training ecosystem.",
+      "accessibility": "The course and certificate are free, multilingual and short, with browser-only access; the main barrier is the prerequisite expectation of ICH GCP knowledge."
+    },
+    "quality_components": {
+      "pedagogy": 8.1,
+      "depth": 6.8,
+      "practice": 6.6,
+      "materials": 8.2,
+      "currency": 7.4,
+      "expertise": 9.4,
+      "accessibility": 9.2
+    },
+    "quality_score": 7.67,
+    "recommendation_score": 8,
+    "recommendation_rationale": "A strong short orientation for clinical-laboratory professionals who already know GCP, but it should not be mistaken for comprehensive GCLP training. The broader TGHN professional pathways offer more depth.",
+    "comparators": [
+      "tghn-ich-gcp-e6-r3",
+      "tghn-research-ethics-v2"
+    ],
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/good-clinical-laboratory-practice/",
+      "https://globalhealthtrainingcentre.tghn.org/good-clinical-laboratory-practice-course/"
+    ],
+    "flags": [
+      "professional-specialist",
+      "short-course",
+      "free-certificate",
+      "currency-review"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-saylor-prdv231-ethical-leadership",
+    "candidate_id": "saylor-prdv231-ethical-leadership",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1309",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; 1.1 continuing-education units are listed",
+    "academic_credits": "No academic credit verified; CEUs are continuing-education units rather than university credit",
+    "self_paced": true,
+    "scope_notes": "Eleven-hour specialist leadership course examining ethical leadership through Plato and Aristotle, cross-cultural interpretations of virtue and contemporary qualities such as honesty, moral courage, fairness, listening and servant leadership.",
+    "prerequisites": "No formal prerequisite stated",
+    "required_resources": "Web browser and free Saylor learner account; no paid tools or specialist hardware required",
+    "component_evidence": {
+      "pedagogy": "The course uses a clear conceptual arc from classical virtue ethics into cultural interpretation and contemporary leadership qualities rather than presenting leadership as disconnected tips.",
+      "depth": "Eleven hours provides useful specialist treatment of ethical-leadership ideas, but the course does not offer the breadth or experiential depth of a full leadership-development programme.",
+      "practice": "Structured assessment supports recall and reflection, but the public route provides limited evidence of sustained leadership simulations, projects or coached applied practice.",
+      "materials": "Saylor curates open educational materials into a stable course structure with syllabus, assessments and a free completion route.",
+      "currency": "The philosophical and ethical foundations are stable and do not require rapid tooling updates; contemporary leadership examples can age, but the core material remains relevant.",
+      "expertise": "Saylor provides competent curated open education, though the course relies on assembled resources rather than a single specialist faculty-led teaching design.",
+      "accessibility": "The course is free, self-paced, requires no specialist prerequisites and includes a free certificate, producing very low access friction."
+    },
+    "quality_components": {
+      "pedagogy": 8,
+      "depth": 7.4,
+      "practice": 6.9,
+      "materials": 7.8,
+      "currency": 8,
+      "expertise": 7.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 7.69,
+    "recommendation_score": 7.8,
+    "recommendation_rationale": "A worthwhile specialist ethics-and-leadership course, especially for learners wanting a free structured credential. Its limited experiential practice keeps it below the strongest project- or reflection-intensive leadership alternatives.",
+    "comparators": [
+      "saylor-prdv224-leadership-teams"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1309"
+    ],
+    "flags": [
+      "ethical-leadership",
+      "free-certificate",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-04-fun-la-musique-quelle-histoire",
+    "candidate_id": "fun-la-musique-quelle-histoire",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential confirmed; the active free route includes weekly self-assessment and a final validation quiz",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Fifteen-hour French course surveying Western art-music history from prehistory and the Middle Ages through Renaissance, Baroque, Classical, Romantic, modern and contemporary periods, linked to social, political, economic, aesthetic and technical contexts.",
+    "prerequisites": "None; explicitly designed to be suitable for beginners while also offering enrichment for experienced learners",
+    "required_resources": "Browser, audio playback and free FUN account for the current course run; no specialist music software or instruments required",
+    "component_evidence": {
+      "pedagogy": "The six historical chapters combine short videos, listening, score-following, contextual explanation, playful activities, peer discussion and regular self-assessment in a coherent chronological progression.",
+      "depth": "Fifteen hours cannot provide comprehensive musicology, but it gives substantial survey coverage across major periods, composers, genres and historical contexts.",
+      "practice": "Weekly quizzes, a final quiz, listening activities, score reading and discussion create active engagement, though there is no major analytical or creative project.",
+      "materials": "The course includes video, musical excerpts, scores, activities and supplementary references, providing a richer media package than a text-only history survey.",
+      "currency": "The historical subject is highly stable and the course is actively running in 2026; currency matters mainly for historiographical framing rather than factual obsolescence.",
+      "expertise": "The teaching team includes a PhD musicologist and university pedagogical/media staff, providing relevant academic and instructional expertise.",
+      "accessibility": "Enrolment is free and beginner-friendly, but instruction is French-only and the course closes on 1 November 2026, so access is time-bounded."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.3,
+      "practice": 7.9,
+      "materials": 9,
+      "currency": 8.4,
+      "expertise": 9.2,
+      "accessibility": 8.5
+    },
+    "quality_score": 8.5,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "A strong multimedia survey for French-speaking learners who want contextual music history without prerequisites. Time-bounded access and French-only delivery reduce its general recommendation value.",
+    "comparators": [],
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/"
+    ],
+    "flags": [
+      "fr",
+      "time-bounded-access",
+      "music-history",
+      "assessment-led"
+    ],
+    "is_current": true
+  }
+]
