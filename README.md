@@ -2,13 +2,13 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — shallow screening and hold resolution complete. **286 discovery candidates + 17 reference fixtures = 303 researched learning experiences.** Current decisions are **205 advance / 2 hold / 79 reject**. The final saturation audit stops broad discovery and authorises only one 8–12 candidate corrective micro-wave before deep review.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **209 advance / 2 hold / 79 reject**; the corrective Arabic/Mandarin micro-wave is complete.
 
 ## Goal
 
 Review a broad evidence-based candidate universe across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
 
-The original discovery target was **300–500 serious candidates**, later narrowed to roughly 320–350. Completed screening supersedes that numerical target: at 286 candidates the pool already contains 207 active survivors for an intended 100–150-resource index. Broad discovery is therefore stopped; only a capped corrective micro-wave for documented Arabic/Mandarin and exceptional geographic gaps remains before deep review.
+The original discovery target was **300–500 serious candidates**, later narrowed to roughly 320–350. Completed screening and the final saturation audit superseded that numerical target. The corrective language micro-wave stopped at 290 candidates because Arabic and Mandarin now have serious challengers and further search was increasingly partial, paid, archived or redundant. **Broad and corrective v0.2 discovery are now frozen.**
 
 The project separates **absolute quality** from **recommendation**, records exactly what “free” means, tracks instruction/subtitle languages, and re-verifies courses on a risk-based schedule so the rankings do not become stale.
 
@@ -21,6 +21,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
 - [`docs/coverage-audit-v0.2-after-batch-7.md`](docs/coverage-audit-v0.2-after-batch-7.md) — second saturation audit after crossing 300 researched experiences.
+- [`docs/discovery/batch-08.md`](docs/discovery/batch-08.md) — final corrective Arabic/Mandarin micro-discovery; stops early at four candidates.
 - [`docs/screening/shallow-01.md`](docs/screening/shallow-01.md) — first shallow-screening calibration tranche.
 - [`docs/screening/shallow-02.md`](docs/screening/shallow-02.md) — first deliberately selective mixed-provider screening tranche.
 - [`docs/screening/shallow-03.md`](docs/screening/shallow-03.md) — currency-sensitive psychology, health and education screening tranche.
@@ -32,9 +33,10 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/screening/shallow-09.md`](docs/screening/shallow-09.md) — mathematics/statistics, arts/design, natural sciences and engineering/electronics screening tranche.
 - [`docs/screening/shallow-10.md`](docs/screening/shallow-10.md) — languages, finance/economics, business/entrepreneurship, law/public-policy and writing/communication screening tranche.
 - [`docs/screening/shallow-11.md`](docs/screening/shallow-11.md) — health/medicine, cybersecurity/IT, psychology/behaviour, marketing/sales and education/teaching screening tranche.
+- [`docs/screening/shallow-12.md`](docs/screening/shallow-12.md) — immediate screening of the final corrective Arabic/Mandarin micro-wave.
 - [`docs/screening/hold-resolution-01.md`](docs/screening/hold-resolution-01.md) — resolves objective access, availability, hardware, beta-status and public-completeness blockers.
 - [`docs/screening/hold-resolution-02.md`](docs/screening/hold-resolution-02.md) — resolves the remaining comparative/currentness holds and carries forward only two evidence-constrained cases.
-- [`docs/coverage-audit-v0.2-final.md`](docs/coverage-audit-v0.2-final.md) — final saturation decision after all 286 candidates were screened and holds resolved.
+- [`docs/coverage-audit-v0.2-final.md`](docs/coverage-audit-v0.2-final.md) — final saturation decision after all original candidates were screened and holds resolved.
 - [`docs/coverage-audit-v0.2-final-snapshot.md`](docs/coverage-audit-v0.2-final-snapshot.md) — generated evidence snapshot behind the final audit.
 - [`data/categories.json`](data/categories.json) — authoritative category registry.
 - [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
