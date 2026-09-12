@@ -1,0 +1,647 @@
+[
+  {
+    "review_id": "deep-03-cisco-introduction-data-science",
+    "candidate_id": "cisco-introduction-data-science",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.netacad.com/courses/introduction-data-science",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Cisco Networking Academy digital badge after successful completion",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Compact six-hour introduction to data science, data analytics and data engineering with four modules, practice labs, an interactive pivot-table activity, videos, knowledge checks, quizzes and a final exam.",
+    "prerequisites": "None",
+    "required_resources": "Computer or mobile device with internet access; no additional physical equipment required",
+    "component_evidence": {
+      "pedagogy": "The course mixes concise conceptual modules with labs, interactive work, quizzes and a final exam, giving beginners multiple forms of reinforcement rather than a video-only survey.",
+      "depth": "Six hours and four modules are enough for orientation across data science, analytics and engineering, but not enough for substantial statistics, programming, modelling or end-to-end analytical depth.",
+      "practice": "Five practice lab activities plus an interactive pivot-table exercise provide real activity, though the practical workload remains modest compared with Cisco Data Analytics Essentials.",
+      "materials": "Cisco provides a structured self-paced path with videos, quizzes, labs and final assessment in one maintained learning environment.",
+      "currency": "The main data-science concepts are reasonably stable and the course remains an active Cisco pathway, though public detailed curriculum documentation is less fresh than the strongest 2026 technical candidates.",
+      "expertise": "Cisco Networking Academy has extensive experience delivering structured technical education and maintains the pathway as an official skills curriculum.",
+      "accessibility": "There are no prerequisites, no required hardware beyond an internet-connected device and the digital badge is free, making entry friction very low."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 6.9,
+      "practice": 7.8,
+      "materials": 8.2,
+      "currency": 8.4,
+      "expertise": 8.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 8,
+    "recommendation_score": 7.6,
+    "recommendation_rationale": "A credible compact orientation, but Cisco Data Analytics Essentials is substantially deeper and more practical. This course is best for exploration or as a prerequisite rather than as the preferred standalone data-learning path.",
+    "comparators": [
+      "cisco-data-analytics-essentials"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/introduction-data-science",
+      "https://www.netacad.com/sites/default/files/course-catalog.pdf"
+    ],
+    "flags": [
+      "introductory",
+      "short-course",
+      "free-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-mathworks-deep-learning-onramp",
+    "candidate_id": "mathworks-deep-learning-onramp",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate and shareable progress report",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Browser-based practical introduction to image-classification deep learning in MATLAB, covering pretrained networks, image datastores, convolutional neural networks, transfer learning, training, evaluation and performance improvement.",
+    "prerequisites": "Basic MATLAB familiarity is helpful; no advanced deep-learning prerequisite is stated on the public route",
+    "required_resources": "Modern web browser and MathWorks learner account; MATLAB access is provided through the browser for course exercises",
+    "component_evidence": {
+      "pedagogy": "The course follows a concrete workflow from using a pretrained network through preparing data, transfer learning, training and evaluation, with a clear progression toward independent classification work.",
+      "depth": "The treatment develops one practical deep-learning workflow competently but remains intentionally narrow around image classification and transfer learning rather than broader modern deep-learning architectures.",
+      "practice": "Hands-on browser exercises with automated feedback require learners to manipulate image data, configure transfer learning, train models and evaluate results.",
+      "materials": "MathWorks integrates lessons, browser MATLAB, automated checks, progress reporting and certification in a polished single environment with little setup.",
+      "currency": "The supported course route remains current, but the curriculum centres on a mature CNN and transfer-learning workflow rather than newer multimodal or generative deep-learning practice.",
+      "expertise": "MathWorks directly develops MATLAB and its deep-learning tooling, giving the course strong first-party expertise in the exact environment being taught.",
+      "accessibility": "The full course and certificate are free and browser-based, although MATLAB-specific skills are less portable than open Python ecosystems."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.2,
+      "practice": 9,
+      "materials": 8.8,
+      "currency": 8,
+      "expertise": 9.2,
+      "accessibility": 8.5
+    },
+    "quality_score": 8.44,
+    "recommendation_score": 8.2,
+    "recommendation_rationale": "Excellent for learners who need a fast hands-on introduction to deep learning inside MATLAB. For general deep-learning competence, fast.ai and more open ecosystems offer broader transferability and deeper project scope.",
+    "comparators": [
+      "mathworks-machine-learning-onramp",
+      "fastai-practical-deep-learning"
+    ],
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/deep-learning-onramp/deeplearning"
+    ],
+    "flags": [
+      "vendor-tool-specific",
+      "hands-on",
+      "free-certificate",
+      "image-classification-focused"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-nau-introducao-inteligencia-artificial",
+    "candidate_id": "nau-introducao-inteligencia-artificial",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/introducao-a-inteligencia-artificial/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Academia Portugal Digital / NAU digital certificate after the published completion requirements",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Three-hour bilingual beginner course covering AI concepts and history, learning techniques, neural networks and deep learning, natural-language processing, ethics and future implications across four parts.",
+    "prerequisites": "No material prerequisite stated",
+    "required_resources": "Web browser and NAU learner account; no paid software or specialist hardware verified",
+    "component_evidence": {
+      "pedagogy": "Four sequenced sections with mandatory module checks and a final assessment create a coherent short introduction rather than an unstructured awareness resource.",
+      "depth": "Three total hours across AI history, learning, neural networks, NLP and ethics necessarily limit conceptual and technical depth.",
+      "practice": "Mandatory quizzes and a final test provide assessment, but the public route does not demonstrate coding labs, model-building exercises or project work.",
+      "materials": "The course provides a clearly structured syllabus and assessment route, but its public evidence shows a lighter materials package than specialist technical courses.",
+      "currency": "The course is actively promoted by NAU in 2026 and covers current AI literacy themes, though its short conceptual scope gives limited evidence of frontier tooling or rapidly changing implementation details.",
+      "expertise": "The course is delivered through Academia Portugal Digital and Portugal's public NAU platform; institutional credibility is clear, while instructor-specific technical evidence is limited on the public page.",
+      "accessibility": "It is free, self-paced, bilingual in pt-PT and English, short, beginner-friendly and credential-bearing with no verified paid tooling."
+    },
+    "quality_components": {
+      "pedagogy": 7.8,
+      "depth": 6.1,
+      "practice": 6.2,
+      "materials": 7.4,
+      "currency": 8.5,
+      "expertise": 7.8,
+      "accessibility": 9.5
+    },
+    "quality_score": 7.26,
+    "recommendation_score": 7.8,
+    "recommendation_rationale": "A useful low-friction pt-PT AI-literacy course and stronger than its Quality Score for learners who value Portuguese access and a free credential. Microsoft AI Concepts is the better general conceptual path when language is not a constraint.",
+    "comparators": [
+      "microsoft-learn-ai-concepts",
+      "nau-inteligencia-artificial-machine-learning"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/introducao-a-inteligencia-artificial/",
+      "https://www.nau.edu.pt/pt/noticias/aprender-inteligencia-artificial-investir-competencias-futuro/"
+    ],
+    "flags": [
+      "pt-pt",
+      "short-course",
+      "introductory",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-freecodecamp-python-v9",
+    "candidate_id": "freecodecamp-python-v9",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.freecodecamp.org/learn/python-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp Python Certification after the active curriculum, five required projects and certification exam",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current Python v9 certification combining interactive lessons, workshops, labs, reviews and quizzes, followed by five required projects and a certification exam.",
+    "prerequisites": "Beginner-oriented; no formal programming prerequisite verified",
+    "required_resources": "Modern web browser and free freeCodeCamp account for progress, projects, exam and certification",
+    "component_evidence": {
+      "pedagogy": "The v9 structure deliberately alternates explanation, workshops, labs, review and quizzes so concepts are revisited before project synthesis.",
+      "depth": "The certification develops substantial Python foundations and applied programming, although it is not equivalent to a full computer-science sequence covering systems, algorithms and software engineering.",
+      "practice": "Interactive coding is continuous and five required projects must be completed before the certification exam, creating strong synthesis and repetition.",
+      "materials": "The browser-hosted curriculum integrates instruction, tests, labs, project requirements and certification, while its source curriculum is openly maintained on GitHub.",
+      "currency": "Python v9 is an active current curriculum under continuous repository maintenance, reducing the version-staleness risk of older archived freeCodeCamp tracks.",
+      "expertise": "freeCodeCamp has long-running experience designing large-scale developer curricula and continuously tests and maintains the learning platform and content in public.",
+      "accessibility": "The complete curriculum, projects, exam and certification are free and browser-hosted, with very low setup and prerequisite friction."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.4,
+      "practice": 9.3,
+      "materials": 8.8,
+      "currency": 9.2,
+      "expertise": 8.5,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.86,
+    "recommendation_score": 9,
+    "recommendation_rationale": "One of the strongest low-friction free routes for learning Python through sustained practice and earning a real free credential. Berkeley CS61A is stronger for computer-science depth; freeCodeCamp is easier to complete autonomously.",
+    "comparators": [
+      "berkeley-cs61a-fall-2026",
+      "saylor-cs101-programming-i",
+      "freecodecamp-javascript-v9"
+    ],
+    "evidence": [
+      "https://www.freecodecamp.org/learn/python-v9/",
+      "https://github.com/freeCodeCamp/freeCodeCamp",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/curriculum/challenges/english/certifications/python-v9.yml"
+    ],
+    "flags": [
+      "project-heavy",
+      "living-curriculum",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-freecodecamp-relational-databases-v9",
+    "candidate_id": "freecodecamp-relational-databases-v9",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.freecodecamp.org/learn/relational-databases-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp Relational Databases Certification after the active curriculum, five required projects and certification exam",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current relational-databases v9 certification using interactive lessons, workshops, labs, reviews, quizzes and practical projects around databases, SQL and command-line development workflows.",
+    "prerequisites": "Basic computer literacy; prior programming experience is useful but no formal prerequisite was verified",
+    "required_resources": "Modern web browser and free freeCodeCamp account; hosted curriculum and virtualised development exercises provide the core practice environment",
+    "component_evidence": {
+      "pedagogy": "The curriculum combines explanation, guided labs and repeated review before requiring larger certification projects, which supports skill transfer better than isolated SQL drills.",
+      "depth": "It provides a substantial specialist foundation in relational databases and associated development tooling, while remaining narrower than a database-systems university course.",
+      "practice": "Hands-on database and command-line work is central, and five required projects precede the certification exam.",
+      "materials": "freeCodeCamp provides an integrated hosted environment with lessons, labs, tests, projects and certification plus a publicly maintained source curriculum.",
+      "currency": "The v9 track is actively maintained and reflects the current freeCodeCamp full-stack curriculum rather than an archived database certificate.",
+      "expertise": "freeCodeCamp's curriculum team and contributor community maintain the developer-learning stack continuously and at large scale.",
+      "accessibility": "The complete route and credential are free and largely browser-hosted, though virtualised command-line/database exercises introduce slightly more technical friction than basic web curricula."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.3,
+      "practice": 9.3,
+      "materials": 8.8,
+      "currency": 9.1,
+      "expertise": 8.5,
+      "accessibility": 8.8
+    },
+    "quality_score": 8.8,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong practical specialist database route with unusually low cost and strong project requirements. Cisco Data Analytics Essentials is broader for analytics; this is preferable when relational databases and development workflow are the primary goal.",
+    "comparators": [
+      "cisco-data-analytics-essentials",
+      "odin-full-stack-javascript"
+    ],
+    "evidence": [
+      "https://www.freecodecamp.org/learn/relational-databases-v9/",
+      "https://github.com/freeCodeCamp/freeCodeCamp",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/curriculum/challenges/english/certifications/relational-databases-v9.yml"
+    ],
+    "flags": [
+      "project-heavy",
+      "living-curriculum",
+      "free-certificate",
+      "database-specialist"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-freecodecamp-responsive-web-design-v9",
+    "candidate_id": "freecodecamp-responsive-web-design-v9",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.freecodecamp.org/learn/responsive-web-design-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp Responsive Web Design Certification after the active curriculum, five required projects and certification exam",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current HTML/CSS responsive-web certification combining interactive lessons, workshops, labs, reviews and quizzes with five required projects and a certification exam.",
+    "prerequisites": "No formal prerequisite; suitable for beginners",
+    "required_resources": "Modern web browser and free freeCodeCamp account",
+    "component_evidence": {
+      "pedagogy": "The v9 course repeatedly combines explanation, guided practice and review before portfolio-style projects, supporting beginner progression from markup fundamentals into responsive layouts.",
+      "depth": "Coverage is substantial for HTML/CSS and responsive design but intentionally excludes the broader programming and full-stack scope of Odin Foundations.",
+      "practice": "Frequent browser exercises culminate in five required certification projects, giving learners substantial hands-on repetition and portfolio output.",
+      "materials": "The hosted curriculum combines instructions, editor feedback, quizzes, project specifications and certification while the source curriculum is openly maintained.",
+      "currency": "Responsive Web Design v9 is actively maintained in the current curriculum and tracks contemporary HTML/CSS practice rather than legacy layouts.",
+      "expertise": "freeCodeCamp has deep experience teaching entry-level web development at scale and continuously maintains both curriculum and platform in public.",
+      "accessibility": "The route is completely free, beginner-friendly, browser-hosted and credential-bearing with almost no setup barrier."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.9,
+      "practice": 9.2,
+      "materials": 8.8,
+      "currency": 9.2,
+      "expertise": 8.5,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.72,
+    "recommendation_score": 9,
+    "recommendation_rationale": "An excellent default for beginners who want structured HTML/CSS practice plus a free credential. Odin Foundations remains stronger for broader developer workflow, Git and JavaScript integration.",
+    "comparators": [
+      "odin-foundations",
+      "freecodecamp-javascript-v9"
+    ],
+    "evidence": [
+      "https://www.freecodecamp.org/learn/responsive-web-design-v9/",
+      "https://github.com/freeCodeCamp/freeCodeCamp",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/curriculum/challenges/english/certifications/responsive-web-design-v9.yml"
+    ],
+    "flags": [
+      "project-heavy",
+      "living-curriculum",
+      "free-certificate",
+      "web-design"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-nand2tetris",
+    "candidate_id": "nand2tetris",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.nand2tetris.org/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free standalone completion certificate; optional platform certificates are separate",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twelve-project first-principles journey in two parts, constructing a computer from Boolean logic and hardware through machine language, assembler, virtual machine, high-level language, compiler and operating system.",
+    "prerequisites": "Part I requires no prior knowledge; Part II expects programming knowledge at a typical introductory computer-science level",
+    "required_resources": "Computer capable of running the freely provided open-source course tools and project software; no paid platform is required for the independent route",
+    "component_evidence": {
+      "pedagogy": "Every major abstraction is taught by requiring learners to build it, creating a rare sequence where theory becomes concrete and each completed layer supports the next.",
+      "depth": "The twelve projects span hardware and the software stack from gates to operating-system services, giving exceptional conceptual breadth and systems depth for an independent course.",
+      "practice": "The entire course is organized around twelve guided implementation projects; building is not supplementary practice but the core pedagogy.",
+      "materials": "The official site provides lectures, project specifications, slides, tools and freely usable course resources designed for students, instructors and self-learners.",
+      "currency": "The core abstractions of computer architecture, compilers, virtual machines and operating systems are highly stable, so the course remains current despite some materials drawing on earlier book editions.",
+      "expertise": "Noam Nisan and Shimon Schocken are established computer-science academics and designed a course now used across hundreds of universities, schools and bootcamps.",
+      "accessibility": "All core independent-study materials and tools are free, with Part I requiring no prior knowledge; Part II raises the prerequisite level but no paid service is required."
+    },
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.5,
+      "practice": 9.8,
+      "materials": 9.3,
+      "currency": 9,
+      "expertise": 9.6,
+      "accessibility": 9.1
+    },
+    "quality_score": 9.48,
+    "recommendation_score": 9.6,
+    "recommendation_rationale": "A category-leader candidate for learning how computer systems fit together. It is unusually deep, coherent and project-driven, with almost no credential or platform distortion. It complements rather than replaces programming-first courses such as CS61A.",
+    "comparators": [
+      "berkeley-cs61a-fall-2026",
+      "mit-6-006-algorithms"
+    ],
+    "evidence": [
+      "https://www.nand2tetris.org/",
+      "https://www.nand2tetris.org/course",
+      "https://www.nand2tetris.org/copy-of-cool-stuff"
+    ],
+    "flags": [
+      "project-heavy",
+      "stable-foundations",
+      "no-free-formal-credential",
+      "systems"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-saylor-cs101-programming-i",
+    "candidate_id": "saylor-cs101-programming-i",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.saylor.org/course/cs101",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; certificate also records 2.6 continuing-education units",
+    "academic_credits": "No academic credit verified for the free completion route; CEUs are continuing-education units, not university credit",
+    "self_paced": true,
+    "scope_notes": "Twenty-six-hour Java-based introductory programming course focused on computational thinking, problem solving, programming fundamentals, unit assessments, practice exam and final assessment.",
+    "prerequisites": "No prior programming prerequisite stated",
+    "required_resources": "Web browser and Saylor learner account; Java development tooling may be needed for full programming practice",
+    "component_evidence": {
+      "pedagogy": "The self-paced sequence frames programming as computational problem solving and combines readings, activities, repeatable unit assessments, practice exam and final assessment.",
+      "depth": "Twenty-six hours gives meaningful room for introductory Java and computer-science thinking, but the curriculum remains less rigorous and project-intensive than Berkeley CS61A.",
+      "practice": "Learners work through programming material and repeated assessments, though the public evidence shows less sustained portfolio-scale project work than freeCodeCamp or Odin.",
+      "materials": "Saylor curates open educational resources into a coherent syllabus with assessments, course guidance and a stable learner route.",
+      "currency": "Core Java programming concepts are durable and the course is currently maintained, though a language-specific curated-OER model can lag faster-moving tooling practices.",
+      "expertise": "Saylor has substantial experience assembling open higher-education curricula, but much of the teaching material is curated rather than authored as one tightly integrated instructor-led course.",
+      "accessibility": "The course is free, self-paced, beginner-accessible and includes a free certificate, with only normal programming-tool setup required."
+    },
+    "quality_components": {
+      "pedagogy": 8.1,
+      "depth": 7.8,
+      "practice": 7.5,
+      "materials": 8,
+      "currency": 8.3,
+      "expertise": 8,
+      "accessibility": 9.5
+    },
+    "quality_score": 7.99,
+    "recommendation_score": 8.1,
+    "recommendation_rationale": "A solid structured beginner option, especially for learners who want Java and a free certificate. freeCodeCamp Python and Berkeley CS61A offer stronger practice or depth respectively.",
+    "comparators": [
+      "freecodecamp-python-v9",
+      "berkeley-cs61a-fall-2026"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/cs101",
+      "https://learn.saylor.org/mod/page/view.php?id=84727"
+    ],
+    "flags": [
+      "curated-oer",
+      "java",
+      "free-certificate",
+      "beginner"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-unity-junior-programmer",
+    "candidate_id": "unity-junior-programmer",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.unity.com/pathway/junior-programmer",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Unity Learn pathway badge / Credly digital credential after completion",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Twelve-week guided Unity programming pathway using current Unity 6.x, covering C# scripting, debugging, version control, interfaces, scene flow, data persistence, object-oriented programming, optimization, publishing and portfolio work.",
+    "prerequisites": "Basic Unity knowledge or completion of Unity Essentials is recommended; no mathematics prerequisite",
+    "required_resources": "Computer capable of running Unity Hub and a supported Unity 6.x editor plus internet access and a free Unity account",
+    "component_evidence": {
+      "pedagogy": "The pathway progresses through repeated missions that combine conceptual programming instruction with game/application outcomes, debugging and increasingly independent portfolio tasks.",
+      "depth": "It develops meaningful C# and object-oriented programming within a real-time application context, but depth is shaped around Unity APIs rather than general-purpose computer science.",
+      "practice": "Learners build multiple interactive projects, refactor code, manage persistence, debug and optimize applications, making sustained creation the defining feature of the pathway.",
+      "materials": "Unity Learn integrates guided missions, exercises, quizzes, project files, version-specific content, educator resources and completion tracking.",
+      "currency": "The pathway currently supports Unity 6.3 and related Unity 6 versions, giving it unusually strong software-version currency for a vendor-specific development course.",
+      "expertise": "Unity authors and maintains the pathway for its own engine and development workflow, providing strong first-party implementation expertise.",
+      "accessibility": "All learning and the pathway badge are free, but learners need a computer capable of running the Unity editor and must learn a substantial vendor-specific toolchain."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.5,
+      "practice": 9.6,
+      "materials": 9,
+      "currency": 9.6,
+      "expertise": 9.3,
+      "accessibility": 8.2
+    },
+    "quality_score": 9.07,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "An excellent free choice for learners explicitly targeting Unity or game/real-time programming. It is less suitable as the default programming foundation because much of the competence is tied to the Unity ecosystem.",
+    "comparators": [
+      "saylor-cs101-programming-i",
+      "odin-foundations"
+    ],
+    "evidence": [
+      "https://learn.unity.com/pathway/junior-programmer",
+      "https://learn.unity.com/pathway/junior-programmer/unity-version",
+      "https://learn.unity.com/pathway/junior-programmer/completed?version=6.0"
+    ],
+    "flags": [
+      "vendor-tool-specific",
+      "project-heavy",
+      "free-badge",
+      "software-version-sensitive"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-fortinet-fortigate-operator",
+    "candidate_id": "fortinet-fortigate-operator",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Associated Fortinet exam badge exists; no zero-cost exam or certification claim is relied on for this review",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Eight-hour FortiOS 7.6 operational-security course covering FortiGate setup, networking, firewall policies, logs, authentication, SSL inspection, malware blocking, web filtering, IPS, application control, ZTNA, VPNs, HA, cloud security and maintenance.",
+    "prerequisites": "Networking Fundamentals, NSE 1 Cybersecurity and Cloud Fundamentals and NSE 2 Introduction to Next Generation Firewall knowledge are recommended",
+    "required_resources": "Computer with high-speed internet and supported browser; online lab connectivity must be permitted through local firewalls, and practical work is tied to Fortinet's training environment",
+    "component_evidence": {
+      "pedagogy": "The agenda moves from core appliance configuration into layered security controls, VPNs, monitoring and resilience, using demos and interactive simulations to connect concepts with operational tasks.",
+      "depth": "Twenty agenda areas in eight hours create substantial operational coverage for an entry FortiGate role, though the course is product administration rather than broad vendor-neutral security engineering.",
+      "practice": "Demos and interactive simulations train real configuration tasks across firewalling, filtering, VPN, IPS and maintenance, giving stronger hands-on evidence than most introductory cyber courses.",
+      "materials": "Fortinet provides a structured official course with explicit objectives, prerequisites, product version, system requirements and self-paced training route.",
+      "currency": "The course explicitly targets FortiOS 7.6 and current security features such as ZTNA and cloud security, which is strong currency for a version-sensitive security product.",
+      "expertise": "Fortinet develops the platform and security features being taught, giving direct specialist expertise for operational FortiGate administration.",
+      "accessibility": "The self-paced learning route is free, but prerequisite knowledge, lab-connectivity constraints and product specificity create materially more friction than general cybersecurity foundations."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.4,
+      "practice": 8.9,
+      "materials": 8.6,
+      "currency": 9.6,
+      "expertise": 9.5,
+      "accessibility": 7.6
+    },
+    "quality_score": 8.76,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A strong specialist operational course for learners who need FortiGate skills. It should rank below OpenLearn as a general cybersecurity recommendation because vendor dependence and prerequisites sharply narrow its audience.",
+    "comparators": [
+      "openlearn-intro-cyber-security",
+      "ibm-skillsbuild-cybersecurity-fundamentals"
+    ],
+    "evidence": [
+      "https://training.fortinet.com/local/staticpage/view.php?page=library_fortigate-operator"
+    ],
+    "flags": [
+      "vendor-tool-specific",
+      "fortios-7-6",
+      "hands-on",
+      "credential-cost-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-fun-web-semantique-donnees",
+    "candidate_id": "fun-web-semantique-donnees",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/web-semantique-et-web-de-donnees/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FUN digital badge after reaching the required score",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-one-hour French specialist course from Inria covering linked data and semantic-web standards including RDF, SPARQL, RDFS, OWL, SKOS, VOiD, DCAT and PROV-O over seven weeks plus a DBpedia bonus unit.",
+    "prerequisites": "Basic computing and web knowledge including browsers and basic HTML, plus ability to install and run local software",
+    "required_resources": "Computer with internet access and ability to install/run course software including Java-based applications where required",
+    "component_evidence": {
+      "pedagogy": "Each weekly topic combines multimedia teaching, demonstrations, graded quizzes and end-of-week practice, producing a consistent concept-demonstration-application cycle.",
+      "depth": "The course develops a coherent standards stack from RDF and querying through ontologies, vocabularies, provenance and integration at undergraduate level.",
+      "practice": "Graded weekly exercises and demonstrations require learners to work with the formalisms and techniques rather than only recognize terminology.",
+      "materials": "FUN and Inria provide video, text, quizzes, demonstrations, complementary links and a long-duration self-paced route.",
+      "currency": "Core semantic-web standards remain relevant and stable, but the field and some implementation context change more slowly than mainstream web development; the public page gives limited evidence of recent major curriculum refresh.",
+      "expertise": "The teaching team includes senior Inria and Université Côte d'Azur researchers directly specialized in semantic web and knowledge representation.",
+      "accessibility": "The full course and badge are free and self-paced, but French-only instruction and undergraduate technical prerequisites narrow the accessible audience."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.7,
+      "practice": 8.3,
+      "materials": 8.7,
+      "currency": 7.8,
+      "expertise": 9.7,
+      "accessibility": 8.9
+    },
+    "quality_score": 8.67,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "A high-quality specialist course with unusually strong subject expertise and meaningful practice. It is highly recommendable for linked-data/knowledge-graph needs, but its narrow scope and French-only delivery limit general recommendation.",
+    "comparators": [],
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/web-semantique-et-web-de-donnees/"
+    ],
+    "flags": [
+      "specialist",
+      "fr",
+      "free-badge",
+      "semantic-web"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-03-nordic-matter-fundamentals",
+    "candidate_id": "nordic-matter-fundamentals",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://academy.nordicsemi.com/courses/matter-fundamentals/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Nordic Developer Academy certificate of completion",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Six-to-eight-hour hands-on Matter course covering architecture, Thread/Wi-Fi transports, security model, nRF Connect Matter APIs, endpoints and clusters, power optimisation, intermittently connected devices and secure OTA firmware updates.",
+    "prerequisites": "Basic C, embedded-development experience and nRF Connect SDK Fundamentals Lesson 1; additional SDK lessons are recommended",
+    "required_resources": "Compatible Nordic development kits are required for full exercises; Windows/macOS learners also need a Raspberry Pi 3B+ or newer, while Linux requires Bluetooth support, plus nRF Connect tooling and Visual Studio Code",
+    "component_evidence": {
+      "pedagogy": "Five lessons move from architecture into development, device modelling, power and OTA updates, with each section pairing concepts with explicit hands-on exercises and quizzes.",
+      "depth": "Within its six-to-eight-hour scope the course covers protocol architecture, APIs, Thread, clusters, security, power and firmware updates at a useful embedded-developer level.",
+      "practice": "Hardware exercises include flashing and controlling Matter devices, building and extending clusters, enabling low-power modes and performing OTA updates, making practice exceptionally strong.",
+      "materials": "Nordic provides detailed objectives, versioned curriculum, quizzes, exercises, software requirements and supported SDK ranges in one maintained technical academy.",
+      "currency": "The route explicitly supports current nRF Connect SDK 3.2-3.4 and a fast-moving Matter ecosystem, giving excellent currency for a version-sensitive embedded standard.",
+      "expertise": "Nordic develops the hardware, SDK and Matter integration taught in the course, providing direct subject and implementation expertise.",
+      "accessibility": "The educational content and certificate are free, but full practice requires multiple specific development boards and, on Windows/macOS, a Raspberry Pi, creating substantial cost and hardware friction."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.5,
+      "practice": 9.5,
+      "materials": 9,
+      "currency": 9.8,
+      "expertise": 9.6,
+      "accessibility": 6
+    },
+    "quality_score": 8.99,
+    "recommendation_score": 8,
+    "recommendation_rationale": "Technically excellent and very current for developers already inside Nordic/Matter embedded work. Hardware requirements are severe enough that it should not be a broad default recommendation despite near-9 intrinsic quality.",
+    "comparators": [
+      "nordic-nrf-connect-sdk-fundamentals",
+      "nordic-wifi-fundamentals"
+    ],
+    "evidence": [
+      "https://academy.nordicsemi.com/courses/matter-fundamentals/"
+    ],
+    "flags": [
+      "hardware-required",
+      "vendor-ecosystem",
+      "fast-moving-standard",
+      "free-certificate"
+    ],
+    "is_current": true
+  }
+]
