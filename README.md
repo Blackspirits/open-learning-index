@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **209 advance / 2 hold / 79 reject**; the corrective Arabic/Mandarin micro-wave is complete.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **208 advance / 2 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with one later availability correction for an archived NAU course.
 
 ## Goal
 
