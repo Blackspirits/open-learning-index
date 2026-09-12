@@ -1,0 +1,32 @@
+[
+  {
+    "screen_id": "maintenance-06-coe-help-protection-safety-journalists",
+    "candidate_id": "coe-help-protection-safety-journalists",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic HELP Statement of Accomplishment",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania",
+      "https://www.coe.int/en/web/help/-/protection-and-safety-of-journalist-new-council-of-europe-help-course-available-for-free-online"
+    ],
+    "rationale": "The course remains actively used and was launched for an Albanian cohort in April 2026, but the official self-learning course description identifies the underlying course as published in July 2020 and no substantive 2025/2026 update to the generic legal content was verified. Because the curriculum depends on evolving legal standards, mechanisms and case law, a recent launch is not sufficient evidence of currentness for Deep Review.",
+    "flags": [
+      "journalist-safety",
+      "legal-currency-review",
+      "published-2020",
+      "active-2026-launch",
+      "update-date-unverified",
+      "carry-forward-hold"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-10-coe-help-protection-safety-journalists"
+  }
+]
