@@ -1,0 +1,283 @@
+[
+  {
+    "review_id": "deep-10-coe-help-ai-human-rights",
+    "candidate_id": "coe-help-ai-human-rights",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://help.elearning.ext.coe.int/enrol/index.php?id=7331",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic Council of Europe HELP Statement of Accomplishment on completion",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Six-hour, five-module Council of Europe HELP course on artificial intelligence and human rights, updated in 2025 to reflect the Framework Convention on AI, HUDERIA, privacy/data protection, non-discrimination, freedom of expression, AI and justice, and broader European and international legal standards.",
+    "prerequisites": "No formal prerequisites; primarily designed for legal and justice professionals, supervisory authorities, AI providers/users, civil society, academia and advanced learners",
+    "required_resources": "Modern browser and free HELP account; no paid software or service required",
+    "component_evidence": {
+      "pedagogy": "The current course uses the HELP methodology with presentations, interactive screens, knowledge tests and reflective exercises, explicitly connecting legal standards to ethical decision-making and AI-system impact assessment.",
+      "depth": "Five modules and six hours provide a substantial specialist orientation to the human-rights implications of AI, but the course remains professional CPD rather than a comprehensive AI-law programme.",
+      "practice": "Knowledge tests, reflective exercises and risk/impact-assessment framing require active application of the legal concepts, although no extended written legal project or externally reviewed capstone is documented.",
+      "materials": "The course combines structured modules, interactive screens, current Council of Europe legal instruments and HELP learning assets in a coherent self-learning route.",
+      "currency": "The course was comprehensively updated in 2025 to align with the Council of Europe Framework Convention on AI, HUDERIA and recent European/international AI standards, making currentness exceptionally strong.",
+      "expertise": "The course was developed by the Council of Europe HELP Programme and Digital Development Unit/CAI Secretariat with contributions from the Registry of the European Court of Human Rights.",
+      "accessibility": "The route is free, self-paced and browser-based with a free Statement of Accomplishment; the specialist legal framing is the main barrier for general beginners."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 7.9,
+      "practice": 8.2,
+      "materials": 8.8,
+      "currency": 9.8,
+      "expertise": 9.6,
+      "accessibility": 9.2
+    },
+    "quality_score": 8.7,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A leading current free introduction to AI and human-rights law for legal and policy professionals. It is unusually current and applied, but six hours is not enough to replace a deeper AI-law or technology-regulation curriculum.",
+    "comparators": [
+      "coe-help-data-protection-privacy-rights",
+      "saylor-bus205-business-law"
+    ],
+    "evidence": [
+      "https://www.coe.int/en/web/artificial-intelligence/-/updated-help-online-course-on-artificial-intelligence-and-human-rights-is-now-available-and-opened-for-enrolment-to-interested-participants",
+      "https://help.elearning.ext.coe.int/enrol/index.php?id=7331"
+    ],
+    "flags": [
+      "fast-moving-law",
+      "updated-2025",
+      "ai-law",
+      "human-rights",
+      "interactive-assessment",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-10-coe-help-cybercrime-electronic-evidence",
+    "candidate_id": "coe-help-cybercrime-electronic-evidence",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.coe.int/en/web/help/-/cybercrime-and-electronic-evidence-council-of-europe-help-course-for-eu-judges-prosecutors-and-lawyers",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic Council of Europe HELP Statement of Accomplishment",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately ten-hour, seven-module legal course on cybercrime and electronic evidence covering computer/network foundations, the Budapest Convention, substantive offences, electronic-evidence procedural powers, international cooperation, human rights and the Second Additional Protocol.",
+    "prerequisites": "No formal prerequisite published, but the primary audience is criminal-justice authorities, judges, prosecutors, lawyers and other legal practitioners",
+    "required_resources": "Modern browser and free HELP account; no specialist software or paid service required",
+    "component_evidence": {
+      "pedagogy": "The curriculum moves from technical and legal foundations into procedural powers, cooperation and human-rights constraints, giving legal professionals a coherent route from concepts to operational legal questions.",
+      "depth": "Seven substantive modules and around ten hours give meaningful specialist coverage of cybercrime and electronic evidence, while remaining an introductory professional course rather than advanced procedural-law training.",
+      "practice": "Official material describes practical tools for reconciling investigative powers, electronic-evidence handling and human-rights standards; the public evidence is less granular about current-version assessment mechanics than for the AI HELP course.",
+      "materials": "The course provides a structured seven-module HELP route tied directly to the Budapest Convention and its Additional Protocols, with self-learning access and multilingual versions.",
+      "currency": "The Council of Europe explicitly reported the Cybercrime HELP course as updated in 2026. The detailed public module description derives from the earlier version, so the exact revision delta is not fully exposed.",
+      "expertise": "The course was developed jointly by the Council of Europe Cybercrime Programme Office and HELP Programme, with contributions from major Council of Europe cybercrime cooperation projects.",
+      "accessibility": "It is free, self-paced, requires only a HELP account and is available in multiple languages; specialist criminal-law terminology creates some barrier for complete beginners."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.2,
+      "practice": 7.8,
+      "materials": 8.7,
+      "currency": 9.7,
+      "expertise": 9.6,
+      "accessibility": 9.1
+    },
+    "quality_score": 8.61,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A strong specialist recommendation for legal professionals who need a current foundation in cybercrime and electronic evidence. The main limitation is that the public record does not expose the 2026 revision in enough detail to score practice as highly as the strongest HELP course.",
+    "comparators": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "evidence": [
+      "https://www.coe.int/en/web/cybercrime/-/council-of-europe-help-online-course-on-cybercrime-and-electronic-evidence",
+      "https://www.coe.int/en/web/help/-/2026-help-annual-network-conference-in-strasbourg-conference-report"
+    ],
+    "flags": [
+      "cybercrime-law",
+      "electronic-evidence",
+      "updated-2026",
+      "budapest-convention",
+      "multilingual",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-10-coe-help-data-protection-privacy-rights",
+    "candidate_id": "coe-help-data-protection-privacy-rights",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.coe.int/en/web/help/help-courses",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic Council of Europe HELP Statement of Accomplishment",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately twelve-hour HELP course on European data-protection and privacy law, covering Council of Europe and EU frameworks, GDPR and Convention 108+, ECtHR/CJEU case law, health data, media, e-communications, new technologies, workplace privacy, data-subject rights and enforcement.",
+    "prerequisites": "Primarily designed for judges, prosecutors, lawyers, court staff, data-protection authorities and other professionals working with privacy law",
+    "required_resources": "Modern browser and free HELP account; no paid software or platform required",
+    "component_evidence": {
+      "pedagogy": "The course uses interactive treatment of legal frameworks and case law and is designed around identifying violations, applying remedies and connecting European data-protection systems to professional legal work.",
+      "depth": "At roughly twelve hours across a broad sequence of substantive modules, it provides stronger legal breadth than short awareness courses while remaining professional CPD rather than a full academic privacy-law subject.",
+      "practice": "Official HELP material documents interactive exercises for identifying potential violations and historically documents multiple-choice checks throughout; because the exact mechanics of the 2026 revision are not separately exposed, the practice score remains conservative.",
+      "materials": "The route integrates CoE and EU legal frameworks, Convention 108+, GDPR, ECtHR/CJEU case law and thematic applications in a structured self-learning package with completion recognition.",
+      "currency": "The Council of Europe explicitly presented Data Protection and Privacy Rights as an updated HELP course at its 2026 network conference, materially reducing the legal-staleness risk. The public detailed outline still mixes older descriptive assets, so Currency is high but not perfect.",
+      "expertise": "The course sits within the Council of Europe HELP Programme and has been developed with Council of Europe data-protection expertise and European human-rights/legal materials.",
+      "accessibility": "The course is free, self-paced, browser-based and available in numerous language versions with a free Statement of Accomplishment; legal-professional orientation is the main accessibility limit."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.5,
+      "practice": 8,
+      "materials": 8.8,
+      "currency": 9.6,
+      "expertise": 9.6,
+      "accessibility": 9.1
+    },
+    "quality_score": 8.73,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "One of the strongest free European privacy-law foundations in the current pool: broad, applied and explicitly updated in 2026. The public documentation of the newest revision is less transparent than ideal, preventing a higher practice/currentness score.",
+    "comparators": [
+      "coe-help-ai-human-rights",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "evidence": [
+      "https://www.coe.int/en/web/help/help-courses",
+      "https://www.coe.int/en/web/help/-/2026-help-annual-network-conference-in-strasbourg-conference-report",
+      "https://www.coe.int/en/web/help/-/data-protection-and-privacy-rights-council-of-europe-help-course-for-latvian-and-portuguese-legal-professionals"
+    ],
+    "flags": [
+      "data-protection",
+      "privacy-rights",
+      "updated-2026",
+      "gdpr",
+      "convention-108-plus",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-10-nau-direitos-deveres-digital",
+    "candidate_id": "nau-direitos-deveres-digital",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/direitos-e-deveres-no-digital/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "The current NAU page documents mandatory module and final assessments; a May 2025 Portuguese government launch describes the new Academia Portugal Digital courses as certified, but course-specific credential mechanics remain insufficiently explicit for F0",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Four-hour, twelve-module digital-citizenship course on EU digital rights and responsibilities, data protection, online freedom of expression, access to information, inclusion, online ethics, cyberbullying, hate speech, fraud, cybercrime, media literacy and healthy online communities.",
+    "prerequisites": "No formal prerequisites; intended for general citizens seeking practical digital-literacy and rights awareness",
+    "required_resources": "Modern browser and NAU access; no paid software or specialist equipment required",
+    "component_evidence": {
+      "pedagogy": "The course breaks a broad digital-citizenship topic into twelve short modules and couples each module with compulsory learning checks before a final assessment, supporting structured progression.",
+      "depth": "Four hours limits legal and policy depth substantially; the course is best understood as a broad citizenship and digital-rights primer rather than substantive legal education.",
+      "practice": "Mandatory module tests and a final assessment provide repeated retrieval and checking, but there is no evidence of case analysis, legal drafting or an extended applied project.",
+      "materials": "The NAU route offers a coherent bilingual structured course with a clear module plan and assessment design, but the public page exposes less supporting reference material than specialist legal courses.",
+      "currency": "Portuguese government sources identify this course among nine new Academia Portugal Digital courses launched in May 2025. That gives a reliable recent origin for a fast-moving digital-rights topic.",
+      "expertise": "The course is delivered by ARTE / Academia Portugal Digital within Portugal's public digital-skills programme, providing strong policy relevance though less specialist legal-author transparency than Council of Europe or WIPO courses.",
+      "accessibility": "It is free, self-paced, only four hours, available in Portuguese and English and requires no specialist background, making it exceptionally accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8,
+      "depth": 6.8,
+      "practice": 7.7,
+      "materials": 8,
+      "currency": 9.1,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 7.94,
+    "recommendation_score": 8.3,
+    "recommendation_rationale": "A valuable low-friction Portuguese-language digital-rights primer with real assessment and a reliable 2025 launch date. It should complement, not replace, deeper privacy, cybercrime or human-rights law courses.",
+    "comparators": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/direitos-e-deveres-no-digital/",
+      "https://digital.gov.pt/pt/noticias/academia-portugal-digital-disponibiliza-novos-cursos"
+    ],
+    "flags": [
+      "pt-pt",
+      "digital-citizenship",
+      "eu-law-context",
+      "launched-2025",
+      "assessment-heavy",
+      "credential-conservative"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-10-wipo-ip-panorama-2",
+    "candidate_id": "wipo-ip-panorama-2",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://welc.wipo.int/acc/index.jsf?cc=DL_IPPanoramaE&lang=en&page=courseCatalog.xhtml",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate for the 2026 IP Panorama 2.0 open-access course",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-hour, eight-module WIPO open-access course on using intellectual property for entrepreneurship and business, covering the role and forms of IP, e-business, IP strategy, IP audit, infringement and commercial utilisation through interactive micro-learning and real-world cases.",
+    "prerequisites": "No formal prerequisites; aimed particularly at business/entrepreneurship students, young professionals, entrepreneurs and business owners",
+    "required_resources": "Modern browser and access during the open 2026 WIPO session; no tutor, paid software or specialist equipment required",
+    "component_evidence": {
+      "pedagogy": "IP Panorama 2.0 is explicitly redesigned around interactive micro-learning and real-world business cases, giving learners a practical strategy lens rather than a treaty-by-treaty legal survey.",
+      "depth": "Twenty hours across eight modules gives useful breadth in business use of IP, strategy, audit and infringement, but it is less comprehensive as general IP law than WIPO DL-101.",
+      "practice": "Case-based and interactive micro-learning supports applied thinking, but no current scored assessment, project or completion examination is verified for the open-access route.",
+      "materials": "WIPO provides a coherent eight-module current course designed jointly with KIPO and KIPA, with an updated micro-learning format and direct business application.",
+      "currency": "The official WIPO Academy catalogue exposes an active 2026 session and identifies IP Panorama 2.0 as the updated version of the original programme, supporting strong currentness.",
+      "expertise": "The course is developed by WIPO together with the Korean Intellectual Property Office and Korea Invention Promotion Association, giving it strong international IP and commercialisation expertise.",
+      "accessibility": "It is free, untutored and open access during a long 2026 session, with no formal prerequisite or paid credential requirement; current delivery is verified in English."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.3,
+      "practice": 7.6,
+      "materials": 8.9,
+      "currency": 9.4,
+      "expertise": 9.6,
+      "accessibility": 9.2
+    },
+    "quality_score": 8.58,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "A strong applied companion for entrepreneurs and business learners who need to use IP strategically. WIPO DL-101 remains the better general IP foundation because it is deeper and assessed; IP Panorama is stronger for business application and lower-friction open access.",
+    "comparators": [
+      "wipo-dl101-intellectual-property",
+      "saylor-bus205-business-law"
+    ],
+    "evidence": [
+      "https://welc.wipo.int/acc/index.jsf?cc=DL_IPPanoramaE&lang=en&page=courseCatalog.xhtml"
+    ],
+    "flags": [
+      "intellectual-property",
+      "business-application",
+      "20-hours",
+      "current-2026-session",
+      "no-certificate",
+      "case-based"
+    ],
+    "is_current": true
+  }
+]
