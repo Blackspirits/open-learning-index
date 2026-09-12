@@ -12,6 +12,8 @@ CANDIDATE_DIR=ROOT/'data/candidates'
 CANDIDATE_SCHEMA=ROOT/'data/candidate.schema.json'
 SCREENING_DIR=ROOT/'data/screening'
 SCREENING_SCHEMA=ROOT/'data/screening.schema.json'
+DEEP_REVIEW_DIR=ROOT/'data/reviews'
+DEEP_REVIEW_SCHEMA=ROOT/'data/deep-review.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
 
 def fail(msg):
@@ -48,6 +50,11 @@ def load_screening_sources():
     if not SCREENING_DIR.exists():
         return []
     return sorted(SCREENING_DIR.glob('*.json'))
+
+def load_deep_review_sources():
+    if not DEEP_REVIEW_DIR.exists():
+        return []
+    return sorted(DEEP_REVIEW_DIR.glob('*.json'))
 
 def main():
     errors=0
@@ -101,7 +108,7 @@ def main():
         errors += validate_schema(records, SCREENING_SCHEMA, label)
         screenings.extend(records)
 
-    screen_ids=set(); current_candidate_ids=set()
+    screen_ids=set(); current_candidate_ids=set(); current_screen_decisions={}
     all_screen_ids={s.get('screen_id') for s in screenings}
     for s in screenings:
         sid=s['screen_id']
@@ -115,13 +122,56 @@ def main():
             if cid in current_candidate_ids:
                 errors += fail(f'multiple current screenings for candidate: {cid}')
             current_candidate_ids.add(cid)
+            current_screen_decisions[cid]=s['decision']
         supersedes=s.get('supersedes_screen_id')
         if supersedes and supersedes not in all_screen_ids:
             errors += fail(f'{sid}: supersedes unknown screening {supersedes}')
         if supersedes == sid:
             errors += fail(f'{sid}: cannot supersede itself')
 
+    review_sources=load_deep_review_sources()
+    reviews=[]
+    for source in review_sources:
+        records=json.loads(source.read_text(encoding='utf-8'))
+        label=f'deep-review:{source.relative_to(ROOT)}'
+        errors += validate_schema(records, DEEP_REVIEW_SCHEMA, label)
+        reviews.extend(records)
+
+    review_ids=set(); current_review_candidate_ids=set()
+    all_review_ids={r.get('review_id') for r in reviews}
+    known_comparator_ids=candidate_ids | ids
+    for r in reviews:
+        rid=r['review_id']
+        cid=r['candidate_id']
+        if rid in review_ids:
+            errors += fail(f'duplicate deep-review id: {rid}')
+        review_ids.add(rid)
+        if cid not in candidate_ids:
+            errors += fail(f'{rid}: deep review references unknown candidate {cid}')
+        calc=round(sum(r['quality_components'][k]*w for k,w in WEIGHTS.items()),2)
+        if abs(calc-r['quality_score'])>0.01:
+            errors += fail(f'{rid}: quality_score={r["quality_score"]}, expected {calc}')
+        for comparator in r['comparators']:
+            if comparator not in known_comparator_ids:
+                errors += fail(f'{rid}: unknown comparator {comparator}')
+            if comparator == cid:
+                errors += fail(f'{rid}: candidate cannot compare against itself')
+        if r['is_current']:
+            if cid in current_review_candidate_ids:
+                errors += fail(f'multiple current deep reviews for candidate: {cid}')
+            current_review_candidate_ids.add(cid)
+            if current_screen_decisions.get(cid) != 'advance':
+                errors += fail(f'{rid}: current deep review requires current shallow decision=advance for {cid}')
+        supersedes=r.get('supersedes_review_id')
+        if supersedes and supersedes not in all_review_ids:
+            errors += fail(f'{rid}: supersedes unknown deep review {supersedes}')
+        if supersedes == rid:
+            errors += fail(f'{rid}: cannot supersede itself')
+
     if errors: return 1
-    print(f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), {len(screenings)} screening records, and {len(allowed_categories)} categories validated.')
+    print(
+        f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), '
+        f'{len(screenings)} screening records, {len(reviews)} deep-review records, and {len(allowed_categories)} categories validated.'
+    )
     return 0
 if __name__=='__main__': raise SystemExit(main())

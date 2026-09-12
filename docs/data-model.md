@@ -1,6 +1,6 @@
 # Data Model
 
-`data/courses.json` is canonical for approved/reference course records. Discovery intake lives in `data/candidates.json` and versioned files under `data/candidates/`. Shallow-review decisions live separately under `data/screening/`. `courses.csv` is generated.
+`data/courses.json` is canonical for approved/reference course records. Discovery intake lives in `data/candidates.json` and versioned files under `data/candidates/`. Shallow-review decisions live under `data/screening/`; Phase 3 deep-review evidence lives under `data/reviews/`. `courses.csv` is generated.
 
 ## Core identity
 
@@ -58,6 +58,24 @@ Each record identifies a candidate and records:
 
 At most one screening record for a candidate may have `is_current=true`. A later re-screen can supersede an earlier decision with `supersedes_screen_id`, preserving the old evidence rather than overwriting history.
 
+## Deep-review ledger
+
+`data/reviews/*.json` is validated by `data/deep-review.schema.json`.
+
+Deep-review records belong to discovery candidates, not yet to the published canonical course set. They record:
+
+- the current learner route, access tier and status;
+- instruction/subtitle languages, credential and academic-credit mechanics;
+- scope, prerequisites and required hardware/software/accounts;
+- explicit evidence for each Quality Score component;
+- `quality_components`, weighted `quality_score` and separate `recommendation_score`;
+- direct comparator IDs and evidence URLs;
+- material caveats and historical supersession.
+
+A current deep review is valid only when that candidate's current shallow decision is `advance`. At most one deep-review record per candidate may have `is_current=true`; later reviews preserve history with `supersedes_review_id`.
+
+Deep Review remains Phase 3. A reviewed candidate is **not** automatically admitted to `data/courses.json`; Phase 4 head-to-head admission decides whether it belongs in the published index.
+
 ## Scores
 
 Final scoring does **not** happen during discovery or shallow screening.
@@ -82,6 +100,10 @@ For deep-reviewed approved/finalist records:
 - Every category must exist in `data/categories.json`.
 - Screening records may reference only known discovery candidates.
 - Screening IDs are unique and a candidate may have at most one current shallow decision.
+- Deep-review records may reference only known discovery candidates.
+- A current deep review requires a current shallow `advance` decision.
+- Deep-review IDs are unique and a candidate may have at most one current deep review.
+- Deep-review comparator IDs must reference a known candidate or approved/reference course and may not self-reference.
 - Scores must remain inside 0–10.
 - Quality Score must equal the weighted components within rounding tolerance.
 - `next_review` must not precede `last_verified`.
