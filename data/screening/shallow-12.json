@@ -1,0 +1,83 @@
+[
+  {
+    "screen_id": "shallow-12-blcu-umoocs-elementary-spoken-chinese",
+    "candidate_id": "blcu-umoocs-elementary-spoken-chinese",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://moocs.unipus.cn/course/7880",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": ["zh"],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://moocs.unipus.cn/course/7880",
+      "https://higher.smartedu.cn/course/63eeb18baf1f1b5d3ecfb3ed"
+    ],
+    "rationale": "The active 2026 run is explicitly free and designed for zero-beginner learners, with an 18-week schedule, 32 videos, 10 assessments and downloadable materials. Its eight-unit progression moves from pinyin into greetings, family, location, transport, shopping, food, hobbies, weather and travel, providing a serious current Mandarin challenger rather than a short taster.",
+    "flags": ["mandarin", "zero-beginner", "current-2026-run", "18-weeks", "32-videos", "10-assessments", "time-bounded-access", "instruction-language-support-unverified"],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-12-mandarinx-mandarin-chinese-level-1",
+    "candidate_id": "mandarinx-mandarin-chinese-level-1",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://www.edx.org/learn/mandarin-chinese/mandarinx-mandarin-chinese-level-1",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": ["en"],
+    "subtitle_languages": ["en"],
+    "credential": "Verified certificate is paid; no free formal completion credential",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.edx.org/school/mandarinx",
+      "https://www.edx.org/learn/mandarin-chinese/mandarinx-mandarin-chinese-level-1"
+    ],
+    "rationale": "MandarinX currently lists Level 1 among courses that can be audited for free. The six-week beginner path focuses on tones, everyday spoken vocabulary and practical communication, offering a self-paced English-mediated alternative to the current BLCU cohort route. Paid verified-track extras and certification are kept separate from the F2 learning-access classification.",
+    "flags": ["mandarin", "six-weeks", "self-paced", "free-audit", "paid-certificate", "verified-track-extras", "business-context"],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-12-madinah-arabic-grammar-course",
+    "candidate_id": "madinah-arabic-grammar-course",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://madinaharabic.com/free-content/grammar",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://madinaharabic.com/free-content/grammar",
+      "https://madinaharabic.com/free-content/reading",
+      "https://madinaharabic.com/free-content"
+    ],
+    "rationale": "The freely accessible course contains more than 90 sequenced grammar and morphology lessons with audio-supported examples and interactive marked exercises. Learners who cannot yet read Arabic are explicitly directed to a separate free reading course first. Its depth makes it a credible Modern Standard Arabic specialist challenger, while its grammar-heavy balance and Classical/Qur'anic framing remain deep-review considerations.",
+    "flags": ["arabic", "modern-standard-arabic", "90-plus-lessons", "interactive-exercises", "free-reading-prerequisite", "grammar-heavy", "classical-arabic-overlap", "no-formal-credential"],
+    "is_current": true
+  },
+  {
+    "screen_id": "shallow-12-aljazeera-learning-arabic-general-language",
+    "candidate_id": "aljazeera-learning-arabic-general-language",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://learning.aljazeera.net/en/generallanguage",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": ["ar"],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "substantive",
+    "evidence": [
+      "https://learning.aljazeera.net/en/pages/about-us",
+      "https://learning.aljazeera.net/en/generallanguage"
+    ],
+    "rationale": "Al Jazeera explicitly describes the site as a free open educational source. The General Language area spans introductory, beginner, elementary, intermediate, upper-intermediate, advanced and proficiency material, including a full Arabic letters-and-sounds sequence, daily-life lessons, grammar series, interactive exercise results and placement testing. It is non-linear rather than a fixed course, but the project covers high-quality open learning experiences as well as courses, so it merits deep comparison as a broad free Arabic pathway.",
+    "flags": ["arabic", "free-open-educational-resource", "introductory-to-proficiency", "placement-test", "interactive-exercises", "nonlinear-learning-path", "no-formal-credential", "paid-provider-courses-separate"],
+    "is_current": true
+  }
+]
