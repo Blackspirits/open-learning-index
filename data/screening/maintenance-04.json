@@ -1,0 +1,31 @@
+[
+  {
+    "screen_id": "maintenance-04-fun-hieroglyphes-egyptiens",
+    "candidate_id": "fun-hieroglyphes-egyptiens",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [
+      "fr"
+    ],
+    "credential": "Optional paid FUN certificate is advertised for the upcoming session; no free formal credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/"
+    ],
+    "rationale": "The official FUN page confirms free registration and a complete 20-hour course, but the 2026 learning session does not open until 21 September 2026. Until the learner content is actually accessible, current free access cannot be verified, so the candidate is held rather than Deep Reviewed.",
+    "flags": [
+      "future-session",
+      "temporal-access-blocker",
+      "optional-paid-certificate",
+      "specialist-scope"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-06-fun-hieroglyphes-egyptiens"
+  }
+]
