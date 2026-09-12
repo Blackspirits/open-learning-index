@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **205 advance / 5 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for one archived NAU course, two IBM SkillsBuild learner routes and one time-gated FUN session. **65 current Deep Reviews** are complete: 12 calibration records plus 53 scaled reviews across five post-calibration batches.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **205 advance / 5 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for one archived NAU course, two IBM SkillsBuild learner routes and one time-gated FUN session. **73 current Deep Reviews** are complete: 12 calibration records plus 61 scaled reviews across six post-calibration batches.
 
 ## Goal
 
@@ -24,6 +24,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-03.md`](docs/reviews/scale-batch-03.md) — multisector Deep Review transition across engineering, statistics, education, health, leadership and culture.
 - [`docs/reviews/scale-batch-04.md`](docs/reviews/scale-batch-04.md) — coherent Mathematics & Statistics comparison family with provider-concentration guardrails.
 - [`docs/reviews/scale-batch-05.md`](docs/reviews/scale-batch-05.md) — Health & Psychology Deep Review with currency-sensitive comparisons and explicit evidence gates.
+- [`docs/reviews/scale-batch-06.md`](docs/reviews/scale-batch-06.md) — History & Historical Method comparison family spanning current interactive routes and deep university archives.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
