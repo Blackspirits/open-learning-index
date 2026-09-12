@@ -1,0 +1,441 @@
+[
+  {
+    "review_id": "deep-16-openlearn-essay-report-writing",
+    "candidate_id": "openlearn-essay-report-writing",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/education-development/essay-and-report-writing-skills",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Fifteen-hour introductory academic-writing course covering assignment interpretation, essay/report distinctions, research and source use, brainstorming, planning, drafting, introductions/body/conclusions, polishing and reflection on feedback.",
+    "prerequisites": "No formal prerequisites; introductory Level 1 course",
+    "required_resources": "Browser; optional free OpenLearn account for tracking/activities/statement; downloadable Word and PDF formats available",
+    "component_evidence": {
+      "pedagogy": "The course follows the actual academic-writing workflow from task interpretation through research, planning, drafting and revision rather than teaching isolated grammar rules.",
+      "depth": "Fifteen hours provides a useful foundation in essay/report process and structure, but it is not an advanced academic-writing or research-writing course.",
+      "practice": "Planning, brainstorming, drafting, source-use and revision activities create meaningful practice, although the route does not provide instructor feedback on learner-written essays.",
+      "materials": "OpenLearn provides structured text, activities and downloadable formats suitable for independent study.",
+      "currency": "The course was last updated in April 2019. The core academic-writing skills are stable, so age is a moderate rather than severe limitation.",
+      "expertise": "The Open University has extensive academic-literacy and distance-learning expertise.",
+      "accessibility": "The course is free, beginner-friendly, self-paced, downloadable and provides a free completion statement."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 7.8,
+      "practice": 8.4,
+      "materials": 9.1,
+      "currency": 7.8,
+      "expertise": 9.1,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.48,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A strong low-friction introduction to academic essays and reports. Its main limitation is the absence of current instructor feedback or a substantial assessed writing portfolio.",
+    "comparators": [
+      "saylor-prdv002-professional-writing",
+      "mit-15-279-management-communication"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/essay-and-report-writing-skills"
+    ],
+    "flags": [
+      "academic-writing",
+      "15-hours",
+      "updated-2019",
+      "stable-skills",
+      "free-statement",
+      "downloadable"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-openlearn-start-writing-fiction",
+    "candidate_id": "openlearn-start-writing-fiction",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Twelve-hour introductory creative-writing course focused on character, setting, genre, observation, drafting and reflection on strengths and weaknesses through practical fiction-writing exercises.",
+    "prerequisites": "No formal prerequisites; introductory Level 1 course",
+    "required_resources": "Browser; optional free OpenLearn account for progress/activities/statement; no paid writing software required",
+    "component_evidence": {
+      "pedagogy": "The course teaches fiction through repeated observation, character and scene-building exercises rather than only explaining literary concepts.",
+      "depth": "Twelve hours gives a focused beginner foundation in fiction craft but does not attempt a full workshop-style creative-writing curriculum.",
+      "practice": "Practical writing exercises, character development tasks and self-reflection make practice the centre of the route; the main missing layer is external critique.",
+      "materials": "OpenLearn provides a coherent mix of readings, examples, activities and supporting resources.",
+      "currency": "The course was formally updated on 14 May 2026, giving unusually strong currentness for a creative-writing course.",
+      "expertise": "The Open University has established creative-writing teaching expertise and develops the route as structured distance education.",
+      "accessibility": "Free, self-paced, beginner-friendly and requires no specialist tools; completion recognition is free."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 7.7,
+      "practice": 9,
+      "materials": 9.1,
+      "currency": 9.8,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.87,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "The strongest current creative-writing starter in the survivor pool: practice-led, newly updated and easy to start. It remains an introduction rather than a feedback-rich workshop.",
+    "comparators": [
+      "openlearn-essay-report-writing",
+      "saylor-prdv002-professional-writing"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/creative-writing/start-writing-fiction"
+    ],
+    "flags": [
+      "creative-writing",
+      "12-hours",
+      "updated-2026",
+      "practice-led",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-openlearn-effective-communication-workplace",
+    "candidate_id": "openlearn-effective-communication-workplace",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation; 24 CPD points on successful completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-hour eight-week workplace-communication course covering listening, self-awareness, verbal/non-verbal/written communication, meetings, presentations, networking, email/report writing, diverse/challenging situations and personal communication-development planning.",
+    "prerequisites": "No formal prerequisites; Level 1 introductory course",
+    "required_resources": "Browser and free OpenLearn account for quizzes, tracking, badge and statement; Word/PDF downloads available",
+    "component_evidence": {
+      "pedagogy": "The eight-week route combines communication concepts with weekly reflection and a personal development plan, keeping the learning tied to observable workplace behaviour.",
+      "depth": "Twenty-four hours covers listening, verbal, non-verbal and written communication plus challenging situations at meaningful introductory depth.",
+      "practice": "Weekly interactive quizzes, two badge quizzes and recurring personal-development-plan activities provide sustained self-assessment and application.",
+      "materials": "The Open University supplies structured readings, videos, quizzes and downloadable Word/PDF materials in a coherent badged pathway.",
+      "currency": "The course was last formally updated on 7 April 2020. Core communication skills remain valid, but references to workplace technology and examples such as Skype date the future-of-work material.",
+      "expertise": "The Open University combines careers, workplace-learning and distance-education expertise, and the course is CPD Standards Office accredited.",
+      "accessibility": "The route is free, self-paced, beginner-friendly, downloadable and includes a free badge and statement."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.3,
+      "practice": 9,
+      "materials": 9.2,
+      "currency": 7.9,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.81,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The strongest general workplace-communication recommendation in the current pool because it balances breadth, reflection and regular assessment. The 2020 technology examples are dated but not central to the core skills.",
+    "comparators": [
+      "mit-15-279-management-communication",
+      "saylor-prdv211-foundations-human-communication"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace"
+    ],
+    "flags": [
+      "workplace-communication",
+      "24-hours",
+      "updated-2020",
+      "weekly-quizzes",
+      "free-badge",
+      "cpd"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-saylor-prdv002-professional-writing",
+    "candidate_id": "saylor-prdv002-professional-writing",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/prdv002",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; 1.2 CEUs displayed on the certificate",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twelve-hour four-unit professional-writing course on purpose, audience, communication channels, drafting, clear/persuasive prose, ethics, editing and proofreading across emails, reports, presentations, press releases, social posts and other workplace formats.",
+    "prerequisites": "No formal prerequisites",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments/certificate; optional mobile offline access",
+    "component_evidence": {
+      "pedagogy": "The course uses the purpose-audience-channel-draft-revision workflow to organize professional writing rather than presenting disconnected style rules.",
+      "depth": "Twelve hours gives practical breadth across workplace genres but remains a compact foundation.",
+      "practice": "End-of-unit assessments, a repeatable practice exam and a free final exam provide strong retrieval practice; there is limited evidence of a graded writing portfolio.",
+      "materials": "Curated articles, lectures and videos form a coherent self-paced route, though mixed sources reduce stylistic consistency.",
+      "currency": "The syllabus was last modified on 6 October 2025, providing a strong currentness signal for digital/professional communication formats.",
+      "expertise": "Saylor's faculty-reviewed curriculum is credible, though named professional-writing faculty are less transparent than a single-instructor university course.",
+      "accessibility": "All learning materials, assessments, final exam and certificate are free; no specialist tools are required."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 7.5,
+      "practice": 8.3,
+      "materials": 8.4,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.34,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A useful current professional-writing foundation with unusually low access friction and real assessment. It is less writing-intensive than MIT 15.279 and less specialised than OpenLearn academic/creative writing routes.",
+    "comparators": [
+      "openlearn-essay-report-writing",
+      "mit-15-279-management-communication"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/prdv002",
+      "https://learn.saylor.org/mod/page/view.php?id=65337"
+    ],
+    "flags": [
+      "professional-writing",
+      "12-hours",
+      "updated-2025",
+      "free-certificate",
+      "final-exam"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-saylor-prdv211-foundations-human-communication",
+    "candidate_id": "saylor-prdv211-foundations-human-communication",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/prdv211",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; 2.0 CEUs",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-hour human-communication survey covering communication processes, messages, audiences, media/channels, interpersonal and group communication, culture and communication theory.",
+    "prerequisites": "No formal prerequisites",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments/certificate",
+    "component_evidence": {
+      "pedagogy": "The course moves from foundational communication models into audience, context, channel, culture and interpersonal/group application.",
+      "depth": "Twenty hours gives a broader conceptual communication foundation than short workplace-writing or presentation courses.",
+      "practice": "Structured unit assessments and a free final exam provide repeated checking, though extended authentic communication projects are limited.",
+      "materials": "Saylor curates free readings, lectures and videos into a coherent complete route.",
+      "currency": "The syllabus was last modified on 2 October 2025, keeping contemporary communication framing current.",
+      "expertise": "The faculty-reviewed curriculum is credible but lacks the single-course instructor transparency of MIT/OpenLearn.",
+      "accessibility": "Free, self-paced, certificate-bearing and mobile-accessible with no specialist tools."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8,
+      "practice": 8.5,
+      "materials": 8.4,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.51,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A solid broad communication-theory foundation with current maintenance and free certification. OpenLearn is stronger for reflective workplace application.",
+    "comparators": [
+      "openlearn-effective-communication-workplace",
+      "mit-15-279-management-communication"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/prdv211"
+    ],
+    "flags": [
+      "human-communication",
+      "20-hours",
+      "updated-2025",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-saylor-prdv008-presentations",
+    "candidate_id": "saylor-prdv008-presentations",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=870",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-three-hour presentation course covering audience/purpose, evidence, structure, introductions/conclusions, visual aids, online presentations, vocal and non-verbal delivery, anxiety management and unexpected presentation challenges.",
+    "prerequisites": "No formal prerequisites",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments/certificate",
+    "component_evidence": {
+      "pedagogy": "The course follows the full presentation workflow from audience and evidence through structure, visuals, delivery and handling live difficulties.",
+      "depth": "Twenty-three hours gives substantial specialist presentation coverage without becoming a full public-speaking curriculum.",
+      "practice": "Unit assessments, presentation-oriented exercises and a free final exam create consistent applied checking, although no live audience feedback is provided.",
+      "materials": "Curated readings, videos and examples provide a structured presentation-skills pathway.",
+      "currency": "The syllabus was last modified on 18 May 2026 and includes online presentation practice, giving excellent currentness.",
+      "expertise": "Saylor's faculty-reviewed curriculum is credible, although instructor attribution is less transparent than specialist faculty-led courses.",
+      "accessibility": "Free, self-paced, certificate-bearing and requires no specialised equipment."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.2,
+      "practice": 8.8,
+      "materials": 8.5,
+      "currency": 9.8,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.73,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "The strongest current presentation-skills route among discovery survivors: substantial, recently revised and assessed. Its main missing element is authentic live audience feedback.",
+    "comparators": [
+      "mit-15-279-management-communication",
+      "openlearn-effective-communication-workplace"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=870",
+      "https://learn.saylor.org/mod/page/view.php?id=82137"
+    ],
+    "flags": [
+      "presentations",
+      "23-hours",
+      "updated-2026",
+      "online-presentations",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-saylor-prdv107-crisis-communication",
+    "candidate_id": "saylor-prdv107-crisis-communication",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/prdv107",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; 2.0 CEUs",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-hour five-unit crisis-communication course covering crisis definitions, preparation, crisis-management teams, social media, crisis communication plans and strategic message development.",
+    "prerequisites": "No formal prerequisites",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments/certificate",
+    "component_evidence": {
+      "pedagogy": "The course progresses from crisis identification and preparation into team roles, social-media response, plan design and message crafting.",
+      "depth": "Twenty hours provides useful specialist breadth for an introductory crisis-communication course.",
+      "practice": "End-of-unit assessments, practice exam and final exam provide repeated checking, while plan/message-design outcomes create some applied orientation.",
+      "materials": "Saylor curates articles, lectures and videos into a structured five-unit pathway.",
+      "currency": "The syllabus was last modified on 17 September 2025. That is important in a field shaped by rapidly changing social-media channels and crisis-response norms.",
+      "expertise": "The faculty-reviewed curriculum is credible, though named crisis-communication practitioner expertise is less transparent than ideal.",
+      "accessibility": "The full route, assessments and certificate are free and self-paced with no specialist tools."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.1,
+      "practice": 8.7,
+      "materials": 8.4,
+      "currency": 9,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.58,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "A strong current specialist introduction to crisis communication with practical plan/message framing. It should still be supplemented with organisation-specific incident procedures and platform-specific current practice.",
+    "comparators": [
+      "saylor-prdv211-foundations-human-communication",
+      "openlearn-effective-communication-workplace"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/prdv107",
+      "https://learn.saylor.org/mod/page/view.php?id=67693"
+    ],
+    "flags": [
+      "crisis-communication",
+      "20-hours",
+      "updated-2025",
+      "social-media",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-16-mit-15-279-management-communication",
+    "candidate_id": "mit-15-279-management-communication",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "MIT Sloan undergraduate management-communication course covering communication strategy, clear/concise writing, persuasion, email and reports, presentations, active listening, difficult conversations, intercultural communication, teamwork, media relations and visual communication.",
+    "prerequisites": "No formal prerequisite stated",
+    "required_resources": "Browser; no paid software required. Independent learners cannot reproduce all peer/instructor-feedback and live-presentation elements of the original course.",
+    "component_evidence": {
+      "pedagogy": "The original course integrates writing, speaking, listening, teamwork and self-evaluation around strategic professional communication rather than treating them as separate soft-skill topics.",
+      "depth": "A full semester covers management writing, oral presentation, persuasion, difficult conversations, cross-cultural work, teamwork and media communication in substantial depth.",
+      "practice": "The original course included memos, problem sets, cover letter, team report, multiple oral presentations, self-evaluations and peer/instructor feedback, giving exceptional authentic practice.",
+      "materials": "OCW provides lecture notes, communication checklists, rubrics, exercises and assignment structures, although it does not reproduce the full live classroom feedback environment.",
+      "currency": "The Fall 2012 course predates current remote/hybrid communication norms and today's social-media/AI communication environment; the strategic communication principles remain useful.",
+      "expertise": "MIT Sloan faculty provide strong management-communication and organizational teaching expertise.",
+      "accessibility": "All materials are open, but a significant share of the original learning value depended on live presentations, teammates and feedback that an independent learner cannot reproduce."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 8.9,
+      "practice": 9.6,
+      "materials": 9,
+      "currency": 7.9,
+      "expertise": 9.5,
+      "accessibility": 7.8
+    },
+    "quality_score": 9.08,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "The strongest intrinsic practice design in the category, but not the strongest independent 2026 recommendation because the archive loses much of its original live feedback and presentation environment. Excellent as a source of rigorous assignments and rubrics.",
+    "comparators": [
+      "openlearn-effective-communication-workplace",
+      "saylor-prdv008-presentations",
+      "saylor-prdv002-professional-writing"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/",
+      "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/pages/syllabus/",
+      "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/pages/assignments/"
+    ],
+    "flags": [
+      "management-communication",
+      "archive-2012",
+      "writing-and-speaking",
+      "feedback-dependent",
+      "no-credential"
+    ],
+    "is_current": true
+  }
+]
