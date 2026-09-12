@@ -1,0 +1,56 @@
+[
+  {
+    "screen_id": "maintenance-05-nau-competencia-digital-docente-avaliacao",
+    "candidate_id": "nau-competencia-digital-docente-avaliacao",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/competencia-dig-docente-avaliacao/",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Historical NAU certificate of completion; no current enrolment/completion route verified",
+    "completeness": "unknown",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/competencia-dig-docente-avaliacao/",
+      "https://www.nau.edu.pt/pt/categorias/areas-de-conhecimento/formacao-e-educacao/?page_courses=5"
+    ],
+    "rationale": "NAU currently labels this course as archived. The historical 27-hour assessed route was strong, but no current enrolment or completion path is available, so it no longer passes the shallow availability gate.",
+    "flags": [
+      "archived-current-route-unavailable",
+      "historical-credential-only"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-nau-competencia-digital-docente-avaliacao"
+  },
+  {
+    "screen_id": "maintenance-05-nau-ciberseguranca-nas-escolas",
+    "candidate_id": "nau-ciberseguranca-nas-escolas",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-nas-escolas/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free digital certificate of completion and digital seal remain advertised by NAU",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciberseguranca-nas-escolas/",
+      "https://www.dge.mec.pt/noticias/tic-na-educacao/abertura-do-mooc-ciberseguranca-nas-escolas"
+    ],
+    "rationale": "The learner route remains free and certified, but DGE identifies the course as originating in the 14 January–4 March 2019 run and no reliable recent content revision was found. Because it includes cybersecurity, cybercrime and legislation, currentness must be verified before Deep Review.",
+    "flags": [
+      "fast-moving-content",
+      "legacy-2019-course",
+      "update-date-unverified",
+      "currency-review"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-nau-ciberseguranca-nas-escolas"
+  }
+]
