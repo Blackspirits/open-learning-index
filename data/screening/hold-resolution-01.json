@@ -107,7 +107,7 @@
       "free-access-unverified",
       "carry-forward-hold"
     ],
-    "is_current": true,
+    "is_current": false,
     "supersedes_screen_id": "shallow-03-esep-developing-students-ai-literacy"
   },
   {

@@ -411,7 +411,7 @@
       "short-course",
       "credential-route-review"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-03-whoacademy-chemical-hazards-part-1",

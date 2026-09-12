@@ -7,13 +7,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/inbound-sales",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/inbound-sales", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/inbound-sales",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "Current free certification with a coherent consultative-sales pathway, seven lessons, quizzes and an exam; differentiated enough to merit deep comparison.",
-    "flags": ["provider-concentration"],
+    "flags": [
+      "provider-concentration"
+    ],
     "is_current": true
   },
   {
@@ -24,13 +31,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/social-media",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/social-media", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/social-media",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "Current five-hour certification with ten lessons, extensive quizzes and applied social-strategy coverage; strong practice signal and current business relevance.",
-    "flags": ["provider-concentration"],
+    "flags": [
+      "provider-concentration"
+    ],
     "is_current": true
   },
   {
@@ -41,13 +55,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/email-marketing-certification-en",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/email-marketing-certification-en", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/email-marketing-certification-en",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "Current free certification focused on a distinct marketing discipline with strategic and technical coverage, making it a credible specialist finalist.",
-    "flags": ["provider-concentration"],
+    "flags": [
+      "provider-concentration"
+    ],
     "is_current": true
   },
   {
@@ -58,13 +79,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/inbound",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/inbound", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/inbound",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "The course is genuinely free and complete, but its broad inbound overview is substantially overlapped by stronger specialist HubSpot candidates already advancing.",
-    "flags": ["redundant-provider-path"],
+    "flags": [
+      "redundant-provider-path"
+    ],
     "is_current": true
   },
   {
@@ -75,13 +103,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/revenue-operations",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/revenue-operations", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/revenue-operations",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "Current free certification covers a materially different RevOps domain spanning process alignment, analytics and scaling, so it is not merely another marketing duplicate.",
-    "flags": ["provider-concentration"],
+    "flags": [
+      "provider-concentration"
+    ],
     "is_current": true
   },
   {
@@ -92,13 +127,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/digital-advertising",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/digital-advertising", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/digital-advertising",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "Current free certification on paid-media strategy, targeting and conversion paths remains sufficiently distinct from organic and inbound courses to advance.",
-    "flags": ["provider-concentration"],
+    "flags": [
+      "provider-concentration"
+    ],
     "is_current": true
   },
   {
@@ -109,14 +151,22 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/inbound-marketing-optimization",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/inbound-marketing-optimization", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/inbound-marketing-optimization",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "The course is free and current, but its optimisation material overlaps several stronger HubSpot marketing paths; deep-review eligibility depends on proving unique value.",
-    "flags": ["redundancy-risk", "provider-concentration"],
-    "is_current": true
+    "flags": [
+      "redundancy-risk",
+      "provider-concentration"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-02-hubspot-aeo-fundamentals",
@@ -126,13 +176,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://academy.hubspot.com/courses/aeo-fundamentals-certification-en",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": ["https://academy.hubspot.com/courses/aeo-fundamentals-certification-en", "https://academy.hubspot.com/"],
+    "evidence": [
+      "https://academy.hubspot.com/courses/aeo-fundamentals-certification-en",
+      "https://academy.hubspot.com/"
+    ],
     "rationale": "Very current free certification addressing answer-engine optimisation and AI-search visibility, a fast-moving subfield not covered adequately by older marketing courses.",
-    "flags": ["fast-moving-content", "provider-concentration"],
+    "flags": [
+      "fast-moving-content",
+      "provider-concentration"
+    ],
     "is_current": true
   },
   {
@@ -143,13 +201,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=1250",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/view.php?id=1250", "https://saylor.org/Certificates"],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1250",
+      "https://saylor.org/Certificates"
+    ],
     "rationale": "Full-length self-paced marketing course in Saylor's current free-certificate system; broader academic framing complements the shorter specialist vendor courses.",
-    "flags": ["curated-oer"],
+    "flags": [
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -160,13 +225,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/money-business/marketing-the-21st-century",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/money-business/marketing-the-21st-century"],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/marketing-the-21st-century"
+    ],
     "rationale": "Still freely accessible with completion recognition, but the course is comparatively dated in a rapidly changing field and is outcompeted by current marketing alternatives.",
-    "flags": ["dated-fast-moving-field", "redundancy-risk"],
+    "flags": [
+      "dated-fast-moving-field",
+      "redundancy-risk"
+    ],
     "is_current": true
   },
   {
@@ -177,13 +249,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=1261",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/view.php?id=1261", "https://saylor.org/Certificates"],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1261",
+      "https://saylor.org/Certificates"
+    ],
     "rationale": "Current full-length accounting course with free final assessment and certificate; substantive enough to merit comparison against university accounting alternatives.",
-    "flags": ["standards-currency-review", "curated-oer"],
+    "flags": [
+      "standards-currency-review",
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -194,13 +274,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/bus300",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/bus300", "https://saylor.org/Certificates"],
+    "evidence": [
+      "https://learn.saylor.org/course/bus300",
+      "https://saylor.org/Certificates"
+    ],
     "rationale": "Current full-length operations course with assessment and free certificate, covering a wider operations pathway than the shorter OpenLearn alternative.",
-    "flags": ["curated-oer"],
+    "flags": [
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -211,13 +298,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=1326",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/view.php?id=1326", "https://saylor.org/Certificates"],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1326",
+      "https://saylor.org/Certificates"
+    ],
     "rationale": "Full entrepreneurship pathway with free assessment and certificate; breadth and structured sequence justify deep comparison despite overlap with MIT entrepreneurship material.",
-    "flags": ["curated-oer"],
+    "flags": [
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -228,13 +322,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/money-business/first-steps-innovation-and-entrepreneurship",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation",
     "completeness": "substantive",
-    "evidence": ["https://www.open.edu/openlearn/money-business/first-steps-innovation-and-entrepreneurship"],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/first-steps-innovation-and-entrepreneurship"
+    ],
     "rationale": "Genuinely free and useful as an introduction, but it is not competitive with the deeper Saylor and MIT entrepreneurship candidates for a deliberately selective index.",
-    "flags": ["introductory-depth", "redundancy-risk"],
+    "flags": [
+      "introductory-depth",
+      "redundancy-risk"
+    ],
     "is_current": true
   },
   {
@@ -245,13 +346,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/money-business/fundamentals-accounting",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/money-business/fundamentals-accounting"],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/fundamentals-accounting"
+    ],
     "rationale": "Free university-authored accounting foundation with structured course content and completion recognition; accessible entry point distinct from more intensive alternatives.",
-    "flags": ["standards-currency-review"],
+    "flags": [
+      "standards-currency-review"
+    ],
     "is_current": true
   },
   {
@@ -262,14 +369,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/money-business/companies-and-financial-accounting/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/money-business/companies-and-financial-accounting/"],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/companies-and-financial-accounting/"
+    ],
     "rationale": "The six-hour course is complete and free, but company-law and reporting context is jurisdiction-sensitive and narrower than competing accounting pathways.",
-    "flags": ["jurisdiction-sensitive", "narrow-scope"],
-    "is_current": true
+    "flags": [
+      "jurisdiction-sensitive",
+      "narrow-scope"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-02-openlearn-understanding-operations-management",
@@ -279,13 +393,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/money-business/leadership-management/understanding-operations-management",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/money-business/leadership-management/understanding-operations-management"],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/leadership-management/understanding-operations-management"
+    ],
     "rationale": "The four-hour course remains usable and free but was last updated in 2019 and is materially shallower than the current full-length Saylor operations candidate.",
-    "flags": ["dated", "introductory-depth", "redundancy-risk"],
+    "flags": [
+      "dated",
+      "introductory-depth",
+      "redundancy-risk"
+    ],
     "is_current": true
   },
   {
@@ -296,13 +418,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/"
+    ],
     "rationale": "Despite its 2013 date, the course exposes lecture notes, tutorials and twelve substantial assignments culminating in a business plan, giving it unusually strong practical depth.",
-    "flags": ["archive-course", "no-credential"],
+    "flags": [
+      "archive-course",
+      "no-credential"
+    ],
     "is_current": true
   },
   {
@@ -313,13 +442,19 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "substantive",
-    "evidence": ["https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/"
+    ],
     "rationale": "Recent 2025 MIT material covers venture formation through lecture videos, notes and readings; its currency makes it a strong complement to the deeper 2013 entrepreneurship course.",
-    "flags": ["no-credential"],
+    "flags": [
+      "no-credential"
+    ],
     "is_current": true
   },
   {
@@ -330,13 +465,21 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/"
+    ],
     "rationale": "Archive date is old, but the core finance theory is taught with lecture videos, notes, problem sets, exams and solutions; depth is strong enough to justify deep currency review.",
-    "flags": ["archive-course", "finance-currency-review", "no-credential"],
+    "flags": [
+      "archive-course",
+      "finance-currency-review",
+      "no-credential"
+    ],
     "is_current": true
   },
   {
@@ -347,13 +490,22 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/"
+    ],
     "rationale": "The material is structurally complete, but a 2004 accounting course carries avoidable standards and reporting-currency risk when newer free complete alternatives are available.",
-    "flags": ["archive-course", "dated-standards", "redundancy-risk", "no-credential"],
+    "flags": [
+      "archive-course",
+      "dated-standards",
+      "redundancy-risk",
+      "no-credential"
+    ],
     "is_current": true
   },
   {
@@ -364,11 +516,15 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/education-development/learning/leadership-and-followership",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation and digital badge",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/education-development/learning/leadership-and-followership"],
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/learning/leadership-and-followership"
+    ],
     "rationale": "Current 24-hour badged course incorporates recent leadership research and practical reflection, providing stronger currency and learner structure than older archive-only options.",
     "flags": [],
     "is_current": true
@@ -381,14 +537,22 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "substantive",
-    "evidence": ["https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/"
+    ],
     "rationale": "MIT exposes readings, self-assessment and presentation/written assignments, but the teaching package is less complete than leading current leadership candidates and needs head-to-head review.",
-    "flags": ["archive-course", "limited-teaching-media", "no-credential"],
-    "is_current": true
+    "flags": [
+      "archive-course",
+      "limited-teaching-media",
+      "no-credential"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-02-openlearn-effective-communication-workplace",
@@ -398,11 +562,15 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free OpenLearn statement of participation and digital badge",
     "completeness": "complete",
-    "evidence": ["https://www.open.edu/openlearn/money-business/effective-communication-the-workplace"],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/effective-communication-the-workplace"
+    ],
     "rationale": "Current 24-hour badged course spans written, verbal, digital and difficult-situation communication with weekly quizzes and practical development activities.",
     "flags": [],
     "is_current": true
@@ -415,13 +583,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://learn.saylor.org/course/prdv002",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": ["https://learn.saylor.org/course/prdv002", "https://saylor.org/Certificates"],
+    "evidence": [
+      "https://learn.saylor.org/course/prdv002",
+      "https://saylor.org/Certificates"
+    ],
     "rationale": "Current self-paced professional-writing course benefits from Saylor's free final-exam and certificate model and covers a distinct applied writing pathway.",
-    "flags": ["curated-oer"],
+    "flags": [
+      "curated-oer"
+    ],
     "is_current": true
   },
   {
@@ -432,14 +607,22 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "substantive",
-    "evidence": ["https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/"
+    ],
     "rationale": "The assignments are useful, but the public package is dominated by readings and assignments rather than a full teaching sequence, so completeness is weaker than competing courses.",
-    "flags": ["archive-course", "limited-teaching-media", "no-credential"],
-    "is_current": true
+    "flags": [
+      "archive-course",
+      "limited-teaching-media",
+      "no-credential"
+    ],
+    "is_current": false
   },
   {
     "screen_id": "shallow-02-mit-15-279-management-communication",
@@ -449,13 +632,20 @@
     "screened_on": "2026-09-10",
     "canonical_url": "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/pages/lecture-notes/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": ["en"],
+    "instruction_languages": [
+      "en"
+    ],
     "subtitle_languages": [],
     "credential": "no completion credential from MIT OpenCourseWare",
     "completeness": "complete",
-    "evidence": ["https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/pages/lecture-notes/"],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/pages/lecture-notes/"
+    ],
     "rationale": "Older but materially complete public package includes lecture notes, readings, presentation assignments and written assignments, preserving enough instructional substance for deep comparison.",
-    "flags": ["archive-course", "no-credential"],
+    "flags": [
+      "archive-course",
+      "no-credential"
+    ],
     "is_current": true
   }
 ]

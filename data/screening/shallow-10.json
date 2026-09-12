@@ -103,7 +103,7 @@
       "depth-comparison",
       "free-certificate"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-hp-life-design-thinking",
@@ -131,7 +131,7 @@
       "depth-comparison",
       "free-certificate"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-hp-life-inventory-management",
@@ -512,7 +512,7 @@
       "last-updated-2020",
       "badged-course"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-coe-help-cybercrime-electronic-evidence",
@@ -596,7 +596,7 @@
       "last-updated-2020",
       "free-statement"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-10-coe-help-protection-safety-journalists",

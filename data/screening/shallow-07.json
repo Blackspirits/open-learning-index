@@ -391,7 +391,7 @@
       "framework-version-review",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-07-microsoft-learn-ai-concepts",
@@ -478,7 +478,7 @@
       "redundancy-review",
       "paid-exam-separate"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-07-ibm-skillsbuild-ai-fundamentals",
@@ -705,7 +705,7 @@
       "library-version-review",
       "credential-bearing"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-07-huggingface-agents-course",

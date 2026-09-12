@@ -238,7 +238,7 @@
       "cognitive-science-currency-review",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-06-openlearn-what-is-politics",
@@ -403,7 +403,7 @@
       "economics-currency-review",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-06-mru-principles-microeconomics",
@@ -571,7 +571,7 @@
       "personal-finance-currency-review",
       "free-digital-badge"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-06-saylor-bus205-business-law",
@@ -597,7 +597,7 @@
       "legal-currency-review",
       "curated-oer"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-06-wipo-dl101-intellectual-property",
@@ -674,7 +674,7 @@
       "legal-currency-review",
       "last-updated-2020"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-06-coe-help-ai-human-rights",
@@ -776,6 +776,6 @@
       "cybersecurity-currency-review",
       "legacy-source-material"
     ],
-    "is_current": true
+    "is_current": false
   }
 ]
