@@ -427,7 +427,7 @@
       "regulatory-currency-review",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-09-hp-life-3d-printing",
@@ -533,7 +533,7 @@
       "redundancy-review",
       "free-certificate"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-09-mathworks-image-processing-onramp",
@@ -560,7 +560,7 @@
       "redundancy-review",
       "free-certificate"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-09-mathworks-signal-processing-onramp",
@@ -665,7 +665,7 @@
       "redundancy-review",
       "free-statement-of-participation"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-09-openlearn-making-sense-art-history",
@@ -815,6 +815,6 @@
       "technology-currency-review",
       "free-statement-of-participation"
     ],
-    "is_current": true
+    "is_current": false
   }
 ]

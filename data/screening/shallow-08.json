@@ -98,7 +98,7 @@
       "redundancy-review",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-08-yale-hist-202-european-civilization",
@@ -175,7 +175,7 @@
       "france-history",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-08-openlearn-herodotus-invention-history",
@@ -402,7 +402,7 @@
       "category-taxonomy-review",
       "uk-law"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-08-yale-rlst-145-hebrew-bible",
@@ -657,7 +657,7 @@
       "older-update",
       "free-statement-of-participation"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-08-saylor-bus402-project-management",
@@ -708,7 +708,7 @@
       "redundancy-review",
       "team-leadership"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-08-saylor-prdv228-decision-making",
@@ -760,7 +760,7 @@
       "redundancy-review",
       "ethical-leadership"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-08-openclassrooms-initiez-vous-gestion-projet",

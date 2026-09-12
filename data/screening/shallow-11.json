@@ -24,7 +24,7 @@
       "last-updated-2020",
       "currency-review"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-11-openlearn-intro-cyber-security",
@@ -105,7 +105,7 @@
       "depth-comparison",
       "vendor-authored"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-11-aws-cloud-essentials-learning-plan",
@@ -268,7 +268,7 @@
       "last-updated-2018",
       "scientific-currency-review"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-11-openlearn-introduction-child-psychology",
