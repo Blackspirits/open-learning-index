@@ -1,0 +1,28 @@
+[
+  {
+    "screen_id": "maintenance-01-nau-saude-populacoes-futuro-sustentavel",
+    "candidate_id": "nau-saude-populacoes-futuro-sustentavel",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/saude-das-populacoes-para-um-futuro-sustentavel/",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "historical NAU completion certificate and 2 ECTS; no current enrolment or completion route verified",
+    "completeness": "unknown",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/saude-das-populacoes-para-um-futuro-sustentavel/",
+      "https://www.nau.edu.pt/pt/categorias/areas-de-conhecimento/ciencias-da-saude-e-da-vida/?page_courses=3"
+    ],
+    "rationale": "NAU now labels the course as archived and no current enrolment or completion route is visible. Without a verifiable learner path, it no longer passes the shallow availability gate and must leave the Deep Review survivor pool.",
+    "flags": [
+      "archived-current-route-unavailable",
+      "historical-credential-only"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-03-nau-saude-populacoes-futuro-sustentavel"
+  }
+]
