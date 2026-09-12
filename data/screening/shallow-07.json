@@ -502,7 +502,7 @@
       "vendor-authored",
       "credential-bearing"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-07-ibm-skillsbuild-data-fundamentals",
@@ -529,7 +529,7 @@
       "short-duration",
       "credential-bearing"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-07-mathworks-machine-learning-onramp",
