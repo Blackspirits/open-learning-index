@@ -1,0 +1,808 @@
+[
+  {
+    "review_id": "deep-14-fun-boite-outils-philosophie-politique",
+    "candidate_id": "fun-boite-outils-philosophie-politique",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/boite-a-outils-de-philosophie-politique/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FUN MOOC digital badge after passing at least 5 modules with at least 50% on each module quiz",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-hour, nine-module French political-philosophy course on Machiavelli, Arendt, Rousseau, Gramsci, Foucault, Locke, Hobbes, Spinoza, democracy, power, freedom and the state.",
+    "prerequisites": "None",
+    "required_resources": "Modern browser and free FUN MOOC account; no paid tools required",
+    "component_evidence": {
+      "pedagogy": "Short explanatory videos, module quizzes, selected bibliographies and open-ended forum questions create a clear concept-to-reflection loop.",
+      "depth": "Nine modules and twenty hours provide substantial introductory-to-intermediate political-philosophy coverage without attempting a full history of political thought.",
+      "practice": "Each module has a four-question quiz, and open questions encourage critical reflection and forum participation; practice is meaningful but not essay-intensive.",
+      "materials": "Videos, quizzes, bibliographies and discussion prompts form a coherent current MOOC package.",
+      "currency": "The current run is open from August 2026 to August 2027, so platform availability and contextual framing are current.",
+      "expertise": "Edouard Delruelle is a University of Liège professor of political philosophy and philosophy of law.",
+      "accessibility": "Free, no prerequisites, French-original, flexible and badge-bearing."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.2,
+      "practice": 8.4,
+      "materials": 8.8,
+      "currency": 9.8,
+      "expertise": 9.3,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.78,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong current French-language political-philosophy route with genuine assessment and reflection. It is less writing-intensive than MIT/Yale but much more current and accessible.",
+    "comparators": [
+      "yale-plsc-114-political-philosophy",
+      "saylor-phil103-moral-political-philosophy"
+    ],
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/boite-a-outils-de-philosophie-politique/"
+    ],
+    "flags": [
+      "fr-original",
+      "20-hours",
+      "current-2026-27",
+      "module-quizzes",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-mit-24-00-problems-philosophy",
+    "candidate_id": "mit-24-00-problems-philosophy",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Undergraduate introduction to epistemology, metaphysics, ethics, logic, philosophy of mind, race/gender and meaning of life, with quizzes, presentation work and four substantial papers including a revision cycle.",
+    "prerequisites": "None",
+    "required_resources": "Browser; no paid platform required",
+    "component_evidence": {
+      "pedagogy": "The course explicitly aims to teach philosophical thinking, not just survey positions, through discussion, argument analysis and writing.",
+      "depth": "It covers a broad set of perennial philosophical problems at genuine undergraduate depth.",
+      "practice": "Frequent quizzes, oral presentation, three short papers, a rewrite and a 2,000–2,400-word final paper create exceptional writing-intensive practice.",
+      "materials": "OCW exposes syllabus, readings, lecture handouts and assignment prompts; it is complete though less media-rich than lecture-video archives.",
+      "currency": "Fall 2019 is recent enough for a slow-changing philosophy foundation, and the inclusion of race and gender keeps the framing comparatively contemporary.",
+      "expertise": "Miriam Schoenfield is an MIT philosopher with expertise in epistemology and rationality.",
+      "accessibility": "No prerequisites and fully open access, though dense readings and sustained writing make it academically demanding."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 8.9,
+      "practice": 9.4,
+      "materials": 8.7,
+      "currency": 9.1,
+      "expertise": 9.6,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.16,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "The strongest general philosophy introduction in the current pool for learners willing to do serious reading and writing. It is unusually strong on active philosophical practice.",
+    "comparators": [
+      "saylor-phil102-critical-thinking-logic",
+      "yale-plsc-114-political-philosophy"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/",
+      "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/pages/syllabus/"
+    ],
+    "flags": [
+      "philosophy",
+      "fall-2019",
+      "writing-intensive",
+      "four-papers",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-mit-24-231-ethics",
+    "candidate_id": "mit-24-231-ethics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/24-231-ethics-fall-2009/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Rigorous undergraduate ethics course spanning metaethics, consequentialism, deontology, well-being, equality, moral responsibility and related debates through extensive notes and four writing assignments.",
+    "prerequisites": "No formal prerequisite verified",
+    "required_resources": "Browser; no paid platform required",
+    "component_evidence": {
+      "pedagogy": "The course is organized around close argument reconstruction and sustained written evaluation of competing ethical theories.",
+      "depth": "Substantial coverage of normative ethics and metaethical questions reaches well beyond introductory moral awareness.",
+      "practice": "Three short papers plus a final paper produce strong analytical writing practice.",
+      "materials": "OCW provides extensive lecture handouts and assignment prompts, though the archive is less media-rich than newer OCW courses.",
+      "currency": "The core philosophical debates are stable; Fall 2009 age has limited conceptual impact, though newer applied examples are absent.",
+      "expertise": "Julia Markovits is a specialist in moral philosophy and reasons/ethics.",
+      "accessibility": "Fully open with no paid requirements, but dense readings and writing demands create academic friction."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 9,
+      "practice": 9.3,
+      "materials": 8.5,
+      "currency": 8.8,
+      "expertise": 9.4,
+      "accessibility": 8.5
+    },
+    "quality_score": 9.01,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong rigorous ethics course with excellent writing practice. MIT 24.00 is the better broad starting point; this is stronger for focused normative ethics.",
+    "comparators": [
+      "mit-24-00-problems-philosophy",
+      "saylor-phil103-moral-political-philosophy"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/24-231-ethics-fall-2009/resources/"
+    ],
+    "flags": [
+      "ethics",
+      "archive-2009",
+      "writing-intensive",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-openlearn-what-is-politics",
+    "candidate_id": "openlearn-what-is-politics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/society-politics-law/what-politics/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation",
+    "academic_credits": "No academic credit",
+    "self_paced": true,
+    "scope_notes": "Fifteen-hour Level 2 course on competing definitions of politics, political actors, spaces of politics and contested political concepts.",
+    "prerequisites": "No formal prerequisites",
+    "required_resources": "Browser; optional free OpenLearn account for completion recognition; downloadable formats available",
+    "component_evidence": {
+      "pedagogy": "The course builds around a deceptively simple question and uses contrasting definitions and examples to develop conceptual analysis.",
+      "depth": "Fifteen hours gives a meaningful intermediate introduction to political concepts without becoming a full political-science survey.",
+      "practice": "Embedded activities and reflective questions support concept application, but there is no strong formal assessment layer.",
+      "materials": "OpenLearn provides structured text and multiple downloadable formats.",
+      "currency": "The course was last updated in October 2019. The conceptual core remains valid, but contemporary political examples are dated.",
+      "expertise": "The Open University has strong distance-learning and political-studies expertise.",
+      "accessibility": "Free, self-paced, downloadable and low-friction with a free completion statement."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 7.9,
+      "practice": 7.7,
+      "materials": 9,
+      "currency": 7.8,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.31,
+    "recommendation_score": 8.3,
+    "recommendation_rationale": "A very accessible conceptual introduction to politics, but Saylor POLSC101 is much deeper and current, while the French FUN course offers stronger current assessment in political philosophy.",
+    "comparators": [
+      "saylor-polsc101-political-science",
+      "fun-boite-outils-philosophie-politique"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/society-politics-law/what-politics/content-section-0"
+    ],
+    "flags": [
+      "politics",
+      "15-hours",
+      "updated-2019",
+      "free-statement",
+      "downloadable"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-saylor-phil102-critical-thinking-logic",
+    "candidate_id": "saylor-phil102-critical-thinking-logic",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1255",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; optional ACE credit uses paid proctoring",
+    "academic_credits": "ACE-recommended credit available only through optional paid proctoring",
+    "self_paced": true,
+    "scope_notes": "Twenty-nine-hour course covering meaning analysis, argument analysis, sentential logic, Venn diagrams, fallacies, scientific reasoning, strategic reasoning and creativity.",
+    "prerequisites": "None",
+    "required_resources": "Browser and free Saylor account for assessments/certificate",
+    "component_evidence": {
+      "pedagogy": "The course progresses from language and argument analysis into formal logic, scientific reasoning and strategic problem solving.",
+      "depth": "Twenty-nine hours provides solid applied critical-thinking and logic breadth.",
+      "practice": "Repeatable unit assessments and a free final exam provide regular structured checking.",
+      "materials": "Saylor curates readings, lectures, videos and activities into a complete pathway.",
+      "currency": "The current version was last modified on 2 October 2025.",
+      "expertise": "Faculty-reviewed Saylor curriculum is credible, though named specialist faculty are less visible than MIT/Yale.",
+      "accessibility": "Fully free, self-paced, certificate-bearing and mobile-accessible; optional ACE credit is separate."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.3,
+      "practice": 8.9,
+      "materials": 8.4,
+      "currency": 9.2,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.68,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "The strongest practical critical-thinking/logic route in the category for most learners because it is current, assessed and broadly transferable.",
+    "comparators": [
+      "mit-24-00-problems-philosophy"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/mod/page/view.php?id=89558"
+    ],
+    "flags": [
+      "critical-thinking",
+      "logic",
+      "29-hours",
+      "updated-2025",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-saylor-polsc101-political-science",
+    "candidate_id": "saylor-polsc101-political-science",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/polsc101",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "academic_credits": "No academic credit verified for the free route",
+    "self_paced": true,
+    "scope_notes": "Large 111-hour political-science survey covering foundational concepts, political participation/public opinion, comparative politics, institutions, behavior and contemporary applied examples.",
+    "prerequisites": "None",
+    "required_resources": "Browser and free Saylor account",
+    "component_evidence": {
+      "pedagogy": "The course combines disciplinary concepts, classic thinkers and applied contemporary political examples in a broad cumulative survey.",
+      "depth": "At 111 hours, it is the deepest general political-science route in the current category.",
+      "practice": "End-of-unit assessments, practice exam and free final exam provide repeated self-checking.",
+      "materials": "A large curated set of readings, lectures and videos supports the full survey.",
+      "currency": "The syllabus was last modified on 3 October 2025, important for contemporary political examples.",
+      "expertise": "Faculty-reviewed curriculum is credible though less instructor-specific than Yale.",
+      "accessibility": "Fully free, self-paced, certificate-bearing and browser/mobile accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 9.2,
+      "practice": 8.8,
+      "materials": 8.4,
+      "currency": 9.2,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.84,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The strongest broad political-science foundation in the current pool by scope and currentness. Yale political philosophy is deeper on canonical theory; Saylor is much broader institutionally and behaviorally.",
+    "comparators": [
+      "yale-plsc-114-political-philosophy",
+      "openlearn-what-is-politics"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/polsc101",
+      "https://learn.saylor.org/mod/page/view.php?id=20672"
+    ],
+    "flags": [
+      "political-science",
+      "111-hours",
+      "updated-2025",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-plsc-114-political-philosophy",
+    "candidate_id": "yale-plsc-114-political-philosophy",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/political-science/plsc-114",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Full Yale introduction to Western political philosophy through Plato, Aristotle, Machiavelli, Hobbes, Locke, Rousseau and Tocqueville, organized around polis, sovereignty, constitutional government and democracy.",
+    "prerequisites": "None",
+    "required_resources": "Browser; lecture media/transcripts and course files are open",
+    "component_evidence": {
+      "pedagogy": "Primary-text interpretation and recurring institutional questions give the course a coherent philosophical arc rather than a thinker-by-thinker summary.",
+      "depth": "A full semester provides substantial close reading of major political philosophers.",
+      "practice": "Three 5–7 page papers and a final exam create serious analytical writing practice.",
+      "materials": "Complete lecture archive and syllabus support independent study, though public learner feedback is absent.",
+      "currency": "Recorded in 2006, but the primary texts and core interpretive questions are stable; the main limitation is narrow canonical representation, not obsolescence.",
+      "expertise": "Steven B. Smith is a senior Yale political theorist.",
+      "accessibility": "Fully open, but dense classic texts and essay-style work raise the barrier."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9,
+      "practice": 9,
+      "materials": 8.7,
+      "currency": 8.7,
+      "expertise": 9.5,
+      "accessibility": 8.6
+    },
+    "quality_score": 8.99,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong canonical political-philosophy course with excellent primary-text depth. Its Western-canon concentration is a real scope limitation; pair it with more diverse contemporary political theory.",
+    "comparators": [
+      "fun-boite-outils-philosophie-politique",
+      "saylor-phil103-moral-political-philosophy"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/political-science/plsc-114"
+    ],
+    "flags": [
+      "political-philosophy",
+      "archive-2006",
+      "western-canon",
+      "three-papers",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-saylor-phil103-moral-political-philosophy",
+    "candidate_id": "saylor-phil103-moral-political-philosophy",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/phil103",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate; optional ACE credit uses paid proctoring",
+    "academic_credits": "ACE-recommended credit available only through optional paid proctoring",
+    "self_paced": true,
+    "scope_notes": "Fifty-hour moral and political philosophy course centered on justice, rights, markets, Kant, Rawls, virtue, human life and moral community, with classic and contemporary texts.",
+    "prerequisites": "None",
+    "required_resources": "Browser and free Saylor account",
+    "component_evidence": {
+      "pedagogy": "The course develops moral reasoning by applying competing ethical and political frameworks to difficult real-world questions.",
+      "depth": "Fifty hours provides meaningful breadth across utilitarian, libertarian, contractualist, deontological and virtue-based traditions.",
+      "practice": "Unit assessments and a free final exam provide regular checking and application.",
+      "materials": "Curated readings, lectures and videos form a complete structured pathway.",
+      "currency": "The syllabus was last modified on 2 October 2025.",
+      "expertise": "Faculty-reviewed Saylor curriculum is credible, though less single-instructor coherent than Yale/MIT.",
+      "accessibility": "Fully free, self-paced and certificate-bearing."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.8,
+      "practice": 8.8,
+      "materials": 8.4,
+      "currency": 9.2,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.76,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "A strong broad moral/political philosophy foundation with current maintenance and free assessment. Less textually deep than Yale but easier to complete independently.",
+    "comparators": [
+      "yale-plsc-114-political-philosophy",
+      "mit-24-231-ethics"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/mod/page/view.php?id=32566"
+    ],
+    "flags": [
+      "moral-philosophy",
+      "political-philosophy",
+      "50-hours",
+      "updated-2025",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-saylor-phil203-environmental-ethics",
+    "candidate_id": "saylor-phil203-environmental-ethics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1257",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Forty-nine-hour environmental ethics course covering ethical approaches/worldviews, intellectual history, environmental justice and environmental law in US/EU contexts.",
+    "prerequisites": "None",
+    "required_resources": "Browser and free Saylor account",
+    "component_evidence": {
+      "pedagogy": "The course moves from ethical frameworks into history, justice and legal/political application.",
+      "depth": "Forty-nine hours gives substantial specialist coverage rather than a short applied-ethics survey.",
+      "practice": "Unit assessments, practice exam and free final exam provide regular self-testing.",
+      "materials": "Curated articles, lectures and videos create a coherent specialist path.",
+      "currency": "Last modified 3 October 2025, which matters because the environmental-law/policy component changes over time.",
+      "expertise": "Faculty-reviewed course design is sound though instructor-level specialist attribution is limited.",
+      "accessibility": "Free, self-paced, certificate-bearing and requires no specialist tools."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8.6,
+      "practice": 8.7,
+      "materials": 8.4,
+      "currency": 9.3,
+      "expertise": 8.5,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.69,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A substantial and current environmental-ethics specialization. Stronger than a generic ethics primer for this topic, though legal/policy examples should still be monitored over time.",
+    "comparators": [
+      "mit-24-231-ethics"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/mod/page/view.php?id=89725"
+    ],
+    "flags": [
+      "environmental-ethics",
+      "49-hours",
+      "updated-2025",
+      "free-certificate",
+      "law-policy-overlap"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-engl-300-theory-literature",
+    "candidate_id": "yale-engl-300-theory-literature",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/english/engl-300",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Full literary-theory survey covering formalism, structuralism, semiotics, deconstruction, psychoanalysis, Frankfurt School, historicism, feminism, African-American criticism, postcolonial criticism, queer theory and institutional critique.",
+    "prerequisites": "No formal prerequisite stated; substantial reading tolerance expected",
+    "required_resources": "Browser and access to assigned texts where not freely reproduced",
+    "component_evidence": {
+      "pedagogy": "The course systematically builds a map of competing theoretical approaches and repeatedly connects abstract theory to reading practices.",
+      "depth": "Twenty-six lectures cover an unusually broad range of literary theory traditions.",
+      "practice": "Two 5–7 page papers plus a final examination provide substantial analytical practice.",
+      "materials": "Complete lecture archive and syllabus are strong, although some assigned readings may require separate access.",
+      "currency": "The theoretical traditions remain foundational; the main limitation is that post-2000 developments are underrepresented.",
+      "expertise": "Paul H. Fry is a senior Yale literary scholar and experienced theory teacher.",
+      "accessibility": "Open lecture materials help, but dense theory and external reading requirements create friction."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.2,
+      "practice": 9,
+      "materials": 8.8,
+      "currency": 8.6,
+      "expertise": 9.6,
+      "accessibility": 8.5
+    },
+    "quality_score": 9.04,
+    "recommendation_score": 9,
+    "recommendation_rationale": "One of the strongest free literary-theory surveys available. It remains foundational, but learners should add newer work beyond the course's historical endpoint.",
+    "comparators": [
+      "yale-engl-310-modern-poetry"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/english/engl-300"
+    ],
+    "flags": [
+      "literary-theory",
+      "archive-course",
+      "two-papers",
+      "final-exam",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-engl-310-modern-poetry",
+    "candidate_id": "yale-engl-310-modern-poetry",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/english/engl-310",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twenty-five-lecture course in modern poetry centered on Frost, Yeats, WWI poetry, Imagism, Pound, Eliot, Crane, Hughes, Williams, Moore, Stevens, Auden and Bishop, with close reading and critical interpretation.",
+    "prerequisites": "No formal prerequisite stated",
+    "required_resources": "Browser plus access to assigned poetry collections where not reproduced",
+    "component_evidence": {
+      "pedagogy": "Close reading, historical context and multiple interpretive approaches are modelled consistently across the sequence.",
+      "depth": "A full semester gives substantial author-by-author and movement-level depth.",
+      "practice": "Informal exercises, a midterm, two papers and a final exam provide strong analytical practice.",
+      "materials": "Complete lectures, syllabus and exam study material are available; some copyrighted poetry must be sourced separately.",
+      "currency": "The literary objects are stable, so archive age has little effect on core learning value.",
+      "expertise": "Langdon Hammer is a leading scholar of modern poetry.",
+      "accessibility": "Open lectures are easy to access, but the course assumes comfort with advanced literary analysis and external texts."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9,
+      "practice": 9.1,
+      "materials": 8.8,
+      "currency": 9,
+      "expertise": 9.6,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.09,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "A high-quality deep course in modern poetry, especially strong for close-reading development. Its specialization makes it less universal than MIT 24.00 or Saylor critical thinking.",
+    "comparators": [
+      "yale-engl-300-theory-literature",
+      "yale-ital-310-dante"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/english/engl-310"
+    ],
+    "flags": [
+      "modern-poetry",
+      "archive-course",
+      "two-papers",
+      "midterm-final",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-ital-310-dante",
+    "candidate_id": "yale-ital-310-dante",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/italian-language-and-literature/ital-310",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-lecture guided reading of Vita Nuova and the Divine Comedy in translation, integrating literary, theological, political and philosophical interpretation.",
+    "prerequisites": "No formal prerequisite stated",
+    "required_resources": "Browser and access to a translation of Dante's texts",
+    "component_evidence": {
+      "pedagogy": "The course models sustained close reading across the whole Comedy, integrating form, theology, philosophy and politics.",
+      "depth": "A full semester gives unusually deep single-author humanities coverage.",
+      "practice": "Midterm, final and a roughly 3,000-word final paper create strong synthesis practice.",
+      "materials": "Complete lecture archive, syllabus, exam resources and paper prompts support independent study.",
+      "currency": "The object of study is stable and the scholarly framework remains useful; archive age is not a major concern.",
+      "expertise": "Giuseppe Mazzotta is a leading Dante scholar and Sterling Professor Emeritus at Yale.",
+      "accessibility": "No formal prerequisite, but the long text and interpretive density create meaningful workload."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.1,
+      "practice": 9.2,
+      "materials": 8.8,
+      "currency": 9,
+      "expertise": 9.8,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.12,
+    "recommendation_score": 9,
+    "recommendation_rationale": "An exceptional specialist humanities course for learners prepared to read Dante seriously. High quality, but deliberately narrow in scope.",
+    "comparators": [
+      "yale-engl-310-modern-poetry",
+      "yale-engl-300-theory-literature"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/italian-language-and-literature/ital-310"
+    ],
+    "flags": [
+      "dante",
+      "specialist-literature",
+      "archive-course",
+      "final-paper",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-rlst-145-hebrew-bible",
+    "candidate_id": "yale-rlst-145-hebrew-bible",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/religious-studies/rlst-145",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Academic historical-critical study of the Hebrew Bible in its Ancient Near Eastern context, using source, tradition, redaction, literary and canonical approaches.",
+    "prerequisites": "None",
+    "required_resources": "Browser plus access to primary texts/readings",
+    "component_evidence": {
+      "pedagogy": "The course explicitly teaches multiple scholarly methods and applies them to primary texts and historical context rather than devotional interpretation.",
+      "depth": "A full university sequence develops substantial historical, literary and methodological depth.",
+      "practice": "Midterm, final and an approximately 10-page interpretive paper provide strong analytical practice.",
+      "materials": "Complete lectures, syllabus and exam resources are public; some readings must be sourced separately.",
+      "currency": "Core historical-critical methods remain foundational, though some scholarship has advanced since the recording.",
+      "expertise": "Christine Hayes is a distinguished Yale scholar of ancient Judaism and biblical studies.",
+      "accessibility": "Open and non-devotional, but the long primary-text reading and scholarly vocabulary can be demanding."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.1,
+      "practice": 9.1,
+      "materials": 8.8,
+      "currency": 8.8,
+      "expertise": 9.6,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.06,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A rigorous academic Hebrew Bible introduction with strong methodological training. Best for learners seeking historical-critical study rather than devotional instruction.",
+    "comparators": [
+      "yale-rlst-152-new-testament"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/religious-studies/rlst-145"
+    ],
+    "flags": [
+      "religious-studies",
+      "historical-critical-method",
+      "archive-course",
+      "10-page-paper",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-rlst-152-new-testament",
+    "candidate_id": "yale-rlst-152-new-testament",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/religious-studies/rlst-152",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Historical-literary introduction to early Christianity and New Testament texts covering Greco-Roman/Jewish context, gospels, Acts, Paul, Johannine traditions, canon and early Christian conflict.",
+    "prerequisites": "None",
+    "required_resources": "Browser plus access to primary texts/readings",
+    "component_evidence": {
+      "pedagogy": "The course treats the New Testament historically and literarily, with explicit training in exegesis and interpretation.",
+      "depth": "A full semester provides broad early-Christian and textual coverage.",
+      "practice": "Two six-page papers plus an eight-page final paper create exceptionally strong writing and interpretive practice.",
+      "materials": "Complete lecture archive and syllabus support self-study, though assigned books may require separate access.",
+      "currency": "Historical-literary foundations remain valuable; later scholarship should supplement the archive.",
+      "expertise": "Dale B. Martin is a senior scholar of New Testament and early Christianity.",
+      "accessibility": "Open to beginners, but sustained primary-text reading and three long papers create significant workload."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9,
+      "practice": 9.4,
+      "materials": 8.8,
+      "currency": 8.8,
+      "expertise": 9.6,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.13,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "A particularly strong academic New Testament course because its writing/exegesis practice is unusually substantial. Best for historical-literary rather than confessional study.",
+    "comparators": [
+      "yale-rlst-145-hebrew-bible"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/religious-studies/rlst-152"
+    ],
+    "flags": [
+      "religious-studies",
+      "new-testament",
+      "three-papers",
+      "historical-literary-method",
+      "archive-course",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-14-yale-socy-151-social-theory",
+    "candidate_id": "yale-socy-151-social-theory",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/sociology/socy-151",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No Open Yale Courses completion credential",
+    "academic_credits": "No academic credit for independent learners",
+    "self_paced": true,
+    "scope_notes": "Foundational social-theory survey from Hobbes, Locke, Montesquieu and Rousseau through Smith, Marx, Nietzsche, Freud, Weber and Durkheim.",
+    "prerequisites": "None",
+    "required_resources": "Browser and access to assigned readings",
+    "component_evidence": {
+      "pedagogy": "The course develops recurring questions about authority, freedom, class, capitalism, domination and social order across thinkers, making comparison central.",
+      "depth": "A full university sequence provides substantial primary-theory depth.",
+      "practice": "Three timed short-essay tests plus a 6–8 page essay require repeated argument synthesis.",
+      "materials": "Complete lecture archive and syllabus support independent study, though original readings may require separate access.",
+      "currency": "Foundational theory remains relevant; the archive's main limitation is lack of newer theoretical movements rather than invalidity.",
+      "expertise": "Iván Szelényi is a major sociologist and social theorist with deep expertise in comparative social systems.",
+      "accessibility": "Open and structured, but dense canonical readings and essay work create moderate friction."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 9.2,
+      "practice": 9.1,
+      "materials": 8.8,
+      "currency": 8.7,
+      "expertise": 9.5,
+      "accessibility": 8.6
+    },
+    "quality_score": 9.04,
+    "recommendation_score": 9,
+    "recommendation_rationale": "An excellent foundation in classical social theory with strong comparative structure. It should be supplemented by more recent and more globally diverse social theory.",
+    "comparators": [
+      "yale-plsc-114-political-philosophy",
+      "saylor-polsc101-political-science"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/sociology/socy-151"
+    ],
+    "flags": [
+      "social-theory",
+      "archive-course",
+      "canonical-theory",
+      "essay-assessment",
+      "no-credential"
+    ],
+    "is_current": true
+  }
+]
