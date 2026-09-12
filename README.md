@@ -17,6 +17,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`AUDIT.md`](AUDIT.md) — architecture decisions and risks.
 - [`docs/methodology.md`](docs/methodology.md) — scoring and free-access taxonomy.
 - [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
+- [`docs/deep-review-protocol.md`](docs/deep-review-protocol.md) — evidence and scoring rules for Phase 3.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
@@ -43,6 +44,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
 - [`data/candidates/`](data/candidates/) — immutable discovery batches.
 - [`data/screening/`](data/screening/) — evidence-backed shallow-screening decision ledger.
+- [`data/reviews/`](data/reviews/) — auditable Deep Review ledger; reviewed candidates are not final admissions by default.
 
 ## Free access taxonomy
 
@@ -79,7 +81,7 @@ A course that becomes F3-only is removed from the main ranking but kept in histo
 
 ## Data philosophy
 
-`courses.json` is the source of truth for approved/reference records. Discovery batches are immutable research intake; `data/screening/` records review decisions. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
+`courses.json` is the source of truth for approved/reference records. Discovery batches are immutable research intake; `data/screening/` records shallow decisions and `data/reviews/` records Phase 3 deep-review evidence. A deep review does not itself promote a candidate into `courses.json`; Phase 4 head-to-head admission remains separate. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
 
 ## Licensing
 
