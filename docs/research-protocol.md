@@ -8,7 +8,9 @@ Build a candidate universe broad enough that the final Top 100–150 is the resu
 
 Discovery began with a broad target of **300–500 candidates** across all categories, using major universities, open-course initiatives, public institutions, specialist academies and high-quality industry training.
 
-Coverage audits changed the operational target: the project now aims for roughly **320–350 serious candidates** unless evidence shows meaningful blind spots remain. Expansion toward 400–500 is permitted only when it increases competitive coverage rather than catalogue volume.
+Coverage audits progressively replaced that numerical target with evidence-based saturation. After all original candidates were screened, the final v0.2 audit stopped broad discovery at 286 candidates and authorised only a corrective Arabic/Mandarin micro-wave. That pass stopped early at **290 candidates** because the demonstrated gaps had serious challengers and marginal results were increasingly partial, paid, archived or redundant.
+
+The old 320–350 target is therefore retired. Discovery is frozen during Deep Review and resumes only when maintenance or comparison reveals a specific competitive blind spot.
 
 Discovery is intentionally permissive. Inclusion in the candidate pool is not endorsement, and discovery records remain immutable research-intake evidence.
 
@@ -72,6 +74,10 @@ Only `advance` candidates receive expensive deep review. Verify and compare:
 
 Deep review is where auditable component scores can be assigned. Scores should represent evidence, not provider reputation alone.
 
+Deep-review evidence is stored separately in `data/reviews/*.json` and validated against `data/deep-review.schema.json`. Each numeric component must have explicit component-level evidence. Current deep reviews are permitted only for candidates whose current shallow decision is `advance`.
+
+A deep-review record is not a publication record: Phase 4 head-to-head admission remains a separate decision. See `docs/deep-review-protocol.md`.
+
 ## Phase 4 — Head-to-head admission
 
 A new course does not enter simply because it is good. It should beat or materially complement the weakest incumbent serving the same learning need.
@@ -82,15 +88,17 @@ Near-duplicate courses from one provider compete against each other. Provider pr
 
 Publish global and category rankings only after coverage saturation and deep-review comparison are credible: repeated targeted discovery should stop producing plausible category-leader challengers at a meaningful rate, and the active survivor pool should be sufficiently reviewed for fair ranking.
 
-## Parallel workflow during v0.2
+## v0.2 closeout and v0.3 hand-off
 
-After Batch 6, the project intentionally stopped treating discovery and screening as sequential global phases.
+The hybrid discovery/screening workflow is complete.
 
-- **Primary workstream:** shallow screening of the existing pool.
-- **Secondary workstream:** targeted discovery for documented language, geography, provider or subfield gaps.
-- **Gate:** no global ranking until the survivor set is deep-review ready.
+- **Discovery:** frozen at 290 candidates after the corrective language micro-wave.
+- **Shallow screening:** complete for all 290 candidates.
+- **Primary workstream:** Deep Review of current `advance` survivors.
+- **Holds:** remain outside Deep Review until their evidence blockers are resolved.
+- **Gate:** no global ranking until Deep Review and head-to-head admission are sufficiently complete for fair comparison.
 
-This hybrid workflow reduces research waste: weak candidates can be eliminated while the remaining discovery gaps are still being closed.
+Discovery may reopen only for a documented gap exposed by Deep Review or later maintenance; it is no longer a standing parallel workstream.
 
 ## Research log
 
