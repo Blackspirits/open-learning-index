@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **202 advance / 7 hold / 81 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for two archived NAU courses, one legacy-currency NAU education course, two IBM SkillsBuild learner routes, one time-gated FUN session and one legal-currentness HELP course. **94 current Deep Reviews** are complete: 12 calibration records plus 82 scaled reviews across nine post-calibration batches.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **202 advance / 7 hold / 81 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for two archived NAU courses, one legacy-currency NAU education course, two IBM SkillsBuild learner routes, one time-gated FUN session and one legal-currentness HELP course. **106 current Deep Reviews** are complete: 12 calibration records plus 94 scaled reviews across ten post-calibration batches.
 
 ## Goal
 
@@ -28,6 +28,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-07.md`](docs/reviews/scale-batch-07.md) — complete Languages-category Deep Review across structured courses, open pathways and specialist language-learning methods.
 - [`docs/reviews/scale-batch-08.md`](docs/reviews/scale-batch-08.md) — complete current Education & Teaching `advance` family after access/currentness maintenance.
 - [`docs/reviews/scale-batch-09.md`](docs/reviews/scale-batch-09.md) — complete current Law & Public Policy `advance` family with strict legal-currentness gates.
+- [`docs/reviews/scale-batch-10.md`](docs/reviews/scale-batch-10.md) — complete current Finance & Economics `advance` family with subject-sensitive currency and jurisdiction checks.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.

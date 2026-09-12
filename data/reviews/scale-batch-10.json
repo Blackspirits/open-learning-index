@@ -1,0 +1,675 @@
+[
+  {
+    "review_id": "deep-11-mru-principles-microeconomics",
+    "candidate_id": "mru-principles-microeconomics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.mru.org/courses/principles-of-microeconomics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Marginal Revolution University certificate of completion",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Large introductory microeconomics pathway with 94 lessons, 88 quizzes and 16 interactives covering supply and demand, elasticity, taxes and subsidies, price controls, trade, externalities, competition, monopoly, labor markets, public goods, asymmetric information and consumer choice.",
+    "prerequisites": "No formal prerequisite stated; designed as an introductory principles course",
+    "required_resources": "Modern browser and free MRU account for progress tracking and certificate; no paid software required",
+    "component_evidence": {
+      "pedagogy": "The sequence builds from core economic reasoning through market mechanisms and policy applications, while frequent quizzes and interactives turn short lessons into an active rather than video-only pathway.",
+      "depth": "Ninety-four lessons across the standard principles curriculum provide substantial introductory breadth, including market failures, labor markets, public goods, asymmetric information and consumer choice.",
+      "practice": "Eighty-eight quizzes and sixteen interactives create unusually dense retrieval and application practice for a free introductory economics course.",
+      "materials": "MRU provides a coherent browser-native sequence of lessons, quizzes, interactives and progress tracking rather than a loose collection of videos.",
+      "currency": "The current course remains active and comprehensive in 2026, but no explicit recent revision date is exposed; most principles are stable while policy examples and empirical context can age.",
+      "expertise": "The course is taught by economists Tyler Cowen, Alex Tabarrok and Joana Girante, with direct academic expertise in economics and long-running economics education experience.",
+      "accessibility": "The route is free, self-paced, certificate-bearing and requires no specialist software or advanced mathematics."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.8,
+      "practice": 9.3,
+      "materials": 8.8,
+      "currency": 8.7,
+      "expertise": 9.2,
+      "accessibility": 9.6
+    },
+    "quality_score": 9.04,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "The strongest general introductory microeconomics recommendation in the current pool for most self-learners because it combines breadth with exceptional practice density. MIT 14.03 is stronger academically but requires prior microeconomics.",
+    "comparators": [
+      "saylor-econ101-principles-microeconomics",
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "evidence": [
+      "https://learn.mru.org/courses/principles-of-microeconomics"
+    ],
+    "flags": [
+      "microeconomics",
+      "94-lessons",
+      "88-quizzes",
+      "16-interactives",
+      "free-certificate",
+      "update-date-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-fao-intro-trade-food-security-nutrition",
+    "candidate_id": "fao-intro-trade-food-security-nutrition",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://elearning.fao.org/course/view.php?id=961&lang=en",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free FAO elearning Academy digital badge after completing the course and scoring at least 75% on the final exam",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Compact two-lesson course of about two hours on definitions and measurement of trade, food security and nutrition and the positive and negative pathways through which trade affects the four dimensions of food security.",
+    "prerequisites": "No formal prerequisite; aimed at government, policy, private-sector and research audiences working on agricultural trade and food security",
+    "required_resources": "Current major web browser; no paid software or specialist equipment required",
+    "component_evidence": {
+      "pedagogy": "The course has a tightly bounded policy objective and uses step-by-step interactive screens with exercises and links to further material rather than relying only on exposition.",
+      "depth": "Two lessons of roughly 55–70 minutes each provide a useful orientation to the trade-food-security nexus, but the course is intentionally introductory and narrow.",
+      "practice": "Interactive exercises plus a final certification exam requiring at least 75% create meaningful checking for a short course, though there is no extended policy-analysis project.",
+      "materials": "FAO supplies a coherent course inside a broader three-course Trade, Food Security and Nutrition series with linked reading and follow-on modules.",
+      "currency": "FAO's Markets and Trade catalogue lists this course and its companion series with a 24 September 2024 date, giving a reliable recent maintenance signal for a policy-sensitive topic.",
+      "expertise": "FAO has direct institutional expertise in food security, nutrition, agricultural trade and policy capacity-building.",
+      "accessibility": "The course is free, self-paced, short, browser-based and awards a digital badge, making specialist policy content unusually accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8.3,
+      "depth": 6.9,
+      "practice": 7.8,
+      "materials": 8.4,
+      "currency": 9,
+      "expertise": 9.6,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.19,
+    "recommendation_score": 8.2,
+    "recommendation_rationale": "A strong specialist primer for learners working at the trade-food-security intersection, but too short and narrow to function as a general economics course. Its value is complementarity, not breadth.",
+    "comparators": [
+      "mru-development-economics"
+    ],
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=961&lang=en",
+      "https://www.fao.org/markets-and-trade/resources/fao-elearning/en"
+    ],
+    "flags": [
+      "specialist-policy",
+      "food-security",
+      "trade-policy",
+      "2-hours",
+      "assessed",
+      "digital-badge",
+      "updated-2024"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-khan-financial-literacy",
+    "candidate_id": "khan-financial-literacy",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.khanacademy.org/college-careers-more/financial-literacy",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal Khan Academy course-completion certificate verified",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current practical financial-literacy curriculum with 16 units and 123 skills spanning budgeting, saving, credit, debt, insurance, investing and retirement, scams, careers and education, taxes, employment, banking, car buying and housing, plus teacher resources and additional material.",
+    "prerequisites": "No formal prerequisites; intended for students, families and general learners",
+    "required_resources": "Modern browser and optional free Khan Academy account for mastery tracking; no paid services required",
+    "component_evidence": {
+      "pedagogy": "The course combines concise explanations, real-world scenarios, skill progression and mastery-oriented assessment, keeping personal-finance learning applied rather than purely conceptual.",
+      "depth": "Sixteen units and 123 skills provide unusually broad practical coverage, although the curriculum is personal-finance education rather than advanced finance theory.",
+      "practice": "Frequent quizzes, unit tests, mastery points and a cumulative course challenge create one of the strongest assessment loops in the category.",
+      "materials": "Khan Academy provides a large integrated set of lessons, exercises, teacher resources and mastery tracking in a consistent platform.",
+      "currency": "Khan Academy announced a major Financial Literacy update in January 2026, adding new lessons across every unit and current topics such as digital payments, taxes and unemployment.",
+      "expertise": "Khan Academy has extensive instructional-design expertise and develops the course for broad educational use, although course-level named finance faculty are less explicit than at MIT or MRU.",
+      "accessibility": "The full learning path is free, beginner-friendly and browser-based with very low friction, though many legal, tax, retirement and credit examples are US-specific."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.4,
+      "practice": 9.5,
+      "materials": 9.1,
+      "currency": 9.8,
+      "expertise": 8.9,
+      "accessibility": 9.7
+    },
+    "quality_score": 9.1,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "The best current free practical personal-finance curriculum in the pool for US-context learners and still highly useful internationally for transferable concepts. Jurisdiction-specific tax, credit and retirement details require local cross-checking.",
+    "comparators": [
+      "mru-money-skills",
+      "openlearn-mse-academy-of-money"
+    ],
+    "evidence": [
+      "https://www.khanacademy.org/college-careers-more/financial-literacy",
+      "https://blog.khanacademy.org/update-your-syllabus-we-now-have-a-real-world-money-video-for-every-unit/"
+    ],
+    "flags": [
+      "financial-literacy",
+      "16-units",
+      "123-skills",
+      "mastery-assessment",
+      "updated-2026",
+      "us-specific",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-saylor-bus103-financial-accounting",
+    "candidate_id": "saylor-bus103-financial-accounting",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/view.php?id=1261",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after the free certificate-bearing final exam; optional ACE credit uses a separate paid proctoring route",
+    "academic_credits": "ACE-recommended college credit is available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Current 63-hour ten-unit financial-accounting foundation covering accounting theory, transaction recording, adjusting entries, the accounting cycle, financial reporting and analysis, inventory, receivables/payables, property and equipment, long-term liabilities, equity and cash flows.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate; optional mobile offline access is available",
+    "component_evidence": {
+      "pedagogy": "The course builds sequentially through the accounting cycle and financial statements and explicitly encourages repeated self-testing and synthesis rather than memorisation alone.",
+      "depth": "Ten units and an estimated 63 hours provide substantial beginner-to-foundational coverage of financial accounting and statement analysis.",
+      "practice": "End-of-unit assessments can be repeated, and the free final exam provides cumulative checking; the course has less authentic business-project work than a project-based accounting pathway.",
+      "materials": "Saylor curates textbooks, videos, webpages and activities into a complete self-paced course, though source consistency can vary because it uses mixed open materials.",
+      "currency": "The course syllabus was last modified on 26 September 2025 and explicitly teaches current GAAP-oriented financial-statement concepts, a strong maintenance signal for accounting.",
+      "expertise": "Saylor provides faculty-reviewed structured curriculum, but course-level subject expertise is less transparently attributable than a single university-faculty course.",
+      "accessibility": "All course materials, the final exam and the completion certificate are free; the optional $5 ACE proctoring route is clearly separable from the free learning path."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 9,
+      "practice": 8.8,
+      "materials": 8.4,
+      "currency": 9.1,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.76,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "The strongest broad free accounting foundation in the current survivor pool because it combines current maintenance, substantial depth, repeated assessment and a free certificate. OpenLearn is easier but much shorter and older.",
+    "comparators": [
+      "openlearn-fundamentals-accounting",
+      "mit-15-501-financial-managerial-accounting"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=1261",
+      "https://learn.saylor.org/mod/page/view.php?id=90271"
+    ],
+    "flags": [
+      "financial-accounting",
+      "63-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-openlearn-fundamentals-accounting",
+    "candidate_id": "openlearn-fundamentals-accounting",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/money-business/fundamentals-accounting",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Eight-hour, four-week introductory accounting course covering bookkeeping versus accounting, financial versus management accounting, core numeracy, the accounting equation, double-entry bookkeeping, ledger accounts, trial balance, balance sheet and income statement.",
+    "prerequisites": "No formal prerequisites; introductory Level 1 course",
+    "required_resources": "Browser; optional free OpenLearn account for progress, quizzes, activities and Statement of Participation; downloadable Word, PDF and EPUB formats are available",
+    "component_evidence": {
+      "pedagogy": "The four-week sequence carefully scaffolds from business/accounting purpose through numeracy to double-entry and preparation of basic statements, with activities embedded throughout.",
+      "depth": "Eight hours covers the core mechanics well for an introduction but is much shallower than Saylor BUS103 and does not attempt full financial-reporting breadth.",
+      "practice": "Learners work through numerical and bookkeeping activities and can access course quizzes with a free account, providing useful guided practice but no substantial final exam or project.",
+      "materials": "The Open University provides structured text, downloadable formats, resources and activities suitable for offline or low-friction study.",
+      "currency": "The course was last formally updated in August 2019. Double-entry and the accounting equation are stable, but terminology, reporting practice and examples warrant a meaningful currency penalty.",
+      "expertise": "The Open University has strong academic and distance-learning expertise in business and accounting education.",
+      "accessibility": "The course is free, short, beginner-level, downloadable and can be started without registration, with a free account needed only for tracking and completion recognition."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 7.5,
+      "practice": 8.3,
+      "materials": 9,
+      "currency": 7.2,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.32,
+    "recommendation_score": 8.1,
+    "recommendation_rationale": "An excellent low-friction accounting introduction, especially for complete beginners, but Saylor BUS103 is a stronger default for anyone seeking a current and substantially deeper foundation.",
+    "comparators": [
+      "saylor-bus103-financial-accounting"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/money-business/fundamentals-accounting"
+    ],
+    "flags": [
+      "accounting",
+      "8-hours",
+      "updated-2019",
+      "introductory",
+      "downloadable",
+      "free-statement"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-mit-15-401-finance-theory-i",
+    "candidate_id": "mit-15-401-finance-theory-i",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Graduate finance-theory course covering present value, fixed income, equities, forwards and futures, options, risk and return, portfolio theory, CAPM/APT, capital budgeting and efficient markets, with lecture videos/slides, recitations, problem sets and exams.",
+    "prerequisites": "Graduate-level quantitative comfort is expected; the original MIT course was designed for Sloan students",
+    "required_resources": "General-purpose computer and browser; no paid platform required",
+    "component_evidence": {
+      "pedagogy": "The course combines formal lectures with recitations, problem-solving notes, worked problem sets and exam review, creating a rigorous theory-to-calculation learning loop.",
+      "depth": "This is a full graduate finance subject spanning valuation, securities, derivatives, portfolio theory, equilibrium asset pricing and capital budgeting.",
+      "practice": "Problem sets with solutions, problem-solving notes, a midterm and final with solutions provide unusually strong independent practice for an archival finance course.",
+      "materials": "OCW exposes lecture videos, slides, readings, recitations, exams and downloadable resources in a highly complete package; additional problem sets were added in 2019.",
+      "currency": "Core valuation, portfolio and derivatives theory remains valuable, but the course was taught in 2008 and predates major post-crisis regulation, market-structure changes, ETF growth and newer empirical finance developments.",
+      "expertise": "Andrew Lo is a leading MIT financial economist with direct research and teaching expertise in asset pricing, markets and financial economics.",
+      "accessibility": "All materials are openly accessible without payment, but the graduate level, mathematical demands and archival context raise the entry barrier."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9.3,
+      "practice": 9.4,
+      "materials": 9.5,
+      "currency": 6.6,
+      "expertise": 9.8,
+      "accessibility": 8.2
+    },
+    "quality_score": 9.04,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "Pedagogically one of the strongest finance courses in the index, but its 2008 market context is too old for an unqualified current-finance recommendation. Best used for durable theory with modern supplementation.",
+    "comparators": [
+      "mit-14-454-economic-crises-2026",
+      "saylor-bus103-financial-accounting"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+      "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/pages/problem-sets/",
+      "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/pages/exams/"
+    ],
+    "flags": [
+      "finance-theory",
+      "graduate-level",
+      "archive-2008",
+      "currency-penalty",
+      "practice-heavy",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-saylor-econ101-principles-microeconomics",
+    "candidate_id": "saylor-econ101-principles-microeconomics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/econ101",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after the free final exam; optional ACE credit uses separate paid proctoring",
+    "academic_credits": "ACE-recommended college credit available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Thirty-two-hour eight-unit principles course covering economic reasoning, supply and demand, elasticity, individual choice, consumer theory, production, competitive and non-competitive market structures and government in a market economy.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate",
+    "component_evidence": {
+      "pedagogy": "The course uses a conventional cumulative unit sequence and ties formal principles to real-world issues, with repeated self-testing built into each unit.",
+      "depth": "Thirty-two hours across eight units provides a solid complete principles foundation, though less topic breadth and interactivity than MRU's much larger microeconomics route.",
+      "practice": "Repeatable end-of-unit assessments and a free cumulative final exam provide consistent retrieval and mastery checking.",
+      "materials": "Saylor curates open readings, videos and activities into a complete structured path; material quality is useful but less uniform than a single-author university course.",
+      "currency": "The syllabus was last modified on 3 October 2025, providing a strong currentness signal for a mostly stable principles subject.",
+      "expertise": "Saylor's faculty-reviewed course design is credible, though instructor-level subject expertise is less transparent than MRU or MIT.",
+      "accessibility": "The full course, assessments and certificate are free, and the optional paid ACE exam is clearly separate."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 8.5,
+      "practice": 8.5,
+      "materials": 8.2,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.56,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "A strong structured and current microeconomics foundation with a free certificate, but MRU is the better default because it offers much denser interactive practice and broader lesson coverage.",
+    "comparators": [
+      "mru-principles-microeconomics",
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/econ101",
+      "https://learn.saylor.org/mod/page/view.php?id=71600"
+    ],
+    "flags": [
+      "microeconomics",
+      "32-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-saylor-econ102-principles-macroeconomics",
+    "candidate_id": "saylor-econ102-principles-macroeconomics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/econ102",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after the free final exam; optional ACE credit uses separate paid proctoring",
+    "academic_credits": "ACE-recommended college credit available only through the optional separately proctored route",
+    "self_paced": true,
+    "scope_notes": "Twenty-seven-hour principles course on national income/output, economic growth, unemployment, inflation, business cycles, financial systems, monetary policy, fiscal policy, trade and competing policy perspectives.",
+    "prerequisites": "No formal prerequisites stated",
+    "required_resources": "Web-capable device, internet and free Saylor account for assessments and certificate",
+    "component_evidence": {
+      "pedagogy": "The course progresses from macroeconomic measurement into growth, cycles and policy and repeatedly asks learners to compare policy choices and distributional effects.",
+      "depth": "Twenty-seven hours provide a complete introductory macroeconomics foundation, but less breadth and interactive density than MRU's macro sequence.",
+      "practice": "Repeatable end-of-unit assessments and a free final exam create a consistent practice and checking loop.",
+      "materials": "Saylor integrates open readings, videos and activities into a coherent full course, though mixed-source curation reduces material uniformity.",
+      "currency": "The syllabus was last modified on 3 October 2025, which is particularly important for policy-sensitive macroeconomics.",
+      "expertise": "Saylor's structured faculty-reviewed curriculum is credible but offers less transparent instructor-level economic expertise than MRU or MIT.",
+      "accessibility": "The learning path, final exam and certificate are free and self-paced; the optional paid ACE route is clearly separable."
+    },
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 8.4,
+      "practice": 8.5,
+      "materials": 8.2,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.54,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A good current, assessed macroeconomics foundation with a free certificate. MRU remains the stronger general recommendation because it offers substantially more lessons, quizzes and interactives.",
+    "comparators": [
+      "mru-principles-macroeconomics",
+      "mit-14-454-economic-crises-2026"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/econ102",
+      "https://learn.saylor.org/mod/page/view.php?id=81763"
+    ],
+    "flags": [
+      "macroeconomics",
+      "27-hours",
+      "updated-2025",
+      "free-certificate",
+      "optional-paid-credit",
+      "curated-oer"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-mru-principles-macroeconomics",
+    "candidate_id": "mru-principles-macroeconomics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.mru.org/courses/principles-of-macroeconomics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Marginal Revolution University certificate of completion",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Large macroeconomics pathway with 84 lessons, 78 quizzes and 8 interactives covering GDP, economic growth, savings and investment, the financial system, personal finance, unemployment, inflation, money, monetary policy, the Federal Reserve, government budgets and fiscal policy.",
+    "prerequisites": "No formal prerequisite stated; introductory principles course",
+    "required_resources": "Modern browser and free MRU account for progress tracking/certificate; no paid tools required",
+    "component_evidence": {
+      "pedagogy": "Short lessons are organised into a coherent macro sequence and reinforced with frequent quizzes and interactives, supporting active progression through measurement, growth, finance and policy.",
+      "depth": "Eighty-four lessons cover the standard macro principles sequence in substantial detail, including finance, labor markets, inflation and fiscal/monetary policy.",
+      "practice": "Seventy-eight quizzes and eight interactives provide dense low-stakes practice throughout the course.",
+      "materials": "MRU offers an integrated course platform with lessons, quizzes, interactives and completion tracking.",
+      "currency": "The route is active in 2026 but exposes no explicit recent revision date. Macroeconomic theory is stable, while Federal Reserve and fiscal-policy examples can date more quickly.",
+      "expertise": "Tyler Cowen and Alex Tabarrok are established economists and long-running economics educators at George Mason University.",
+      "accessibility": "The course is free, self-paced, certificate-bearing and has no specialist software requirement, though several policy examples are US-centered."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.6,
+      "practice": 9.1,
+      "materials": 8.7,
+      "currency": 8.6,
+      "expertise": 9.2,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.92,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The strongest general introductory macroeconomics recommendation in the current pool because of its scale and practice density. Saylor is a solid more conventional alternative with explicit 2025 syllabus maintenance.",
+    "comparators": [
+      "saylor-econ102-principles-macroeconomics",
+      "mit-14-454-economic-crises-2026"
+    ],
+    "evidence": [
+      "https://learn.mru.org/courses/principles-of-macroeconomics"
+    ],
+    "flags": [
+      "macroeconomics",
+      "84-lessons",
+      "78-quizzes",
+      "8-interactives",
+      "free-certificate",
+      "us-policy-examples",
+      "update-date-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-mru-development-economics",
+    "candidate_id": "mru-development-economics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.mru.org/courses/development-economics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Marginal Revolution University certificate of completion",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Exceptionally broad development-economics course with 221 lessons and 180 quizzes spanning geography, agriculture, water, growth, firm productivity, trade, property rights, corruption, aid, finance, poverty and behavior, health, education, politics, migration, population, environment and case studies.",
+    "prerequisites": "No formal prerequisite stated, though the scale and economics content reward prior familiarity with basic economic reasoning",
+    "required_resources": "Modern browser and free MRU account for progress/certificate; no paid software required",
+    "component_evidence": {
+      "pedagogy": "The course breaks a very large field into many short lessons and knowledge checks, allowing learners to progress from growth fundamentals into institutions, human development and country cases.",
+      "depth": "With 221 lessons across more than twenty topic groups, it is one of the deepest free structured development-economics pathways in the candidate pool.",
+      "practice": "One hundred eighty quizzes provide extensive retrieval practice, although there is no evidence of a major research project, data-analysis capstone or instructor feedback.",
+      "materials": "MRU provides a large coherent lesson-and-quiz library with case-study sections and broad thematic coverage.",
+      "currency": "The course remains active, but the public page exposes no explicit recent revision date. Development economics changes meaningfully as empirical literature and country evidence evolve, so currentness is scored cautiously.",
+      "expertise": "Tyler Cowen and Alex Tabarrok are established economists with extensive teaching and public-economics experience.",
+      "accessibility": "The entire long-form pathway is free, self-paced and certificate-bearing without specialist tooling, an unusual level of access for this breadth."
+    },
+    "quality_components": {
+      "pedagogy": 8.9,
+      "depth": 9.3,
+      "practice": 9,
+      "materials": 8.8,
+      "currency": 8.2,
+      "expertise": 9.2,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.98,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "An exceptional breadth-first free development-economics pathway and a strong specialist recommendation. The main reservation is the lack of a transparent update date in a field where evidence and country cases evolve.",
+    "comparators": [
+      "fao-intro-trade-food-security-nutrition",
+      "mru-principles-microeconomics"
+    ],
+    "evidence": [
+      "https://learn.mru.org/courses/development-economics"
+    ],
+    "flags": [
+      "development-economics",
+      "221-lessons",
+      "180-quizzes",
+      "large-sequence",
+      "free-certificate",
+      "update-date-unverified"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-mit-14-03-microeconomic-theory-public-policy-2025",
+    "candidate_id": "mit-14-03-microeconomic-theory-public-policy-2025",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Fall 2025 intermediate applied microeconomics and public-policy course taught by David Autor, combining microeconomic theory, causal inference, research design and data analysis with applications including minimum wages, healthcare, trade, externalities, insurance, discrimination and algorithmic decision-making.",
+    "prerequisites": "MIT 14.01 Principles of Microeconomics or equivalent",
+    "required_resources": "General-purpose computer; some problem-set data work may require standard analytical tools, but no paid platform is required by the public OCW route",
+    "component_evidence": {
+      "pedagogy": "The course explicitly integrates theory, causal evidence and live policy applications, reinforced by class polls, problem sets and research readings rather than treating microeconomics as abstract model manipulation.",
+      "depth": "A full fast-paced MIT intermediate course develops consumer and producer theory, market equilibrium, uncertainty, information problems, causal inference and policy analysis at substantial depth.",
+      "practice": "Problem sets, data files, polls and multiple exams with solutions provide rigorous practice. Some public problem sets/exams are older 2014 versions, so not all practice artifacts are from the 2025 run.",
+      "materials": "OCW exposes a 2025 syllabus, lecture slides, readings, problem sets, data, class-poll questions and exams/solutions in a downloadable package.",
+      "currency": "The course was taught in Fall 2025 and includes contemporary topics such as algorithmic decision-making, machine learning, discrimination and housing-market competition.",
+      "expertise": "David Autor is a leading MIT labor economist with major research expertise in labor markets, technological change and applied empirical economics.",
+      "accessibility": "Everything is open through OCW, but the prerequisite economics background, pace and quantitative/data-analysis expectations make this materially less accessible than principles courses."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.3,
+      "practice": 9.4,
+      "materials": 9.4,
+      "currency": 9.9,
+      "expertise": 9.9,
+      "accessibility": 7.8
+    },
+    "quality_score": 9.4,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "The strongest economics course in this batch for learners who already know introductory microeconomics: unusually current, rigorous and tightly connected to real policy evidence. It is not a beginner course.",
+    "comparators": [
+      "mru-principles-microeconomics",
+      "saylor-econ101-principles-microeconomics"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/",
+      "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/pages/syllabus/",
+      "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/pages/calendar/"
+    ],
+    "flags": [
+      "microeconomics",
+      "public-policy",
+      "fall-2025",
+      "advanced-prerequisites",
+      "practice-heavy",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-11-mit-14-454-economic-crises-2026",
+    "candidate_id": "mit-14-454-economic-crises-2026",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OCW learners",
+    "self_paced": true,
+    "scope_notes": "Spring 2026 graduate macro-finance course on financial amplification, intermediation and credit crunches, bank runs, speculative bubbles and credit booms, liquidity traps and deleveraging, capital flows, sudden stops and contagion, taught through formal models, readings and weekly problem-set work.",
+    "prerequisites": "MIT 14.453 Economic Fluctuations or equivalent graduate macroeconomics background",
+    "required_resources": "General-purpose computer and ability to work through graduate mathematical macroeconomics; no paid platform required",
+    "component_evidence": {
+      "pedagogy": "The course is organised around canonical crisis mechanisms and requires sustained weekly problem-solving, creating a strong model-to-application learning structure rather than passive reading.",
+      "depth": "This is an advanced graduate course focused on formal macroeconomic models of financial frictions and crises, with substantial theoretical depth.",
+      "practice": "One long problem set with weekly deadlines accounted for 70% of the original grade, and OCW publishes the full problem set plus solutions; a final exam formed the remaining assessment structure.",
+      "materials": "Current 2026 lecture notes, readings, problem sets and detailed solutions form a compact but highly rigorous independent-study package.",
+      "currency": "The course was taught in Spring 2026 and includes current research framing alongside canonical crisis literature, giving it exceptional temporal relevance.",
+      "expertise": "Ricardo Caballero is a leading MIT macroeconomist whose research directly covers crises, financial frictions, capital flows and macro-financial instability.",
+      "accessibility": "All materials are free and downloadable, but graduate macro prerequisites and mathematical sophistication create a high barrier to entry."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.6,
+      "practice": 9.5,
+      "materials": 9.3,
+      "currency": 10,
+      "expertise": 9.9,
+      "accessibility": 7.2
+    },
+    "quality_score": 9.38,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "An exceptional current specialist course on economic crises and macro-finance for advanced learners. Its recommendation is capped only by the very high prerequisite barrier and narrow graduate focus.",
+    "comparators": [
+      "mit-15-401-finance-theory-i",
+      "mru-principles-macroeconomics"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/",
+      "https://live.ocw.mit.edu/courses/14-454-economic-crises-spring-2026/pages/syllabus/",
+      "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/download/"
+    ],
+    "flags": [
+      "economic-crises",
+      "macro-finance",
+      "spring-2026",
+      "graduate-level",
+      "advanced-prerequisites",
+      "practice-heavy",
+      "no-credential"
+    ],
+    "is_current": true
+  }
+]
