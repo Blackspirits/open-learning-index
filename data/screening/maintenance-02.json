@@ -1,0 +1,60 @@
+[
+  {
+    "screen_id": "maintenance-02-ibm-skillsbuild-ai-fundamentals",
+    "candidate_id": "ibm-skillsbuild-ai-fundamentals",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://skillsbuild.org/learning-catalog/university-catalog",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "IBM SkillsBuild Artificial Intelligence Fundamentals digital credential remains current and free, but the exact current learner enrolment route is not independently verified",
+    "completeness": "unknown",
+    "evidence": [
+      "https://skillsbuild.org/college-students/course-catalog/artificial-intelligence-fundamentals",
+      "https://skillsbuild.org/learning-catalog/university-catalog",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/artificial-intelligence-fundamentals"
+    ],
+    "rationale": "The previously stable course-specific SkillsBuild URL now redirects to the generic university catalog. IBM still documents the course and its free credential, but an exact stable learner-facing enrolment route could not be independently resolved, so Deep Review must pause until that route is verified.",
+    "flags": [
+      "learner-route-unresolved",
+      "course-specific-url-redirects",
+      "credential-current"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-07-ibm-skillsbuild-ai-fundamentals"
+  },
+  {
+    "screen_id": "maintenance-02-ibm-skillsbuild-data-fundamentals",
+    "candidate_id": "ibm-skillsbuild-data-fundamentals",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-12",
+    "canonical_url": "https://skillsbuild.org/learning-catalog/university-catalog",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en",
+      "ar",
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "IBM Data Fundamentals digital credential remains current and free, but the exact current learner enrolment route is not independently verified",
+    "completeness": "unknown",
+    "evidence": [
+      "https://skillsbuild.org/college-students/course-catalog/data-fundamentals",
+      "https://skillsbuild.org/college-students/data-science",
+      "https://www.credly.com/org/ibm/badge/data-fundamentals"
+    ],
+    "rationale": "The former course-specific SkillsBuild URL now redirects to the generic university catalog. IBM still lists Data Fundamentals and a current free credential, but the stable candidate-specific learner route is no longer verifiable, so scoring is deferred rather than inferring access mechanics.",
+    "flags": [
+      "learner-route-unresolved",
+      "course-specific-url-redirects",
+      "credential-current"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-07-ibm-skillsbuild-data-fundamentals"
+  }
+]
