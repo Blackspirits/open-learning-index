@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **208 advance / 2 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with one later availability correction for an archived NAU course.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **208 advance / 2 hold / 80 reject**; the corrective Arabic/Mandarin micro-wave is complete, with one later availability correction for an archived NAU course. **24 current Deep Reviews** are complete: 12 calibration records plus the first 12-course scaled volatile-technology batch.
 
 ## Goal
 
@@ -18,6 +18,8 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/methodology.md`](docs/methodology.md) — scoring and free-access taxonomy.
 - [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
 - [`docs/deep-review-protocol.md`](docs/deep-review-protocol.md) — evidence and scoring rules for Phase 3.
+- [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
+- [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.

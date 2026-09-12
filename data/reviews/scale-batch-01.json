@@ -1,0 +1,651 @@
+[
+  {
+    "review_id": "deep-02-microsoft-learn-develop-ai-agents",
+    "candidate_id": "microsoft-learn-develop-ai-agents",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Microsoft Learn module assessments and profile achievements; no free professional certification exam included",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Intermediate nine-module path covering agent creation, custom tools, Model Context Protocol, knowledge grounding and RAG, workflows, Microsoft Agent Framework, multi-agent patterns and agent-to-agent interoperability.",
+    "prerequisites": "Familiarity with fundamental AI concepts and Azure AI services",
+    "required_resources": "Web browser, Microsoft Learn account, Azure account for hands-on exercises, Azure portal and Visual Studio Code; some cloud exercises may require trial credit or billable Azure consumption",
+    "component_evidence": {
+      "pedagogy": "The path progresses from building a basic agent into tools, grounding, orchestration and multi-agent patterns, with module assessments and guided implementation exercises rather than isolated product documentation.",
+      "depth": "Nine modules cover a substantial current agent-development stack, but the depth is concentrated inside the Microsoft ecosystem and does not fully explore provider-neutral agent architecture or research foundations.",
+      "practice": "Several modules include build, test and deploy exercises using Microsoft Foundry, Visual Studio Code, tools and workflows, giving meaningful implementation practice rather than knowledge checks alone.",
+      "materials": "Microsoft Learn provides structured browser-native modules, code-oriented exercises, conceptual diagrams, prerequisites and linked product documentation in a coherent maintained learning path.",
+      "currency": "The path covers current 2026 agent concepts including MCP tools, RAG and knowledge integration, workflows, multi-agent systems and agent-to-agent patterns in Microsoft's current Foundry stack.",
+      "expertise": "Microsoft authors the training for technologies it actively develops, giving strong implementation expertise for Foundry and Azure agent tooling, though that expertise is inherently vendor-specific.",
+      "accessibility": "Core learning pages and assessments are free, but meaningful exercises depend on an Azure account, portal tooling and Visual Studio Code, with possible cloud-consumption cost and more setup friction than provider-neutral alternatives."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.4,
+      "practice": 8.5,
+      "materials": 8.8,
+      "currency": 9.8,
+      "expertise": 9.3,
+      "accessibility": 7
+    },
+    "quality_score": 8.67,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "One of the strongest current free paths for learners specifically targeting Microsoft Foundry and Azure agents. Hugging Face is the stronger default recommendation for a provider-neutral learner because it reduces cloud friction and offers broader framework comparison plus a free course certificate.",
+    "comparators": [
+      "huggingface-agents-course",
+      "microsoft-learn-ai-concepts"
+    ],
+    "evidence": [
+      "https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-azure/",
+      "https://learn.microsoft.com/en-us/training/modules/develop-ai-agents-azure-vs-code/"
+    ],
+    "flags": [
+      "fast-moving-content",
+      "vendor-ecosystem",
+      "cloud-account-required",
+      "agentic-ai"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-huggingface-agents-course",
+    "candidate_id": "huggingface-agents-course",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en",
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Hugging Face fundamentals certificate and full-course certificate through the published completion paths",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Living course spanning agent fundamentals, tools and reasoning loops, multiple agent frameworks, agentic RAG, use-case assignments, a final benchmark challenge and bonus material on fine-tuning, observability and evaluation.",
+    "prerequisites": "Basic Python programming and basic familiarity with large language models",
+    "required_resources": "Computer with internet access and a free Hugging Face account; course exercises use Hugging Face Spaces and open-source libraries without mandatory paid cloud spend",
+    "component_evidence": {
+      "pedagogy": "The course deliberately moves from conceptual foundations to framework implementations, applied use cases and a final challenge, with a clear progression and certificate gates tied to actual completion.",
+      "depth": "It covers core agent architecture, tools, reasoning, smolagents, LlamaIndex, LangGraph, agentic RAG and evaluation-oriented bonus topics, creating broad and reasonably deep specialist coverage.",
+      "practice": "Hands-on Spaces, framework exercises, use-case assignments and the final challenge require learners to build and test agents, making practice a central part of the learning path.",
+      "materials": "The course combines structured written units, code, notebooks, Spaces, assignments, community contributions and certificate instructions in an openly accessible reusable package.",
+      "currency": "It is explicitly maintained as a living course and covers current agent frameworks, agentic RAG and modern evaluation/observability concerns, which is critical in a very fast-moving field.",
+      "expertise": "Hugging Face's education and engineering teams work directly on open-source ML tooling and model infrastructure closely related to the course's agent frameworks and deployment environment.",
+      "accessibility": "The complete learning and certification route is free, self-paced and does not require paid cloud infrastructure; basic Python and LLM knowledge are meaningful but reasonable prerequisites."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.7,
+      "practice": 9.3,
+      "materials": 9.1,
+      "currency": 9.7,
+      "expertise": 9.2,
+      "accessibility": 9
+    },
+    "quality_score": 9.12,
+    "recommendation_score": 9.4,
+    "recommendation_rationale": "The strongest general agentic-AI choice in this batch: current, hands-on, provider-neutral enough to teach multiple frameworks, and fully free through certification. Microsoft remains preferable only when Azure/Foundry competence is the explicit goal.",
+    "comparators": [
+      "microsoft-learn-develop-ai-agents",
+      "fastai-practical-deep-learning"
+    ],
+    "evidence": [
+      "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+      "https://huggingface.co/learn/agents-course/en/unit1/get-your-certificate",
+      "https://huggingface.co/learn/agents-course/unit4/get-your-certificate"
+    ],
+    "flags": [
+      "fast-moving-content",
+      "living-course",
+      "project-heavy",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-huggingface-audio-course",
+    "candidate_id": "huggingface-audio-course",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://huggingface.co/learn/audio-course/en/chapter0/introduction",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Hugging Face completion or excellence certificate based on the published hands-on assignment thresholds",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Eight-unit specialist audio-ML path covering audio data, transformer architectures and applications including classification, automatic speech recognition, text-to-speech and integrated speech workflows, with four graded hands-on assignments.",
+    "prerequisites": "Python, prior deep-learning knowledge and familiarity with transformer models",
+    "required_resources": "Internet access, a free Hugging Face account and notebook environment; some model training benefits from free-tier GPU resources such as Google Colab but no paid hardware is mandatory",
+    "component_evidence": {
+      "pedagogy": "The course builds from audio representations and datasets into task-specific models and end-to-end applications, using successive assignments to connect conceptual material with implementation.",
+      "depth": "Eight specialist units span the main modern audio-ML tasks and model workflows, with enough technical detail to move beyond a survey for learners who already understand deep learning.",
+      "practice": "Four graded assignments include improving a music classifier, fine-tuning speech recognition and text-to-speech models and building a multilingual speech workflow, providing unusually strong specialist practice.",
+      "materials": "Structured chapters, code examples, datasets, model-hub resources, notebooks and certification instructions create a complete reusable practical package.",
+      "currency": "The course remains operational in 2026 but its core publication and practical library/model stack date from 2023, which is a material penalty in a rapidly changing generative and speech-model ecosystem.",
+      "expertise": "The material was produced by Hugging Face practitioners working directly with Transformers, datasets, model hubs and audio ML, closely matching the taught implementation stack.",
+      "accessibility": "The full course and certificate are free, but the prerequisite level is higher than most candidates and some training workloads are materially easier with GPU notebook access."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.9,
+      "practice": 9.4,
+      "materials": 9,
+      "currency": 7.2,
+      "expertise": 9.5,
+      "accessibility": 8
+    },
+    "quality_score": 8.88,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "An excellent specialist route for practical audio ML, especially because the assignments and certification remain live. Its recommendation is held below the agent course and fast.ai because learners must actively cross-check 2023-era libraries, model choices and current speech-generation practice.",
+    "comparators": [
+      "fastai-practical-deep-learning"
+    ],
+    "evidence": [
+      "https://huggingface.co/learn/audio-course/en/chapter0/introduction",
+      "https://huggingface.co/learn/audio-course/en/chapter4/hands_on",
+      "https://huggingface.co/learn/audio-course/en/chapter8/certification"
+    ],
+    "flags": [
+      "fast-moving-content",
+      "published-2023",
+      "project-heavy",
+      "free-certificate",
+      "specialist-audio"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-nau-inteligencia-artificial-machine-learning",
+    "candidate_id": "nau-inteligencia-artificial-machine-learning",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/inteligencia-artificial-e-machine-learning/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Academia Portugal Digital / NAU digital certificate after the published completion requirements",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Approximately eight-hour bilingual course covering AI and machine-learning foundations, supervised and unsupervised learning, reinforcement learning, deep learning, model training/evaluation, applications, ethics and future impacts.",
+    "prerequisites": "No material technical prerequisite is stated on the public course page",
+    "required_resources": "Web browser and NAU learner account; no paid software, cloud spend or special hardware requirement was verified",
+    "component_evidence": {
+      "pedagogy": "The course uses nine sequenced modules with mandatory end-of-module knowledge checks and a final assessment, giving the broad survey a coherent progression and completion structure.",
+      "depth": "The syllabus covers many major AI/ML paradigms in only about eight hours, so the treatment is necessarily introductory and cannot develop algorithms, mathematics or implementation in substantial depth.",
+      "practice": "Mandatory tests and a final assessment provide active checking, but the public course evidence does not demonstrate substantial coding labs, model-building projects or extended applied exercises.",
+      "materials": "The NAU route provides a structured module sequence, stated outcomes and assessment framework, but the publicly verifiable supporting-material depth is less extensive than the leading technical candidates.",
+      "currency": "The course is currently open for enrolment and covers modern AI/ML topics, but its broad high-level design provides less evidence of rapidly updated tooling or frontier techniques than specialist living courses.",
+      "expertise": "The course is delivered through Portugal's public digital-learning ecosystem and Academia Portugal Digital; the provider context is credible, though the public page gives less instructor-specific evidence than the strongest specialist courses.",
+      "accessibility": "It is short, self-paced, free through certification and notably available in Portuguese as well as English, with no verified paid tooling or advanced prerequisite barrier."
+    },
+    "quality_components": {
+      "pedagogy": 8,
+      "depth": 7,
+      "practice": 6.5,
+      "materials": 7.7,
+      "currency": 8.5,
+      "expertise": 8,
+      "accessibility": 9.3
+    },
+    "quality_score": 7.59,
+    "recommendation_score": 8,
+    "recommendation_rationale": "A particularly useful accessible option for Portuguese-speaking beginners and one of the better free pt-PT credentialed introductions. It should not outrank deeper project-based AI courses for learners seeking technical competence.",
+    "comparators": [
+      "microsoft-learn-ai-concepts",
+      "mathworks-machine-learning-onramp"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/inteligencia-artificial-e-machine-learning/"
+    ],
+    "flags": [
+      "fast-moving-content",
+      "pt-pt",
+      "short-course",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-mathworks-machine-learning-onramp",
+    "candidate_id": "mathworks-machine-learning-onramp",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://matlabacademy.mathworks.com/details/machine-learning-onramp/machinelearning",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free MathWorks course certificate",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Browser-based practical introduction to the classification workflow in MATLAB, including data import, feature extraction, train/test splits, cross-validation, model training, hyperparameters, evaluation and iterative performance improvement.",
+    "prerequisites": "No advanced machine-learning prerequisite is stated; basic data and programming familiarity is helpful",
+    "required_resources": "Modern web browser and MathWorks learner account; exercises run in the browser and no local MATLAB licence was verified as mandatory",
+    "component_evidence": {
+      "pedagogy": "The course follows the real classification workflow in a logical order and uses immediate automated feedback, allowing learners to connect each concept to the next modelling step.",
+      "depth": "It teaches the classification pipeline with useful operational detail but remains an Onramp focused on one vendor environment and a narrower slice of machine learning than broader ML courses.",
+      "practice": "Interactive browser exercises require learners to import data, derive features, train models, tune settings and evaluate results, making applied work a defining strength.",
+      "materials": "The integrated MATLAB Academy environment combines explanations, runnable exercises, feedback and progress tracking with minimal setup.",
+      "currency": "The active browser course teaches a current supported MATLAB ML workflow; however, currency is primarily within MathWorks tooling rather than the broader open Python ML ecosystem.",
+      "expertise": "MathWorks develops MATLAB and its machine-learning tooling, giving the course strong first-party implementation expertise for the environment being taught.",
+      "accessibility": "The course and certificate are free and browser-based, reducing setup friction, though MATLAB-specific skills are less portable for learners whose target ecosystem is Python or general open-source ML."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.4,
+      "practice": 8.9,
+      "materials": 8.6,
+      "currency": 8.6,
+      "expertise": 9,
+      "accessibility": 8.2
+    },
+    "quality_score": 8.46,
+    "recommendation_score": 8.2,
+    "recommendation_rationale": "A very good hands-on beginner ML course when MATLAB is relevant. For a general learner, the narrow classification focus and vendor-specific workflow keep it below more transferable project-based alternatives.",
+    "comparators": [
+      "nau-inteligencia-artificial-machine-learning",
+      "fastai-practical-deep-learning"
+    ],
+    "evidence": [
+      "https://matlabacademy.mathworks.com/details/machine-learning-onramp/machinelearning"
+    ],
+    "flags": [
+      "vendor-tool-specific",
+      "hands-on",
+      "free-certificate",
+      "classification-focused"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-odin-foundations",
+    "candidate_id": "odin-foundations",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.theodinproject.com/paths/foundations/courses/foundations",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Project-led beginner web-development foundation covering developer setup, command line, Git, HTML, CSS and JavaScript through a sequence of lessons, exercises and portfolio-style projects.",
+    "prerequisites": "No prior programming experience required; learners need basic computer literacy",
+    "required_resources": "A computer suitable for a local development environment, command-line tools, Git and a web browser; no paid course platform or cloud service is required",
+    "component_evidence": {
+      "pedagogy": "The curriculum deliberately teaches learners to read documentation, solve problems and build independently instead of following only step-by-step videos, with concepts reinforced by progressively harder projects.",
+      "depth": "For a foundation path it goes materially beyond syntax, covering development workflow, Git, layout, DOM-oriented JavaScript and problem solving, while appropriately stopping before full-stack specialization.",
+      "practice": "Recipes, Landing Page, Rock Paper Scissors, Etch-a-Sketch and Calculator projects plus exercises make creation and debugging the primary learning mechanism.",
+      "materials": "The Odin Project combines its own explanations with deliberately curated external documentation and references, knowledge checks and project specifications in a coherent maintained curriculum.",
+      "currency": "The active curriculum tracks contemporary browser, Git, CSS and JavaScript practice and is less vulnerable to rapid obsolescence than framework-heavy full-stack content.",
+      "expertise": "The project is a long-running open curriculum maintained by experienced contributors and developers, with strong practical web-development focus even without a conventional academic faculty model.",
+      "accessibility": "Everything is free and self-paced with no credential paywall, but learners need a capable computer and must manage a real local development environment rather than relying on a fully hosted sandbox."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.2,
+      "practice": 9.5,
+      "materials": 8.8,
+      "currency": 9.1,
+      "expertise": 8.6,
+      "accessibility": 8.8
+    },
+    "quality_score": 8.9,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "One of the strongest default recommendations for a learner who wants genuine web-development competence rather than a quick certificate. Its project discipline and developer workflow beat most passive beginner curricula; freeCodeCamp is easier for learners who need a hosted environment and formal credential.",
+    "comparators": [
+      "freecodecamp-responsive-web-design-v9",
+      "freecodecamp-javascript-v9"
+    ],
+    "evidence": [
+      "https://www.theodinproject.com/paths/foundations/courses/foundations",
+      "https://www.theodinproject.com/lessons/foundations-how-this-course-will-work"
+    ],
+    "flags": [
+      "project-heavy",
+      "no-formal-credential",
+      "web-development"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-odin-full-stack-javascript",
+    "candidate_id": "odin-full-stack-javascript",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.theodinproject.com/paths/full-stack-javascript",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Long-form full-stack JavaScript pathway spanning intermediate and advanced HTML/CSS, JavaScript, React, databases, Node.js and employability, with numerous portfolio projects across the stack.",
+    "prerequisites": "The Odin Project Foundations path or equivalent HTML, CSS, JavaScript, Git and command-line competence",
+    "required_resources": "Local development computer, command line, Git/GitHub, Node.js ecosystem, database tooling and web browser; no mandatory paid learning platform was verified",
+    "component_evidence": {
+      "pedagogy": "The path uses a consistent learn-read-build cycle across seven courses and expects independent research, debugging and project planning, progressively increasing learner autonomy.",
+      "depth": "The curriculum extends from intermediate front end through React, databases and Node.js into a genuinely substantial end-to-end development pathway rather than a short framework tour.",
+      "practice": "Dozens of projects across JavaScript, React, databases and Node require learners to produce portfolio work and integrate concepts across courses, making practice exceptionally strong.",
+      "materials": "Structured lessons, curated documentation, project briefs and community-maintained references form a comprehensive resource set, though the learner must navigate more external documentation than in a closed platform.",
+      "currency": "The actively maintained stack is broadly current, but React, Node and web tooling change quickly enough that this path requires more frequent maintenance than the Foundations curriculum.",
+      "expertise": "The open-source curriculum is maintained by an experienced web-development community and is strongly aligned with practical developer workflows, albeit without formal instructor credential signalling.",
+      "accessibility": "The path is completely free but long, demanding and dependent on a locally managed development stack, creating more setup and persistence friction than hosted interactive curricula."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 9,
+      "practice": 9.6,
+      "materials": 8.9,
+      "currency": 8.8,
+      "expertise": 8.6,
+      "accessibility": 8.3
+    },
+    "quality_score": 9.02,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "A leading free route for learners who want serious full-stack JavaScript competence and portfolio evidence. freeCodeCamp is lower-friction and credentialed; Odin is stronger when the goal is realistic independent development practice.",
+    "comparators": [
+      "freecodecamp-javascript-v9",
+      "odin-foundations"
+    ],
+    "evidence": [
+      "https://www.theodinproject.com/paths/full-stack-javascript"
+    ],
+    "flags": [
+      "project-heavy",
+      "no-formal-credential",
+      "web-stack-currency-sensitive"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-freecodecamp-javascript-v9",
+    "candidate_id": "freecodecamp-javascript-v9",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.freecodecamp.org/learn/javascript-v9/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free freeCodeCamp JavaScript Certification after the required curriculum, five projects and certification exam",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Current JavaScript v9 certification path built from interactive lessons, workshops, labs, reviews and quizzes, with five required projects followed by a certification exam.",
+    "prerequisites": "Beginner-oriented; no formal prerequisite beyond basic computer and browser use",
+    "required_resources": "Modern web browser and free freeCodeCamp account for progress and certification; the core curriculum runs in the hosted learning environment",
+    "component_evidence": {
+      "pedagogy": "The current certification mixes explanation with workshops, labs, review and quizzes instead of relying on one challenge format, giving repeated exposure before learners reach certification projects.",
+      "depth": "The pathway is substantial enough to require five certification projects and an exam, though it remains a JavaScript-focused credential rather than a complete software-engineering or full-stack pathway by itself.",
+      "practice": "Interactive coding is continuous and the five required projects create meaningful synthesis beyond individual exercises, making practice one of the curriculum's strongest dimensions.",
+      "materials": "The hosted curriculum provides integrated instructions, editors, tests, labs, reviews, quizzes and project requirements, with the complete source curriculum publicly maintained in the freeCodeCamp repository.",
+      "currency": "JavaScript v9 is the active curriculum and is under current repository maintenance, which is important for language and browser-platform changes; active evolution can also introduce temporary content/platform defects.",
+      "expertise": "freeCodeCamp has extensive experience building and maintaining large-scale developer curricula and open-source learning infrastructure, with content continuously exercised by a large learner/contributor base.",
+      "accessibility": "The curriculum, projects, exam and certification are free, browser-hosted and beginner-friendly, with exceptionally low setup friction compared with local-development-first alternatives."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.4,
+      "practice": 9.2,
+      "materials": 8.7,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.79,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A top recommendation for learners who need low-friction, high-volume JavaScript practice plus a genuinely free credential. Odin remains stronger for realistic local developer workflow and broader independent project habits.",
+    "comparators": [
+      "odin-foundations",
+      "odin-full-stack-javascript",
+      "saylor-cs101-programming-i"
+    ],
+    "evidence": [
+      "https://www.freecodecamp.org/learn/javascript-v9/",
+      "https://github.com/freeCodeCamp/freeCodeCamp",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/curriculum/challenges/english/certifications/javascript-v9.yml"
+    ],
+    "flags": [
+      "project-heavy",
+      "free-certificate",
+      "living-curriculum"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-berkeley-cs61a-fall-2026",
+    "candidate_id": "berkeley-cs61a-fall-2026",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://cs61a.org/fa26/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No public completion credential for independent learners",
+    "academic_credits": "UC Berkeley course credit applies to enrolled students only; no independent-learner credit is available",
+    "self_paced": false,
+    "scope_notes": "Current Fall 2026 introductory computer-science course covering abstraction, functional and object-oriented programming, data, interpreters and software construction, with public readings, videos, labs, homework, four major projects and a new AI-assisted software-application unit.",
+    "prerequisites": "Designed as an introductory Berkeley CS course; mathematical maturity and willingness to program intensively are helpful",
+    "required_resources": "Computer and public course tooling for independent study; Berkeley submission, grading, staff support and some assessment services are restricted to enrolled students",
+    "component_evidence": {
+      "pedagogy": "CS61A tightly integrates lectures, the Composing Programs text, labs, homework, discussions and large projects around core abstraction ideas, with cumulative assignments that repeatedly revisit foundational concepts.",
+      "depth": "The course covers programming paradigms, abstraction, data structures, interpreters and software construction at a level far beyond most introductory online programming courses.",
+      "practice": "Four substantial projects plus recurring labs and homework make implementation central to the course, and the 2026 edition adds a software-application unit involving modern AI-assisted coding practice.",
+      "materials": "Public readings, lecture videos, slides, assignments, project specifications and the online textbook form an unusually complete academic package for independent study.",
+      "currency": "The Fall 2026 edition is current and explicitly updates the course for contemporary software and AI-assisted development while retaining stable computer-science foundations.",
+      "expertise": "UC Berkeley CS61A is designed and taught by specialist computer-science faculty and course staff with deep expertise in introductory programming, programming languages and pedagogy.",
+      "accessibility": "The public content is extensive and free, but independent learners lack enrolled-student submission, grading, staff interaction and parts of the assessment infrastructure, and the live semester pacing is not designed as a self-paced MOOC."
+    },
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.4,
+      "practice": 9.6,
+      "materials": 9.4,
+      "currency": 9.8,
+      "expertise": 9.6,
+      "accessibility": 7.2
+    },
+    "quality_score": 9.42,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "The highest intrinsic-quality course in this batch and an exceptional choice for a disciplined independent learner seeking rigorous CS foundations. Odin and freeCodeCamp are easier to complete autonomously because their full support and completion workflows are designed for public learners.",
+    "comparators": [
+      "saylor-cs101-programming-i",
+      "freecodecamp-python-v9",
+      "mit-6-006-algorithms"
+    ],
+    "evidence": [
+      "https://cs61a.org/fa26/",
+      "https://cs61a.org/fa26/syllabus/",
+      "https://cs61a.org/fa26/articles/whats-new/"
+    ],
+    "flags": [
+      "current-term-course",
+      "institution-services-limited",
+      "project-heavy",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-openlearn-intro-cyber-security",
+    "candidate_id": "openlearn-intro-cyber-security",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/digital-computing/introduction-cyber-security-stay-safe-online",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Open University digital badge and Statement of Participation after the published course requirements",
+    "academic_credits": "No academic credit verified for the free OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-hour eight-week introductory cybersecurity course, updated in March 2026, covering threats and malware, network security, cryptography, identity theft, risk management and personal/organizational security practice.",
+    "prerequisites": "No specialist cybersecurity prerequisite; designed for introductory learners",
+    "required_resources": "Web browser; core content can be viewed without registration, while a free OpenLearn account is needed to track progress and receive quizzes, badge and participation statement",
+    "component_evidence": {
+      "pedagogy": "The eight-week structure develops threats, controls and risk progressively and uses weekly activities and quizzes rather than presenting cybersecurity as a disconnected glossary.",
+      "depth": "Twenty-four hours permits substantially more conceptual development than short industry primers, while still remaining an introductory course rather than a technical penetration-testing or security-engineering pathway.",
+      "practice": "Weekly interactive quizzes and applied security activities reinforce learning, but the course does not provide the sustained technical labs or attack/defence environments of specialist hands-on cybersecurity training.",
+      "materials": "OpenLearn provides structured readings, activities, quizzes and downloadable/offline formats, with the badge and statement integrated into the same free learner route.",
+      "currency": "The course was updated on 5 March 2026, a major strength in a fast-moving security field, while its foundational treatment of threats, networks, cryptography and risk remains broadly durable.",
+      "expertise": "The Open University has established academic and professional expertise in computing education, and the course is maintained as a formal OpenLearn badged course with CPD recognition.",
+      "accessibility": "Content is free, self-paced, downloadable and usable before registration; a free account unlocks progress tracking and rewards, with no specialist hardware or paid lab environment required."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.1,
+      "practice": 7.9,
+      "materials": 9.1,
+      "currency": 9.6,
+      "expertise": 9.2,
+      "accessibility": 9.6
+    },
+    "quality_score": 8.67,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "The strongest general cybersecurity foundation in this batch: current, long enough to teach risk coherently, low-friction and credentialed. Microsoft AI Security is a better narrow supplement for current AI-specific threats, not a substitute for this broader foundation.",
+    "comparators": [
+      "ibm-skillsbuild-cybersecurity-fundamentals",
+      "microsoft-learn-ai-security-fundamentals"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/digital-computing/introduction-cyber-security-stay-safe-online"
+    ],
+    "flags": [
+      "updated-2026",
+      "free-badge",
+      "introductory",
+      "cybersecurity"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-microsoft-learn-ai-security-fundamentals",
+    "candidate_id": "microsoft-learn-ai-security-fundamentals",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Microsoft Learn progress and module pass designations; no formal free completion certificate verified",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Two-hour-ten-minute specialist path of three modules covering AI threat architecture, prompt injection, jailbreaking, model manipulation, data exfiltration, security controls, monitoring and AI red-team testing.",
+    "prerequisites": "Basic understanding of artificial intelligence and cybersecurity concepts",
+    "required_resources": "Web browser and Microsoft Learn account for progress; no paid Azure resource was verified as necessary for the conceptual path",
+    "component_evidence": {
+      "pedagogy": "The three modules follow a useful threat-to-control-to-testing sequence and each includes an assessment, producing a coherent short specialist briefing rather than a random collection of security topics.",
+      "depth": "The path covers important AI-security mechanisms but only has about two hours of learning time, which sharply limits technical depth, implementation detail and treatment of competing threat models.",
+      "practice": "Assessments provide knowledge checking, but the public path does not demonstrate sustained red-team labs, exploit exercises or defensive implementation projects.",
+      "materials": "Microsoft Learn provides concise structured modules with threat descriptions, mitigations and assessment units in a maintained browser-native format.",
+      "currency": "Prompt injection, jailbreaks, model manipulation, data exfiltration, AI controls and red teaming are highly current concerns, giving the path exceptional topical currency in 2026.",
+      "expertise": "Microsoft develops major AI platforms and security products and publishes current AI-security guidance, giving strong domain relevance for the threats and controls discussed.",
+      "accessibility": "The path is short, free, self-paced and low-friction, with only basic AI/security prerequisites and no verified mandatory paid cloud exercise."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 6.8,
+      "practice": 6.4,
+      "materials": 8.4,
+      "currency": 9.9,
+      "expertise": 9.2,
+      "accessibility": 9.3
+    },
+    "quality_score": 7.91,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "An unusually current and efficient AI-security update, but too short and too light on hands-on work to serve as a complete cybersecurity course. Best used after or alongside a broader foundation such as OpenLearn or IBM.",
+    "comparators": [
+      "openlearn-intro-cyber-security",
+      "ibm-skillsbuild-cybersecurity-fundamentals"
+    ],
+    "evidence": [
+      "https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/",
+      "https://learn.microsoft.com/en-us/training/modules/introduction-ai-security/",
+      "https://learn.microsoft.com/en-us/training/modules/ai-security-testing/"
+    ],
+    "flags": [
+      "fast-moving-content",
+      "short-course",
+      "vendor-authored",
+      "ai-security"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-02-ibm-skillsbuild-cybersecurity-fundamentals",
+    "candidate_id": "ibm-skillsbuild-cybersecurity-fundamentals",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://skillsbuild.org/learning-catalog?topic=security",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Cybersecurity Fundamentals digital credential after completing the pathway and passing the final assessment at the published threshold",
+    "academic_credits": "None verified",
+    "self_paced": true,
+    "scope_notes": "Approximately seven-to-eight-hour cybersecurity fundamentals pathway covering threat actors, attacks and social engineering, cryptography, prevention, detection, response, careers and emerging AI-related security impacts.",
+    "prerequisites": "No advanced security prerequisite verified; positioned as a fundamentals pathway",
+    "required_resources": "Web browser and free IBM SkillsBuild account; no specialist hardware or paid cyber range was verified as mandatory",
+    "component_evidence": {
+      "pedagogy": "The pathway organizes offensive concepts, defensive controls and career context into a clear introductory sequence and concludes with an assessed credential requirement.",
+      "depth": "Its seven-to-eight-hour scope gives more room than a microcourse for the core attack/defence lifecycle, but remains shallower than OpenLearn's twenty-four-hour foundation and does not become technical security engineering.",
+      "practice": "The final assessment and learning activities provide active checking, but the base Cybersecurity Fundamentals credential does not document a substantial hands-on capstone or cyber-range lab sequence.",
+      "materials": "IBM SkillsBuild provides an integrated free learning path and credential workflow with current coverage of core security concepts; the public catalog exposes less granular curriculum detail than OpenLearn.",
+      "currency": "The current pathway includes emerging AI impacts alongside established threat, cryptography and response concepts, indicating active maintenance relevant to today's security landscape.",
+      "expertise": "IBM has deep professional cybersecurity and enterprise-technology expertise and issues the SkillsBuild credential directly, providing strong subject and industry relevance.",
+      "accessibility": "The course and digital credential are free, self-paced and require no verified specialist equipment, making it an accessible credential-bearing option for beginners."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 7.6,
+      "practice": 6.9,
+      "materials": 8.3,
+      "currency": 9,
+      "expertise": 9,
+      "accessibility": 9.2
+    },
+    "quality_score": 8.04,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "A solid credentialed cybersecurity foundation with better breadth than a short microcourse and lower time commitment than OpenLearn. OpenLearn remains the stronger learning experience; IBM is attractive when a recognized free industry credential and shorter path matter more.",
+    "comparators": [
+      "openlearn-intro-cyber-security",
+      "microsoft-learn-ai-security-fundamentals"
+    ],
+    "evidence": [
+      "https://skillsbuild.org/learning-catalog?topic=security",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/cybersecurity-fundamentals"
+    ],
+    "flags": [
+      "free-credential",
+      "introductory",
+      "assessment-led"
+    ],
+    "is_current": true
+  }
+]
