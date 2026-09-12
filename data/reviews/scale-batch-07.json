@@ -1,0 +1,742 @@
+[
+  {
+    "review_id": "deep-08-language-transfer-complete-spanish",
+    "candidate_id": "language-transfer-complete-spanish",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.languagetransfer.org/complete-spanish",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado formal; todo o material Language Transfer é disponibilizado gratuitamente",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso áudio completo de 90 faixas que ensina espanhol através do Thinking Method, reconstruindo vocabulário e estruturas a partir do inglês e exigindo produção oral frequente em vez de memorização de frases.",
+    "prerequisites": "Inglês suficiente para acompanhar a mediação; sem espanhol prévio obrigatório",
+    "required_resources": "Navegador, app Language Transfer, YouTube/SoundCloud ou ficheiros áudio descarregáveis; sem conta ou pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "O método usa diálogo socrático guiado: o professor pede ao aluno que derive formas e produza frases antes de ouvir a resposta, tornando o áudio consistentemente ativo em vez de expositivo.",
+      "depth": "As 90 faixas desenvolvem uma base estrutural extensa em tempos verbais, pronomes, ser/estar, por/para, subjuntivo e construção de frases, mas cobrem menos vocabulário, leitura e escrita do que um percurso equilibrado por níveis CEFR.",
+      "practice": "A prática oral de recuperação e transformação ocorre quase continuamente dentro das aulas; faltam, porém, testes formais, feedback automatizado e interação comunicativa autêntica.",
+      "materials": "Os áudios podem ser reproduzidos no site/app ou descarregados integralmente, mas o percurso oficial continua sobretudo áudio e oferece menos suporte visual, textual e de progressão do que plataformas multimédia completas.",
+      "currency": "A gramática e pronúncia fundamentais do espanhol são estáveis e a rota continua operacional em 2026; a idade das gravações tem baixo custo conceptual, embora exemplos e ecossistema pedagógico não sejam recentes.",
+      "expertise": "Mihalis Eleftheriou concebeu o Thinking Method e o curso completo; a qualidade metodológica é clara, mas o projeto é essencialmente de um único autor e tem menos validação institucional explícita do que grandes programas universitários.",
+      "accessibility": "O percurso é genuinamente gratuito, sem publicidade, paywall ou registo obrigatório, pode ser descarregado e é de baixa fricção; depende, contudo, do inglês como língua de mediação."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 8.5,
+      "practice": 8.7,
+      "materials": 7.8,
+      "currency": 8.8,
+      "expertise": 8.5,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.79,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "Uma das melhores fundações gratuitas para falantes de inglês que querem compreender e produzir a estrutura do espanhol. Não é, por si só, um percurso completo de quatro competências; deve ser combinado com input, leitura e conversação.",
+    "comparators": [
+      "tv5monde-premiere-classe-french",
+      "dw-nicos-weg-a1-b1"
+    ],
+    "evidence": [
+      "https://www.languagetransfer.org/complete-spanish",
+      "https://www.languagetransfer.org/about",
+      "https://www.languagetransfer.org/guidebook"
+    ],
+    "flags": [
+      "audio-first",
+      "thinking-method",
+      "90-tracks",
+      "no-formal-assessment",
+      "no-formal-credential",
+      "english-mediated"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-language-transfer-complete-greek",
+    "candidate_id": "language-transfer-complete-greek",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.languagetransfer.org/greek",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado formal; todo o material Language Transfer é disponibilizado gratuitamente",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso áudio completo de 120 faixas de grego moderno, centrado em derivação estrutural, gramática, produção oral e compreensão de padrões através do Thinking Method.",
+    "prerequisites": "Inglês suficiente para acompanhar a mediação; sem grego prévio obrigatório",
+    "required_resources": "Navegador, app Language Transfer, YouTube/SoundCloud ou ficheiros áudio descarregáveis; sem conta ou pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "O aluno constrói respostas em grego a partir de pistas e relações estruturais, com explicação imediata dos padrões; a sequência reduz memorização mecânica e promove raciocínio linguístico.",
+      "depth": "Cento e vinte faixas permitem um tratamento estrutural profundo para uma fundação gratuita, embora vocabulário, leitura extensiva, escrita e escuta de fala nativa permaneçam sub-representados.",
+      "practice": "A produção oral guiada é frequente e cumulativa, mas não existe avaliação formal, correção automática ou tarefa comunicativa com interlocutores além do modelo áudio.",
+      "materials": "O curso oficial oferece streaming, app e download integral dos áudios; a simplicidade favorece foco, mas é menos completa em materiais de leitura, exercícios escritos e acompanhamento de progresso.",
+      "currency": "O núcleo do grego moderno é estável e os áudios continuam ativamente disponibilizados, incluindo remasterizações recentes; a idade do curso original tem impacto limitado na correção estrutural.",
+      "expertise": "O percurso é criado por Mihalis Eleftheriou através do Thinking Method; demonstra forte desenho pedagógico, embora não tenha a mesma transparência de equipa académica ou revisão externa dos programas institucionais.",
+      "accessibility": "Totalmente gratuito, descarregável e sem conta obrigatória; a mediação em inglês e o formato exclusivamente áudio limitam acessibilidade a alguns perfis de aprendizagem."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 8.7,
+      "practice": 8.7,
+      "materials": 7.8,
+      "currency": 8.7,
+      "expertise": 8.5,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.8,
+    "recommendation_score": 9,
+    "recommendation_rationale": "Uma fundação estrutural excecional para grego moderno e uma oferta gratuita rara em profundidade. A recomendação fica ligeiramente abaixo do espanhol por exigir complementos substanciais de vocabulário, leitura e exposição comunicativa.",
+    "comparators": [
+      "language-transfer-complete-spanish",
+      "language-transfer-complete-swahili"
+    ],
+    "evidence": [
+      "https://www.languagetransfer.org/greek",
+      "https://www.languagetransfer.org/about",
+      "https://www.languagetransfer.org/guidebook"
+    ],
+    "flags": [
+      "audio-first",
+      "thinking-method",
+      "120-tracks",
+      "no-formal-assessment",
+      "no-formal-credential",
+      "english-mediated"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-language-transfer-complete-swahili",
+    "candidate_id": "language-transfer-complete-swahili",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.languagetransfer.org/swahili",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado formal; todo o material Language Transfer é disponibilizado gratuitamente",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso áudio completo de 110 faixas de suaíli que usa o Thinking Method para desenvolver estrutura gramatical, formação de frases e produção oral guiada.",
+    "prerequisites": "Inglês suficiente para acompanhar a mediação; sem suaíli prévio obrigatório",
+    "required_resources": "Navegador, app Language Transfer, YouTube/SoundCloud ou ficheiros áudio descarregáveis; sem conta ou pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "A sequência explora padrões de forma dialogada e exige que o aluno produza a resposta antes da confirmação, criando aprendizagem ativa com baixa dependência de memorização.",
+      "depth": "As 110 faixas constituem uma base estrutural invulgarmente profunda para suaíli gratuito, mas a cobertura de leitura, escrita, vocabulário amplo e exposição a múltiplos falantes é limitada.",
+      "practice": "A prática de construção oral é recorrente e cumulativa; faltam avaliação formal, exercícios escritos integrados e comunicação autêntica com feedback externo.",
+      "materials": "Streaming, app e download de todo o curso tornam os materiais robustamente disponíveis, embora o pacote permaneça essencialmente áudio e sem sistema de progresso ou recursos multimédia extensos.",
+      "currency": "A estrutura fundamental do suaíli é estável e a rota continua disponível em 2026; a gravação concluída em 2018 não cria um problema de atualidade comparável a domínios técnicos.",
+      "expertise": "O curso resulta do trabalho de Mihalis Eleftheriou e do seu método independente; a clareza pedagógica é forte, mas a transparência sobre revisão linguística institucional é menor do que em ofertas universitárias.",
+      "accessibility": "É totalmente gratuito, descarregável e sem paywall, uma vantagem importante numa língua com menos alternativas abertas; a mediação em inglês e o formato áudio criam algumas barreiras."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 8.5,
+      "practice": 8.6,
+      "materials": 7.8,
+      "currency": 8.6,
+      "expertise": 8.4,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.7,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "Uma das melhores fundações gratuitas disponíveis para suaíli, sobretudo pela profundidade estrutural e baixa fricção. Continua a precisar de leitura, vocabulário e contacto comunicativo complementares.",
+    "comparators": [
+      "language-transfer-complete-greek",
+      "language-transfer-complete-spanish"
+    ],
+    "evidence": [
+      "https://www.languagetransfer.org/swahili",
+      "https://www.languagetransfer.org/about",
+      "https://www.languagetransfer.org/guidebook"
+    ],
+    "flags": [
+      "audio-first",
+      "thinking-method",
+      "110-tracks",
+      "no-formal-assessment",
+      "no-formal-credential",
+      "english-mediated"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-minato-marugoto-a1-1-integrated",
+    "candidate_id": "minato-marugoto-a1-1-integrated",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://minato-jf.jp/CourseDetail/Index/KC26_MGRS_A101_EN01",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Nenhum credencial formal gratuito confirmado; conclusão exige pelo menos 60 pontos no percurso",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso integrado A1-1 de japonês com 48 horas, cinco tópicos e dez lições, combinando Katsudoo e Rikai para fala, escuta, leitura e escrita, com progresso, trabalhos e testes.",
+    "prerequisites": "Sem japonês prévio; explicações em inglês",
+    "required_resources": "Navegador moderno e conta Minato gratuita; o acesso dura seis meses a partir do início do curso e a gravação de voz é suportada em Chrome",
+    "component_evidence": {
+      "pedagogy": "O desenho combina comunicação situacional com estudo sistemático da língua e cultura, organizando cada objetivo em Can-do concretos e articulando compreensão, produção e reflexão linguística.",
+      "depth": "O curso cobre uma primeira etapa A1 de forma substantiva e equilibrada, incluindo apresentação pessoal, família, alimentação, casa e rotina; a profundidade é forte para A1-1 mas naturalmente limitada a um nível inicial.",
+      "practice": "Os alunos escutam, falam, leem e escrevem, submetem trabalhos, gerem progresso e fazem testes; a própria voz pode ser gravada, oferecendo prática muito mais equilibrada do que cursos apenas de reconhecimento.",
+      "materials": "O ecossistema Marugoto integra conteúdo interativo, materiais do Japan Foundation, acompanhamento de progresso, tarefas e testes numa experiência coerente.",
+      "currency": "O curso KC26 é a rota atual de 2026, com inscrição a qualquer momento e materiais ativos; o conteúdo de japonês básico é estável e a plataforma está operacional.",
+      "expertise": "A Japan Foundation desenvolve Marugoto especificamente para ensino de língua e cultura japonesas e opera o curso através do seu centro de e-learning.",
+      "accessibility": "Gratuito, autoformativo e com explicações em inglês, mas exige conta e impõe uma janela de seis meses após o início; 48 horas representam um compromisso real mas razoável."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8.7,
+      "practice": 9.4,
+      "materials": 9.3,
+      "currency": 9.6,
+      "expertise": 9.6,
+      "accessibility": 9.2
+    },
+    "quality_score": 9.23,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "Candidato a líder para japonês A1: quatro competências, tarefas, testes e 48 horas num percurso oficial gratuito e coerente. A limitação principal é ser apenas a primeira etapa A1 e ter acesso temporizado após o início.",
+    "comparators": [
+      "dw-nicos-weg-a1-b1",
+      "tv5monde-premiere-classe-french"
+    ],
+    "evidence": [
+      "https://minato-jf.jp/CourseDetail/Index/KC26_MGRS_A101_EN01",
+      "https://www.marugoto-online.jp/info/"
+    ],
+    "flags": [
+      "japanese-a1",
+      "four-skills",
+      "48-hours",
+      "assignments",
+      "tests",
+      "six-month-access",
+      "current-2026"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-tv5monde-premiere-classe-french",
+    "candidate_id": "tv5monde-premiere-classe-french",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://apprendre.tv5monde.com/en/collection-all",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado formal de conclusão verificado",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Percurso A1 para principiantes absolutos com mais de 500 exercícios baseados em vídeos autênticos, organizado em sete temas de vida quotidiana e profissional, com vocabulário, gramática, pronúncia e interculturalidade.",
+    "prerequisites": "Sem francês prévio; o A1 oferece interface e apoio traduzidos em várias línguas",
+    "required_resources": "Navegador ou app TV5MONDE; conta opcional para guardar progresso, sem pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "O curso parte de vídeo autêntico mas adapta tarefas ao nível A1, oferecendo legendas, transcrições, tradução e autocorreção para transformar media real em input compreensível.",
+      "depth": "Mais de 500 exercícios em sete temas dão amplitude sólida dentro do A1, embora o percurso não pretenda avançar para A2 ou além como uma única sequência.",
+      "practice": "A densidade de exercícios, autocorreção, treino de compreensão, vocabulário, gramática e pronúncia cria prática frequente; produção oral e escrita livre com feedback são menos fortes.",
+      "materials": "TV5MONDE oferece vídeo, transcrição dinâmica, legendas, tradução, app móvel, registo de progresso e grande banco de exercícios numa plataforma madura.",
+      "currency": "O percurso foi renovado em 2022 e permanece ativamente disponibilizado em 2026; o francês A1 é estável e a plataforma continua mantida.",
+      "expertise": "O percurso foi desenvolvido pela TV5MONDE com apoio académico e institucional, incluindo parceria histórica com o Institut des langues vivantes da Université catholique de Louvain.",
+      "accessibility": "É gratuito, funciona em web e app e disponibiliza apoio A1 em nove línguas além do francês; a combinação de tradução, legendas e autocorreção reduz fortemente a barreira inicial."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.3,
+      "practice": 9.5,
+      "materials": 9.4,
+      "currency": 9,
+      "expertise": 9.3,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.1,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "Uma das melhores recomendações gratuitas para começar francês: enorme volume de prática A1 com vídeo autêntico, autocorreção e apoio multilingue. Não substitui um percurso A1–B1 completo.",
+    "comparators": [
+      "dw-nicos-weg-a1-b1",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "evidence": [
+      "https://apprendre.tv5monde.com/en/collection-all",
+      "https://support-apprendre.tv5monde.com/en/support/solutions/articles/61000298788-where-to-start-",
+      "https://presse.tv5monde.com/premiere-classe-avec-tv5monde-un-parcours-dapprentissage-gratuit-pour-les-debutants-en-francaisversion-2022/?lang=fr"
+    ],
+    "flags": [
+      "french-a1",
+      "500-plus-exercises",
+      "authentic-video",
+      "multilingual-support",
+      "auto-correction",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-dw-nicos-weg-a1-b1",
+    "candidate_id": "dw-nicos-weg-a1-b1",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learngerman.dw.com/en/nicos-weg/c-36519789",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "de"
+    ],
+    "subtitle_languages": [],
+    "credential": "Nenhum certificado gratuito foi confirmado por fonte primária no Deep Review; testes e exercícios permanecem gratuitos",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Percurso narrativo de alemão desde A1 até B1, organizado em três níveis através da história de Nico, com centenas de pequenos episódios e páginas de exercícios de gramática, vocabulário e compreensão.",
+    "prerequisites": "Sem alemão prévio para A1; o percurso progride pelos níveis CEFR A1, A2 e B1",
+    "required_resources": "Navegador ou dispositivo móvel; vídeos também disponíveis nos canais oficiais DW, sem pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "A narrativa contínua fornece contexto e repetição natural, enquanto cada episódio é ligado a explicações e exercícios, evitando uma sequência fragmentada de frases descontextualizadas.",
+      "depth": "Cobrir A1, A2 e B1 numa única família dá profundidade e progressão muito superiores à maioria dos recursos gratuitos de iniciação.",
+      "practice": "Vídeos, exercícios interativos, gramática, vocabulário e testes finais criam prática frequente de compreensão e reconhecimento; produção livre com feedback continua menos desenvolvida.",
+      "materials": "A DW mantém uma grande coleção integrada de episódios, áudio, material linguístico e exercícios, e continua a referenciar Nicos Weg nos seus materiais oficiais de preparação linguística.",
+      "currency": "Embora a produção principal seja anterior a 2020, a rota continua ativa e oficialmente recomendada pela DW em materiais de 2025/2026; a língua-alvo e os cenários básicos envelhecem lentamente.",
+      "expertise": "A Deutsche Welle possui longa experiência institucional em ensino gratuito de alemão e construiu o percurso especificamente para aprendizagem CEFR.",
+      "accessibility": "O percurso é gratuito, acessível em múltiplos dispositivos e pode ser iniciado do zero; a escala extensa exige compromisso, mas não hardware, pagamento ou software especializado."
+    },
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.6,
+      "practice": 9.5,
+      "materials": 9.6,
+      "currency": 9.1,
+      "expertise": 9.5,
+      "accessibility": 9.7
+    },
+    "quality_score": 9.5,
+    "recommendation_score": 9.7,
+    "recommendation_rationale": "Candidato a líder da categoria: a progressão A1–B1, narrativa, volume de prática e materiais integrados fazem de Nicos Weg a recomendação gratuita mais completa deste lote para uma língua específica.",
+    "comparators": [
+      "tv5monde-premiere-classe-french",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "evidence": [
+      "https://learngerman.dw.com/en/nicos-weg/c-36519789",
+      "https://www.youtube.com/watch?v=4-eDoThe6qo",
+      "https://static.dw.com/downloads/72921723/deine-deutschpruefung-a1-start-deutsch-1-hoeren-lerntipps-englisch%2520.pdf"
+    ],
+    "flags": [
+      "german-a1-b1",
+      "story-driven",
+      "interactive-exercises",
+      "multi-level",
+      "category-leader-candidate",
+      "no-primary-credential-verification"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-openlearn-how-learn-language",
+    "candidate_id": "openlearn-how-learn-language",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.open.edu/openlearn/languages/how-learn-language",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Statement of Participation e badge digital Open University gratuitos após os requisitos de conclusão",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso metacognitivo de 24 horas e oito semanas sobre motivação, objetivos, vocabulário, quatro competências, avaliação de recursos, prática autónoma, comunidades e criação de imersão virtual.",
+    "prerequisites": "Nenhum; dirigido a quem está a começar ou já está a aprender qualquer língua",
+    "required_resources": "Navegador; conta OpenLearn gratuita para quizzes, progresso, statement e badge; materiais descarregáveis em múltiplos formatos",
+    "component_evidence": {
+      "pedagogy": "O curso ensina o aluno a gerir a própria aprendizagem, transformando objetivos, motivação, recursos e prática das quatro competências em decisões concretas e repetíveis.",
+      "depth": "Vinte e quatro horas permitem explorar profundamente estratégias de aprendizagem, embora o curso não ensine uma língua-alvo específica nem substitua prática linguística direta.",
+      "practice": "Há atividades semanais, planeamento, prática de estratégias e quizzes; dois quizzes de badge nas semanas 4 e 8 exigem pelo menos 50% e fornecem feedback/tentativas.",
+      "materials": "Texto, vídeo, fichas, quizzes, referências e downloads em vários formatos formam um pacote de autoestudo completo e reutilizável.",
+      "currency": "A última atualização formal é de março de 2020. Estratégias de aprendizagem linguística são relativamente estáveis, mas ferramentas digitais e ecossistemas de apps mudaram desde então.",
+      "expertise": "Os autores são académicos e especialistas em ensino de línguas da Open University, incluindo Fernando Rosell-Aguilar e Tita Beaven.",
+      "accessibility": "É gratuito, pode ser iniciado sem conta e oferece downloads offline; uma conta gratuita acrescenta quizzes, progresso, statement e badge."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8.5,
+      "practice": 8.9,
+      "materials": 9.3,
+      "currency": 8.3,
+      "expertise": 9.3,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.96,
+    "recommendation_score": 9,
+    "recommendation_rationale": "Excelente complemento transversal para qualquer percurso linguístico, sobretudo para autonomia e estratégia. Não deve competir como substituto de Nicos Weg, Marugoto ou outros cursos que ensinam diretamente uma língua.",
+    "comparators": [
+      "dw-nicos-weg-a1-b1",
+      "language-transfer-complete-spanish"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/languages/how-learn-language",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=68248&section=1.2"
+    ],
+    "flags": [
+      "metacognition",
+      "24-hours",
+      "eight-weeks",
+      "badge",
+      "learning-strategy",
+      "updated-2020"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-freecodecamp-a2-english-developers",
+    "candidate_id": "freecodecamp-a2-english-developers",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.freecodecamp.org/learn/a2-english-for-developers",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificação freeCodeCamp gratuita; o exame final A2 está live desde dezembro de 2025",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Percurso A2 de inglês contextualizado em trabalho e desenvolvimento de software, com diálogos, áudio/vídeo, tarefas interativas, vocabulário técnico/profissional e exame final de certificação.",
+    "prerequisites": "Conhecimentos de inglês aproximadamente A1; orientado a aprendentes que querem usar inglês em contextos de tecnologia",
+    "required_resources": "Navegador e conta freeCodeCamp gratuita para progresso e certificação; sem pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "O curso ensina gramática e vocabulário dentro de diálogos e situações de equipa técnica, combinando instrução curta com tarefas passo a passo e feedback explicativo.",
+      "depth": "A cobertura A2 é extensa e inclui comunicação quotidiana de trabalho, reuniões, projetos, documentação e vocabulário técnico, embora permaneça uma especialização profissional e não um curso geral de inglês completo.",
+      "practice": "Centenas de tarefas usam áudio, vídeo, fill-in-the-blank e perguntas com feedback, culminando num exame de certificação; a prática é frequente mas predominantemente estruturada.",
+      "materials": "O currículo open-source integra cenas, áudio, transcrições, explicações e exercícios numa plataforma de progresso, com manutenção pública e correções contínuas.",
+      "currency": "A certificação ficou totalmente live em dezembro de 2025 e o currículo continua a receber correções em 2026; o rótulo Beta ainda aconselha alguma prudência sobre maturidade de produto.",
+      "expertise": "O curso é mantido pela equipa e comunidade curricular freeCodeCamp com revisão pública no repositório; a autoria linguística individual é menos transparente do que em programas académicos dedicados.",
+      "accessibility": "Todo o conteúdo e certificação são gratuitos e browser-based; o foco em developers é uma vantagem para o público-alvo mas reduz universalidade."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.5,
+      "practice": 9.2,
+      "materials": 8.8,
+      "currency": 9.6,
+      "expertise": 8.5,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.89,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "Uma recomendação muito forte para aprendentes A2 ligados a tecnologia: prática intensa e certificação gratuita atual. Para inglês geral, o enquadramento profissional pode ser demasiado estreito.",
+    "comparators": [
+      "freecodecamp-b1-english-developers",
+      "openlearn-how-learn-language"
+    ],
+    "evidence": [
+      "https://www.freecodecamp.org/learn/a2-english-for-developers",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/curriculum/structure/curriculum.json",
+      "https://forum.freecodecamp.org/t/a2-english-certification/770024"
+    ],
+    "flags": [
+      "english-a2",
+      "developer-context",
+      "beta-label",
+      "certification-exam",
+      "active-maintenance",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-freecodecamp-b1-english-developers",
+    "candidate_id": "freecodecamp-b1-english-developers",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.freecodecamp.org/learn/b1-english-for-developers",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Certificação freeCodeCamp gratuita; o exame final B1 está live desde dezembro de 2025",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Percurso B1 de inglês para developers focado em comunicação profissional e técnica, incluindo feedback, decisões, projetos, colaboração, descrição de experiências e linguagem de trabalho, com tarefas multimédia e exame final.",
+    "prerequisites": "Conhecimentos de inglês aproximadamente A2; vocabulário de tecnologia ajuda mas não é pré-requisito técnico formal",
+    "required_resources": "Navegador e conta freeCodeCamp gratuita para progresso e certificação; sem pagamento obrigatório",
+    "component_evidence": {
+      "pedagogy": "O curso contextualiza vocabulário, estruturas e pragmática em reuniões, feedback e cenários profissionais, com explicações após tarefas em vez de listas isoladas de regras.",
+      "depth": "O nível B1 desenvolve comunicação profissional mais complexa do que o A2 e cobre uma variedade ampla de funções linguísticas, embora continue orientado ao ambiente de desenvolvimento de software.",
+      "practice": "Áudio, cenas, preenchimento de lacunas, perguntas e feedback explicativo fornecem prática frequente, com exame final de certificação e manutenção ativa dos exercícios.",
+      "materials": "O currículo open-source disponibiliza materiais multimédia e desafios estruturados com histórico público de correções e evolução.",
+      "currency": "A certificação B1 ficou totalmente live em dezembro de 2025 e há manutenção visível durante 2026; a etiqueta Beta reduz ligeiramente a maturidade percebida sem invalidar a rota.",
+      "expertise": "A manutenção curricular comunitária e revisão pública são fortes; a transparência sobre especialistas individuais em ensino de inglês é mais limitada do que em ofertas de instituições linguísticas.",
+      "accessibility": "Completamente gratuito e acessível no browser, com certificação sem pagamento; o contexto técnico torna-o especialmente acessível e relevante a developers, mas menos geral."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.6,
+      "practice": 9.3,
+      "materials": 8.9,
+      "currency": 9.6,
+      "expertise": 8.5,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.96,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A melhor continuação gratuita do A2 freeCodeCamp para developers que já conseguem trabalhar em inglês básico. A prática e certificação são fortes; o rótulo Beta e a especialização profissional impedem uma recomendação universal.",
+    "comparators": [
+      "freecodecamp-a2-english-developers",
+      "openlearn-how-learn-language"
+    ],
+    "evidence": [
+      "https://www.freecodecamp.org/learn/b1-english-for-developers",
+      "https://github.com/freeCodeCamp/freeCodeCamp/blob/main/curriculum/structure/curriculum.json",
+      "https://forum.freecodecamp.org/t/b1-english-certification/771118"
+    ],
+    "flags": [
+      "english-b1",
+      "developer-context",
+      "beta-label",
+      "certification-exam",
+      "active-maintenance",
+      "free-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-blcu-umoocs-elementary-spoken-chinese",
+    "candidate_id": "blcu-umoocs-elementary-spoken-chinese",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://moocs.unipus.cn/course/7880",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "zh"
+    ],
+    "subtitle_languages": [],
+    "credential": "Nenhum credencial formal gratuito verificado; a sessão publica nota final e considera 60 pontos como aprovação",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso BLCU de 18 semanas para zero-beginners com 32 aulas, pinyin inicial e sete unidades comunicativas sobre família, localização, compras, alimentação, transporte, hobbies, tempo e viagens, com 10 avaliações.",
+    "prerequisites": "Zero-beginner em mandarim; a língua de apoio/explicação pública não está claramente indicada e a interface principal é chinesa",
+    "required_resources": "Conta UMOOCs e acesso durante a sessão ativa de 24 de agosto a 27 de dezembro de 2026",
+    "component_evidence": {
+      "pedagogy": "O curso declara uma abordagem funcional e orientada a tarefas, começando por pinyin e avançando para situações concretas de comunicação diária.",
+      "depth": "Trinta e duas aulas ao longo de 18 semanas e 2–3 horas semanais oferecem profundidade substancial para fala inicial, embora a prioridade seja comunicação oral e não equilíbrio completo de quatro competências.",
+      "practice": "Dez avaliações, testes regulares, exame intermédio/final e participação em discussão entram na classificação; isto cria uma estrutura de prática mais forte do que a maioria dos recursos gratuitos de mandarim.",
+      "materials": "Há 32 vídeos, 32 recursos descarregáveis, discussão e sistema de notas numa plataforma universitária estruturada.",
+      "currency": "A 15.ª edição decorre ativamente em 2026 e a página publica datas, avaliação e equipa atuais, eliminando dúvidas de disponibilidade.",
+      "expertise": "A equipa é composta por docentes da Beijing Language and Culture University, instituição especializada no ensino de chinês a falantes não nativos.",
+      "accessibility": "O curso é gratuito e concebido para zero-beginners, mas a interface/instrução pública predominantemente chinesa, o registo da plataforma e a janela temporal da sessão podem criar barreiras relevantes para aprendentes internacionais."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.6,
+      "practice": 8.7,
+      "materials": 8.6,
+      "currency": 10,
+      "expertise": 9.5,
+      "accessibility": 7
+    },
+    "quality_score": 8.82,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "Uma opção muito forte e atual para mandarim oral, sobretudo pela estrutura universitária e avaliações. A Recommendation fica abaixo da Quality porque a acessibilidade linguística da plataforma para um verdadeiro zero-beginner internacional permanece uma limitação real.",
+    "comparators": [
+      "mandarinx-mandarin-chinese-level-1",
+      "aljazeera-learning-arabic-general-language"
+    ],
+    "evidence": [
+      "https://moocs.unipus.cn/course/7880",
+      "https://higher.smartedu.cn/course/63eeb18baf1f1b5d3ecfb3ed"
+    ],
+    "flags": [
+      "mandarin",
+      "current-2026-run",
+      "18-weeks",
+      "32-videos",
+      "10-assessments",
+      "time-bounded-access",
+      "instruction-language-friction"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-mandarinx-mandarin-chinese-level-1",
+    "candidate_id": "mandarinx-mandarin-chinese-level-1",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://www.edx.org/learn/mandarin-chinese/mandarinx-mandarin-chinese-level-1",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [
+      "en"
+    ],
+    "credential": "Certificado verificado é pago; nenhum credencial formal gratuito no percurso de auditoria",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Curso introdutório de seis semanas para mandarim falado, cobrindo tons, vocabulário quotidiano e comunicação prática com enquadramento profissional, disponível em auditoria gratuita.",
+    "prerequisites": "Sem mandarim prévio; mediação em inglês",
+    "required_resources": "Conta edX para inscrição; o núcleo pode ser auditado gratuitamente, enquanto certificado e alguns extras do verified track são pagos",
+    "component_evidence": {
+      "pedagogy": "O curso apresenta frases, pronúncia e comunicação prática por temas, mas parte da experiência enriquecida de pronúncia e webinars está associada ao verified track pago.",
+      "depth": "Seis semanas fornecem uma introdução coerente a tons, vocabulário e situações básicas, porém a profundidade do núcleo gratuito é menor do que a rota BLCU de 18 semanas.",
+      "practice": "A auditoria oferece aprendizagem e alguma prática, mas a evidência pública não demonstra uma camada gratuita de avaliação tão forte quanto BLCU, Minato ou TV5MONDE.",
+      "materials": "Vídeo e materiais edX formam uma experiência organizada, embora a separação entre auditoria gratuita e extras pagos reduza a completude do pacote aberto.",
+      "currency": "MandarinX continua listado no catálogo edX em 2026 e os cursos são explicitamente auditáveis gratuitamente; parte do desenho e conteúdo é mais antigo.",
+      "expertise": "A rota é criada por MandarinX com docentes especializados em mandarim; a experiência é profissional mas menos institucionalmente transparente do que BLCU ou Japan Foundation.",
+      "accessibility": "A mediação em inglês e o formato self-paced ajudam iniciantes, mas o modelo edX separa certificado e certos recursos enriquecidos para o track pago."
+    },
+    "quality_components": {
+      "pedagogy": 7.8,
+      "depth": 7.4,
+      "practice": 7.2,
+      "materials": 7.5,
+      "currency": 8.2,
+      "expertise": 8.4,
+      "accessibility": 8.8
+    },
+    "quality_score": 7.72,
+    "recommendation_score": 7.6,
+    "recommendation_rationale": "Uma alternativa acessível em inglês e self-paced para iniciar mandarim, mas é claramente dominada pelo BLCU na experiência gratuita atual: menos profundidade, menos avaliação verificável e extras relevantes atrás do verified track.",
+    "comparators": [
+      "blcu-umoocs-elementary-spoken-chinese"
+    ],
+    "evidence": [
+      "https://www.edx.org/school/mandarinx",
+      "https://www.edx.org/learn/mandarin-chinese/mandarinx-mandarin-chinese-level-1"
+    ],
+    "flags": [
+      "mandarin",
+      "six-weeks",
+      "free-audit",
+      "paid-certificate",
+      "paid-extras",
+      "english-mediated"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-madinah-arabic-grammar-course",
+    "candidate_id": "madinah-arabic-grammar-course",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://madinaharabic.com/free-content/grammar",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado formal de conclusão verificado",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Percurso gratuito com mais de 90 lições sequenciadas de gramática e morfologia árabe, exemplos com áudio e exercícios interativos, complementado por um curso gratuito de leitura do alfabeto para quem ainda não lê árabe.",
+    "prerequisites": "Leitura de escrita árabe; quem não a possui deve primeiro concluir o Arabic Reading Course gratuito do mesmo fornecedor",
+    "required_resources": "Navegador; todo o curso-base é gratuito, com aulas individuais pagas oferecidas separadamente e não necessárias",
+    "component_evidence": {
+      "pedagogy": "A sequência introduz estruturas de forma incremental e apoia-as com exemplos e exercícios, criando uma fundação sistemática para compreender a gramática em vez de memorizar frases isoladas.",
+      "depth": "Mais de 90 lições dão profundidade excecional em gramática e morfologia, mas o curso é deliberadamente desequilibrado: fala espontânea, escuta extensiva e escrita comunicativa recebem muito menos atenção.",
+      "practice": "Os exercícios marcados e exemplos áudio oferecem prática frequente da estrutura, embora não haja projetos, conversação guiada ou avaliação final formal.",
+      "materials": "O fornecedor combina curso de leitura, grande sequência gramatical, áudio e exercícios interativos num pacote gratuito substancial, mas a experiência é menos integrada e moderna do que plataformas institucionais.",
+      "currency": "O site e os cursos gratuitos estão ativos em 2026; gramática e morfologia mudam pouco, embora o enquadramento inclua sobreposição com árabe clássico/Corânico.",
+      "expertise": "Madinah Arabic apresenta ensino por professores nativos e cursos especializados, mas a autoria e revisão académica específica das 90+ lições é menos transparente do que em ofertas universitárias.",
+      "accessibility": "O percurso é gratuito, em inglês e inclui um pré-curso também gratuito para aprender a escrita; a concentração em gramática reduz a adequação para aprendentes que procuram uma rota comunicativa completa."
+    },
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 8.8,
+      "practice": 8.5,
+      "materials": 8.2,
+      "currency": 8.7,
+      "expertise": 8.2,
+      "accessibility": 9
+    },
+    "quality_score": 8.47,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "Excelente especialista gratuito para gramática/morfologia árabe e muito mais profundo nessa função do que cursos curtos. Não deve ser apresentado como percurso integral de quatro competências.",
+    "comparators": [
+      "aljazeera-learning-arabic-general-language"
+    ],
+    "evidence": [
+      "https://madinaharabic.com/free-content/grammar",
+      "https://madinaharabic.com/free-content/reading",
+      "https://madinaharabic.com/free-content"
+    ],
+    "flags": [
+      "arabic",
+      "90-plus-lessons",
+      "grammar-heavy",
+      "interactive-exercises",
+      "free-reading-prerequisite",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-08-aljazeera-learning-arabic-general-language",
+    "candidate_id": "aljazeera-learning-arabic-general-language",
+    "reviewed_on": "2026-09-12",
+    "canonical_url": "https://learning.aljazeera.net/en/generallanguage",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "ar"
+    ],
+    "subtitle_languages": [],
+    "credential": "Sem certificado formal de conclusão verificado",
+    "academic_credits": "Nenhum crédito académico formal verificado",
+    "self_paced": true,
+    "scope_notes": "Experiência aberta e não linear de árabe geral desde introdução a proficiência, incluindo letras e sons, vida quotidiana, gramática, textos autênticos e literários, áudio, exercícios, resultados e teste de colocação.",
+    "prerequisites": "Pode começar na série introdutória de letras e sons; níveis superiores exigem progressivamente mais compreensão de árabe",
+    "required_resources": "Navegador; acesso gratuito sem curso pago obrigatório, com ferramentas de dicionário, vocalização e colocação integradas",
+    "component_evidence": {
+      "pedagogy": "A experiência usa textos e áudio autênticos com controlo de transcrição/vocalização e exercícios, permitindo aumentar gradualmente a exposição ao árabe real.",
+      "depth": "A cobertura vai de introdução a proficiência e inclui linguagem geral, gramática, comunicação e textos literários, proporcionando enorme amplitude; a falta de uma sequência única torna a progressão menos clara.",
+      "practice": "Exercícios interativos com resultados, teste de colocação e possibilidade de mostrar/ocultar texto e vocalização criam prática adaptável, embora falte uma avaliação cumulativa e uma linha de conclusão formal.",
+      "materials": "Artigos, áudio, literatura, gramática, dicionário, vocalização, placement test e serviços de apoio formam um ecossistema de materiais muito rico.",
+      "currency": "O site está ativo em 2026 com conteúdos atuais e arquivo extenso; a língua fundamental é estável e o uso de materiais mediáticos mantém contacto com contextos contemporâneos.",
+      "expertise": "A plataforma é desenvolvida pela Al Jazeera para ensino de árabe e inclui materiais preparados por especialistas, incluindo docentes universitários identificados em algumas séries.",
+      "accessibility": "É explicitamente um recurso educativo aberto e gratuito, mas a navegação não linear e a forte imersão em árabe podem ser exigentes para principiantes que precisam de mediação passo a passo."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 9.1,
+      "practice": 8.6,
+      "materials": 9.4,
+      "currency": 9.2,
+      "expertise": 9.2,
+      "accessibility": 8.8
+    },
+    "quality_score": 8.88,
+    "recommendation_score": 9,
+    "recommendation_rationale": "O melhor candidato árabe do lote para amplitude e continuidade a longo prazo: gratuito, rico e do nível introdutório à proficiência. A estrutura não linear impede que seja uma recomendação ainda mais simples para principiantes absolutos.",
+    "comparators": [
+      "madinah-arabic-grammar-course",
+      "blcu-umoocs-elementary-spoken-chinese"
+    ],
+    "evidence": [
+      "https://learning.aljazeera.net/en/pages/about-us",
+      "https://learning.aljazeera.net/en/generallanguage",
+      "https://learning.aljazeera.net/en/lessons/level/introductory"
+    ],
+    "flags": [
+      "arabic",
+      "introductory-to-proficiency",
+      "nonlinear-learning-path",
+      "placement-test",
+      "interactive-exercises",
+      "free-open-educational-resource",
+      "no-formal-credential"
+    ],
+    "is_current": true
+  }
+]
