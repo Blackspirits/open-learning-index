@@ -1,0 +1,209 @@
+[
+  {
+    "admission_id": "admission-09-nordic-nrf-connect-sdk-fundamentals",
+    "candidate_id": "nordic-nrf-connect-sdk-fundamentals",
+    "review_id": "deep-01-nordic-nrf-connect-sdk-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Nordic nRF Connect SDK foundation for embedded application development",
+    "comparison_set": [
+      "nordic-bluetooth-low-energy-fundamentals",
+      "nordic-cellular-iot-fundamentals",
+      "nordic-wifi-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The course is technically strong, current and hands-on, but it is primarily a vendor-platform foundation whose full value depends on compatible Nordic hardware and tooling. Once the canonical set keeps the strongest protocol-focused Nordic course, retaining the general SDK foundation would increase vendor concentration without adding a sufficiently distinct transferable learning role.",
+    "marginal_value": "Adds Nordic-specific development fluency but limited vendor-neutral engineering coverage.",
+    "provider_concentration_notes": "Nordic supplies five reviewed survivors; Phase 4 should not mirror that catalogue. Only the most broadly useful protocol course is retained.",
+    "coverage_notes": "This non-admission leaves a genuine gap in modern vendor-neutral embedded/electronics foundations, which should be addressed by targeted future discovery rather than by vendor substitution.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "nordic-bluetooth-low-energy-fundamentals"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-nordic-matter-fundamentals",
+    "candidate_id": "nordic-matter-fundamentals",
+    "review_id": "deep-03-nordic-matter-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Hands-on Matter protocol development in Nordic's embedded ecosystem",
+    "comparison_set": [
+      "nordic-bluetooth-low-energy-fundamentals",
+      "nordic-wifi-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Matter Fundamentals is current and high quality, but it is a narrower protocol specialization coupled to Nordic hardware and tooling. Its marginal core value is lower than Bluetooth Low Energy, whose protocol is more broadly foundational and transferable across embedded products.",
+    "marginal_value": "Adds a useful connected-home specialization but not enough general engineering coverage for a core slot.",
+    "provider_concentration_notes": "Nordic concentration is the main editorial constraint; multiple good vendor courses cannot all be promoted.",
+    "coverage_notes": "Matter remains available as a reviewed specialist resource while the core retains only the strongest Nordic protocol route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "nordic-bluetooth-low-energy-fundamentals"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-nordic-wifi-fundamentals",
+    "candidate_id": "nordic-wifi-fundamentals",
+    "review_id": "deep-04-nordic-wifi-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Hands-on Wi-Fi development using Nordic hardware and SDK tooling",
+    "comparison_set": [
+      "nordic-bluetooth-low-energy-fundamentals",
+      "nordic-matter-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Wi-Fi Fundamentals is pedagogically strong, but the route remains tightly coupled to Nordic hardware and does not fill the broader missing electronics/networking foundation. With one Nordic protocol course retained, a second vendor-bound wireless slot would have insufficient marginal value.",
+    "marginal_value": "Adds current Wi-Fi implementation practice but limited vendor-neutral transfer relative to the concentration cost.",
+    "provider_concentration_notes": "Provider concentration is decisive after direct comparison with the other Nordic survivors.",
+    "coverage_notes": "Wi-Fi specialization remains discoverable through Deep Review without expanding the core vendor footprint.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "nordic-bluetooth-low-energy-fundamentals"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-nordic-cellular-iot-fundamentals",
+    "candidate_id": "nordic-cellular-iot-fundamentals",
+    "review_id": "deep-04-nordic-cellular-iot-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Cellular IoT development with Nordic modem, network and cloud tooling",
+    "comparison_set": [
+      "nordic-bluetooth-low-energy-fundamentals",
+      "nordic-nrf-connect-sdk-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Cellular IoT Fundamentals is the strongest of the previously reviewed Nordic courses by Recommendation, but it still depends on compatible Nordic hardware, connectivity and vendor tooling. The specialist role is narrower than BLE and does not justify a second Nordic slot in a minimal canonical set.",
+    "marginal_value": "Adds valuable LPWAN/cellular implementation practice but not enough provider-independent engineering value.",
+    "provider_concentration_notes": "Nordic catalogue concentration is explicitly capped; high Quality alone is not admission.",
+    "coverage_notes": "Cellular IoT remains a strong reviewed specialist while BLE is retained as the single Nordic embedded-wireless route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "nordic-bluetooth-low-energy-fundamentals"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-nordic-bluetooth-low-energy-fundamentals",
+    "candidate_id": "nordic-bluetooth-low-energy-fundamentals",
+    "review_id": "deep-15-nordic-bluetooth-low-energy-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current hands-on Bluetooth Low Energy development from protocol concepts through build, flash and debug",
+    "comparison_set": [
+      "nordic-nrf-connect-sdk-fundamentals",
+      "nordic-matter-fundamentals",
+      "nordic-wifi-fundamentals",
+      "nordic-cellular-iot-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "BLE Fundamentals is the strongest single Nordic course to retain because Bluetooth Low Energy is broadly relevant across modern embedded products and the course combines protocol depth with repeated build/flash/debug exercises, security and packet analysis. The hardware requirement remains a real accessibility penalty but not a quality blocker.",
+    "marginal_value": "Adds a current practical embedded-wireless route with strong protocol and debugging practice.",
+    "provider_concentration_notes": "This is the only Nordic admission in the batch; the other four courses are intentionally not promoted to avoid catalogue mirroring.",
+    "coverage_notes": "Provides one high-quality vendor-specific embedded-wireless route while leaving the need for a vendor-neutral electronics/embedded foundation explicit.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-mathworks-simulink-onramp",
+    "candidate_id": "mathworks-simulink-onramp",
+    "review_id": "deep-15-mathworks-simulink-onramp",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Interactive model-based systems and dynamic-system simulation practice",
+    "comparison_set": [
+      "mathworks-matlab-onramp",
+      "mathworks-signal-processing-onramp"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Simulink Onramp earns a separate slot because it teaches model-based engineering and dynamic-system simulation through browser-based practical work and multiple applied projects. The course is free without a product licence and its engineering role is distinct from MATLAB programming or signal-processing workflow.",
+    "marginal_value": "Adds hands-on model-based systems practice not otherwise represented in the canonical set.",
+    "provider_concentration_notes": "MathWorks concentration is accepted only where the Onramps serve genuinely distinct engineering competencies and remain free/browser-based.",
+    "coverage_notes": "Becomes the canonical introductory model-based systems route; MATLAB Onramp supports the programming/data prerequisite layer.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mathworks-matlab-onramp"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-mathworks-matlab-onramp",
+    "candidate_id": "mathworks-matlab-onramp",
+    "review_id": "deep-15-mathworks-matlab-onramp",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Interactive engineering-oriented MATLAB programming and data workflow",
+    "comparison_set": [
+      "mathworks-simulink-onramp",
+      "mathworks-signal-processing-onramp"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MATLAB Onramp is the strongest general introduction to MATLAB in the pool and is unusually accessible for vendor training because the full interactive route runs in the browser without requiring a paid product licence. Automated feedback and a final applied project make it more than product documentation.",
+    "marginal_value": "Adds a practical engineering-computing route used across numerical, control and signal workflows.",
+    "provider_concentration_notes": "The provider concentration cost is offset by the distinct programming/data role and genuinely free browser execution.",
+    "coverage_notes": "Acts as the foundational MathWorks route and complements Simulink and Signal Processing rather than duplicating them.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mathworks-simulink-onramp",
+      "mathworks-signal-processing-onramp"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-mathworks-signal-processing-onramp",
+    "candidate_id": "mathworks-signal-processing-onramp",
+    "review_id": "deep-15-mathworks-signal-processing-onramp",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Practical signal-processing workflow with preprocessing, spectral analysis, filtering and measurements",
+    "comparison_set": [
+      "mathworks-matlab-onramp",
+      "mathworks-simulink-onramp"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Signal Processing Onramp serves a distinct applied engineering workflow: importing and aligning signals, spectral/time-frequency analysis, filtering, measurements and generated code. It is not treated as a full DSP theory course, but its practical role is sufficiently different from MATLAB fundamentals and Simulink modelling to justify a separate slot.",
+    "marginal_value": "Adds a focused hands-on signal-analysis workflow absent from the canonical set.",
+    "provider_concentration_notes": "MathWorks concentration is explicit, but each admitted Onramp covers a different engineering competency and runs free in-browser.",
+    "coverage_notes": "Provides practical signal-processing application while a future vendor-neutral DSP/theory course could still outperform it for theoretical depth.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mathworks-matlab-onramp"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-09-mit-6-01sc-eecs-i",
+    "candidate_id": "mit-6-01sc-eecs-i",
+    "review_id": "deep-15-mit-6-01sc-eecs-i",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Integrated introductory EECS across software, circuits, signals, control, probability and robotics",
+    "comparison_set": [
+      "mathworks-simulink-onramp",
+      "nordic-bluetooth-low-energy-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 6.01SC has exceptional integrated pedagogy, but the independent route is materially degraded in 2026: the legacy lib601 stack, obsolete Pioneer 3-DX robot assumptions, unavailable tutorial system and unreproducible design-lab elements prevent the course from functioning as a robust current engineering foundation.",
+    "marginal_value": "The conceptual breadth remains valuable, but too much of the original experiential design is no longer reproducible.",
+    "provider_concentration_notes": "This is a currentness/accessibility decision, not a provider penalty.",
+    "coverage_notes": "Its exclusion exposes a concrete gap in modern vendor-neutral introductory electronics/embedded/systems engineering. That gap should trigger targeted future discovery rather than lowering the bar.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]

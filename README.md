@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **90 decisions: 51 admit / 39 do_not_admit**. Computer Science & Software, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, and Humanities & Philosophy are complete in Phase 4, and the canonical set contains **68 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **99 decisions: 55 admit / 44 do_not_admit**. Computer Science & Software, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, and Engineering & Electronics are complete in Phase 4, and the canonical set contains **72 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -27,6 +27,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-05-business-leadership.md`](docs/admissions/batch-05-business-leadership.md) — complete Business & Entrepreneurship plus Project, Product & Leadership pass with explicit language-access and depth tests.
 - [`docs/admissions/batch-06-natural-sciences.md`](docs/admissions/batch-06-natural-sciences.md) — complete Natural Sciences pass with subject-sensitive archive-age handling and an explicit climate-science coverage gap.
 - [`docs/admissions/batch-07-humanities-philosophy.md`](docs/admissions/batch-07-humanities-philosophy.md) — complete Humanities & Philosophy pass with explicit writing-practice, representation and provider-concentration tests.
+- [`docs/admissions/batch-08-engineering-electronics.md`](docs/admissions/batch-08-engineering-electronics.md) — complete Engineering & Electronics pass with vendor-concentration control and an explicit vendor-neutral engineering coverage gap.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
