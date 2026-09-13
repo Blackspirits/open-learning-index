@@ -1,0 +1,203 @@
+[
+  {
+    "admission_id": "admission-22-nau-introducao-programacao-conceitos-fundamentais",
+    "candidate_id": "nau-introducao-programacao-conceitos-fundamentais",
+    "review_id": "deep-26-nau-introducao-programacao-conceitos-fundamentais",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Substantial beginner programming and computational-thinking pathway delivered in European Portuguese",
+    "comparison_set": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026"
+    ],
+    "decision_rationale": "The course does not beat CS50x, CS50P or Helsinki Python on intrinsic depth, project breadth or free completion mechanics, but it clears the admission bar by adding a genuinely different access path: about 60 hours of beginner programming and algorithmic reasoning in European Portuguese, with flowcharts, pseudocode and Algorithmi-based exercise practice. At 8.52 Quality / 8.7 Recommendation it is substantially stronger than the short pt-PT digital-literacy material previously rejected. The F2 edX Audit limitation is explicit and prevents it from being ranked above the stronger F0/F1 incumbents.",
+    "marginal_value": "Adds the first substantial pt-PT beginner-programming route to the canonical set without displacing the stronger English-language category leaders.",
+    "provider_concentration_notes": "Instituto Politecnico de Tomar is not concentrated in the canonical set. Admission is based on a distinct language-access and pedagogy role, not institutional representation.",
+    "coverage_notes": "Materially improves European-Portuguese Computer Science coverage while leaving room for a future F0/F1 pt-PT programming challenger with equally strong or better practice.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-fundamentos-bases-dados",
+    "candidate_id": "nau-fundamentos-bases-dados",
+    "review_id": "deep-26-nau-fundamentos-bases-dados",
+    "decided_on": "2026-09-14",
+    "decision": "do_not_admit",
+    "learning_need": "Relational-database design and SQL pathway in European Portuguese",
+    "comparison_set": [
+      "harvard-cs50-sql",
+      "freecodecamp-relational-databases-v9"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-sql"
+    ],
+    "decision_rationale": "Fundamentos de Bases de Dados is a strong 25-hour pt-PT route with relational modelling, normalization, SQL, PostgreSQL and Python integration, but CS50 SQL remains substantially stronger on independent practice, query design, indexing, optimisation, scaling and free-course evidence. The course's language advantage is real, yet admitting another database slot would add less marginal value than the selected pt-PT programming and algorithms routes. Provider concentration also matters because two adjacent IPL computing courses can cover the strongest distinct needs without importing the whole sequence.",
+    "marginal_value": "Adds Portuguese-language database design, but not enough unique capability to justify another core database slot beside CS50 SQL.",
+    "provider_concentration_notes": "Instituto Politecnico de Lisboa contributes several adjacent computing candidates. The index deliberately avoids catalogue mirroring and selects only the strongest differentiated IPL computing role.",
+    "coverage_notes": "A pt-PT database route remains a useful reviewed alternative; future admission would require stronger free completion, practice or clear superiority over the current incumbent.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50-sql"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-estruturas-dados",
+    "candidate_id": "nau-estruturas-dados",
+    "review_id": "deep-26-nau-estruturas-dados",
+    "decided_on": "2026-09-14",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory-to-intermediate data-structures pathway in European Portuguese",
+    "comparison_set": [
+      "mit-6-006-algorithms"
+    ],
+    "incumbent_ids": [
+      "mit-6-006-algorithms"
+    ],
+    "decision_rationale": "The course provides credible 25-hour coverage from lists and queues through heaps, hashing, search trees and graphs, but MIT 6.006 remains decisively stronger on analysis, problem sets, solutions and independent-study depth. Its 8.43 Quality is respectable but below the level needed to add a second overlapping theoretical-computing slot solely for language access. The companion Algoritmos e Complexidade has stronger marginal scope and is the better single IPL technical admission.",
+    "marginal_value": "Adds pt-PT data-structures instruction, but most of the competency is already subsumed by stronger algorithms study and the selected pt-PT algorithms challenger.",
+    "provider_concentration_notes": "Rejecting this adjacent IPL course is an explicit provider-concentration control; the index selects the most differentiated course rather than mirroring the PRODIGI sequence.",
+    "coverage_notes": "Data structures remain covered globally by MIT 6.006 and indirectly by the admitted pt-PT algorithms course; no separate canonical slot is necessary.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-6-006-algorithms"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-algoritmos-complexidade",
+    "candidate_id": "nau-algoritmos-complexidade",
+    "review_id": "deep-26-nau-algoritmos-complexidade",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Intermediate algorithms and complexity pathway in European Portuguese",
+    "comparison_set": [
+      "mit-6-006-algorithms"
+    ],
+    "incumbent_ids": [
+      "mit-6-006-algorithms"
+    ],
+    "decision_rationale": "MIT 6.006 remains the stronger intrinsic algorithms course, but Algoritmos e Complexidade clears the marginal-value bar because it provides a substantial 25-hour European-Portuguese route rather than a superficial translation layer. Its syllabus reaches asymptotic complexity, multiple sorting families, divide and conquer, dynamic programming, greedy methods, tree traversal, BFS, DFS, topological sorting and Dijkstra. At 8.56 Quality / 8.6 Recommendation it is strong enough to complement, not replace, MIT and is the best of the three adjacent IPL computing challengers.",
+    "marginal_value": "Creates the first serious pt-PT algorithms pathway and complements MIT 6.006 for learners whose language access would otherwise block advanced theoretical-computing study.",
+    "provider_concentration_notes": "Only one of the three adjacent IPL database/data-structures/algorithms computing candidates is admitted. This explicit consolidation prevents provider catalogue mirroring.",
+    "coverage_notes": "Closes the strongest pt-PT theoretical-computing access gap while preserving MIT 6.006 as the global depth leader.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-6-006-algorithms"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-ciencia-aberta-dados-fair",
+    "candidate_id": "nau-ciencia-aberta-dados-fair",
+    "review_id": "deep-26-nau-ciencia-aberta-dados-fair",
+    "decided_on": "2026-09-14",
+    "decision": "do_not_admit",
+    "learning_need": "Current open-science, FAIR-data and research-data-management training in European Portuguese",
+    "comparison_set": [
+      "nasa-open-science-101",
+      "cisco-data-analytics-essentials"
+    ],
+    "incumbent_ids": [
+      "nasa-open-science-101"
+    ],
+    "decision_rationale": "The course is current, relevant and well structured, especially on FAIR principles, stewardship, sensitive-data security, policy and responsible AI in research. NASA Open Science 101 nevertheless remains the stronger global route through its broader workflow/tool practice, fully free credential path and stronger open-science materials ecosystem. The pt-PT language benefit does not by itself justify a second core open-science slot at 8.44 Quality, particularly while the project's deeper technical pt-PT AI/ML gap remains unresolved.",
+    "marginal_value": "Provides valuable local-language FAIR/data-stewardship access, but not enough new practice or capability beyond NASA Open Science 101 for canonical admission.",
+    "provider_concentration_notes": "Universidade da Beira Interior is not concentrated; non-admission is based on comparative marginal value rather than provider identity.",
+    "coverage_notes": "The pt-PT technical AI/ML gap remains open. This course should not be used to pretend that gap has been solved because its primary role is research-data/open-science practice.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "nasa-open-science-101"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-sustentabilidade-ambiental",
+    "candidate_id": "nau-sustentabilidade-ambiental",
+    "review_id": "deep-26-nau-sustentabilidade-ambiental",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Accessible European-Portuguese environmental-sustainability literacy with meaningful assessment and formal recognition",
+    "comparison_set": [
+      "eu-climate-action-academy",
+      "fao-intro-climate-smart-agriculture",
+      "nasa-open-science-101"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Sustentabilidade Ambiental is not deep enough to become the missing climate-science anchor, but that is not the role being admitted. It adds a distinct 27-hour environmental-literacy pathway across waste, water, energy, air and noise, with tasks, quizzes and interactive activities, plus an explicitly fee-free certificate worth 1 ECTS. At 8.42 Quality / 8.7 Recommendation it clears the bar through a combination of substantive breadth, strong accessibility, formal recognition and a pt-PT environmental role absent from the current canonical Natural Sciences set.",
+    "marginal_value": "Adds the first broad pt-PT environmental/sustainability route and a verified free 1-ECTS pathway without displacing the deeper disciplinary science incumbents.",
+    "provider_concentration_notes": "Instituto Politecnico de Lisboa also supplies the admitted algorithms course, but the two sit in different categories and serve unrelated learning needs; this is not catalogue duplication.",
+    "coverage_notes": "Adds environmental literacy but deliberately leaves the separate deep current climate-science gap open.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "nasa-open-science-101"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-lingua-portuguesa-escrita-academica",
+    "candidate_id": "nau-lingua-portuguesa-escrita-academica",
+    "review_id": "deep-26-nau-lingua-portuguesa-escrita-academica",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "European-Portuguese academic writing and formal communication for higher-education learners",
+    "comparison_set": [
+      "openlearn-essay-report-writing",
+      "openlearn-effective-communication-workplace"
+    ],
+    "incumbent_ids": [
+      "openlearn-essay-report-writing"
+    ],
+    "decision_rationale": "The course earns admission because Portuguese academic register is not interchangeable with English academic-writing instruction. Its 30-hour sequence covers European-Portuguese linguistic conventions, punctuation, paragraph construction, academic style, summary, abstract, synthesis and explanatory/expository production with contextualised practice. OpenLearn remains the stronger fully free general academic-writing route, but at 8.54 Quality / 8.8 Recommendation the ISCTE course materially complements it for learners writing in Portuguese. Lack of personalised feedback and uncertain free assessment/certification keep it below the category leaders rather than blocking admission.",
+    "marginal_value": "Adds a distinct productive-writing competency in European Portuguese that no existing canonical English writing course can substitute for.",
+    "provider_concentration_notes": "ISCTE is not concentrated in the canonical set. Admission is based on language-specific academic-writing value and course substance.",
+    "coverage_notes": "Creates the first canonical pt-PT writing/communication slot while preserving OpenLearn as the broader free academic-writing default.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-essay-report-writing"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-22-nau-iniciacao-lingua-portuguesa",
+    "candidate_id": "nau-iniciacao-lingua-portuguesa",
+    "review_id": "deep-26-nau-iniciacao-lingua-portuguesa",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Structured beginner pathway for learning European Portuguese as a target language",
+    "comparison_set": [
+      "dw-nicos-weg-a1-b1",
+      "tv5monde-premiere-classe-french",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Languages are not redundant across different target languages. The project had no canonical course for learning European Portuguese, and this University of Porto LMOOC is strong enough to create that slot: about 32 hours, eight narrative units, everyday communication, pronunciation, vocabulary, grammar and cultural context, produced with professional audiovisual material. At 8.61 Quality / 9.0 Recommendation it does not match Nicos Weg's multi-level depth, but German cannot substitute for Portuguese. The F2 edX Audit model is a real limitation and is reflected in the score rather than used as a reason to leave the target language uncovered.",
+    "marginal_value": "Adds the first canonical learn-European-Portuguese pathway, a target-language need not served by any existing course.",
+    "provider_concentration_notes": "Universidade do Porto is not concentrated in the canonical set. Different target languages are treated as distinct learning needs under the Languages admission protocol.",
+    "coverage_notes": "Closes the beginner European-Portuguese target-language gap while leaving higher A2/B1 Portuguese progression open for future challengers.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
