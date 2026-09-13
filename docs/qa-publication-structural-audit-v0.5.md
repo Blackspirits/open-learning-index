@@ -139,9 +139,9 @@ The project should not claim multilingual completeness.
 
 ## Free-access profile
 
-- F0 — full learning route + free credential: **72 / 129 = 55.8%**
+- F0 — full learning route + free credential: **73 / 129 = 56.6%**
 - F1 — full learning route + assessments, no verified free credential: **24 / 129 = 18.6%**
-- F2 — substantive educational content free, no full free assessment/credential path: **33 / 129 = 25.6%**
+- F2 — substantive educational content free, no full free assessment/credential path: **32 / 129 = 24.8%**
 
 ### QA decision
 
@@ -149,12 +149,12 @@ The project should not claim multilingual completeness.
 
 A credential is not required for admission, but every canonical record must continue to expose its educational core without mandatory payment.
 
-The F0/F1/F2 distinction remains essential in the publication surface.
+Gate 3 batch 03 corrected WHO Good Practices for Clinical Trial Design and Implementation from F2 to F0 after first-party WHO evidence resolved the previously unverified completion-certificate mechanics. The F0/F1/F2 distinction remains essential in the publication surface.
 
 ## Credential profile
 
-- no formal free credential — 56
-- free provider certificate — 43
+- no formal free credential — 55
+- free provider certificate — 44
 - free badge — 12
 - free badge + statement — 8
 - free statement of participation — 6
