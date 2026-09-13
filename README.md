@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The second pt-PT challenger scan has completed Deep Review: **216 / 216 current `advance` candidates are Deep-Reviewed, with 213 / 216 Phase-4 decided and 3 pt-PT legal/cybersecurity challengers awaiting admission decisions**. The canonical publication set remains **139 courses** with **75 F0 / 24 F1 / 40 F2**, including **10 primary-language pt-PT courses**. Exactly **5 `hold`** records remain excluded, and current shallow state is **216 advance / 5 hold / 88 reject** across **309 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
+**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The second dedicated pt-PT challenger cycle is complete: **216 / 216 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 125 admit / 91 do_not_admit**. The canonical publication set is now **142 courses** with **75 F0 / 24 F1 / 43 F2**, including **13 primary-language pt-PT courses**. Exactly **5 `hold`** records remain excluded, and current shallow state is **216 advance / 5 hold / 88 reject** across **309 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
 
 ## Goal
 
