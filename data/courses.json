@@ -3756,8 +3756,8 @@
     "primary_language": "en",
     "other_languages": [],
     "url": "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025",
-    "free_access": "F2_CONTENT_ONLY",
-    "certificate": "none",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
     "academic_credits": "none",
     "self_paced": true,
     "status": "active",
@@ -3771,11 +3771,12 @@
       "accessibility": 8.9
     },
     "recommendation_score": 9.2,
-    "why_recommended": "Current 2026 nine-module clinical-trials course translating WHO's 2024 best-practice guidance into scientific and ethical principles through interactive cases and decision-making.",
+    "why_recommended": "Current 2026 nine-module clinical-trials course translating WHO's 2024 best-practice guidance into scientific and ethical principles through interactive cases and decision-making, with a verified completion certificate.",
     "evidence": [
       "https://www.who.int/news/item/05-05-2026-new-who-online-course-strengthens-good-practices-in-clinical-trials",
       "https://www.who.int/news-room/events/detail/2026/05/04/default-calendar/strengthening-trust-in-science--launch-of-who-good-practices-for-clinical-trial-design-and-implementation-course",
-      "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025"
+      "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025",
+      "https://cdn.who.int/media/docs/default-source/immunization/pdvac/pdvac-2025/day-1/6.-relevance-of-the-clinical-trial-action-plan-to-vaccines.pdf?sfvrsn=8977b213_1"
     ],
     "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
@@ -3813,9 +3814,10 @@
     "recommendation_score": 9.1,
     "why_recommended": "Current multilingual ICH E6(R3) Good Clinical Practice course with eight modules and a free assessed certificate, serving a distinct clinical-research compliance need.",
     "evidence": [
-      "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/"
+      "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/",
+      "https://globalhealthtrainingcentre.tghn.org/FAQ/"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.62,
     "review_interval_days": 90,
@@ -3847,9 +3849,10 @@
     "recommendation_score": 8.7,
     "why_recommended": "Ten-module applied research-ethics route covering risks/benefits, vulnerability, community engagement, privacy, consent and ethical dilemmas with quizzes and free certification.",
     "evidence": [
-      "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/"
+      "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/",
+      "https://globalhealthtrainingcentre.tghn.org/FAQ/"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.46,
     "review_interval_days": 120,
@@ -3881,9 +3884,10 @@
     "recommendation_score": 8.5,
     "why_recommended": "Current health-research data-governance foundation covering sharing, management, ethics, access, quality, costs and repositories with peer-reviewed guidance and assessed modules.",
     "evidence": [
-      "https://globalhealthtrainingcentre.tghn.org/data-sharing-v2/"
+      "https://globalhealthtrainingcentre.tghn.org/data-sharing-v2/",
+      "https://globalhealthtrainingcentre.tghn.org/FAQ/"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.46,
     "review_interval_days": 120,
@@ -3916,9 +3920,11 @@
     "why_recommended": "Scenario-based professional course linking malnutrition, agriculture and food systems with nutrition-sensitive policies, investments and programmes, including final assessment and a free digital badge.",
     "evidence": [
       "https://elearning.fao.org/course/view.php?id=307",
-      "https://www.fao.org/nutrition/policies-programmes/e-learning/en/"
+      "https://www.fao.org/nutrition/policies-programmes/e-learning/en/",
+      "https://elearning.fao.org/mod/page/view.php?id=5179&lang=en",
+      "https://elearning.fao.org/mod/page/view.php?id=4534&lang=en"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.16,
     "review_interval_days": 120,

@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.5 — **Phase 5 QA and publication readiness is in progress.** Phase 4 is complete at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Gate 1 retained all 17 reference fixtures; Gate 2 found no structural removal blocker. Gate 3 primary-source re-verification now covers **18 targeted high-risk technical records across two batches**, with no removals; batch 02 also corrects verified Unity instructional-language metadata. The canonical set remains **129 courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.5 — **Phase 5 QA and publication readiness is in progress.** Phase 4 is complete at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Gate 1 retained all 17 reference fixtures; Gate 2 found no structural removal blocker. Gate 3 primary-source re-verification now covers **23 targeted high-risk records across three batches**, with no removals. Batch 02 corrected verified Unity instructional-language metadata; batch 03 re-verifies the full Health & Medicine set and corrects the WHO clinical-trials route from F2 to F0 after its completion credential was verified. The canonical set remains **129 courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -42,6 +42,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/qa-publication-structural-audit-v0.5.md`](docs/qa-publication-structural-audit-v0.5.md) — Phase 5 Gate 2 audit of category/provider concentration, language accessibility, access models and review cadence.
 - [`docs/qa-reverification-01-technical-references.md`](docs/qa-reverification-01-technical-references.md) — Phase 5 Gate 3 batch 01 primary-source re-verification of ten high-volatility technical reference fixtures.
 - [`docs/qa-reverification-02-volatile-admissions.md`](docs/qa-reverification-02-volatile-admissions.md) — Gate 3 batch 02 across agents, developer tooling and Cisco data/security admissions, including a Unity language-accessibility correction.
+- [`docs/qa-reverification-03-health-clinical.md`](docs/qa-reverification-03-health-clinical.md) — Gate 3 batch 03 re-verification of the complete Health & Medicine canonical set, including a WHO credential/access correction.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
