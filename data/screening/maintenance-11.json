@@ -1,0 +1,161 @@
+[
+  {
+    "screen_id": "maintenance-11-nau-fundamentos-bases-dados",
+    "candidate_id": "nau-fundamentos-bases-dados",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Completion certificate is described by the course, but current course-specific zero-cost assessment/certificate access is not established after NAU introduced partner-selectable paid models in July 2026; it is not counted as free",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The technical syllabus and open learner-facing route still justify Deep Review, but the previous F0 classification relied too heavily on NAU's older generic certification policy. Since July 2026 partners may choose fully free, open-with-paid-assessment/certificate, or paid advanced models. The current course page describes assessment and certification but does not explicitly state their present zero-cost status. Classify conservatively as F2 until course-specific checkout/access evidence establishes otherwise; the advance decision itself is unchanged.",
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "databases",
+      "post-july-2026-access-model",
+      "certificate-cost-unverified",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-10-nau-fundamentos-bases-dados"
+  },
+  {
+    "screen_id": "maintenance-11-nau-estruturas-dados",
+    "candidate_id": "nau-estruturas-dados",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "The course defines a completion threshold, but current course-specific zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models; no free credential is claimed",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The 25-hour data-structures syllabus remains substantial enough to advance, but current F0 status cannot be derived from the older platform-wide certification policy after NAU introduced course-specific paid access models in July 2026. The public course page describes exercises and a 50% threshold without explicitly identifying the current price/access class. F2 is therefore the auditable conservative classification until the exact learner checkout is verified.",
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "data-structures",
+      "post-july-2026-access-model",
+      "certificate-cost-unverified",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-10-nau-estruturas-dados"
+  },
+  {
+    "screen_id": "maintenance-11-nau-algoritmos-complexidade",
+    "candidate_id": "nau-algoritmos-complexidade",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "The course describes a completion certificate at 50%, but current course-specific zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models; no free credential is claimed",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The course remains a serious 25-hour algorithms candidate and keeps its advance decision. Access classification is corrected because NAU's July 2026 payment change makes the older generic free-certificate rule insufficient. The current course page shows exercises, a 50% threshold and certificate language but no course-specific statement that assessment and certification remain free. The index therefore records the safely supported F2 teaching-content route rather than inferring F0.",
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "algorithms",
+      "post-july-2026-access-model",
+      "certificate-cost-unverified",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-10-nau-algoritmos-complexidade"
+  },
+  {
+    "screen_id": "maintenance-11-nau-ciencia-aberta-dados-fair",
+    "candidate_id": "nau-ciencia-aberta-dados-fair",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "The course describes certification after quizzes and a final exam, but current course-specific zero-cost assessment/certificate access is not established after NAU's July-2026 payment change; no free credential is claimed",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The six-module, 20-hour research-data curriculum remains sufficiently substantive and current to justify Deep Review. However, NAU now permits partner-selected paid assessment/certification models. The public course page specifies quizzes, a final exam and a 60% certification threshold but does not identify the current zero-cost status of that assessed path. F2 is therefore used conservatively; the course may later be upgraded if course-specific free completion evidence is obtained.",
+    "flags": [
+      "pt-pt",
+      "20-hours",
+      "fair-data",
+      "research-data",
+      "post-july-2026-access-model",
+      "assessment-cost-unverified",
+      "certificate-cost-unverified",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-10-nau-ciencia-aberta-dados-fair"
+  },
+  {
+    "screen_id": "maintenance-11-nau-lingua-portuguesa-escrita-academica",
+    "candidate_id": "nau-lingua-portuguesa-escrita-academica",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "The page describes automatic completion certification at 75%, but current course-specific zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models; no free credential is claimed",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The 30-hour European-Portuguese academic-writing curriculum still merits Deep Review, but its previous F0 classification is too confident after NAU introduced course-specific payment models in July 2026. The public page states an automatic certificate after formative assessment and a 75% threshold without explicitly proving that the current assessment/certificate route is zero-cost. Record F2 conservatively until the exact learner journey proves otherwise.",
+    "flags": [
+      "pt-pt",
+      "european-portuguese",
+      "30-hours",
+      "academic-writing",
+      "post-july-2026-access-model",
+      "assessment-cost-unverified",
+      "certificate-cost-unverified",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-10-nau-lingua-portuguesa-escrita-academica"
+  }
+]
