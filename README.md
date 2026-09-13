@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **107 decisions: 60 admit / 47 do_not_admit**. Computer Science & Software, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, Engineering & Electronics, and Writing & Communication are complete in Phase 4, and the canonical set contains **77 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **120 decisions: 66 admit / 54 do_not_admit**. Computer Science & Software, Cybersecurity & IT, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, Engineering & Electronics, and Writing & Communication are complete in Phase 4, and the canonical set contains **83 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -29,6 +29,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-07-humanities-philosophy.md`](docs/admissions/batch-07-humanities-philosophy.md) — complete Humanities & Philosophy pass with explicit writing-practice, representation and provider-concentration tests.
 - [`docs/admissions/batch-08-engineering-electronics.md`](docs/admissions/batch-08-engineering-electronics.md) — complete Engineering & Electronics pass with vendor-concentration control and an explicit vendor-neutral engineering coverage gap.
 - [`docs/admissions/batch-09-writing-communication.md`](docs/admissions/batch-09-writing-communication.md) — complete Writing & Communication pass with productive-practice and independent-feedback tests.
+- [`docs/admissions/batch-10-cybersecurity-it.md`](docs/admissions/batch-10-cybersecurity-it.md) — complete Cybersecurity & IT pass with lab-density, currentness and provider-concentration controls.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
