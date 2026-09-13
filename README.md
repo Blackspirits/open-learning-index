@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.5 — **Phase 5 QA and publication readiness is in progress.** Phase 4 is complete at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Gate 1 retained all 17 reference fixtures; Gate 2 found no structural removal blocker. Gate 3 primary-source re-verification now covers **28 targeted high-risk records across four batches**, with no removals. Batch 02 corrected Unity instructional-language metadata; batch 03 re-verified Health & Medicine and corrected the WHO clinical-trials route from F2 to F0; batch 04 re-verifies the complete Law & Public Policy set and tightens WIPO/HELP language and credential metadata. The canonical set remains **129 courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.5 — **Phase 5 QA is complete and the canonical index is publication-ready.** Phase 4 closed at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Phase 5 retained all 17 reference fixtures, found no structural removal blocker, and re-verified **34 targeted high-risk records across five primary-source batches**. The canonical publication set is **129 courses** with **73 F0 / 24 F1 / 32 F2**, and the unresolved **9 `hold`** records remain excluded. Current shallow state is **199 advance / 9 hold / 82 reject**. Continuous monitoring now replaces broad intake.
 
 ## Goal
 
@@ -44,6 +44,8 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/qa-reverification-02-volatile-admissions.md`](docs/qa-reverification-02-volatile-admissions.md) — Gate 3 batch 02 across agents, developer tooling and Cisco data/security admissions, including a Unity language-accessibility correction.
 - [`docs/qa-reverification-03-health-clinical.md`](docs/qa-reverification-03-health-clinical.md) — Gate 3 batch 03 re-verification of the complete Health & Medicine canonical set, including a WHO credential/access correction.
 - [`docs/qa-reverification-04-law-public-policy.md`](docs/qa-reverification-04-law-public-policy.md) — Gate 3 batch 04 re-verification of the complete Law & Public Policy set, including WIPO/HELP language and credential precision fixes.
+- [`docs/qa-reverification-05-session-fragile.md`](docs/qa-reverification-05-session-fragile.md) — Gate 3 batch 05 re-verification of session-, enrolment- and version-fragile routes.
+- [`docs/qa-publication-readiness-v0.5.md`](docs/qa-publication-readiness-v0.5.md) — final Phase 5 provenance, validator and publication-readiness gate.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
