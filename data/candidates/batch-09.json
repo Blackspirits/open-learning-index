@@ -1,0 +1,58 @@
+[
+  {
+    "id": "mit-6-7220j-nonlinear-optimization",
+    "title": "6.7220J Nonlinear Optimization",
+    "provider": "MIT OpenCourseWare",
+    "category": "math-statistics",
+    "primary_language": "en",
+    "url": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+    "apparent_free_access": "F2_CONTENT_ONLY",
+    "stage": "discovered",
+    "evidence_url": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/pages/syllabus/",
+    "discovered_on": "2026-09-13",
+    "reason": "Current Spring 2025 graduate nonlinear-optimization course with six problem sets and solutions, exam material, convex and nonconvex theory, constrained methods, duality and modern machine-learning applications; it directly targets the documented broad-optimisation gap.",
+    "notes": "Prerequisites are substantial: linear algebra plus real analysis. No credential or interactive completion route is claimed at Discovery; classify conservatively as F2 pending Shallow Screening."
+  },
+  {
+    "id": "mit-12-340x-global-warming-science",
+    "title": "12.340x Global Warming Science",
+    "provider": "MIT OpenCourseWare / Open Learning Library",
+    "category": "natural-sciences",
+    "primary_language": "en",
+    "url": "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/",
+    "apparent_free_access": "F1_FULL_ASSESSMENTS",
+    "stage": "discovered",
+    "evidence_url": "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/",
+    "discovered_on": "2026-09-13",
+    "reason": "Full undergraduate climate-science course covering energy balance, greenhouse gases, atmospheric and ocean circulation, aerosols, palaeoclimate evidence and climate modelling, with lectures, problem sets and exams; it is a serious candidate for the explicit climate-science gap.",
+    "notes": "The course was taught in Spring 2020 and remains available through MIT OpenCourseWare/Open Learning Library. Shallow Screening must decide whether the age is acceptable for a climate-science anchor and verify the current assessment mechanics."
+  },
+  {
+    "id": "saylor-bus633-sales-management",
+    "title": "BUS633: Sales Management",
+    "provider": "Saylor University",
+    "category": "marketing-sales",
+    "primary_language": "en",
+    "url": "https://learn.saylor.org/course/bus633",
+    "apparent_free_access": "F0_FULL_CREDENTIAL",
+    "stage": "discovered",
+    "evidence_url": "https://learn.saylor.org/mod/page/view.php?id=83120",
+    "discovered_on": "2026-09-13",
+    "reason": "Current 29-hour sales-management course spanning the selling process, customer needs, consultative selling, loyalty, CRM and digital sales technology, with a free final assessment and completion certificate; it directly challenges the documented dedicated-sales gap.",
+    "notes": "The course is graduate-level and aligned with Saylor's Master's in Marketing curriculum, but graduate credit has additional requirements. Discovery does not treat degree alignment as free academic credit."
+  },
+  {
+    "id": "microsoft-ai-red-teaming-101",
+    "title": "AI Red Teaming 101 training series: securing generative AI systems",
+    "provider": "Microsoft",
+    "category": "cybersecurity-it",
+    "primary_language": "en",
+    "url": "https://learn.microsoft.com/en-us/security/ai-red-team/training",
+    "apparent_free_access": "F1_FULL_ASSESSMENTS",
+    "stage": "discovered",
+    "evidence_url": "https://learn.microsoft.com/en-us/security/ai-red-team/training",
+    "discovered_on": "2026-09-13",
+    "reason": "Current modular AI-security training from Microsoft's AI Red Team covering direct and indirect prompt injection, multi-turn attacks, defenses and PyRIT automation, with real-world cases, hands-on demonstrations and linked red-teaming labs; it targets the explicit AI-security gap.",
+    "notes": "No free completion credential is claimed. Shallow Screening must verify that the linked labs form a genuinely accessible substantive practice layer rather than optional examples and must assess vendor/tool dependence."
+  }
+]
