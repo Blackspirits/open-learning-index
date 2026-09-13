@@ -1,0 +1,167 @@
+[
+  {
+    "admission_id": "admission-14-saylor-bus205-business-law",
+    "candidate_id": "saylor-bus205-business-law",
+    "review_id": "deep-01-saylor-bus205-business-law",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad foundational business law for non-lawyers and business learners",
+    "comparison_set": [
+      "wipo-dl101-intellectual-property",
+      "wipo-ip-panorama-2"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "BUS205 fills a broad business-law foundation that none of the specialist IP/privacy/cybercrime courses replace. Its 39-hour structure spans legal sources, courts, torts, contracts, property, employment, business organizations and regulation with assessments and a free certificate. US jurisdiction limits transferability but does not erase the foundational role.",
+    "marginal_value": "Adds the only broad general business-law foundation in the current survivor pool.",
+    "provider_concentration_notes": "Saylor is represented elsewhere, but this is a distinct legal foundation rather than catalogue duplication.",
+    "coverage_notes": "Provides the broad business-law anchor; international IP and European digital-law topics remain separate specialist roles.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "wipo-dl101-intellectual-property"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-14-wipo-dl101-intellectual-property",
+    "candidate_id": "wipo-dl101-intellectual-property",
+    "review_id": "deep-01-wipo-dl101-intellectual-property",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Comprehensive international intellectual-property foundation",
+    "comparison_set": [
+      "wipo-ip-panorama-2",
+      "saylor-bus205-business-law"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "WIPO DL-101 is the strongest general IP foundation in the reviewed pool. Its 55-hour coverage of copyright, patents, trademarks, geographical indications, designs, plant varieties, unfair competition and international systems is substantially broader and more rigorous than the business-strategy-oriented IP Panorama route.",
+    "marginal_value": "Adds the canonical international IP foundation with tests, final assessment and WIPO certification.",
+    "provider_concentration_notes": "Only one WIPO route is promoted; the business-oriented Panorama course remains a specialist supplement.",
+    "coverage_notes": "Becomes the general IP anchor for learners needing substantive legal foundations.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-bus205-business-law"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-14-coe-help-ai-human-rights",
+    "candidate_id": "coe-help-ai-human-rights",
+    "review_id": "deep-10-coe-help-ai-human-rights",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current AI law and human-rights governance in European/international frameworks",
+    "comparison_set": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Artificial Intelligence and Human Rights is a high-value current legal-tech specialist. The 2025 revision explicitly incorporates the Council of Europe AI Framework Convention and HUDERIA alongside privacy, non-discrimination, expression and justice, with interactive screens, knowledge tests and reflection.",
+    "marginal_value": "Adds a uniquely current AI-governance and human-rights role absent from the rest of the canonical legal set.",
+    "provider_concentration_notes": "Council of Europe concentration is accepted only because the three admitted HELP courses cover clearly separate legal domains.",
+    "coverage_notes": "Covers AI/human-rights governance; it does not replace privacy law or cybercrime/evidence training.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-14-coe-help-cybercrime-electronic-evidence",
+    "candidate_id": "coe-help-cybercrime-electronic-evidence",
+    "review_id": "deep-10-coe-help-cybercrime-electronic-evidence",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current cybercrime law and electronic-evidence procedure",
+    "comparison_set": [
+      "coe-help-ai-human-rights",
+      "coe-help-data-protection-privacy-rights"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "This course fills a distinct legal-operational role across cybercrime offences, electronic evidence, procedural powers, international cooperation, human rights and the Budapest Convention framework. The Council of Europe explicitly reported an update in 2026, which is essential in this fast-changing legal area.",
+    "marginal_value": "Adds cybercrime and electronic-evidence law that no other current survivor covers.",
+    "provider_concentration_notes": "The second CoE admission is justified by a separate specialist legal need rather than general provider breadth.",
+    "coverage_notes": "Complements cybersecurity technical courses elsewhere in the index by covering legal process and evidence rather than technical defense.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "coe-help-ai-human-rights",
+      "coe-help-data-protection-privacy-rights"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-14-coe-help-data-protection-privacy-rights",
+    "candidate_id": "coe-help-data-protection-privacy-rights",
+    "review_id": "deep-10-coe-help-data-protection-privacy-rights",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current European data-protection and privacy law",
+    "comparison_set": [
+      "coe-help-ai-human-rights",
+      "coe-help-cybercrime-electronic-evidence",
+      "nau-direitos-deveres-digital"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Data Protection and Privacy Rights is the strongest broad privacy-law route in the pool. Its approximately 12-hour scope covers GDPR, Convention 108+, ECtHR/CJEU case law, health data, media, e-communications, new technologies, workplace privacy, data-subject rights and enforcement, with an explicit 2026 update.",
+    "marginal_value": "Adds substantive privacy/data-protection law with current European case-law and regulatory framing.",
+    "provider_concentration_notes": "A third CoE HELP slot is justified only because privacy is a distinct high-priority legal domain with different learning outcomes from AI law and cybercrime.",
+    "coverage_notes": "Becomes the privacy-law anchor; the short NAU digital-rights primer is not needed as a separate core legal course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "coe-help-ai-human-rights",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-14-wipo-ip-panorama-2",
+    "candidate_id": "wipo-ip-panorama-2",
+    "review_id": "deep-10-wipo-ip-panorama-2",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Applied intellectual-property strategy for entrepreneurs and business owners",
+    "comparison_set": [
+      "wipo-dl101-intellectual-property",
+      "saylor-bus205-business-law"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "IP Panorama 2.0 is current, case-based and useful for business learners, but its applied IP-strategy role overlaps the much deeper DL-101 foundation and parts of Business Law. With no verified formal assessment or certificate, its marginal core value is insufficient for a second WIPO slot.",
+    "marginal_value": "Adds lower-friction business IP strategy but not enough unique foundational coverage.",
+    "provider_concentration_notes": "WIPO concentration is controlled by retaining the stronger general IP course only.",
+    "coverage_notes": "Remains a useful specialist follow-on for entrepreneurs after a stronger IP foundation.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "wipo-dl101-intellectual-property"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-14-nau-direitos-deveres-digital",
+    "candidate_id": "nau-direitos-deveres-digital",
+    "review_id": "deep-10-nau-direitos-deveres-digital",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Accessible pt-PT/en digital-rights and online-citizenship literacy",
+    "comparison_set": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The NAU course provides valuable bilingual accessibility and current digital-citizenship awareness, but four hours across twelve modules cannot support the legal depth expected for the canonical Law & Public Policy set. Language access is valuable but does not justify promoting a substantially shallower legal primer.",
+    "marginal_value": "Adds pt-PT access and general awareness, but insufficient specialist legal depth.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "This leaves a real pt-PT legal-education quality gap that can justify targeted future discovery rather than a lower admission threshold.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "coe-help-data-protection-privacy-rights"
+    ],
+    "is_current": true
+  }
+]
