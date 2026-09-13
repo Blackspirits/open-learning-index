@@ -732,13 +732,15 @@
     "why_recommended": "Project-led beginner web-development foundation that teaches command line, Git, HTML, CSS, JavaScript, debugging and real local developer workflow.",
     "evidence": [
       "https://www.theodinproject.com/paths/foundations/courses/foundations",
-      "https://www.theodinproject.com/lessons/foundations-how-this-course-will-work"
+      "https://www.theodinproject.com/lessons/foundations-how-this-course-will-work",
+      "https://www.theodinproject.com/faq",
+      "https://www.theodinproject.com/contributing"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.9,
     "review_interval_days": 90,
-    "next_review": "2026-12-11"
+    "next_review": "2026-12-12"
   },
   {
     "id": "unity-junior-programmer",
@@ -747,7 +749,16 @@
     "category": "computer-science",
     "level": "beginner_to_intermediate",
     "primary_language": "en",
-    "other_languages": [],
+    "other_languages": [
+      "de",
+      "ja",
+      "fr",
+      "pt",
+      "zh",
+      "es",
+      "ru",
+      "ko"
+    ],
     "url": "https://learn.unity.com/pathway/junior-programmer",
     "free_access": "F0_FULL_CREDENTIAL",
     "certificate": "free_badge",
@@ -770,11 +781,11 @@
       "https://learn.unity.com/pathway/junior-programmer/unity-version",
       "https://learn.unity.com/pathway/junior-programmer/completed?version=6.0"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 9.07,
     "review_interval_days": 90,
-    "next_review": "2026-12-11"
+    "next_review": "2026-12-12"
   },
   {
     "id": "mit-missing-semester-2026",
@@ -804,11 +815,11 @@
     "evidence": [
       "https://missing.csail.mit.edu/"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 9.01,
     "review_interval_days": 90,
-    "next_review": "2026-12-11"
+    "next_review": "2026-12-12"
   },
   {
     "id": "hubspot-revenue-operations",
@@ -2920,7 +2931,7 @@
       "https://huggingface.co/learn/agents-course/en/unit1/get-your-certificate",
       "https://huggingface.co/learn/agents-course/unit4/get-your-certificate"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 9.12,
     "review_interval_days": 60,
@@ -2955,7 +2966,7 @@
       "https://www.netacad.com/courses/data-analytics-essentials",
       "https://www.netacad.com/sites/default/files/course-catalog.pdf"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.59,
     "review_interval_days": 90,
