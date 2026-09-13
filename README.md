@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **173 decisions: 95 admit / 78 do_not_admit**. AI & Data, Computer Science & Software, Cybersecurity & IT, Education & Teaching, Languages, Law & Public Policy, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, Engineering & Electronics, Writing & Communication, Psychology & Behaviour, and Health & Medicine are complete in Phase 4, and the canonical set contains **112 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **188 decisions: 103 admit / 85 do_not_admit**. AI & Data, Computer Science & Software, Cybersecurity & IT, Education & Teaching, Languages, Law & Public Policy, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, Engineering & Electronics, Writing & Communication, Psychology & Behaviour, Health & Medicine, and History & Culture are complete in Phase 4, and the canonical set contains **120 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -36,6 +36,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-14-languages.md`](docs/admissions/batch-14-languages.md) — complete Languages pass balancing target-language coverage, pathway completeness, sequence logic and provider concentration.
 - [`docs/admissions/batch-15-psychology-behavior.md`](docs/admissions/batch-15-psychology-behavior.md) — complete Psychology & Behaviour pass with currentness-sensitive general-course comparison and specialist-role tests.
 - [`docs/admissions/batch-16-health-medicine.md`](docs/admissions/batch-16-health-medicine.md) — complete Health & Medicine pass with clinical-currentness, professional-role and evidence-completeness gates.
+- [`docs/admissions/batch-17-history-culture.md`](docs/admissions/batch-17-history-culture.md) — complete History & Culture pass with global-coverage, archive-concentration and post-COVID currentness controls.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.

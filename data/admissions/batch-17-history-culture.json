@@ -1,0 +1,345 @@
+[
+  {
+    "admission_id": "admission-18-khan-world-history",
+    "candidate_id": "khan-world-history",
+    "review_id": "deep-07-khan-world-history",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad, current, practice-rich world-history backbone from early humans to modern globalisation",
+    "comparison_set": [
+      "saylor-hist103-world-history",
+      "openlearn-empires-power-resistance-legacies"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Khan World History is the clear broad-category leader. Its nine-unit pathway combines historical method, early humans, agrarian societies, empires, industrialisation, global conflict and modern globalisation with strong interactive practice and current materials. It is broader and more pedagogically complete than the competing general surveys.",
+    "marginal_value": "Adds the canonical global-history backbone with unusually strong practice and accessibility.",
+    "provider_concentration_notes": "Khan is not otherwise concentrated within History & Culture.",
+    "coverage_notes": "Provides the broad survey layer; specialist thematic courses are admitted only where they add genuinely different analytical depth.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-openlearn-what-do-historians-do",
+    "candidate_id": "openlearn-what-do-historians-do",
+    "review_id": "deep-07-openlearn-what-do-historians-do",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Advanced historical method, source criticism and historiographical reasoning",
+    "comparison_set": [
+      "openlearn-herodotus-invention-history",
+      "khan-world-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "What do historians do? fills a methodological role rather than another chronological survey. It explicitly trains question formation, use of different source types, material culture, landscape history and historiographical challenge at an advanced level, with strong practice and current framing.",
+    "marginal_value": "Adds disciplinary historical thinking and source-method training missing from broad survey courses.",
+    "provider_concentration_notes": "OpenLearn has several History survivors; only distinct roles are retained.",
+    "coverage_notes": "Becomes the general historical-method course; Herodotus remains a strong introductory source-literacy alternative but is redundant in the minimal core.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-world-history"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-openlearn-empires-power-resistance-legacies",
+    "candidate_id": "openlearn-empires-power-resistance-legacies",
+    "review_id": "deep-07-openlearn-empires-power-resistance-legacies",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current comparative study of empire, resistance, racial ideology and contested legacies",
+    "comparison_set": [
+      "khan-world-history",
+      "saylor-hist103-world-history",
+      "saylor-hist363-global-industrialization"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Empires adds a current thematic lens that broad surveys do not develop deeply enough: power, conquest, racial ideology, resistance, archives and contested memories across multiple empires. Its eight-hour scope is compact but analytically distinct and highly current.",
+    "marginal_value": "Adds comparative imperial-history and memory/legacy analysis to the global backbone.",
+    "provider_concentration_notes": "Retained because the thematic role is distinct from OpenLearn's methods and suffrage courses.",
+    "coverage_notes": "Complements rather than duplicates the broader world-history route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-world-history"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-saylor-hist363-global-industrialization",
+    "candidate_id": "saylor-hist363-global-industrialization",
+    "review_id": "deep-07-saylor-hist363-global-industrialization",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Deep comparative global history of industrialisation, capitalism, labour and environmental change",
+    "comparison_set": [
+      "saylor-hist103-world-history",
+      "khan-world-history",
+      "saylor-hist362-modern-revolutions"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "HIST363 earns a separate slot through depth: 65 hours across global industrialisation, capitalism, labour, mass production, war and alternative development models. It is substantially more analytical and sustained than the industrialisation treatment inside general surveys.",
+    "marginal_value": "Adds deep economic/social/environmental history around one of the central transformations of the modern world.",
+    "provider_concentration_notes": "Saylor concentration is limited to two clearly distinct thematic courses; the general HIST103 survey is not promoted.",
+    "coverage_notes": "Pairs with Modern Revolutions as a different mechanism of modern transformation rather than duplicating it.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-world-history"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-saylor-hist362-modern-revolutions",
+    "candidate_id": "saylor-hist362-modern-revolutions",
+    "review_id": "deep-21-saylor-hist362-modern-revolutions",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Comparative history of revolutions and independence movements across regions",
+    "comparison_set": [
+      "saylor-hist103-world-history",
+      "yale-hist-116-american-revolution",
+      "saylor-hist363-global-industrialization"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "HIST362 replaces the need for multiple narrow national-revolution archives by comparing American, French, Haitian, Latin American, Russian, Chinese and anti-colonial revolutionary change in one 39-hour assessed course.",
+    "marginal_value": "Adds a broad comparative revolution framework with stronger global reach than a single-country archive.",
+    "provider_concentration_notes": "A second Saylor History slot is justified by a genuinely distinct thematic role; HIST103 is pruned to prevent catalogue duplication.",
+    "coverage_notes": "Subsumes much of the marginal need served by the Yale American Revolution archive.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-world-history"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-openlearn-female-protest-suffrage",
+    "candidate_id": "openlearn-female-protest-suffrage",
+    "review_id": "deep-21-openlearn-female-protest-suffrage",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Focused history of women's political protest, suffrage movements and source-based activism",
+    "comparison_set": [
+      "saylor-hist362-modern-revolutions",
+      "openlearn-empires-power-resistance-legacies"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The suffrage course adds a focused social/political-history role underrepresented by the broader surveys. Its 10-hour design combines chronology, organisations, militancy, war and individual case studies with strong source analysis and current materials.",
+    "marginal_value": "Adds women's political history and protest movements with meaningful primary-source practice.",
+    "provider_concentration_notes": "OpenLearn concentration is accepted because this role is distinct from empire and historical-method courses.",
+    "coverage_notes": "Provides a focused gender/political-history perspective absent from the global backbone.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-hist362-modern-revolutions"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-fun-la-musique-quelle-histoire",
+    "candidate_id": "fun-la-musique-quelle-histoire",
+    "review_id": "deep-04-fun-la-musique-quelle-histoire",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "French-language cultural history of Western art music in social and political context",
+    "comparison_set": [
+      "openlearn-enlightenment"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "La Musique, quelle Histoire ! adds a genuinely different cultural-history role and meaningful French-language coverage. Its 15-hour survey links musical periods to social, political, economic, aesthetic and technical change with weekly self-assessment and a final quiz.",
+    "marginal_value": "Adds cultural/music history and non-English instructional coverage at a quality level that clears the bar independently.",
+    "provider_concentration_notes": "FUN/UCA is not concentrated in the canonical History set.",
+    "coverage_notes": "Admitted as cultural history, not as a substitute for general historical surveys.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-yale-clcv-205-ancient-greek-history",
+    "candidate_id": "yale-clcv-205-ancient-greek-history",
+    "review_id": "deep-07-yale-clcv-205-ancient-greek-history",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Deep university-level ancient Greek history from the Bronze Age through the classical period",
+    "comparison_set": [
+      "openlearn-herodotus-invention-history",
+      "yale-hist-210-early-middle-ages",
+      "khan-world-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Ancient Greek History is retained as the single Yale archive specialist in the category. Its 24 lectures, primary-source use and academic depth provide substantially more sustained classical-history coverage than the broad surveys. The subject is stable enough that archive age is less damaging than in health or psychology.",
+    "marginal_value": "Adds one deep university archive for classical history without allowing Yale to dominate the category.",
+    "provider_concentration_notes": "Explicit concentration control: only one of the several valid Yale History archives is promoted.",
+    "coverage_notes": "Represents deep classical history; other Yale regional/national archives remain reviewed specialist alternatives.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-world-history"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-saylor-hist103-world-history",
+    "candidate_id": "saylor-hist103-world-history",
+    "review_id": "deep-07-saylor-hist103-world-history",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "College-level world history from 1600 to the present with assessment and certificate",
+    "comparison_set": [
+      "khan-world-history",
+      "saylor-hist363-global-industrialization",
+      "saylor-hist362-modern-revolutions"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "HIST103 is strong and current, but Khan World History already wins the broad survey role while the two admitted Saylor thematic courses provide deeper modern-history specialisation. A third Saylor History slot would add provider concentration without enough new coverage.",
+    "marginal_value": "Adds college-level assessment and credentialing, but insufficient marginal content after the selected backbone and specialist courses.",
+    "provider_concentration_notes": "Provider concentration is decisive once HIST362 and HIST363 are retained for distinct roles.",
+    "coverage_notes": "The modern period remains comprehensively covered across Khan, industrialisation and revolutions.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "khan-world-history"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-openlearn-herodotus-invention-history",
+    "candidate_id": "openlearn-herodotus-invention-history",
+    "review_id": "deep-21-openlearn-herodotus-invention-history",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory source criticism and historical narrative through Herodotus",
+    "comparison_set": [
+      "openlearn-what-do-historians-do",
+      "yale-clcv-205-ancient-greek-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Herodotus is excellent and current, but the minimal core already retains the broader historical-method course plus a deep Ancient Greek specialist. Its strongest contributions are therefore covered without needing a third overlapping methodology/classics slot.",
+    "marginal_value": "Adds an elegant introductory source-literacy route but insufficient incremental coverage.",
+    "provider_concentration_notes": "OpenLearn concentration reinforces the redundancy decision.",
+    "coverage_notes": "Remains a high-quality beginner alternative to the more advanced methods course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-what-do-historians-do"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-openlearn-enlightenment",
+    "candidate_id": "openlearn-enlightenment",
+    "review_id": "deep-21-openlearn-enlightenment",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Intermediate intellectual and cultural history of the Enlightenment",
+    "comparison_set": [
+      "saylor-hist362-modern-revolutions",
+      "fun-la-musique-quelle-histoire",
+      "khan-world-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The Enlightenment remains useful, but its 2019 update date, Western focus and weaker practice produce less marginal value than the selected global/thematic set. Core modern intellectual change is already represented within world history, revolutions and cultural-history coverage.",
+    "marginal_value": "Adds focused intellectual history but not enough distinctive current value.",
+    "provider_concentration_notes": "OpenLearn is already strongly represented by better-differentiated History courses.",
+    "coverage_notes": "Stays as a reviewed specialist rather than a canonical core course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "saylor-hist362-modern-revolutions"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-yale-hist-116-american-revolution",
+    "candidate_id": "yale-hist-116-american-revolution",
+    "review_id": "deep-21-yale-hist-116-american-revolution",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep lecture-course history of the American Revolution",
+    "comparison_set": [
+      "saylor-hist362-modern-revolutions",
+      "khan-world-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The Yale course is academically strong, but HIST362 covers the American Revolution inside a broader comparative revolutions framework with current assessments and stronger global reach. A second Yale archive specialist would also weaken provider/geographic balance.",
+    "marginal_value": "Adds depth on one national revolution but insufficient marginal value over the comparative route.",
+    "provider_concentration_notes": "Yale concentration is explicitly capped at one archive specialist in this category.",
+    "coverage_notes": "Remains a strong optional specialist for learners needing US revolutionary depth.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "saylor-hist362-modern-revolutions"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-yale-hist-119-civil-war",
+    "candidate_id": "yale-hist-119-civil-war",
+    "review_id": "deep-01-yale-hist-119-civil-war",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep US Civil War and Reconstruction history",
+    "comparison_set": [
+      "khan-world-history",
+      "saylor-hist362-modern-revolutions"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The Civil War archive is excellent, but it is another narrow US-focused Yale lecture course with weak independent assessment. The category already has broad global coverage and one Yale classical specialist; another US archive does not improve balance enough.",
+    "marginal_value": "Adds US depth but little globally distinctive marginal coverage.",
+    "provider_concentration_notes": "Yale and US-history concentration are both material publication-quality risks.",
+    "coverage_notes": "Kept as a reviewed specialist rather than a core canonical slot.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "khan-world-history"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-yale-hist-210-early-middle-ages",
+    "candidate_id": "yale-hist-210-early-middle-ages",
+    "review_id": "deep-07-yale-hist-210-early-middle-ages",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep Western Europe and Mediterranean history from late antiquity to c.1000",
+    "comparison_set": [
+      "yale-clcv-205-ancient-greek-history",
+      "khan-world-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Early Middle Ages is academically deep, but it competes for the same archive-specialist role as Ancient Greek History while adding another Western Yale course. Phase 4 retains only the stronger marginal classical-history archive to control provider and geographic concentration.",
+    "marginal_value": "Adds medieval depth but not enough to justify another Yale archive slot.",
+    "provider_concentration_notes": "Explicit Yale concentration control.",
+    "coverage_notes": "Medieval history remains partially covered in the broad world-history backbone.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "yale-clcv-205-ancient-greek-history"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-18-yale-hist-234-epidemics",
+    "candidate_id": "yale-hist-234-epidemics",
+    "review_id": "deep-07-yale-hist-234-epidemics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Historical study of epidemic disease and society since 1600",
+    "comparison_set": [
+      "khan-world-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The course is intellectually strong, but its framing predates COVID-19 and stops before the most consequential global epidemic experience of the modern era. For a topic whose historical interpretation is materially altered by post-2020 evidence and public-health experience, that omission is too important for canonical admission.",
+    "marginal_value": "Adds rich pre-COVID epidemic history but is no longer current enough as the category's core epidemic-history resource.",
+    "provider_concentration_notes": "Yale concentration is secondary; the decisive issue is topical incompleteness after COVID-19.",
+    "coverage_notes": "A current post-COVID history-of-epidemics course is a targeted discovery opportunity.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
