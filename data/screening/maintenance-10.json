@@ -62,7 +62,7 @@
       "prodigi-ects-restricted",
       "deep-review-required"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "maintenance-10-nau-estruturas-dados",
@@ -92,7 +92,7 @@
       "free-certificate",
       "deep-review-required"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "maintenance-10-nau-algoritmos-complexidade",
@@ -125,7 +125,7 @@
       "free-certificate",
       "deep-review-required"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "maintenance-10-nau-ciencia-aberta-dados-fair",
@@ -159,7 +159,7 @@
       "no-ects",
       "deep-review-required"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "maintenance-10-nau-sustentabilidade-ambiental",
@@ -279,7 +279,7 @@
       "free-certificate",
       "deep-review-required"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "maintenance-10-nau-iniciacao-lingua-portuguesa",
