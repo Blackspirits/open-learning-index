@@ -1,0 +1,186 @@
+[
+  {
+    "review_id": "deep-27-nau-regulacao-digital",
+    "candidate_id": "nau-regulacao-digital",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "The course defines module checks and a final assessment, but no current course-specific zero-cost assessment/certificate path is verified after NAU's July 2026 payment-model change",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Eight-hour advanced specialist course on European digital regulation, platform and market regulation, data regulation, emerging technologies and AI, content moderation, e-commerce, digital accessibility, compliance-support tools and implementation/monitoring.",
+    "prerequisites": "No formal prerequisite stated; advanced classification and regulatory vocabulary make prior familiarity with digital policy, law or organisational compliance helpful",
+    "required_resources": "Modern browser and free NAU Audit access for teaching content; no mandatory paid software or specialist equipment identified",
+    "component_evidence": {
+      "pedagogy": "The ten-module structure moves from regulatory foundations and European context through sectoral domains into compliance tooling, monitoring and accessibility implementation, giving a coherent policy-to-application progression despite the compact duration.",
+      "depth": "Eight hours cannot substitute for a semester technology-law curriculum, but the course is unusually dense for a specialist professional route and covers multiple current regulatory domains rather than a single awareness topic.",
+      "practice": "Each module includes a mandatory learning check and the formal route includes a final assessment. Application-oriented modules on compliance and accessibility add practical framing, although no extended legal drafting, case brief or project is documented.",
+      "materials": "The learner page exposes a detailed ten-module plan with clear outcomes across digital markets, data, emerging technology and accessibility. Publicly inspectable reusable case materials are less extensive than in the strongest open legal courses.",
+      "currency": "The subject matter is highly current for 2026: DSA-era platform regulation, data, AI/emerging technology and accessibility all sit in rapidly evolving EU digital policy. The current active route and contemporary framing justify a very high currency score.",
+      "expertise": "The course is delivered by ARTE / Academia Portugal Digital, a Portuguese public digital-transformation initiative with direct policy and workforce context in the domains being taught.",
+      "accessibility": "Self-paced bilingual Portuguese/English teaching substantially lowers language friction. The main limitation is that the current free Audit route does not prove free access to assessment/certification under NAU's post-July payment model."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8,
+      "practice": 8,
+      "materials": 8.5,
+      "currency": 9.8,
+      "expertise": 9,
+      "accessibility": 8.5
+    },
+    "quality_score": 8.48,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A compact but unusually current European digital-regulation specialist, especially valuable for Portuguese-speaking professionals who need DSA/data/AI/accessibility context without relying on English-only legal CPD. It is not a general law foundation, but its currentness and language access give it clear specialist recommendation value.",
+    "comparators": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "flags": [
+      "pt-pt",
+      "english",
+      "advanced",
+      "8-hours",
+      "digital-regulation",
+      "dsa",
+      "ai-regulation",
+      "accessibility",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-27-nau-responsavel-ciberseguranca",
+    "candidate_id": "nau-responsavel-ciberseguranca",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Participation certificate requires at least 70%, but current course-specific zero-cost assessment/certificate access is not verified under NAU's post-July-2026 payment models",
+    "academic_credits": "No public academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Fifteen-hour intermediate professional course covering Portuguese/EU cybersecurity law, risk analysis and management, technical and organisational controls, cybersecurity auditing, asset inventories, incident management, security policies/plans, annual reporting and compliance with the applicable legal regime.",
+    "prerequisites": "No formal prerequisite stated; intended for learners moving toward organisational cybersecurity responsibility, so basic cybersecurity and organisational-process familiarity is helpful",
+    "required_resources": "Modern browser; no mandatory commercial security platform, cloud spend or physical lab equipment identified for the teaching route",
+    "component_evidence": {
+      "pedagogy": "Ten modules combine theoretical framing, practical application and critical reflection, progressing from legal obligations through risk and controls into incidents, policy, planning and compliance reporting.",
+      "depth": "Fifteen hours provide a focused but meaningful governance/risk/compliance layer. It is deeper than a short cyber-awareness course while remaining narrower than a full security-management certification curriculum.",
+      "practice": "Continuous module questions contribute 40% and a final multiple-choice exam 60% of the formal grade. The outcomes also require creating inventories, reports and compliance plans, though the public record does not expose a large hands-on technical lab suite.",
+      "materials": "The course plan is specific and operational, connecting law, risk, audit, asset management, incidents and reporting. It is less lab-rich than Cisco's technical pathway but better aligned with Portuguese governance responsibilities.",
+      "currency": "Currency is exceptional: Portugal's new Regime Juridico da Ciberseguranca was approved in December 2025 and entered into force in 2026, while CNCS continued publishing implementation guidance during 2026. The course explicitly targets the applicable national/EU regime.",
+      "expertise": "The route was developed under the CNCS C-Academy project and coordinated by Instituto Politecnico de Lisboa, combining national cybersecurity-authority expertise with higher-education delivery.",
+      "accessibility": "Self-paced pt-PT delivery, 15-hour scope and no paid tooling are strong. The certificate/assessment price is currently unverified after NAU's payment change, so the index conservatively treats the free route as F2."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.5,
+      "practice": 8.4,
+      "materials": 8.5,
+      "currency": 9.9,
+      "expertise": 9.6,
+      "accessibility": 8.5
+    },
+    "quality_score": 8.78,
+    "recommendation_score": 9,
+    "recommendation_rationale": "One of the strongest current pt-PT cybersecurity-governance routes reviewed. Cisco Cyber Threat Management has a stronger lab environment and free badge, but this course serves a distinct Portuguese legal/compliance role with exceptional 2026 currentness. For learners responsible for organisational cybersecurity in Portugal, it is a highly relevant recommendation.",
+    "comparators": [
+      "cisco-cyber-threat-management",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+      "https://www.nau.edu.pt/pt/noticias/formacao-ciberseguranca-aprendizagem-ao-longo-da-vida-presenca-nau-c-days-2026/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/",
+      "https://dyn.cncs.gov.pt/pt/detalhe/art/135998/novo-regime-juridico-da-ciberseguranca-entra-em-vigor"
+    ],
+    "flags": [
+      "pt-pt",
+      "intermediate",
+      "15-hours",
+      "cybersecurity-governance",
+      "risk",
+      "incident-management",
+      "compliance",
+      "current-rjc-2026",
+      "cncs",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-27-nau-ciberseguranca-executivos-nis2",
+    "candidate_id": "nau-ciberseguranca-executivos-nis2",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Participation certificate requires at least 70%, but current course-specific zero-cost assessment/certificate access is not verified under NAU's post-July-2026 payment models",
+    "academic_credits": "No public academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Thirty-hour intermediate executive cybersecurity course on NIS/NIS2, risk-informed decision making, incident response and business continuity, supply-chain security, secure acquisition/development/maintenance, vulnerability analysis, cryptography, access control/MFA and cyber-hygiene.",
+    "prerequisites": "Designed for executives, leaders and learners seeking a holistic non-technical cybersecurity perspective; no technical prerequisite stated",
+    "required_resources": "Modern browser; no mandatory paid security tooling or specialist hardware identified",
+    "component_evidence": {
+      "pedagogy": "The eight-module route connects regulatory context to concrete governance and security-control domains, with theory, practical application and critical reflection aimed at organisational decision makers rather than technical operators.",
+      "depth": "At 30 hours it is unusually substantial for executive cyber education and covers governance, resilience, supply chain and multiple technical-control families. It remains a leadership-oriented course, not a hands-on SOC or penetration-testing programme.",
+      "practice": "Module quizzes contribute 40% and a final exam 60% of the formal grade. The learning outcomes emphasise risk decisions, procedures and organisational implementation; no substantial technical lab environment is documented, which is appropriate to the stated executive role but limits hands-on depth.",
+      "materials": "The eight-module plan maps closely to NIS2 risk-management obligations, including continuity, supply chain, secure development, vulnerability management, cryptography, access controls and cyber-hygiene.",
+      "currency": "The course aligns directly with NIS2 and Portugal's new cybersecurity legal regime, which entered its implementation phase in 2026. This is exceptionally current and materially more relevant than older governance courses.",
+      "expertise": "Developed under CNCS C-Academy and coordinated by ISCTE faculty, the course combines national authority context with academic expertise in cybersecurity and digital technologies.",
+      "accessibility": "Portuguese instruction, no technical prerequisite and executive framing make the route accessible to organisational leaders. The main friction is unverified zero-cost assessment/certification under NAU's new payment models."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.7,
+      "practice": 8.3,
+      "materials": 8.6,
+      "currency": 9.9,
+      "expertise": 9.6,
+      "accessibility": 8.4
+    },
+    "quality_score": 8.81,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "A rare substantial pt-PT executive cybersecurity pathway with exceptional currentness and direct NIS2 relevance. It should not be compared to ethical-hacking or network-defense courses: its value is governance, risk, resilience and leadership. The F2 assessment/certificate uncertainty is the main reason it does not score even higher.",
+    "comparators": [
+      "cisco-cyber-threat-management",
+      "nau-responsavel-ciberseguranca"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+      "https://www.nau.edu.pt/pt/noticias/formacao-ciberseguranca-aprendizagem-ao-longo-da-vida-presenca-nau-c-days-2026/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/",
+      "https://dyn.cncs.gov.pt/pt/detalhe/art/135998/novo-regime-juridico-da-ciberseguranca-entra-em-vigor"
+    ],
+    "flags": [
+      "pt-pt",
+      "intermediate",
+      "30-hours",
+      "nis2",
+      "executive-cybersecurity",
+      "business-continuity",
+      "supply-chain-security",
+      "current-rjc-2026",
+      "cncs",
+      "conservative-f2"
+    ],
+    "is_current": true
+  }
+]
