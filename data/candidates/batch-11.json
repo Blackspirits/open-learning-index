@@ -1,0 +1,45 @@
+[
+  {
+    "id": "nau-regulacao-digital",
+    "title": "Regulação Digital",
+    "provider": "ARTE | Academia Portugal Digital / NAU",
+    "category": "law-public-policy",
+    "primary_language": "pt-PT",
+    "language_notes": "Official page lists both Portuguese and English instruction; pt-PT is a full instructional language, not merely subtitles.",
+    "url": "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+    "apparent_free_access": "UNVERIFIED",
+    "stage": "discovered",
+    "evidence_url": "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+    "discovered_on": "2026-09-14",
+    "reason": "Current advanced eight-hour digital-regulation course covering EU digital regulation, platform and market regulation, data, AI, content moderation, e-commerce, accessibility, compliance tools and implementation, with ten modules plus module and final assessments.",
+    "notes": "The course is a serious current pt-PT legal/regulatory specialist candidate, but NAU introduced partner-selectable paid assessment/certification in July 2026. Shallow Screening must verify the exact current learner access model before assigning F0/F1/F2."
+  },
+  {
+    "id": "nau-responsavel-ciberseguranca",
+    "title": "Curso de introdução: Responsável de Cibersegurança",
+    "provider": "Centro Nacional de Cibersegurança / Instituto Politécnico de Lisboa / NAU",
+    "category": "cybersecurity-it",
+    "primary_language": "pt-PT",
+    "url": "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+    "apparent_free_access": "UNVERIFIED",
+    "stage": "discovered",
+    "evidence_url": "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+    "discovered_on": "2026-09-14",
+    "reason": "Current 15-hour intermediate Portuguese course combining national/EU cybersecurity law, risk management, organisational controls, audits, incident management, security policy and compliance reporting, with continuous assessment and a final exam.",
+    "notes": "NAU's June 2026 C-DAYS report explicitly describes its cybersecurity catalogue as accessible, massive and free, but the platform's July payment-model change means Shallow Screening must verify whether the complete assessed/certificate route for this exact course remains free."
+  },
+  {
+    "id": "nau-ciberseguranca-executivos-nis2",
+    "title": "Cibersegurança para Executivos: Preparação para a NIS2",
+    "provider": "Centro Nacional de Cibersegurança / ISCTE / NAU",
+    "category": "cybersecurity-it",
+    "primary_language": "pt-PT",
+    "url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+    "apparent_free_access": "UNVERIFIED",
+    "stage": "discovered",
+    "evidence_url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+    "discovered_on": "2026-09-14",
+    "reason": "Current 30-hour intermediate executive cybersecurity route focused on NIS2, incident response, business continuity, supply-chain security, secure acquisition/development, vulnerability analysis, cryptography, access controls and cyber-hygiene, with eight assessed modules and a final exam.",
+    "notes": "This is materially deeper and more current than the earlier rejected legacy pt-PT cybersecurity candidates. Exact zero-cost assessment/certificate mechanics still require Shallow Screening because NAU payment models became course-specific in July 2026."
+  }
+]
