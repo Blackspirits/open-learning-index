@@ -1,0 +1,376 @@
+[
+  {
+    "admission_id": "admission-12-huggingface-agents-course",
+    "candidate_id": "huggingface-agents-course",
+    "review_id": "deep-02-huggingface-agents-course",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Technical agentic-AI development across tools, reasoning loops, multiple frameworks, RAG and evaluation",
+    "comparison_set": [
+      "openai-agents-workflows",
+      "microsoft-learn-develop-ai-agents"
+    ],
+    "incumbent_ids": [
+      "openai-agents-workflows"
+    ],
+    "decision_rationale": "Hugging Face Agents materially improves the canonical set despite an existing agent incumbent. OpenAI Academy is the lower-friction workflow-oriented route; Hugging Face is deeper and more technical, spanning multiple frameworks, agentic RAG, assignments, a benchmark challenge, observability/evaluation and free certification without mandatory cloud spend.",
+    "marginal_value": "Adds a developer-oriented, multi-framework agent course with deeper implementation and evaluation practice than the incumbent workflow route.",
+    "provider_concentration_notes": "Hugging Face is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Pairs with OpenAI Academy rather than displacing it: one route emphasizes practical workflow use, the other technical agent construction.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openai-agents-workflows"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-cisco-data-analytics-essentials",
+    "candidate_id": "cisco-data-analytics-essentials",
+    "review_id": "deep-01-cisco-data-analytics-essentials",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Applied data analytics foundation spanning spreadsheets, SQL, visualization and portfolio practice",
+    "comparison_set": [
+      "kaggle-pandas",
+      "kaggle-data-visualization",
+      "kaggle-intro-sql"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Cisco Data Analytics Essentials fills a broad analytics role not covered by the existing AI/ML incumbents. At roughly 30 hours it combines spreadsheets, SQL and Tableau with labs, module exams, a final exam and portfolio work, making it substantially more complete than the adjacent Kaggle microcourses.",
+    "marginal_value": "Adds an applied analytics foundation distinct from machine learning, AI programming and agentic workflows.",
+    "provider_concentration_notes": "Cisco is represented in Cybersecurity & IT, but this admission is justified by a different data-analytics learning role and strong practice architecture.",
+    "coverage_notes": "Becomes the broad data-analytics route; individual Kaggle microcourses remain useful specialist accelerators without requiring separate core slots.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-fastai-practical-deep-learning",
+    "candidate_id": "fastai-practical-deep-learning",
+    "review_id": "deep-01-fastai-practical-deep-learning",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Project-first practical deep learning for experienced coders",
+    "comparison_set": [
+      "harvard-cs50-ai",
+      "google-ml-crash-course"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-ai",
+      "google-ml-crash-course"
+    ],
+    "decision_rationale": "fast.ai remains pedagogically excellent and practice-heavy, but its practical stack is materially older in a fast-moving field. CS50 AI already supplies deeper project-based AI foundations and Google ML Crash Course supplies a much more current interactive ML foundation. The 2022-era stack lowers marginal recommendation enough to keep fast.ai outside the minimal core.",
+    "marginal_value": "Adds deeper practical deep-learning specialization, but currentness is not strong enough to justify another overlapping AI foundation.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "Deep learning remains represented inside CS50 AI and Google MLCC; a newer specialist deep-learning route could challenge this decision later.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50-ai",
+      "google-ml-crash-course"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-microsoft-learn-ai-concepts",
+    "candidate_id": "microsoft-learn-ai-concepts",
+    "review_id": "deep-01-microsoft-learn-ai-concepts",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Very current beginner overview of AI, generative AI, agents and major application areas",
+    "comparison_set": [
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "incumbent_ids": [
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "decision_rationale": "The Microsoft path is exceptionally current but only about 3h51 and light on practice. Existing incumbents already provide stronger foundations with substantially more interaction, depth and projects, so currency alone does not create enough marginal value.",
+    "marginal_value": "Adds a concise overview but not a new core learning role.",
+    "provider_concentration_notes": "Microsoft vendor concentration is not needed to reject it; direct depth/practice comparison is sufficient.",
+    "coverage_notes": "AI foundations remain covered by Google MLCC and CS50 AI.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-microsoft-learn-develop-ai-agents",
+    "candidate_id": "microsoft-learn-develop-ai-agents",
+    "review_id": "deep-02-microsoft-learn-develop-ai-agents",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Azure-centered implementation of AI agents, tools, MCP, RAG and multi-agent workflows",
+    "comparison_set": [
+      "huggingface-agents-course",
+      "openai-agents-workflows"
+    ],
+    "incumbent_ids": [
+      "openai-agents-workflows"
+    ],
+    "decision_rationale": "The Microsoft agent path is highly current and technically useful, but Azure services and possible cloud consumption reduce portability and accessibility. Hugging Face offers a stronger multi-framework technical route without the same vendor/cloud friction, while OpenAI Academy already covers a lower-friction agent workflow role.",
+    "marginal_value": "Adds Azure-specialist value, not enough provider-neutral marginal value for the core.",
+    "provider_concentration_notes": "Vendor lock-in is a substantive recommendation constraint.",
+    "coverage_notes": "Agentic AI remains strongly covered by complementary OpenAI and Hugging Face routes.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "huggingface-agents-course",
+      "openai-agents-workflows"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-huggingface-audio-course",
+    "candidate_id": "huggingface-audio-course",
+    "review_id": "deep-02-huggingface-audio-course",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Specialist audio machine learning across classification, ASR, TTS and transformer workflows",
+    "comparison_set": [
+      "harvard-cs50-ai",
+      "fastai-practical-deep-learning"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-ai"
+    ],
+    "decision_rationale": "The Audio Course has excellent assignments and specialist depth, but its practical stack dates largely from 2023 and audio ML is a narrower specialist need. In a high-change field, that combination does not justify a canonical slot when the core already has strong general AI foundations.",
+    "marginal_value": "Adds valuable audio specialization but insufficient current broad value for the minimal core.",
+    "provider_concentration_notes": "Hugging Face earns one stronger, more current agents slot; provider concentration reinforces but does not determine this decision.",
+    "coverage_notes": "Audio ML remains a reviewed specialist option rather than a core coverage requirement.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-nau-inteligencia-artificial-machine-learning",
+    "candidate_id": "nau-inteligencia-artificial-machine-learning",
+    "review_id": "deep-02-nau-inteligencia-artificial-machine-learning",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Accessible bilingual pt-PT/en introduction to AI and machine learning with free credential",
+    "comparison_set": [
+      "google-ml-crash-course",
+      "microsoft-learn-ai-concepts"
+    ],
+    "incumbent_ids": [
+      "google-ml-crash-course"
+    ],
+    "decision_rationale": "The course provides valuable pt-PT accessibility, but eight hours of broad coverage with limited practice does not meet the core quality bar beside Google MLCC and CS50 AI. Language access cannot compensate for materially weaker depth and practice.",
+    "marginal_value": "Adds pt-PT access and a free credential, but insufficient learning depth for canonical admission.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "This exposes a real quality-access gap: the index still lacks a top-tier pt-PT AI/ML course. Targeted discovery is preferable to lowering the bar.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "google-ml-crash-course"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-nau-introducao-inteligencia-artificial",
+    "candidate_id": "nau-introducao-inteligencia-artificial",
+    "review_id": "deep-03-nau-introducao-inteligencia-artificial",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Three-hour bilingual pt-PT/en AI literacy introduction",
+    "comparison_set": [
+      "nau-inteligencia-artificial-machine-learning",
+      "microsoft-learn-ai-concepts"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "At roughly three hours, this course is useful literacy material but too shallow for canonical AI competence. It is also outcompeted by the longer NAU AI/ML course even before comparison with the global incumbents.",
+    "marginal_value": "Adds very low-friction literacy but not enough depth or practice for the core.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "The pt-PT quality gap remains explicit rather than being filled by a short placeholder.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "nau-inteligencia-artificial-machine-learning"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-mathworks-machine-learning-onramp",
+    "candidate_id": "mathworks-machine-learning-onramp",
+    "review_id": "deep-02-mathworks-machine-learning-onramp",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Interactive classification workflow practice in MATLAB",
+    "comparison_set": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning"
+    ],
+    "incumbent_ids": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning"
+    ],
+    "decision_rationale": "The Onramp is well designed and browser-based, but its narrow classification scope and MATLAB specificity reduce transferability. Google MLCC and Kaggle Intro ML already provide broader, more portable and highly interactive ML foundations.",
+    "marginal_value": "Adds MATLAB-specific workflow practice but no sufficiently distinct core role.",
+    "provider_concentration_notes": "MathWorks already has three admitted Engineering Onramps; provider concentration raises the marginal-value bar further.",
+    "coverage_notes": "General ML remains strongly covered by Google and Kaggle incumbents.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-mathworks-deep-learning-onramp",
+    "candidate_id": "mathworks-deep-learning-onramp",
+    "review_id": "deep-03-mathworks-deep-learning-onramp",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Browser-based image-classification deep learning in MATLAB",
+    "comparison_set": [
+      "harvard-cs50-ai",
+      "fastai-practical-deep-learning"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-ai"
+    ],
+    "decision_rationale": "Deep Learning Onramp has strong interactive practice, but it is narrow, MATLAB-specific and focused on image classification/transfer learning. It does not add enough portable depth beyond CS50 AI and other reviewed deep-learning options.",
+    "marginal_value": "Adds convenient vendor-specific practice but insufficient transferable coverage.",
+    "provider_concentration_notes": "Existing MathWorks canonical representation further raises the bar for another vendor-specific Onramp.",
+    "coverage_notes": "Deep-learning fundamentals remain covered by broader AI courses.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50-ai"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-cisco-introduction-data-science",
+    "candidate_id": "cisco-introduction-data-science",
+    "review_id": "deep-03-cisco-introduction-data-science",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Compact assessed orientation to data science, analytics and data engineering",
+    "comparison_set": [
+      "cisco-data-analytics-essentials"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Cisco's six-hour introduction is a legitimate orientation, but Data Analytics Essentials is substantially deeper and more practice-rich. Keeping both would mirror a provider pathway rather than improve canonical coverage.",
+    "marginal_value": "Adds onboarding convenience but no separate core role.",
+    "provider_concentration_notes": "Cisco is already heavily represented elsewhere; the stronger analytics route is sufficient.",
+    "coverage_notes": "Learners seeking a full analytics foundation should use Data Analytics Essentials.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-data-analytics-essentials"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-kaggle-pandas",
+    "candidate_id": "kaggle-pandas",
+    "review_id": "deep-21-kaggle-pandas",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Fast hands-on onboarding to Pandas data manipulation",
+    "comparison_set": [
+      "cisco-data-analytics-essentials",
+      "kaggle-intro-machine-learning"
+    ],
+    "incumbent_ids": [
+      "kaggle-intro-machine-learning"
+    ],
+    "decision_rationale": "Pandas is an excellent four-hour skills module with immediate notebook practice, but it is deliberately narrow. With a broad analytics course admitted and Kaggle already represented by Intro ML, a second compact platform microcourse does not add enough core coverage.",
+    "marginal_value": "High-return specialist practice, but insufficient breadth for an additional canonical slot.",
+    "provider_concentration_notes": "Kaggle already has a canonical ML route; adjacent microcourses face a higher distinctiveness bar.",
+    "coverage_notes": "Pandas remains a strong reviewed follow-on resource for Python data learners.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-data-analytics-essentials"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-kaggle-data-visualization",
+    "candidate_id": "kaggle-data-visualization",
+    "review_id": "deep-21-kaggle-data-visualization",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Short practical data visualization with Seaborn and a final notebook project",
+    "comparison_set": [
+      "cisco-data-analytics-essentials",
+      "kaggle-pandas"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The course has excellent practice density for four hours, but visualization is already part of the broader Cisco analytics pathway and the Seaborn/API layer ages faster. A separate canonical slot would over-weight a compact Kaggle module.",
+    "marginal_value": "Adds focused plotting practice but not enough distinct breadth.",
+    "provider_concentration_notes": "Kaggle concentration is a material secondary factor.",
+    "coverage_notes": "Visualization remains covered within the broader analytics route; this microcourse stays a useful specialist option.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-data-analytics-essentials"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-kaggle-intro-sql",
+    "candidate_id": "kaggle-intro-sql",
+    "review_id": "deep-21-kaggle-intro-sql",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Very low-friction introductory SQL practice in hosted BigQuery",
+    "comparison_set": [
+      "harvard-cs50-sql",
+      "cisco-data-analytics-essentials"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-sql"
+    ],
+    "decision_rationale": "Kaggle Intro SQL is an efficient three-hour practice module, but CS50 SQL is a much deeper canonical database route and Cisco Data Analytics Essentials already embeds SQL in an applied analytics context. The BigQuery-specific microcourse does not add enough marginal value.",
+    "marginal_value": "Adds hosted onboarding convenience but no unique core database role.",
+    "provider_concentration_notes": "Kaggle is already represented canonically.",
+    "coverage_notes": "SQL coverage remains strong through CS50 SQL plus the applied analytics course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50-sql",
+      "cisco-data-analytics-essentials"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-12-kaggle-advanced-sql",
+    "candidate_id": "kaggle-advanced-sql",
+    "review_id": "deep-21-kaggle-advanced-sql",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Short follow-on SQL practice with windows, nested data and query efficiency",
+    "comparison_set": [
+      "harvard-cs50-sql",
+      "kaggle-intro-sql"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-sql"
+    ],
+    "decision_rationale": "Advanced SQL adds useful window functions and nested BigQuery data, but at four hours it remains a narrow provider-specific follow-on. CS50 SQL already covers a substantially deeper relational-database pathway.",
+    "marginal_value": "Useful specialist extension, insufficient core breadth.",
+    "provider_concentration_notes": "Kaggle concentration reinforces the decision.",
+    "coverage_notes": "Advanced SQL remains a reviewed supplement rather than a canonical course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50-sql"
+    ],
+    "is_current": true
+  }
+]
