@@ -92,7 +92,7 @@
       "software-version-sensitive",
       "no-formal-credential"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-04-openlearn-introduction-music-theory",
@@ -115,7 +115,7 @@
     "flags": [
       "pedagogy-comparison-needed"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "screen_id": "shallow-04-canva-essentials",

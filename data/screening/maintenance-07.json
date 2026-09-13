@@ -1,0 +1,91 @@
+[
+  {
+    "screen_id": "maintenance-07-blender-fundamentals-45-lts",
+    "candidate_id": "blender-fundamentals-45-lts",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://studio.blender.org/training/blender-fundamentals-45-lts/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "partial",
+    "evidence": [
+      "https://studio.blender.org/training/blender-fundamentals-45-lts/"
+    ],
+    "rationale": "The official Blender Studio course explicitly states that it is still under construction, with missing chapters and existing chapters still being iterated. The available material is substantial and current, so rejection would be premature, but instructional completeness is a mandatory shallow gate and the course cannot remain eligible for Deep Review until the provider marks the pathway complete.",
+    "flags": [
+      "software-version-sensitive",
+      "under-construction",
+      "missing-chapters",
+      "instructional-completeness-blocker",
+      "carry-forward-hold"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-04-blender-fundamentals-45-lts"
+  },
+  {
+    "screen_id": "maintenance-07-openlearn-introduction-music-theory",
+    "candidate_id": "openlearn-introduction-music-theory",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn Statement of Participation",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory",
+      "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-10.1",
+      "https://www.musictheory.net/lessons",
+      "https://www.musictheory.net/exercises"
+    ],
+    "rationale": "The core notation/theory material remains usable, but the live learner route was last updated in 2019 and still tells learners that the eye/ear trainer drills require Adobe Flash Player and/or the Java Runtime Environment. This is a confirmed technical-usability defect in a practice section, not merely cosmetic age. The current pool also contains MusicTheory.net, a broader browser-native theory sequence with extensive configurable notation and ear-training exercises, so spending a Deep Review slot on this weaker and partially obsolete route is not justified.",
+    "flags": [
+      "updated-2019",
+      "obsolete-technical-dependency",
+      "flash-java-trainers",
+      "practice-route-degraded",
+      "stronger-current-alternative"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-04-openlearn-introduction-music-theory"
+  },
+  {
+    "screen_id": "maintenance-07-whoacademy-chemical-hazards-part-2",
+    "candidate_id": "whoacademy-chemical-hazards-part-2",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://whoacademy.org/coursewares/course-v1%3AWHOA%2B0037B_CHEMHAZ_EN%2B2024?source=edX",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal credential independently verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.who.int/news/item/06-06-2025-new-who-online-course-series-strengthens-readiness-for-chemical-hazards",
+      "https://whoacademy.org/coursewares/course-v1%3AWHOA%2B0037B_CHEMHAZ_EN%2B2024?source=edX"
+    ],
+    "rationale": "WHO continues to verify that Part II is current, free and teaches recognition and interpretation of environmental, clinical and classification evidence for early chemical-release assessment. Repeated Phase 3 verification still finds the learner-facing WHO Academy route exposed publicly only as a JavaScript shell, with no sufficiently granular official evidence for duration, internal module structure, practice, assessment or feedback. Because an unresolved evidence issue now demonstrably blocks auditable Deep Review, the correct current shallow state is hold rather than advance; this is not a quality rejection.",
+    "flags": [
+      "chemical-hazards",
+      "current-2025-series",
+      "professional-specialist",
+      "javascript-dependent",
+      "deep-review-evidence-insufficient",
+      "carry-forward-hold"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "shallow-11-whoacademy-chemical-hazards-part-2"
+  }
+]
