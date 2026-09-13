@@ -1,0 +1,184 @@
+[
+  {
+    "admission_id": "admission-17-whoacademy-good-practices-clinical-trials",
+    "candidate_id": "whoacademy-good-practices-clinical-trials",
+    "review_id": "deep-23-whoacademy-good-practices-clinical-trials",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current broad scientific and ethical good-practice framework for clinical-trial design, conduct and oversight",
+    "comparison_set": [
+      "tghn-ich-gcp-e6-r3",
+      "tghn-research-ethics-v2",
+      "tghn-data-life-cycle"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "WHO's 2026 course is the strongest broad current clinical-trials recommendation in the pool. Nine interactive modules translate the 2024 WHO guidance into five scientific and ethical principles using real-world cases and decision-making. It is broader than compliance-only GCP and newer than the other specialist routes.",
+    "marginal_value": "Adds a current principles-and-practice framework spanning design, conduct and oversight rather than one narrow compliance function.",
+    "provider_concentration_notes": "WHO is not otherwise concentrated in the canonical Health set.",
+    "coverage_notes": "Complements rather than replaces TGHN GCP, ethics and data-governance specialists.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "tghn-ich-gcp-e6-r3",
+      "tghn-research-ethics-v2",
+      "tghn-data-life-cycle"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-tghn-ich-gcp-e6-r3",
+    "candidate_id": "tghn-ich-gcp-e6-r3",
+    "review_id": "deep-06-tghn-ich-gcp-e6-r3",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current ICH E6(R3) Good Clinical Practice compliance training",
+    "comparison_set": [
+      "whoacademy-good-practices-clinical-trials",
+      "tghn-research-ethics-v2"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "TGHN GCP E6(R3) earns a separate slot because it serves a sharply defined professional need: current ICH GCP compliance. Its eight modules are aligned to the final E6(R3), available in multiple languages and end in a free assessed certificate. WHO remains broader on trial principles and implementation.",
+    "marginal_value": "Adds explicit GCP compliance training, multilingual access and verified credential mechanics.",
+    "provider_concentration_notes": "TGHN has several strong survivors; this one is retained because GCP is a distinct professional requirement.",
+    "coverage_notes": "Complements WHO clinical-trial principles rather than duplicating them.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "whoacademy-good-practices-clinical-trials"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-tghn-research-ethics-v2",
+    "candidate_id": "tghn-research-ethics-v2",
+    "review_id": "deep-06-tghn-research-ethics-v2",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Applied research ethics for health and clinical research",
+    "comparison_set": [
+      "tghn-ich-gcp-e6-r3",
+      "whoacademy-good-practices-clinical-trials"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Research Ethics V2 covers a distinct role through ten modules on risks/benefits, vulnerability, participant obligations, community engagement, privacy, consent and ethical dilemmas. Its case-oriented practice and module certification materially improve the clinical-research pathway beyond GCP compliance.",
+    "marginal_value": "Adds substantive ethics depth that neither GCP nor the broader WHO course develops as fully.",
+    "provider_concentration_notes": "A second TGHN admission is justified by a separate professional competency rather than provider breadth.",
+    "coverage_notes": "Forms the ethics layer in a broader research-practice pathway.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "tghn-ich-gcp-e6-r3",
+      "whoacademy-good-practices-clinical-trials"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-tghn-data-life-cycle",
+    "candidate_id": "tghn-data-life-cycle",
+    "review_id": "deep-06-tghn-data-life-cycle",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Responsible health-research data governance, sharing and lifecycle practice",
+    "comparison_set": [
+      "whoacademy-good-practices-clinical-trials",
+      "tghn-research-ethics-v2"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The Data Life Cycle fills a data-governance role not covered by GCP or research ethics: management, sharing principles, governance/access, quality, costs and repositories. It is current, peer-reviewed and directly relevant to reproducible health research.",
+    "marginal_value": "Adds a distinct health-research data stewardship competency.",
+    "provider_concentration_notes": "The third TGHN admission is justified because data governance is a separate learning need from GCP and ethics.",
+    "coverage_notes": "Not a full data-manager or statistics qualification; admitted as a research-data-governance foundation.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "whoacademy-good-practices-clinical-trials",
+      "tghn-research-ethics-v2"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-fao-improving-nutrition-agri-food",
+    "candidate_id": "fao-improving-nutrition-agri-food",
+    "review_id": "deep-04-fao-improving-nutrition-agri-food",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Nutrition-sensitive agriculture and food-systems policy/programme practice",
+    "comparison_set": [
+      "fao-nutrition-food-security-livelihoods"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "This course fills a distinct public-health/nutrition systems role absent from the clinical-research cluster. Its scenario-based five-lesson route connects malnutrition, agriculture and food systems with nutrition-sensitive policy, investments and programmes and includes a free assessed badge.",
+    "marginal_value": "Adds professional nutrition/food-systems coverage not served elsewhere in the canonical Health set.",
+    "provider_concentration_notes": "Only the stronger FAO nutrition course is retained; the basic concepts micro-module is rejected.",
+    "coverage_notes": "Currentness is weaker than the clinical-research leaders, so the course receives a shorter review cadence than stable academic subjects.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-fao-nutrition-food-security-livelihoods",
+    "candidate_id": "fao-nutrition-food-security-livelihoods",
+    "review_id": "deep-04-fao-nutrition-food-security-livelihoods",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Very short introductory nutrition, food-security and livelihoods concepts",
+    "comparison_set": [
+      "fao-improving-nutrition-agri-food"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "At roughly 30–35 minutes, this is a useful orientation but far below the depth and practice bar for a canonical course. The stronger FAO nutrition-through-food-systems route already covers the professional learning need with scenarios and assessment.",
+    "marginal_value": "Adds basic terminology but no distinct core learning pathway.",
+    "provider_concentration_notes": "FAO concentration is controlled by retaining only the stronger professional course.",
+    "coverage_notes": "Basic concepts remain accessible as a supplementary module.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "fao-improving-nutrition-agri-food"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-tghn-introduction-gclp",
+    "candidate_id": "tghn-introduction-gclp",
+    "review_id": "deep-04-tghn-introduction-gclp",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory Good Clinical Laboratory Practice orientation",
+    "comparison_set": [
+      "tghn-ich-gcp-e6-r3",
+      "tghn-research-ethics-v2"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "GCLP is useful but only 60–120 minutes, with limited practice and weaker currency evidence. It is too small to justify a fourth TGHN core slot when GCP, ethics and data governance already form a stronger research-practice pathway.",
+    "marginal_value": "Adds laboratory-specific orientation but insufficient depth for canonical promotion.",
+    "provider_concentration_notes": "Provider concentration reinforces the decision after three clearly stronger TGHN roles are retained.",
+    "coverage_notes": "Remains a useful specialist supplement for laboratory staff.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "tghn-ich-gcp-e6-r3"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-17-whoacademy-chemical-hazards-part-1",
+    "candidate_id": "whoacademy-chemical-hazards-part-1",
+    "review_id": "deep-06-whoacademy-chemical-hazards-part-1",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory chemical-hazard readiness for health and emergency professionals",
+    "comparison_set": [
+      "whoacademy-chemical-hazards-part-2"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Part I is current and authoritative, but its intrinsic depth is limited and the intended Part II remains on shallow hold because granular public evidence is insufficient. Promoting Part I alone would create an incomplete chemical-hazards pathway and overstate the verified educational package.",
+    "marginal_value": "Adds specialist hazard awareness but not enough standalone depth while the series remains incomplete.",
+    "provider_concentration_notes": "Provider authority is not an admission substitute.",
+    "coverage_notes": "Chemical-hazard training remains an explicit unresolved coverage area until Part II evidence or a stronger complete alternative is verified.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
