@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Blackspirits/open-learning-index/blob/main/data/admission.schema.json",
+  "title": "Open Learning Index Phase 4 admission ledger",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "admission_id",
+      "candidate_id",
+      "review_id",
+      "decided_on",
+      "decision",
+      "learning_need",
+      "comparison_set",
+      "incumbent_ids",
+      "decision_rationale",
+      "marginal_value",
+      "provider_concentration_notes",
+      "coverage_notes",
+      "displaced_course_ids",
+      "complements_course_ids",
+      "outcompeted_by_ids",
+      "is_current"
+    ],
+    "properties": {
+      "admission_id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "candidate_id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "review_id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "decided_on": {
+        "type": "string",
+        "format": "date"
+      },
+      "decision": {
+        "enum": [
+          "admit",
+          "do_not_admit"
+        ]
+      },
+      "learning_need": {
+        "type": "string",
+        "minLength": 10
+      },
+      "comparison_set": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "incumbent_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "decision_rationale": {
+        "type": "string",
+        "minLength": 40
+      },
+      "marginal_value": {
+        "type": "string",
+        "minLength": 20
+      },
+      "provider_concentration_notes": {
+        "type": "string",
+        "minLength": 10
+      },
+      "coverage_notes": {
+        "type": "string",
+        "minLength": 10
+      },
+      "displaced_course_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "complements_course_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "outcompeted_by_ids": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "is_current": {
+        "type": "boolean"
+      },
+      "supersedes_admission_id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "additionalProperties": false
+  }
+}

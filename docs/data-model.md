@@ -76,6 +76,23 @@ A current deep review is valid only when that candidate's current shallow decisi
 
 Deep Review remains Phase 3. A reviewed candidate is **not** automatically admitted to `data/courses.json`; Phase 4 head-to-head admission decides whether it belongs in the published index.
 
+## Phase 4 admission ledger
+
+`data/admissions/*.json` is validated by `data/admission.schema.json`.
+
+Admission records reference the candidate's current Deep Review and record the comparative publication decision rather than duplicating score evidence:
+
+- `decision` — `admit` or `do_not_admit`;
+- `learning_need` and `comparison_set`;
+- relevant canonical incumbents;
+- marginal-value, provider-concentration and coverage reasoning;
+- explicit displaced, complemented or outcompeting records;
+- historical supersession.
+
+A current admission requires a current shallow `advance` and its current Deep Review.
+
+A current `admit` decision is the only case where a discovery candidate may also exist in `data/courses.json`. The stable candidate ID is preserved during promotion, and the canonical course URL and scores must match the current Deep Review. A current `do_not_admit` candidate must remain outside `data/courses.json`.
+
 ## Scores
 
 Final scoring does **not** happen during discovery or shallow screening.
@@ -104,6 +121,10 @@ For deep-reviewed approved/finalist records:
 - A current deep review requires a current shallow `advance` decision.
 - Deep-review IDs are unique and a candidate may have at most one current deep review.
 - Deep-review comparator IDs must reference a known candidate or approved/reference course and may not self-reference.
+- Admission records may reference only known candidates, Deep Reviews and canonical incumbents.
+- A current admission requires current shallow `advance` + current Deep Review state.
+- Candidate/course ID or URL overlap is permitted only for a current Phase 4 `admit` decision.
+- Promoted course scores/components and canonical URL must match the current Deep Review.
 - Scores must remain inside 0–10.
 - Quality Score must equal the weighted components within rounding tolerance.
 - `next_review` must not precede `last_verified`.

@@ -84,19 +84,22 @@ A new course does not enter simply because it is good. It should beat or materia
 
 Near-duplicate courses from one provider compete against each other. Provider prestige never guarantees multiple final-list slots.
 
+Phase 4 decisions live in `data/admissions/*.json` and are validated against `data/admission.schema.json`. The ledger records marginal value and comparator relationships; it does not re-score Phase 3 evidence. See `docs/admission-protocol.md`.
+
 ## Phase 5 — Publish
 
 Publish global and category rankings only after coverage saturation and deep-review comparison are credible: repeated targeted discovery should stop producing plausible category-leader challengers at a meaningful rate, and the active survivor pool should be sufficiently reviewed for fair ranking.
 
-## v0.2 closeout and v0.3 hand-off
+## v0.3 closeout and v0.4 hand-off
 
 The hybrid discovery/screening workflow is complete.
 
 - **Discovery:** frozen at 290 candidates after the corrective language micro-wave.
 - **Shallow screening:** complete for all 290 candidates.
-- **Primary workstream:** Deep Review of current `advance` survivors.
-- **Holds:** remain outside Deep Review until their evidence blockers are resolved.
-- **Gate:** no global ranking until Deep Review and head-to-head admission are sufficiently complete for fair comparison.
+- **Deep Review:** complete for 199 / 199 current `advance` survivors.
+- **Primary workstream:** Phase 4 head-to-head admission.
+- **Holds:** 9 current holds remain outside admission until their blockers resolve and any later `advance` is Deep-Reviewed.
+- **Gate:** no global ranking until Phase 4 comparison and canonical-set QA are sufficiently complete.
 
 Discovery may reopen only for a documented gap exposed by Deep Review or later maintenance; it is no longer a standing parallel workstream.
 

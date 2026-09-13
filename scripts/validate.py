@@ -14,6 +14,8 @@ SCREENING_DIR=ROOT/'data/screening'
 SCREENING_SCHEMA=ROOT/'data/screening.schema.json'
 DEEP_REVIEW_DIR=ROOT/'data/reviews'
 DEEP_REVIEW_SCHEMA=ROOT/'data/deep-review.schema.json'
+ADMISSION_DIR=ROOT/'data/admissions'
+ADMISSION_SCHEMA=ROOT/'data/admission.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
 
 def fail(msg):
@@ -56,6 +58,11 @@ def load_deep_review_sources():
         return []
     return sorted(DEEP_REVIEW_DIR.glob('*.json'))
 
+def load_admission_sources():
+    if not ADMISSION_DIR.exists():
+        return []
+    return sorted(ADMISSION_DIR.glob('*.json'))
+
 def main():
     errors=0
     courses=json.loads(COURSES.read_text(encoding='utf-8'))
@@ -97,8 +104,6 @@ def main():
         candidate_ids.add(c['id'])
         if c['url'] in candidate_urls: errors += fail(f'duplicate candidate canonical URL across candidate pool: {c["url"]}')
         candidate_urls.add(c['url'])
-        if c['id'] in ids: errors += fail(f'candidate id already exists in approved/reference courses: {c["id"]}')
-        if c['url'] in urls: errors += fail(f'candidate URL already exists in approved/reference courses: {c["url"]}')
 
     screening_sources=load_screening_sources()
     screenings=[]
@@ -137,7 +142,7 @@ def main():
         errors += validate_schema(records, DEEP_REVIEW_SCHEMA, label)
         reviews.extend(records)
 
-    review_ids=set(); current_review_candidate_ids=set()
+    review_ids=set(); current_review_candidate_ids=set(); current_reviews_by_candidate={}; reviews_by_id={}
     all_review_ids={r.get('review_id') for r in reviews}
     known_comparator_ids=candidate_ids | ids
     for r in reviews:
@@ -146,6 +151,7 @@ def main():
         if rid in review_ids:
             errors += fail(f'duplicate deep-review id: {rid}')
         review_ids.add(rid)
+        reviews_by_id[rid]=r
         if cid not in candidate_ids:
             errors += fail(f'{rid}: deep review references unknown candidate {cid}')
         calc=round(sum(r['quality_components'][k]*w for k,w in WEIGHTS.items()),2)
@@ -160,6 +166,7 @@ def main():
             if cid in current_review_candidate_ids:
                 errors += fail(f'multiple current deep reviews for candidate: {cid}')
             current_review_candidate_ids.add(cid)
+            current_reviews_by_candidate[cid]=r
             if current_screen_decisions.get(cid) != 'advance':
                 errors += fail(f'{rid}: current deep review requires current shallow decision=advance for {cid}')
         supersedes=r.get('supersedes_review_id')
@@ -168,10 +175,100 @@ def main():
         if supersedes == rid:
             errors += fail(f'{rid}: cannot supersede itself')
 
+    admission_sources=load_admission_sources()
+    admissions=[]
+    for source in admission_sources:
+        records=json.loads(source.read_text(encoding='utf-8'))
+        label=f'admission:{source.relative_to(ROOT)}'
+        errors += validate_schema(records, ADMISSION_SCHEMA, label)
+        admissions.extend(records)
+
+    admission_ids=set(); current_admission_candidate_ids=set(); current_admissions={}
+    all_admission_ids={a.get('admission_id') for a in admissions}
+    known_admission_subject_ids=candidate_ids | ids
+    course_by_id={c['id']:c for c in courses}
+    for a in admissions:
+        aid=a['admission_id']
+        cid=a['candidate_id']
+        rid=a['review_id']
+        if aid in admission_ids:
+            errors += fail(f'duplicate admission id: {aid}')
+        admission_ids.add(aid)
+        if cid not in candidate_ids:
+            errors += fail(f'{aid}: admission references unknown candidate {cid}')
+        review=reviews_by_id.get(rid)
+        if not review:
+            errors += fail(f'{aid}: admission references unknown deep review {rid}')
+        elif review['candidate_id'] != cid:
+            errors += fail(f'{aid}: review {rid} belongs to {review["candidate_id"]}, not {cid}')
+        for competitor in a['comparison_set']:
+            if competitor not in known_admission_subject_ids:
+                errors += fail(f'{aid}: unknown comparison subject {competitor}')
+            if competitor == cid:
+                errors += fail(f'{aid}: comparison_set cannot include the candidate itself')
+        for incumbent in a['incumbent_ids'] + a['displaced_course_ids'] + a['complements_course_ids']:
+            if incumbent not in ids:
+                errors += fail(f'{aid}: unknown canonical course {incumbent}')
+        for alternative in a['outcompeted_by_ids']:
+            if alternative not in known_admission_subject_ids:
+                errors += fail(f'{aid}: unknown outcompeting subject {alternative}')
+            if alternative == cid:
+                errors += fail(f'{aid}: candidate cannot outcompete itself')
+        if a['decision'] == 'admit' and a['outcompeted_by_ids']:
+            errors += fail(f'{aid}: admit decision cannot declare outcompeted_by_ids')
+        if a['decision'] == 'do_not_admit' and (a['displaced_course_ids'] or a['complements_course_ids']):
+            errors += fail(f'{aid}: do_not_admit cannot displace or complement canonical courses')
+        if a['is_current']:
+            if cid in current_admission_candidate_ids:
+                errors += fail(f'multiple current admission decisions for candidate: {cid}')
+            current_admission_candidate_ids.add(cid)
+            current_admissions[cid]=a
+            if current_screen_decisions.get(cid) != 'advance':
+                errors += fail(f'{aid}: current admission requires current shallow decision=advance for {cid}')
+            current_review=current_reviews_by_candidate.get(cid)
+            if not current_review:
+                errors += fail(f'{aid}: current admission requires a current deep review for {cid}')
+            elif current_review['review_id'] != rid:
+                errors += fail(f'{aid}: current admission must reference current deep review {current_review["review_id"]}')
+        supersedes=a.get('supersedes_admission_id')
+        if supersedes and supersedes not in all_admission_ids:
+            errors += fail(f'{aid}: supersedes unknown admission {supersedes}')
+        if supersedes == aid:
+            errors += fail(f'{aid}: cannot supersede itself')
+
+    admitted_candidate_ids={cid for cid,a in current_admissions.items() if a['decision']=='admit'}
+    for c in candidates:
+        cid=c['id']
+        if cid in ids and cid not in admitted_candidate_ids:
+            errors += fail(f'candidate id already exists in approved/reference courses without current admit decision: {cid}')
+        if c['url'] in urls and cid not in admitted_candidate_ids:
+            errors += fail(f'candidate URL already exists in approved/reference courses without current admit decision: {c["url"]}')
+
+    for cid,a in current_admissions.items():
+        in_courses=cid in course_by_id
+        if a['decision']=='admit':
+            if not in_courses:
+                errors += fail(f'{a["admission_id"]}: admit decision requires {cid} in data/courses.json')
+                continue
+            course=course_by_id[cid]
+            review=current_reviews_by_candidate.get(cid)
+            if review:
+                if course['url'] != review['canonical_url']:
+                    errors += fail(f'{cid}: admitted course URL must match current deep-review canonical_url')
+                if abs(course['quality_score']-review['quality_score'])>0.01:
+                    errors += fail(f'{cid}: admitted quality_score must match current deep review')
+                if abs(course['recommendation_score']-review['recommendation_score'])>0.01:
+                    errors += fail(f'{cid}: admitted recommendation_score must match current deep review')
+                if course['quality_components'] != review['quality_components']:
+                    errors += fail(f'{cid}: admitted quality_components must match current deep review')
+        elif in_courses:
+            errors += fail(f'{a["admission_id"]}: do_not_admit candidate must not exist in data/courses.json')
+
     if errors: return 1
     print(
         f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), '
-        f'{len(screenings)} screening records, {len(reviews)} deep-review records, and {len(allowed_categories)} categories validated.'
+        f'{len(screenings)} screening records, {len(reviews)} deep-review records, {len(admissions)} admission records, '
+        f'and {len(allowed_categories)} categories validated.'
     )
     return 0
 if __name__=='__main__': raise SystemExit(main())
