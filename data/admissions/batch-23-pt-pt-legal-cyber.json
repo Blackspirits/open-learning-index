@@ -1,0 +1,83 @@
+[
+  {
+    "admission_id": "admission-24-nau-regulacao-digital",
+    "candidate_id": "nau-regulacao-digital",
+    "review_id": "deep-27-nau-regulacao-digital",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Current European digital-regulation specialist training accessible in European Portuguese",
+    "comparison_set": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "incumbent_ids": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "decision_rationale": "Regulação Digital is compact at eight hours, but it clears the canonical bar because it serves a distinct current cross-regulatory need that the existing HELP courses do not duplicate. The ten-module route connects European digital-regulation foundations with platforms and markets, data, AI/emerging technology, content moderation, e-commerce, digital accessibility and compliance implementation. At 8.48 Quality / 8.8 Recommendation it is not a token language slot: its intrinsic quality is comparable to existing specialist legal admissions, while full pt-PT instruction materially improves access for Portuguese-speaking professionals. The HELP courses remain stronger in their narrower privacy and AI-human-rights roles.",
+    "marginal_value": "Adds the first current broad digital-regulation specialist in pt-PT, complementing rather than replacing the stronger narrow European-law incumbents.",
+    "provider_concentration_notes": "ARTE / Academia Portugal Digital is not concentrated in the canonical Law & Public Policy set; provider identity is not a limiting factor.",
+    "coverage_notes": "Materially improves current pt-PT legal/regulatory coverage without pretending to provide a complete general-law curriculum.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "coe-help-data-protection-privacy-rights",
+      "coe-help-ai-human-rights"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-24-nau-responsavel-ciberseguranca",
+    "candidate_id": "nau-responsavel-ciberseguranca",
+    "review_id": "deep-27-nau-responsavel-ciberseguranca",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Portuguese organisational cybersecurity governance, risk, incident-management and legal-compliance training",
+    "comparison_set": [
+      "cisco-cyber-threat-management",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "incumbent_ids": [
+      "cisco-cyber-threat-management",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "decision_rationale": "Responsável de Cibersegurança earns admission as a distinct governance/compliance route, not as a replacement for Cisco's lab-rich threat-management course. Its 15-hour ten-module pathway covers the current Portuguese/EU legal framework, risk management, organisational controls, audit, asset inventory, incident management, policy, planning and compliance reporting. At 8.78 Quality / 9.0 Recommendation it is intrinsically strong, and its direct alignment with Portugal's new 2025/2026 cybersecurity regime creates exceptional current professional value. Portuguese-language access adds meaningful marginal value without a quality sacrifice.",
+    "marginal_value": "Adds a current pt-PT route for the organisational cybersecurity-responsible role, a need not served by the English technical and cybercrime-law incumbents.",
+    "provider_concentration_notes": "CNCS appears in more than one new candidate, but this course serves an operational governance/compliance role distinct from the executive NIS2 route. Both independently clear the quality bar.",
+    "coverage_notes": "Closes a major pt-PT cybersecurity-governance gap while preserving Cisco as the stronger lab-heavy technical governance recommendation.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-cyber-threat-management",
+      "coe-help-cybercrime-electronic-evidence"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-24-nau-ciberseguranca-executivos-nis2",
+    "candidate_id": "nau-ciberseguranca-executivos-nis2",
+    "review_id": "deep-27-nau-ciberseguranca-executivos-nis2",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Executive cybersecurity governance and NIS2 readiness in European Portuguese",
+    "comparison_set": [
+      "cisco-cyber-threat-management",
+      "nau-responsavel-ciberseguranca"
+    ],
+    "incumbent_ids": [
+      "cisco-cyber-threat-management",
+      "nau-responsavel-ciberseguranca"
+    ],
+    "decision_rationale": "The 30-hour NIS2 course clears the admission bar on both intrinsic quality and distinct learner role. It is designed for executives and organisational leaders rather than security operators, and covers NIS/NIS2, incident response and business continuity, supply-chain security, secure acquisition/development/maintenance, vulnerability analysis, cryptography, access control/MFA and cyber-hygiene. At 8.81 Quality / 9.1 Recommendation it is one of the strongest pt-PT courses in the index. Its overlap with Responsável de Cibersegurança is acceptable because one trains an operational responsibility function and this one trains governance and leadership decision-making.",
+    "marginal_value": "Adds a rare substantial pt-PT executive cybersecurity pathway aligned with the current Portuguese/EU regulatory environment.",
+    "provider_concentration_notes": "CNCS concentration is accepted because the two admitted courses serve clearly distinct organisational roles and both are current, substantive and separately useful.",
+    "coverage_notes": "Creates a current executive NIS2/governance route while leaving offensive security and hands-on technical defense to existing canonical courses.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-cyber-threat-management",
+      "nau-responsavel-ciberseguranca"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
