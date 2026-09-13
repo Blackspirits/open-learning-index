@@ -1,0 +1,82 @@
+[
+  {
+    "admission_id": "admission-23-nau-fundamentos-bases-dados",
+    "candidate_id": "nau-fundamentos-bases-dados",
+    "review_id": "deep-26-nau-fundamentos-bases-dados",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Relational-database design and SQL pathway accessible to learners who need European-Portuguese instruction",
+    "comparison_set": [
+      "harvard-cs50-sql",
+      "freecodecamp-relational-databases-v9"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-sql"
+    ],
+    "decision_rationale": "The earlier non-admission over-weighted the presence of a stronger English incumbent and under-weighted the project's explicit language-access criterion. Fundamentos de Bases de Dados is not weak: it earns 8.59 Quality / 8.6 Recommendation, runs for 25 hours, covers conceptual/logical/physical relational modelling, normalization, SQL, elementary transactions, PostgreSQL and Python integration, and requires only elementary Python. CS50 SQL remains the stronger global default, but it does not substitute for a substantial pt-PT pathway for learners whose English is a real access barrier. The candidate therefore materially complements rather than displaces the incumbent.",
+    "marginal_value": "Adds a strong beginner-to-intermediate database pathway in pt-PT for learners who cannot realistically use the stronger English-language incumbent.",
+    "provider_concentration_notes": "Instituto Politecnico de Lisboa now contributes several canonical courses, but database design, algorithms and environmental sustainability are distinct competencies. The admission is based on a separate learning need, not catalogue mirroring.",
+    "coverage_notes": "Improves pt-PT technical computing coverage while keeping CS50 SQL as the higher-ranked global database recommendation.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "harvard-cs50-sql"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true,
+    "supersedes_admission_id": "admission-22-nau-fundamentos-bases-dados"
+  },
+  {
+    "admission_id": "admission-23-nau-estruturas-dados",
+    "candidate_id": "nau-estruturas-dados",
+    "review_id": "deep-26-nau-estruturas-dados",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Data-structures foundations in European Portuguese for learners with prior programming knowledge",
+    "comparison_set": [
+      "mit-6-006-algorithms",
+      "nau-algoritmos-complexidade"
+    ],
+    "incumbent_ids": [
+      "mit-6-006-algorithms",
+      "nau-algoritmos-complexidade"
+    ],
+    "decision_rationale": "The earlier decision treated overlap with MIT 6.006 and the admitted pt-PT algorithms course as sufficient reason to exclude this route. That is too strict for accessibility. Estruturas de Dados is an active 25-hour intermediate course with 8.43 Quality / 8.3 Recommendation and explicit coverage of arrays, linked lists, stacks, queues, heaps, hash tables, search trees, disjoint sets and graphs. It is less deep than MIT 6.006, but it serves a narrower foundational step and is fully taught in Portuguese. For learners not ready for English-language MIT materials, it is a legitimate bridge into the admitted pt-PT algorithms course rather than redundant catalogue duplication.",
+    "marginal_value": "Creates a coherent pt-PT progression from programming fundamentals into data structures and then algorithms/complexity.",
+    "provider_concentration_notes": "This is accepted as a sequence exception: the IPL Data Structures and Algorithms courses serve adjacent but distinct levels, and together form a coherent technical progression rather than duplicate near-identical catalogue entries.",
+    "coverage_notes": "Adds the missing intermediate data-structures step to the pt-PT computing pathway; MIT 6.006 remains the global depth leader.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "nau-algoritmos-complexidade",
+      "mit-6-006-algorithms"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true,
+    "supersedes_admission_id": "admission-22-nau-estruturas-dados"
+  },
+  {
+    "admission_id": "admission-23-nau-ciencia-aberta-dados-fair",
+    "candidate_id": "nau-ciencia-aberta-dados-fair",
+    "review_id": "deep-26-nau-ciencia-aberta-dados-fair",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Current open-science, FAIR-data and research-data-management training in European Portuguese",
+    "comparison_set": [
+      "nasa-open-science-101",
+      "cisco-data-analytics-essentials"
+    ],
+    "incumbent_ids": [
+      "nasa-open-science-101"
+    ],
+    "decision_rationale": "The previous non-admission correctly identified NASA Open Science 101 as the stronger global route, but incorrectly treated that as sufficient to exclude a high-quality Portuguese alternative. Ciência Aberta e Dados FAIR earns 8.44 Quality / 8.7 Recommendation, is explicitly intermediate and current in 2026, and covers FAIR principles, data stewardship/curation, sensitive-data security, research-data policy and responsible AI in scientific work across 20 hours. For researchers who cannot study comfortably in English, NASA is not a practical substitute. The course therefore complements NASA through language and local research-policy accessibility without pretending to solve the separate technical AI/ML gap.",
+    "marginal_value": "Adds a substantive current pt-PT FAIR/research-data route for Portuguese-speaking researchers and students, while preserving NASA as the stronger global open-science default.",
+    "provider_concentration_notes": "Universidade da Beira Interior is not concentrated in the canonical set; provider concentration is not a concern.",
+    "coverage_notes": "Improves pt-PT research-data coverage but does not close the deep technical AI/ML gap, which remains explicitly open.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "nasa-open-science-101"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true,
+    "supersedes_admission_id": "admission-22-nau-ciencia-aberta-dados-fair"
+  }
+]
