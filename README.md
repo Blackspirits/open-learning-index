@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.5 — **Phase 5 QA and publication readiness is in progress.** Phase 4 is complete at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Gate 1 retained all 17 reference fixtures after reconciliation. Gate 2 structural QA found no removal blocker; the canonical set remains **129 courses**, with English-language concentration documented as the main publication limitation. Current shallow state remains **199 advance / 9 hold / 82 reject**. Next gate: targeted primary-source re-verification of high-risk canonical records.
+**Status:** v0.5 — **Phase 5 QA and publication readiness is in progress.** Phase 4 is complete at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Gate 1 retained all 17 reference fixtures; Gate 2 found no structural removal blocker. Gate 3 primary-source re-verification has started with **10 / 10 high-risk technical reference fixtures re-verified**; the canonical set remains **129 courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -40,6 +40,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-18-arts-design.md`](docs/admissions/batch-18-arts-design.md) — final Phase 4 family pass, completing Arts & Design with creative-practice, sequence and incomplete-course controls.
 - [`docs/qa-reference-reconciliation-v0.5.md`](docs/qa-reference-reconciliation-v0.5.md) — Phase 5 Gate 1 reconciliation of all 17 pre-existing canonical reference fixtures against the complete admitted set.
 - [`docs/qa-publication-structural-audit-v0.5.md`](docs/qa-publication-structural-audit-v0.5.md) — Phase 5 Gate 2 audit of category/provider concentration, language accessibility, access models and review cadence.
+- [`docs/qa-reverification-01-technical-references.md`](docs/qa-reverification-01-technical-references.md) — Phase 5 Gate 3 batch 01 primary-source re-verification of ten high-volatility technical reference fixtures.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
