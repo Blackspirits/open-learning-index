@@ -10,7 +10,25 @@ A world-class course index cannot be static. Access models, certificates, editio
 - duplicate IDs and canonical URLs;
 - score reproducibility;
 - invalid review dates;
-- stale-course report.
+- freshness report, including courses due within 30 days and overdue records.
+
+### Weekly scheduled maintenance gate — automatic
+
+The same validator runs every Monday. On scheduled runs, the freshness check becomes enforcing:
+
+- up to 30 days overdue remains a warning;
+- more than 30 days overdue fails the scheduled maintenance gate;
+- records beyond 2× `review_interval_days` since `last_verified` are explicitly reported as publication-ineligible until re-verified.
+
+Push and pull-request runs remain informational for freshness so maintenance work itself is not blocked by an already-overdue record.
+
+For deterministic audit/debugging, run:
+
+`python scripts/check_staleness.py --as-of YYYY-MM-DD`
+
+To reproduce the enforcing scheduled behaviour locally:
+
+`python scripts/check_staleness.py --enforce-priority --as-of YYYY-MM-DD`
 
 ### Monthly — discovery scan
 
@@ -55,9 +73,9 @@ Review immediately when there is credible evidence of:
 
 ## Staleness rules
 
-- `today <= next_review`: current.
+- `today <= next_review`: current; records due within 30 days are surfaced proactively.
 - up to 30 days overdue: stale warning.
-- more than 30 days overdue: priority re-review.
+- more than 30 days overdue: priority re-review and scheduled maintenance failure.
 - more than 2× `review_interval_days` since `last_verified`: temporarily ineligible for S/S+ presentation until verified again.
 
 Staleness does **not** automatically lower Quality Score. It lowers confidence in the published claim.

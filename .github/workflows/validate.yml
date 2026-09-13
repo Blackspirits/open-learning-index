@@ -18,4 +18,9 @@ jobs:
       - run: python scripts/validate.py
       - run: python scripts/generate_csv.py
       - run: git diff --exit-code -- data/courses.csv
-      - run: python scripts/check_staleness.py
+      - name: Report review freshness
+        if: github.event_name != 'schedule'
+        run: python scripts/check_staleness.py
+      - name: Enforce scheduled maintenance SLA
+        if: github.event_name == 'schedule'
+        run: python scripts/check_staleness.py --enforce-priority
