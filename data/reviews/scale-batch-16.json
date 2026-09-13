@@ -1,0 +1,496 @@
+[
+  {
+    "review_id": "deep-17-cisco-introduction-cybersecurity",
+    "candidate_id": "cisco-introduction-cybersecurity",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately six-hour five-module introduction to cyber trends, threats, privacy, personal/organizational data protection and cybersecurity careers, with seven practice labs, interactive activities, quizzes and a final exam.",
+    "prerequisites": "None",
+    "required_resources": "Computer/mobile device and internet; no additional physical equipment required",
+    "component_evidence": {
+      "pedagogy": "The compact route alternates concise concepts with labs, interactive activities and quizzes rather than relying on awareness videos alone.",
+      "depth": "Five modules provide a useful awareness/foundation layer but cannot substitute for Endpoint Security or Network Defense.",
+      "practice": "Seven practice labs plus quizzes and a final exam are unusually strong for a six-hour beginner course.",
+      "materials": "Cisco provides a coherent self-paced pathway with interactive content, labs, assessment and badge tracking.",
+      "currency": "The live course remains part of Cisco's current learning portfolio in 2026; cybersecurity examples can age, so currentness is high but not assumed perfect without a public revision log.",
+      "expertise": "Cisco has direct networking and cybersecurity industry expertise.",
+      "accessibility": "No prerequisites, no required physical equipment, free self-paced access and a digital badge make the route highly accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 7.1,
+      "practice": 8.5,
+      "materials": 8.7,
+      "currency": 9.2,
+      "expertise": 9.4,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.46,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "An excellent low-friction cybersecurity starting point, but intentionally shallow. Learners pursuing job-ready defensive skills should continue into Endpoint Security and Network Defense.",
+    "comparators": [
+      "cisco-endpoint-security",
+      "openlearn-intro-cyber-security"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/introduction-to-cybersecurity"
+    ],
+    "flags": [
+      "cybersecurity",
+      "6-hours",
+      "beginner",
+      "practice-labs",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-endpoint-security",
+    "candidate_id": "cisco-endpoint-security",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/endpoint-security",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current 27-hour ten-module defensive-security course on network, operating-system and endpoint vulnerabilities, Windows/Linux security, malware, endpoint controls and confidentiality/integrity/availability, with 31 labs/Packet Tracer activities, 40+ interactive activities/quizzes and a final exam.",
+    "prerequisites": "Introduction to Cybersecurity is recommended; basic networking knowledge is useful",
+    "required_resources": "Computer and internet; course labs use Cisco Packet Tracer and virtual-machine/security tools but no dedicated physical networking equipment is required",
+    "component_evidence": {
+      "pedagogy": "The course moves from operating-system/network foundations into concrete endpoint protection and vulnerability work, pairing concepts with repeated practical tasks.",
+      "depth": "Ten modules and 27 hours provide substantial entry-level defensive-security depth.",
+      "practice": "Thirty-one labs/Packet Tracer activities plus 40+ interactive activities/quizzes and a final exam create excellent practice density.",
+      "materials": "Cisco integrates labs, simulations, interactive content and assessment in a coherent career-path course.",
+      "currency": "The current Cisco portfolio continues to surface the course and current 2025 portfolio material aligns it to CCST Cybersecurity; the fast-changing field still warrants ongoing monitoring.",
+      "expertise": "Cisco has direct expertise in networking, endpoint/network security and certification-aligned workforce training.",
+      "accessibility": "Free self-paced access, no required physical lab equipment and a badge are strong; recommended prior cybersecurity/networking knowledge adds moderate friction."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.8,
+      "practice": 9.5,
+      "materials": 9.1,
+      "currency": 9.3,
+      "expertise": 9.5,
+      "accessibility": 9.2
+    },
+    "quality_score": 9.16,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "One of the strongest current free defensive-security foundations: substantial, lab-heavy and career-aligned without requiring physical equipment.",
+    "comparators": [
+      "cisco-network-defense",
+      "cisco-introduction-cybersecurity",
+      "ibm-skillsbuild-cybersecurity-fundamentals"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/endpoint-security"
+    ],
+    "flags": [
+      "endpoint-security",
+      "27-hours",
+      "31-labs",
+      "ccst-aligned",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-network-defense",
+    "candidate_id": "cisco-network-defense",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/network-defense",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Current 27-hour eleven-module defensive-network course on layered defense, access control, ACLs, firewalls, cloud security, cryptography, security protocols/data and alert evaluation, with 29 labs/Packet Tracer activities, 58+ interactive activities/quizzes and a final exam.",
+    "prerequisites": "Introduction to Cybersecurity and Endpoint Security are recommended",
+    "required_resources": "Computer/mobile device and internet; Packet Tracer/virtual lab activities are used, with no dedicated physical equipment required",
+    "component_evidence": {
+      "pedagogy": "The sequence develops a defense-in-depth model and repeatedly connects controls, telemetry and alerts to practical network-security tasks.",
+      "depth": "Eleven modules cover a substantial intermediate defensive-security foundation from access control to cloud security, cryptography and alert analysis.",
+      "practice": "Twenty-nine labs plus 58+ interactive activities/quizzes produce exceptional practice density for a free self-paced route.",
+      "materials": "Cisco provides simulations, interactive content, assessments and a coherent progression within the Junior Cybersecurity Analyst pathway.",
+      "currency": "The 2026 Cisco learning portfolio still lists this course at 27 hours with current CCST alignment, a strong signal in a volatile domain.",
+      "expertise": "Cisco has direct industry expertise in network architecture, security controls and operational defense.",
+      "accessibility": "Free, self-paced and no physical equipment required, but prior Endpoint Security/networking knowledge is realistically needed."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.9,
+      "practice": 9.6,
+      "materials": 9.1,
+      "currency": 9.4,
+      "expertise": 9.5,
+      "accessibility": 9.1
+    },
+    "quality_score": 9.23,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "The strongest general defensive-network course in the current category: current, lab-heavy and broad enough to develop real entry-level analyst skills.",
+    "comparators": [
+      "cisco-endpoint-security",
+      "cisco-cyber-threat-management",
+      "fortinet-fortigate-operator"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/network-defense"
+    ],
+    "flags": [
+      "network-defense",
+      "27-hours",
+      "29-labs",
+      "58-plus-activities",
+      "ccst-aligned",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-cyber-threat-management",
+    "candidate_id": "cisco-cyber-threat-management",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/cyber-threat-management",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Sixteen-hour six-module course on cybersecurity governance, vulnerability/risk assessment, incident response, threat management, ethics and legal/regulatory frameworks, with 16 labs/Packet Tracer activities, 28+ interactive activities/quizzes and a final exam.",
+    "prerequisites": "Introduction to Cybersecurity, Endpoint Security and Network Defense are recommended",
+    "required_resources": "Computer/mobile device and internet; no dedicated physical equipment required",
+    "component_evidence": {
+      "pedagogy": "The course shifts from control implementation toward governance, risk, vulnerability and incident-response decisions, providing a useful capstone-like transition from technical defense.",
+      "depth": "Six modules and 16 hours cover a focused but meaningful threat-management/governance layer.",
+      "practice": "Sixteen labs/Packet Tracer activities and 28+ interactive activities/quizzes provide strong applied reinforcement.",
+      "materials": "Cisco's structured modules, simulations and assessments fit cleanly into the wider cybersecurity pathway.",
+      "currency": "The live course remains current in Cisco's 2025/2026 portfolio; legal/regulatory examples can age faster than the technical risk-management concepts.",
+      "expertise": "Cisco combines networking-security expertise with workforce/certification curriculum design.",
+      "accessibility": "Free and hardware-light, but it assumes completion-equivalent knowledge from the earlier cybersecurity pathway."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.2,
+      "practice": 9.2,
+      "materials": 8.9,
+      "currency": 9.4,
+      "expertise": 9.5,
+      "accessibility": 9.1
+    },
+    "quality_score": 8.92,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A strong follow-on course for learners who already have defensive fundamentals, especially for risk, incident response and governance. It is not an entry point.",
+    "comparators": [
+      "cisco-network-defense",
+      "cisco-endpoint-security"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/cyber-threat-management"
+    ],
+    "flags": [
+      "threat-management",
+      "16-hours",
+      "16-labs",
+      "governance-risk",
+      "ccst-aligned",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-ethical-hacker",
+    "candidate_id": "cisco-ethical-hacker",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/ethical-hacker",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Seventy-hour ten-module offensive-security course focused on scoping, vulnerability assessment, exploitation-oriented methodology, reporting and mitigation, with 34 labs, 86 interactive practice activities/quizzes, final exam and skills-based assessment.",
+    "prerequisites": "Entry-level cybersecurity knowledge such as CCST Cybersecurity/Cybersecurity Essentials/Junior Cybersecurity Analyst pathway plus basic programming",
+    "required_resources": "Computer and internet; no additional physical equipment is required for the documented self-paced route",
+    "component_evidence": {
+      "pedagogy": "A gamified professional narrative and explicit scoping-execution-reporting workflow organize offensive-security learning around real assessment tasks rather than disconnected tools.",
+      "depth": "Seventy hours and ten modules provide unusually substantial free offensive-security depth.",
+      "practice": "Thirty-four labs, 86 interactive activities/quizzes, a final exam and a skills-based assessment give the strongest practical evidence in the category.",
+      "materials": "Cisco supplies a coherent career-oriented curriculum with labs, interactive work, assessment and digital recognition.",
+      "currency": "The live course remains in Cisco's current portfolio; offensive-security tooling changes rapidly, so currentness remains a monitoring priority despite the active route.",
+      "expertise": "Cisco has strong security and networking expertise and aligns the pathway with current workforce roles.",
+      "accessibility": "The course itself is free and hardware-light, but meaningful cybersecurity and programming prerequisites make it unsuitable for complete beginners."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.3,
+      "practice": 9.8,
+      "materials": 9.2,
+      "currency": 9.4,
+      "expertise": 9.5,
+      "accessibility": 8.4
+    },
+    "quality_score": 9.38,
+    "recommendation_score": 9.3,
+    "recommendation_rationale": "The strongest specialist cybersecurity course among the remaining survivors for learners ready for offensive security: unusually deep and practice-heavy, with prerequisites as the main limitation.",
+    "comparators": [
+      "cisco-network-defense",
+      "fortinet-fortigate-operator"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/ethical-hacker"
+    ],
+    "flags": [
+      "ethical-hacking",
+      "70-hours",
+      "34-labs",
+      "86-activities",
+      "skills-assessment",
+      "prerequisites",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-networking-basics",
+    "candidate_id": "cisco-networking-basics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/networking-basics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately 25-hour seventeen-module networking foundation on devices, media, Ethernet, protocols, IP addressing, wireless/home networking, LAN creation and application-layer services, with 13 practice labs, interactive activities/quizzes and a final test.",
+    "prerequisites": "None",
+    "required_resources": "Computer/mobile device and internet; no additional physical equipment required",
+    "component_evidence": {
+      "pedagogy": "The course develops networking from observable data flow and devices into protocols, addressing and simple LAN construction, with labs throughout.",
+      "depth": "Seventeen modules provide broad entry-level networking coverage sufficient to support later cyber and technician pathways.",
+      "practice": "Thirteen practice labs plus interactive activities/quizzes and final test give strong practical reinforcement.",
+      "materials": "Cisco's self-paced platform integrates networking explanations, labs, simulations and assessment coherently.",
+      "currency": "The live course remains part of Cisco's current 2026 pathway; networking fundamentals are relatively stable while device/platform examples require maintenance.",
+      "expertise": "Cisco has direct industry expertise in networking technologies and technician certification pathways.",
+      "accessibility": "No prerequisites, no physical equipment requirement, free self-paced access and badge recognition make this highly accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.4,
+      "practice": 9,
+      "materials": 8.8,
+      "currency": 9.2,
+      "expertise": 9.5,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.91,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The strongest general networking entry point in the current category: broad, lab-backed and low-friction, with a clean progression into Cisco's more advanced device/security courses.",
+    "comparators": [
+      "cisco-networking-devices-initial-configuration",
+      "fortinet-networking-fundamentals"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/networking-basics"
+    ],
+    "flags": [
+      "networking",
+      "25-hours",
+      "13-labs",
+      "beginner",
+      "ccst-pathway",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-networking-devices-initial-configuration",
+    "candidate_id": "cisco-networking-devices-initial-configuration",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/networking-devices-and-initial-configuration",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Roughly two-dozen-hour twelve-module networking course covering Ethernet switching, routers, TCP/IP delivery, IP addressing, cloud/virtualization and initial configuration of small networks, with 17 practice labs, interactive activities/quizzes and a final test.",
+    "prerequisites": "Networking Basics or equivalent knowledge",
+    "required_resources": "Computer/mobile device and internet; Cisco simulation activities are used, with no required physical equipment",
+    "component_evidence": {
+      "pedagogy": "The course advances from foundational networking into concrete device configuration and small-network construction, with labs tied directly to protocol/device concepts.",
+      "depth": "Twelve modules provide a substantial next step beyond Networking Basics while remaining technician-foundational.",
+      "practice": "Seventeen practice labs plus interactive activities/quizzes and final assessment create excellent applied repetition.",
+      "materials": "Cisco integrates simulations, configuration tasks, explanations and assessment into a coherent sequence.",
+      "currency": "The course remains live in Cisco's current pathway; published portfolio sheets have varied slightly in estimated hours while retaining the same 12-module/17-lab structure, so currentness is scored on the active curriculum rather than duration metadata.",
+      "expertise": "Cisco has direct expertise in switches, routers and technician networking workflows.",
+      "accessibility": "Free and no physical hardware is required, but Networking Basics-equivalent knowledge is a real prerequisite."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.5,
+      "practice": 9.2,
+      "materials": 8.8,
+      "currency": 9.2,
+      "expertise": 9.5,
+      "accessibility": 9.2
+    },
+    "quality_score": 8.95,
+    "recommendation_score": 8.9,
+    "recommendation_rationale": "An excellent follow-on networking course with strong simulation/lab practice. Networking Basics remains the better first recommendation for complete beginners.",
+    "comparators": [
+      "cisco-networking-basics",
+      "fortinet-networking-fundamentals"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/networking-devices-and-initial-configuration"
+    ],
+    "flags": [
+      "networking",
+      "12-modules",
+      "17-labs",
+      "prerequisite-pathway",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-cisco-operating-systems-basics",
+    "candidate_id": "cisco-operating-systems-basics",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.netacad.com/courses/operating-systems-basics",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Cisco Networking Academy digital badge",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Sixteen-hour eight-module operating-systems foundation covering Windows, Linux, Android and iOS concepts, administrative tools, basic Linux security and mobile connectivity, with 18 practice labs, checkpoints/quizzes and a final test.",
+    "prerequisites": "None",
+    "required_resources": "Computer/mobile device and internet; no additional physical equipment required",
+    "component_evidence": {
+      "pedagogy": "The course uses practical OS administration/security tasks to connect platform concepts with hands-on skills.",
+      "depth": "Eight modules provide broad beginner coverage but do not replace a full Windows/Linux administration course.",
+      "practice": "Eighteen practice labs, checkpoints/quizzes and final test give strong practical density.",
+      "materials": "Cisco supplies a structured self-paced route with labs and assessment across desktop/mobile operating systems.",
+      "currency": "The live course remains available, but operating-system interfaces and mobile-platform details evolve quickly; the public portfolio material is older than the strongest 2026 courses.",
+      "expertise": "Cisco has strong IT/network workforce-training expertise, though it is not the primary vendor for the operating systems covered.",
+      "accessibility": "No prerequisites, no additional hardware and a free digital badge make the route highly accessible."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8,
+      "practice": 9,
+      "materials": 8.7,
+      "currency": 8.5,
+      "expertise": 9.3,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.7,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A useful broad OS foundation with excellent lab density. Its cross-platform breadth is valuable, but platform-specific details need more frequent refresh than networking fundamentals.",
+    "comparators": [
+      "cisco-networking-basics",
+      "cisco-endpoint-security"
+    ],
+    "evidence": [
+      "https://www.netacad.com/courses/operating-systems-basics"
+    ],
+    "flags": [
+      "operating-systems",
+      "16-hours",
+      "18-labs",
+      "cross-platform",
+      "free-digital-badge"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-17-fortinet-networking-fundamentals",
+    "candidate_id": "fortinet-networking-fundamentals",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortinet-networking-fundamentals",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Fortinet Training Institute course-completion certificate; no certification exam",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Four-to-five-hour networking primer on LANs, OSI/TCP-IP, networking devices, TCP/IP suite, design issues, internetworking, virtualization and cloud.",
+    "prerequisites": "None",
+    "required_resources": "Computer, high-speed internet, supported browser, PDF viewer and audio; the public static page still mentions a Java Runtime/Java Plugin option, an outdated compatibility signal",
+    "component_evidence": {
+      "pedagogy": "The course gives a logical networking-concepts progression but public evidence exposes far less interactive/lab practice than Cisco's surviving alternatives.",
+      "depth": "Nine agenda areas provide useful breadth but only four to five hours of total study.",
+      "practice": "The public course page does not document substantial labs or assessments comparable with Cisco's practice-heavy networking pathways.",
+      "materials": "Official Fortinet lessons and objectives form a coherent primer, but the public static documentation shows age and some product-specific spillover.",
+      "currency": "The library lists the self-paced course as updated in January 2023 and the requirements still mention a Java browser plugin, creating a material currentness penalty.",
+      "expertise": "Fortinet has strong networking/security expertise, especially around enterprise security infrastructure.",
+      "accessibility": "The self-paced course and certificate are free, but outdated compatibility guidance and weaker practice transparency reduce usability."
+    },
+    "quality_components": {
+      "pedagogy": 7.8,
+      "depth": 7.4,
+      "practice": 6.8,
+      "materials": 7.7,
+      "currency": 6.9,
+      "expertise": 9,
+      "accessibility": 8.7
+    },
+    "quality_score": 7.58,
+    "recommendation_score": 7.4,
+    "recommendation_rationale": "Still usable as a concise networking primer, but Cisco Networking Basics is decisively stronger on practice, currentness and pathway coherence. This course should face a Phase 4 redundancy challenge rather than survive on vendor reputation.",
+    "comparators": [
+      "cisco-networking-basics",
+      "cisco-networking-devices-initial-configuration"
+    ],
+    "evidence": [
+      "https://training.fortinet.com/local/staticpage/view.php?page=library_fortinet-networking-fundamentals"
+    ],
+    "flags": [
+      "networking",
+      "4-5-hours",
+      "updated-2023",
+      "weak-practice-evidence",
+      "legacy-java-plugin-guidance",
+      "free-certificate"
+    ],
+    "is_current": true
+  }
+]
