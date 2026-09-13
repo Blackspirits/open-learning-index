@@ -52,7 +52,7 @@
     "outcompeted_by_ids": [
       "harvard-cs50-sql"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "admission_id": "admission-22-nau-estruturas-dados",
@@ -76,7 +76,7 @@
     "outcompeted_by_ids": [
       "mit-6-006-algorithms"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "admission_id": "admission-22-nau-algoritmos-complexidade",
@@ -125,7 +125,7 @@
     "outcompeted_by_ids": [
       "nasa-open-science-101"
     ],
-    "is_current": true
+    "is_current": false
   },
   {
     "admission_id": "admission-22-nau-sustentabilidade-ambiental",
