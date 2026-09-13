@@ -2952,5 +2952,109 @@
     "quality_score": 8.59,
     "review_interval_days": 90,
     "next_review": "2026-12-12"
+  },
+  {
+    "id": "openlearn-take-teaching-online",
+    "title": "Take your teaching online",
+    "provider": "The Open University / OpenLearn",
+    "category": "education-teaching",
+    "level": "intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_badge_and_statement",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 8.7,
+      "practice": 8.9,
+      "materials": 9.4,
+      "currency": 8.2,
+      "expertise": 9.7,
+      "accessibility": 9.7
+    },
+    "recommendation_score": 9.1,
+    "why_recommended": "Strong broad teacher-development route with 24 hours across eight weeks, combining research, weekly practice, accessibility, technology choices, collaboration, online assessment and professional reflection.",
+    "evidence": [
+      "https://www.open.edu/openlearn/education-development/education/take-your-teaching-online/",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=138072"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 9.04,
+    "review_interval_days": 180,
+    "next_review": "2027-03-12"
+  },
+  {
+    "id": "british-council-how-adapt-resources",
+    "title": "TeachingEnglish: How to adapt resources",
+    "provider": "British Council TeachingEnglish",
+    "category": "education-teaching",
+    "level": "intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-how-adapt-resources",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.9,
+      "depth": 7.8,
+      "practice": 8.5,
+      "materials": 9,
+      "currency": 9.7,
+      "expertise": 9.1,
+      "accessibility": 9.3
+    },
+    "recommendation_score": 8.9,
+    "why_recommended": "Current 2026–27 classroom-methodology CPD on evaluating and adapting resources for context and inclusion, supported by applied modules, workbook practice and free certification.",
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-how-adapt-resources"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.73,
+    "review_interval_days": 180,
+    "next_review": "2027-03-12"
+  },
+  {
+    "id": "british-council-helping-teachers-learn",
+    "title": "TeachingEnglish: Helping teachers to learn",
+    "provider": "British Council TeachingEnglish",
+    "category": "education-teaching",
+    "level": "intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://www.teachingenglish.org.uk/training/courses/teachingenglish-helping-teachers-learn",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.8,
+      "practice": 8.4,
+      "materials": 9,
+      "currency": 9.5,
+      "expertise": 9.1,
+      "accessibility": 9.3
+    },
+    "recommendation_score": 8.8,
+    "why_recommended": "Distinct teacher-educator route focused on teacher learning, training, communities of practice, collaborative learning, autonomy and action planning.",
+    "evidence": [
+      "https://www.teachingenglish.org.uk/training/courses/teachingenglish-helping-teachers-learn",
+      "https://www.teachingenglish.org.uk/sites/teacheng/files/2025-04/Helping_teachers_to_learn_workbook_2025.pdf"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.64,
+    "review_interval_days": 180,
+    "next_review": "2027-03-12"
   }
 ]
