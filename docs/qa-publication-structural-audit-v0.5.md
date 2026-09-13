@@ -98,23 +98,29 @@ Primary instruction language:
 
 Only **9 / 129** courses have a non-English primary instruction language.
 
-Only **3** additional courses currently expose verified alternate instruction languages:
+Only **4** additional courses currently expose verified alternate instruction languages:
 
 - Google Machine Learning Crash Course — pt-BR;
 - Hugging Face Agents Course — fr;
-- TGHN ICH GCP E6(R3) — es, fr, pt.
+- TGHN ICH GCP E6(R3) — es, fr, pt;
+- Unity Junior Programmer — de, ja, fr, pt, zh, es, ru, ko.
+
+The Unity alternatives were added during Gate 3 batch 02 after direct verification on the current Unity Learn pathway.
 
 Across primary + verified alternate instruction languages, the canonical set exposes:
 
 - English — 120 courses;
-- French — 6;
+- French — 7;
 - European Portuguese — 2;
 - Brazilian Portuguese — 1;
 - Arabic — 1;
-- German — 1;
-- Chinese — 1;
-- Spanish — 1;
-- generic Portuguese — 1.
+- German — 2;
+- Chinese — 2;
+- Spanish — 2;
+- generic Portuguese — 2;
+- Japanese — 1;
+- Russian — 1;
+- Korean — 1.
 
 ### QA decision
 
