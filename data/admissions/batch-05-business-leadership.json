@@ -1,0 +1,292 @@
+[
+  {
+    "admission_id": "admission-06-mit-15-390-new-enterprises",
+    "candidate_id": "mit-15-390-new-enterprises",
+    "review_id": "deep-12-mit-15-390-new-enterprises",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep project-based venture creation from opportunity through business plan and investor pitch",
+    "comparison_set": [
+      "openlearn-entrepreneurship-ideas-reality",
+      "mit-15-393-nuts-bolts-new-ventures",
+      "saylor-bus305-entrepreneurship"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 15.390 remains one of the strongest intrinsic entrepreneurship teaching packages in the pool, with twelve assignments, rubrics, financial templates and a full venture plan. However, its 2013 startup, financing, legal and distribution context is materially stale for a current all-in-one entrepreneurship recommendation; OpenLearn 2026 and MIT 15.393 (2025/2026) provide stronger current coverage.",
+    "marginal_value": "Adds exceptional project design, but not enough current marginal value to justify a core slot beside newer entrepreneurship routes.",
+    "provider_concentration_notes": "MIT prestige is not treated as an admission signal; currentness is decisive in this medium-change field.",
+    "coverage_notes": "Deep venture-building remains covered by the current OpenLearn route, while MIT 15.393 supplies current practitioner-oriented startup execution.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-entrepreneurship-ideas-reality",
+      "mit-15-393-nuts-bolts-new-ventures"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-mit-15-393-nuts-bolts-new-ventures",
+    "candidate_id": "mit-15-393-nuts-bolts-new-ventures",
+    "review_id": "deep-12-mit-15-393-nuts-bolts-new-ventures",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current compact startup-execution guidance across customers, sales, teams, legal issues, negotiation and financing",
+    "comparison_set": [
+      "openlearn-entrepreneurship-ideas-reality",
+      "mit-15-390-new-enterprises",
+      "saylor-bus305-entrepreneurship"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 15.393 earns a separate slot because it contributes a current practitioner-led startup-execution layer rather than another broad entrepreneurship foundation. The January 2025 course and added 2026 innovation session materially improve currency on venture models, sales, legal issues, negotiation and financing.",
+    "marginal_value": "Adds compact, current practitioner execution guidance that complements the deeper general OpenLearn pathway.",
+    "provider_concentration_notes": "MIT is already represented elsewhere in the index, but this course serves a distinct entrepreneurship role and is admitted for current content rather than institutional prestige.",
+    "coverage_notes": "Complements the broad entrepreneurship foundation with a concise execution-focused route for active founders and prospective founders.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-entrepreneurship-ideas-reality"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-openlearn-entrepreneurship-ideas-reality",
+    "candidate_id": "openlearn-entrepreneurship-ideas-reality",
+    "review_id": "deep-12-openlearn-entrepreneurship-ideas-reality",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current broad entrepreneurship foundation from opportunity and business model through finance, growth and pitching",
+    "comparison_set": [
+      "mit-15-393-nuts-bolts-new-ventures",
+      "saylor-bus305-entrepreneurship",
+      "nau-academia-empreendedorismo"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "OpenLearn is the strongest general entrepreneurship route in the current survivor family. Its 24-hour eight-session structure, case studies, business tools, quizzes, Business Model Canvas work, finance coverage, pitching and formal March 2026 update combine breadth, practice and currentness better than the alternatives.",
+    "marginal_value": "Creates the canonical broad entrepreneurship foundation with current materials and substantial independent-study support.",
+    "provider_concentration_notes": "OpenLearn also wins the general leadership comparison, but the two courses serve different learning objectives and both clear the marginal-value bar independently.",
+    "coverage_notes": "Becomes the primary general entrepreneurship route; MIT 15.393 complements it with practitioner execution and NAU adds pt-PT access plus academic credit.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-15-393-nuts-bolts-new-ventures",
+      "nau-academia-empreendedorismo"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-saylor-bus300-operations-management",
+    "candidate_id": "saylor-bus300-operations-management",
+    "review_id": "deep-12-saylor-bus300-operations-management",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad operations-management foundation covering process, supply chain, capacity, inventory and quality",
+    "comparison_set": [
+      "saylor-bus402-project-management",
+      "openlearn-entrepreneurship-ideas-reality"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "BUS300 fills a distinct operations-management gap that is not replaced by entrepreneurship or project-management courses. Its 38-hour, nine-unit current syllabus covers operations strategy, process design, supply chains, lean/JIT, capacity, layout, inventory and quality with assessments and a free certificate.",
+    "marginal_value": "Adds a complete operations-management foundation with no stronger direct incumbent in the canonical set.",
+    "provider_concentration_notes": "Saylor already has canonical records in other business areas, so this course is admitted only because operations management is a distinct uncovered learning need.",
+    "coverage_notes": "Establishes the core operations-management route and complements, rather than duplicates, project management.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-bus402-project-management"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-saylor-bus305-entrepreneurship",
+    "candidate_id": "saylor-bus305-entrepreneurship",
+    "review_id": "deep-12-saylor-bus305-entrepreneurship",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Conventional structured entrepreneurship foundation with assessments and a free certificate",
+    "comparison_set": [
+      "openlearn-entrepreneurship-ideas-reality",
+      "mit-15-393-nuts-bolts-new-ventures",
+      "nau-academia-empreendedorismo"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "BUS305 is current, substantial and well structured, but its general entrepreneurship role is already better covered by OpenLearn's more experiential 2026 route. MIT 15.393 adds a more differentiated current practitioner layer, while NAU provides a genuine pt-PT and academic-credit niche.",
+    "marginal_value": "Adds another competent general entrepreneurship course but insufficient differentiation after the selected routes.",
+    "provider_concentration_notes": "Saylor concentration is relevant because other Saylor courses win genuinely distinct operations and project-management roles; a redundant entrepreneurship slot therefore has a higher bar.",
+    "coverage_notes": "General entrepreneurship remains strongly covered without retaining a second broad English-language structured route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-entrepreneurship-ideas-reality"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-nau-academia-empreendedorismo",
+    "candidate_id": "nau-academia-empreendedorismo",
+    "review_id": "deep-01-nau-academia-empreendedorismo",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Substantive Portuguese-language entrepreneurship pathway with assessment and academic credit",
+    "comparison_set": [
+      "openlearn-entrepreneurship-ideas-reality",
+      "saylor-bus305-entrepreneurship"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "NAU does not win on absolute depth, but it provides a real learning role the stronger English-language routes do not: a 30-hour European Portuguese entrepreneurship pathway with assessment, diploma and a verified 1 ECTS route. This is substantive language/access diversity rather than token representation.",
+    "marginal_value": "Adds high-value pt-PT access and academic-credit recognition without duplicating the English learner experience.",
+    "provider_concentration_notes": "NAU is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Preserves a serious Portuguese-language entrepreneurship route while OpenLearn remains the strongest general recommendation overall.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-entrepreneurship-ideas-reality"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-hp-life-effective-leadership",
+    "candidate_id": "hp-life-effective-leadership",
+    "review_id": "deep-12-hp-life-effective-leadership",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Very short introductory leadership orientation for first-time learners",
+    "comparison_set": [
+      "openlearn-leadership-followership",
+      "openclassrooms-manage-team",
+      "saylor-prdv231-ethical-leadership"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "HP LIFE is current, accessible and credential-bearing, but a roughly 30–60 minute microcourse cannot compete with the sustained theory, reflection and applied development of OpenLearn or the operational management depth of OpenClassrooms. Credential availability does not compensate for limited depth and practice.",
+    "marginal_value": "Useful as a quick orientation, but too shallow for a core index slot once stronger leadership routes are available.",
+    "provider_concentration_notes": "Provider concentration is not material; this is a depth and practice decision.",
+    "coverage_notes": "Beginner leadership needs remain covered by OpenLearn's accessible Level 1 route and the practical new-manager course from OpenClassrooms.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-leadership-followership"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-openclassrooms-initiez-vous-gestion-projet",
+    "candidate_id": "openclassrooms-initiez-vous-gestion-projet",
+    "review_id": "deep-12-openclassrooms-initiez-vous-gestion-projet",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Low-friction French-language introduction to managing a first project end to end",
+    "comparison_set": [
+      "pmi-kickoff",
+      "saylor-bus402-project-management"
+    ],
+    "incumbent_ids": [
+      "pmi-kickoff"
+    ],
+    "decision_rationale": "The four-hour OpenClassrooms course is not a substitute for Saylor's long-form project-management foundation, but it adds a current French-language beginner route covering project definition, planning, day-to-day steering, evaluation and results communication with a cumulative quiz. That language/access role is not served by the existing English PMI incumbent.",
+    "marginal_value": "Adds genuine French-language project-management access with a coherent end-to-end first-project scope.",
+    "provider_concentration_notes": "OpenClassrooms also supplies the new-manager route, but the two courses serve different roles and languages.",
+    "coverage_notes": "Complements PMI KICKOFF and Saylor BUS402 by offering a concise French pathway rather than duplicating their English roles.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "pmi-kickoff",
+      "saylor-bus402-project-management"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-openclassrooms-manage-team",
+    "candidate_id": "openclassrooms-manage-team",
+    "review_id": "deep-12-openclassrooms-manage-team",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Operational management toolkit for new and aspiring people managers",
+    "comparison_set": [
+      "openlearn-leadership-followership",
+      "hp-life-effective-leadership"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Manage a Team fills a practical management role that the more theory-and-reflection-oriented OpenLearn leadership course does not. Its eight-hour current route covers delegation, meetings, goals, performance, feedback, recruitment, onboarding and prioritisation with three quiz checkpoints.",
+    "marginal_value": "Adds concrete first-line management skills rather than another abstract leadership survey.",
+    "provider_concentration_notes": "The second OpenClassrooms admission is justified by a distinct people-management need rather than catalogue breadth.",
+    "coverage_notes": "Complements OpenLearn leadership development with a practical new-manager toolkit.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-leadership-followership"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-openlearn-leadership-followership",
+    "candidate_id": "openlearn-leadership-followership",
+    "review_id": "deep-12-openlearn-leadership-followership",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Sustained general leadership development combining theory, reflection and personal action planning",
+    "comparison_set": [
+      "openclassrooms-manage-team",
+      "hp-life-effective-leadership",
+      "saylor-prdv231-ethical-leadership"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "OpenLearn is the strongest general leadership-development route in the survivor family. Twenty-four hours of theory, weekly quizzes, reflective activities, a leadership journal and a personal development action plan provide substantially more depth and transfer than the short or narrower alternatives.",
+    "marginal_value": "Creates the canonical general leadership-development pathway with meaningful reflective and applied practice.",
+    "provider_concentration_notes": "OpenLearn also holds the general entrepreneurship slot, but leadership is a distinct learning need with independently strong evidence.",
+    "coverage_notes": "Becomes the broad leadership route; OpenClassrooms complements it with operational people-management practice.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openclassrooms-manage-team"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-saylor-bus402-project-management",
+    "candidate_id": "saylor-bus402-project-management",
+    "review_id": "deep-12-saylor-bus402-project-management",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Long-form project-management foundation from initiation through closing and people skills",
+    "comparison_set": [
+      "pmi-kickoff",
+      "openclassrooms-initiez-vous-gestion-projet"
+    ],
+    "incumbent_ids": [
+      "pmi-kickoff"
+    ],
+    "decision_rationale": "BUS402 materially complements the concise PMI KICKOFF incumbent rather than replacing it. At 52 hours it provides a much deeper current foundation across initiating, planning, executing, monitoring/controlling, closing and project-manager people skills, with assessments, a final exam and free certificate.",
+    "marginal_value": "Adds the long-form project-management pathway missing from the canonical set while PMI remains the high-friction-free quick start.",
+    "provider_concentration_notes": "Saylor is increasingly represented, but this admission clears the bar because it fills a distinct long-form project-management role and has current 2025 maintenance evidence.",
+    "coverage_notes": "Creates a two-level project-management ladder: PMI KICKOFF for concise orientation and Saylor BUS402 for sustained study; OpenClassrooms adds French access.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "pmi-kickoff",
+      "openclassrooms-initiez-vous-gestion-projet"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-06-saylor-prdv231-ethical-leadership",
+    "candidate_id": "saylor-prdv231-ethical-leadership",
+    "review_id": "deep-04-saylor-prdv231-ethical-leadership",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Ethics-focused leadership concepts including virtue, fairness, courage and servant leadership",
+    "comparison_set": [
+      "openlearn-leadership-followership",
+      "hp-life-effective-leadership"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PRDV231 retains useful ethical-leadership content, but its limited experiential practice and lower overall depth make it a specialist supplement rather than a core leadership course. OpenLearn provides broader leadership theory, reflection and action planning while still addressing values and context.",
+    "marginal_value": "Adds a narrow ethics emphasis but insufficient marginal value after the broader leadership route is selected.",
+    "provider_concentration_notes": "Saylor already wins distinct operations and project-management roles; provider concentration reinforces the decision not to retain a weaker specialist leadership course.",
+    "coverage_notes": "Ethical leadership remains partially covered within the broader leadership pathway; the specialist review stays available for discovery.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-leadership-followership"
+    ],
+    "is_current": true
+  }
+]
