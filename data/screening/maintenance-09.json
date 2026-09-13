@@ -1,0 +1,157 @@
+[
+  {
+    "screen_id": "maintenance-09-ibm-skillsbuild-ai-fundamentals",
+    "candidate_id": "ibm-skillsbuild-ai-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://skills.yourlearning.ibm.com/activity/PLAN-7913EE1DB030",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Artificial Intelligence Fundamentals digital credential after completing the prescribed courses, graded quizzes, final assessments and practice simulations",
+    "completeness": "complete",
+    "evidence": [
+      "https://skillsbuild.org/learning-catalog/university-catalog?topic=ai",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/artificial-intelligence-fundamentals",
+      "https://skills.yourlearning.ibm.com/activity/PLAN-7913EE1DB030"
+    ],
+    "rationale": "The previous hold blocker is resolved. IBM's current SkillsBuild catalog again exposes Artificial Intelligence Fundamentals as an active credential-bearing learning plan, and the current IBM-issued credential page provides a course-specific adult-learner route. The credential is explicitly free and requires the prescribed learning set, graded quizzes, final assessments and practice simulations. The route is therefore sufficiently stable and complete for Deep Review.",
+    "flags": [
+      "learner-route-resolved",
+      "free-digital-credential",
+      "graded-assessments",
+      "practice-simulations",
+      "ai-fundamentals",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-02-ibm-skillsbuild-ai-fundamentals"
+  },
+  {
+    "screen_id": "maintenance-09-ibm-skillsbuild-data-fundamentals",
+    "candidate_id": "ibm-skillsbuild-data-fundamentals",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://skills.yourlearning.ibm.com/activity/PLAN-BC0FAEE8E439",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en",
+      "ar",
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Data Fundamentals digital credential after completing the prescribed courses, graded quizzes, final assessments and practice simulations",
+    "completeness": "complete",
+    "evidence": [
+      "https://skillsbuild.org/college-students/data-science",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/data-fundamentals",
+      "https://skills.yourlearning.ibm.com/activity/PLAN-BC0FAEE8E439"
+    ],
+    "rationale": "The previous learner-route blocker is resolved. IBM's current Data Science page lists Data Fundamentals as a seven-hour registered-learner course and the IBM-issued credential page now resolves a course-specific adult-learner plan. The credential is explicitly free and requires graded quizzes, final assessments and practice simulations, providing enough access and completeness evidence for Deep Review.",
+    "flags": [
+      "learner-route-resolved",
+      "seven-hours",
+      "free-digital-credential",
+      "graded-assessments",
+      "practice-simulations",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-02-ibm-skillsbuild-data-fundamentals"
+  },
+  {
+    "screen_id": "maintenance-09-nau-consumidor-ciberseguro",
+    "candidate_id": "nau-consumidor-ciberseguro",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU completion certificate after at least 75% in course activities",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/",
+      "https://www.cncs.gov.pt/pt/curso-consumidor-ciberseguro/"
+    ],
+    "rationale": "The current NAU route remains open, free, assessed and certified, but the missing currency evidence is now resolved negatively: the official Centro Nacional de Ciberseguranca course page states a last update of 15 July 2022. A four-hour course whose core scope includes EU consumer rights, online fraud, platforms and payment methods is too change-sensitive to enter Deep Review in 2026 without a substantive refresh. Continued enrolment does not compensate for a four-year legal/cyber currency gap.",
+    "flags": [
+      "pt-pt",
+      "four-hours",
+      "last-updated-2022",
+      "legal-currency-failure",
+      "cybersecurity-currency-failure",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "hold-resolution-02-nau-consumidor-ciberseguro"
+  },
+  {
+    "screen_id": "maintenance-09-nau-ciberseguranca-nas-escolas",
+    "candidate_id": "nau-ciberseguranca-nas-escolas",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-nas-escolas/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free digital certificate of completion and digital seal",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciberseguranca-nas-escolas/",
+      "https://www.dge.mec.pt/noticias/tic-na-educacao/abertura-do-mooc-ciberseguranca-nas-escolas"
+    ],
+    "rationale": "The learner route is still free and complete, but DGE identifies the MOOC as the course that ran from 14 January to 4 March 2019, and no substantive revision of the course itself is verified. The syllabus explicitly covers cybersecurity, threats, cybercrime and legislation. Seven years without verified content revision is a decisive currentness failure in this field, so indefinite hold would overstate the chance that the original material remains finalist-ready.",
+    "flags": [
+      "pt-pt",
+      "legacy-2019-course",
+      "fast-moving-content",
+      "cybercrime",
+      "legislation",
+      "currency-failure",
+      "free-certificate"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-05-nau-ciberseguranca-nas-escolas"
+  },
+  {
+    "screen_id": "maintenance-09-coe-help-protection-safety-journalists",
+    "candidate_id": "coe-help-protection-safety-journalists",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.coe.int/en/web/help/-/protection-and-safety-of-journalist-new-council-of-europe-help-course-available-for-free-online",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free electronic Council of Europe HELP Statement of Accomplishment",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.coe.int/en/web/help/-/protection-and-safety-of-journalist-new-council-of-europe-help-course-available-for-free-online",
+      "https://www.coe.int/en/web/help/-/help-course-on-protection-of-journalists-launched-in-albania"
+    ],
+    "rationale": "Council of Europe primary evidence confirms that the generic five-module course was published in July 2020. The April 2026 Albania launch proves active use and local adaptation, but explicitly points back to the JUFREX 2 course and does not establish a substantive revision of the generic legal curriculum. Because the course teaches legal frameworks, mechanisms, state obligations and case-law-dependent protection of journalists, a 2020 core edition is not current enough for a best-current 2026 legal index.",
+    "flags": [
+      "journalist-safety",
+      "published-2020",
+      "active-2026-cohort",
+      "legal-currency-failure",
+      "case-law-sensitive",
+      "free-statement-of-accomplishment"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-06-coe-help-protection-safety-journalists"
+  }
+]
