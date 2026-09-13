@@ -4790,5 +4790,110 @@
     "quality_score": 8.61,
     "review_interval_days": 120,
     "next_review": "2027-01-12"
+  },
+  {
+    "id": "nau-fundamentos-bases-dados",
+    "title": "Fundamentos de Bases de Dados",
+    "provider": "Instituto Politécnico de Lisboa / NAU",
+    "category": "computer-science",
+    "level": "beginner_to_intermediate",
+    "primary_language": "pt-PT",
+    "other_languages": [],
+    "url": "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.6,
+      "practice": 8.2,
+      "materials": 8.5,
+      "currency": 9,
+      "expertise": 8.8,
+      "accessibility": 8.4
+    },
+    "recommendation_score": 8.6,
+    "why_recommended": "Strong 25-hour pt-PT relational-database pathway covering data modelling, normalization, SQL, transactions, PostgreSQL and Python integration; a valuable language-access alternative to the stronger English global leaders.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "last_verified": "2026-09-14",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.59,
+    "review_interval_days": 120,
+    "next_review": "2027-01-12"
+  },
+  {
+    "id": "nau-estruturas-dados",
+    "title": "Estruturas de Dados",
+    "provider": "Instituto Politécnico de Lisboa / NAU",
+    "category": "computer-science",
+    "level": "intermediate",
+    "primary_language": "pt-PT",
+    "other_languages": [],
+    "url": "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8.4,
+      "practice": 8,
+      "materials": 8.3,
+      "currency": 8.9,
+      "expertise": 8.8,
+      "accessibility": 8.5
+    },
+    "recommendation_score": 8.3,
+    "why_recommended": "Useful 25-hour intermediate pt-PT bridge from programming fundamentals into lists, stacks, queues, heaps, hashing, trees and graphs, forming a coherent progression toward the algorithms course.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "last_verified": "2026-09-14",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.43,
+    "review_interval_days": 120,
+    "next_review": "2027-01-12"
+  },
+  {
+    "id": "nau-ciencia-aberta-dados-fair",
+    "title": "Ciência Aberta e Dados FAIR: Princípios, Práticas e Políticas",
+    "provider": "Universidade da Beira Interior / NAU",
+    "category": "ai-data",
+    "level": "intermediate",
+    "primary_language": "pt-PT",
+    "other_languages": [],
+    "url": "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.2,
+      "practice": 7.7,
+      "materials": 8.4,
+      "currency": 9.5,
+      "expertise": 8.9,
+      "accessibility": 8.6
+    },
+    "recommendation_score": 8.7,
+    "why_recommended": "Current 20-hour pt-PT route on open science, FAIR data, stewardship, sensitive-data security, policy and responsible AI in research; a strong language-access complement to NASA Open Science 101.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "last_verified": "2026-09-14",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.44,
+    "review_interval_days": 120,
+    "next_review": "2027-01-12"
   }
 ]
