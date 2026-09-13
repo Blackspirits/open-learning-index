@@ -223,9 +223,7 @@
     "coverage_notes": "Requires close monitoring because the current session ends 27 December 2026 and future free runs must be re-verified.",
     "displaced_course_ids": [],
     "complements_course_ids": [],
-    "outcompeted_by_ids": [
-      "mandarinx-mandarin-chinese-level-1"
-    ],
+    "outcompeted_by_ids": [],
     "is_current": true
   },
   {
