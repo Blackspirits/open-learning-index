@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The first challenger cycle plus evidence-triggered hold cleanup are complete: **205 / 205 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 114 admit / 91 do_not_admit**. The canonical publication set remains **131 courses** with **74 F0 / 24 F1 / 33 F2**. Exactly **4 `hold`** records remain excluded, and current shallow state is **205 advance / 4 hold / 85 reject** across **294 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
+**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The pt-PT challenger micro-wave has completed Discovery and Shallow Screening: **205 / 213 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 8 new pt-PT advances awaiting Deep Review**. The canonical publication set remains **131 courses** with **74 F0 / 24 F1 / 33 F2**. Exactly **5 `hold`** records remain excluded, and current shallow state is **213 advance / 5 hold / 88 reject** across **306 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
 
 ## Goal
 
