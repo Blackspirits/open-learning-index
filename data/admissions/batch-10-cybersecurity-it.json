@@ -1,0 +1,313 @@
+[
+  {
+    "admission_id": "admission-11-openlearn-intro-cyber-security",
+    "candidate_id": "openlearn-intro-cyber-security",
+    "review_id": "deep-02-openlearn-intro-cyber-security",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad low-friction cybersecurity introduction with current general security practice",
+    "comparison_set": [
+      "cisco-introduction-cybersecurity",
+      "ibm-skillsbuild-cybersecurity-fundamentals",
+      "portswigger-web-security-academy"
+    ],
+    "incumbent_ids": [
+      "portswigger-web-security-academy"
+    ],
+    "decision_rationale": "OpenLearn is the strongest general beginner cybersecurity route in the reviewed family. Its 24-hour, March 2026-updated course covers threats, malware, network security, cryptography, identity theft and risk management with a badge and participation statement, giving it substantially more breadth than the shorter beginner alternatives.",
+    "marginal_value": "Adds the missing broad entry point before specialist defensive/offensive pathways; PortSwigger is too specialised as a beginner general-security substitute.",
+    "provider_concentration_notes": "OpenLearn is admitted on breadth and currentness, not provider preference.",
+    "coverage_notes": "Becomes the default general cybersecurity starting point; Cisco courses provide deeper networking/defensive progression.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-endpoint-security",
+      "cisco-network-defense",
+      "portswigger-web-security-academy"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-microsoft-ai-security-fundamentals",
+    "candidate_id": "microsoft-learn-ai-security-fundamentals",
+    "review_id": "deep-02-microsoft-learn-ai-security-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory AI security threats, controls and red-team testing",
+    "comparison_set": [
+      "cisco-ethical-hacker",
+      "openlearn-intro-cyber-security"
+    ],
+    "incumbent_ids": [
+      "portswigger-web-security-academy"
+    ],
+    "decision_rationale": "AI security is strategically important, but the reviewed Microsoft path is only about two hours and does not provide enough depth or practice to clear the core admission bar. Its uniqueness is not sufficient reason to lower the standard in a fast-changing security field.",
+    "marginal_value": "Adds current AI-specific concepts but too little sustained practice or depth for canonical promotion.",
+    "provider_concentration_notes": "Provider concentration is not the deciding factor.",
+    "coverage_notes": "AI security remains an explicit specialist gap to monitor; a stronger current free route could justify targeted future discovery rather than promoting a shallow placeholder.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-ibm-skillsbuild-cybersecurity-fundamentals",
+    "candidate_id": "ibm-skillsbuild-cybersecurity-fundamentals",
+    "review_id": "deep-02-ibm-skillsbuild-cybersecurity-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Short credential-bearing cybersecurity fundamentals orientation",
+    "comparison_set": [
+      "openlearn-intro-cyber-security",
+      "cisco-introduction-cybersecurity"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "IBM SkillsBuild is accessible, current and credential-bearing, but its seven-to-eight-hour fundamentals role is already covered more deeply by OpenLearn. Keeping both would add another introductory orientation rather than a distinct learner need.",
+    "marginal_value": "Adds a digital credential but limited marginal learning depth beside the selected general course.",
+    "provider_concentration_notes": "This is a redundancy decision, not a provider penalty.",
+    "coverage_notes": "Beginner cybersecurity remains covered by the stronger 24-hour OpenLearn route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-intro-cyber-security"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-fortinet-fortigate-operator",
+    "candidate_id": "fortinet-fortigate-operator",
+    "review_id": "deep-03-fortinet-fortigate-operator",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Operational FortiGate firewall/security administration",
+    "comparison_set": [
+      "cisco-network-defense",
+      "cisco-cyber-threat-management"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "FortiGate Operator is a strong specialist operational course, but its value is tightly coupled to FortiOS and recommended Fortinet prerequisites. Phase 4 already has stronger transferable defensive-security routes, so a product-specific firewall course does not add enough core value.",
+    "marginal_value": "Useful for Fortinet operators, but insufficient provider-independent transfer for a canonical slot.",
+    "provider_concentration_notes": "Vendor dependence is the main limitation.",
+    "coverage_notes": "Product-specific FortiGate skills remain discoverable through Deep Review; the core favors broader defensive competencies.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-network-defense"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-introduction-cybersecurity",
+    "candidate_id": "cisco-introduction-cybersecurity",
+    "review_id": "deep-17-cisco-introduction-cybersecurity",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Very accessible first cybersecurity orientation",
+    "comparison_set": [
+      "openlearn-intro-cyber-security",
+      "ibm-skillsbuild-cybersecurity-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Cisco Introduction to Cybersecurity is excellent for six hours, but it is intentionally shallow and overlaps directly with OpenLearn's deeper current beginner route. Cisco's stronger courses are retained later in the pathway, so keeping this one would also increase provider concentration without adding a new learning role.",
+    "marginal_value": "Adds a shorter onboarding option but no unique core coverage.",
+    "provider_concentration_notes": "Cisco concentration is explicitly controlled by excluding redundant introductory and follow-on courses.",
+    "coverage_notes": "Learners can enter through OpenLearn and progress into the admitted Cisco defensive sequence.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-intro-cyber-security"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-endpoint-security",
+    "candidate_id": "cisco-endpoint-security",
+    "review_id": "deep-17-cisco-endpoint-security",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Hands-on endpoint and operating-system defensive security",
+    "comparison_set": [
+      "cisco-network-defense",
+      "openlearn-intro-cyber-security"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Endpoint Security earns a separate slot because it moves beyond awareness into practical endpoint hardening across Windows/Linux, malware, vulnerabilities and controls, with 31 labs/Packet Tracer activities and 40+ interactive activities/quizzes.",
+    "marginal_value": "Adds sustained endpoint-defense practice that the general introduction and network-defense course do not replace.",
+    "provider_concentration_notes": "Cisco concentration is accepted only for distinct lab-dense competencies; this is the endpoint layer of the progression.",
+    "coverage_notes": "Forms the first substantial defensive step before Network Defense.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-network-defense",
+      "cisco-cyber-threat-management"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-network-defense",
+    "candidate_id": "cisco-network-defense",
+    "review_id": "deep-17-cisco-network-defense",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Practical network defense across layered controls, ACLs, firewalls, cryptography and alert evaluation",
+    "comparison_set": [
+      "cisco-endpoint-security",
+      "fortinet-fortigate-operator",
+      "portswigger-web-security-academy"
+    ],
+    "incumbent_ids": [
+      "portswigger-web-security-academy"
+    ],
+    "decision_rationale": "Network Defense is the strongest general defensive-security recommendation in the current pool. Its 27-hour route combines 29 labs/Packet Tracer activities, 58+ interactive checks and a final exam across layered defense, access control, firewalls, cloud security, cryptography and security data.",
+    "marginal_value": "Adds a broad lab-dense defensive-network role distinct from PortSwigger's web-security specialism.",
+    "provider_concentration_notes": "Cisco concentration is justified here by unusually strong practice density and a clearly separate network-defense role.",
+    "coverage_notes": "Acts as the core defensive-network course and complements Endpoint Security and Cyber Threat Management.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-endpoint-security",
+      "cisco-cyber-threat-management",
+      "portswigger-web-security-academy"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-cyber-threat-management",
+    "candidate_id": "cisco-cyber-threat-management",
+    "review_id": "deep-17-cisco-cyber-threat-management",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Cybersecurity governance, risk assessment, incident response and threat-management practice",
+    "comparison_set": [
+      "cisco-network-defense",
+      "openlearn-intro-cyber-security"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Cyber Threat Management is not merely another defensive lab course. It adds governance, vulnerability/risk assessment, incident response, ethics and legal/regulatory frameworks, supported by 16 labs/Packet Tracer activities and structured assessment.",
+    "marginal_value": "Adds the governance/risk/incident-response layer missing from endpoint and network defense.",
+    "provider_concentration_notes": "This is retained despite Cisco concentration because the learning objective is materially different from the technical defense courses.",
+    "coverage_notes": "Completes a coherent defensive pathway from endpoint and network controls into organizational threat management.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-endpoint-security",
+      "cisco-network-defense"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-ethical-hacker",
+    "candidate_id": "cisco-ethical-hacker",
+    "review_id": "deep-17-cisco-ethical-hacker",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad hands-on ethical hacking and offensive-security methodology beyond web-only testing",
+    "comparison_set": [
+      "portswigger-web-security-academy",
+      "cisco-network-defense"
+    ],
+    "incumbent_ids": [
+      "portswigger-web-security-academy"
+    ],
+    "decision_rationale": "Cisco Ethical Hacker materially complements rather than displaces PortSwigger. PortSwigger remains the exceptional web-security incumbent; Cisco adds broader offensive methodology, scoping, vulnerability assessment, exploitation-oriented practice, reporting and mitigation across 70 hours, 34 labs and a skills-based assessment.",
+    "marginal_value": "Adds a broader offensive-security pathway beyond web applications while retaining substantial hands-on practice.",
+    "provider_concentration_notes": "Cisco concentration is accepted because this is the strongest non-web offensive specialist in the reviewed family.",
+    "coverage_notes": "PortSwigger remains the primary web-security route; Ethical Hacker covers broader pentest methodology.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "portswigger-web-security-academy"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-networking-basics",
+    "candidate_id": "cisco-networking-basics",
+    "review_id": "deep-17-cisco-networking-basics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "General networking foundation required before deeper security and infrastructure study",
+    "comparison_set": [
+      "cisco-networking-devices-initial-configuration",
+      "fortinet-networking-fundamentals"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Networking Basics is the strongest general networking entry point in the reviewed family. Seventeen modules, 13 labs and interactive assessment cover devices, Ethernet, protocols, IP addressing, wireless/LAN design and application services without requiring prior knowledge.",
+    "marginal_value": "Adds the networking foundation that many security courses otherwise assume.",
+    "provider_concentration_notes": "Although Cisco-heavy, this course serves a foundational networking role rather than another cybersecurity specialization.",
+    "coverage_notes": "Becomes the single general networking foundation; the follow-on device-configuration course remains optional rather than canonical.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "cisco-endpoint-security",
+      "cisco-network-defense"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-networking-devices-initial-configuration",
+    "candidate_id": "cisco-networking-devices-initial-configuration",
+    "review_id": "deep-17-cisco-networking-devices-initial-configuration",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Follow-on networking configuration and small-network operation",
+    "comparison_set": [
+      "cisco-networking-basics",
+      "cisco-network-defense"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Networking Devices and Initial Configuration is a strong second step, but its role is incremental after Networking Basics and it further increases Cisco concentration. The canonical index does not need to mirror every stage of one provider's networking pathway.",
+    "marginal_value": "Adds configuration depth but insufficiently distinct core coverage after the stronger foundation and network-defense courses are retained.",
+    "provider_concentration_notes": "Provider concentration is decisive here.",
+    "coverage_notes": "The course remains a natural reviewed follow-on recommendation for learners using the Cisco pathway.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-networking-basics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-cisco-operating-systems-basics",
+    "candidate_id": "cisco-operating-systems-basics",
+    "review_id": "deep-17-cisco-operating-systems-basics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory Windows/Linux/mobile operating-systems concepts and basic administration",
+    "comparison_set": [
+      "cisco-endpoint-security",
+      "cisco-networking-basics"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Operating Systems Basics is useful and lab-supported, but platform-specific details age quickly and the course has lower marginal value than the networking and security routes. Admitting it would further concentrate the category around Cisco while leaving broader vendor-neutral systems education unresolved.",
+    "marginal_value": "Adds IT foundations but not enough durable differentiation for a core slot.",
+    "provider_concentration_notes": "Cisco concentration and faster platform obsolescence both lower the admission case.",
+    "coverage_notes": "Operating-system basics remain useful preparatory material but not a canonical Cybersecurity & IT selection.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-11-fortinet-networking-fundamentals",
+    "candidate_id": "fortinet-networking-fundamentals",
+    "review_id": "deep-17-fortinet-networking-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Short introductory networking primer",
+    "comparison_set": [
+      "cisco-networking-basics"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Fortinet Networking Fundamentals is materially weaker than Cisco Networking Basics: only four-to-five hours, weaker practice evidence, 2023 maintenance and legacy Java-plugin compatibility guidance. It does not clear the Phase 4 bar.",
+    "marginal_value": "Adds no meaningful coverage beyond the stronger networking foundation.",
+    "provider_concentration_notes": "Provider concentration is not needed to reject this course; direct quality/currentness comparison is sufficient.",
+    "coverage_notes": "General networking is covered by Cisco Networking Basics.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-networking-basics"
+    ],
+    "is_current": true
+  }
+]
