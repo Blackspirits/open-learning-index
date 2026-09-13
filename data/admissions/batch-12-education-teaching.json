@@ -1,0 +1,142 @@
+[
+  {
+    "admission_id": "admission-13-openlearn-take-teaching-online",
+    "candidate_id": "openlearn-take-teaching-online",
+    "review_id": "deep-09-openlearn-take-teaching-online",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad professional development for effective online and blended teaching",
+    "comparison_set": [
+      "british-council-how-adapt-resources",
+      "openlearn-teaching-learning-tricky-topics"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Take your teaching online is the strongest broad Education & Teaching survivor. Its 24-hour eight-week route combines research, weekly practice, accessibility, technology selection, collaboration, online assessment, quizzes and professional reflection, giving it substantially more depth and independent-study structure than the short CPD alternatives.",
+    "marginal_value": "Adds the category's broadest teacher-development route with strong practice and accessibility.",
+    "provider_concentration_notes": "OpenLearn is represented elsewhere, but this course serves a distinct professional-teaching role and is the strongest broad option.",
+    "coverage_notes": "Becomes the general teacher-development anchor; focused classroom methodology and teacher-educator development remain separate roles.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "british-council-how-adapt-resources",
+      "british-council-helping-teachers-learn"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-13-british-council-how-adapt-resources",
+    "candidate_id": "british-council-how-adapt-resources",
+    "review_id": "deep-09-british-council-how-adapt-resources",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current classroom resource evaluation and adaptation for English-language teaching",
+    "comparison_set": [
+      "british-council-communicative-tasks",
+      "british-council-understanding-language-systems",
+      "openlearn-take-teaching-online"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "How to adapt resources is the strongest current classroom-methodology CPD survivor. Its 2026–27 route moves from evaluating resources to adapting lesson plans for context/inclusion and using learners as classroom resources, supported by a workbook and free certificate.",
+    "marginal_value": "Adds direct classroom-design transfer in a current compact professional-development format.",
+    "provider_concentration_notes": "British Council has four survivors, so only clearly differentiated roles are retained; this is the strongest classroom-methodology option.",
+    "coverage_notes": "Represents practical ELT classroom design without promoting every adjacent British Council CPD module.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-take-teaching-online"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-13-british-council-helping-teachers-learn",
+    "candidate_id": "british-council-helping-teachers-learn",
+    "review_id": "deep-09-british-council-helping-teachers-learn",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Teacher-educator development, communities of practice and teacher autonomy",
+    "comparison_set": [
+      "british-council-communicative-tasks",
+      "british-council-how-adapt-resources"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Helping teachers to learn serves a different audience from classroom CPD. Its focus on teacher learning, training, communities of practice, collaborative learning and self-directed professional development gives it a distinct teacher-educator role, reinforced by workbook reflection and action planning.",
+    "marginal_value": "Adds professional-development leadership for educators who train or support other teachers.",
+    "provider_concentration_notes": "A second British Council admission is justified because the learner role is materially different from classroom resource adaptation.",
+    "coverage_notes": "Covers teacher-educator practice rather than another classroom-methodology variant.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "british-council-how-adapt-resources"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-13-british-council-communicative-tasks",
+    "candidate_id": "british-council-communicative-tasks",
+    "review_id": "deep-04-british-council-communicative-tasks",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Communicative and task-based classroom design for English-language teaching",
+    "comparison_set": [
+      "british-council-how-adapt-resources",
+      "british-council-understanding-language-systems"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Communicative tasks is a strong current CPD course, but its classroom-methodology role overlaps substantially with How to adapt resources. With provider concentration already high, the slightly stronger and broader resource-adaptation route offers more marginal core value.",
+    "marginal_value": "Useful task-based specialist practice, but insufficient differentiation for a third British Council slot.",
+    "provider_concentration_notes": "British Council concentration is a material reason to prune adjacent short CPD courses.",
+    "coverage_notes": "Task-based teaching remains available as a reviewed specialist supplement.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "british-council-how-adapt-resources"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-13-british-council-understanding-language-systems",
+    "candidate_id": "british-council-understanding-language-systems",
+    "review_id": "deep-04-british-council-understanding-language-systems",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Grammar, functional language and language-systems pedagogy for English teachers",
+    "comparison_set": [
+      "british-council-how-adapt-resources",
+      "british-council-communicative-tasks"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Understanding language systems is coherent and useful, but it is narrower subject-pedagogy CPD and less practice-rich than the selected resource-adaptation route. Promoting it would over-represent adjacent British Council modules.",
+    "marginal_value": "Adds specialist grammar/language-systems pedagogy but limited broad teacher-development coverage.",
+    "provider_concentration_notes": "Provider concentration is decisive after two clearly distinct British Council roles are retained.",
+    "coverage_notes": "Remains a useful reviewed specialist for English-language teachers.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "british-council-how-adapt-resources"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-13-openlearn-teaching-learning-tricky-topics",
+    "candidate_id": "openlearn-teaching-learning-tricky-topics",
+    "review_id": "deep-01-openlearn-teaching-learning-tricky-topics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Intermediate pedagogy for diagnosing and redesigning difficult threshold concepts",
+    "comparison_set": [
+      "openlearn-take-teaching-online",
+      "british-council-how-adapt-resources"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Teaching and learning tricky topics is substantial and practice-led, but its 2019 evidence base materially lowers current recommendation and its general teacher-development role overlaps the stronger, more accessible Take your teaching online route.",
+    "marginal_value": "Adds threshold-concept specialization but insufficient current marginal value for the core.",
+    "provider_concentration_notes": "OpenLearn concentration is secondary; the main issue is currentness and overlap.",
+    "coverage_notes": "Remains a strong specialist option for educators redesigning a known difficult topic.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-take-teaching-online"
+    ],
+    "is_current": true
+  }
+]
