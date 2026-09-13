@@ -1,0 +1,282 @@
+[
+  {
+    "review_id": "deep-21-yale-hist-116-american-revolution",
+    "candidate_id": "yale-hist-116-american-revolution",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://oyc.yale.edu/history/hist-116",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; Open Yale Courses archive",
+    "academic_credits": "None for independent learners",
+    "self_paced": true,
+    "scope_notes": "Twenty-five-lecture Yale survey of the American Revolution from colonial identity and resistance through war, confederation, constitution-making and the emergence of an American national identity.",
+    "prerequisites": "No formal prerequisites; university-level historical reading and interpretation are expected",
+    "required_resources": "Web browser for lecture video, audio and transcripts; several assigned books and articles must be sourced separately",
+    "component_evidence": {
+      "pedagogy": "Joanne Freeman frames the Revolution as a changing political and social process rather than a list of battles, repeatedly using contingency, language, identity and primary-source interpretation to build historical reasoning.",
+      "depth": "Twenty-five approximately fifty-minute lectures plus a substantial reading list cover political culture, loyalism, warfare, society, confederation, constitution-making and revolutionary memory at full undergraduate-survey depth.",
+      "practice": "The original Yale course required two papers, a midterm, a cumulative final and discussion participation, but the public archive does not provide a modern autonomous assessment or feedback layer for independent learners.",
+      "materials": "Open Yale Courses supplies the complete lecture sequence with video, audio, transcripts, syllabus and reading list, but many assigned books and articles are not bundled into the free archive.",
+      "currency": "The course was recorded in 2010. Core revolutionary chronology and much of the interpretation remain valuable, but later scholarship on race, slavery, Indigenous peoples, gender and political culture means the bibliography should not be treated as current.",
+      "expertise": "Joanne Freeman is a Yale historian specialising in the political culture of revolutionary and early national America and is a major scholar of founding-era politics.",
+      "accessibility": "The archive is freely available without enrolment and includes transcripts, but the university reading load, separately sourced readings and lack of self-checking assessment create more friction than current integrated platforms."
+    },
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9.1,
+      "practice": 6.9,
+      "materials": 8.7,
+      "currency": 7.8,
+      "expertise": 9.8,
+      "accessibility": 8
+    },
+    "quality_score": 8.53,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "One of the strongest free focused courses on the American Revolution and still valuable for interpretive depth. Recommendation is capped because the 2010 archive lacks autonomous assessment and a current reading programme.",
+    "comparators": [
+      "saylor-hist362-modern-revolutions",
+      "saylor-hist103-world-history",
+      "khan-world-history"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/history/hist-116",
+      "https://oyc.yale.edu/history/hist-116/lecture-1"
+    ],
+    "flags": [
+      "archive-course",
+      "us-history",
+      "separate-reading-materials",
+      "no-formal-credential",
+      "2010-recording"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-21-openlearn-female-protest-suffrage",
+    "candidate_id": "openlearn-female-protest-suffrage",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/the-history-female-protest-and-suffrage-the-uk/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Ten-hour introductory course on the UK campaign for women's suffrage, organised around chronology, organisations, militant action, the First World War and case studies of Ada Nield Chew and May Billinghurst.",
+    "prerequisites": "None; Level 1 introductory course",
+    "required_resources": "Modern browser; free OpenLearn account for progress tracking, quizzes, activities and Statement of Participation",
+    "component_evidence": {
+      "pedagogy": "The course combines chronological explanation with explicit historical-skills training, asking learners to analyse primary and secondary sources, interpret photographs and biographies, and compare competing forms of protest.",
+      "depth": "Ten hours provide a focused introduction rather than a comprehensive history of feminism or British democracy, but the course develops both movement history and historical method through seven structured sections.",
+      "practice": "Activities repeatedly require learners to interpret sources, establish chronology, analyse media and reflect on contested questions, supported by quizzes and progress tracking when signed in.",
+      "materials": "OpenLearn integrates text, video, biographies, primary-source extracts, downloadable resources, glossaries, references and activities in one free pathway that can also be downloaded in multiple formats.",
+      "currency": "First published and last updated in March 2021. The historical subject is stable, and the course uses modern source-analysis framing, although it has not received a more recent substantive update.",
+      "expertise": "The course was written by a six-person Open University team and adapted from an OU access module, with acknowledged use of Oxford Dictionary of National Biography and other scholarly source material.",
+      "accessibility": "The course is free, introductory, self-paced and usable without registration for content access; a free account unlocks progress tracking, quizzes, activities and the Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 7.7,
+      "practice": 8.8,
+      "materials": 9.2,
+      "currency": 9.1,
+      "expertise": 9.2,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.81,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A high-value focused history course because it teaches source analysis alongside the suffrage narrative rather than merely summarising events. Its narrow UK scope is intentional and complements broader surveys well.",
+    "comparators": [
+      "openlearn-what-do-historians-do",
+      "openlearn-empires-power-resistance-legacies",
+      "saylor-hist362-modern-revolutions"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/the-history-female-protest-and-suffrage-the-uk/content-section-0",
+      "https://www.open.edu/openlearn/history-the-arts/the-history-female-protest-and-suffrage-the-uk/content-section---acknowledgements"
+    ],
+    "flags": [
+      "free-statement-of-participation",
+      "source-analysis",
+      "uk-history",
+      "introductory-level",
+      "current-2021"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-21-openlearn-herodotus-invention-history",
+    "candidate_id": "openlearn-herodotus-invention-history",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/herodotus-and-the-invention-history",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Six-hour introductory course using selected passages from Herodotus to teach historical enquiry, source reliability, competing accounts, identity and the construction of historical narrative.",
+    "prerequisites": "None; Level 1 introductory course",
+    "required_resources": "Modern browser; free OpenLearn account for progress tracking, quizzes, activities and Statement of Participation",
+    "component_evidence": {
+      "pedagogy": "The course uses close reading of Herodotus as a vehicle for teaching transferable historical reasoning: how claims are constructed, how conflicting accounts are assessed and how readers judge reliability and significance.",
+      "depth": "Six hours and three main sections cannot provide a broad ancient-history survey, but the narrow scope is developed coherently from context and first accounts through Croesus, oracles and retrospective interpretation.",
+      "practice": "Learners repeatedly analyse passages, compare accounts, assess sources and reflect on their own critical reading, with course activities and quizzes available through the free OpenLearn route.",
+      "materials": "The integrated course includes structured text, translated passages, activities, glossary, pronunciation guidance, references, downloadable formats and supporting resources without requiring external paid materials.",
+      "currency": "First published and updated in April 2024, with modern framing around misinformation and source reliability and a recent author translation of the relevant Herodotus passages.",
+      "expertise": "The course was written by Elton Barker of the Open University's Classical Studies department, drawing on his published Herodotus scholarship and established academic work in Greek historiography.",
+      "accessibility": "The course is free, short, introductory, self-paced and downloadable in multiple formats; registration is optional for content and free for progress tracking and the Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 7.2,
+      "practice": 8.9,
+      "materials": 9.3,
+      "currency": 9.8,
+      "expertise": 9.6,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.9,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "An unusually strong short course for learning how historians interrogate evidence. It is not a substitute for a full ancient-history survey, but its current source-literacy focus gives it high marginal value.",
+    "comparators": [
+      "openlearn-what-do-historians-do",
+      "yale-clcv-205-ancient-greek-history",
+      "khan-world-history"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/herodotus-and-the-invention-history",
+      "https://www.open.edu/openlearn/history-the-arts/herodotus-and-the-invention-history/content-section-10"
+    ],
+    "flags": [
+      "current-2024",
+      "historical-method",
+      "source-analysis",
+      "free-statement-of-participation",
+      "short-duration"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-21-openlearn-enlightenment",
+    "candidate_id": "openlearn-enlightenment",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://www.open.edu/openlearn/history-the-arts/history-art/the-enlightenment/content-section-0",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free OpenLearn Statement of Participation on completion",
+    "academic_credits": "No academic credit for the OpenLearn route",
+    "self_paced": true,
+    "scope_notes": "Sixteen-hour intermediate course examining Enlightenment ideas and cultural change across science, empiricism, religion, morality, the classics, art, nature and the transition toward Romanticism.",
+    "prerequisites": "No formal prerequisites; Level 2 intermediate humanities reading is expected",
+    "required_resources": "Modern browser; free OpenLearn account for progress tracking, quizzes, activities and Statement of Participation",
+    "component_evidence": {
+      "pedagogy": "The course builds a conceptual map of the Enlightenment and repeatedly connects ideas across science, religion, art, classical reception, nature and Romanticism, with exercises embedded throughout the sequence.",
+      "depth": "Sixteen hours at Level 2 provide substantial cross-disciplinary treatment of Enlightenment culture, though the course is an adapted extract rather than a comprehensive current historiographical survey.",
+      "practice": "Exercises and activities ask learners to apply concepts and interpret cultural material, but the practice layer is lighter and less assessment-rich than newer OpenLearn history courses or Saylor's repeated testing model.",
+      "materials": "The course integrates text, audiovisual material, illustrations, downloadable resources, references and multiple offline formats in a coherent OpenLearn package.",
+      "currency": "First published in 2012 and last updated in May 2019. The core intellectual-history content is relatively stable, but the course does not reflect the most recent scholarship and debates on global, colonial and non-European Enlightenments.",
+      "expertise": "The course was written by Dr Linda Walsh and Professor Tony Lentin and adapted from an Open University Level 2 arts-and-humanities course, providing clear academic authorship and university-level framing.",
+      "accessibility": "The full course is free, self-paced and downloadable in several formats; learners may start without registration, while a free account enables progress tracking, activities and the Statement of Participation."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.4,
+      "practice": 7.7,
+      "materials": 9,
+      "currency": 8,
+      "expertise": 9.2,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.46,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A strong intermediate introduction to Enlightenment culture with unusually broad arts-and-humanities integration. The 2019 update and older historiographical frame keep it below the strongest current history recommendations.",
+    "comparators": [
+      "saylor-hist362-modern-revolutions",
+      "saylor-hist103-world-history",
+      "openlearn-empires-power-resistance-legacies"
+    ],
+    "evidence": [
+      "https://www.open.edu/openlearn/history-the-arts/history-art/the-enlightenment/content-section-0",
+      "https://www.open.edu/openlearn/history-the-arts/history-art/the-enlightenment/content-section---acknowledgements"
+    ],
+    "flags": [
+      "free-statement-of-participation",
+      "intermediate-level",
+      "updated-2019",
+      "intellectual-history",
+      "cross-disciplinary"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-21-saylor-hist362-modern-revolutions",
+    "candidate_id": "saylor-hist362-modern-revolutions",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/hist362",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Saylor course-completion certificate after at least 70% on the free final exam",
+    "academic_credits": "No academic credit automatically granted by the free completion route; certificate displays 3.9 CEUs",
+    "self_paced": true,
+    "scope_notes": "Thirty-nine-hour comparative course on political and social revolutions and independence movements, spanning theory, the American and French Revolutions, Haiti, Latin America, Russia, China, anti-colonial movements and modern revolutionary change.",
+    "prerequisites": "No formal prerequisites stated; introductory college-level history reading is appropriate",
+    "required_resources": "Browser or web-capable mobile device and free Saylor account for assessments, progress tracking, final exam and certificate",
+    "component_evidence": {
+      "pedagogy": "Saylor organises articles, lectures, videos and primary historical documents around explicit comparative outcomes, repeatedly asking learners to compare causes, ideals, violence, social groups and political consequences across revolutions.",
+      "depth": "An estimated thirty-nine hours cover revolutionary theory and a wide geographic range of political, social and anti-colonial movements, giving the course substantial specialist depth without becoming a full modern-world survey.",
+      "practice": "Each unit includes repeatable assessments, complemented by an unlimited practice exam and a free graded final exam; the model provides strong knowledge checking but less open-ended historical writing than a university seminar.",
+      "materials": "All required articles, lectures, videos, webpages and activities are free and curated with guidance explaining what to focus on, although the multi-provider OER model is less stylistically unified than a single-authored course.",
+      "currency": "The syllabus was last modified on 3 October 2025, unusually recent for a history course, and the scope extends to modern independence movements and contemporary political consequences.",
+      "expertise": "Saylor's course is institutionally curated around explicit learning outcomes and historical sources, but individual scholarly authorship is less transparent than the named-faculty Yale and OpenLearn courses.",
+      "accessibility": "The course is entirely free, self-paced and mobile-accessible; a free account unlocks all assessments, the free final exam, progress tracking and the completion certificate."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.9,
+      "practice": 8.7,
+      "materials": 8.4,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.75,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The strongest current specialist survivor for comparative modern revolutions: broad, structured, assessment-rich and recently maintained. Its main limitation is the curated multi-provider OER model rather than depth or access.",
+    "comparators": [
+      "saylor-hist103-world-history",
+      "saylor-hist363-global-industrialization",
+      "yale-hist-116-american-revolution"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/hist362",
+      "https://learn.saylor.org/mod/page/view.php?id=82187"
+    ],
+    "flags": [
+      "current-2025-syllabus",
+      "comparative-history",
+      "free-certificate",
+      "unit-assessments",
+      "curated-oer"
+    ],
+    "is_current": true
+  }
+]
