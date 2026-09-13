@@ -1,0 +1,249 @@
+[
+  {
+    "admission_id": "admission-02-odin-full-stack-javascript",
+    "candidate_id": "odin-full-stack-javascript",
+    "review_id": "deep-02-odin-full-stack-javascript",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Intermediate full-stack JavaScript development through substantial portfolio projects",
+    "comparison_set": [
+      "helsinki-full-stack-open",
+      "odin-foundations",
+      "freecodecamp-javascript-v9"
+    ],
+    "incumbent_ids": [
+      "helsinki-full-stack-open",
+      "odin-foundations"
+    ],
+    "decision_rationale": "The Odin full-stack path is strong and project-heavy, but the canonical set already contains Odin Foundations for the beginner stage and Full Stack Open as a materially stronger current intermediate/full-stack reference at 9.64 Quality / 9.9 Recommendation. A second Odin web pathway would add less marginal value than preserving the clearer Foundations → Full Stack Open progression.",
+    "marginal_value": "Useful continuation for Odin learners, but it does not improve the published full-stack choice enough to justify another overlapping web-development slot.",
+    "provider_concentration_notes": "Odin Foundations is already admitted; a second Odin record needs a distinct role that is not already better served by Full Stack Open.",
+    "coverage_notes": "Intermediate full-stack development remains exceptionally well covered by Full Stack Open, while Odin Foundations covers the beginner bridge.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "helsinki-full-stack-open"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-unity-junior-programmer",
+    "candidate_id": "unity-junior-programmer",
+    "review_id": "deep-03-unity-junior-programmer",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Project-based C# programming for Unity game and real-time interactive development",
+    "comparison_set": [
+      "harvard-cs50x",
+      "odin-foundations",
+      "helsinki-full-stack-open"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x"
+    ],
+    "decision_rationale": "Unity Junior Programmer earns a specialist slot because no canonical course currently teaches game/real-time programming through a current twelve-week project pathway. Its vendor specificity lowers default recommendation, but current Unity 6.x practice, C# scripting, debugging, version control, OOP, optimisation and publishing form a coherent applied programming path that materially complements general CS foundations.",
+    "marginal_value": "Adds a genuine game/real-time programming pathway rather than another general programming introduction.",
+    "provider_concentration_notes": "Unity Learn has no current canonical record; provider concentration is not a concern.",
+    "coverage_notes": "Fills a distinct applied-programming gap while keeping the Unity ecosystem limitation explicit.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "harvard-cs50x"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-saylor-cs101-programming-i",
+    "candidate_id": "saylor-cs101-programming-i",
+    "review_id": "deep-03-saylor-cs101-programming-i",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Structured beginner programming and computational thinking with a free completion certificate",
+    "comparison_set": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "freecodecamp-python-v9"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x",
+      "harvard-cs50p"
+    ],
+    "decision_rationale": "Saylor CS101 is a legitimate free Java-based introduction, but its 7.99 Quality / 8.1 Recommendation falls below the normal published-core bar and its practice layer is materially weaker than the strongest canonical beginner programming options. The free certificate and Java choice do not outweigh the quality and marginal-value gap.",
+    "marginal_value": "Provides a Java-flavoured alternative, but not enough pedagogical or practical advantage over the stronger existing programming foundations.",
+    "provider_concentration_notes": "No Saylor computer-science course is currently canonical; the decision is based on quality and comparative value, not provider concentration.",
+    "coverage_notes": "Beginner programming is already strongly covered by CS50x, CS50P and the Helsinki Python MOOC.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50x",
+      "harvard-cs50p"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-freecodecamp-javascript-v9",
+    "candidate_id": "freecodecamp-javascript-v9",
+    "review_id": "deep-02-freecodecamp-javascript-v9",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Low-friction browser-based JavaScript learning with projects and a free certification",
+    "comparison_set": [
+      "odin-foundations",
+      "helsinki-full-stack-open",
+      "harvard-cs50x"
+    ],
+    "incumbent_ids": [
+      "odin-foundations",
+      "helsinki-full-stack-open",
+      "harvard-cs50x"
+    ],
+    "decision_rationale": "freeCodeCamp JavaScript v9 offers excellent hosted practice and a real free credential, but Odin Foundations already provides the stronger integrated beginner web/developer workflow and Full Stack Open covers the later JavaScript ecosystem at much greater depth. Certification convenience is valuable but does not create enough new learning coverage for another core JavaScript slot.",
+    "marginal_value": "Strong alternative for learners who need a hosted environment, but narrower marginal value than the existing beginner-to-intermediate web pathway.",
+    "provider_concentration_notes": "freeCodeCamp has no canonical record, so this remains a redundancy decision rather than a provider-concentration penalty.",
+    "coverage_notes": "JavaScript learning is represented through Odin Foundations and Full Stack Open without a meaningful core-coverage gap.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "odin-foundations",
+      "helsinki-full-stack-open"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-freecodecamp-python-v9",
+    "candidate_id": "freecodecamp-python-v9",
+    "review_id": "deep-03-freecodecamp-python-v9",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Beginner Python programming through browser exercises, projects and free certification",
+    "comparison_set": [
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026",
+      "berkeley-cs61a-fall-2026"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026"
+    ],
+    "decision_rationale": "freeCodeCamp Python v9 is strong, current and accessible, but the canonical set already contains two substantially stronger Python routes: CS50P for polished project-based instruction and Helsinki's 10-ECTS-equivalent exercise-heavy MOOC. A third beginner Python course would be redundant despite the freeCodeCamp credential and browser convenience.",
+    "marginal_value": "Adds lower setup friction, but not enough instructional or practice advantage over the two existing top-tier Python routes.",
+    "provider_concentration_notes": "The non-admission is not a provider penalty; it is a direct redundancy decision against stronger current Python incumbents.",
+    "coverage_notes": "Python beginner-to-intermediate coverage is already among the strongest areas of the canonical set.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-freecodecamp-relational-databases-v9",
+    "candidate_id": "freecodecamp-relational-databases-v9",
+    "review_id": "deep-03-freecodecamp-relational-databases-v9",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Practical relational databases, SQL and command-line database workflows with projects",
+    "comparison_set": [
+      "harvard-cs50-sql",
+      "odin-full-stack-javascript",
+      "cisco-data-analytics-essentials"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-sql"
+    ],
+    "decision_rationale": "The freeCodeCamp database certification is a strong practical specialist route, but CS50 SQL is already canonical with materially higher depth, pedagogy and recommendation while covering querying, schema design, indexing, optimisation and scaling. The five-project credential route is useful, yet it does not beat or materially complement the stronger database incumbent.",
+    "marginal_value": "Adds a different hosted/project workflow, but insufficient new database learning value beyond CS50 SQL.",
+    "provider_concentration_notes": "No freeCodeCamp course is canonical; this is a direct head-to-head loss rather than a concentration decision.",
+    "coverage_notes": "Relational database fundamentals and advanced SQL concepts remain strongly covered by CS50 SQL.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50-sql"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-mit-missing-semester-2026",
+    "candidate_id": "mit-missing-semester-2026",
+    "review_id": "deep-01-mit-missing-semester-2026",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Practical developer fluency in shell, tooling, debugging, version control, packaging and modern coding workflows",
+    "comparison_set": [
+      "harvard-cs50x",
+      "odin-foundations",
+      "mit-6-006-algorithms"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x",
+      "odin-foundations",
+      "mit-6-006-algorithms"
+    ],
+    "decision_rationale": "The 2026 Missing Semester addresses a persistent gap between learning programming and working effectively as a developer. Shell environments, debugging/profiling, Git, packaging, agentic coding and code quality are taught as a coherent current toolkit rather than as incidental side topics. It materially complements the canonical programming and algorithms courses instead of duplicating their core curricula.",
+    "marginal_value": "Adds a highly current developer-tooling layer that improves the usefulness of multiple existing CS courses without replacing them.",
+    "provider_concentration_notes": "MIT already has canonical mathematics and algorithms records, but this course serves a distinct practical tooling need and is not an institutional near-duplicate.",
+    "coverage_notes": "Closes a real developer-practice gap between formal programming instruction and day-to-day software work.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "harvard-cs50x",
+      "odin-foundations",
+      "mit-6-006-algorithms"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-berkeley-cs61a-fall-2026",
+    "candidate_id": "berkeley-cs61a-fall-2026",
+    "review_id": "deep-02-berkeley-cs61a-fall-2026",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Rigorous university-level introductory computer science focused on abstraction, programming and interpreters",
+    "comparison_set": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026",
+      "mit-6-006-algorithms"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026",
+      "mit-6-006-algorithms"
+    ],
+    "decision_rationale": "CS61A has exceptional 9.42 intrinsic Quality and distinctive abstraction/interpreter depth, so this is the hardest non-admission in the family. For independent learners, however, the public route lacks the support/completion environment available to enrolled students, while the canonical set already provides CS50x, CS50P, Helsinki Python and MIT 6.006 across introductory programming and algorithms. Its extra conceptual angle is valuable but not enough to justify another core introductory CS slot.",
+    "marginal_value": "Adds rigorous abstraction and interpreter work, but the independent-learner gain is smaller than the already exceptional breadth of the canonical introductory CS cluster.",
+    "provider_concentration_notes": "Berkeley has no canonical record; provider concentration is not a factor.",
+    "coverage_notes": "Excluding CS61A does not leave a foundational CS gap, though it remains a strong reviewed alternative for learners who specifically want its SICP-influenced style.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "harvard-cs50x",
+      "helsinki-python-mooc-2026"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-02-fun-web-semantique-donnees",
+    "candidate_id": "fun-web-semantique-donnees",
+    "review_id": "deep-03-fun-web-semantique-donnees",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "French-language specialist study of semantic-web and linked-data standards",
+    "comparison_set": [
+      "harvard-cs50-sql"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50-sql"
+    ],
+    "decision_rationale": "The Inria/FUN course is a credible 21-hour specialist route with strong subject expertise, practice and French-language value. Its 8.4 Recommendation, narrow linked-data scope and lower currency score make it a useful specialist resource rather than a core-index priority. Distinctiveness and language diversity alone are not enough when the learning need is highly specialised and not a demonstrated coverage gap.",
+    "marginal_value": "Provides unique linked-data depth in French, but the specialist scope adds too little broad learner value for the current core index.",
+    "provider_concentration_notes": "Inria/FUN has no canonical record; provider concentration is not a concern.",
+    "coverage_notes": "The course remains preserved as a reviewed specialist option and can be reconsidered if knowledge-graph/semantic-web coverage becomes a documented gap.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
