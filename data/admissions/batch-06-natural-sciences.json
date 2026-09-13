@@ -1,0 +1,317 @@
+[
+  {
+    "admission_id": "admission-07-mit-8-01sc-classical-mechanics",
+    "candidate_id": "mit-8-01sc-classical-mechanics",
+    "review_id": "deep-13-mit-8-01sc-classical-mechanics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Rigorous independent-study classical mechanics with calculus-based problem solving",
+    "comparison_set": [
+      "yale-phys-200-physics-i"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 8.01SC is the strongest mechanics-specific self-study route in the reviewed pool. It was deliberately reorganised for independent learners and combines a twelve-week sequence, textbook readings, topic videos, demonstrations, worked examples and twelve problem sets.",
+    "marginal_value": "Adds a purpose-built mechanics foundation whose self-study design is stronger than a conventional lecture archive.",
+    "provider_concentration_notes": "MIT already has strong representation elsewhere, but this admission is justified by a distinct foundational physics role and unusually complete autonomous-study support.",
+    "coverage_notes": "Becomes the primary mechanics route; Yale PHYS 200 is retained separately because it adds relativity, fluids and thermodynamics beyond mechanics.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-phys-200-physics-i"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-mit-5-111sc-chemical-science",
+    "candidate_id": "mit-5-111sc-chemical-science",
+    "review_id": "deep-13-mit-5-111sc-chemical-science",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Rigorous first-year general chemistry with extensive problem sets and examinations",
+    "comparison_set": [
+      "khan-ap-college-chemistry",
+      "saylor-chem101-general-chemistry"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 5.111SC is the strongest traditional university chemistry route in the family. Its lectures, clicker questions, problem sets, practice exams, four term exams and final with solutions provide exceptional depth and independent-study practice, while the 2014 date has limited impact on stable general-chemistry fundamentals.",
+    "marginal_value": "Adds university-level depth and formal problem solving beyond the mastery-oriented Khan route.",
+    "provider_concentration_notes": "MIT concentration is accepted because chemistry is a distinct foundational need and this course wins on depth and assessment completeness.",
+    "coverage_notes": "Pairs with Khan AP/College Chemistry: MIT for traditional depth and exam practice, Khan for continuous mastery feedback.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-ap-college-chemistry"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-mit-7-016-intro-biology",
+    "candidate_id": "mit-7-016-intro-biology",
+    "review_id": "deep-13-mit-7-016-intro-biology",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "University-level molecular and cellular biology with recitations, problem sets and formal exams",
+    "comparison_set": [
+      "khan-ap-college-biology",
+      "saylor-bio101-molecular-cellular-biology"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 7.016 retains substantial marginal value as the rigorous university-depth route in biology. Lectures, recitations, six problem sets and three exams provide a stronger academic problem-solving package than the alternatives. Its 2018 empirical-science age is explicitly treated as a supplementation requirement rather than ignored.",
+    "marginal_value": "Adds deeper molecular/cellular reasoning and university-style practice beyond the more current mastery path from Khan.",
+    "provider_concentration_notes": "MIT concentration is material but justified by a distinct biology role; the course is not admitted as the sole current biology reference.",
+    "coverage_notes": "Complements Khan AP/College Biology, which remains the better current default for continuous assessment and broad introductory coverage.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "khan-ap-college-biology"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-saylor-bio101-molecular-cellular-biology",
+    "candidate_id": "saylor-bio101-molecular-cellular-biology",
+    "review_id": "deep-13-saylor-bio101-molecular-cellular-biology",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Current credential-bearing molecular and cellular biology foundation",
+    "comparison_set": [
+      "khan-ap-college-biology",
+      "mit-7-016-intro-biology"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Saylor BIO101 is current, accessible and assessed, but its general biology role is already covered more strongly by Khan on mastery feedback and by MIT on academic depth. The free certificate does not create enough marginal learning value to justify a third overlapping biology foundation.",
+    "marginal_value": "Provides credential and current maintenance, but insufficient differentiation after the two stronger complementary biology routes are retained.",
+    "provider_concentration_notes": "Saylor already has several canonical records; provider concentration reinforces the decision not to admit a redundant third biology foundation.",
+    "coverage_notes": "General biology remains covered by a current mastery route and a rigorous university-depth route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "khan-ap-college-biology",
+      "mit-7-016-intro-biology"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-saylor-chem101-general-chemistry",
+    "candidate_id": "saylor-chem101-general-chemistry",
+    "review_id": "deep-13-saylor-chem101-general-chemistry",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Current credential-bearing general chemistry foundation",
+    "comparison_set": [
+      "mit-5-111sc-chemical-science",
+      "khan-ap-college-chemistry"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Saylor CHEM101 is a substantial 73-hour current course with assessments and a free certificate, but MIT provides stronger university-level depth and exam practice while Khan provides stronger continuous mastery feedback. Retaining all three would duplicate the same foundational chemistry role.",
+    "marginal_value": "Adds a certificate and recent maintenance but not enough distinct learning value to justify a third general-chemistry slot.",
+    "provider_concentration_notes": "This is primarily a redundancy decision; existing Saylor representation raises the bar further for overlapping roles.",
+    "coverage_notes": "General chemistry remains strongly covered by complementary MIT and Khan routes.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-5-111sc-chemical-science",
+      "khan-ap-college-chemistry"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-khan-ap-college-biology",
+    "candidate_id": "khan-ap-college-biology",
+    "review_id": "deep-13-khan-ap-college-biology",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current low-friction introductory biology with continuous mastery assessment",
+    "comparison_set": [
+      "mit-7-016-intro-biology",
+      "saylor-bio101-molecular-cellular-biology"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Khan is the strongest general self-study biology recommendation for most learners because it combines broad current coverage with simulations, worked free-response examples, quizzes, unit tests and a cumulative course challenge across eleven units and 54 tracked skills.",
+    "marginal_value": "Adds the accessible current mastery route that the deeper MIT archive does not provide.",
+    "provider_concentration_notes": "Khan is represented in other categories, but this course independently wins a distinct feedback-heavy biology role.",
+    "coverage_notes": "Becomes the default broad biology route; MIT 7.016 complements it for deeper molecular/cellular university study.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-7-016-intro-biology"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-khan-ap-college-chemistry",
+    "candidate_id": "khan-ap-college-chemistry",
+    "review_id": "deep-13-khan-ap-college-chemistry",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Accessible general chemistry with dense mastery assessment and repeated feedback",
+    "comparison_set": [
+      "mit-5-111sc-chemical-science",
+      "saylor-chem101-general-chemistry"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Khan AP/College Chemistry earns a separate slot from MIT because its learning mode is materially different: nine units, 66 tracked skills, quizzes, unit tests and a cumulative course challenge create a continuous mastery loop that a traditional OCW course does not.",
+    "marginal_value": "Adds lower-friction guided practice and feedback alongside MIT's more formal university problem/exam package.",
+    "provider_concentration_notes": "Khan concentration is acceptable because this course fills a distinct disciplinary and pedagogical role.",
+    "coverage_notes": "Pairs with MIT 5.111SC as the accessible mastery alternative rather than duplicating it.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-5-111sc-chemical-science"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-nasa-open-science-101",
+    "candidate_id": "nasa-open-science-101",
+    "review_id": "deep-13-nasa-open-science-101",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Cross-disciplinary open-science and reproducible-research practice",
+    "comparison_set": [
+      "eu-climate-action-academy",
+      "fao-intro-climate-smart-agriculture"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "NASA Open Science 101 fills a distinct scientific-practice role rather than competing with a disciplinary science course. Its current 2026 five-module route covers FAIR practice, open data/code/results, repositories, version control, licensing, preregistration, ethics, collaboration and AI in open-science workflows, with practical activities and completion recognition.",
+    "marginal_value": "Adds modern research-practice capability that no other canonical natural-science course covers.",
+    "provider_concentration_notes": "NASA is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Retained explicitly as scientific-practice training; its taxonomy fit can be revisited later without questioning its learning value.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-fao-intro-climate-smart-agriculture",
+    "candidate_id": "fao-intro-climate-smart-agriculture",
+    "review_id": "deep-13-fao-intro-climate-smart-agriculture",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory climate-smart agriculture and adaptation/mitigation orientation",
+    "comparison_set": [
+      "eu-climate-action-academy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "FAO's primer is authoritative and useful, but at roughly ninety minutes it is too short to serve as the index's climate-science or climate-adaptation foundation. The lack of a reliable recent revision date is an additional weakness in a rapidly changing applied field.",
+    "marginal_value": "Adds a targeted professional orientation but not enough depth for a core Natural Sciences slot.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "This non-admission exposes a real gap: the current survivor pool still lacks a deep, current free climate-science curriculum. The project should prefer a targeted future discovery pass over lowering the admission bar.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-eu-climate-action-academy",
+    "candidate_id": "eu-climate-action-academy",
+    "review_id": "deep-13-eu-climate-action-academy",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Current climate action, communication, citizen science and policy participation",
+    "comparison_set": [
+      "fao-intro-climate-smart-agriculture",
+      "nasa-open-science-101"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The EU Climate Action Academy is exceptionally current and useful for participation, communication and policy action, but it is not a deep climate-science curriculum. Admitting it under Natural Sciences would hide rather than solve the category's climate-science coverage gap.",
+    "marginal_value": "Adds current action/policy capability but insufficient disciplinary science depth for this canonical role.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "The index should leave climate science visibly uncovered and permit targeted corrective discovery rather than mislabel an action academy as a science foundation.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-yale-chem-125a-organic-chemistry-i",
+    "candidate_id": "yale-chem-125a-organic-chemistry-i",
+    "review_id": "deep-13-yale-chem-125a-organic-chemistry-i",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "First-semester organic chemistry focused on structure, evidence, stereochemistry and mechanism",
+    "comparison_set": [
+      "yale-chem-125b-organic-chemistry-ii",
+      "mit-5-111sc-chemical-science"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Yale CHEM 125a fills a distinct organic-chemistry role beyond general chemistry. Its evidence- and mechanism-focused treatment of structure, bonding, stereochemistry, conformational analysis and reactivity, supported by problem sets and examinations, remains pedagogically strong despite archive age.",
+    "marginal_value": "Adds the first half of a rigorous organic-chemistry sequence not covered by the general-chemistry courses.",
+    "provider_concentration_notes": "Yale concentration is material, but the two organic-chemistry courses form a sequential specialist pathway with distinct content.",
+    "coverage_notes": "Serves as the prerequisite first stage for CHEM 125b and creates a coherent organic-chemistry progression.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-chem-125b-organic-chemistry-ii"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-yale-chem-125b-organic-chemistry-ii",
+    "candidate_id": "yale-chem-125b-organic-chemistry-ii",
+    "review_id": "deep-13-yale-chem-125b-organic-chemistry-ii",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Second-semester organic chemistry covering mechanisms, spectroscopy and synthesis",
+    "comparison_set": [
+      "yale-chem-125a-organic-chemistry-i"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "CHEM 125b is not a duplicate of the first semester: it continues into substitution, reaction rates and mechanisms, spectroscopy, synthesis, oxidation/reduction and complex organic molecules, with three midterms and a final. Retaining only 125a would leave the organic sequence incomplete.",
+    "marginal_value": "Completes the rigorous organic-chemistry pathway and adds spectroscopy/synthesis content absent from the first course.",
+    "provider_concentration_notes": "The second Yale organic course is justified as a sequential continuation, not as a separate prestige-driven selection.",
+    "coverage_notes": "Completes the two-course organic-chemistry sequence begun by CHEM 125a.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-chem-125a-organic-chemistry-i"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-yale-phys-200-physics-i",
+    "candidate_id": "yale-phys-200-physics-i",
+    "review_id": "deep-13-yale-phys-200-physics-i",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad first university physics sequence spanning mechanics, relativity, waves, fluids and thermodynamics",
+    "comparison_set": [
+      "mit-8-01sc-classical-mechanics",
+      "yale-phys-201-physics-ii"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Yale PHYS 200 remains worth a separate slot beside MIT 8.01 because it is broader than a mechanics course: it adds special relativity, gravitation, oscillations/waves, fluid mechanics and thermodynamics while retaining weekly homework and formal exams.",
+    "marginal_value": "Adds breadth across first-sequence physics topics that the mechanics-specialist MIT route does not fully cover.",
+    "provider_concentration_notes": "Yale representation is accepted because PHYS 200 and 201 form a coherent two-course general physics sequence, while MIT 8.01 serves a different self-study mechanics role.",
+    "coverage_notes": "Acts as the first half of the broad Yale physics sequence and complements the more focused MIT mechanics course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-8-01sc-classical-mechanics",
+      "yale-phys-201-physics-ii"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-07-yale-phys-201-physics-ii",
+    "candidate_id": "yale-phys-201-physics-ii",
+    "review_id": "deep-13-yale-phys-201-physics-ii",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Second university physics sequence covering electromagnetism, optics and introductory quantum mechanics",
+    "comparison_set": [
+      "yale-phys-200-physics-i"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PHYS 201 fills a clearly separate foundational role from mechanics and first-semester physics. It covers electrostatics, circuits, magnetism, Maxwell's equations, electromagnetic waves, geometrical/wave optics and introductory quantum mechanics with weekly homework and exams.",
+    "marginal_value": "Adds the electricity/magnetism, optics and quantum continuation needed for broad undergraduate physics coverage.",
+    "provider_concentration_notes": "The admission is justified as the second half of a coherent physics sequence, not as provider duplication.",
+    "coverage_notes": "Completes the Yale general physics progression and complements MIT 8.01's specialised mechanics self-study path.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-phys-200-physics-i"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
