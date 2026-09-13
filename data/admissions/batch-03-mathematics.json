@@ -1,0 +1,350 @@
+[
+  {
+    "admission_id": "admission-04-cmu-oli-probability-statistics",
+    "candidate_id": "cmu-oli-probability-statistics",
+    "review_id": "deep-04-cmu-oli-probability-statistics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "College-level introductory probability and statistics with simulations and tutor feedback",
+    "comparison_set": [
+      "mit-18-05-probability-statistics",
+      "khan-statistics-probability",
+      "cmu-oli-statistical-reasoning"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "CMU OLI remains an excellent semester-equivalent interactive statistics course, but MIT 18.05 provides a stronger all-round probability-and-statistics route with newer materials, interactive checking and fuller assessment support. Keeping both as core courses would add substantial overlap rather than a new learning role.",
+    "marginal_value": "Its simulations and StatTutor feedback are valuable, but not enough to justify a second broad university statistics slot.",
+    "provider_concentration_notes": "Carnegie Mellon has no canonical mathematics record; this is a redundancy decision, not a provider penalty.",
+    "coverage_notes": "Introductory university statistics remains strongly covered by MIT 18.05, with Khan Academy retained for lower-friction beginner access.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-18-05-probability-statistics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-harvard-stat110-probability",
+    "candidate_id": "harvard-stat110-probability",
+    "review_id": "deep-05-harvard-stat110-probability",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Rigorous undergraduate probability with deep strategic problem solving",
+    "comparison_set": [
+      "mit-18-05-probability-statistics",
+      "cmu-oli-probability-statistics",
+      "khan-statistics-probability"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Harvard Stat 110 earns a separate slot because it is not merely another introductory statistics course. Its probability depth, free companion book and eleven strategic-practice sets create a substantially stronger specialist route for learners who specifically need probability theory and are comfortable with calculus.",
+    "marginal_value": "Adds probability depth and problem-solving strategy beyond the broader probability-and-statistics coverage of MIT 18.05.",
+    "provider_concentration_notes": "Harvard is not overrepresented in the mathematics set; provider concentration is not a concern.",
+    "coverage_notes": "Provides a rigorous probability-specialist path while MIT 18.05 remains the preferred all-round probability-and-statistics course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-05-probability-statistics"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-650-statistics-applications",
+    "candidate_id": "mit-18-650-statistics-applications",
+    "review_id": "deep-05-mit-18-650-statistics-applications",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Advanced mathematical statistics for learners with probability and linear algebra prerequisites",
+    "comparison_set": [
+      "mit-18-05-probability-statistics",
+      "harvard-stat110-probability",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "MIT 18.650 is rigorous and valuable, but its advanced statistics role is narrower and less independently supported than the courses selected for the core set. Once MIT 18.05, Harvard Stat 110 and linear algebra are present, 18.650 adds a specialist progression rather than a distinct high-priority coverage gap.",
+    "marginal_value": "Adds advanced estimation, testing, Bayesian methods, PCA and GLMs, but the marginal core value is limited by high prerequisites and specialist scope.",
+    "provider_concentration_notes": "MIT already supplies several genuinely distinct mathematics foundations, so an additional advanced specialist must clear a higher marginal-value bar.",
+    "coverage_notes": "The course remains a strong reviewed next-step option; excluding it does not weaken introductory probability/statistics or core mathematical foundations.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-18-05-probability-statistics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-05-probability-statistics",
+    "candidate_id": "mit-18-05-probability-statistics",
+    "review_id": "deep-05-mit-18-05-probability-statistics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Rigorous all-round undergraduate probability and statistics for independent learners",
+    "comparison_set": [
+      "harvard-stat110-probability",
+      "cmu-oli-probability-statistics",
+      "khan-statistics-probability"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 18.05 is the strongest all-round course in the reviewed probability/statistics family. It combines rigorous probability and inference with 2022 materials, problem sets, exams, solutions and a free interactive Open Learning Library route with reading questions and problem checkers.",
+    "marginal_value": "Creates the core university-level probability-and-statistics route and materially outperforms broader alternatives on the balance of depth, practice and independent-study support.",
+    "provider_concentration_notes": "MIT concentration is accepted because this course serves a distinct statistics role and wins a direct head-to-head comparison rather than being admitted for institutional prestige.",
+    "coverage_notes": "Becomes the primary broad probability/statistics course; Harvard Stat 110 complements it with deeper probability and Khan with beginner accessibility.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "harvard-stat110-probability",
+      "khan-statistics-probability"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-100a-real-analysis",
+    "candidate_id": "mit-18-100a-real-analysis",
+    "review_id": "deep-05-mit-18-100a-real-analysis",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Proof-oriented undergraduate real analysis and transition to rigorous mathematics",
+    "comparison_set": [
+      "mit-18-04-complex-variables",
+      "mit-18-781-theory-of-numbers",
+      "mit-18-02sc-multivariable-calculus"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "Real Analysis earns a slot because it fills the proof-based advanced-foundations role rather than duplicating computational calculus. Twelve assignments, recitations, exams and a free textbook make it a complete bridge from multivariable calculus to rigorous analysis and proof construction.",
+    "marginal_value": "Adds a foundational proof-oriented pathway that is materially different from calculus, linear algebra and the narrower complex-analysis or number-theory specialists.",
+    "provider_concentration_notes": "MIT concentration is material, but this admission is justified by a distinct mathematical learning objective not served elsewhere in the canonical set.",
+    "coverage_notes": "Provides an advanced rigorous-analysis route without requiring the index to admit every high-quality specialist mathematics archive.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-02sc-multivariable-calculus",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-6-042j-math-cs",
+    "candidate_id": "mit-6-042j-math-cs",
+    "review_id": "deep-05-mit-6-042j-math-cs",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Discrete mathematics, proofs, combinatorics, graphs and probability for computer science",
+    "comparison_set": [
+      "mit-6-006-algorithms",
+      "mit-18-781-theory-of-numbers"
+    ],
+    "incumbent_ids": [
+      "mit-6-006-algorithms"
+    ],
+    "decision_rationale": "MIT 6.042J fills a clear foundations gap before algorithms and theoretical computer science. Its open textbook, proof methods, graphs, modular arithmetic, counting and discrete probability materially complement MIT 6.006 rather than duplicating an algorithms course.",
+    "marginal_value": "Adds the mathematical language and proof toolkit that algorithms and theoretical computer-science courses assume.",
+    "provider_concentration_notes": "Although MIT is already represented, the course serves a cross-category discrete-mathematics role that is distinct from existing MIT algorithms and continuous-mathematics records.",
+    "coverage_notes": "Closes a high-value discrete-mathematics gap and strengthens the bridge between Mathematics & Statistics and Computer Science.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-6-006-algorithms"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-01sc-calculus",
+    "candidate_id": "mit-18-01sc-calculus",
+    "review_id": "deep-05-mit-18-01sc-calculus",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Independent-study single-variable calculus from limits through integration and series",
+    "comparison_set": [
+      "mit-18-02sc-multivariable-calculus",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "MIT 18.01SC is an unusually complete free calculus course explicitly designed for independent learners. Lectures, recitations, worked examples, problem sets and fully solved exams make it a foundational route with stronger autonomous-study support than a typical lecture archive.",
+    "marginal_value": "Adds the missing single-variable calculus foundation required by several advanced mathematics and probability courses.",
+    "provider_concentration_notes": "MIT concentration is accepted because single-variable calculus is a distinct foundational need and this Scholar edition is purpose-built for self-study.",
+    "coverage_notes": "Establishes the first stage of a coherent calculus progression alongside 18.02SC and 18.03SC.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-02sc-multivariable-calculus",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-02sc-multivariable-calculus",
+    "candidate_id": "mit-18-02sc-multivariable-calculus",
+    "review_id": "deep-05-mit-18-02sc-multivariable-calculus",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Independent-study multivariable and vector calculus after single-variable calculus",
+    "comparison_set": [
+      "mit-18-01sc-calculus",
+      "mit-18-03sc-differential-equations",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "MIT 18.02SC is a direct continuation of the independent-study calculus sequence and covers a distinct foundation needed for analysis, differential equations, probability and applied mathematics. Its extensive recitations, problem sets, exams and solutions justify a separate slot.",
+    "marginal_value": "Adds multivariable and vector calculus that is not replaced by linear algebra or single-variable calculus.",
+    "provider_concentration_notes": "The concentration exception is justified because the Scholar calculus sequence serves sequential but genuinely different mathematical competencies.",
+    "coverage_notes": "Provides the middle stage between single-variable calculus and several advanced mathematical courses.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-01sc-calculus",
+      "mit-18-03sc-differential-equations",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-03sc-differential-equations",
+    "candidate_id": "mit-18-03sc-differential-equations",
+    "review_id": "deep-05-mit-18-03sc-differential-equations",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Differential equations for science, engineering and applied mathematics",
+    "comparison_set": [
+      "mit-18-02sc-multivariable-calculus",
+      "mit-18-04-complex-variables",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "MIT 18.03SC serves a distinct applied-mathematics need with a complete self-study design: lectures, notes, recitations, problem-solving videos, problem sets, exams and solutions. Differential equations are foundational across engineering and science and are not redundant with the calculus or linear-algebra records.",
+    "marginal_value": "Adds a broadly useful applied-mathematics foundation with substantially greater cross-domain value than narrower advanced specialists.",
+    "provider_concentration_notes": "MIT concentration is accepted because differential equations are a separate core learning objective with broad engineering and scientific transfer.",
+    "coverage_notes": "Complements multivariable calculus and linear algebra and creates a strong applied-mathematics progression.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-02sc-multivariable-calculus",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-cmu-oli-statistical-reasoning",
+    "candidate_id": "cmu-oli-statistical-reasoning",
+    "review_id": "deep-05-cmu-oli-statistical-reasoning",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Beginner statistical reasoning with simulations, interactive exercises and tutor feedback",
+    "comparison_set": [
+      "cmu-oli-probability-statistics",
+      "mit-18-05-probability-statistics",
+      "khan-statistics-probability"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Statistical Reasoning is pedagogically strong, but its lighter probability treatment and substantial overlap with the broader CMU course make it the least necessary of the interactive statistics alternatives. Khan provides the better low-friction beginner role while MIT 18.05 provides the stronger coherent university route.",
+    "marginal_value": "Adds interactive statistical reasoning, but not a sufficiently distinct learner need after the selected broad and beginner options.",
+    "provider_concentration_notes": "Provider concentration is not the driver; the course loses on role differentiation within the statistics family.",
+    "coverage_notes": "Beginner statistics remains covered through Khan Academy, while rigorous probability/statistics remains covered through MIT 18.05.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-18-05-probability-statistics",
+      "khan-statistics-probability"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-khan-statistics-probability",
+    "candidate_id": "khan-statistics-probability",
+    "review_id": "deep-05-khan-statistics-probability",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Low-friction beginner statistics and probability with mastery-based practice",
+    "comparison_set": [
+      "mit-18-05-probability-statistics",
+      "cmu-oli-probability-statistics",
+      "cmu-oli-statistical-reasoning"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Khan Academy is admitted despite lower intrinsic depth because it serves a materially different learner. More than 150 tracked skills, repeated quizzes and exceptionally low entry friction make it the strongest beginner/mastery option, while MIT 18.05 remains the stronger university-level course.",
+    "marginal_value": "Adds accessibility, mastery practice and a basic-algebra entry point that the calculus-based university routes do not provide.",
+    "provider_concentration_notes": "Khan Academy has no canonical mathematics record, so this admission also improves provider diversity.",
+    "coverage_notes": "Preserves a genuinely useful beginner pathway rather than forcing every statistics learner into a calculus-based university course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-05-probability-statistics"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mathworks-optimization-onramp",
+    "candidate_id": "mathworks-optimization-onramp",
+    "review_id": "deep-20-mathworks-optimization-onramp",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Hands-on introductory optimisation workflow in MATLAB with automated feedback",
+    "comparison_set": [
+      "mit-18-650-statistics-applications",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "Optimization Onramp is exceptionally polished for a two-hour microcourse, but the compact scope and MATLAB-specific workflow make it a useful tool onboarding resource rather than a core mathematics course. The free certificate and browser practice do not compensate for limited theoretical depth.",
+    "marginal_value": "Adds convenient interactive optimisation practice, but too little transferable depth for a core index slot.",
+    "provider_concentration_notes": "MathWorks has no canonical record; non-admission is based on scope and transferability rather than provider concentration.",
+    "coverage_notes": "A broader free optimisation course would still be a legitimate future coverage opportunity; this microcourse does not close that gap.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-04-complex-variables",
+    "candidate_id": "mit-18-04-complex-variables",
+    "review_id": "deep-20-mit-18-04-complex-variables",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Undergraduate complex analysis with contour integration, conformal mapping and applications",
+    "comparison_set": [
+      "mit-18-100a-real-analysis",
+      "mit-18-03sc-differential-equations"
+    ],
+    "incumbent_ids": [
+      "mit-18-06sc-linear-algebra"
+    ],
+    "decision_rationale": "MIT 18.04 is exceptionally complete and would be easy to justify on intrinsic quality alone. It is excluded because complex analysis is a narrower specialist need than the admitted real-analysis and differential-equations foundations, and Phase 4 should not turn the index into a catalogue of every excellent MIT mathematics archive.",
+    "marginal_value": "Adds substantial complex-analysis depth, but the learner need is narrower than the core advanced and applied foundations already selected.",
+    "provider_concentration_notes": "Provider concentration is decisive at the margin: another MIT specialist requires stronger breadth or a documented gap than this course provides.",
+    "coverage_notes": "The reviewed record remains available for specialist learners and can be reconsidered if complex analysis becomes an explicit coverage target.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-04-mit-18-781-theory-of-numbers",
+    "candidate_id": "mit-18-781-theory-of-numbers",
+    "review_id": "deep-20-mit-18-781-theory-of-numbers",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Proof-oriented undergraduate number theory from divisibility through quadratic reciprocity",
+    "comparison_set": [
+      "mit-6-042j-math-cs",
+      "mit-18-100a-real-analysis"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 18.781 is a rigorous complete number-theory course, but its specialist scope does not improve the core index enough once discrete mathematics and proof-oriented real analysis are admitted. It remains valuable for a specific mathematical interest rather than a broad foundational gap.",
+    "marginal_value": "Adds a high-quality specialist branch of pure mathematics, but with lower marginal reach than the admitted discrete-math and analysis foundations.",
+    "provider_concentration_notes": "MIT already contributes several distinct core mathematics courses, so specialist additions face a deliberately higher concentration threshold.",
+    "coverage_notes": "Number theory remains a reviewed specialist option; its exclusion keeps the public mathematics set compact without weakening foundational coverage.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
