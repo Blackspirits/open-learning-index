@@ -1,0 +1,119 @@
+[
+  {
+    "review_id": "deep-25-ibm-skillsbuild-ai-fundamentals",
+    "candidate_id": "ibm-skillsbuild-ai-fundamentals",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://skills.yourlearning.ibm.com/activity/PLAN-7913EE1DB030",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Artificial Intelligence Fundamentals digital credential",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately ten-hour IBM SkillsBuild learning plan covering AI history and applications, prediction, natural-language processing, computer vision, machine learning, deep learning, neural networks and AI ethics, with a hands-on machine-learning model simulation and credential assessment.",
+    "prerequisites": "No formal technical prerequisite verified; designed as an intermediate/foundational AI career-entry pathway",
+    "required_resources": "Modern browser and free IBM SkillsBuild account; practice simulations and Watson Studio-oriented activities are delivered through the SkillsBuild learning environment",
+    "component_evidence": {
+      "pedagogy": "The prescribed learning plan progresses from AI concepts and applications into language, vision, machine learning, neural networks and ethics, finishing with career context and practical model-oriented simulation rather than relying on passive reading alone.",
+      "depth": "The plan provides a broad AI survey over roughly ten hours, enough for meaningful conceptual grounding but far less mathematical, programming and project depth than CS50 AI or a dedicated machine-learning course.",
+      "practice": "IBM requires graded quizzes, final assessments and practice simulations for the credential, and the course includes a hands-on simulation in which learners build and test a machine-learning model. Practice is real but bounded compared with project-heavy incumbents.",
+      "materials": "IBM SkillsBuild supplies a structured multi-course plan, interactive learning activities, assessments, simulations and a digital credential; public granular lesson materials are less transparent than fully open university-course packages.",
+      "currency": "The credential and learner route are current in the 2026 SkillsBuild catalog. Core AI concepts remain relevant, but the pathway's centre of gravity is classical AI/Watson Studio rather than the newest generative-AI and agentic workflows, so currency is strong rather than category-leading.",
+      "expertise": "IBM has direct expertise in enterprise AI, Watson/watsonx, machine learning and workforce training, and the credential is designed and issued by IBM SkillsBuild.",
+      "accessibility": "The course and credential are free, self-paced and browser-based with low financial friction. A registered SkillsBuild account is required, but there is no verified mandatory paid software or hardware."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 7.9,
+      "practice": 8.6,
+      "materials": 8.6,
+      "currency": 8.5,
+      "expertise": 9.4,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.55,
+    "recommendation_score": 8.5,
+    "recommendation_rationale": "A strong free broad AI-literacy/fundamentals credential with real assessment and simulation, especially for learners who value low-friction structure and recognition. It is not the strongest canonical AI foundation: Google ML Crash Course is substantially more current and interactive for ML, Kaggle is more practice-dense for beginner modelling, and CS50 AI is much deeper and project-heavy.",
+    "comparators": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning",
+      "harvard-cs50-ai"
+    ],
+    "evidence": [
+      "https://skillsbuild.org/learning-catalog/university-catalog?topic=ai",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/artificial-intelligence-fundamentals",
+      "https://skills.yourlearning.ibm.com/activity/PLAN-7913EE1DB030",
+      "https://www.ibm.com/new/product-blog/ai-skills-for-all-how-ibm-is-helping-to-close-the-digital-divide"
+    ],
+    "flags": [
+      "ai-fundamentals",
+      "free-digital-credential",
+      "graded-assessments",
+      "practice-simulations",
+      "broad-survey",
+      "registered-account"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-25-ibm-skillsbuild-data-fundamentals",
+    "candidate_id": "ibm-skillsbuild-data-fundamentals",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://skills.yourlearning.ibm.com/activity/PLAN-BC0FAEE8E439",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en",
+      "ar",
+      "fr"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free IBM SkillsBuild Data Fundamentals digital credential",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Seven-hour IBM SkillsBuild data foundation covering data analytics concepts, data-science methodologies, the data ecosystem, cleaning, refining and visualising data with IBM Watson Studio, with graded quizzes, final assessments and practice simulations.",
+    "prerequisites": "No formal prerequisite verified; intended as an intermediate/foundational data pathway for registered learners",
+    "required_resources": "Modern browser and free IBM SkillsBuild account; practice simulations and Watson Studio-oriented activities are provided through the learning environment",
+    "component_evidence": {
+      "pedagogy": "The pathway moves from data concepts and analytics methodology into practical cleaning, refinement and visualisation, connecting conceptual data-science workflow with tool-based simulations.",
+      "depth": "Seven hours provide a credible foundation but cannot match the breadth of a 30-hour analytics curriculum spanning spreadsheets, SQL, visualisation and portfolio work.",
+      "practice": "Credential criteria require graded quizzes, final assessments and practice simulations, including cleaning, refining and visualising data. The practice layer is substantial for the duration but narrower than Cisco's lab-heavy analytics route.",
+      "materials": "IBM provides a structured learning plan, simulations, assessments and credentialing. Public lesson-level transparency is more limited than open-courseware packages, and the tool context centres on IBM Watson Studio.",
+      "currency": "The course is current in the 2026 SkillsBuild catalog and the data-workflow fundamentals remain useful, but Watson Studio-specific examples and the compact scope create more maintenance risk than tool-neutral statistical/data foundations.",
+      "expertise": "IBM has strong professional expertise in data platforms, analytics, AI and workforce education, giving the course credible applied framing.",
+      "accessibility": "The seven-hour route and credential are free, self-paced and available to registered learners. No mandatory paid software or physical equipment is verified."
+    },
+    "quality_components": {
+      "pedagogy": 8.3,
+      "depth": 7.6,
+      "practice": 8.7,
+      "materials": 8.4,
+      "currency": 8.2,
+      "expertise": 9.2,
+      "accessibility": 9.5
+    },
+    "quality_score": 8.39,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "A useful compact data foundation with a genuine free credential and practice simulations. Cisco Data Analytics Essentials remains the stronger core recommendation because its roughly 30-hour route adds spreadsheets, SQL, Tableau, more than twenty labs, module/final exams and portfolio work; IBM is better treated as a concise alternative rather than another canonical analytics slot.",
+    "comparators": [
+      "cisco-data-analytics-essentials"
+    ],
+    "evidence": [
+      "https://skillsbuild.org/college-students/data-science",
+      "https://www.credly.com/org/ibm-skillsbuild/badge/data-fundamentals",
+      "https://skills.yourlearning.ibm.com/activity/PLAN-BC0FAEE8E439"
+    ],
+    "flags": [
+      "data-fundamentals",
+      "seven-hours",
+      "free-digital-credential",
+      "graded-assessments",
+      "practice-simulations",
+      "watson-studio"
+    ],
+    "is_current": true
+  }
+]
