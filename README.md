@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **135 decisions: 68 admit / 67 do_not_admit**. AI & Data, Computer Science & Software, Cybersecurity & IT, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, Engineering & Electronics, and Writing & Communication are complete in Phase 4, and the canonical set contains **85 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **141 decisions: 71 admit / 70 do_not_admit**. AI & Data, Computer Science & Software, Cybersecurity & IT, Education & Teaching, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, Project, Product & Leadership, Natural Sciences, Humanities & Philosophy, Engineering & Electronics, and Writing & Communication are complete in Phase 4, and the canonical set contains **88 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -31,6 +31,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-09-writing-communication.md`](docs/admissions/batch-09-writing-communication.md) — complete Writing & Communication pass with productive-practice and independent-feedback tests.
 - [`docs/admissions/batch-10-cybersecurity-it.md`](docs/admissions/batch-10-cybersecurity-it.md) — complete Cybersecurity & IT pass with lab-density, currentness and provider-concentration controls.
 - [`docs/admissions/batch-11-ai-data.md`](docs/admissions/batch-11-ai-data.md) — complete AI & Data pass with aggressive currentness, portability and microcourse-concentration controls.
+- [`docs/admissions/batch-12-education-teaching.md`](docs/admissions/batch-12-education-teaching.md) — complete Education & Teaching pass with role differentiation and British Council provider-concentration controls.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
