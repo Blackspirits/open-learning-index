@@ -1,0 +1,125 @@
+[
+  {
+    "admission_id": "admission-16-saylor-psych101-introduction-psychology",
+    "candidate_id": "saylor-psych101-introduction-psychology",
+    "review_id": "deep-06-saylor-psych101-introduction-psychology",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current broad introduction to psychology with assessment and free completion credential",
+    "comparison_set": [
+      "mit-9-00sc-intro-psychology",
+      "yale-introduction-psychology"
+    ],
+    "incumbent_ids": [
+      "yale-introduction-psychology"
+    ],
+    "decision_rationale": "Saylor PSYCH101 is the safer default general-psychology recommendation in 2026. Its 46-hour, eleven-unit route was maintained in 2025 and includes reusable unit assessments, a free final exam and certificate. Yale remains a stronger historical lecture experience in some respects, but Saylor materially improves currency and assessment for a new learner.",
+    "marginal_value": "Adds a current, assessed general-psychology pathway beside the older Yale reference archive.",
+    "provider_concentration_notes": "Saylor is represented elsewhere, but this is the strongest current general-psychology survivor and serves a distinct disciplinary foundation.",
+    "coverage_notes": "Becomes the current default general route; Yale remains a complementary archive for engaging lecture-based study.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-introduction-psychology"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-16-mit-9-00sc-intro-psychology",
+    "candidate_id": "mit-9-00sc-intro-psychology",
+    "review_id": "deep-06-mit-9-00sc-intro-psychology",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Rigorous independent-study general psychology with self-checks and solved exams",
+    "comparison_set": [
+      "saylor-psych101-introduction-psychology",
+      "yale-introduction-psychology"
+    ],
+    "incumbent_ids": [
+      "yale-introduction-psychology"
+    ],
+    "decision_rationale": "MIT 9.00SC remains an exceptional independent-study package, but its 2011 scientific and clinical framing is materially old for psychology. The canonical set already has Yale as a strong archive reference and Saylor now adds a current assessed foundation. A second old general-psychology archive does not add enough marginal value.",
+    "marginal_value": "Adds excellent exam/self-check practice but insufficient unique current value after Yale + Saylor.",
+    "provider_concentration_notes": "Provider concentration is not decisive; age and redundancy are.",
+    "coverage_notes": "General psychology remains covered by a current route and one strong historical archive.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "saylor-psych101-introduction-psychology",
+      "yale-introduction-psychology"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-16-openlearn-forensic-psychology",
+    "candidate_id": "openlearn-forensic-psychology",
+    "review_id": "deep-06-openlearn-forensic-psychology",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Applied forensic psychology focused on memory, eyewitness evidence and wrongful identification",
+    "comparison_set": [
+      "saylor-psych101-introduction-psychology",
+      "yale-introduction-psychology"
+    ],
+    "incumbent_ids": [
+      "yale-introduction-psychology"
+    ],
+    "decision_rationale": "Forensic psychology serves a clearly different role from a general introduction. Its 24-hour investigation-based design, witness materials, weekly quizzes and badge assessments create unusually strong applied practice around memory, eyewitness identification and criminal investigation. The 2020 update date is a real limitation and requires closer monitoring.",
+    "marginal_value": "Adds one of the strongest applied psychology learning experiences in the pool.",
+    "provider_concentration_notes": "OpenLearn also supplies other categories, but this specialist role is not duplicated by a canonical psychology course.",
+    "coverage_notes": "Complements the general foundation; it is not a substitute for current forensic-professional training.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-psych101-introduction-psychology"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-16-openlearn-psychology-around-world",
+    "candidate_id": "openlearn-psychology-around-world",
+    "review_id": "deep-06-openlearn-psychology-around-world",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current cross-cultural psychology and critique of WEIRD generalisation",
+    "comparison_set": [
+      "saylor-psych101-introduction-psychology",
+      "yale-introduction-psychology"
+    ],
+    "incumbent_ids": [
+      "yale-introduction-psychology"
+    ],
+    "decision_rationale": "Psychology around the world is short, but it fills a high-value gap that the general introductions do not: a 2025 cross-cultural treatment of cognition, wellbeing and development that explicitly challenges WEIRD assumptions and historical over-generalisation.",
+    "marginal_value": "Adds current global/cultural perspective that materially improves a broader psychology learning pathway.",
+    "provider_concentration_notes": "The second OpenLearn psychology admission is justified by a separate learning need rather than provider breadth.",
+    "coverage_notes": "Best used as a complement to a full general-psychology foundation, not as a standalone survey.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-psych101-introduction-psychology"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-16-nau-saude-mental-bem-estar-ensino-superior",
+    "candidate_id": "nau-saude-mental-bem-estar-ensino-superior",
+    "review_id": "deep-06-nau-saude-mental-bem-estar-ensino-superior",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current pt-PT mental-health literacy and first-response support for higher-education students",
+    "comparison_set": [
+      "saylor-psych101-introduction-psychology"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The NAU course adds a distinct current mental-health-literacy role in European Portuguese. Twelve hours across four assessed modules cover depression, anxiety, addictive behaviours, stress, coping, resilience, Mental Health First Aid principles and support resources, with qualified faculty and a free certificate. It is explicitly not clinical training.",
+    "marginal_value": "Adds substantive pt-PT access and a focused wellbeing/first-response role absent from the English general-psychology courses.",
+    "provider_concentration_notes": "NAU is not concentrated within the canonical psychology set.",
+    "coverage_notes": "Admitted as mental-health literacy for higher education, not diagnosis, treatment or professional clinical education.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-psych101-introduction-psychology"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
