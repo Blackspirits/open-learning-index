@@ -1,0 +1,184 @@
+[
+  {
+    "admission_id": "admission-01-nand2tetris",
+    "candidate_id": "nand2tetris",
+    "review_id": "deep-03-nand2tetris",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "First-principles computer systems and architecture through cumulative implementation projects",
+    "comparison_set": [
+      "harvard-cs50x",
+      "mit-6-006-algorithms",
+      "berkeley-cs61a-fall-2026"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x"
+    ],
+    "decision_rationale": "Nand2Tetris adds a learning experience the current canonical set does not provide: twelve cumulative projects that construct the hardware/software stack from gates through an operating system. Its 9.48 Quality and 9.6 Recommendation are backed by exceptional practice and depth, but admission is justified by its distinct systems role rather than the score alone.",
+    "marginal_value": "Adds an unusually coherent build-the-computer pathway that complements programming-first foundations instead of duplicating them.",
+    "provider_concentration_notes": "No Nand2Tetris course is currently canonical, so provider concentration is not a concern.",
+    "coverage_notes": "Strengthens computer-science systems coverage, which is materially different from the existing programming and web-development references.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "harvard-cs50x"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-01-mit-6-006-algorithms",
+    "candidate_id": "mit-6-006-algorithms",
+    "review_id": "deep-01-mit-6-006-algorithms",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Rigorous undergraduate algorithms and data structures for independent study",
+    "comparison_set": [
+      "mit-6-042j-math-cs",
+      "nand2tetris",
+      "harvard-cs50x"
+    ],
+    "incumbent_ids": [
+      "harvard-cs50x"
+    ],
+    "decision_rationale": "MIT 6.006 fills a dedicated algorithms need not served by the current canonical references. The Fall 2011 Python 2.7/Athena setup is obsolete, but the algorithms, analysis, problem sets, programming assignments, exams and solutions remain stable and unusually complete. The archive penalty is already captured in Currency and Accessibility rather than used as a blanket exclusion.",
+    "marginal_value": "Adds full undergraduate algorithms depth and rigorous independent practice beyond the algorithmic coverage of general CS introductions.",
+    "provider_concentration_notes": "The canonical set already contains MIT 18.06SC, but this is a distinct computer-science learning need rather than a duplicate MIT slot.",
+    "coverage_notes": "Adds a major missing theoretical/practical computer-science pillar while preserving an explicit archive/tooling caveat.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "nand2tetris",
+      "harvard-cs50x"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-01-aljazeera-learning-arabic-general-language",
+    "candidate_id": "aljazeera-learning-arabic-general-language",
+    "review_id": "deep-08-aljazeera-learning-arabic-general-language",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Long-term free Arabic learning from introductory material toward advanced authentic-language use",
+    "comparison_set": [
+      "madinah-arabic-grammar-course",
+      "language-transfer-intro-arabic"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Al Jazeera Learning Arabic is the strongest broad Arabic survivor: it spans introductory through proficiency material, combines authentic text/audio with interactive exercises and placement, and remains completely free. Its non-linear structure prevents a higher recommendation, but no canonical language resource currently serves this learning need and the weaker Arabic alternatives do not replace its breadth.",
+    "marginal_value": "Fills a demonstrated Arabic coverage gap with a broad, authentic-material pathway rather than admitting a weaker resource purely for language diversity.",
+    "provider_concentration_notes": "No Al Jazeera or Arabic-language learning resource is currently canonical.",
+    "coverage_notes": "Adds meaningful non-English and Arabic coverage at a quality level that independently clears the index bar.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-01-odin-foundations",
+    "candidate_id": "odin-foundations",
+    "review_id": "deep-02-odin-foundations",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Beginner web-development foundation with real local tooling, Git and project-based JavaScript practice",
+    "comparison_set": [
+      "freecodecamp-responsive-web-design-v9",
+      "freecodecamp-javascript-v9",
+      "helsinki-full-stack-open"
+    ],
+    "incumbent_ids": [
+      "helsinki-full-stack-open"
+    ],
+    "decision_rationale": "Odin Foundations earns admission because it serves the beginner stage that Full Stack Open largely assumes while teaching genuine developer workflow: command line, Git, local setup, HTML/CSS, JavaScript, debugging and multiple projects. The freeCodeCamp alternatives have lower setup friction and credentials, but Odin provides the stronger integrated preparation for independent web development.",
+    "marginal_value": "Creates a high-quality beginner bridge into the existing intermediate Full Stack Open incumbent rather than duplicating it.",
+    "provider_concentration_notes": "The Odin Project has no current canonical record; this admission does not create provider concentration.",
+    "coverage_notes": "Improves the web-development learning pathway by adding a beginner project-first route before the existing intermediate full-stack reference.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "helsinki-full-stack-open"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-01-freecodecamp-responsive-web-design-v9",
+    "candidate_id": "freecodecamp-responsive-web-design-v9",
+    "review_id": "deep-03-freecodecamp-responsive-web-design-v9",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Beginner HTML/CSS and responsive-web development with substantial hands-on practice",
+    "comparison_set": [
+      "odin-foundations",
+      "freecodecamp-javascript-v9",
+      "helsinki-full-stack-open"
+    ],
+    "incumbent_ids": [
+      "helsinki-full-stack-open"
+    ],
+    "decision_rationale": "This is an excellent browser-native beginner course with five projects and a free credential, so the decision is not a quality rejection. Once Odin Foundations is admitted, however, the canonical set already has a stronger beginner developer-workflow route plus Full Stack Open at the next level. The accessibility and certificate advantage is real but does not add enough marginal learning coverage for another core web slot.",
+    "marginal_value": "Useful low-friction alternative, but narrower HTML/CSS coverage adds less to the canonical set than Odin's broader beginner workflow.",
+    "provider_concentration_notes": "freeCodeCamp has no current canonical record, so this non-admission is based on redundancy and marginal value rather than provider concentration.",
+    "coverage_notes": "Web-development coverage remains strong through Odin Foundations plus Full Stack Open; excluding this course does not leave a material gap.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "odin-foundations"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-01-hubspot-content-marketing",
+    "candidate_id": "hubspot-content-marketing",
+    "review_id": "deep-01-hubspot-content-marketing",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Practical introductory content-marketing strategy, creation, distribution and measurement",
+    "comparison_set": [
+      "hubspot-digital-marketing",
+      "hubspot-aeo-fundamentals",
+      "hubspot-social-media-marketing"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "Content Marketing is current, substantial and freely certified, but the canonical set already contains HubSpot Digital Marketing at 8.95 Quality / 9.2 Recommendation with broader practical coverage. Content Marketing's narrower specialisation and limited project evidence do not justify another HubSpot slot in the core index when seven of eight reviewed Marketing survivors come from the same provider.",
+    "marginal_value": "The specialist content focus is useful, but insufficiently distinct from the stronger existing HubSpot marketing foundation to justify another core slot.",
+    "provider_concentration_notes": "Provider concentration is material: admitting adjacent HubSpot certifications without a clear learning-need gain would turn the index into a partial Academy catalogue.",
+    "coverage_notes": "Marketing remains represented by a stronger broad HubSpot incumbent; this decision does not create a coverage hole.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-01-kaggle-intermediate-machine-learning",
+    "candidate_id": "kaggle-intermediate-machine-learning",
+    "review_id": "deep-21-kaggle-intermediate-machine-learning",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Short intermediate tabular-machine-learning workflow practice after basic supervised ML",
+    "comparison_set": [
+      "kaggle-intro-machine-learning",
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "incumbent_ids": [
+      "kaggle-intro-machine-learning",
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "decision_rationale": "Intermediate Machine Learning is a high-return four-hour skills accelerator with excellent hosted practice, but it is deliberately narrow. The canonical set already offers Kaggle Intro ML for the low-friction notebook route, Google ML Crash Course for a broader current ML foundation and CS50 AI for deeper project-based study. The microcourse remains useful without materially improving the core published set.",
+    "marginal_value": "Adds workflow refinements such as pipelines, XGBoost and leakage, but not enough breadth or distinctiveness to justify a fourth canonical ML option.",
+    "provider_concentration_notes": "Kaggle already has a canonical Intro ML course; admitting adjacent microcourses requires unusually strong distinctiveness, which this one does not reach.",
+    "coverage_notes": "Machine-learning coverage remains unusually strong across beginner, broad interactive and deeper project-based incumbents.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "kaggle-intro-machine-learning",
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "is_current": true
+  }
+]
