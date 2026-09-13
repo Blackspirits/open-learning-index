@@ -18,6 +18,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/methodology.md`](docs/methodology.md) — scoring and free-access taxonomy.
 - [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
 - [`docs/deep-review-protocol.md`](docs/deep-review-protocol.md) — evidence and scoring rules for Phase 3.
+- [`docs/admission-protocol.md`](docs/admission-protocol.md) — comparative admission rules for Phase 4.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
@@ -68,6 +69,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`data/candidates/`](data/candidates/) — immutable discovery batches.
 - [`data/screening/`](data/screening/) — evidence-backed shallow-screening decision ledger.
 - [`data/reviews/`](data/reviews/) — auditable Deep Review ledger; reviewed candidates are not final admissions by default.
+- [`data/admissions/`](data/admissions/) — auditable Phase 4 head-to-head admission decisions.
 
 ## Free access taxonomy
 
@@ -104,7 +106,7 @@ A course that becomes F3-only is removed from the main ranking but kept in histo
 
 ## Data philosophy
 
-`courses.json` is the source of truth for approved/reference records. Discovery batches are immutable research intake; `data/screening/` records shallow decisions and `data/reviews/` records Phase 3 deep-review evidence. A deep review does not itself promote a candidate into `courses.json`; Phase 4 head-to-head admission remains separate. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
+`courses.json` is the source of truth for approved/reference records. Discovery batches are immutable research intake; `data/screening/` records shallow decisions, `data/reviews/` records Phase 3 deep-review evidence, and `data/admissions/` records Phase 4 comparative decisions. A deep review does not itself promote a candidate into `courses.json`; a validated current `admit` decision authorises that promotion. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
 
 ## Licensing
 
