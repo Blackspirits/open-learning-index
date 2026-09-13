@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The first targeted challenger cycle is complete: **203 / 203 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 114 admit / 89 do_not_admit**. The canonical publication set is now **131 courses** with **74 F0 / 24 F1 / 33 F2**. The unresolved **9 `hold`** records remain excluded, and current shallow state is **203 advance / 9 hold / 82 reject** across **294 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
+**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The first challenger cycle plus evidence-triggered hold cleanup are complete: **205 / 205 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 114 admit / 91 do_not_admit**. The canonical publication set remains **131 courses** with **74 F0 / 24 F1 / 33 F2**. Exactly **4 `hold`** records remain excluded, and current shallow state is **205 advance / 4 hold / 85 reject** across **294 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
 
 ## Goal
 
@@ -38,6 +38,8 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-16-health-medicine.md`](docs/admissions/batch-16-health-medicine.md) — complete Health & Medicine pass with clinical-currentness, professional-role and evidence-completeness gates.
 - [`docs/admissions/batch-17-history-culture.md`](docs/admissions/batch-17-history-culture.md) — complete History & Culture pass with global-coverage, archive-concentration and post-COVID currentness controls.
 - [`docs/admissions/batch-18-arts-design.md`](docs/admissions/batch-18-arts-design.md) — final Phase 4 family pass, completing Arts & Design with creative-practice, sequence and incomplete-course controls.
+- [`docs/admissions/batch-19-maintenance-challengers.md`](docs/admissions/batch-19-maintenance-challengers.md) — first post-v0.5 challenger admission pass, adding optimisation and sales while keeping climate and AI-security gaps explicit.
+- [`docs/admissions/batch-20-maintenance-ibm.md`](docs/admissions/batch-20-maintenance-ibm.md) — comparative decision on the two IBM holds whose learner routes were restored.
 - [`docs/qa-reference-reconciliation-v0.5.md`](docs/qa-reference-reconciliation-v0.5.md) — Phase 5 Gate 1 reconciliation of all 17 pre-existing canonical reference fixtures against the complete admitted set.
 - [`docs/qa-publication-structural-audit-v0.5.md`](docs/qa-publication-structural-audit-v0.5.md) — Phase 5 Gate 2 audit of category/provider concentration, language accessibility, access models and review cadence.
 - [`docs/qa-reverification-01-technical-references.md`](docs/qa-reverification-01-technical-references.md) — Phase 5 Gate 3 batch 01 primary-source re-verification of ten high-volatility technical reference fixtures.
@@ -69,11 +71,14 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-20.md`](docs/reviews/scale-batch-20.md) — AI & Data closure across the remaining Kaggle microcourses.
 - [`docs/reviews/scale-batch-21.md`](docs/reviews/scale-batch-21.md) — History & Culture closure across the final five ordinary survivors.
 - [`docs/reviews/scale-batch-22.md`](docs/reviews/scale-batch-22.md) — final WHO clinical-trials review and formal Phase 3 closure at 199/199 current advances.
+- [`docs/reviews/scale-batch-23.md`](docs/reviews/scale-batch-23.md) — first maintenance challenger Deep Review across optimisation, climate science, sales and AI red teaming.
+- [`docs/reviews/scale-batch-24.md`](docs/reviews/scale-batch-24.md) — Deep Review of the two IBM SkillsBuild holds after exact learner routes became verifiable.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
 - [`docs/coverage-audit-v0.2-after-batch-7.md`](docs/coverage-audit-v0.2-after-batch-7.md) — second saturation audit after crossing 300 researched experiences.
 - [`docs/discovery/batch-08.md`](docs/discovery/batch-08.md) — final corrective Arabic/Mandarin micro-discovery; stops early at four candidates.
+- [`docs/discovery/batch-09.md`](docs/discovery/batch-09.md) — first v0.6 targeted challenger scan, restricted to documented coverage gaps.
 - [`docs/screening/shallow-01.md`](docs/screening/shallow-01.md) — first shallow-screening calibration tranche.
 - [`docs/screening/shallow-02.md`](docs/screening/shallow-02.md) — first deliberately selective mixed-provider screening tranche.
 - [`docs/screening/shallow-03.md`](docs/screening/shallow-03.md) — currency-sensitive psychology, health and education screening tranche.
@@ -88,6 +93,8 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/screening/shallow-12.md`](docs/screening/shallow-12.md) — immediate screening of the final corrective Arabic/Mandarin micro-wave.
 - [`docs/screening/hold-resolution-01.md`](docs/screening/hold-resolution-01.md) — resolves objective access, availability, hardware, beta-status and public-completeness blockers.
 - [`docs/screening/hold-resolution-02.md`](docs/screening/hold-resolution-02.md) — resolves the remaining comparative/currentness holds and carries forward only two evidence-constrained cases.
+- [`docs/screening/maintenance-08.md`](docs/screening/maintenance-08.md) — Shallow Screening of the first four post-v0.5 challengers.
+- [`docs/screening/maintenance-09.md`](docs/screening/maintenance-09.md) — evidence-triggered hold resolution: two IBM advances and three currentness rejections.
 - [`docs/coverage-audit-v0.2-final.md`](docs/coverage-audit-v0.2-final.md) — final saturation decision after all original candidates were screened and holds resolved.
 - [`docs/coverage-audit-v0.2-final-snapshot.md`](docs/coverage-audit-v0.2-final-snapshot.md) — generated evidence snapshot behind the final audit.
 - [`data/categories.json`](data/categories.json) — authoritative category registry.
