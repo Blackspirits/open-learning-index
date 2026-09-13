@@ -1,0 +1,466 @@
+[
+  {
+    "review_id": "deep-26-nau-introducao-programacao-conceitos-fundamentais",
+    "candidate_id": "nau-introducao-programacao-conceitos-fundamentais",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.edx.org/learn/computer-science/fundacao-para-a-ciencia-e-a-tecnologia-introducao-a-programacao-conceitos-fundamentais",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Paid edX verified certificate; the free Audit route excludes certificate and graded course assessment",
+    "academic_credits": "IPT documents ECTS for successful certified completion, but no free current ECTS route is verified for the edX Audit learner",
+    "self_paced": true,
+    "scope_notes": "Approximately 60-hour beginner programming foundation in European Portuguese built around structured programming, algorithmic problem solving, flowcharts, pseudocode, conditions and loops, with the Algorithmi environment used to execute and automatically evaluate programming exercises.",
+    "prerequisites": "Elementary mathematics; no prior programming knowledge required",
+    "required_resources": "Modern browser and free edX Audit enrolment for teaching content; Algorithmi is used for pseudocode/flowchart practice. Verified edX access is required for the formal graded/certificate route.",
+    "component_evidence": {
+      "pedagogy": "The four-module sequence moves from algorithms and representations into sequential processing, conditional logic and repetition, repeatedly tying theory to executable flowcharts and pseudocode rather than teaching syntax in isolation.",
+      "depth": "At roughly 60 hours it is materially deeper than a short digital-literacy primer and establishes real computational-thinking foundations, but it stops before functions, data structures, software engineering and substantial language-specific programming.",
+      "practice": "The course design includes practical programming sheets and automatic exercise evaluation through Algorithmi, which is a strong practice signal. The current free edX Audit path excludes the formal graded course tasks, reducing the independently verifiable free practice layer.",
+      "materials": "The IPT/PortugalX package combines structured modules, examples, practical worksheets and the dedicated Algorithmi environment. It is coherent, but less transparent and less broadly reusable than fully open code/project ecosystems such as CS50 or Helsinki.",
+      "currency": "The course was actively promoted by IPT for PortugalX/edX and remains current in 2026. Core structured-programming concepts are stable, though the pseudocode-first approach is intentionally less tied to current production tooling.",
+      "expertise": "The course was developed by Instituto Politecnico de Tomar through its distance-learning/pedagogical innovation unit, with named academic instructors and a purpose-built instructional tool for algorithm practice.",
+      "accessibility": "European-Portuguese instruction and beginner prerequisites are major strengths. The free Audit route provides the teaching content, but assessments, certificate and unlimited access are reserved for paid Verified enrolment."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.4,
+      "practice": 8.1,
+      "materials": 8.5,
+      "currency": 8.8,
+      "expertise": 8.7,
+      "accessibility": 8.3
+    },
+    "quality_score": 8.52,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "One of the strongest pt-PT beginner-programming routes found: long enough to build real algorithmic reasoning and unusually practice-oriented through Algorithmi. It does not displace CS50x, CS50P or Helsinki Python on global depth and free completion, but it has genuine value for learners who need European-Portuguese instruction.",
+    "comparators": [
+      "harvard-cs50x",
+      "harvard-cs50p",
+      "helsinki-python-mooc-2026"
+    ],
+    "evidence": [
+      "https://open.ipt.pt/index.php/2025/09/13/introducao-a-programacao-conceitos-fundamentais/",
+      "https://www.nau.edu.pt/pt/curso/introducao-a-programacao-conceitos-fundamentais/",
+      "https://www.edx.org/learn/computer-science/fundacao-para-a-ciencia-e-a-tecnologia-introducao-a-programacao-conceitos-fundamentais"
+    ],
+    "flags": [
+      "pt-pt",
+      "60-hours",
+      "beginner-programming",
+      "algorithmic-thinking",
+      "algorithmi",
+      "edx-audit",
+      "paid-assessment",
+      "paid-certificate"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-fundamentos-bases-dados",
+    "candidate_id": "nau-fundamentos-bases-dados",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Course page describes a participation certificate after successful assessment, but current zero-cost assessment/certificate access is not established after NAU's July 2026 payment-model change",
+    "academic_credits": "4 ECTS are restricted to eligible students enrolled in the PRODIGI programme, not verified as public free academic credit",
+    "self_paced": true,
+    "scope_notes": "Twenty-five-hour relational-database foundation covering entity-association modelling, relational design, normalization, relational algebra, SQL, elementary transactions and integration of PostgreSQL with Python.",
+    "prerequisites": "Elementary Python knowledge",
+    "required_resources": "Modern browser; practical database work uses PostgreSQL and Python. The public asynchronous MOOC is the reviewed route; synchronous PRODIGI contact sessions are not counted as generally open components.",
+    "component_evidence": {
+      "pedagogy": "The course follows the database lifecycle from conceptual modelling through relational transformation, normalization, algebra, SQL and application integration, giving the learner a coherent design-to-use progression.",
+      "depth": "Twenty-five hours cover more database-design theory than many introductory SQL courses, including normalization and relational algebra, though administration, security, concurrency and advanced query optimisation are explicitly outside scope.",
+      "practice": "Exercises are distributed across modules and the original design includes practical sessions, but the public asynchronous route does not transparently expose the full synchronous practice environment or project depth available to PRODIGI students.",
+      "materials": "The six-module structure is focused and uses professional tools such as PostgreSQL plus Python integration. Public evidence is strong on syllabus and outcomes but weaker on downloadable/open exercise artefacts than CS50 SQL.",
+      "currency": "Relational modelling and SQL fundamentals are stable, while PostgreSQL/Python framing remains current. The course is currently open on NAU in 2026 and does not depend on obsolete database tooling.",
+      "expertise": "Instituto Politecnico de Lisboa delivers the course within a formally funded programming/information programme, providing credible academic and applied information-systems expertise.",
+      "accessibility": "Self-paced pt-PT delivery and open teaching content are valuable, but Python is a prerequisite and the post-July-2026 cost of the assessment/certificate path is not course-specifically established."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.6,
+      "practice": 8.2,
+      "materials": 8.5,
+      "currency": 9,
+      "expertise": 8.8,
+      "accessibility": 8.4
+    },
+    "quality_score": 8.59,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "A strong Portuguese relational-database course with more design theory than a narrow SQL tutorial. CS50 SQL remains the clearly stronger global core route because it offers denser independent practice, broader query/index/scaling treatment and stronger free-course evidence, but this is a credible pt-PT specialist alternative.",
+    "comparators": [
+      "harvard-cs50-sql",
+      "freecodecamp-relational-databases-v9"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "relational-databases",
+      "sql",
+      "normalization",
+      "postgresql",
+      "python",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-estruturas-dados",
+    "candidate_id": "nau-estruturas-dados",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Completion threshold is documented, but current zero-cost assessment/certificate access is not established under NAU's post-July-2026 course payment models",
+    "academic_credits": "No public free academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-five-hour intermediate data-structures course covering arrays/lists, stacks, queues/deques, heaps and priority queues, hash tables, sets/dictionaries, binary search trees, matrices and graphs, including basic algorithmic analysis and problem solving.",
+    "prerequisites": "Programming fundamentals",
+    "required_resources": "Modern browser and a programming-capable environment appropriate to the course exercises; no mandatory paid software is identified in public evidence",
+    "component_evidence": {
+      "pedagogy": "The syllabus progresses from linear structures to priority structures, hashing, trees and graphs, aligning conceptual structure with the problem types each representation solves.",
+      "depth": "Coverage is broad for 25 hours and includes most standard introductory data structures, but it cannot match a semester algorithms course on proofs, amortised analysis, advanced graph methods or extensive implementation work.",
+      "practice": "The course explicitly evaluates progress through exercises and frames outcomes around practical problem solving, but public evidence does not show a large project set, code repository or solution corpus comparable to the strongest university archives.",
+      "materials": "The course provides a clear ten-part learning sequence and focused topic coverage. Public materials are less open and inspectable than MIT OCW or project-based coding pathways.",
+      "currency": "Core data-structure concepts are stable and the course is active in 2026. No material dependence on rapidly obsolete frameworks or vendor tooling is apparent.",
+      "expertise": "The course is delivered by Instituto Politecnico de Lisboa within the PRODIGI computing programme, providing appropriate academic computing expertise.",
+      "accessibility": "The self-paced pt-PT route lowers language friction for Portuguese learners, but prior programming is required and the free status of assessment/certification is currently unresolved, limiting the route to conservative F2."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8.4,
+      "practice": 8,
+      "materials": 8.3,
+      "currency": 8.9,
+      "expertise": 8.8,
+      "accessibility": 8.5
+    },
+    "quality_score": 8.43,
+    "recommendation_score": 8.3,
+    "recommendation_rationale": "A useful and unusually complete pt-PT data-structures introduction, but not a category leader. MIT 6.006 provides much deeper algorithmic analysis and problem-set evidence, so this course's main value is language accessibility rather than superior intrinsic depth or practice.",
+    "comparators": [
+      "mit-6-006-algorithms"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "data-structures",
+      "heaps",
+      "hash-tables",
+      "trees",
+      "graphs",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-algoritmos-complexidade",
+    "candidate_id": "nau-algoritmos-complexidade",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Course page describes a completion certificate at the 50% threshold, but current zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models",
+    "academic_credits": "No public free academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Twenty-five-hour intermediate algorithms course spanning time/space complexity, insertion/selection/bubble sort, mergesort, quicksort, heapsort, counting sort, divide and conquer, dynamic programming, greedy strategy, sliding window, tree traversal, BFS, DFS, topological sorting and Dijkstra.",
+    "prerequisites": "Programming fundamentals and familiarity with basic data structures are strongly advisable",
+    "required_resources": "Modern browser and a programming environment suitable for exercises; no mandatory commercial software is identified",
+    "component_evidence": {
+      "pedagogy": "The course builds from elementary complexity and sorting into divide-and-conquer and then algorithm-design paradigms before closing with tree and graph algorithms, a sensible conceptual progression for intermediate learners.",
+      "depth": "For 25 hours the scope is ambitious and includes several algorithm-design paradigms plus graph algorithms, but treatment is necessarily less proof-heavy and less comprehensive than MIT 6.006 or a full semester algorithms sequence.",
+      "practice": "Exercises are integrated across modules and the course requires a completion threshold, giving more active work than lecture-only archives. Public evidence does not establish a large graded problem-set corpus or detailed worked solutions.",
+      "materials": "The seven-module plan is compact, specific and technically coherent. It lacks the unusually rich public notes, recitations, problem sets and solutions exposed by the strongest OCW comparator.",
+      "currency": "The algorithms themselves are foundational and stable, and the current 2026 NAU route avoids framework/tool obsolescence. Currency therefore scores strongly despite the absence of a dated syllabus revision.",
+      "expertise": "Instituto Politecnico de Lisboa provides appropriate computing expertise through the PRODIGI programme and offers a coherent sequence with the companion data-structures course.",
+      "accessibility": "European-Portuguese self-paced delivery is a meaningful strength, but intermediate prerequisites and unverified current free assessment/certification reduce accessibility compared with fully open F0/F1 routes."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.8,
+      "practice": 8.1,
+      "materials": 8.4,
+      "currency": 8.9,
+      "expertise": 8.8,
+      "accessibility": 8.4
+    },
+    "quality_score": 8.56,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "The strongest new pt-PT computer-science challenger in intrinsic scope: it reaches dynamic programming, greedy methods and graph algorithms rather than stopping at syntax. MIT 6.006 remains substantially deeper and better evidenced, but this fills a genuine European-Portuguese algorithms pathway that the canonical set does not currently provide.",
+    "comparators": [
+      "mit-6-006-algorithms"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "algorithms",
+      "complexity",
+      "dynamic-programming",
+      "greedy",
+      "graph-algorithms",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-ciencia-aberta-dados-fair",
+    "candidate_id": "nau-ciencia-aberta-dados-fair",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Course page describes certification after module quizzes and a final exam, but current zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models",
+    "academic_credits": "No ECTS are awarded according to the current course page",
+    "self_paced": true,
+    "scope_notes": "Twenty-hour six-module research-data course on open science, FAIR principles, data stewardship and curation, sensitive data and security, research-data policies, and responsible use of AI in scientific work.",
+    "prerequisites": "Basic familiarity with scientific publishing",
+    "required_resources": "Modern browser; no paid specialist software or hardware is identified for the teaching-content route",
+    "component_evidence": {
+      "pedagogy": "The course moves from open-science context through FAIR principles and operational curation into security, policy and responsible AI, providing a coherent research-data lifecycle rather than a generic awareness survey.",
+      "depth": "Twenty hours support meaningful professional foundations in FAIR data and stewardship, but the course does not reach the workflow/project depth of a full data-management practicum or technical data-science curriculum.",
+      "practice": "Each module has a knowledge check and the formal course includes a comprehensive final exam. Public evidence does not show a substantial data-management plan, repository deposit or hands-on curation capstone, so practice is mainly assessment-based.",
+      "materials": "The six-module outline is detailed and current, with explicit attention to policy, security and AI. Public transparency is good on outcomes and syllabus but weaker on reusable open exercises and datasets.",
+      "currency": "The curriculum reflects current European/global open-science priorities, FAIR practice, sensitive-data security and responsible AI, all highly relevant in 2026. This is one of the course's strongest dimensions.",
+      "expertise": "Universidade da Beira Interior provides a university research context appropriate to open-science and research-data training, with direct alignment to institutional and funder requirements.",
+      "accessibility": "Self-paced pt-PT delivery and no specialist prerequisites beyond basic scientific publishing are strong. The current zero-cost status of quizzes/final/certificate is not course-specifically proven after NAU's payment change."
+    },
+    "quality_components": {
+      "pedagogy": 8.6,
+      "depth": 8.2,
+      "practice": 7.7,
+      "materials": 8.4,
+      "currency": 9.5,
+      "expertise": 8.9,
+      "accessibility": 8.6
+    },
+    "quality_score": 8.44,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A strong current pt-PT research-data/open-science route and materially more locally accessible than the English-only canonical alternatives. NASA Open Science 101 remains the stronger global course because of broader workflow/tool practice and F0 evidence, but this course adds a credible FAIR/data-stewardship niche.",
+    "comparators": [
+      "nasa-open-science-101",
+      "cisco-data-analytics-essentials"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "flags": [
+      "pt-pt",
+      "20-hours",
+      "open-science",
+      "fair-data",
+      "data-stewardship",
+      "responsible-ai",
+      "current-2026",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-sustentabilidade-ambiental",
+    "candidate_id": "nau-sustentabilidade-ambiental",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/sustentabilidade-ambiental/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Fee-free participation certificate issued by Escola Superior de Saude de Lisboa after at least 50% successful completion",
+    "academic_credits": "1 ECTS explicitly attached to the fee-free successful-completion certificate",
+    "self_paced": true,
+    "scope_notes": "Twenty-seven-hour general environmental-sustainability course covering waste, water, energy, indoor/outdoor air quality and noise, with explicit links to environmental and human-health impacts and everyday mitigation.",
+    "prerequisites": "No formal prerequisite; designed for the general public and especially relevant to educators",
+    "required_resources": "Modern browser; no mandatory paid software, laboratory kit or specialist equipment identified",
+    "component_evidence": {
+      "pedagogy": "Five thematic modules combine videos, texts, tasks, quizzes and interactive activities, moving from environmental systems to practical behavioural/action implications rather than relying on passive awareness content.",
+      "depth": "The 27-hour scope is broad across five environmental domains and materially deeper than a short sustainability primer, though each domain receives survey-level rather than disciplinary university depth.",
+      "practice": "Learners use quizzes, single/multiple-response checks and interactive activities throughout. Practice supports knowledge application but does not include a substantial field/lab project or quantitative environmental-analysis capstone.",
+      "materials": "The course combines several media types and a clear topic structure suitable for independent learners and teachers. It is less academically dense than a full environmental-science course but stronger than campaign-style awareness resources.",
+      "currency": "The current NAU route remains active and includes European/national energy-policy framing. Environmental fundamentals are stable, but policy-linked elements require periodic monitoring, so currency is strong rather than maximal.",
+      "expertise": "The course is delivered by Instituto Politecnico de Lisboa/Escola Superior de Saude de Lisboa, combining environmental and health framing with formal higher-education provision.",
+      "accessibility": "Beginner-friendly pt-PT delivery, self-paced design, no specialist resources and an explicitly fee-free certificate worth 1 ECTS make this one of the most accessible and formally recognised courses in the new batch."
+    },
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8,
+      "practice": 8.1,
+      "materials": 8.4,
+      "currency": 8.8,
+      "expertise": 8.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.42,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A very useful Portuguese general environmental-sustainability route with unusually strong accessibility and a verified fee-free 1-ECTS completion path. It is not deep enough to serve as the index's missing disciplinary climate-science anchor, but it can add a distinct pt-PT environmental-literacy role.",
+    "comparators": [
+      "eu-climate-action-academy",
+      "fao-intro-climate-smart-agriculture"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/sustentabilidade-ambiental/"
+    ],
+    "flags": [
+      "pt-pt",
+      "27-hours",
+      "environmental-sustainability",
+      "interactive-activities",
+      "free-certificate",
+      "free-1-ects",
+      "beginner"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-lingua-portuguesa-escrita-academica",
+    "candidate_id": "nau-lingua-portuguesa-escrita-academica",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Course page describes automatic completion certification after formative tasks and 75% quiz success, but current zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Thirty-hour European-Portuguese academic communication and writing course covering linguistic/cultural features of PE, formal oral discourse, orthography and punctuation, paragraph construction, academic style, academic-task comprehension, summaries, abstracts, synthesis and expository/explanatory paragraphs.",
+    "prerequisites": "Designed especially for students entering higher education who need support with written Portuguese",
+    "required_resources": "Modern browser; no paid writing software or specialist equipment required for the teaching-content route",
+    "component_evidence": {
+      "pedagogy": "The course develops from language/register foundations into paragraph-level academic production, summary and synthesis, with contextualised application activities in each module rather than only grammar explanation.",
+      "depth": "Thirty hours and ten modules provide more sustained academic-writing instruction than many generic study-skills primers, though the scope remains introductory and does not extend to research design, citation systems or long-form thesis-level writing.",
+      "practice": "Learners apply writing techniques through contextualised activities and formative assessment. The absence of verified personalised feedback is a real limitation for a writing course, but the production focus is stronger than auto-graded concept-only alternatives.",
+      "materials": "The syllabus is unusually specific to Portuguese academic discourse and European-Portuguese conventions, with concrete modules on punctuation, paragraphs, formal style, summary, synthesis and explanatory writing.",
+      "currency": "Core academic-writing conventions are stable and the course is currently open in 2026. Its explicit European-Portuguese orientation remains directly relevant to Portuguese higher-education learners.",
+      "expertise": "ISCTE provides the university context and the course links to Ciberduvidas language expertise, giving credible subject and academic-communication grounding.",
+      "accessibility": "Thirty hours, self-paced delivery and native pt-PT instruction make it highly accessible for the target audience, but post-July-2026 free assessment/certification is not established and no personalised tutor feedback is verified."
+    },
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.3,
+      "practice": 8.2,
+      "materials": 8.5,
+      "currency": 9,
+      "expertise": 8.8,
+      "accessibility": 8.6
+    },
+    "quality_score": 8.54,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "A strong, genuinely differentiated European-Portuguese academic-writing pathway. OpenLearn Essay and Report Writing remains broader and fully free through completion, but this course adds language- and register-specific value that English alternatives cannot substitute for Portuguese higher-education learners.",
+    "comparators": [
+      "openlearn-essay-report-writing",
+      "openlearn-effective-communication-workplace"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "flags": [
+      "pt-pt",
+      "european-portuguese",
+      "30-hours",
+      "academic-writing",
+      "productive-practice",
+      "no-personalised-feedback",
+      "conservative-f2"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-26-nau-iniciacao-lingua-portuguesa",
+    "candidate_id": "nau-iniciacao-lingua-portuguesa",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Paid edX verified certificate; the free Audit route excludes the formal assessment/certificate path",
+    "academic_credits": "No public academic credit verified for independent learners",
+    "self_paced": true,
+    "scope_notes": "Approximately 32-hour eight-unit beginner European-Portuguese course from the University of Porto, using a narrative journey through Porto to teach everyday communication, pronunciation, basic vocabulary, grammar and cultural context for learners starting from zero.",
+    "prerequisites": "No prior Portuguese knowledge required",
+    "required_resources": "Modern browser and free edX Audit enrolment for teaching content; Verified enrolment is required for formal graded completion/certification",
+    "component_evidence": {
+      "pedagogy": "The course uses an eight-episode narrative set in Porto to anchor language functions in realistic everyday situations, combining linguistic form with cultural context rather than presenting isolated vocabulary lists.",
+      "depth": "Thirty-two hours provide a serious A1-oriented introduction and more substance than a travel phrasebook, but it remains a single beginner course rather than a multi-level progression such as Nicos Weg A1-B1.",
+      "practice": "The original course design includes per-unit quizzes and comprehension/production activities, but the current free edX Audit route excludes the formal graded completion path, reducing practice evidence available at zero cost.",
+      "materials": "Professional audiovisual production, narrative episodes, language/culture integration and a coherent eight-unit itinerary create an unusually polished resource for European Portuguese.",
+      "currency": "The course moved to edX and University of Porto evidence indicates successive reviewed editions. Beginner language content is stable and the route remains current in 2026.",
+      "expertise": "The course was produced by Universidade do Porto's Faculdade de Letras and educational-innovation team with professional actors and language-teaching expertise, a strong fit for an A1 LMOOC.",
+      "accessibility": "No prerequisites and explicit European-Portuguese focus address a major coverage gap. Free Audit provides all teaching content, but paid Verified access is needed for assessment/certification and permanent access."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.2,
+      "practice": 7.8,
+      "materials": 9,
+      "currency": 9.1,
+      "expertise": 9.2,
+      "accessibility": 8.5
+    },
+    "quality_score": 8.61,
+    "recommendation_score": 9,
+    "recommendation_rationale": "The best current free-content European-Portuguese beginner course found in the project and a genuinely distinct target-language role. It does not match DW Nicos Weg's multi-level depth or Minato's stronger free completion mechanics, but those courses teach different languages; for learners specifically seeking European Portuguese, this is a high-value recommendation despite F2 access.",
+    "comparators": [
+      "dw-nicos-weg-a1-b1",
+      "tv5monde-premiere-classe-french",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "evidence": [
+      "https://noticias.up.pt/2024/04/23/mooc-de-iniciacao-a-lingua-portuguesa-esta-mais-internacional-do-que-nunca/",
+      "https://www.nau.edu.pt/pt/curso/iniciacao-a-lingua-portuguesa/",
+      "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa"
+    ],
+    "flags": [
+      "pt-pt",
+      "european-portuguese",
+      "language-learning",
+      "32-hours",
+      "a1-oriented",
+      "narrative-learning",
+      "edx-audit",
+      "paid-assessment",
+      "paid-certificate"
+    ],
+    "is_current": true
+  }
+]
