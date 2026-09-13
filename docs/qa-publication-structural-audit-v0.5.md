@@ -98,29 +98,41 @@ Primary instruction language:
 
 Only **9 / 129** courses have a non-English primary instruction language.
 
-Only **4** additional courses currently expose verified alternate instruction languages:
+Only **6** additional courses currently expose verified alternate instruction languages:
 
 - Google Machine Learning Crash Course — pt-BR;
 - Hugging Face Agents Course — fr;
 - TGHN ICH GCP E6(R3) — es, fr, pt;
-- Unity Junior Programmer — de, ja, fr, pt, zh, es, ru, ko.
+- Unity Junior Programmer — de, ja, fr, pt, zh, es, ru, ko;
+- WIPO DL-101 General Course on Intellectual Property — fr, ar, ru, es;
+- Council of Europe HELP Cybercrime and Electronic Evidence — ar, az, bg, cs, fr, hu, hy, ka, pt, ro, sk, es, tr, uk.
 
-The Unity alternatives were added during Gate 3 batch 02 after direct verification on the current Unity Learn pathway.
+The Unity alternatives were added during Gate 3 batch 02. WIPO and HELP Cybercrime language metadata was corrected during Gate 3 batch 04 from current first-party catalog/training pages. For WIPO, customised Chinese/Portuguese regional variants are not merged into `other_languages` without equivalence evidence for the standard 55-hour route.
 
 Across primary + verified alternate instruction languages, the canonical set exposes:
 
 - English — 120 courses;
-- French — 7;
+- French — 9;
 - European Portuguese — 2;
 - Brazilian Portuguese — 1;
-- Arabic — 1;
+- Arabic — 3;
 - German — 2;
 - Chinese — 2;
-- Spanish — 2;
-- generic Portuguese — 2;
+- Spanish — 4;
+- generic Portuguese — 3;
 - Japanese — 1;
-- Russian — 1;
-- Korean — 1.
+- Russian — 2;
+- Korean — 1;
+- Azerbaijani — 1;
+- Bulgarian — 1;
+- Czech — 1;
+- Hungarian — 1;
+- Armenian — 1;
+- Georgian — 1;
+- Romanian — 1;
+- Slovak — 1;
+- Turkish — 1;
+- Ukrainian — 1.
 
 ### QA decision
 
@@ -154,17 +166,18 @@ Gate 3 batch 03 corrected WHO Good Practices for Clinical Trial Design and Imple
 ## Credential profile
 
 - no formal free credential — 55
-- free provider certificate — 44
+- free provider certificate — 41
 - free badge — 12
 - free badge + statement — 8
 - free statement of participation — 6
+- free Statement of Accomplishment — 3
 - other explicit credential models — 4
 
 ### QA decision
 
 **No credential-distribution blocker.**
 
-Credential availability remains metadata, not a substitute for teaching quality.
+Credential availability remains metadata, not a substitute for teaching quality. Gate 3 batch 04 also corrects the three Council of Europe HELP self-learning credentials from the overly generic `free_provider_certificate` label to the provider’s exact electronic Statement of Accomplishment terminology.
 
 ## Review cadence
 
