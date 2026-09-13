@@ -1,0 +1,376 @@
+[
+  {
+    "screen_id": "maintenance-10-nau-introducao-programacao-conceitos-fundamentais",
+    "candidate_id": "nau-introducao-programacao-conceitos-fundamentais",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.edx.org/learn/computer-science/fundacao-para-a-ciencia-e-a-tecnologia-introducao-a-programacao-conceitos-fundamentais",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Paid edX verified certificate; the free audit route does not include a free completion credential or graded assessment",
+    "completeness": "substantive",
+    "evidence": [
+      "https://open.ipt.pt/index.php/2025/09/13/introducao-a-programacao-conceitos-fundamentais/",
+      "https://www.edx.org/learn/computer-science/fundacao-para-a-ciencia-e-a-tecnologia-introducao-a-programacao-conceitos-fundamentais",
+      "https://www.nau.edu.pt/pt/curso/introducao-a-programacao-conceitos-fundamentais/"
+    ],
+    "rationale": "The former NAU route is archived because the PortugalX catalogue migrated to edX, but Instituto Politecnico de Tomar currently links learners to the live edX edition. The 60-hour syllabus remains a substantial Portuguese programming foundation with algorithms, flowcharts, pseudocode and automatically evaluated exercise design. Free audit access is limited to teaching content rather than graded completion, so the route is F2 rather than the F0 impression recorded at Discovery. The depth signal is strong enough for Deep Review.",
+    "flags": [
+      "pt-pt",
+      "60-hours",
+      "edx-migration",
+      "audit-free",
+      "no-free-assessment",
+      "no-free-certificate",
+      "programming-foundations",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-fundamentos-bases-dados",
+    "candidate_id": "nau-fundamentos-bases-dados",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU participation certificate after successful completion; 4 ECTS are restricted to eligible students enrolled in the wider PRODIGI programme",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+      "https://www.nau.edu.pt/pt/legal/politica-de-certificacao/",
+      "https://www.nau.edu.pt/pt/parceiros/instituto-politecnico-de-lisboa/"
+    ],
+    "rationale": "The current NAU route is open and provides a coherent 25-hour database course from conceptual, logical and physical relational modelling through normalization, SQL, transactions, PostgreSQL and Python integration. The asynchronous course includes exercises and a completion threshold, and NAU's current certification policy confirms that the platform participation certificate is free. The separate 4-ECTS claim applies only to eligible PRODIGI students and is not treated as free public academic credit. The course is complete enough for Deep Review.",
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "databases",
+      "sql",
+      "postgresql",
+      "python",
+      "free-certificate",
+      "prodigi-ects-restricted",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-estruturas-dados",
+    "candidate_id": "nau-estruturas-dados",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU participation certificate after successful completion under the platform certification policy",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+      "https://www.nau.edu.pt/pt/legal/politica-de-certificacao/",
+      "https://www.nau.edu.pt/pt/parceiros/instituto-politecnico-de-lisboa/"
+    ],
+    "rationale": "The current NAU route is open and substantial at 25 hours. It progresses through lists, stacks, queues, heaps, hash tables, binary-search trees, matrices and graphs with practical exercises and an explicit completion threshold. The official NAU certification policy resolves the Discovery ambiguity: successful completion generates a free platform certificate, so the current route is F0 rather than F1. Its specialist data-structures role is sufficiently distinct to justify Deep Review.",
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "data-structures",
+      "practical-exercises",
+      "free-certificate",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-algoritmos-complexidade",
+    "candidate_id": "nau-algoritmos-complexidade",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU participation certificate after successful completion under the platform certification policy",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+      "https://www.nau.edu.pt/pt/legal/politica-de-certificacao/",
+      "https://www.nau.edu.pt/pt/parceiros/instituto-politecnico-de-lisboa/"
+    ],
+    "rationale": "The current NAU route is open and provides a 25-hour intermediate algorithms course covering time and space complexity, elementary and advanced sorting, divide and conquer, dynamic programming, greedy methods, tree traversal and graph algorithms. Practical exercises and a completion threshold are present, and NAU's current policy confirms free platform certification. It is a real algorithms/theory learning role rather than a short literacy module and therefore advances to Deep Review.",
+    "flags": [
+      "pt-pt",
+      "25-hours",
+      "algorithms",
+      "complexity",
+      "dynamic-programming",
+      "greedy",
+      "graphs",
+      "free-certificate",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-ciencia-aberta-dados-fair",
+    "candidate_id": "nau-ciencia-aberta-dados-fair",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU completion certificate after meeting the stated 60% assessment threshold; no ECTS are claimed",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+      "https://www.nau.edu.pt/pt/legal/politica-de-certificacao/",
+      "https://www.nau.edu.pt/pt/parceiros/universidade-da-beira-interior/"
+    ],
+    "rationale": "The current open NAU route provides 20 hours across six modules on open science, FAIR principles, research-data stewardship and curation, sensitive-data security, policy and responsible AI in research. Module checks plus a final assessment create a meaningful assessed pathway, and successful completion yields the free NAU certificate. It does not solve the deeper technical pt-PT machine-learning gap, but its research-data role is sufficiently distinct for Deep Review.",
+    "flags": [
+      "pt-pt",
+      "20-hours",
+      "open-science",
+      "fair-data",
+      "research-data",
+      "responsible-ai",
+      "final-assessment",
+      "free-certificate",
+      "no-ects",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-sustentabilidade-ambiental",
+    "candidate_id": "nau-sustentabilidade-ambiental",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/sustentabilidade-ambiental/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Fee-free provider certificate corresponding to 1 ECTS after successful completion at the stated threshold",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/sustentabilidade-ambiental/",
+      "https://www.nau.edu.pt/pt/legal/politica-de-certificacao/"
+    ],
+    "rationale": "The current NAU route is open and substantial at 27 hours, covering waste, water, energy, air quality and noise through videos, texts, tasks, quizzes and interactive activities. The official learner page explicitly states that successful completion provides a certificate exempt from fees corresponding to 1 ECTS. That unusual credit claim is directly evidenced rather than inferred. Scientific depth still needs head-to-head evaluation, but access, completeness and assessment clearly pass the shallow gate.",
+    "flags": [
+      "pt-pt",
+      "27-hours",
+      "environment",
+      "sustainability",
+      "interactive-activities",
+      "free-certificate",
+      "free-1-ects",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-todos-contam-elearning",
+    "candidate_id": "todos-contam-elearning",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://elearning.todoscontam.pt/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "No general completion credential identified on the public e-learning route",
+    "completeness": "substantive",
+    "evidence": [
+      "https://elearning.todoscontam.pt/",
+      "https://www.todoscontam.pt/"
+    ],
+    "rationale": "The official Portuguese financial-education platform exposes substantial public learning content across budgeting, payments, saving and investment, credit, insurance, the financial system and digital finance, backed by the national financial supervisors. However, the learner-facing modules do not expose reliable lesson-level revision dates. Because product rules, consumer protections and digital-finance practices are materially currentness-sensitive, continued publication by the regulators is not enough evidence to infer that every instructional unit is 2026-current. Hold until revision/currentness evidence is available.",
+    "flags": [
+      "pt-pt",
+      "financial-literacy",
+      "regulator-backed",
+      "f2-content-only",
+      "no-credential",
+      "update-date-unverified",
+      "finance-currentness-review"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-lideranca-gestao-valorizacao-pessoas",
+    "candidate_id": "nau-lideranca-gestao-valorizacao-pessoas",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/lideranca-gestao-e-valorizacao-de-pessoas/",
+    "observed_free_access": "F3_PARTIAL_OR_TRIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Historical NAU completion certificate; no current open learner route is available",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/lideranca-gestao-e-valorizacao-de-pessoas/",
+      "https://www.nau.edu.pt/pt/parceiros/secretaria-geral-da-educacao-e-ciencia/"
+    ],
+    "rationale": "The 39-hour syllabus looked substantial at Discovery, but current official NAU catalogue evidence marks the course as archived rather than open for enrolment. The public page therefore functions as historical course information rather than a current full learning route. Without a live successor or alternative official enrolment path, it fails the availability criterion and should not consume Deep Review effort.",
+    "flags": [
+      "pt-pt",
+      "39-hours",
+      "archived",
+      "no-current-enrolment",
+      "availability-failure"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-lingua-portuguesa-escrita-academica",
+    "candidate_id": "nau-lingua-portuguesa-escrita-academica",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free NAU participation certificate after the stated successful-completion threshold",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+      "https://www.nau.edu.pt/pt/legal/politica-de-certificacao/",
+      "https://www.nau.edu.pt/pt/parceiros/iscte-instituto-universitario-de-lisboa/"
+    ],
+    "rationale": "The current NAU route is open, explicitly uses the European-Portuguese variant and provides 30 hours of structured academic communication: grammar, punctuation, formal oral and written communication, paragraphing, summaries, synthesis and expository/explanatory writing. It includes formative assessment and an automatic completion certificate under NAU's free certification policy. This is substantial productive-writing instruction rather than language representation for its own sake, so it advances.",
+    "flags": [
+      "pt-pt",
+      "european-portuguese",
+      "30-hours",
+      "academic-writing",
+      "productive-writing",
+      "free-certificate",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-iniciacao-lingua-portuguesa",
+    "candidate_id": "nau-iniciacao-lingua-portuguesa",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Paid edX verified certificate; teaching content is free but the free route does not include the full graded completion path",
+    "completeness": "substantive",
+    "evidence": [
+      "https://noticias.up.pt/2024/04/23/mooc-de-iniciacao-a-lingua-portuguesa-esta-mais-internacional-do-que-nunca/",
+      "https://www.nau.edu.pt/pt/curso/iniciacao-a-lingua-portuguesa/",
+      "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa",
+      "https://www.nau.edu.pt/pt/noticias/a-nau-lanca-o-seu-1-curso-na-plataforma-edxorg/"
+    ],
+    "rationale": "The former NAU route is archived because the course moved to edX, where a live edition remains available. University of Porto and NAU evidence identifies it as a 32-hour, eight-unit beginner course specifically in European Portuguese, with regular edition review and practical everyday communication. The free edX route provides the instructional content but not the paid verified certificate and full graded completion pathway, so it is F2. Its unusual European-Portuguese learning role is strong enough for Deep Review despite that access penalty.",
+    "flags": [
+      "pt-pt",
+      "european-portuguese",
+      "32-hours",
+      "language-learning",
+      "edx-migration",
+      "audit-free",
+      "paid-certificate",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-uab-linguas-vivas-estrangeiras",
+    "candidate_id": "uab-linguas-vivas-estrangeiras",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://aulaberta.uab.pt/blocks/catalog/detail.php?id=5",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completion credential identified on the public self-study experience",
+    "completeness": "partial",
+    "evidence": [
+      "https://aulaberta.uab.pt/blocks/catalog/detail.php?id=5"
+    ],
+    "rationale": "The Universidade Aberta experience is permanently open and useful as a Portuguese-framed taste of German, Spanish, French and English, but its 16 hours are shared across four target languages. The provider itself positions the offer as a brief open illustration intended to stimulate interest, not as a complete A1/A2 pathway. Basic greetings, numbers and introductory language functions do not provide enough depth to challenge the much stronger canonical language pathways, so language accessibility does not justify advancement.",
+    "flags": [
+      "pt-pt",
+      "16-hours",
+      "four-target-languages",
+      "sampler",
+      "insufficient-depth",
+      "no-credential",
+      "redundant-against-deeper-paths"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-10-nau-cidadaos-estrangeiros-trabalho-formacao",
+    "candidate_id": "nau-cidadaos-estrangeiros-trabalho-formacao",
+    "screen_type": "shallow",
+    "decision": "reject",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/cidadaos-estrangeiros-trabalho-e-formacao/",
+    "observed_free_access": "F3_PARTIAL_OR_TRIAL",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Historical participation certificate; no current open learner route is available",
+    "completeness": "partial",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/cidadaos-estrangeiros-trabalho-e-formacao/",
+      "https://www.nau.edu.pt/pt/categorias/areas-de-conhecimento/direito/"
+    ],
+    "rationale": "The seven-hour course addresses a useful Portugal-specific need around employment, training and qualification recognition, but the current official NAU law catalogue marks it as archived. That is already an availability failure. Its procedural and legal content would also require strong currentness evidence before recommendation even if the route reopened. With no live learner path, Deep Review is not justified.",
+    "flags": [
+      "pt-pt",
+      "7-hours",
+      "archived",
+      "legal-procedural",
+      "currentness-sensitive",
+      "no-current-route",
+      "availability-failure"
+    ],
+    "is_current": true
+  }
+]
