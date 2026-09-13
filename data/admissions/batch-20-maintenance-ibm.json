@@ -1,0 +1,56 @@
+[
+  {
+    "admission_id": "admission-21-ibm-skillsbuild-ai-fundamentals",
+    "candidate_id": "ibm-skillsbuild-ai-fundamentals",
+    "review_id": "deep-25-ibm-skillsbuild-ai-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Broad low-friction artificial-intelligence foundation with free assessment, simulation and credential recognition",
+    "comparison_set": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning",
+      "harvard-cs50-ai"
+    ],
+    "incumbent_ids": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning",
+      "harvard-cs50-ai"
+    ],
+    "decision_rationale": "IBM Artificial Intelligence Fundamentals is a valid and useful free course, and the restored learner route confirms real graded assessment, practice simulations and a free credential. It still does not improve the compact canonical AI set enough for another general foundation slot. Google ML Crash Course is more current and interactive for machine learning, Kaggle provides stronger low-friction modelling practice, and CS50 AI offers substantially deeper project-based artificial-intelligence work. The IBM credential is a benefit, but certification alone does not overcome this comparative redundancy.",
+    "marginal_value": "Adds a structured IBM-branded survey and free credential, but not a distinct enough competency or stronger learning mode to justify a fourth general AI-foundation slot.",
+    "provider_concentration_notes": "IBM provider concentration is not a factor because IBM has no comparable canonical concentration; the decision is based on stronger existing learning routes.",
+    "coverage_notes": "The canonical set already covers general AI and machine-learning foundations strongly. IBM does not solve the documented pt-PT AI/ML quality-access gap or the fully-free AI-security practice gap.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "google-ml-crash-course",
+      "kaggle-intro-machine-learning",
+      "harvard-cs50-ai"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-21-ibm-skillsbuild-data-fundamentals",
+    "candidate_id": "ibm-skillsbuild-data-fundamentals",
+    "review_id": "deep-25-ibm-skillsbuild-data-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Beginner data-analytics foundation with practical exercises, assessment and a free completion credential",
+    "comparison_set": [
+      "cisco-data-analytics-essentials"
+    ],
+    "incumbent_ids": [
+      "cisco-data-analytics-essentials"
+    ],
+    "decision_rationale": "IBM Data Fundamentals is a legitimate free seven-hour foundation with graded quizzes, final assessment, simulations and a free digital credential. It is nevertheless clearly outcompeted for the canonical data-analytics role by Cisco Data Analytics Essentials, whose roughly thirty-hour curriculum adds spreadsheets, SQL, Tableau, more than twenty labs, module exams, a final exam and portfolio-oriented analysis. IBM remains a good compact alternative, but the index does not need a second substantially narrower core slot for the same learning need.",
+    "marginal_value": "Adds a shorter multilingual credential-bearing entry route, but insufficient depth and practice to justify a separate canonical analytics slot beside Cisco.",
+    "provider_concentration_notes": "Provider concentration is not the deciding factor; the direct incumbent wins on depth, breadth and practice density.",
+    "coverage_notes": "Data-analytics foundations remain strongly covered by Cisco Data Analytics Essentials; excluding IBM creates no material coverage gap.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "cisco-data-analytics-essentials"
+    ],
+    "is_current": true
+  }
+]
