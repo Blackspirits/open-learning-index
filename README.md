@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **49 decisions: 24 admit / 25 do_not_admit**. Computer Science & Software, Marketing & Sales, Mathematics & Statistics, and Finance & Economics are complete in Phase 4, and the canonical set contains **41 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
+**Status:** v0.4 — Phase 4 head-to-head admission is in progress. **199 / 199 current `advance` candidates have Deep Review evidence.** Phase 4 now records **61 decisions: 32 admit / 29 do_not_admit**. Computer Science & Software, Marketing & Sales, Mathematics & Statistics, Finance & Economics, Business & Entrepreneurship, and Project, Product & Leadership are complete in Phase 4, and the canonical set contains **49 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -24,6 +24,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/admissions/batch-02-marketing-sales.md`](docs/admissions/batch-02-marketing-sales.md) — complete Marketing & Sales pass with explicit HubSpot concentration control.
 - [`docs/admissions/batch-03-mathematics.md`](docs/admissions/batch-03-mathematics.md) — complete Mathematics & Statistics pass with explicit redundancy and MIT-concentration control.
 - [`docs/admissions/batch-04-finance-economics.md`](docs/admissions/batch-04-finance-economics.md) — complete Finance & Economics pass with currentness-sensitive finance and policy comparisons.
+- [`docs/admissions/batch-05-business-leadership.md`](docs/admissions/batch-05-business-leadership.md) — complete Business & Entrepreneurship plus Project, Product & Leadership pass with explicit language-access and depth tests.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
