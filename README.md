@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **199 advance / 9 hold / 82 reject** after Phase 3 maintenance reconciliation. **198 current Deep Reviews** are complete: 12 calibration records plus 186 scaled reviews across twenty-one post-calibration batches; only `whoacademy-good-practices-clinical-trials` remains as a valid current `advance` without Deep Review.
+**Status:** v0.3 — Deep Review is complete; Phase 4 head-to-head admission is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **199 advance / 9 hold / 82 reject** after maintenance reconciliation. **199 / 199 current `advance` candidates have Deep Review evidence**: 12 calibration records plus 187 scaled reviews across twenty-two post-calibration batches. The nine current holds remain outside scoring until their blockers resolve.
 
 ## Goal
 
@@ -40,6 +40,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-19.md`](docs/reviews/scale-batch-19.md) — Mathematics & Statistics closure across the final specialist survivors.
 - [`docs/reviews/scale-batch-20.md`](docs/reviews/scale-batch-20.md) — AI & Data closure across the remaining Kaggle microcourses.
 - [`docs/reviews/scale-batch-21.md`](docs/reviews/scale-batch-21.md) — History & Culture closure across the final five ordinary survivors.
+- [`docs/reviews/scale-batch-22.md`](docs/reviews/scale-batch-22.md) — final WHO clinical-trials review and formal Phase 3 closure at 199/199 current advances.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
