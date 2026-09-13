@@ -1,0 +1,242 @@
+[
+  {
+    "admission_id": "admission-19-ableton-learning-music",
+    "candidate_id": "ableton-learning-music",
+    "review_id": "deep-19-ableton-learning-music",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Experiential introduction to rhythm, melody, harmony, basslines and song structure through direct browser creation",
+    "comparison_set": [
+      "ableton-learning-synths",
+      "musictheory-net-lessons"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Learning Music earns a core slot because its pedagogy is direct and productive: learners make beats, melodies and harmonies in the browser rather than only reading about them. It complements formal theory and synthesis rather than duplicating either.",
+    "marginal_value": "Adds beginner-friendly music creation and composition practice with almost no setup friction.",
+    "provider_concentration_notes": "Ableton has two admitted routes, but they cover separate competencies: musical construction versus synthesis/sound design.",
+    "coverage_notes": "Pairs naturally with musictheory.net for formal theory and Learning Synths for sound design.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-ableton-learning-synths",
+    "candidate_id": "ableton-learning-synths",
+    "review_id": "deep-19-ableton-learning-synths",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Interactive synthesis and sound-design fundamentals",
+    "comparison_set": [
+      "ableton-learning-music"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Learning Synths serves a distinct sound-design role through direct manipulation of a browser synthesizer. Oscillators, filters, envelopes and modulation become immediately audible and interactive, producing much stronger practice than a passive synthesis overview.",
+    "marginal_value": "Adds hands-on synthesis and timbre design not covered by the broader music-creation course.",
+    "provider_concentration_notes": "Second Ableton slot is justified by a materially separate learning outcome.",
+    "coverage_notes": "A specialist complement to Learning Music and formal theory.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-musictheory-net-lessons",
+    "candidate_id": "musictheory-net-lessons",
+    "review_id": "deep-19-musictheory-net-lessons",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Structured music theory, notation, harmony, ear training and configurable drills",
+    "comparison_set": [
+      "ableton-learning-music",
+      "ableton-learning-synths"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "musictheory.net is the strongest pure theory/practice system in the pool. Its sequence extends from notation and rhythm through scales, intervals, chords and analysis, while the exercise bank provides unusually deep identification, construction and ear-training practice.",
+    "marginal_value": "Adds formal theory and deliberate drill practice that the Ableton creation courses do not replace.",
+    "provider_concentration_notes": "Independent provider; no concentration concern.",
+    "coverage_notes": "Becomes the formal theory/ear-training anchor.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-figma-getting-started-design",
+    "candidate_id": "figma-getting-started-design",
+    "review_id": "deep-19-figma-getting-started-design",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Transferable digital-product and visual-design foundations with practical exercises",
+    "comparison_set": [
+      "canva-graphic-design-essentials"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Figma clearly wins the general digital-design comparison. The course goes beyond tool onboarding into audience research, ethics, accessibility, UI design, prototyping, design systems, wireframing, grids, color and composition with practical exercises.",
+    "marginal_value": "Adds a substantive transferable digital-design foundation rather than a short vendor tutorial.",
+    "provider_concentration_notes": "Figma is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Becomes the primary digital-design route; Canva remains a useful microcourse but not a core slot.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-khan-pixar-in-a-box",
+    "candidate_id": "khan-pixar-in-a-box",
+    "review_id": "deep-19-khan-pixar-in-a-box",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Animation, storytelling and technical-art reasoning through authentic production problems",
+    "comparison_set": [
+      "unity-creative-core"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Pixar in a Box remains exceptional because it teaches transferable creative/technical reasoning rather than a single software package. Fifteen units and 69 skills connect storytelling, lighting, simulation, color science, cameras, rigging, animation, modelling and rendering to authentic Pixar problems.",
+    "marginal_value": "Adds deep animation/storytelling and production reasoning that complements a current real-time toolchain.",
+    "provider_concentration_notes": "Khan also appears in Art History, but these are clearly separate learning roles.",
+    "coverage_notes": "Complements Unity rather than competing directly: Pixar teaches transferable production concepts; Unity teaches implementation in a current engine.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-unity-essentials",
+    "candidate_id": "unity-essentials",
+    "review_id": "deep-19-unity-essentials",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Zero-experience onboarding to real-time 3D creation in Unity",
+    "comparison_set": [
+      "unity-creative-core",
+      "khan-pixar-in-a-box"
+    ],
+    "incumbent_ids": [
+      "unity-junior-programmer"
+    ],
+    "decision_rationale": "Unity Essentials earns a slot as the explicit beginner entry to the creative Unity pathway. Its two-week project-led structure introduces GameObjects, scenes, prefabs, materials and editor workflows, and it materially lowers the prerequisite barrier to Creative Core.",
+    "marginal_value": "Adds a true zero-beginner real-time 3D onboarding route that the more advanced Creative Core and coding-focused Junior Programmer do not replace.",
+    "provider_concentration_notes": "Unity concentration is controlled by role: beginner creative onboarding, deeper creative production and programming are distinct pathways.",
+    "coverage_notes": "Forms a coherent sequence into Creative Core; complements the canonical Junior Programmer coding pathway.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "unity-junior-programmer"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-unity-creative-core",
+    "candidate_id": "unity-creative-core",
+    "review_id": "deep-19-unity-creative-core",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Project-heavy real-time 3D creative production across materials, lighting, animation, VFX, audio and UI",
+    "comparison_set": [
+      "unity-essentials",
+      "khan-pixar-in-a-box"
+    ],
+    "incumbent_ids": [
+      "unity-junior-programmer"
+    ],
+    "decision_rationale": "Creative Core is the strongest current real-time 3D creative pathway in the pool. Its ten-week Unity 6.x curriculum combines guided and independent projects across materials, lighting, animation, VFX, cameras, post-processing, audio, UI and prototyping.",
+    "marginal_value": "Adds a deep portfolio-oriented creative-production path distinct from programming and from Pixar's transferable production concepts.",
+    "provider_concentration_notes": "The second Arts Unity slot is justified as the substantive continuation after Essentials; Junior Programmer remains a separate coding role.",
+    "coverage_notes": "Pairs with Essentials as a sequence and with Pixar in a Box as conceptual/creative complement.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "unity-junior-programmer"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-khan-ap-college-art-history",
+    "candidate_id": "khan-ap-college-art-history",
+    "review_id": "deep-19-khan-ap-college-art-history",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad global art history and visual analysis",
+    "comparison_set": [
+      "openlearn-picturing-family"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Khan AP/College Art History is the broad category leader for art history. It spans ancient Mediterranean, Europe, Africa, Asia, Indigenous Americas, the Pacific and global contemporary traditions with strong visual-analysis materials and embedded practice.",
+    "marginal_value": "Adds a global art-history backbone with much broader geographic and chronological coverage than the narrow visual-source alternative.",
+    "provider_concentration_notes": "Second Khan Arts slot is justified by a separate academic art-history role from Pixar's production curriculum.",
+    "coverage_notes": "Becomes the canonical art-history/visual-analysis route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-openlearn-freelance-creative-arts",
+    "candidate_id": "openlearn-freelance-creative-arts",
+    "review_id": "deep-19-openlearn-freelance-creative-arts",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Career and business practice for creative freelancers",
+    "comparison_set": [
+      "figma-getting-started-design",
+      "khan-ap-college-art-history"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "A freelance career in the creative arts adds a professional-practice role absent from the technical and art-history courses. Its 24-hour sequence covers strengths, networks, audiences, promotion, investment, business structures and business-plan development with weekly quizzes and planning work.",
+    "marginal_value": "Adds career sustainability and business planning specifically for creative practitioners.",
+    "provider_concentration_notes": "OpenLearn appears widely across the index, but this is a distinct creative-career role rather than another content course.",
+    "coverage_notes": "Tax/legal/platform details need monitoring because the course was last updated in 2021; the broader career-planning pedagogy remains useful.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-canva-graphic-design-essentials",
+    "candidate_id": "canva-graphic-design-essentials",
+    "review_id": "deep-19-canva-graphic-design-essentials",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Very short certified introduction to graphic-design principles",
+    "comparison_set": [
+      "figma-getting-started-design"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Canva Graphic Design Essentials is current and legitimate, but 53 minutes is too little depth for a separate core slot when Figma provides a much broader transferable design curriculum with stronger practice. The free certificate does not compensate for scope.",
+    "marginal_value": "Adds low-friction onboarding and a certificate but insufficient sustained learning.",
+    "provider_concentration_notes": "Provider concentration is not the deciding factor.",
+    "coverage_notes": "Graphic-design foundations remain covered more substantively by the Figma route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "figma-getting-started-design"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-19-openlearn-picturing-family",
+    "candidate_id": "openlearn-picturing-family",
+    "review_id": "deep-19-openlearn-picturing-family",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Visual-source criticism through historical family photography",
+    "comparison_set": [
+      "khan-ap-college-art-history",
+      "openlearn-what-do-historians-do"
+    ],
+    "incumbent_ids": [
+      "openlearn-what-do-historians-do"
+    ],
+    "decision_rationale": "Picturing the family is thoughtful and useful, but its narrow photographic-source role is already substantially covered by the broader Khan art-history visual-analysis route and the canonical OpenLearn historical-method course. Its older currentness score further reduces marginal value.",
+    "marginal_value": "Adds focused family-photography interpretation but not enough unique core coverage.",
+    "provider_concentration_notes": "OpenLearn concentration reinforces the redundancy decision.",
+    "coverage_notes": "Remains a reviewed specialist for learners specifically interested in family photography as historical evidence.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "khan-ap-college-art-history"
+    ],
+    "is_current": true
+  }
+]
