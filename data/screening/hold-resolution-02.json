@@ -7,22 +7,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://academy.hubspot.com/courses/inbound-marketing-optimization",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free HubSpot Academy certification",
     "completeness": "complete",
-    "evidence": [
-      "https://academy.hubspot.com/courses/inbound-marketing-optimization"
-    ],
+    "evidence": ["https://academy.hubspot.com/courses/inbound-marketing-optimization"],
     "rationale": "The course remains current and substantial at roughly 4.5 hours with nine lessons and certification, but analytics, customer insight, conversational marketing, CRO and UX substantially overlap stronger HubSpot specialists already advancing. Provider concentration and limited incremental value outweigh another finalist slot.",
-    "flags": [
-      "provider-concentration",
-      "redundancy-resolved",
-      "4-plus-hours",
-      "free-certificate"
-    ],
+    "flags": ["provider-concentration", "redundancy-resolved", "4-plus-hours", "free-certificate"],
     "is_current": true,
     "supersedes_screen_id": "shallow-02-hubspot-inbound-marketing-optimization"
   },
@@ -34,22 +25,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/money-business/companies-and-financial-accounting/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/money-business/companies-and-financial-accounting/"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/money-business/companies-and-financial-accounting/"],
     "rationale": "This six-hour adapted extract is valid and free, but its company-law and reporting context is narrower and more jurisdiction-sensitive than the stronger accounting foundations already advancing. It adds insufficient marginal value for deep review.",
-    "flags": [
-      "adapted-extract",
-      "6-hours",
-      "jurisdiction-sensitive",
-      "redundancy-resolved"
-    ],
+    "flags": ["adapted-extract", "6-hours", "jurisdiction-sensitive", "redundancy-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-02-openlearn-companies-financial-accounting"
   },
@@ -61,23 +43,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "substantive",
-    "evidence": [
-      "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/",
-      "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/pages/assignments/"
-    ],
+    "evidence": ["https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/", "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/pages/assignments/"],
     "rationale": "The assignments and personal leadership plan are strong, but the public package is assignment/readings-led and depends heavily on seminar, group and Outward Bound experiences that independent learners cannot reproduce. Current, more self-contained leadership alternatives are stronger.",
-    "flags": [
-      "archive-course",
-      "limited-teaching-media",
-      "independent-route-weaker",
-      "redundancy-resolved"
-    ],
+    "flags": ["archive-course", "limited-teaching-media", "independent-route-weaker", "redundancy-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-02-mit-ids-910-leadership-development-2014"
   },
@@ -89,23 +61,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "substantive",
-    "evidence": [
-      "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/",
-      "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/pages/assignments/"
-    ],
+    "evidence": ["https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/", "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/pages/assignments/"],
     "rationale": "The writing, presentation and feedback assignments are useful, but the public OCW package contains little direct teaching and much of the learning depends on class/lab participation and recorded presentations. The pool already has more self-contained communication pathways, including another MIT course.",
-    "flags": [
-      "archive-course",
-      "limited-teaching-media",
-      "class-participation-dependent",
-      "redundancy-resolved"
-    ],
+    "flags": ["archive-course", "limited-teaching-media", "class-participation-dependent", "redundancy-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-02-mit-15-280-communication-managers"
   },
@@ -117,21 +79,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://whoacademy.org/coursewares/course-v1%3AWHOA%2B0094_OH_EN%2B2024?from=discovery&source=edX",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No free formal completion credential verified",
     "completeness": "complete",
-    "evidence": [
-      "https://extranet.who.int/sph/one-health-basics-course-launch-who-academy"
-    ],
+    "evidence": ["https://extranet.who.int/sph/one-health-basics-course-launch-who-academy"],
     "rationale": "The WHO framing is authoritative and current, but an approximately 1.5-hour introductory overview is too small to compete for a best-course slot when the health pool already contains longer specialist professional pathways. Provider authority does not substitute for depth.",
-    "flags": [
-      "short-course",
-      "introductory-depth",
-      "provider-prestige-not-sufficient"
-    ],
+    "flags": ["short-course", "introductory-depth", "provider-prestige-not-sufficient"],
     "is_current": true,
     "supersedes_screen_id": "shallow-03-whoacademy-one-health-basics"
   },
@@ -143,24 +97,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://school-education.ec.europa.eu/en/learn/courses/developing-students-ai-literacy",
     "observed_free_access": "UNVERIFIED",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Digital course certificate confirmed; zero-cost enrolment remains unproven for this specific course",
     "completeness": "complete",
-    "evidence": [
-      "https://school-education.ec.europa.eu/en/learn/courses/developing-students-ai-literacy",
-      "https://school-education.ec.europa.eu/en/discover/news/new-self-paced-courses-teachers-and-education-professionals"
-    ],
+    "evidence": ["https://school-education.ec.europa.eu/en/learn/courses/developing-students-ai-literacy", "https://school-education.ec.europa.eu/en/discover/news/new-self-paced-courses-teachers-and-education-professionals"],
     "rationale": "The course is exceptionally current, self-paced and 15–20 hours with certificate mechanics, and the platform offers free-of-charge course series. However, the specific course page still does not explicitly establish zero-cost enrolment, so the project will not infer F0 from platform practice alone.",
-    "flags": [
-      "updated-2026",
-      "15-20-hours",
-      "certificate-confirmed",
-      "free-access-unverified",
-      "carry-forward-hold"
-    ],
+    "flags": ["updated-2026", "15-20-hours", "certificate-confirmed", "free-access-unverified", "carry-forward-hold"],
     "is_current": true,
     "supersedes_screen_id": "hold-resolution-01-esep-developing-students-ai-literacy"
   },
@@ -172,21 +115,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122"
-    ],
+    "evidence": ["https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122"],
     "rationale": "The 2009 course is broad and pedagogically strong, but it explicitly presents then-recent advances across ecology, evolution and behaviour. Seventeen years of empirical research make the evidence layer too dated for a best-current science index when newer alternatives exist.",
-    "flags": [
-      "archive-course",
-      "recorded-2009",
-      "empirical-science-currency-failure"
-    ],
+    "flags": ["archive-course", "recorded-2009", "empirical-science-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-05-yale-eeb-122-evolution-ecology-behavior"
   },
@@ -198,21 +133,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://oyc.yale.edu/philosophy/phil-181",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://oyc.yale.edu/philosophy/phil-181"
-    ],
+    "evidence": ["https://oyc.yale.edu/philosophy/phil-181"],
     "rationale": "The philosophical questions remain valuable, but the course intentionally integrates contemporary cognitive-science findings from an old evidence base. Because the empirical component is central rather than incidental, the archive no longer clears the project's currentness bar.",
-    "flags": [
-      "archive-course",
-      "cognitive-science-currency-failure",
-      "mixed-philosophy-empirical-course"
-    ],
+    "flags": ["archive-course", "cognitive-science-currency-failure", "mixed-philosophy-empirical-course"],
     "is_current": true,
     "supersedes_screen_id": "shallow-06-yale-phil-181-human-nature"
   },
@@ -224,22 +151,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://oyc.yale.edu/political-science/plsc-270",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://oyc.yale.edu/political-science/plsc-270"
-    ],
+    "evidence": ["https://oyc.yale.edu/political-science/plsc-270"],
     "rationale": "The interdisciplinary treatment is substantial, but its framing is anchored to the 2008 financial crisis and predates major subsequent economic, regulatory and political developments. The economics pool now contains much newer rigorous alternatives, so deep review is not justified.",
-    "flags": [
-      "archive-course",
-      "2008-crisis-framing",
-      "economics-currency-failure",
-      "newer-alternatives"
-    ],
+    "flags": ["archive-course", "2008-crisis-framing", "economics-currency-failure", "newer-alternatives"],
     "is_current": true,
     "supersedes_screen_id": "shallow-06-yale-plsc-270-capitalism"
   },
@@ -251,21 +169,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/money-business/mses-academy-money",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation and digital badge",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/money-business/mses-academy-money"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/money-business/mses-academy-money"],
     "rationale": "The 12-hour course is practical and well structured, but UK tax, borrowing, mortgage, investment and pension guidance is highly jurisdiction- and date-sensitive and the course has not been refreshed since 2022. Current alternatives reduce the case for carrying this risk into deep review.",
-    "flags": [
-      "uk-specific",
-      "last-updated-2022",
-      "personal-finance-currency-failure"
-    ],
+    "flags": ["uk-specific", "last-updated-2022", "personal-finance-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-06-openlearn-mse-academy-of-money"
   },
@@ -277,24 +187,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://learn.saylor.org/course/bus205",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Saylor course completion certificate; optional ACE-credit exam has a separate proctoring fee",
     "completeness": "complete",
-    "evidence": [
-      "https://learn.saylor.org/mod/page/view.php?id=89920",
-      "https://learn.saylor.org/course/bus205"
-    ],
+    "evidence": ["https://learn.saylor.org/mod/page/view.php?id=89920", "https://learn.saylor.org/course/bus205"],
     "rationale": "The current syllabus was modified in October 2025 and documents a 39-hour US business-law course across ten units, free assessments, a free certificate and explicit faculty review of AI-assisted material. Jurisdiction specificity becomes a deep-review scoring factor rather than an unresolved currency blocker.",
-    "flags": [
-      "us-law",
-      "39-hours",
-      "last-modified-2025",
-      "free-certificate",
-      "jurisdiction-specific"
-    ],
+    "flags": ["us-law", "39-hours", "last-modified-2025", "free-certificate", "jurisdiction-specific"],
     "is_current": true,
     "supersedes_screen_id": "shallow-06-saylor-bus205-business-law"
   },
@@ -306,21 +205,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/society-politics-law/politics/the-scottish-parliament-and-law-making/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University digital badge and Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/society-politics-law/politics/the-scottish-parliament-and-law-making/"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/society-politics-law/politics/the-scottish-parliament-and-law-making/"],
     "rationale": "The eight-week course is substantial, but it remains a 2020 treatment of Scottish and UK constitutional and legislative relationships. In a jurisdiction-sensitive area with post-2020 constitutional developments, the stale legal frame is too material for a best-current index.",
-    "flags": [
-      "scotland-specific",
-      "last-updated-2020",
-      "legal-currency-failure"
-    ],
+    "flags": ["scotland-specific", "last-updated-2020", "legal-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-06-openlearn-scottish-parliament-law-making"
   },
@@ -332,24 +223,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "pt-PT"
-    ],
+    "instruction_languages": ["pt-PT"],
     "subtitle_languages": [],
     "credential": "Free NAU completion certificate after at least 75% in activities",
     "completeness": "complete",
-    "evidence": [
-      "https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/"
-    ],
+    "evidence": ["https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/"],
     "rationale": "The four-hour pt-PT course is active, assessed and certified, covering EU consumer rights, online fraud, platforms and payment methods. However, the public page exposes no reliable update date for this combined legal/cyber topic, so currentness cannot be safely inferred from continued availability.",
-    "flags": [
-      "pt-pt",
-      "4-hours",
-      "eu-consumer-law",
-      "cybersecurity-currency-review",
-      "update-date-unverified",
-      "carry-forward-hold"
-    ],
+    "flags": ["pt-pt", "4-hours", "eu-consumer-law", "cybersecurity-currency-review", "update-date-unverified", "carry-forward-hold"],
     "is_current": false,
     "supersedes_screen_id": "shallow-06-nau-consumidor-ciberseguro"
   },
@@ -361,23 +241,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://course.fast.ai/",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal free completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://course.fast.ai/"
-    ],
+    "evidence": ["https://course.fast.ai/"],
     "rationale": "The flagship Part 1 is explicitly the 2022 edition, so currency must be penalised, but the course remains a complete project-first route with nine long lessons, interactive notebooks, a free book, free compute guidance and durable PyTorch/fastai/Transformers practice. Its exceptional pedagogy still merits deep review rather than automatic rejection by age.",
-    "flags": [
-      "recorded-2022",
-      "ai-currency-penalty",
-      "project-first",
-      "free-book",
-      "no-formal-credential"
-    ],
+    "flags": ["recorded-2022", "ai-currency-penalty", "project-first", "free-book", "no-formal-credential"],
     "is_current": true,
     "supersedes_screen_id": "shallow-07-fastai-practical-deep-learning"
   },
@@ -389,22 +259,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://learn.microsoft.com/en-us/training/courses/ai-901t00",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Microsoft Learn achievements; related professional certification is separate",
     "completeness": "complete",
-    "evidence": [
-      "https://learn.microsoft.com/en-us/training/courses/ai-901t00"
-    ],
+    "evidence": ["https://learn.microsoft.com/en-us/training/courses/ai-901t00"],
     "rationale": "The one-day course is current and widely localised, but its syllabus now routes learners into the stronger seven-module AI Concepts path and an Azure applications/agents path already represented in the pool. The standalone AI-901 record adds too little beyond those current Microsoft pathways.",
-    "flags": [
-      "vendor-ecosystem",
-      "one-day-course",
-      "redundancy-resolved",
-      "paid-certification-separate"
-    ],
+    "flags": ["vendor-ecosystem", "one-day-course", "redundancy-resolved", "paid-certification-separate"],
     "is_current": true,
     "supersedes_screen_id": "shallow-07-microsoft-learn-ai-901"
   },
@@ -416,24 +277,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://huggingface.co/learn/audio-course/en/chapter0/introduction",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Hugging Face completion or excellence certificate based on hands-on assignments",
     "completeness": "complete",
-    "evidence": [
-      "https://huggingface.co/learn/audio-course/en/chapter0/introduction",
-      "https://huggingface.co/learn/audio-course/chapter8/certification"
-    ],
+    "evidence": ["https://huggingface.co/learn/audio-course/en/chapter0/introduction", "https://huggingface.co/learn/audio-course/chapter8/certification"],
     "rationale": "The course originated in 2023, but the full eight-unit route, four hands-on assignments and completely free certification workflow remain live in 2026. Library/model age should be penalised during deep review, but current operational assessment and specialist practical depth justify advancement.",
-    "flags": [
-      "published-2023",
-      "ai-currency-penalty",
-      "hands-on-assignments",
-      "free-certificate",
-      "specialist-audio"
-    ],
+    "flags": ["published-2023", "ai-currency-penalty", "hands-on-assignments", "free-certificate", "specialist-audio"],
     "is_current": true,
     "supersedes_screen_id": "shallow-07-huggingface-audio-course"
   },
@@ -445,23 +295,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://oyc.yale.edu/history/hist-251",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://oyc.yale.edu/history/hist-251"
-    ],
+    "evidence": ["https://oyc.yale.edu/history/hist-251"],
     "rationale": "The 2009 course remains academically substantial, but it is another narrow Western archive specialist in a history pool already rich in Yale material. With broader and more diverse history survivors available, its marginal coverage value does not justify further review.",
-    "flags": [
-      "archive-course",
-      "recorded-2009",
-      "western-canon",
-      "provider-concentration",
-      "redundancy-resolved"
-    ],
+    "flags": ["archive-course", "recorded-2009", "western-canon", "provider-concentration", "redundancy-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-08-yale-hist-251-early-modern-england"
   },
@@ -473,21 +313,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://oyc.yale.edu/history/hist-276",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://oyc.yale.edu/history/hist-276"
-    ],
+    "evidence": ["https://oyc.yale.edu/history/hist-276"],
     "rationale": "Recorded in 2007, the course presents modern France through material and contemporary commentary that stop nearly two decades short of 2026. For a course whose title and framing reach toward the present, that temporal gap is too large for a best-current index.",
-    "flags": [
-      "archive-course",
-      "recorded-2007",
-      "modern-history-currency-failure"
-    ],
+    "flags": ["archive-course", "recorded-2007", "modern-history-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-08-yale-hist-276-france-since-1871"
   },
@@ -499,22 +331,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/society-politics-law/human-rights-and-law/content-section-0",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/society-politics-law/human-rights-and-law/content-section-0"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/society-politics-law/human-rights-and-law/content-section-0"],
     "rationale": "The 20-hour course has solid historical foundations, but its legal implementation sections were last updated in 2019 and include UK human-rights law. Current HELP and WIPO survivors offer much fresher legal material, so the old jurisdiction-sensitive course no longer warrants deep review.",
-    "flags": [
-      "last-updated-2019",
-      "uk-law",
-      "legal-currency-failure",
-      "taxonomy-mismatch-resolved"
-    ],
+    "flags": ["last-updated-2019", "uk-law", "legal-currency-failure", "taxonomy-mismatch-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-08-openlearn-human-rights-law"
   },
@@ -526,21 +349,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey/content-section-0"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/money-business/leadership-management/project-management-the-start-the-project-journey/content-section-0"],
     "rationale": "This is a substantial 35-hour advanced course, but it was last updated in 2016. Project-management practice, agile methods and software-development workflows have moved enough that the age penalty is material when current alternatives are available.",
-    "flags": [
-      "35-hours",
-      "last-updated-2016",
-      "project-management-currency-failure"
-    ],
+    "flags": ["35-hours", "last-updated-2016", "project-management-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-08-openlearn-project-management-journey"
   },
@@ -552,22 +367,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=1286",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": [
-      "https://learn.saylor.org/course/view.php?id=1286"
-    ],
+    "evidence": ["https://learn.saylor.org/course/view.php?id=1286"],
     "rationale": "The nine-hour course is current, free and coherent, but its motivation, collaboration, team formation and conflict material overlaps stronger leadership and team-management survivors. It is useful learning without being necessary in a selective finalist pool.",
-    "flags": [
-      "9-hours",
-      "free-certificate",
-      "redundancy-resolved",
-      "team-leadership"
-    ],
+    "flags": ["9-hours", "free-certificate", "redundancy-resolved", "team-leadership"],
     "is_current": true,
     "supersedes_screen_id": "shallow-08-saylor-prdv224-leadership-teams"
   },
@@ -579,23 +385,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://learn.saylor.org/course/view.php?id=1309",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Saylor course completion certificate",
     "completeness": "complete",
-    "evidence": [
-      "https://learn.saylor.org/course/view.php?id=1309",
-      "https://learn.saylor.org/mod/page/view.php?id=96392"
-    ],
+    "evidence": ["https://learn.saylor.org/course/view.php?id=1309", "https://learn.saylor.org/mod/page/view.php?id=96392"],
     "rationale": "The current 11-hour course has a distinctive virtue-ethics and servant-leadership focus, structured assessment and a free certificate. Unlike the more generic team-leadership duplicate, its ethical-leadership specialisation adds a genuinely different comparison target.",
-    "flags": [
-      "11-hours",
-      "ethical-leadership",
-      "free-certificate",
-      "specialist-scope"
-    ],
+    "flags": ["11-hours", "ethical-leadership", "free-certificate", "specialist-scope"],
     "is_current": true,
     "supersedes_screen_id": "shallow-08-saylor-prdv231-ethical-leadership"
   },
@@ -607,22 +403,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://oyc.yale.edu/biomedical-engineering/beng-100",
     "observed_free_access": "F2_CONTENT_ONLY",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "No formal completion credential",
     "completeness": "complete",
-    "evidence": [
-      "https://oyc.yale.edu/biomedical-engineering/beng-100"
-    ],
+    "evidence": ["https://oyc.yale.edu/biomedical-engineering/beng-100"],
     "rationale": "The 25-lecture course is academically rich, but it was recorded in 2008 and explicitly covers medical technologies, drug delivery, tissue engineering, patents and FDA approval. Scientific, technological and regulatory change since then is too extensive for a best-current biomedical engineering candidate.",
-    "flags": [
-      "archive-course",
-      "recorded-2008",
-      "biomedical-currency-failure",
-      "regulatory-currency-failure"
-    ],
+    "flags": ["archive-course", "recorded-2008", "biomedical-currency-failure", "regulatory-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-09-yale-beng-100-biomedical-engineering"
   },
@@ -634,22 +421,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://matlabacademy.mathworks.com/details/stateflow-onramp/stateflow",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free MathWorks course certificate",
     "completeness": "complete",
-    "evidence": [
-      "https://matlabacademy.mathworks.com/details/stateflow-onramp/stateflow"
-    ],
+    "evidence": ["https://matlabacademy.mathworks.com/details/stateflow-onramp/stateflow"],
     "rationale": "The browser-based state-machine practice is current and well designed, but Stateflow is a narrow proprietary extension of Simulink. With broader MATLAB/Simulink and engineering pathways already surviving, the marginal transferable value is too small for another vendor-specific finalist.",
-    "flags": [
-      "vendor-tool-specific",
-      "specialist-scope",
-      "redundancy-resolved",
-      "free-certificate"
-    ],
+    "flags": ["vendor-tool-specific", "specialist-scope", "redundancy-resolved", "free-certificate"],
     "is_current": true,
     "supersedes_screen_id": "shallow-09-mathworks-stateflow-onramp"
   },
@@ -661,23 +439,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free MathWorks course certificate",
     "completeness": "complete",
-    "evidence": [
-      "https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing"
-    ],
+    "evidence": ["https://matlabacademy.mathworks.com/details/image-processing-onramp/imageprocessing"],
     "rationale": "The course has real interactive practice in segmentation, filtering and morphology, but it is tightly MATLAB-specific and the pool already contains stronger transferable image/AI and MathWorks pathways. Provider concentration and transferability resolve the hold toward rejection.",
-    "flags": [
-      "vendor-tool-specific",
-      "image-processing",
-      "transferability-penalty",
-      "redundancy-resolved",
-      "free-certificate"
-    ],
+    "flags": ["vendor-tool-specific", "image-processing", "transferability-penalty", "redundancy-resolved", "free-certificate"],
     "is_current": true,
     "supersedes_screen_id": "shallow-09-mathworks-image-processing-onramp"
   },
@@ -689,22 +457,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/history-the-arts/art-and-visual-culture-medieval-modern"],
     "rationale": "The ten-hour intermediate course remains useful, but it is an adapted extract last updated in 2018 and explicitly centres a Western medieval-to-modern survey. The broader, more global art-history survivors provide stronger coverage with less canonical concentration.",
-    "flags": [
-      "10-hours",
-      "last-updated-2018",
-      "western-canon",
-      "redundancy-resolved"
-    ],
+    "flags": ["10-hours", "last-updated-2018", "western-canon", "redundancy-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-09-openlearn-art-visual-culture"
   },
@@ -716,22 +475,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/history-the-arts/recording-music-and-sound/content-section-0",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/history-the-arts/recording-music-and-sound/content-section-0"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/history-the-arts/recording-music-and-sound/content-section-0"],
     "rationale": "The eight-hour course still teaches durable microphone and recording-log fundamentals, but it was last updated in 2018 and mixes history with technology-sensitive practical guidance. More current interactive music/audio learning already survives, so this course no longer clears the comparative bar.",
-    "flags": [
-      "8-hours",
-      "last-updated-2018",
-      "technology-currency-penalty",
-      "redundancy-resolved"
-    ],
+    "flags": ["8-hours", "last-updated-2018", "technology-currency-penalty", "redundancy-resolved"],
     "is_current": true,
     "supersedes_screen_id": "shallow-09-openlearn-recording-music-sound"
   },
@@ -743,23 +493,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.life-global.org/course/318-social-entrepreneurship",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free HP LIFE Certificate of Completion",
     "completeness": "complete",
-    "evidence": [
-      "https://www.life-global.org/course/318-social-entrepreneurship",
-      "https://www.life-global.org/en/help"
-    ],
+    "evidence": ["https://www.life-global.org/course/318-social-entrepreneurship", "https://www.life-global.org/en/help"],
     "rationale": "The social-impact angle is useful, but HP LIFE delivers it as a compact practical course while the entrepreneurship pool already contains substantially deeper current pathways. The distinctive theme does not overcome the depth gap for a top-tier shortlist.",
-    "flags": [
-      "social-entrepreneurship",
-      "compact-course",
-      "depth-comparison-resolved",
-      "free-certificate"
-    ],
+    "flags": ["social-entrepreneurship", "compact-course", "depth-comparison-resolved", "free-certificate"],
     "is_current": true,
     "supersedes_screen_id": "shallow-10-hp-life-social-entrepreneurship"
   },
@@ -771,23 +511,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.life-global.org/course/16-design-thinking",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free HP LIFE Certificate of Completion",
     "completeness": "complete",
-    "evidence": [
-      "https://www.life-global.org/course/16-design-thinking",
-      "https://www.life-global.org/en/help"
-    ],
+    "evidence": ["https://www.life-global.org/course/16-design-thinking", "https://www.life-global.org/en/help"],
     "rationale": "The human-centred method is transferable, but the HP LIFE treatment is compact and sits beside much deeper innovation, entrepreneurship and design candidates. A free certificate is not enough to justify another short pathway where the learning outcomes are already covered more substantially.",
-    "flags": [
-      "design-thinking",
-      "compact-course",
-      "depth-comparison-resolved",
-      "free-certificate"
-    ],
+    "flags": ["design-thinking", "compact-course", "depth-comparison-resolved", "free-certificate"],
     "is_current": true,
     "supersedes_screen_id": "shallow-10-hp-life-design-thinking"
   },
@@ -799,23 +529,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/society-politics-law/law/legal-skills-and-debates-scotland/content-section-overview",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University digital badge, Statement of Participation and 24 CPD points",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/society-politics-law/law/legal-skills-and-debates-scotland/content-section-overview"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/society-politics-law/law/legal-skills-and-debates-scotland/content-section-overview"],
     "rationale": "The 24-hour badged course has strong legal-skills pedagogy, but its substantive examples, courts and human-rights context are Scotland-specific and were last updated in 2020. For law, that jurisdictional staleness outweighs the otherwise strong learning design.",
-    "flags": [
-      "24-hours",
-      "scotland-specific",
-      "last-updated-2020",
-      "legal-currency-failure",
-      "badged-course"
-    ],
+    "flags": ["24-hours", "scotland-specific", "last-updated-2020", "legal-currency-failure", "badged-course"],
     "is_current": true,
     "supersedes_screen_id": "shallow-10-openlearn-legal-skills-debates-scotland"
   },
@@ -827,22 +547,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.coe.int/en/web/help/-/freedom-of-expression-a-help-available-now-in-our-online-plaftorm-for-free",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free electronic HELP Statement of Accomplishment",
     "completeness": "complete",
-    "evidence": [
-      "https://www.coe.int/en/web/help/-/freedom-of-expression-a-help-available-now-in-our-online-plaftorm-for-free"
-    ],
+    "evidence": ["https://www.coe.int/en/web/help/-/freedom-of-expression-a-help-available-now-in-our-online-plaftorm-for-free"],
     "rationale": "The course was rebuilt in 2020 with strong Council of Europe and ECtHR expertise, but no newer official update was found. Article 10 case law is continuously developing, and the pool already contains HELP legal courses explicitly updated in 2026; this older version no longer clears the legal-currentness bar.",
-    "flags": [
-      "article-10",
-      "last-updated-2020",
-      "legal-currency-failure",
-      "newer-help-alternatives"
-    ],
+    "flags": ["article-10", "last-updated-2020", "legal-currency-failure", "newer-help-alternatives"],
     "is_current": true,
     "supersedes_screen_id": "shallow-10-coe-help-freedom-expression"
   },
@@ -854,22 +565,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/health-sports-psychology/lottery-birth",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/health-sports-psychology/lottery-birth"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/health-sports-psychology/lottery-birth"],
     "rationale": "The postgraduate interdisciplinary design is valuable, but the course was last updated in May 2020 and depends on demographic projections, health inequalities and policy responses that have materially changed. Its empirical/current-affairs layer is too central to ignore.",
-    "flags": [
-      "postgraduate-level",
-      "last-updated-2020",
-      "demography-currency-failure",
-      "health-policy-currency-failure"
-    ],
+    "flags": ["postgraduate-level", "last-updated-2020", "demography-currency-failure", "health-policy-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-11-openlearn-lottery-of-birth"
   },
@@ -881,24 +583,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Microsoft Learn progress and module pass designations; no formal free certificate claimed",
     "completeness": "complete",
-    "evidence": [
-      "https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/"
-    ],
+    "evidence": ["https://learn.microsoft.com/en-us/training/paths/ai-security-fundamentals/"],
     "rationale": "At 2 hours 10 minutes the path is short, but it is unusually current and tightly scoped: three assessed modules cover prompt injection, jailbreaking, model manipulation, data exfiltration, AI security controls and red-team testing. The specialist currency and coherent scope justify deep comparison despite the duration penalty.",
-    "flags": [
-      "ai-security",
-      "2-hours-10-minutes",
-      "fast-moving-content",
-      "assessed",
-      "vendor-authored",
-      "depth-penalty"
-    ],
+    "flags": ["ai-security", "2-hours-10-minutes", "fast-moving-content", "assessed", "vendor-authored", "depth-penalty"],
     "is_current": true,
     "supersedes_screen_id": "shallow-11-microsoft-learn-ai-security-fundamentals"
   },
@@ -910,22 +601,13 @@
     "screened_on": "2026-09-12",
     "canonical_url": "https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0",
     "observed_free_access": "F0_FULL_CREDENTIAL",
-    "instruction_languages": [
-      "en"
-    ],
+    "instruction_languages": ["en"],
     "subtitle_languages": [],
     "credential": "Free Open University Statement of Participation",
     "completeness": "complete",
-    "evidence": [
-      "https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0"
-    ],
+    "evidence": ["https://www.open.edu/openlearn/health-sports-psychology/living-psychology-animal-minds/content-section-0"],
     "rationale": "The 12-hour comparative-psychology course is methodologically interesting, but it was last updated in 2018 and relies centrally on empirical animal-cognition and Theory-of-Mind studies. The evidence base has moved enough that the course should not compete as a best-current psychology resource.",
-    "flags": [
-      "12-hours",
-      "last-updated-2018",
-      "comparative-psychology",
-      "scientific-currency-failure"
-    ],
+    "flags": ["12-hours", "last-updated-2018", "comparative-psychology", "scientific-currency-failure"],
     "is_current": true,
     "supersedes_screen_id": "shallow-11-openlearn-living-psychology-animal-minds"
   }
