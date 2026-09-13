@@ -1,0 +1,277 @@
+[
+  {
+    "admission_id": "admission-15-language-transfer-complete-spanish",
+    "candidate_id": "language-transfer-complete-spanish",
+    "review_id": "deep-08-language-transfer-complete-spanish",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Free structural Spanish foundation with intensive prompted oral production",
+    "comparison_set": [
+      "openlearn-how-learn-language",
+      "tv5monde-premiere-classe-french"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Complete Spanish provides unusually strong structural reasoning through 90 active-recall audio tracks. It is not a full four-skill curriculum, but the Thinking Method creates genuine production practice and no current surviving Spanish course matches its depth and accessibility.",
+    "marginal_value": "Adds a strong Spanish structural foundation with a distinctive active-recall method.",
+    "provider_concentration_notes": "Language Transfer also wins Greek and Swahili, but these serve different target-language needs; concentration does not make one language a substitute for another.",
+    "coverage_notes": "Should be complemented with reading, writing, vocabulary expansion and authentic listening.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-language-transfer-complete-greek",
+    "candidate_id": "language-transfer-complete-greek",
+    "review_id": "deep-08-language-transfer-complete-greek",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Deep free modern-Greek structural and oral foundation",
+    "comparison_set": [
+      "language-transfer-complete-spanish",
+      "language-transfer-complete-swahili"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Complete Greek offers 120 tracks of rare free structural depth in a language with few comparable open pathways. The same four-skill limitations as other Language Transfer courses apply, but its active construction practice and accessibility independently clear the admission bar.",
+    "marginal_value": "Adds high-quality Greek coverage that would otherwise be absent from the canonical set.",
+    "provider_concentration_notes": "Same-provider concentration is accepted because Greek is a distinct language-learning need with no equivalent survivor.",
+    "coverage_notes": "Best used as a structural/oral base supplemented by reading and authentic input.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-language-transfer-complete-swahili",
+    "candidate_id": "language-transfer-complete-swahili",
+    "review_id": "deep-08-language-transfer-complete-swahili",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Free Swahili structural and oral foundation in an underserved language",
+    "comparison_set": [
+      "language-transfer-complete-greek",
+      "language-transfer-complete-spanish"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Complete Swahili combines 110 tracks, guided sentence construction and strong oral/structural practice in a language with limited high-quality open alternatives. The format is narrow, but the coverage and pedagogy are valuable enough to warrant a separate slot.",
+    "marginal_value": "Adds substantive Swahili coverage and improves geographic/language diversity without lowering the quality bar.",
+    "provider_concentration_notes": "The Language Transfer concentration is justified by genuinely distinct target-language coverage.",
+    "coverage_notes": "Requires external reading, writing and broader vocabulary/authentic-input practice for balanced proficiency.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-minato-marugoto-a1-1-integrated",
+    "candidate_id": "minato-marugoto-a1-1-integrated",
+    "review_id": "deep-08-minato-marugoto-a1-1-integrated",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Integrated four-skill beginner Japanese with explicit communicative outcomes",
+    "comparison_set": [
+      "dw-nicos-weg-a1-b1",
+      "tv5monde-premiere-classe-french"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Marugoto A1-1 is the strongest beginner Japanese route in the current pool. Its 48-hour design integrates speaking, listening, reading and writing with Can-do outcomes, assignments, tests and a completion threshold, while remaining freely accessible.",
+    "marginal_value": "Adds a rigorous four-skill Japanese beginner pathway with strong assessment and current availability.",
+    "provider_concentration_notes": "Japan Foundation is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Scope is A1-1 rather than a complete multi-level Japanese curriculum; later stages can be considered separately if needed.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-tv5monde-premiere-classe-french",
+    "candidate_id": "tv5monde-premiere-classe-french",
+    "review_id": "deep-08-tv5monde-premiere-classe-french",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Authentic-media French A1 for absolute beginners",
+    "comparison_set": [
+      "dw-nicos-weg-a1-b1",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Première classe is an unusually strong A1 route with more than 500 authentic-video exercises, autocorrection, progress support, pronunciation, grammar, vocabulary and multilingual beginner assistance. Its A1-only scope is clear, but its practice and materials are excellent.",
+    "marginal_value": "Adds high-quality beginner French based on authentic media and dense interactive practice.",
+    "provider_concentration_notes": "TV5MONDE is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Best current French beginner survivor; later-level French coverage remains outside this course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-dw-nicos-weg-a1-b1",
+    "candidate_id": "dw-nicos-weg-a1-b1",
+    "review_id": "deep-08-dw-nicos-weg-a1-b1",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Complete free German progression from A1 through B1",
+    "comparison_set": [
+      "tv5monde-premiere-classe-french",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Nicos Weg is the category leader for pathway completeness: a story-driven A1–B1 progression with video/audio, grammar, vocabulary, comprehension, extensive exercises and tests. Its breadth and coherence make it one of the strongest language-learning resources in the entire index.",
+    "marginal_value": "Adds a multi-level German pathway with exceptional completeness and independent-study usability.",
+    "provider_concentration_notes": "Deutsche Welle is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Provides the strongest complete CEFR-spanning target-language route in the current family.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-openlearn-how-learn-language",
+    "candidate_id": "openlearn-how-learn-language",
+    "review_id": "deep-08-openlearn-how-learn-language",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Language-learning strategy, motivation and autonomous-study skills across any target language",
+    "comparison_set": [
+      "dw-nicos-weg-a1-b1",
+      "language-transfer-complete-spanish"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "How to learn a language occupies a unique metacognitive role rather than teaching one target language. Its 24-hour eight-week route covers goals, motivation, vocabulary, all four skills, resource evaluation, virtual immersion, routines and support networks with quizzes and a free badge.",
+    "marginal_value": "Improves the effectiveness of nearly every target-language pathway in the canonical set.",
+    "provider_concentration_notes": "OpenLearn is represented in other categories, but this cross-language learning-strategy role is distinct.",
+    "coverage_notes": "A complement to target-language instruction, not a substitute for it.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "dw-nicos-weg-a1-b1",
+      "minato-marugoto-a1-1-integrated",
+      "tv5monde-premiere-classe-french"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-freecodecamp-a2-english-developers",
+    "candidate_id": "freecodecamp-a2-english-developers",
+    "review_id": "deep-08-freecodecamp-a2-english-developers",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "A2 English for software-development and workplace contexts",
+    "comparison_set": [
+      "freecodecamp-b1-english-developers"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The A2 route provides dense multimedia practice, developer/workplace scenarios and a live free certification exam. Its niche scope is intentional and it forms the first stage of a coherent A2→B1 professional-English sequence.",
+    "marginal_value": "Adds accessible English-for-developers training at the lower-intermediate stage with a real free certification path.",
+    "provider_concentration_notes": "The A2 and B1 freeCodeCamp courses are retained as a sequential pair rather than independent catalogue items.",
+    "coverage_notes": "Best suited to technology learners; it is not positioned as a universal general-English pathway.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "freecodecamp-b1-english-developers"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-freecodecamp-b1-english-developers",
+    "candidate_id": "freecodecamp-b1-english-developers",
+    "review_id": "deep-08-freecodecamp-b1-english-developers",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "B1 professional and technical English for developers",
+    "comparison_set": [
+      "freecodecamp-a2-english-developers"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The B1 pathway advances into feedback, collaboration, project discussion, decision-making and workplace communication with multimedia practice and a live free certification exam. It adds a clear continuation after A2 rather than duplicating the same level.",
+    "marginal_value": "Completes a two-stage English-for-developers pathway into intermediate professional communication.",
+    "provider_concentration_notes": "Retained together with A2 as one coherent sequence; both remain under close monitoring while the curriculum carries a Beta label.",
+    "coverage_notes": "Specialist professional English, not a replacement for a general English curriculum.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "freecodecamp-a2-english-developers"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-blcu-umoocs-elementary-spoken-chinese",
+    "candidate_id": "blcu-umoocs-elementary-spoken-chinese",
+    "review_id": "deep-08-blcu-umoocs-elementary-spoken-chinese",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Structured beginner spoken Mandarin with sustained assessment",
+    "comparison_set": [
+      "mandarinx-mandarin-chinese-level-1"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "BLCU clearly wins the Mandarin comparison on depth and assessment: an 18-week route with 32 videos, 10 assessments and task-oriented spoken Mandarin. Interface and instruction-language friction reduce accessibility, but the educational package remains substantially stronger than the free MandarinX audit.",
+    "marginal_value": "Adds a rigorous current Mandarin beginner route where the alternative survivor is materially weaker.",
+    "provider_concentration_notes": "BLCU is not otherwise concentrated in the canonical set.",
+    "coverage_notes": "Requires close monitoring because the current session ends 27 December 2026 and future free runs must be re-verified.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mandarinx-mandarin-chinese-level-1"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-mandarinx-mandarin-chinese-level-1",
+    "candidate_id": "mandarinx-mandarin-chinese-level-1",
+    "review_id": "deep-08-mandarinx-mandarin-chinese-level-1",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "English-mediated beginner Mandarin through a free edX audit",
+    "comparison_set": [
+      "blcu-umoocs-elementary-spoken-chinese"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MandarinX remains a legitimate free audit, but its free-route depth, assessment and enrichment are substantially weaker than BLCU, and important extras/certification sit behind the paid verified track. It does not improve the core once BLCU is retained.",
+    "marginal_value": "Adds easier English mediation but insufficient learning depth and free practice.",
+    "provider_concentration_notes": "Provider concentration is not a factor; direct quality/access comparison is decisive.",
+    "coverage_notes": "Mandarin remains covered by the stronger BLCU route despite BLCU's interface friction.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "blcu-umoocs-elementary-spoken-chinese"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-15-madinah-arabic-grammar-course",
+    "candidate_id": "madinah-arabic-grammar-course",
+    "review_id": "deep-08-madinah-arabic-grammar-course",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep Arabic grammar and morphology specialization",
+    "comparison_set": [
+      "aljazeera-learning-arabic-general-language"
+    ],
+    "incumbent_ids": [
+      "aljazeera-learning-arabic-general-language"
+    ],
+    "decision_rationale": "Madinah Arabic offers impressive grammar depth and interactive exercises, but it is deliberately specialist and does not match Al Jazeera's broader Arabic pathway across levels, authentic texts, audio, exercises and placement. The canonical set already has the stronger all-round Arabic route.",
+    "marginal_value": "Adds grammar specialization but not enough separate core value for a second Arabic slot.",
+    "provider_concentration_notes": "Provider concentration is not a factor.",
+    "coverage_notes": "Remains a useful grammar supplement to the admitted Al Jazeera pathway.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "aljazeera-learning-arabic-general-language"
+    ],
+    "is_current": true
+  }
+]
