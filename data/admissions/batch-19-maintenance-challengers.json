@@ -1,0 +1,101 @@
+[
+  {
+    "admission_id": "admission-20-mit-6-7220j-nonlinear-optimization",
+    "candidate_id": "mit-6-7220j-nonlinear-optimization",
+    "review_id": "deep-24-mit-6-7220j-nonlinear-optimization",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad advanced nonlinear-optimisation theory and algorithms with sustained solution-backed practice",
+    "comparison_set": [
+      "mathworks-optimization-onramp",
+      "mit-18-100a-real-analysis",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 6.7220J fills the broad optimisation gap that Phase 4 deliberately left open. It is not another narrow MIT specialist: the Spring 2025 course provides a current, full treatment of convex and nonconvex optimisation, constrained methods, duality and modern algorithms with six solution-backed problem sets and exam material. Its 9.46 Quality decisively exceeds the two-hour MATLAB-specific Onramp for the general optimisation role. The advanced prerequisites limit audience breadth but do not erase the distinct missing competency.",
+    "marginal_value": "Adds the first deep general optimisation pathway, creating a natural progression from the existing linear-algebra and real-analysis foundations into optimisation theory and algorithms.",
+    "provider_concentration_notes": "Mathematics is already MIT-heavy and this becomes an eighth MIT mathematics slot. That concentration is accepted only because optimisation was explicitly documented as an uncovered core learning need and this 2025 course materially clears the bar; the project should continue rejecting narrower MIT specialists that do not add comparable marginal value.",
+    "coverage_notes": "Closes the documented broad-optimisation gap for advanced learners; a lower-prerequisite general optimisation route could still become a future challenger.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-18-06sc-linear-algebra",
+      "mit-18-100a-real-analysis"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-20-mit-12-340x-global-warming-science",
+    "candidate_id": "mit-12-340x-global-warming-science",
+    "review_id": "deep-24-mit-12-340x-global-warming-science",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep current disciplinary climate science with quantitative practice and climate-system modelling",
+    "comparison_set": [
+      "fao-intro-climate-smart-agriculture",
+      "eu-climate-action-academy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 12.340x is by far the strongest intrinsic climate-science course reviewed and earns 9.25 Quality, but the index is selecting the best current recommendations rather than preserving every excellent archive. A Spring 2020 climate course predates the IPCC AR6 assessment cycle and six years of additional observations in a field where empirical currentness matters. Admitting it as the 2026 climate anchor would hide the exact weakness Phase 4 documented. It remains an excellent foundations resource, but the canonical gap should stay open for a newer full curriculum.",
+    "marginal_value": "Would add genuine climate-science depth and modelling absent from the canonical set, but not with enough current empirical context for the intended best-current role.",
+    "provider_concentration_notes": "MIT concentration reinforces the need for a clear admission gain, but currentness—not provider identity—is the decisive reason for non-admission.",
+    "coverage_notes": "The deep climate-science gap remains explicitly open; future discovery should prefer a post-AR6 full course rather than lower the currentness bar.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-20-saylor-bus633-sales-management",
+    "candidate_id": "saylor-bus633-sales-management",
+    "review_id": "deep-24-saylor-bus633-sales-management",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Comprehensive sales-process and sales-management foundation with current technology context and meaningful assessment",
+    "comparison_set": [
+      "hubspot-inbound-sales",
+      "hubspot-revenue-operations",
+      "saylor-bus203-marketing"
+    ],
+    "incumbent_ids": [
+      "hubspot-revenue-operations",
+      "saylor-bus203-marketing"
+    ],
+    "decision_rationale": "BUS633 is the first dedicated sales candidate that clears the canonical bar rather than merely filling a category hole. Its 29-hour ten-unit route is materially deeper than HubSpot Inbound Sales, follows the complete selling process, covers relationship building and current sales technology, and adds repeatable unit assessments, a practice exam and a free 70%-threshold final exam with certificate. At 8.84 Quality / 9.1 Recommendation it adds a substantial learning role distinct from general marketing and RevOps.",
+    "marginal_value": "Closes the dedicated-sales gap with a long-form assessed route rather than the compact three-hour alternative previously rejected.",
+    "provider_concentration_notes": "Saylor already supplies the canonical general-marketing course, but Sales Management serves a separate sales competency and wins on depth; this is not catalogue mirroring.",
+    "coverage_notes": "Complements Saylor Principles of Marketing and HubSpot Revenue Operations by adding frontline selling, sales-process execution and relationship management.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-bus203-marketing",
+      "hubspot-revenue-operations"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-20-microsoft-ai-red-teaming-101",
+    "candidate_id": "microsoft-ai-red-teaming-101",
+    "review_id": "deep-24-microsoft-ai-red-teaming-101",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Current AI-security and generative-AI red-teaming practice with freely reproducible hands-on exercises",
+    "comparison_set": [
+      "microsoft-learn-ai-security-fundamentals",
+      "cisco-ethical-hacker",
+      "portswigger-web-security-academy"
+    ],
+    "incumbent_ids": [
+      "cisco-ethical-hacker",
+      "portswigger-web-security-academy"
+    ],
+    "decision_rationale": "AI Red Teaming 101 is a real improvement over Microsoft's earlier two-hour fundamentals path and is exceptionally current, but uniqueness does not override the free-practice standard. The free ten-episode instructional core is strong; the official playground, however, requires Azure OpenAI or standard OpenAI API credentials for full execution. That reduces the genuinely free route to F2 and leaves the most important specialist learning mode—hands-on adversarial testing—behind external paid/API friction. At 8.62 Quality / 8.7 Recommendation it remains a valuable reviewed specialist, not yet a canonical best-free-course slot.",
+    "marginal_value": "Adds highly current AI-red-team concepts, cases and open tooling, but the practical gain over the existing security portfolio is weakened by non-free model access for full labs.",
+    "provider_concentration_notes": "Microsoft provider concentration is not the deciding factor; practical access and assessment depth are.",
+    "coverage_notes": "AI security remains an explicit gap. A future course with equally current content and a fully free lab/assessment route should challenge this decision.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
