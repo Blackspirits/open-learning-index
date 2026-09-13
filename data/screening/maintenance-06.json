@@ -26,7 +26,7 @@
       "update-date-unverified",
       "carry-forward-hold"
     ],
-    "is_current": true,
+    "is_current": false,
     "supersedes_screen_id": "shallow-10-coe-help-protection-safety-journalists"
   }
 ]

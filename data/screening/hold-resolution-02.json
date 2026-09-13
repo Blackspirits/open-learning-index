@@ -230,7 +230,7 @@
     "evidence": ["https://www.nau.edu.pt/pt/curso/consumidor-ciberseguro/"],
     "rationale": "The four-hour pt-PT course is active, assessed and certified, covering EU consumer rights, online fraud, platforms and payment methods. However, the public page exposes no reliable update date for this combined legal/cyber topic, so currentness cannot be safely inferred from continued availability.",
     "flags": ["pt-pt", "4-hours", "eu-consumer-law", "cybersecurity-currency-review", "update-date-unverified", "carry-forward-hold"],
-    "is_current": true,
+    "is_current": false,
     "supersedes_screen_id": "shallow-06-nau-consumidor-ciberseguro"
   },
   {

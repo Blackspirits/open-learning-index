@@ -24,7 +24,7 @@
       "course-specific-url-redirects",
       "credential-current"
     ],
-    "is_current": true,
+    "is_current": false,
     "supersedes_screen_id": "shallow-07-ibm-skillsbuild-ai-fundamentals"
   },
   {
@@ -54,7 +54,7 @@
       "course-specific-url-redirects",
       "credential-current"
     ],
-    "is_current": true,
+    "is_current": false,
     "supersedes_screen_id": "shallow-07-ibm-skillsbuild-data-fundamentals"
   }
 ]
