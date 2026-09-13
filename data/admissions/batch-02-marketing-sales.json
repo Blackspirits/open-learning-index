@@ -1,0 +1,181 @@
+[
+  {
+    "admission_id": "admission-03-hubspot-inbound-sales",
+    "candidate_id": "hubspot-inbound-sales",
+    "review_id": "deep-18-hubspot-inbound-sales",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Concise consultative selling, prospecting and exploratory sales conversations",
+    "comparison_set": [
+      "hubspot-revenue-operations",
+      "hubspot-digital-marketing"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "Inbound Sales is a useful three-hour consultative-sales primer, but its 8.36 Quality / 8.6 Recommendation and limited depth do not justify a core slot simply to force dedicated sales coverage. The index should wait for a stronger free sales pathway rather than lower the bar.",
+    "marginal_value": "Adds a sales-specific angle, but not enough depth or practice to improve the core set materially.",
+    "provider_concentration_notes": "HubSpot already has a canonical marketing reference; another compact Academy certification needs unusually clear marginal value.",
+    "coverage_notes": "A dedicated sales gap remains acceptable until a stronger free route appears; coverage is not a quota.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-03-hubspot-social-media-marketing",
+    "candidate_id": "hubspot-social-media-marketing",
+    "review_id": "deep-18-hubspot-social-media-marketing",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Social-media strategy, reach, governance, advertising and measurement",
+    "comparison_set": [
+      "hubspot-digital-marketing",
+      "hubspot-content-marketing",
+      "hubspot-digital-advertising"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "The course has strong quiz density and good strategic breadth, but its platform-specific currency is weaker and much of the learner need is already covered by the broader HubSpot Digital Marketing incumbent. Another adjacent HubSpot channel certification would add redundancy faster than learner value.",
+    "marginal_value": "Useful channel specialisation, but insufficiently distinct from the existing broad digital-marketing reference.",
+    "provider_concentration_notes": "Provider concentration is material because most reviewed Marketing survivors are HubSpot certifications.",
+    "coverage_notes": "Social-media fundamentals remain adequately covered inside the broader canonical digital-marketing route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-03-hubspot-email-marketing",
+    "candidate_id": "hubspot-email-marketing",
+    "review_id": "deep-18-hubspot-email-marketing",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Email-marketing strategy, automation, testing, privacy and analytics",
+    "comparison_set": [
+      "hubspot-digital-marketing",
+      "hubspot-content-marketing",
+      "hubspot-revenue-operations"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "Email Marketing is the strongest channel-specific email route in the reviewed pool and remains highly useful. It is still excluded because the core index already has a strong broad HubSpot marketing reference, while the extra four-hour specialisation is not distinctive enough to justify another same-provider channel slot.",
+    "marginal_value": "Adds useful channel depth, but not enough new learning scope to outweigh redundancy and provider concentration.",
+    "provider_concentration_notes": "A second adjacent HubSpot channel certification would increase catalogue mirroring without a major learning-role gain.",
+    "coverage_notes": "Email is a specialist subfield rather than a demonstrated core coverage gap requiring its own slot.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-03-hubspot-revenue-operations",
+    "candidate_id": "hubspot-revenue-operations",
+    "review_id": "deep-18-hubspot-revenue-operations",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Cross-functional revenue operations across marketing, sales and customer-success processes",
+    "comparison_set": [
+      "hubspot-inbound-sales",
+      "hubspot-digital-marketing",
+      "pmi-kickoff"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "Revenue Operations earns a slot because it is not another marketing channel course. The nearly seven-hour route focuses on friction, SLAs, team structure, process alignment and strategy iteration across marketing, sales and customer success. That cross-functional operations role is materially distinct from the existing Digital Marketing incumbent.",
+    "marginal_value": "Adds a distinct RevOps/process-alignment learning need that the current canonical set does not serve.",
+    "provider_concentration_notes": "This creates another HubSpot canonical record, but the role is sufficiently distinct to justify the concentration exception.",
+    "coverage_notes": "Adds current cross-functional revenue-operations coverage without duplicating the broad digital-marketing role.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-03-hubspot-digital-advertising",
+    "candidate_id": "hubspot-digital-advertising",
+    "review_id": "deep-18-hubspot-digital-advertising",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Paid-media strategy, targeting, creative, conversion paths and advertising measurement",
+    "comparison_set": [
+      "hubspot-digital-marketing",
+      "hubspot-social-media-marketing",
+      "hubspot-aeo-fundamentals"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "Digital Advertising is a solid paid-media strategy primer, but its 8.44 Quality / 8.6 Recommendation, rapid platform obsolescence risk and overlap with the broader Digital Marketing incumbent make it a weak marginal addition to a compact core index.",
+    "marginal_value": "Adds paid-media focus, but too much of the strategic foundation overlaps with the stronger canonical marketing course.",
+    "provider_concentration_notes": "Another adjacent HubSpot channel certification would deepen provider concentration without enough differentiation.",
+    "coverage_notes": "Paid advertising remains a specialist layer that can be supplemented by current platform documentation when needed.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-03-hubspot-aeo-fundamentals",
+    "candidate_id": "hubspot-aeo-fundamentals",
+    "review_id": "deep-18-hubspot-aeo-fundamentals",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Answer-engine optimisation and AI-search visibility in current 2026 discovery systems",
+    "comparison_set": [
+      "hubspot-digital-marketing",
+      "hubspot-content-marketing",
+      "hubspot-digital-advertising"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "AEO Fundamentals is compact, which limits intrinsic Quality, but its 10.0 Currency and direct treatment of AI-search visibility, citations, structured data and measurement create a learning need absent from the current canonical marketing set. The admission is for distinct present-day relevance, not provider prestige or certification.",
+    "marginal_value": "Adds uniquely current AI-search/AEO coverage that broad digital-marketing courses do not yet teach deeply enough.",
+    "provider_concentration_notes": "HubSpot concentration is accepted here because the course covers a genuinely distinct and fast-moving 2026 subfield.",
+    "coverage_notes": "Closes a current AI-search marketing gap while requiring a short 90-day review cadence because the field changes rapidly.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-03-saylor-bus203-marketing",
+    "candidate_id": "saylor-bus203-marketing",
+    "review_id": "deep-18-saylor-bus203-marketing",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad general marketing foundations across research, segmentation, product, pricing, distribution and promotion",
+    "comparison_set": [
+      "hubspot-digital-marketing",
+      "hubspot-content-marketing",
+      "hubspot-social-media-marketing"
+    ],
+    "incumbent_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "decision_rationale": "Saylor BUS203 is the strongest broad general-marketing foundation in the reviewed survivor pool. Its 30-hour scope, unit assessments, free final exam and recently modified 2025 syllabus provide substantially more general-marketing depth than the shorter channel-oriented HubSpot certifications, while the existing HubSpot Digital Marketing course remains the stronger practical digital complement.",
+    "marginal_value": "Adds broad marketing theory and process depth rather than another channel-specific certification.",
+    "provider_concentration_notes": "This improves provider diversity in a survivor pool otherwise dominated by HubSpot.",
+    "coverage_notes": "Creates a balanced canonical pair: Saylor for general marketing foundations and HubSpot for practical digital marketing.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "hubspot-digital-marketing"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
