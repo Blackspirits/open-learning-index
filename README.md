@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.3 — Deep Review is complete; Phase 4 head-to-head admission is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **199 advance / 9 hold / 82 reject** after maintenance reconciliation. **199 / 199 current `advance` candidates have Deep Review evidence**: 12 calibration records plus 187 scaled reviews across twenty-two post-calibration batches. The nine current holds remain outside scoring until their blockers resolve.
+**Status:** v0.4 — Phase 3 is complete and Phase 4 head-to-head admission is calibrated. **199 / 199 current `advance` candidates have Deep Review evidence.** The first Phase 4 calibration records **7 decisions: 4 admit / 3 do_not_admit**, raising the canonical set from **17 reference fixtures to 21 approved/reference courses**. Current shallow state remains **199 advance / 9 hold / 82 reject**.
 
 ## Goal
 
@@ -19,6 +19,7 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
 - [`docs/deep-review-protocol.md`](docs/deep-review-protocol.md) — evidence and scoring rules for Phase 3.
 - [`docs/admission-protocol.md`](docs/admission-protocol.md) — comparative admission rules for Phase 4.
+- [`docs/admissions/calibration-01.md`](docs/admissions/calibration-01.md) — mixed Phase 4 calibration with 4 admits and 3 evidence-backed non-admissions.
 - [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
 - [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
 - [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
