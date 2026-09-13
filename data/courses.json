@@ -4543,5 +4543,76 @@
     "quality_score": 8.6,
     "review_interval_days": 120,
     "next_review": "2027-01-11"
+  },
+  {
+    "id": "mit-6-7220j-nonlinear-optimization",
+    "title": "6.7220J Nonlinear Optimization",
+    "provider": "MIT OpenCourseWare",
+    "category": "math-statistics",
+    "level": "graduate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active_archive",
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.8,
+      "practice": 9.6,
+      "materials": 9.5,
+      "currency": 9.8,
+      "expertise": 9.8,
+      "accessibility": 7.8
+    },
+    "recommendation_score": 9.2,
+    "why_recommended": "Exceptional current graduate nonlinear-optimisation course with full theory, six solution-backed problem sets and exam materials spanning convex/nonconvex and constrained methods.",
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/pages/syllabus/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/lists/problem-sets/"
+    ],
+    "last_verified": "2026-09-13",
+    "review_status": "phase4_admitted",
+    "quality_score": 9.46,
+    "review_interval_days": 365,
+    "next_review": "2027-09-13"
+  },
+  {
+    "id": "saylor-bus633-sales-management",
+    "title": "BUS633: Sales Management",
+    "provider": "Saylor University",
+    "category": "marketing-sales",
+    "level": "graduate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://learn.saylor.org/course/bus633",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none_by_default",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.7,
+      "practice": 8.8,
+      "materials": 8.7,
+      "currency": 9.2,
+      "expertise": 8.8,
+      "accessibility": 9.4
+    },
+    "recommendation_score": 9.1,
+    "why_recommended": "Current 29-hour comprehensive sales foundation covering the full selling process and modern sales technology with repeatable assessments, free final exam and certificate.",
+    "evidence": [
+      "https://learn.saylor.org/course/bus633",
+      "https://learn.saylor.org/mod/page/view.php?id=83120"
+    ],
+    "last_verified": "2026-09-13",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.84,
+    "review_interval_days": 120,
+    "next_review": "2027-01-11"
   }
 ]
