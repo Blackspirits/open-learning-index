@@ -28,11 +28,11 @@
       "https://cs50.harvard.edu/x/",
       "https://cs50.harvard.edu/x/certificate/"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.88,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "harvard-cs50p",
@@ -63,11 +63,11 @@
       "https://cs50.harvard.edu/python/",
       "https://cs50.harvard.edu/python/certificate/"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.68,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "harvard-cs50-ai",
@@ -98,11 +98,11 @@
       "https://cs50.harvard.edu/ai/",
       "https://cs50.harvard.edu/ai/certificate/"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.62,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "harvard-cs50-sql",
@@ -133,11 +133,11 @@
       "https://cs50.harvard.edu/sql/",
       "https://cs50.harvard.edu/sql/certificate/"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.58,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "helsinki-full-stack-open",
@@ -165,13 +165,15 @@
     "recommendation_score": 9.9,
     "why_recommended": "Exceptionally practical modern web-development curriculum with React, Node.js, testing, TypeScript, CI/CD and more.",
     "evidence": [
-      "https://fullstackopen.com/en/about/"
+      "https://fullstackopen.com/en/about/",
+      "https://fullstackopen.com/en/",
+      "https://fullstackopen.com/en/part0/general_info/"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.64,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "helsinki-python-mooc-2026",
@@ -199,13 +201,15 @@
     "recommendation_score": 9.7,
     "why_recommended": "Large exercise-driven sequence corresponding to Helsinki's introductory and advanced programming courses (5+5 ECTS).",
     "evidence": [
-      "https://programming-26.mooc.fi/"
+      "https://programming-26.mooc.fi/",
+      "https://programming-26.mooc.fi/faq/",
+      "https://programming-26.mooc.fi/grading-and-exams/"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.67,
     "review_interval_days": 60,
-    "next_review": "2026-11-08"
+    "next_review": "2026-11-12"
   },
   {
     "id": "portswigger-web-security-academy",
@@ -234,13 +238,15 @@
     "why_recommended": "Continuously updated web-security training with extensive interactive labs and structured learning paths.",
     "evidence": [
       "https://portswigger.net/web-security",
-      "https://portswigger.net/web-security/learning-paths"
+      "https://portswigger.net/web-security/learning-paths",
+      "https://portswigger.net/web-security/certification",
+      "https://portswigger.net/web-security/certification/frequently-asked-questions"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.9,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "google-ml-crash-course",
@@ -271,13 +277,14 @@
     "why_recommended": "Current, compact and highly interactive ML foundation with browser exercises, production topics, LLMs and fairness.",
     "evidence": [
       "https://developers.google.com/machine-learning/crash-course",
-      "https://developers.google.com/machine-learning/crash-course/exercises"
+      "https://developers.google.com/machine-learning/crash-course/exercises",
+      "https://developers.google.com/machine-learning/crash-course?hl=pt-br"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.44,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "mit-18-06sc-linear-algebra",
@@ -547,13 +554,14 @@
     "why_recommended": "Current practical training on directing agents, reviewing outputs, refining results and reusing workflow patterns.",
     "evidence": [
       "https://openai.com/academy/",
-      "https://help.openai.com/en/articles/20001270-openai-academy-courses"
+      "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "https://academy.openai.com/public/courses/agents-and-workflows-bieml"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.09,
     "review_interval_days": 60,
-    "next_review": "2026-11-08"
+    "next_review": "2026-11-12"
   },
   {
     "id": "kaggle-intro-machine-learning",
@@ -584,11 +592,11 @@
       "https://www.kaggle.com/learn/intro-to-machine-learning",
       "https://www.kaggle.com/learn-course-certificates"
     ],
-    "last_verified": "2026-09-09",
+    "last_verified": "2026-09-13",
     "review_status": "reference_verified",
     "quality_score": 9.02,
     "review_interval_days": 90,
-    "next_review": "2026-12-08"
+    "next_review": "2026-12-12"
   },
   {
     "id": "nand2tetris",
