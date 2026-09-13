@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.5 — **Phase 5 QA is complete and the canonical index is publication-ready.** Phase 4 closed at **199 / 199 current `advance` decisions: 112 admit / 87 do_not_admit**. Phase 5 retained all 17 reference fixtures, found no structural removal blocker, and re-verified **34 targeted high-risk records across five primary-source batches**. The canonical publication set is **129 courses** with **73 F0 / 24 F1 / 32 F2**, and the unresolved **9 `hold`** records remain excluded. Current shallow state is **199 advance / 9 hold / 82 reject**. Continuous monitoring now replaces broad intake.
+**Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The first targeted challenger cycle is complete: **203 / 203 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 114 admit / 89 do_not_admit**. The canonical publication set is now **131 courses** with **74 F0 / 24 F1 / 33 F2**. The unresolved **9 `hold`** records remain excluded, and current shallow state is **203 advance / 9 hold / 82 reject** across **294 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
 
 ## Goal
 
