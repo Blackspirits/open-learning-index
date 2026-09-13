@@ -1,0 +1,191 @@
+[
+  {
+    "admission_id": "admission-10-openlearn-effective-communication-workplace",
+    "candidate_id": "openlearn-effective-communication-workplace",
+    "review_id": "deep-16-openlearn-effective-communication-workplace",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad workplace communication across listening, writing, meetings, presentations and difficult situations",
+    "comparison_set": [
+      "mit-15-279-management-communication",
+      "saylor-prdv211-foundations-human-communication",
+      "saylor-prdv002-professional-writing"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "OpenLearn is the strongest general independent workplace-communication route in the reviewed family. Its 24-hour eight-week structure combines listening, verbal/non-verbal and written communication, meetings, presentations, networking, email/report writing, difficult situations, weekly quizzes and a recurring personal development plan.",
+    "marginal_value": "Creates the canonical broad workplace-communication foundation with sustained reflection and assessment.",
+    "provider_concentration_notes": "OpenLearn also wins academic and creative writing roles, but the three courses serve materially different learning needs rather than repeating one catalogue area.",
+    "coverage_notes": "Becomes the default general communication route; presentation and crisis communication remain separate specialist needs.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-prdv008-presentations",
+      "saylor-prdv107-crisis-communication"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-openlearn-start-writing-fiction",
+    "candidate_id": "openlearn-start-writing-fiction",
+    "review_id": "deep-16-openlearn-start-writing-fiction",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Introductory creative-writing practice focused on fiction",
+    "comparison_set": [
+      "openlearn-essay-report-writing",
+      "saylor-prdv002-professional-writing"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Start writing fiction fills a distinct creative-writing role and is current, formally updated in May 2026. Its practical exercises on character, setting, genre, observation, drafting and reflection make production central rather than treating creative writing as passive literary appreciation.",
+    "marginal_value": "Adds creative production and reflective drafting practice absent from academic and professional writing routes.",
+    "provider_concentration_notes": "OpenLearn concentration is accepted because this course covers a genuinely different writing mode.",
+    "coverage_notes": "Provides the canonical introductory fiction-writing route while acknowledging the lack of external workshop critique.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-essay-report-writing"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-openlearn-essay-report-writing",
+    "candidate_id": "openlearn-essay-report-writing",
+    "review_id": "deep-16-openlearn-essay-report-writing",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Academic essay and report writing from assignment interpretation through revision",
+    "comparison_set": [
+      "saylor-prdv002-professional-writing",
+      "mit-15-279-management-communication"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "This 15-hour route fills the academic-writing role directly: interpreting assignments, distinguishing essays/reports, researching and evaluating sources, planning, drafting, structuring and polishing. The 2019 date is a moderate limitation, but the writing process itself is stable and remains well taught.",
+    "marginal_value": "Adds a distinct academic-writing workflow not replaced by general workplace communication.",
+    "provider_concentration_notes": "The third OpenLearn admission is justified by a separate academic-writing need rather than provider preference.",
+    "coverage_notes": "Complements creative writing and workplace communication; personalised essay feedback remains unavailable.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-effective-communication-workplace"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-saylor-prdv008-presentations",
+    "candidate_id": "saylor-prdv008-presentations",
+    "review_id": "deep-16-saylor-prdv008-presentations",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current presentation design and delivery from audience analysis through live/online performance",
+    "comparison_set": [
+      "mit-15-279-management-communication",
+      "openlearn-effective-communication-workplace"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PRDV008 is the strongest current presentation-specific survivor. Its 23-hour May 2026 syllabus covers audience, purpose, evidence, structure, visual aids, online presentations, vocal/non-verbal delivery, anxiety and unexpected situations. The self-study assessment limitation is explicit but does not erase the specialist value.",
+    "marginal_value": "Adds deeper presentation design and delivery practice beyond the broader workplace course.",
+    "provider_concentration_notes": "Saylor is represented elsewhere, but this is a distinct specialist competency with current maintenance.",
+    "coverage_notes": "Becomes the dedicated presentations route; live expert feedback remains a limitation of the self-study format.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-effective-communication-workplace"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-saylor-prdv107-crisis-communication",
+    "candidate_id": "saylor-prdv107-crisis-communication",
+    "review_id": "deep-16-saylor-prdv107-crisis-communication",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current crisis-communication planning, team preparation and strategic message development",
+    "comparison_set": [
+      "openlearn-effective-communication-workplace",
+      "saylor-prdv211-foundations-human-communication"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PRDV107 fills a current specialist role that general communication courses do not. Its 20-hour September 2025 syllabus covers preparation, crisis teams, social media, communication plans and strategic message development, with assessment that reflects a field where channel and response norms change quickly.",
+    "marginal_value": "Adds crisis-specific planning and message-framing capability with stronger recency requirements than generic communication.",
+    "provider_concentration_notes": "The second Saylor admission is justified by specialist crisis scope rather than broad provider coverage.",
+    "coverage_notes": "Complements the general workplace route; real organisational crisis work still requires context-specific exercises and legal review.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-effective-communication-workplace"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-mit-15-279-management-communication",
+    "candidate_id": "mit-15-279-management-communication",
+    "review_id": "deep-16-mit-15-279-management-communication",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Management writing and speaking with feedback-rich original classroom practice",
+    "comparison_set": [
+      "openlearn-effective-communication-workplace",
+      "saylor-prdv008-presentations",
+      "saylor-prdv002-professional-writing"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 15.279 has the strongest original practice architecture in the family, but much of what made it exceptional—peer/instructor feedback, team work, live presentations, recordings and interactive exercises—is not reproducible for an independent OCW learner. Its 2012 framing also predates remote/hybrid and generative-AI communication contexts.",
+    "marginal_value": "The archive remains pedagogically valuable, but the current autonomous route loses too much of the original feedback loop.",
+    "provider_concentration_notes": "This is an independent-usability/currentness decision, not a provider penalty.",
+    "coverage_notes": "General workplace communication and presentation skills remain covered by routes whose current independent experience is more complete.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-effective-communication-workplace",
+      "saylor-prdv008-presentations"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-saylor-prdv211-foundations-human-communication",
+    "candidate_id": "saylor-prdv211-foundations-human-communication",
+    "review_id": "deep-16-saylor-prdv211-foundations-human-communication",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "General communication theory across message, audience, channel, culture and group contexts",
+    "comparison_set": [
+      "openlearn-effective-communication-workplace",
+      "mit-15-279-management-communication"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PRDV211 is current and coherent, but its conceptual survey is less practice-rich than OpenLearn's workplace course and does not create a separate high-priority learner role. Communication theory remains useful background, but Phase 4 favors applied production and reflection in this category.",
+    "marginal_value": "Adds conceptual breadth but insufficient applied differentiation after the general workplace route is selected.",
+    "provider_concentration_notes": "Saylor already wins presentation and crisis-communication specialist roles; another broad communication slot would be redundant.",
+    "coverage_notes": "Core communication concepts are embedded within the broader workplace route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-effective-communication-workplace"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-10-saylor-prdv002-professional-writing",
+    "candidate_id": "saylor-prdv002-professional-writing",
+    "review_id": "deep-16-saylor-prdv002-professional-writing",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Current professional writing across audience, purpose, channels, editing and workplace genres",
+    "comparison_set": [
+      "openlearn-effective-communication-workplace",
+      "openlearn-essay-report-writing",
+      "mit-15-279-management-communication"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PRDV002 is useful and current, but its professional-writing role overlaps substantially with OpenLearn workplace communication while its 12-hour route shows limited evidence of a substantial writing portfolio or external feedback. Academic writing is separately covered by a more focused course.",
+    "marginal_value": "Adds current workplace-writing structure but not enough distinct production depth for another core slot.",
+    "provider_concentration_notes": "Saylor concentration reinforces the decision after its stronger presentation and crisis specialists are retained.",
+    "coverage_notes": "Professional writing remains covered inside the broad workplace-communication course; academic writing has its own dedicated route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "openlearn-effective-communication-workplace"
+    ],
+    "is_current": true
+  }
+]
