@@ -1,0 +1,61 @@
+[
+  {
+    "review_id": "deep-23-whoacademy-good-practices-clinical-trials",
+    "candidate_id": "whoacademy-good-practices-clinical-trials",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential independently verified from public primary evidence",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Approximately 4.5-hour WHO professional course across nine interactive modules translating the 2024 WHO Guidance for Best Practices for Clinical Trials into five scientific and ethical principles for trial design, conduct and oversight.",
+    "prerequisites": "No formal prerequisite stated; designed for clinical-trial staff, healthcare professionals, data managers, statisticians, ethics committee members, regulators, auditors and funders, while remaining accessible to learners new to clinical research",
+    "required_resources": "Modern browser with JavaScript and access to the WHO Academy platform; the verified public launch states that the course is free and self-paced",
+    "component_evidence": {
+      "pedagogy": "The course is organised around five universally applicable scientific and ethical principles and explicitly translates them into practical decisions across trial design, conduct and oversight rather than presenting guidance as isolated rules.",
+      "depth": "Nine interactive modules over approximately 4.5 hours cover participant protection, ethical review, community engagement, operational feasibility, public-health relevance and other core trial-quality concerns; this is substantial professional orientation but not a full clinical-research curriculum.",
+      "practice": "WHO describes real-world decision-making, case studies and an interactive course format that ask learners to apply principles across different settings, disease areas and health systems; no public primary evidence was found for a graded final assessment or extended project.",
+      "materials": "WHO verifies a coherent nine-module interactive course grounded in its current clinical-trials guidance, but the JavaScript-only Academy route does not expose the internal lesson and assessment materials publicly enough for a higher materials score.",
+      "currency": "Launched in May 2026 and grounded in WHO's 2024 Guidance for Best Practices for Clinical Trials, making the course exceptionally current for a fast-moving professional health and research-governance domain.",
+      "expertise": "The course is developed and published by WHO around its own global clinical-trials guidance, with launch material led by WHO's Science for Health leadership and intended for the professional actors responsible for trial quality and oversight.",
+      "accessibility": "WHO confirms that the course is free, online and self-paced. The verified version is currently in English, the learner route requires JavaScript, and public evidence does not independently establish free credential mechanics."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8,
+      "practice": 8.8,
+      "materials": 8.4,
+      "currency": 10,
+      "expertise": 9.9,
+      "accessibility": 8.9
+    },
+    "quality_score": 8.91,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "A top current recommendation for professionals who need a principles-based foundation in ethical, high-quality clinical-trial design and implementation. It complements rather than replaces the TGHN ICH GCP E6(R3) course: WHO is broader and more case-oriented, while TGHN is the stronger choice for explicit GCP R3 compliance training and verified free certification.",
+    "comparators": [
+      "tghn-ich-gcp-e6-r3",
+      "tghn-research-ethics-v2",
+      "tghn-data-life-cycle"
+    ],
+    "evidence": [
+      "https://www.who.int/news/item/05-05-2026-new-who-online-course-strengthens-good-practices-in-clinical-trials",
+      "https://www.who.int/news-room/events/detail/2026/05/04/default-calendar/strengthening-trust-in-science--launch-of-who-good-practices-for-clinical-trial-design-and-implementation-course",
+      "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025"
+    ],
+    "flags": [
+      "professional-specialist",
+      "current-2026",
+      "clinical-trials",
+      "interactive-case-studies",
+      "who-guidance",
+      "credential-unverified",
+      "javascript-dependent"
+    ],
+    "is_current": true
+  }
+]
