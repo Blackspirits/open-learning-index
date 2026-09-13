@@ -3105,7 +3105,7 @@
       "https://learn.saylor.org/course/bus205",
       "https://learn.saylor.org/mod/page/view.php?id=89920"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.31,
     "review_interval_days": 120,
@@ -3118,7 +3118,12 @@
     "category": "law-public-policy",
     "level": "beginner_to_intermediate",
     "primary_language": "en",
-    "other_languages": [],
+    "other_languages": [
+      "fr",
+      "ar",
+      "ru",
+      "es"
+    ],
     "url": "https://welc.wipo.int/acc/index.jsf?lang=en&page=wipoDLCatalog.xhtml",
     "free_access": "F0_FULL_CREDENTIAL",
     "certificate": "free_provider_certificate",
@@ -3135,12 +3140,14 @@
       "accessibility": 8.5
     },
     "recommendation_score": 8.8,
-    "why_recommended": "Comprehensive 55-hour international IP foundation spanning copyright, patents, trademarks, geographical indications, designs and international systems with tests, final assessment and WIPO certification.",
+    "why_recommended": "Comprehensive 55-hour international IP foundation spanning copyright, patents, trademarks, geographical indications, designs and international systems with tests, final assessment and WIPO certification, with standard 2026 editions verified in five languages.",
     "evidence": [
       "https://welc.wipo.int/acc/index.jsf?lang=en&page=wipoDLCatalog.xhtml",
-      "https://www.wipo.int/edocs/pubdocs/en/training/468/wipo_pub_468.pdf"
+      "https://www.wipo.int/edocs/pubdocs/en/training/468/wipo_pub_468.pdf",
+      "https://welc.wipo.int/acc/index.jsf?lang=es&page=wipoDLCatalog.xhtml",
+      "https://welc.wipo.int/acc/index.jsf?lang=fr&page=wipoDLCatalog.xhtml"
     ],
-    "last_verified": "2026-09-12",
+    "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
     "quality_score": 8.66,
     "review_interval_days": 120,
@@ -3156,7 +3163,7 @@
     "other_languages": [],
     "url": "https://help.elearning.ext.coe.int/enrol/index.php?id=7331",
     "free_access": "F0_FULL_CREDENTIAL",
-    "certificate": "free_provider_certificate",
+    "certificate": "free_statement_of_accomplishment",
     "academic_credits": "none",
     "self_paced": true,
     "status": "active",
@@ -3188,10 +3195,25 @@
     "category": "law-public-policy",
     "level": "intermediate",
     "primary_language": "en",
-    "other_languages": [],
+    "other_languages": [
+      "ar",
+      "az",
+      "bg",
+      "cs",
+      "fr",
+      "hu",
+      "hy",
+      "ka",
+      "pt",
+      "ro",
+      "sk",
+      "es",
+      "tr",
+      "uk"
+    ],
     "url": "https://www.coe.int/en/web/help/-/cybercrime-and-electronic-evidence-council-of-europe-help-course-for-eu-judges-prosecutors-and-lawyers",
     "free_access": "F0_FULL_CREDENTIAL",
-    "certificate": "free_provider_certificate",
+    "certificate": "free_statement_of_accomplishment",
     "academic_credits": "none",
     "self_paced": true,
     "status": "active",
@@ -3205,10 +3227,11 @@
       "accessibility": 9.1
     },
     "recommendation_score": 8.8,
-    "why_recommended": "Current specialist legal route covering cybercrime offences, electronic evidence, procedural powers, international cooperation and the Budapest Convention framework, with a reported 2026 update.",
+    "why_recommended": "Current specialist legal route covering cybercrime offences, electronic evidence, procedural powers, international cooperation and the Budapest Convention framework, with a reported 2026 update and broad multilingual self-learning access.",
     "evidence": [
       "https://www.coe.int/en/web/cybercrime/-/council-of-europe-help-online-course-on-cybercrime-and-electronic-evidence",
-      "https://www.coe.int/en/web/help/-/2026-help-annual-network-conference-in-strasbourg-conference-report"
+      "https://www.coe.int/en/web/help/-/2026-help-annual-network-conference-in-strasbourg-conference-report",
+      "https://www.coe.int/en/web/octopus/training"
     ],
     "last_verified": "2026-09-13",
     "review_status": "phase4_admitted",
@@ -3226,7 +3249,7 @@
     "other_languages": [],
     "url": "https://www.coe.int/en/web/help/help-courses",
     "free_access": "F0_FULL_CREDENTIAL",
-    "certificate": "free_provider_certificate",
+    "certificate": "free_statement_of_accomplishment",
     "academic_credits": "none",
     "self_paced": true,
     "status": "active",
