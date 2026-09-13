@@ -3727,5 +3727,182 @@
     "quality_score": 8.28,
     "review_interval_days": 120,
     "next_review": "2027-01-11"
+  },
+  {
+    "id": "whoacademy-good-practices-clinical-trials",
+    "title": "WHO Good Practices for Clinical Trial Design and Implementation",
+    "provider": "WHO Academy",
+    "category": "health-medicine",
+    "level": "intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8,
+      "practice": 8.8,
+      "materials": 8.4,
+      "currency": 10,
+      "expertise": 9.9,
+      "accessibility": 8.9
+    },
+    "recommendation_score": 9.2,
+    "why_recommended": "Current 2026 nine-module clinical-trials course translating WHO's 2024 best-practice guidance into scientific and ethical principles through interactive cases and decision-making.",
+    "evidence": [
+      "https://www.who.int/news/item/05-05-2026-new-who-online-course-strengthens-good-practices-in-clinical-trials",
+      "https://www.who.int/news-room/events/detail/2026/05/04/default-calendar/strengthening-trust-in-science--launch-of-who-good-practices-for-clinical-trial-design-and-implementation-course",
+      "https://whoacademy.org/coursewares/course-v1%3AWHOAcademy-Hosted%2BH0118EN%2BH0118EN_Q1_2025"
+    ],
+    "last_verified": "2026-09-13",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.91,
+    "review_interval_days": 90,
+    "next_review": "2026-12-12"
+  },
+  {
+    "id": "tghn-ich-gcp-e6-r3",
+    "title": "ICH Good Clinical Practice E6(R3)",
+    "provider": "Global Health Training Centre / The Global Health Network",
+    "category": "health-medicine",
+    "level": "beginner_to_intermediate",
+    "primary_language": "en",
+    "other_languages": [
+      "es",
+      "fr",
+      "pt"
+    ],
+    "url": "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 7.8,
+      "practice": 7.8,
+      "materials": 8.7,
+      "currency": 10,
+      "expertise": 9.6,
+      "accessibility": 9.3
+    },
+    "recommendation_score": 9.1,
+    "why_recommended": "Current multilingual ICH E6(R3) Good Clinical Practice course with eight modules and a free assessed certificate, serving a distinct clinical-research compliance need.",
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/ich-gcp-r3/"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.62,
+    "review_interval_days": 90,
+    "next_review": "2026-12-12"
+  },
+  {
+    "id": "tghn-research-ethics-v2",
+    "title": "Research Ethics Online Training V2",
+    "provider": "Global Health Training Centre / The Global Health Network",
+    "category": "health-medicine",
+    "level": "beginner_to_intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 8,
+      "practice": 8.1,
+      "materials": 8.6,
+      "currency": 8.7,
+      "expertise": 9.4,
+      "accessibility": 9.4
+    },
+    "recommendation_score": 8.7,
+    "why_recommended": "Ten-module applied research-ethics route covering risks/benefits, vulnerability, community engagement, privacy, consent and ethical dilemmas with quizzes and free certification.",
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/research-ethics-online-training-v2/"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.46,
+    "review_interval_days": 120,
+    "next_review": "2027-01-11"
+  },
+  {
+    "id": "tghn-data-life-cycle",
+    "title": "The Data Life Cycle: Practices and Policies",
+    "provider": "Global Health Training Centre / The Global Health Network",
+    "category": "health-medicine",
+    "level": "beginner_to_intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://globalhealthtrainingcentre.tghn.org/data-sharing-v2/",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 8.3,
+      "practice": 7.6,
+      "materials": 8.7,
+      "currency": 9.5,
+      "expertise": 9.5,
+      "accessibility": 9.1
+    },
+    "recommendation_score": 8.5,
+    "why_recommended": "Current health-research data-governance foundation covering sharing, management, ethics, access, quality, costs and repositories with peer-reviewed guidance and assessed modules.",
+    "evidence": [
+      "https://globalhealthtrainingcentre.tghn.org/data-sharing-v2/"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.46,
+    "review_interval_days": 120,
+    "next_review": "2027-01-11"
+  },
+  {
+    "id": "fao-improving-nutrition-agri-food",
+    "title": "Improving nutrition through agriculture and food systems",
+    "provider": "FAO elearning Academy",
+    "category": "health-medicine",
+    "level": "intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://elearning.fao.org/course/view.php?id=307",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_badge",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.4,
+      "depth": 7.4,
+      "practice": 7.8,
+      "materials": 8.4,
+      "currency": 7.5,
+      "expertise": 9.6,
+      "accessibility": 9.4
+    },
+    "recommendation_score": 8.1,
+    "why_recommended": "Scenario-based professional course linking malnutrition, agriculture and food systems with nutrition-sensitive policies, investments and programmes, including final assessment and a free digital badge.",
+    "evidence": [
+      "https://elearning.fao.org/course/view.php?id=307",
+      "https://www.fao.org/nutrition/policies-programmes/e-learning/en/"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.16,
+    "review_interval_days": 120,
+    "next_review": "2027-01-11"
   }
 ]
