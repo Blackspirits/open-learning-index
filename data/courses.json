@@ -4895,5 +4895,114 @@
     "quality_score": 8.44,
     "review_interval_days": 120,
     "next_review": "2027-01-12"
+  },
+  {
+    "id": "nau-regulacao-digital",
+    "title": "Regulação Digital",
+    "provider": "ARTE | Academia Portugal Digital / NAU",
+    "category": "law-public-policy",
+    "level": "advanced",
+    "primary_language": "pt-PT",
+    "other_languages": [
+      "en"
+    ],
+    "url": "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.5,
+      "depth": 8,
+      "practice": 8,
+      "materials": 8.5,
+      "currency": 9.8,
+      "expertise": 9,
+      "accessibility": 8.5
+    },
+    "recommendation_score": 8.8,
+    "why_recommended": "Current advanced pt-PT/en specialist on EU digital regulation spanning platforms, data, AI, content moderation, e-commerce, accessibility and compliance implementation.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "last_verified": "2026-09-14",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.48,
+    "review_interval_days": 90,
+    "next_review": "2026-12-13"
+  },
+  {
+    "id": "nau-responsavel-ciberseguranca",
+    "title": "Curso de introdução: Responsável de Cibersegurança",
+    "provider": "Centro Nacional de Cibersegurança / Instituto Politécnico de Lisboa / NAU",
+    "category": "cybersecurity-it",
+    "level": "intermediate",
+    "primary_language": "pt-PT",
+    "other_languages": [],
+    "url": "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.5,
+      "practice": 8.4,
+      "materials": 8.5,
+      "currency": 9.9,
+      "expertise": 9.6,
+      "accessibility": 8.5
+    },
+    "recommendation_score": 9,
+    "why_recommended": "Current 15-hour pt-PT organisational cybersecurity route combining Portuguese/EU law, risk, controls, audit, incident management, policies and compliance reporting.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+      "https://www.nau.edu.pt/pt/noticias/formacao-ciberseguranca-aprendizagem-ao-longo-da-vida-presenca-nau-c-days-2026/",
+      "https://dyn.cncs.gov.pt/pt/detalhe/art/135998/novo-regime-juridico-da-ciberseguranca-entra-em-vigor"
+    ],
+    "last_verified": "2026-09-14",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.78,
+    "review_interval_days": 90,
+    "next_review": "2026-12-13"
+  },
+  {
+    "id": "nau-ciberseguranca-executivos-nis2",
+    "title": "Cibersegurança para Executivos: Preparação para a NIS2",
+    "provider": "Centro Nacional de Cibersegurança / ISCTE / NAU",
+    "category": "cybersecurity-it",
+    "level": "intermediate",
+    "primary_language": "pt-PT",
+    "other_languages": [],
+    "url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+    "free_access": "F2_CONTENT_ONLY",
+    "certificate": "none",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8.7,
+      "practice": 8.3,
+      "materials": 8.6,
+      "currency": 9.9,
+      "expertise": 9.6,
+      "accessibility": 8.4
+    },
+    "recommendation_score": 9.1,
+    "why_recommended": "Substantial 30-hour pt-PT executive route on NIS2, cyber-governance, resilience, supply-chain security, vulnerability management, cryptography, access control and cyber-hygiene.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+      "https://www.nau.edu.pt/pt/noticias/formacao-ciberseguranca-aprendizagem-ao-longo-da-vida-presenca-nau-c-days-2026/",
+      "https://dyn.cncs.gov.pt/pt/detalhe/art/135998/novo-regime-juridico-da-ciberseguranca-entra-em-vigor"
+    ],
+    "last_verified": "2026-09-14",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.81,
+    "review_interval_days": 90,
+    "next_review": "2026-12-13"
   }
 ]
