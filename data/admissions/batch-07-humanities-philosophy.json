@@ -1,0 +1,356 @@
+[
+  {
+    "admission_id": "admission-08-mit-24-00-problems-philosophy",
+    "candidate_id": "mit-24-00-problems-philosophy",
+    "review_id": "deep-14-mit-24-00-problems-philosophy",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad introduction to philosophy with sustained argumentative writing",
+    "comparison_set": [
+      "saylor-phil102-critical-thinking-logic",
+      "mit-24-231-ethics",
+      "yale-death"
+    ],
+    "incumbent_ids": [
+      "yale-death"
+    ],
+    "decision_rationale": "MIT 24.00 is the strongest broad philosophy introduction in the reviewed pool. It combines epistemology, metaphysics, ethics, philosophy of mind, race/gender and meaning-of-life topics with quizzes, presentation work and four substantial papers including revision, giving it much stronger argument-construction practice than a lecture-only survey.",
+    "marginal_value": "Adds the missing broad philosophy foundation and writing/revision practice; Yale Death remains a specialist complement rather than a substitute.",
+    "provider_concentration_notes": "MIT already appears in other categories, but this is a distinct humanities role won on pedagogy and writing practice.",
+    "coverage_notes": "Becomes the general philosophy entry point; practical logic and applied ethics remain separate roles.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-death",
+      "saylor-phil102-critical-thinking-logic",
+      "saylor-phil203-environmental-ethics"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-fun-boite-outils-philosophie-politique",
+    "candidate_id": "fun-boite-outils-philosophie-politique",
+    "review_id": "deep-14-fun-boite-outils-philosophie-politique",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current French-language political philosophy with conceptual tools and assessment",
+    "comparison_set": [
+      "yale-plsc-114-political-philosophy",
+      "saylor-phil103-moral-political-philosophy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "FUN's 20-hour French route adds a genuine learning role rather than token language diversity. It is current, structured around major political-philosophy concepts and thinkers, includes module quizzes and reflection, and awards a free badge. That combination of language access, currentness and coherent practice outweighs the narrower need to retain another English Yale archive in the same role.",
+    "marginal_value": "Adds substantive French-language political-philosophy access with current assessment.",
+    "provider_concentration_notes": "Université de Liège / FUN MOOC is not concentrated in the canonical set.",
+    "coverage_notes": "Serves as the core political-philosophy route; the deeper but Western-canon-heavy Yale archive remains available through its Deep Review.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-polsc101-political-science"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-mit-24-231-ethics",
+    "candidate_id": "mit-24-231-ethics",
+    "review_id": "deep-14-mit-24-231-ethics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Focused undergraduate normative and metaethical study with substantial writing",
+    "comparison_set": [
+      "mit-24-00-problems-philosophy",
+      "saylor-phil203-environmental-ethics",
+      "saylor-phil103-moral-political-philosophy"
+    ],
+    "incumbent_ids": [
+      "yale-death"
+    ],
+    "decision_rationale": "MIT Ethics remains an excellent archive with four substantive papers, but its core normative/metaethical role overlaps materially with the admitted broad MIT philosophy foundation and the more differentiated current Environmental Ethics specialist. The marginal core value is not high enough to justify another MIT philosophy slot.",
+    "marginal_value": "Adds focused ethics depth, but insufficient differentiation after broader philosophy and applied ethics are retained.",
+    "provider_concentration_notes": "MIT concentration raises the bar for overlapping humanities roles; prestige does not justify duplication.",
+    "coverage_notes": "General ethics remains inside MIT 24.00, while applied contemporary ethics is covered by Saylor PHIL203.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-24-00-problems-philosophy",
+      "saylor-phil203-environmental-ethics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-openlearn-what-is-politics",
+    "candidate_id": "openlearn-what-is-politics",
+    "review_id": "deep-14-openlearn-what-is-politics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Accessible conceptual introduction to politics",
+    "comparison_set": [
+      "saylor-polsc101-political-science",
+      "fun-boite-outils-philosophie-politique"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "OpenLearn provides a clear 15-hour introduction, but it is narrower, was last updated in 2019 and is outcompeted by Saylor's much broader current political-science survey and FUN's current political-philosophy route. A free Statement of Participation does not create enough marginal value.",
+    "marginal_value": "Useful low-friction orientation, but not a distinct core role after stronger current routes are selected.",
+    "provider_concentration_notes": "Provider concentration is not the deciding factor.",
+    "coverage_notes": "Introductory politics remains covered through the broad Saylor survey and the conceptual FUN political-philosophy route.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "saylor-polsc101-political-science",
+      "fun-boite-outils-philosophie-politique"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-saylor-phil102-critical-thinking-logic",
+    "candidate_id": "saylor-phil102-critical-thinking-logic",
+    "review_id": "deep-14-saylor-phil102-critical-thinking-logic",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Practical critical thinking, argument analysis and introductory logic",
+    "comparison_set": [
+      "mit-24-00-problems-philosophy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PHIL102 fills a practical reasoning role that the broader philosophy course does not replace. Its 29-hour current route covers argument analysis, sentential logic, Venn diagrams, fallacies, scientific reasoning and strategic reasoning, with repeatable unit assessments, a final exam and free certificate.",
+    "marginal_value": "Adds directly transferable reasoning and logic practice across academic, professional and everyday contexts.",
+    "provider_concentration_notes": "Saylor is represented elsewhere, so this course is admitted only because critical thinking/logic is a distinct uncovered competency.",
+    "coverage_notes": "Complements MIT 24.00 by focusing on formal and practical reasoning rather than broad philosophical survey.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-24-00-problems-philosophy"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-saylor-polsc101-political-science",
+    "candidate_id": "saylor-polsc101-political-science",
+    "review_id": "deep-14-saylor-polsc101-political-science",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad current introduction to political science across institutions, participation, comparison and political behavior",
+    "comparison_set": [
+      "openlearn-what-is-politics",
+      "fun-boite-outils-philosophie-politique",
+      "yale-plsc-114-political-philosophy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "POLSC101 is the strongest broad disciplinary political-science route in the reviewed pool. Its 111-hour current syllabus provides breadth across foundational concepts, political participation, comparative politics, institutions, behavior and applied examples with structured assessment and a free certificate.",
+    "marginal_value": "Adds a full political-science survey that is not replaced by political philosophy.",
+    "provider_concentration_notes": "Saylor concentration is accepted because this is a distinct disciplinary role with unusually large scope.",
+    "coverage_notes": "Becomes the political-science foundation; FUN covers political philosophy separately.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "fun-boite-outils-philosophie-politique"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-plsc-114-political-philosophy",
+    "candidate_id": "yale-plsc-114-political-philosophy",
+    "review_id": "deep-14-yale-plsc-114-political-philosophy",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep primary-text introduction to Western political philosophy",
+    "comparison_set": [
+      "fun-boite-outils-philosophie-politique",
+      "saylor-phil103-moral-political-philosophy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Yale PLSC 114 is excellent on primary texts and depth, but its heavily Western-canonical scope plus existing Yale concentration make it a weaker marginal addition once a current French political-philosophy route is selected. The project should not mistake canonical depth for global representativeness.",
+    "marginal_value": "Adds deeper engagement with classic Western texts, but not enough differentiated core value to justify another Yale archive slot.",
+    "provider_concentration_notes": "Yale concentration is a material factor because multiple other Yale humanities courses compete for distinct roles.",
+    "coverage_notes": "Political philosophy remains covered by FUN; Yale's deeper Western-canon route remains discoverable through its review.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "fun-boite-outils-philosophie-politique"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-saylor-phil103-moral-political-philosophy",
+    "candidate_id": "saylor-phil103-moral-political-philosophy",
+    "review_id": "deep-14-saylor-phil103-moral-political-philosophy",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Structured current moral and political philosophy with assessment",
+    "comparison_set": [
+      "mit-24-00-problems-philosophy",
+      "fun-boite-outils-philosophie-politique",
+      "saylor-phil203-environmental-ethics"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PHIL103 is strong and current, but its combined moral/political role is split more effectively across the broader MIT philosophy foundation, the French political-philosophy course and the applied Environmental Ethics specialist. Retaining it would add substantial overlap and further Saylor concentration.",
+    "marginal_value": "Adds convenience and current assessment but insufficient unique coverage.",
+    "provider_concentration_notes": "Saylor already wins critical thinking, political science and environmental ethics; a fourth overlapping humanities slot has a higher marginal-value bar.",
+    "coverage_notes": "Moral and political philosophy remain covered through complementary stronger roles rather than one blended course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-24-00-problems-philosophy",
+      "fun-boite-outils-philosophie-politique"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-saylor-phil203-environmental-ethics",
+    "candidate_id": "saylor-phil203-environmental-ethics",
+    "review_id": "deep-14-saylor-phil203-environmental-ethics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current applied environmental ethics and environmental justice",
+    "comparison_set": [
+      "mit-24-231-ethics",
+      "mit-24-00-problems-philosophy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "PHIL203 earns a specialist slot because it applies ethical frameworks to environmental justice, worldviews and environmental law in a current 49-hour course. That role is materially different from a general philosophy or general ethics survey.",
+    "marginal_value": "Adds contemporary applied ethics in an area with social and policy relevance, supported by current assessment.",
+    "provider_concentration_notes": "Saylor concentration is acknowledged, but environmental ethics is a distinct specialist learning need.",
+    "coverage_notes": "Complements general philosophy while providing applied ethical analysis that the broad course does not develop in depth.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-24-00-problems-philosophy"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-engl-300-theory-literature",
+    "candidate_id": "yale-engl-300-theory-literature",
+    "review_id": "deep-14-yale-engl-300-theory-literature",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad literary theory and criticism with substantial written analysis",
+    "comparison_set": [
+      "yale-engl-310-modern-poetry",
+      "yale-ital-310-dante"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "ENGL 300 fills the methods/theory role in literary studies rather than a single genre or author. Its survey from formalism and structuralism through feminism, postcolonial criticism and queer theory is paired with two substantial papers and a final, making it a strong analytical foundation despite archive age.",
+    "marginal_value": "Adds a transferable critical-method toolkit for literature and cultural analysis.",
+    "provider_concentration_notes": "Yale concentration is permitted only because literary theory is a distinct method role; specialist Yale courses are pruned elsewhere in this batch.",
+    "coverage_notes": "Acts as the literary-criticism foundation and complements the applied close-reading practice of Modern Poetry.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-engl-310-modern-poetry"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-engl-310-modern-poetry",
+    "candidate_id": "yale-engl-310-modern-poetry",
+    "review_id": "deep-14-yale-engl-310-modern-poetry",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Close reading and critical interpretation through a broad modern-poetry sequence",
+    "comparison_set": [
+      "yale-engl-300-theory-literature",
+      "yale-ital-310-dante"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Modern Poetry earns a slot because it provides applied close-reading practice across a broad set of poets rather than duplicating literary theory. Informal writing, a midterm, two papers and a final create substantial interpretive practice.",
+    "marginal_value": "Adds sustained close-reading and evidence-based literary interpretation across multiple authors and movements.",
+    "provider_concentration_notes": "Yale concentration is controlled by excluding the narrower Dante specialist; this course is retained because its broader genre coverage has greater core value.",
+    "coverage_notes": "Complements Theory of Literature by turning critical methods into repeated close-reading practice.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-engl-300-theory-literature"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-ital-310-dante",
+    "candidate_id": "yale-ital-310-dante",
+    "review_id": "deep-14-yale-ital-310-dante",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Deep single-author study of Dante in literary, theological and political context",
+    "comparison_set": [
+      "yale-engl-310-modern-poetry",
+      "yale-engl-300-theory-literature"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Dante in Translation is one of the highest-quality courses in the family, but it is a narrower single-author specialist. Once the canonical set contains a broad literary-theory course and a broad applied close-reading course, the marginal core value does not justify another Yale literature slot.",
+    "marginal_value": "Adds exceptional specialist depth but limited additional foundational coverage.",
+    "provider_concentration_notes": "Yale concentration is decisive here: high intrinsic quality alone is not enough to mirror the archive.",
+    "coverage_notes": "The Deep Review preserves this as a top specialist option without expanding the core set.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "yale-engl-300-theory-literature",
+      "yale-engl-310-modern-poetry"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-rlst-145-hebrew-bible",
+    "candidate_id": "yale-rlst-145-hebrew-bible",
+    "review_id": "deep-14-yale-rlst-145-hebrew-bible",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Academic historical-critical study of the Hebrew Bible",
+    "comparison_set": [
+      "yale-rlst-152-new-testament"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The Hebrew Bible course is rigorous and methodologically strong, but its learning mode and provider overlap heavily with the New Testament course. To control Yale and corpus concentration, the stronger practice package in RLST 152 is retained as the single academic religious-studies exemplar.",
+    "marginal_value": "Adds a different corpus but largely the same historical-literary academic role.",
+    "provider_concentration_notes": "Yale concentration is a material reason not to retain both religious-studies archives.",
+    "coverage_notes": "This decision does not imply that New Testament study represents global religious studies; broader representation remains a future coverage concern.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "yale-rlst-152-new-testament"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-rlst-152-new-testament",
+    "candidate_id": "yale-rlst-152-new-testament",
+    "review_id": "deep-14-yale-rlst-152-new-testament",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Academic historical-literary religious studies with substantial interpretive writing",
+    "comparison_set": [
+      "yale-rlst-145-hebrew-bible"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "RLST 152 is retained as the strongest academic religious-studies exemplar in the current pool. It clearly separates historical-literary study from devotional instruction and originally required two six-page papers plus an eight-page final paper, giving it unusually strong interpretive practice.",
+    "marginal_value": "Adds rigorous historical-literary method and substantial evidence-based writing in religious studies.",
+    "provider_concentration_notes": "Only one of the two closely related Yale religious-studies courses is retained to control provider and corpus concentration.",
+    "coverage_notes": "Admitted as a specialist academic route, not as a stand-in for global religious-studies coverage.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-08-yale-socy-151-social-theory",
+    "candidate_id": "yale-socy-151-social-theory",
+    "review_id": "deep-14-yale-socy-151-social-theory",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Foundational comparative social theory across major modern thinkers",
+    "comparison_set": [
+      "saylor-polsc101-political-science",
+      "yale-plsc-114-political-philosophy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "SOCY 151 fills a distinct social-theory role not covered by political science or political philosophy. Its comparative treatment of Hobbes, Locke, Rousseau, Smith, Marx, Nietzsche, Freud, Weber and Durkheim provides a coherent foundation with repeated essay assessment.",
+    "marginal_value": "Adds sociological and social-theoretical foundations that are absent from the canonical set.",
+    "provider_concentration_notes": "Yale concentration remains material, but social theory is sufficiently distinct from the admitted literary and religious-studies roles.",
+    "coverage_notes": "Provides the core classical social-theory route while explicitly acknowledging the need for later and more globally diverse theory outside this course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "saylor-polsc101-political-science"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
