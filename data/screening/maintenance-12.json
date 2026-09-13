@@ -1,0 +1,106 @@
+[
+  {
+    "screen_id": "maintenance-12-nau-regulacao-digital",
+    "candidate_id": "nau-regulacao-digital",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT",
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Course page describes module checks and a final assessment, but current zero-cost assessment/certificate access is not established after NAU's July 2026 payment-model change; no free credential is claimed",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The current eight-hour advanced route is short but unusually dense and current for a specialist digital-regulation course: EU digital-regulation context, platforms and markets, data, AI/emerging technology, content moderation, e-commerce, accessibility and compliance implementation across ten modules. The course has structured module checks and a final assessment. NAU guarantees a free Audit profile generally, but the page does not prove that assessment/certification for this specific course remains zero-cost after the July 2026 payment change, so F2 is the conservative tier. Specialist scope and current legal relevance justify Deep Review.",
+    "flags": [
+      "pt-pt",
+      "english",
+      "8-hours",
+      "advanced",
+      "digital-regulation",
+      "dsa",
+      "data-regulation",
+      "ai-regulation",
+      "accessibility",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-12-nau-responsavel-ciberseguranca",
+    "candidate_id": "nau-responsavel-ciberseguranca",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Participation certificate requires at least 70%, but current course-specific zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+      "https://www.nau.edu.pt/pt/noticias/formacao-ciberseguranca-aprendizagem-ao-longo-da-vida-presenca-nau-c-days-2026/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "This current 15-hour intermediate course is substantially stronger than the legacy pt-PT cybersecurity material previously rejected. Ten modules cover national/EU cyber law, risk management, technical and organisational measures, auditing, asset inventories, incident management, policies, planning, annual reporting and legal compliance. The course design includes practical application/reflection plus continuous assessment and a final exam. June 2026 NAU/CNCS evidence explicitly describes its cybersecurity catalogue as accessible and free, but the July platform payment change prevents assuming that this exact assessed certificate path is still free; F2 is therefore conservative while the teaching route clearly merits Deep Review.",
+    "flags": [
+      "pt-pt",
+      "15-hours",
+      "intermediate",
+      "cybersecurity-governance",
+      "risk-management",
+      "incident-management",
+      "compliance",
+      "cncs",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-12-nau-ciberseguranca-executivos-nis2",
+    "candidate_id": "nau-ciberseguranca-executivos-nis2",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-14",
+    "canonical_url": "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "Participation certificate requires at least 70%, but current course-specific zero-cost assessment/certificate access is not established under NAU's post-July-2026 payment models",
+    "completeness": "substantive",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+      "https://www.nau.edu.pt/pt/noticias/formacao-ciberseguranca-aprendizagem-ao-longo-da-vida-presenca-nau-c-days-2026/",
+      "https://www.nau.edu.pt/pt/noticias/uma-nova-era-da-plataforma-nau/"
+    ],
+    "rationale": "The current 30-hour intermediate route has a clear executive/governance role and is not a duplicate of the more operational Responsible for Cybersecurity course. Eight modules cover NIS/NIS2, incident response and business continuity, supply-chain security, secure acquisition/development/maintenance, vulnerability analysis, cryptography, access control/MFA and cyber-hygiene. Continuous module checks plus a final exam provide a structured assessment design. Current course-specific certificate cost is unproven after NAU's July 2026 payment change, so F2 is used conservatively; the depth, currency and distinct learner role justify Deep Review.",
+    "flags": [
+      "pt-pt",
+      "30-hours",
+      "intermediate",
+      "nis2",
+      "executive-cybersecurity",
+      "business-continuity",
+      "supply-chain-security",
+      "governance",
+      "cncs",
+      "conservative-f2",
+      "deep-review-required"
+    ],
+    "is_current": true
+  }
+]
