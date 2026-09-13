@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
 
-**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **202 advance / 7 hold / 81 reject**; the corrective Arabic/Mandarin micro-wave is complete, with later maintenance corrections for two archived NAU courses, one legacy-currency NAU education course, two IBM SkillsBuild learner routes, one time-gated FUN session and one legal-currentness HELP course. **185 current Deep Reviews** are complete: 12 calibration records plus 173 scaled reviews across eighteen post-calibration batches.
+**Status:** v0.2 — discovery frozen; Deep Review is the primary workstream. **290 discovery candidates + 17 reference fixtures = 307 researched learning experiences.** All 290 candidates are shallow-screened. Current decisions are **199 advance / 9 hold / 82 reject** after Phase 3 maintenance reconciliation. **198 current Deep Reviews** are complete: 12 calibration records plus 186 scaled reviews across twenty-one post-calibration batches; only `whoacademy-good-practices-clinical-trials` remains as a valid current `advance` without Deep Review.
 
 ## Goal
 
@@ -37,6 +37,9 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-16.md`](docs/reviews/scale-batch-16.md) — complete current Cybersecurity & IT `advance` family with lab density, prerequisites, vendor dependence and currentness checks.
 - [`docs/reviews/scale-batch-17.md`](docs/reviews/scale-batch-17.md) — complete current Marketing & Sales `advance` family with fast-moving channel, platform and AI-search currency checks.
 - [`docs/reviews/scale-batch-18.md`](docs/reviews/scale-batch-18.md) — Arts & Design Deep Review for 11 valid current advances, with two newly discovered maintenance blockers kept outside scoring.
+- [`docs/reviews/scale-batch-19.md`](docs/reviews/scale-batch-19.md) — Mathematics & Statistics closure across the final specialist survivors.
+- [`docs/reviews/scale-batch-20.md`](docs/reviews/scale-batch-20.md) — AI & Data closure across the remaining Kaggle microcourses.
+- [`docs/reviews/scale-batch-21.md`](docs/reviews/scale-batch-21.md) — History & Culture closure across the final five ordinary survivors.
 - [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
