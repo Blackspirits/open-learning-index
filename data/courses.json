@@ -3589,5 +3589,143 @@
     "quality_score": 8.82,
     "review_interval_days": 90,
     "next_review": "2026-12-12"
+  },
+  {
+    "id": "saylor-psych101-introduction-psychology",
+    "title": "PSYCH101: Introduction to Psychology",
+    "provider": "Saylor University",
+    "category": "psychology-behavior",
+    "level": "beginner_to_intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://learn.saylor.org/course/view.php?id=706",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "optional_paid_or_external",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.2,
+      "depth": 8.8,
+      "practice": 8.5,
+      "materials": 8.2,
+      "currency": 9.2,
+      "expertise": 8.4,
+      "accessibility": 9.7
+    },
+    "recommendation_score": 8.9,
+    "why_recommended": "Current 46-hour general-psychology foundation covering biological, cognitive, developmental, clinical, social and health topics with reusable unit assessments, a free final exam and certificate.",
+    "evidence": [
+      "https://learn.saylor.org/course/view.php?id=706",
+      "https://learn.saylor.org/mod/page/view.php?id=61840"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.57,
+    "review_interval_days": 180,
+    "next_review": "2027-03-12"
+  },
+  {
+    "id": "openlearn-forensic-psychology",
+    "title": "Forensic psychology",
+    "provider": "The Open University / OpenLearn",
+    "category": "psychology-behavior",
+    "level": "beginner_to_intermediate",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://www.open.edu/openlearn/health-sports-psychology/forensic-psychology",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_badge_and_statement",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.4,
+      "practice": 9.2,
+      "materials": 9,
+      "currency": 7,
+      "expertise": 9.4,
+      "accessibility": 9.7
+    },
+    "recommendation_score": 8.8,
+    "why_recommended": "Strong 24-hour investigation-based course on memory, eyewitness evidence, identification error and criminal investigation with witness materials, weekly quizzes and badge assessment.",
+    "evidence": [
+      "https://www.open.edu/openlearn/health-sports-psychology/forensic-psychology",
+      "https://www.open.edu/openlearn/mod/oucontent/view.php?id=70526&section=3"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.79,
+    "review_interval_days": 120,
+    "next_review": "2027-01-11"
+  },
+  {
+    "id": "openlearn-psychology-around-world",
+    "title": "Psychology around the world",
+    "provider": "The Open University / OpenLearn",
+    "category": "psychology-behavior",
+    "level": "beginner",
+    "primary_language": "en",
+    "other_languages": [],
+    "url": "https://www.open.edu/openlearn/health-sports-psychology/psychology-around-the-world",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_statement_of_participation",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 7.1,
+      "practice": 7.5,
+      "materials": 8.9,
+      "currency": 9.8,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "recommendation_score": 8.6,
+    "why_recommended": "Current 2025 six-hour cross-cultural psychology course examining cognition, wellbeing and development while explicitly challenging WEIRD generalisation.",
+    "evidence": [
+      "https://www.open.edu/openlearn/health-sports-psychology/psychology-around-the-world"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.36,
+    "review_interval_days": 180,
+    "next_review": "2027-03-12"
+  },
+  {
+    "id": "nau-saude-mental-bem-estar-ensino-superior",
+    "title": "Saúde Mental e Bem-Estar no Ensino Superior",
+    "provider": "NAU / Portuguese higher-education partners",
+    "category": "psychology-behavior",
+    "level": "beginner",
+    "primary_language": "pt-PT",
+    "other_languages": [],
+    "url": "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/",
+    "free_access": "F0_FULL_CREDENTIAL",
+    "certificate": "free_provider_certificate",
+    "academic_credits": "none",
+    "self_paced": true,
+    "status": "active",
+    "quality_components": {
+      "pedagogy": 8.3,
+      "depth": 7.8,
+      "practice": 7.4,
+      "materials": 8.2,
+      "currency": 9.4,
+      "expertise": 9.2,
+      "accessibility": 9.6
+    },
+    "recommendation_score": 8.5,
+    "why_recommended": "Current 12-hour pt-PT mental-health-literacy course for higher education covering depression, anxiety, addictive behaviours, stress, coping, resilience and first-response support; not clinical training.",
+    "evidence": [
+      "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/"
+    ],
+    "last_verified": "2026-09-12",
+    "review_status": "phase4_admitted",
+    "quality_score": 8.28,
+    "review_interval_days": 120,
+    "next_review": "2027-01-11"
   }
 ]
