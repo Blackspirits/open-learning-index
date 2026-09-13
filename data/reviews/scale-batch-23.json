@@ -1,0 +1,226 @@
+[
+  {
+    "review_id": "deep-24-mit-6-7220j-nonlinear-optimization",
+    "candidate_id": "mit-6-7220j-nonlinear-optimization",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No MIT OpenCourseWare completion credential",
+    "academic_credits": "No academic credit for independent OpenCourseWare learners",
+    "self_paced": true,
+    "scope_notes": "Complete Spring 2025 graduate nonlinear-optimization course spanning analytic optimality, convex and nonconvex problems, constrained and unconstrained methods, first- and second-order algorithms, Lagrange multipliers, convex analysis, duality and applications in machine learning, control, communications and resource allocation.",
+    "prerequisites": "MIT 18.06 Linear Algebra plus one real-analysis course equivalent to MIT 18.100A, 18.100B or 18.100Q",
+    "required_resources": "General-purpose computer/browser and PDF-capable environment; course notes, problem sets, solutions and exam materials are openly downloadable and no paid software is required",
+    "component_evidence": {
+      "pedagogy": "The course is organised into a coherent theory-to-algorithms progression: analytic characterisation of optima, gradient-based methods and geometry-aware/second-order methods, with modern applications used to connect abstract results to computational problems.",
+      "depth": "This is a full graduate treatment rather than a tool tutorial, reaching optimality conditions, normal cones, convex/nonconvex analysis, constrained methods, conic/polynomial optimisation, Lagrangian duality and multiple algorithm families.",
+      "practice": "Six substantial problem sets are published with solutions, alongside midterm material, exam solutions and additional files; homework represented 40% of the original course grade, giving unusually strong independent problem-solving practice.",
+      "materials": "MIT exposes a complete downloadable package with detailed lecture notes, calendar, problem sets, solutions, exams and review material, making the archive unusually self-contained for an advanced mathematical course.",
+      "currency": "The course was taught in Spring 2025 and explicitly emphasises modern applications, particularly machine learning; both the mathematical foundations and the application framing are current for a 2026 index.",
+      "expertise": "The course is taught by MIT professor Gabriele Farina in EECS/Sloan, with direct research and teaching expertise in optimisation, game theory and machine-learning-adjacent mathematical methods.",
+      "accessibility": "Everything is openly available without payment or proprietary software, but the required linear algebra plus real analysis and graduate mathematical maturity sharply narrow the realistic learner audience."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 9.8,
+      "practice": 9.6,
+      "materials": 9.5,
+      "currency": 9.8,
+      "expertise": 9.8,
+      "accessibility": 7.8
+    },
+    "quality_score": 9.46,
+    "recommendation_score": 9.2,
+    "recommendation_rationale": "The strongest broad optimisation challenger reviewed so far and a decisive upgrade over the two-hour MathWorks Onramp for learners with the prerequisites. It is not a general beginner route: linear algebra, real analysis and proof maturity are real barriers, but for advanced learners the currentness, depth and solution-backed practice make it an exceptional free pathway.",
+    "comparators": [
+      "mathworks-optimization-onramp",
+      "mit-18-100a-real-analysis",
+      "mit-18-06sc-linear-algebra"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/pages/syllabus/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/lists/problem-sets/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/pages/exams/"
+    ],
+    "flags": [
+      "optimization",
+      "graduate-level",
+      "current-2025",
+      "problem-set-heavy",
+      "advanced-prerequisites",
+      "no-credential"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-24-mit-12-340x-global-warming-science",
+    "candidate_id": "mit-12-340x-global-warming-science",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active_archive",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified",
+    "academic_credits": "No academic credit for independent OpenCourseWare/Open Learning Library learners",
+    "self_paced": true,
+    "scope_notes": "Full undergraduate climate-science course on radiative/energy balance, greenhouse gases, atmospheric and oceanic circulation, solar and orbital variability, aerosols, evidence for past and present climate change and climate modelling, with lecture videos/notes, problem sets and exams.",
+    "prerequisites": "University-level physics/calculus background is helpful; the predecessor MIT syllabus used Physics I and Calculus I with thermodynamics/kinetics as a corequisite, so complete beginners should expect substantial quantitative friction",
+    "required_resources": "Modern browser; MIT states that the Open Learning Library is free, progress can be tracked with optional enrolment, and all course materials can also be viewed without enrolling",
+    "component_evidence": {
+      "pedagogy": "The course develops climate science from physical energy balance into atmospheric/ocean processes, evidence and modelling, and uses a hierarchy of climate models to connect equations with system behaviour rather than treating climate change as an awareness topic.",
+      "depth": "Unlike the previously reviewed climate-action primers, this is a full disciplinary undergraduate course covering radiative transfer, circulation, aerosols, orbital/solar effects, palaeoclimate and model-based future change at substantial scientific depth.",
+      "practice": "Problem sets, exams and the ability to run a one-column atmospheric model provide sustained quantitative application and self-assessment well beyond the practice layer of the FAO or EU climate-action alternatives.",
+      "materials": "MIT exposes lecture videos, notes, problem sets, exams and the Open Learning Library route as a coherent free package suitable for structured independent study.",
+      "currency": "The teaching edition is Spring 2020. Core climate physics remains highly relevant, but a 2026 climate anchor should reflect post-2020 observations and the IPCC AR6 cycle; the missing newer empirical/assessment context is a material currency penalty rather than a cosmetic age issue.",
+      "expertise": "MIT climate scientists including Kerry Emanuel, Daniel Cziczo and David McGee provide exceptional disciplinary expertise across atmospheric science, aerosols, palaeoclimate and climate-system physics.",
+      "accessibility": "The free Open Learning Library/OCW access is excellent, but quantitative physics/calculus expectations and English-only verified instruction create meaningful entry friction for general learners."
+    },
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.5,
+      "practice": 9.4,
+      "materials": 9.5,
+      "currency": 7.6,
+      "expertise": 9.9,
+      "accessibility": 8.3
+    },
+    "quality_score": 9.25,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "By far the deepest climate-science course in the reviewed pool and excellent for physical foundations, modelling and quantitative practice. Recommendation is held below its intrinsic Quality because Spring 2020 is too old to be presented unqualified as a best-current 2026 climate-science anchor; learners need post-2020 evidence and IPCC AR6-era supplementation.",
+    "comparators": [
+      "fao-intro-climate-smart-agriculture",
+      "eu-climate-action-academy"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/",
+      "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/external-resources/open-learning-library_bddc071b-a803-42fa-966c-619b1c601e71/"
+    ],
+    "flags": [
+      "climate-science",
+      "undergraduate",
+      "taught-2020",
+      "quantitative",
+      "climate-modeling",
+      "post-2020-supplement-needed"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-24-saylor-bus633-sales-management",
+    "candidate_id": "saylor-bus633-sales-management",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/bus633",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "Free Saylor University course-completion certificate after passing the free final exam",
+    "academic_credits": "2.9 continuing-education units are documented; graduate academic credit requires separate additional degree-program requirements",
+    "self_paced": true,
+    "scope_notes": "Current 29-hour ten-unit sales-management course covering the importance of sales, prospecting/qualifying, pre-approach, approach, presentations/demonstrations, objection handling, closing, follow-up, selling strategies and personal branding, with explicit treatment of CRM and modern digital sales technology.",
+    "prerequisites": "No formal prerequisite stated; graduate-level framing means prior business/marketing familiarity is helpful",
+    "required_resources": "Computer or web-capable mobile device, internet and a free Saylor account/enrolment to take assessments, track progress and sit the final exam; all linked course materials and activities are free",
+    "component_evidence": {
+      "pedagogy": "The ten-unit structure follows the selling process in sequence from prospecting through follow-up and relationship building, adds customer-type/SPIN frameworks and finishes with personal selling/branding rather than presenting disconnected sales tips.",
+      "depth": "At 29 hours the course is substantially deeper than the three-hour HubSpot Inbound Sales comparator and covers both frontline selling and broader technology/relationship-management context, though it is not a full sales-leadership degree module.",
+      "practice": "Every unit has repeatable assessments, a repeatable practice exam supports preparation, and the free final exam requires 70% to pass; the route has strong knowledge checking but no verified extended live role-play or sales capstone.",
+      "materials": "Saylor curates free articles, lectures and videos into ten units with explicit learning outcomes, study guidance, assessments and a mobile/offline option; material quality depends partly on external sources rather than one unified textbook.",
+      "currency": "The syllabus was last modified 3 October 2025 and explicitly includes CRM, prospecting, outreach/email platforms, scheduling, live chat, reporting, social media, e-commerce and globalization, giving good current relevance for sales practice.",
+      "expertise": "Saylor provides structured university-level business curriculum and aligns the course with its Master's in Marketing pathway, but the distributed-source teaching model exposes less single-instructor subject authority than the strongest university/professional specialist courses.",
+      "accessibility": "The course, assessments and final exam are entirely free; account creation is free, mobile access is supported and the completion certificate carries 2.9 CEUs, producing very low financial friction despite the graduate framing."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.7,
+      "practice": 8.8,
+      "materials": 8.7,
+      "currency": 9.2,
+      "expertise": 8.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 8.84,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "The strongest dedicated sales route now in the reviewed pool: roughly nine times longer than HubSpot Inbound Sales, current, systematically assessed and fully free through certification. HubSpot remains a useful concise consultative-sales alternative, while BUS633 is the stronger choice for a comprehensive sales foundation.",
+    "comparators": [
+      "hubspot-inbound-sales",
+      "hubspot-revenue-operations",
+      "saylor-bus203-marketing"
+    ],
+    "evidence": [
+      "https://learn.saylor.org/course/bus633",
+      "https://learn.saylor.org/mod/page/view.php?id=83120"
+    ],
+    "flags": [
+      "sales",
+      "29-hours",
+      "ten-units",
+      "current-2025",
+      "repeatable-assessments",
+      "free-certificate",
+      "2-9-ceus"
+    ],
+    "is_current": true
+  },
+  {
+    "review_id": "deep-24-microsoft-ai-red-teaming-101",
+    "candidate_id": "microsoft-ai-red-teaming-101",
+    "reviewed_on": "2026-09-13",
+    "canonical_url": "https://learn.microsoft.com/en-us/security/ai-red-team/training",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "academic_credits": "No academic credit verified",
+    "self_paced": true,
+    "scope_notes": "Ten-episode specialist series on AI red-team fundamentals, generative-model risk, direct/indirect prompt injection, single- and multi-turn attacks, mitigations and automated adversarial testing with PyRIT, supported by slides, demonstrations, real-world cases and an open lab repository.",
+    "prerequisites": "Best suited to security professionals, ML engineers, AI practitioners and architects; practical PyRIT/lab work benefits from Python, Docker and API familiarity",
+    "required_resources": "Free browser access for the instructional series and open GitHub lab/notebook materials; running the full playground requires Docker plus either Azure OpenAI or standard OpenAI API credentials, so the complete practice route has an external paid/API dependency",
+    "component_evidence": {
+      "pedagogy": "The ten episodes move from model/security fundamentals into concrete attack classes, defenses and then automation at scale, with real incidents and demonstrations providing a coherent specialist progression rather than a collection of generic security videos.",
+      "depth": "The route is substantially deeper and more focused than Microsoft's earlier two-hour AI Security Fundamentals path, covering prompt-injection variants, multi-turn attacks, mitigation and PyRIT automation, but it remains a modular training series rather than a semester-scale security course.",
+      "practice": "Microsoft links every episode to demonstrations and red-team labs, and the open repository contains challenge infrastructure and PyRIT notebooks; however full playground execution requires Azure OpenAI or OpenAI API access, so the genuinely free practice layer is materially constrained.",
+      "materials": "Videos, downloadable slides, real-world case studies, the official lab repository and open PyRIT tooling create a strong specialist materials ecosystem with unusually close connection to production red-team practice.",
+      "currency": "The series was released/updated in July 2025 and covers current generative-AI attack patterns and PyRIT workflows; Microsoft continued publishing full-stack AI-red-team guidance in 2026, so topical currency is exceptionally strong.",
+      "expertise": "The material comes directly from Microsoft's AI Red Team and production security experience, including the team behind PyRIT, giving exceptional expertise in the exact attack/defense domain being taught.",
+      "accessibility": "The instructional core is free and self-paced, but the most meaningful labs require technical setup plus paid/external model API access and the verified route offers no free credential, limiting practical accessibility."
+    },
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 8.5,
+      "practice": 7.4,
+      "materials": 9.0,
+      "currency": 9.8,
+      "expertise": 9.8,
+      "accessibility": 7.6
+    },
+    "quality_score": 8.62,
+    "recommendation_score": 8.7,
+    "recommendation_rationale": "A major improvement over the earlier AI Security Fundamentals micro-path for learners who need current AI-red-team concepts and production-grounded techniques. It is strongest as an F2 specialist study route: the free videos, cases and open notebooks are valuable, but paid model/API access is a real barrier to reproducing the complete lab experience.",
+    "comparators": [
+      "microsoft-learn-ai-security-fundamentals",
+      "cisco-ethical-hacker",
+      "portswigger-web-security-academy"
+    ],
+    "evidence": [
+      "https://learn.microsoft.com/en-us/security/ai-red-team/training",
+      "https://github.com/microsoft/AI-Red-Teaming-Playground-Labs",
+      "https://github.com/microsoft/PyRIT"
+    ],
+    "flags": [
+      "ai-security",
+      "ai-red-teaming",
+      "current-2025",
+      "ten-episodes",
+      "open-lab-repository",
+      "paid-api-required-for-full-labs",
+      "no-credential"
+    ],
+    "is_current": true
+  }
+]
