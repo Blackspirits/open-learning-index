@@ -1,0 +1,274 @@
+[
+  {
+    "admission_id": "admission-05-mru-principles-microeconomics",
+    "candidate_id": "mru-principles-microeconomics",
+    "review_id": "deep-11-mru-principles-microeconomics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Accessible general microeconomics with dense practice for independent learners",
+    "comparison_set": [
+      "saylor-econ101-principles-microeconomics",
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MRU is the strongest default introductory microeconomics route in the reviewed family. Ninety-four lessons, eighty-eight quizzes and sixteen interactives provide substantially stronger active practice than the Saylor alternative, while MIT 14.03 serves a more advanced applied-policy role rather than replacing a principles course.",
+    "marginal_value": "Adds the canonical beginner-to-intermediate microeconomics foundation with unusually high practice density and a free completion certificate.",
+    "provider_concentration_notes": "MRU also wins the macroeconomics and development-economics comparisons, but each admission serves a distinct economics learning need rather than mirroring the provider catalogue.",
+    "coverage_notes": "Becomes the primary general microeconomics route; MIT 14.03 remains a complementary advanced applied-microeconomics course.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-fao-intro-trade-food-security-nutrition",
+    "candidate_id": "fao-intro-trade-food-security-nutrition",
+    "review_id": "deep-11-fao-intro-trade-food-security-nutrition",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Introductory trade, food-security and nutrition policy orientation",
+    "comparison_set": [
+      "mru-development-economics",
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "FAO's course is a credible, current and assessed specialist primer, but at roughly two hours it is too narrow to justify a core canonical slot once broader development-economics and applied-policy routes are present. Its value is primarily as a targeted professional supplement.",
+    "marginal_value": "Adds a useful policy niche but not enough depth or independent learning scope to clear the Phase 4 core-admission bar.",
+    "provider_concentration_notes": "FAO is not otherwise concentrated in the canonical set; this is a depth and marginal-value decision, not a provider penalty.",
+    "coverage_notes": "Trade and food-security themes remain partially covered inside the broader development-economics route; the specialist course remains discoverable through its Deep Review.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mru-development-economics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-khan-financial-literacy",
+    "candidate_id": "khan-financial-literacy",
+    "review_id": "deep-11-khan-financial-literacy",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Practical personal-finance literacy with current real-world examples and mastery assessment",
+    "comparison_set": [
+      "mru-money-skills",
+      "openlearn-mse-academy-of-money"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Khan Academy provides the strongest current personal-finance curriculum in the reviewed pool. Its sixteen units, 123 skills, mastery assessment and January 2026 refresh materially outperform the narrower or less-current alternatives while preserving very low learner friction.",
+    "marginal_value": "Fills a major practical-life-skills gap with broad, recently refreshed coverage and unusually strong formative assessment.",
+    "provider_concentration_notes": "Khan Academy is represented elsewhere, but this course serves a distinct practical financial-literacy role and wins directly on currency and practice.",
+    "coverage_notes": "US-specific tax, credit and retirement details are an explicit limitation; transferable budgeting, debt, insurance, investing and fraud-prevention concepts remain broadly useful.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-saylor-bus103-financial-accounting",
+    "candidate_id": "saylor-bus103-financial-accounting",
+    "review_id": "deep-11-saylor-bus103-financial-accounting",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Current broad financial-accounting foundation with repeated assessment and free credential",
+    "comparison_set": [
+      "openlearn-fundamentals-accounting",
+      "mit-15-501-financial-managerial-accounting"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Saylor BUS103 is the strongest broad accounting foundation in the surviving pool. Its ten units, approximately sixty-three hours, September 2025 maintenance, repeated unit assessments and free certificate provide materially more complete current coverage than the shorter 2019 OpenLearn introduction.",
+    "marginal_value": "Adds a substantial and current accounting pathway suitable as the canonical general foundation.",
+    "provider_concentration_notes": "Saylor appears elsewhere in the index, but this admission is based on a clear category-local win rather than credential availability or provider breadth.",
+    "coverage_notes": "OpenLearn remains a good low-friction introduction but is not needed as a second canonical accounting slot.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-openlearn-fundamentals-accounting",
+    "candidate_id": "openlearn-fundamentals-accounting",
+    "review_id": "deep-11-openlearn-fundamentals-accounting",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Low-friction introductory bookkeeping and accounting fundamentals",
+    "comparison_set": [
+      "saylor-bus103-financial-accounting"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "OpenLearn is pedagogically sound and exceptionally accessible, but its eight-hour scope and 2019 update date make it a weaker 2026 canonical choice than Saylor BUS103. The lower-friction entry point is useful, yet it does not add enough marginal value to justify a second broad accounting slot.",
+    "marginal_value": "Offers easier onboarding and downloadable formats, but substantially less depth and weaker maintenance evidence than the selected accounting foundation.",
+    "provider_concentration_notes": "Open University representation is not the issue; this is a direct head-to-head redundancy decision.",
+    "coverage_notes": "Beginner accounting remains covered by Saylor from first principles, while the OpenLearn course remains preserved in reviewed evidence for learners who specifically prefer a shorter introduction.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "saylor-bus103-financial-accounting"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-mit-15-401-finance-theory-i",
+    "candidate_id": "mit-15-401-finance-theory-i",
+    "review_id": "deep-11-mit-15-401-finance-theory-i",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Rigorous graduate-level finance theory and problem solving",
+    "comparison_set": [
+      "mit-14-454-economic-crises-2026",
+      "khan-financial-literacy"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 15.401 remains an excellent archive for durable finance theory, but its Fall 2008 teaching context predates major post-crisis regulation, market-structure changes and empirical developments. Phase 4 should not elevate it as a current core finance curriculum when the canonical set is intended to minimise avoidable obsolescence.",
+    "marginal_value": "High theoretical value, but insufficient current all-round recommendation value for a core slot in a fast-changing field.",
+    "provider_concentration_notes": "MIT already has substantial canonical representation, so an old specialist archive must clear a particularly strong currency and marginal-value bar; this one does not.",
+    "coverage_notes": "The review remains a strong archival recommendation for stable theory. Current practical finance is better served by financial literacy, while current macro-financial crisis analysis is served by MIT 14.454.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mit-14-454-economic-crises-2026"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-saylor-econ101-principles-microeconomics",
+    "candidate_id": "saylor-econ101-principles-microeconomics",
+    "review_id": "deep-11-saylor-econ101-principles-microeconomics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Structured general microeconomics with a recent syllabus and free certificate",
+    "comparison_set": [
+      "mru-principles-microeconomics",
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Saylor ECON101 is current, structured and assessed, but MRU provides a stronger learner experience through much denser quizzes and interactives while covering the same principles role. A second general microeconomics slot would add redundancy rather than meaningful coverage.",
+    "marginal_value": "The clearer 2025 maintenance signal and free certificate are useful, but do not outweigh MRU's stronger pedagogy and practice density.",
+    "provider_concentration_notes": "This decision also avoids unnecessary Saylor concentration after BUS103 wins a distinct accounting need.",
+    "coverage_notes": "General microeconomics is covered by MRU; advanced applied microeconomics is covered separately by MIT 14.03.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mru-principles-microeconomics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-saylor-econ102-principles-macroeconomics",
+    "candidate_id": "saylor-econ102-principles-macroeconomics",
+    "review_id": "deep-11-saylor-econ102-principles-macroeconomics",
+    "decided_on": "2026-09-13",
+    "decision": "do_not_admit",
+    "learning_need": "Structured general macroeconomics with current syllabus maintenance and free certificate",
+    "comparison_set": [
+      "mru-principles-macroeconomics",
+      "mit-14-454-economic-crises-2026"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "Saylor ECON102 is a strong current alternative, but MRU's eighty-four lessons, seventy-eight quizzes and eight interactives provide the stronger general macroeconomics learning route. Keeping both would duplicate the same principles-level need.",
+    "marginal_value": "Recent syllabus maintenance and certification are positives, but insufficient to justify a redundant second general macroeconomics course.",
+    "provider_concentration_notes": "Avoiding a second Saylor economics admission also keeps provider concentration proportional to distinct learning needs.",
+    "coverage_notes": "General macroeconomics is covered by MRU, with MIT 14.454 reserved for advanced crisis and macro-finance analysis.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [],
+    "outcompeted_by_ids": [
+      "mru-principles-macroeconomics"
+    ],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-mru-principles-macroeconomics",
+    "candidate_id": "mru-principles-macroeconomics",
+    "review_id": "deep-11-mru-principles-macroeconomics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Accessible general macroeconomics with dense formative practice",
+    "comparison_set": [
+      "saylor-econ102-principles-macroeconomics",
+      "mit-14-454-economic-crises-2026"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MRU is the strongest general macroeconomics recommendation in the survivor family. Eighty-four lessons, seventy-eight quizzes and eight interactives create materially stronger practice density than Saylor while retaining broad coverage from growth and unemployment to money, monetary policy and fiscal policy.",
+    "marginal_value": "Adds the canonical principles-level macroeconomics foundation and complements rather than duplicates the advanced MIT crisis course.",
+    "provider_concentration_notes": "MRU concentration is accepted only because microeconomics, macroeconomics and development economics are distinct learning roles and each wins its own local comparison.",
+    "coverage_notes": "US-specific policy examples are a caveat, but the underlying macroeconomic framework remains broadly transferable.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-14-454-economic-crises-2026"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-mru-development-economics",
+    "candidate_id": "mru-development-economics",
+    "review_id": "deep-11-mru-development-economics",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Broad development economics with sustained practice across institutions, health, education, trade and growth",
+    "comparison_set": [
+      "fao-intro-trade-food-security-nutrition",
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MRU Development Economics is unusually comprehensive for a free course, with 221 lessons and 180 quizzes across growth, firms, trade, institutions, health, education, migration, politics and the environment. Its scale and practice create a distinct development-economics pathway rather than a duplicate of principles economics.",
+    "marginal_value": "Adds a major specialist field with far greater depth than the FAO primer and a broader development focus than MIT 14.03's applied micro/public-policy role.",
+    "provider_concentration_notes": "This is the third MRU economics admission, but its learning objective is distinct and its breadth is exceptional enough to justify the concentration. The unverified public update date remains a maintenance caveat.",
+    "coverage_notes": "Provides broad development-economics coverage while FAO's narrower trade-food-security course remains a specialist reviewed supplement.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-mit-14-03-microeconomic-theory-public-policy-2025",
+    "candidate_id": "mit-14-03-microeconomic-theory-public-policy-2025",
+    "review_id": "deep-11-mit-14-03-microeconomic-theory-public-policy-2025",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Advanced applied microeconomics, causal inference and public-policy analysis",
+    "comparison_set": [
+      "mru-principles-microeconomics",
+      "mru-development-economics"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 14.03 is the strongest economics course in the reviewed family for prepared learners and fills a role not served by principles courses. The Fall 2025 frame integrates microeconomic theory, causal inference, data, healthcare, trade, discrimination, externalities and machine-learning policy applications with assignments and exams.",
+    "marginal_value": "Adds a current, rigorous bridge from economic theory to empirical public-policy analysis rather than duplicating introductory microeconomics.",
+    "provider_concentration_notes": "MIT is already heavily represented globally, but this admission clears the higher concentration bar because the course is current, exceptionally strong and covers a distinct applied-policy role.",
+    "coverage_notes": "Complements MRU principles and development economics by serving advanced learners who already know introductory microeconomics.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mru-principles-microeconomics",
+      "mru-development-economics"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  },
+  {
+    "admission_id": "admission-05-mit-14-454-economic-crises-2026",
+    "candidate_id": "mit-14-454-economic-crises-2026",
+    "review_id": "deep-11-mit-14-454-economic-crises-2026",
+    "decided_on": "2026-09-13",
+    "decision": "admit",
+    "learning_need": "Advanced macro-finance and economic-crisis analysis for prepared graduate-level learners",
+    "comparison_set": [
+      "mru-principles-macroeconomics",
+      "mit-15-401-finance-theory-i"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "MIT 14.454 earns a specialist slot because it is a Spring 2026 advanced course on financial amplification, bank runs, bubbles, credit booms, liquidity traps, deleveraging, sudden stops and contagion, backed by a sustained problem set and solutions. It is current and materially different from a principles macroeconomics route.",
+    "marginal_value": "Adds rigorous current macro-financial crisis analysis that neither general macroeconomics nor the older finance-theory archive provides.",
+    "provider_concentration_notes": "MIT concentration is material, but the course is one of the strongest and most current specialist economics offerings in the pool and clears a high marginal-value bar.",
+    "coverage_notes": "The graduate-macroeconomics prerequisite limits accessibility; this is intentionally an advanced specialist complement, not a default macroeconomics recommendation.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "mru-principles-macroeconomics"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
