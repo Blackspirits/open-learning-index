@@ -1,0 +1,114 @@
+[
+  {
+    "screen_id": "maintenance-08-mit-6-7220j-nonlinear-optimization",
+    "candidate_id": "mit-6-7220j-nonlinear-optimization",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential; MIT OpenCourseWare content only",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/pages/syllabus/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/lists/problem-sets/",
+      "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/pages/exams/"
+    ],
+    "rationale": "MIT exposes a complete Spring 2025 graduate nonlinear-optimisation course with lecture notes, six substantial problem sets and solutions, exam material and a coherent progression through convex/nonconvex optimality, constrained methods, duality and modern applications. The prerequisite burden is high but explicit, and the course directly addresses the canonical broad-optimisation gap. Its current free route is content/self-assessment rather than a tracked credential path, so F2 is the defensible access classification.",
+    "flags": [
+      "graduate-level",
+      "high-prerequisites",
+      "optimization-gap",
+      "current-2025",
+      "no-formal-credential",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-08-mit-12-340x-global-warming-science",
+    "candidate_id": "mit-12-340x-global-warming-science",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No free formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/",
+      "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/external-resources/open-learning-library_bddc071b-a803-42fa-966c-619b1c601e71/"
+    ],
+    "rationale": "The official MIT route is a complete undergraduate climate-science course with lectures, problem sets, exams and modelling, and MIT explicitly states that the Open Learning Library route is free while all materials can also be used without enrolment. The 2020 teaching date is a material currentness risk in a rapidly developing empirical field, but the course's disciplinary depth is strong enough to warrant Deep Review against the explicit climate-science gap rather than shallow rejection.",
+    "flags": [
+      "climate-science-gap",
+      "taught-2020",
+      "climate-currentness-review",
+      "open-learning-library",
+      "no-free-credential-verified",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-08-saylor-bus633-sales-management",
+    "candidate_id": "saylor-bus633-sales-management",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://learn.saylor.org/course/bus633",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "Free Saylor University completion certificate after passing the course final assessment; graduate credit requires separate additional requirements",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.saylor.org/course/bus633",
+      "https://learn.saylor.org/mod/page/view.php?id=83120"
+    ],
+    "rationale": "BUS633 is a current 29-hour sales-management route covering the full selling process, customer needs, consultative selling, loyalty and modern sales technology including CRM, prospecting, outreach and reporting tools. The public course exposes a free completion certificate and final assessment. Its scope is materially deeper than the previously rejected compact HubSpot sales route and directly addresses the dedicated-sales gap, so it advances to comparative Deep Review.",
+    "flags": [
+      "sales-gap",
+      "graduate-level",
+      "free-certificate",
+      "free-final-assessment",
+      "current-syllabus",
+      "academic-credit-separate",
+      "deep-review-required"
+    ],
+    "is_current": true
+  },
+  {
+    "screen_id": "maintenance-08-microsoft-ai-red-teaming-101",
+    "candidate_id": "microsoft-ai-red-teaming-101",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-13",
+    "canonical_url": "https://learn.microsoft.com/en-us/security/ai-red-team/training",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "instruction_languages": ["en"],
+    "subtitle_languages": [],
+    "credential": "No formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://learn.microsoft.com/en-us/security/ai-red-team/training",
+      "https://github.com/microsoft/AI-Red-Teaming-Playground-Labs"
+    ],
+    "rationale": "Microsoft publishes a coherent ten-episode AI-red-teaming series spanning model risks, direct and indirect prompt injection, single- and multi-turn attacks, mitigations and PyRIT automation, with downloadable slides and linked laboratory material. The lab repository is openly available, but actually running the playground requires Azure OpenAI or standard OpenAI API access, so the route cannot be treated as fully free labs and is conservatively F2. The free instructional core remains sufficiently substantive and current to justify Deep Review for the explicit AI-security gap.",
+    "flags": [
+      "ai-security-gap",
+      "fast-changing-field",
+      "released-2025",
+      "open-lab-repository",
+      "paid-api-required-for-full-labs",
+      "no-formal-credential",
+      "deep-review-required"
+    ],
+    "is_current": true
+  }
+]
