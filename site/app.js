@@ -180,7 +180,7 @@ function renderCard(course) {
       </div>
 
       <div>
-        <h3><a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(course.title)}</a></h3>
+        <h3><a href="course.html?id=${encodeURIComponent(course.id)}">${escapeHtml(course.title)}</a></h3>
         <p class="provider">${escapeHtml(course.provider)}</p>
       </div>
 
