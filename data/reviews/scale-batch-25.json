@@ -461,6 +461,6 @@
       "paid-assessment",
       "paid-certificate"
     ],
-    "is_current": true
+    "is_current": false
   }
 ]
