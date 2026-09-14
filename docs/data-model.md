@@ -1,6 +1,6 @@
 # Data Model
 
-`data/courses.json` is canonical for approved/reference course records. Discovery intake lives in `data/candidates.json` and versioned files under `data/candidates/`. Shallow-review decisions live under `data/screening/`; Phase 3 deep-review evidence lives under `data/reviews/`. `courses.csv` is generated.
+`data/courses.json` is canonical for approved/reference course records. Discovery intake lives in `data/candidates.json` and versioned files under `data/candidates/`. Shallow-review decisions live under `data/screening/`; Phase 3 deep-review evidence lives under `data/reviews/`. Pre-Phase-4 reference-course calibration evidence lives in `data/reference-reviews.json`. `courses.csv` is generated.
 
 ## Core identity
 
@@ -76,6 +76,22 @@ A current deep review is valid only when that candidate's current shallow decisi
 
 Deep Review remains Phase 3. A reviewed candidate is **not** automatically admitted to `data/courses.json`; Phase 4 head-to-head admission decides whether it belongs in the published index.
 
+## Reference-review ledger
+
+`data/reference-reviews.json` is validated by `data/reference-review.schema.json`.
+
+This ledger exists only for canonical `reference_verified` courses that pre-date the candidate pipeline. It deliberately does **not** create synthetic Discovery, Shallow Screening, Deep Review or Phase 4 records.
+
+Each current reference review records:
+
+- the same learner-route, prerequisite/resource and component-evidence depth used by Deep Review;
+- prior components, Quality Score and Recommendation Score from the pre-calibration canonical record;
+- current calibrated components and scores;
+- direct comparators, current evidence and calibration outcome;
+- the Phase 5 reconciliation document that explains why the course remained canonical.
+
+Every current `reference_verified` course must have exactly one current reference review. Its canonical URL, access/status/self-paced state and current scores/components must match the ledger. Historical calibration can later be superseded without silently overwriting prior evidence.
+
 ## Phase 4 admission ledger
 
 `data/admissions/*.json` is validated by `data/admission.schema.json`.
@@ -121,6 +137,9 @@ For deep-reviewed approved/finalist records:
 - A current deep review requires a current shallow `advance` decision.
 - Deep-review IDs are unique and a candidate may have at most one current deep review.
 - Deep-review comparator IDs must reference a known candidate or approved/reference course and may not self-reference.
+- Every `reference_verified` canonical course must have exactly one current reference-review record.
+- Current reference-review URL, access/status/self-paced state and scores/components must match the canonical course.
+- Reference-review prior and current Quality Scores must recompute from their weighted components; `confirmed` means unchanged and `recalibrated` means at least one score/component changed.
 - Admission records may reference only known candidates, Deep Reviews and canonical incumbents.
 - A current admission requires current shallow `advance` + current Deep Review state.
 - Candidate/course ID or URL overlap is permitted only for a current Phase 4 `admit` decision.

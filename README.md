@@ -105,6 +105,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Methodology](docs/methodology.md) | Scoring model and free-access taxonomy |
 | [Research protocol](docs/research-protocol.md) | Discovery and screening rules |
 | [Deep Review protocol](docs/deep-review-protocol.md) | Evidence and scoring requirements |
+| [Reference calibration](docs/qa-reference-calibration-v0.8.md) | Provenance and current calibration of pre-Phase-4 reference courses |
 | [Admission protocol](docs/admission-protocol.md) | Comparative Phase-4 rules |
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
@@ -117,7 +118,8 @@ The full research history is intentionally public:
 
 - [`data/candidates/`](data/candidates/) — immutable Discovery intake;
 - [`data/screening/`](data/screening/) — Shallow Screening decisions;
-- [`data/reviews/`](data/reviews/) — Deep Review evidence and scores;
+- [`data/reviews/`](data/reviews/) — Deep Review evidence and scores for discovery candidates;
+- [`data/reference-reviews.json`](data/reference-reviews.json) — structured calibration evidence for the 17 pre-Phase-4 reference courses;
 - [`data/admissions/`](data/admissions/) — comparative admission decisions;
 - [`docs/discovery/`](docs/discovery/) — Discovery notes;
 - [`docs/screening/`](docs/screening/) — screening rationale;

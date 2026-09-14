@@ -14,6 +14,8 @@ SCREENING_DIR=ROOT/'data/screening'
 SCREENING_SCHEMA=ROOT/'data/screening.schema.json'
 DEEP_REVIEW_DIR=ROOT/'data/reviews'
 DEEP_REVIEW_SCHEMA=ROOT/'data/deep-review.schema.json'
+REFERENCE_REVIEWS=ROOT/'data/reference-reviews.json'
+REFERENCE_REVIEW_SCHEMA=ROOT/'data/reference-review.schema.json'
 ADMISSION_DIR=ROOT/'data/admissions'
 ADMISSION_SCHEMA=ROOT/'data/admission.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
@@ -175,6 +177,76 @@ def main():
         if supersedes == rid:
             errors += fail(f'{rid}: cannot supersede itself')
 
+    reference_reviews=json.loads(REFERENCE_REVIEWS.read_text(encoding='utf-8'))
+    errors += validate_schema(reference_reviews, REFERENCE_REVIEW_SCHEMA, 'reference-reviews')
+    reference_review_ids=set(); current_reference_course_ids=set(); reference_reviews_by_id={}
+    all_reference_review_ids={r.get('review_id') for r in reference_reviews}
+    course_by_id={c['id']:c for c in courses}
+    for r in reference_reviews:
+        rid=r['review_id']
+        cid=r['course_id']
+        if rid in reference_review_ids:
+            errors += fail(f'duplicate reference-review id: {rid}')
+        reference_review_ids.add(rid)
+        reference_reviews_by_id[rid]=r
+        course=course_by_id.get(cid)
+        if not course:
+            errors += fail(f'{rid}: reference review references unknown canonical course {cid}')
+        elif course.get('review_status') != 'reference_verified':
+            errors += fail(f'{rid}: reference review requires review_status=reference_verified for {cid}')
+        prior_calc=round(sum(r['prior_quality_components'][k]*w for k,w in WEIGHTS.items()),2)
+        if abs(prior_calc-r['prior_quality_score'])>0.01:
+            errors += fail(f'{rid}: prior_quality_score={r["prior_quality_score"]}, expected {prior_calc}')
+        calc=round(sum(r['quality_components'][k]*w for k,w in WEIGHTS.items()),2)
+        if abs(calc-r['quality_score'])>0.01:
+            errors += fail(f'{rid}: quality_score={r["quality_score"]}, expected {calc}')
+        for comparator in r['comparators']:
+            if comparator not in known_comparator_ids:
+                errors += fail(f'{rid}: unknown comparator {comparator}')
+            if comparator == cid:
+                errors += fail(f'{rid}: course cannot compare against itself')
+        unchanged=(
+            r['prior_quality_components'] == r['quality_components']
+            and abs(r['prior_quality_score']-r['quality_score'])<=0.01
+            and abs(r['prior_recommendation_score']-r['recommendation_score'])<=0.01
+        )
+        if r['calibration_outcome']=='confirmed' and not unchanged:
+            errors += fail(f'{rid}: confirmed calibration must preserve prior scores/components')
+        if r['calibration_outcome']=='recalibrated' and unchanged:
+            errors += fail(f'{rid}: recalibrated outcome must record a score/component change')
+        if r['is_current']:
+            if cid in current_reference_course_ids:
+                errors += fail(f'multiple current reference reviews for course: {cid}')
+            current_reference_course_ids.add(cid)
+            if course:
+                if course['url'] != r['canonical_url']:
+                    errors += fail(f'{cid}: canonical URL must match current reference review')
+                if course['free_access'] != r['observed_free_access']:
+                    errors += fail(f'{cid}: free_access must match current reference review')
+                if course['status'] != r['observed_status']:
+                    errors += fail(f'{cid}: status must match current reference review')
+                if course['self_paced'] != r['self_paced']:
+                    errors += fail(f'{cid}: self_paced must match current reference review')
+                if abs(course['quality_score']-r['quality_score'])>0.01:
+                    errors += fail(f'{cid}: canonical quality_score must match current reference review')
+                if abs(course['recommendation_score']-r['recommendation_score'])>0.01:
+                    errors += fail(f'{cid}: canonical recommendation_score must match current reference review')
+                if course['quality_components'] != r['quality_components']:
+                    errors += fail(f'{cid}: canonical quality_components must match current reference review')
+        supersedes=r.get('supersedes_review_id')
+        if supersedes and supersedes not in all_reference_review_ids:
+            errors += fail(f'{rid}: supersedes unknown reference review {supersedes}')
+        if supersedes == rid:
+            errors += fail(f'{rid}: cannot supersede itself')
+
+    reference_course_ids={c['id'] for c in courses if c.get('review_status')=='reference_verified'}
+    missing_reference_reviews=reference_course_ids-current_reference_course_ids
+    extra_reference_reviews=current_reference_course_ids-reference_course_ids
+    for cid in sorted(missing_reference_reviews):
+        errors += fail(f'{cid}: reference_verified course requires a current reference review')
+    for cid in sorted(extra_reference_reviews):
+        errors += fail(f'{cid}: current reference review exists for non-reference course')
+
     admission_sources=load_admission_sources()
     admissions=[]
     for source in admission_sources:
@@ -283,8 +355,8 @@ def main():
     if errors: return 1
     print(
         f'OK: {len(courses)} courses, {len(candidates)} candidates from {len(candidate_sources)} candidate source file(s), '
-        f'{len(screenings)} screening records, {len(reviews)} deep-review records, {len(admissions)} admission records, '
-        f'and {len(allowed_categories)} categories validated.'
+        f'{len(screenings)} screening records, {len(reviews)} deep-review records, {len(reference_reviews)} reference-review records, '
+        f'{len(admissions)} admission records, and {len(allowed_categories)} categories validated.'
     )
     return 0
 if __name__=='__main__': raise SystemExit(main())
