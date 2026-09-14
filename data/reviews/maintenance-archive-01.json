@@ -1,0 +1,66 @@
+[
+  {
+    "review_id": "deep-28-nau-iniciacao-lingua-portuguesa-archive",
+    "candidate_id": "nau-iniciacao-lingua-portuguesa",
+    "reviewed_on": "2026-09-14",
+    "canonical_url": "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "pt-PT"
+    ],
+    "subtitle_languages": [],
+    "credential": "No certificate can currently be earned: the edX session is archived, so graded completion and Verified upgrade are unavailable",
+    "academic_credits": "No public academic credit verified for independent learners",
+    "self_paced": true,
+    "scope_notes": "Approximately 32-hour eight-unit beginner European-Portuguese course from the University of Porto, using a narrative journey through Porto to teach everyday communication, pronunciation, basic vocabulary, grammar and cultural context for learners starting from zero.",
+    "prerequisites": "No prior Portuguese knowledge required",
+    "required_resources": "Modern browser and access to the archived edX materials. edX warns that archived courses may have non-working assignments or links and do not provide an active graded/certificate route.",
+    "component_evidence": {
+      "pedagogy": "The course uses an eight-episode narrative set in Porto to anchor language functions in realistic everyday situations, combining linguistic form with cultural context rather than presenting isolated vocabulary lists.",
+      "depth": "Thirty-two hours provide a serious A1-oriented introduction and more substance than a travel phrasebook, but it remains a single beginner course rather than a multi-level progression such as Nicos Weg A1-B1.",
+      "practice": "The original design includes per-unit quizzes and comprehension/production activities, but the current edX session is archived: graded assignments no longer update and some activities or links may fail. Useful practice remains, but the live completion path has ended.",
+      "materials": "Professional audiovisual production, narrative episodes, language/culture integration and a coherent eight-unit itinerary create an unusually polished resource for European Portuguese.",
+      "currency": "The linguistic content remains stable and pedagogically useful, but both NAU's current provider catalogue and the learner-facing edX page identify this edition as archived. It is therefore no longer a current active course experience.",
+      "expertise": "The course was produced by Universidade do Porto's Faculdade de Letras and educational-innovation team with professional actors and language-teaching expertise, a strong fit for an A1 LMOOC.",
+      "accessibility": "No prior Portuguese knowledge is required and the European-Portuguese focus remains valuable. Archived edX access still exposes course materials where available, but learners cannot earn a certificate and some assignments or links may no longer work."
+    },
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.2,
+      "practice": 7.5,
+      "materials": 9,
+      "currency": 7.7,
+      "expertise": 9.2,
+      "accessibility": 8
+    },
+    "quality_score": 8.38,
+    "recommendation_score": 8.6,
+    "recommendation_rationale": "Still one of the strongest freely accessible European-Portuguese beginner teaching packages found, but it is now an archived resource rather than an active course. The unique target-language value justifies retention in the canonical set, while the ended graded/certificate route and possible archive breakage materially reduce current recommendation strength.",
+    "comparators": [
+      "dw-nicos-weg-a1-b1",
+      "tv5monde-premiere-classe-french",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "evidence": [
+      "https://www.nau.edu.pt/pt/parceiros/universidade-do-porto/?page_courses=2",
+      "https://www.nau.edu.pt/pt/curso/iniciacao-a-lingua-portuguesa/",
+      "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa",
+      "https://support.edx.org/hc/en-us/articles/207201017-What-does-archived-mean"
+    ],
+    "flags": [
+      "pt-pt",
+      "european-portuguese",
+      "language-learning",
+      "32-hours",
+      "a1-oriented",
+      "narrative-learning",
+      "edx-audit",
+      "paid-assessment",
+      "archived-course",
+      "no-current-certificate"
+    ],
+    "is_current": true,
+    "supersedes_review_id": "deep-26-nau-iniciacao-lingua-portuguesa"
+  }
+]
