@@ -103,10 +103,10 @@ function freshness(course) {
   const next = parseDateOnly(course.next_review).getTime();
   const days = Math.ceil((next - today) / 86400000);
 
-  if (days > 30) return { label: "Verified", tone: "good" };
-  if (days >= 0) return { label: "Review due soon", tone: "warn" };
-  if (days >= -30) return { label: "Review due", tone: "warn" };
-  return { label: "Priority re-review", tone: "danger" };
+  if (days > 30) return { label: "Current", tone: "good" };
+  if (days >= 0) return { label: "Check due soon", tone: "warn" };
+  if (days >= -30) return { label: "Check due", tone: "warn" };
+  return { label: "Re-check priority", tone: "danger" };
 }
 
 function scoreBlock(label, score, tier) {
@@ -155,7 +155,7 @@ function render(course, allCourses) {
     fact("Level", labelLevel(course.level)),
     fact("Language", languages),
     fact("Format", course.self_paced ? "Self-paced" : "Scheduled / not self-paced"),
-    fact("Status", course.status === "active_archive" ? "Active archive" : "Active"),
+    fact("Status", course.status === "active_archive" ? "Archived but still available" : "Active"),
   ].join("");
 
   const referencePanel = document.querySelector("#reference-note-panel");
