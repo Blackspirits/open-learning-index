@@ -2,6 +2,7 @@ const state = {
   courses: [],
   meta: null,
   visibleLimit: 18,
+  viewMode: "grid",
 };
 
 const pageLocale = document.body.dataset.locale === "pt-PT" ? "pt-PT" : "en";
@@ -114,13 +115,16 @@ function tokenize(value) {
 }
 
 function initials(provider) {
+  const stopwords = new Set(["of", "the", "and", "de", "da", "do", "dos", "das", "e", "et", "la", "le"]);
   const cleaned = String(provider || "")
     .replace(/\([^)]*\)/g, " ")
     .replace(/[^A-Za-zÀ-ÿ0-9 ]/g, " ");
-  const words = cleaned.split(/\s+/).filter(Boolean);
-  if (!words.length) return "OLI";
-  if (words.length === 1) return words[0].slice(0, 3).toUpperCase();
-  return words.slice(0, 2).map((word) => word[0]).join("").toUpperCase();
+  const allWords = cleaned.split(/\s+/).filter(Boolean);
+  const words = allWords.filter((word) => !stopwords.has(normalize(word)));
+  const source = words.length ? words : allWords;
+  if (!source.length) return "OLI";
+  if (source.length === 1) return source[0].slice(0, 3).toUpperCase();
+  return source.slice(0, 2).map((word) => word[0]).join("").toUpperCase();
 }
 
 function scorePill(course) {
@@ -152,8 +156,9 @@ function renderMiniCourseCard(course) {
 
 function renderHomeCategory(id, name, count) {
   const icon = categoryIcons[id] || "◇";
+  const cataloguePath = isPt ? `pt/courses/?category=${encodeURIComponent(id)}` : `courses/?category=${encodeURIComponent(id)}`;
   return `
-    <a class="category-tile" href="${route(`courses/?category=${encodeURIComponent(id)}`)}">
+    <a class="category-tile" href="${route(cataloguePath)}">
       <span class="category-icon icon-${escapeHtml(id)}" aria-hidden="true">${escapeHtml(icon)}</span>
       <strong>${escapeHtml(name)}</strong>
       <small>${count} ${isPt ? "cursos" : "courses"}</small>
@@ -217,6 +222,7 @@ function getCatalogueEls() {
     empty: document.querySelector("#empty-state"),
     showMore: document.querySelector("#show-more"),
     pageCourseCount: document.querySelector("#page-course-count"),
+    viewButtons: [...document.querySelectorAll("[data-view]")],
   };
 }
 
@@ -333,6 +339,13 @@ function renderCatalogue(els) {
   const courses = filteredCourses(values);
   const visible = courses.slice(0, state.visibleLimit);
 
+  els.results.classList.toggle("catalogue-list", state.viewMode === "list");
+  els.viewButtons.forEach((button) => {
+    const active = button.dataset.view === state.viewMode;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+  });
+
   els.resultCount.textContent = isPt
     ? `${courses.length} curso${courses.length === 1 ? "" : "s"}`
     : `${courses.length} course${courses.length === 1 ? "" : "s"}`;
@@ -351,6 +364,12 @@ function bootCatalogue() {
   els.pageCourseCount.textContent = state.meta.published_count;
   populateFilters(els);
   setFormState(els, new URLSearchParams(location.search));
+  try {
+    const savedView = localStorage.getItem("oli-catalogue-view");
+    if (savedView === "grid" || savedView === "list") state.viewMode = savedView;
+  } catch {
+    state.viewMode = "grid";
+  }
 
   const rerender = () => {
     state.visibleLimit = 18;
@@ -368,6 +387,17 @@ function bootCatalogue() {
   els.showMore.addEventListener("click", () => {
     state.visibleLimit += 18;
     renderCatalogue(els);
+  });
+  els.viewButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.viewMode = button.dataset.view === "list" ? "list" : "grid";
+      try {
+        localStorage.setItem("oli-catalogue-view", state.viewMode);
+      } catch {
+        // View preference persistence is optional.
+      }
+      renderCatalogue(els);
+    });
   });
 
   renderCatalogue(els);
