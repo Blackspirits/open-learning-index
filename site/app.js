@@ -1,24 +1,27 @@
 const state = {
   courses: [],
   meta: null,
+  visibleLimit: 24,
 };
 
 const els = {};
 
 const languageNames = {
-  "ar": "Arabic",
-  "de": "German",
-  "en": "English",
-  "es": "Spanish",
-  "fr": "French",
-  "ja": "Japanese",
   "pt-BR": "Português (Brasil)",
   "pt-PT": "Português (Portugal)",
-  "zh": "Chinese",
 };
 
+const displayLanguage = typeof Intl.DisplayNames === "function"
+  ? new Intl.DisplayNames(["en"], { type: "language" })
+  : null;
+
 function labelLanguage(code) {
-  return languageNames[code] || code;
+  if (languageNames[code]) return languageNames[code];
+  try {
+    return displayLanguage?.of(code) || code;
+  } catch {
+    return code;
+  }
 }
 
 function labelLevel(value) {
@@ -34,6 +37,10 @@ function normalize(value) {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .trim();
+}
+
+function tokenize(value) {
+  return normalize(value).match(/[a-z0-9+#.]+/g) || [];
 }
 
 function parseDateOnly(value) {
@@ -128,14 +135,15 @@ function populateFilters() {
 }
 
 function filteredCourses(values) {
-  const query = normalize(values.q);
-  const words = query.split(/\s+/).filter(Boolean);
+  const queryTokens = tokenize(values.q);
 
   const list = state.courses.filter((course) => {
-    if (words.length && !words.every((word) => course.search_text.includes(word))) return false;
+    const courseTokens = tokenize(course.search_text);
+    if (queryTokens.length && !queryTokens.every((word) => courseTokens.includes(word))) return false;
     if (values.category && course.category !== values.category) return false;
     if (values.language && course.primary_language !== values.language && !course.other_languages.includes(values.language)) return false;
-    if (values.level && course.level !== values.level) return false;
+    if (values.level === "beginner-friendly" && !["beginner", "beginner_to_intermediate"].includes(course.level)) return false;
+    if (values.level && values.level !== "beginner-friendly" && course.level !== values.level) return false;
     if (values.access && course.access_short !== values.access) return false;
     if (values.tier && course.quality_tier !== values.tier) return false;
     if (values.status && course.status !== values.status) return false;
@@ -208,46 +216,92 @@ function renderCard(course) {
       <div class="card-footer">
         <span>Verified ${escapeHtml(formatDate(course.last_verified))}</span>
         <span class="card-links">
-          <a href="course.html?id=${encodeURIComponent(course.id)}">Details</a>
-          <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer">Open course <span aria-hidden="true">↗</span></a>
+          <a href="course.html?id=${encodeURIComponent(course.id)}" aria-label="Details for ${escapeHtml(course.title)}">Details</a>
+          <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open official course: ${escapeHtml(course.title)}">Open course <span aria-hidden="true">↗</span></a>
         </span>
       </div>
     </article>
   `;
 }
 
+function activeFilterCount(values) {
+  return [
+    values.q,
+    values.category,
+    values.language,
+    values.level,
+    values.access,
+    values.tier,
+    values.status,
+    values.credential,
+    values.credit,
+  ].filter(Boolean).length;
+}
+
+function updateQuickState(values) {
+  const states = {
+    all: activeFilterCount(values) === 0,
+    "pt-PT": values.language === "pt-PT",
+    F0: values.access === "F0",
+    beginner: values.level === "beginner-friendly",
+    languages: values.category === "languages",
+  };
+
+  document.querySelectorAll("[data-quick]").forEach((button) => {
+    const active = Boolean(states[button.dataset.quick]);
+    button.setAttribute("aria-pressed", active ? "true" : "false");
+  });
+}
+
 function render() {
   const values = getFormState();
   syncUrl(values);
   const courses = filteredCourses(values);
+  const visible = courses.slice(0, state.visibleLimit);
+  const count = activeFilterCount(values);
 
   els.resultCount.textContent = `${courses.length} course${courses.length === 1 ? "" : "s"}`;
-  els.results.innerHTML = courses.map(renderCard).join("");
+  els.activeFilterCount.textContent = count ? ` · ${count} active` : "";
+  els.results.innerHTML = visible.map(renderCard).join("");
   els.empty.hidden = courses.length !== 0;
+  els.showMore.hidden = visible.length >= courses.length;
+  if (!els.showMore.hidden) {
+    els.showMore.textContent = `Show more · ${courses.length - visible.length} remaining`;
+  }
+  updateQuickState(values);
 }
 
-function clearFilters() {
+function clearFilters(options = {}) {
+  const { focusSearch = true } = options;
   els.filters.reset();
   els.sort.value = "recommendation";
+  state.visibleLimit = 24;
   render();
-  els.search.focus();
+  if (focusSearch) els.search.focus();
+}
+
+function togglePreset(control, value) {
+  control.value = control.value === value ? "" : value;
 }
 
 function applyQuick(kind) {
-  clearFilters();
-  if (kind === "pt-PT") els.language.value = "pt-PT";
-  if (kind === "F0") els.access.value = "F0";
-  if (kind === "beginner") {
-    const beginner = [...els.level.options].find((option) => option.value === "beginner");
-    if (beginner) els.level.value = "beginner";
+  state.visibleLimit = 24;
+  if (kind === "all") {
+    clearFilters({ focusSearch: false });
+    return;
   }
-  if (kind === "languages") els.category.value = "languages";
+  if (kind === "pt-PT") togglePreset(els.language, "pt-PT");
+  if (kind === "F0") togglePreset(els.access, "F0");
+  if (kind === "beginner") togglePreset(els.level, "beginner-friendly");
+  if (kind === "languages") togglePreset(els.category, "languages");
   render();
 }
 
 async function boot() {
   Object.assign(els, {
+    filterDisclosure: document.querySelector("#filter-disclosure"),
     filters: document.querySelector("#filters"),
+    activeFilterCount: document.querySelector("#active-filter-count"),
     search: document.querySelector("#search"),
     category: document.querySelector("#category"),
     language: document.querySelector("#language"),
@@ -262,6 +316,7 @@ async function boot() {
     results: document.querySelector("#results"),
     resultCount: document.querySelector("#result-count"),
     empty: document.querySelector("#empty-state"),
+    showMore: document.querySelector("#show-more"),
     statCourses: document.querySelector("#stat-courses"),
     statCategories: document.querySelector("#stat-categories"),
     statLanguages: document.querySelector("#stat-languages"),
@@ -284,13 +339,29 @@ async function boot() {
     populateFilters();
     setFormState(new URLSearchParams(location.search));
 
-    els.filters.addEventListener("input", render);
-    els.filters.addEventListener("change", render);
-    els.clear.addEventListener("click", clearFilters);
+    const resetAndRender = () => {
+      state.visibleLimit = 24;
+      render();
+    };
+    els.filters.addEventListener("input", resetAndRender);
+    els.filters.addEventListener("change", resetAndRender);
+    els.clear.addEventListener("click", () => clearFilters());
+    els.showMore.addEventListener("click", () => {
+      state.visibleLimit += 24;
+      render();
+    });
 
     document.querySelectorAll("[data-quick]").forEach((button) => {
       button.addEventListener("click", () => applyQuick(button.dataset.quick));
     });
+
+    const mobile = window.matchMedia("(max-width: 700px)");
+    const syncDisclosure = () => {
+      if (mobile.matches) els.filterDisclosure.removeAttribute("open");
+      else els.filterDisclosure.setAttribute("open", "");
+    };
+    syncDisclosure();
+    mobile.addEventListener?.("change", syncDisclosure);
 
     render();
   } catch (error) {
