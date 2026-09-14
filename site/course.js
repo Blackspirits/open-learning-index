@@ -1,14 +1,11 @@
 const languageNames = {
-  "ar": "Arabic",
-  "de": "German",
-  "en": "English",
-  "es": "Spanish",
-  "fr": "French",
-  "ja": "Japanese",
   "pt-BR": "Português (Brasil)",
   "pt-PT": "Português (Portugal)",
-  "zh": "Chinese",
 };
+
+const displayLanguage = typeof Intl.DisplayNames === "function"
+  ? new Intl.DisplayNames(["en"], { type: "language" })
+  : null;
 
 const componentLabels = {
   pedagogy: "Pedagogy",
@@ -37,7 +34,12 @@ const creditLabels = {
 };
 
 function labelLanguage(code) {
-  return languageNames[code] || code;
+  if (languageNames[code]) return languageNames[code];
+  try {
+    return displayLanguage?.of(code) || code;
+  } catch {
+    return code;
+  }
 }
 
 function labelLevel(value) {
