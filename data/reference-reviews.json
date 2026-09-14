@@ -1,0 +1,1139 @@
+[
+  {
+    "review_id": "reference-v08-harvard-cs50x",
+    "course_id": "harvard-cs50x",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://cs50.harvard.edu/x/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free CS50 Certificate is available after meeting the course completion threshold; the optional edX verified certificate is separate and paid.",
+    "academic_credits": "No academic credit through the free OCW route; separate Harvard Extension/Summer enrollment may carry paid academic credit.",
+    "self_paced": true,
+    "scope_notes": "Broad introduction to computer science covering C, memory, data structures, algorithms, Python, SQL, web foundations and a final project.",
+    "prerequisites": "No prior programming experience is required; the course is designed as an introduction to computer science.",
+    "required_resources": "Modern browser and free edX account for submission/feedback; CS50's cloud development environment removes paid local tooling requirements.",
+    "component_evidence": {
+      "pedagogy": "A coherent concept-first sequence moves from low-level computing into higher-level programming and web work, then culminates in an open-ended final project.",
+      "depth": "The course develops broad CS foundations beyond syntax, including memory, algorithms, data structures, databases and software construction.",
+      "practice": "Demanding problem sets, labs and the final project require repeated implementation rather than passive viewing.",
+      "materials": "Lectures, notes, shorts, problem specifications, tooling and reference material form a strong self-study package.",
+      "currency": "The live 2026 route is actively maintained; examples and tooling are current while the core CS concepts are durable.",
+      "expertise": "CS50 is taught and maintained by Harvard instructors and staff with long-running subject and curriculum expertise.",
+      "accessibility": "The educational path and provider certificate are free, but successful completion still requires substantial time and an account for submissions."
+    },
+    "prior_quality_components": {
+      "pedagogy": 10,
+      "depth": 9.6,
+      "practice": 9.9,
+      "materials": 10,
+      "currency": 10,
+      "expertise": 10,
+      "accessibility": 9.5
+    },
+    "prior_quality_score": 9.88,
+    "prior_recommendation_score": 9.9,
+    "quality_components": {
+      "pedagogy": 9.7,
+      "depth": 9.5,
+      "practice": 9.8,
+      "materials": 9.7,
+      "currency": 9.8,
+      "expertise": 9.8,
+      "accessibility": 9.4
+    },
+    "quality_score": 9.69,
+    "recommendation_score": 9.8,
+    "recommendation_rationale": "Still the strongest broad beginner CS anchor in the index. The recalibration trims pre-pipeline perfect scores while preserving its category-leading recommendation.",
+    "comparators": [
+      "nand2tetris",
+      "harvard-cs50p"
+    ],
+    "evidence": [
+      "https://cs50.harvard.edu/x/",
+      "https://cs50.harvard.edu/x/certificate/"
+    ],
+    "flags": [
+      "reference",
+      "cs50",
+      "final-project",
+      "free-certificate"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-harvard-cs50p",
+    "course_id": "harvard-cs50p",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://cs50.harvard.edu/python/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free CS50 Certificate is available after meeting completion requirements; an optional edX verified certificate is separate and paid.",
+    "academic_credits": "No academic credit is verified through the free course route.",
+    "self_paced": true,
+    "scope_notes": "Python-focused introduction covering functions, conditionals, loops, exceptions, libraries, unit tests, file I/O, regular expressions, object-oriented programming and a final project.",
+    "prerequisites": "No prior programming experience is required.",
+    "required_resources": "Modern browser and free edX account for submissions; exercises can be completed with the provided CS50 development environment.",
+    "component_evidence": {
+      "pedagogy": "The weekly sequence introduces Python concepts in a deliberate progression and connects each topic directly to assessed programming work.",
+      "depth": "Strong introductory Python coverage reaches testing, file handling, regular expressions and OOP without becoming a full computer-science curriculum.",
+      "practice": "Nine weeks of problem sets plus a final project create unusually high implementation density for an introductory Python course.",
+      "materials": "Lectures, notes, problem specifications and the CS50 tooling ecosystem support independent study well.",
+      "currency": "The live route remains maintained and uses current Python practice; the subject itself changes more slowly than framework-driven software courses.",
+      "expertise": "Harvard's CS50 teaching team has deep experience delivering programming education at scale.",
+      "accessibility": "The course and CS50 certificate are free and browser-accessible, with modest account friction and no paid software requirement."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.9,
+      "depth": 9,
+      "practice": 9.8,
+      "materials": 9.8,
+      "currency": 9.8,
+      "expertise": 10,
+      "accessibility": 9.7
+    },
+    "prior_quality_score": 9.68,
+    "prior_recommendation_score": 9.6,
+    "quality_components": {
+      "pedagogy": 9.6,
+      "depth": 9,
+      "practice": 9.7,
+      "materials": 9.6,
+      "currency": 9.7,
+      "expertise": 9.8,
+      "accessibility": 9.6
+    },
+    "quality_score": 9.53,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "One of the best structured Python introductions available free; slightly below the pre-pipeline score after calibration against the later evidence scale.",
+    "comparators": [
+      "helsinki-python-mooc-2026",
+      "harvard-cs50x"
+    ],
+    "evidence": [
+      "https://cs50.harvard.edu/python/",
+      "https://cs50.harvard.edu/python/certificate/"
+    ],
+    "flags": [
+      "reference",
+      "python",
+      "final-project",
+      "free-certificate"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-harvard-cs50-ai",
+    "course_id": "harvard-cs50-ai",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://cs50.harvard.edu/ai/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free CS50 Certificate is available after meeting completion requirements; the optional edX verified certificate is separate and paid.",
+    "academic_credits": "No academic credit through the free route; separate paid Harvard enrollment options may carry credit.",
+    "self_paced": true,
+    "scope_notes": "Project-heavy AI foundation spanning search, knowledge representation, uncertainty, optimisation, machine learning, neural networks and language, with current LLM context.",
+    "prerequisites": "CS50x or roughly one year of Python programming experience is expected.",
+    "required_resources": "Computer/browser, Python-capable development environment and free edX account for project submission and feedback; no paid API spend is required for the core route.",
+    "component_evidence": {
+      "pedagogy": "Conceptual AI techniques are repeatedly connected to concrete Python projects, which makes abstract methods operational rather than purely theoretical.",
+      "depth": "The course spans classical AI, machine learning, neural networks and language at meaningful undergraduate depth.",
+      "practice": "Substantial projects across the syllabus require implementation of algorithms and models rather than quiz-only recall.",
+      "materials": "Lectures, notes, project specifications and starter/support code create a strong independent-learning package.",
+      "currency": "The live course now acknowledges large language models, but its main value remains foundational AI rather than comprehensive coverage of the fast-moving generative-AI frontier.",
+      "expertise": "The Harvard CS50 team combines strong computing pedagogy with a mature maintained course infrastructure.",
+      "accessibility": "The course and provider certificate are free, but the Python prerequisite and project workload raise learner friction versus beginner ML routes."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.8,
+      "depth": 9.4,
+      "practice": 9.8,
+      "materials": 9.7,
+      "currency": 9.2,
+      "expertise": 10,
+      "accessibility": 8.8
+    },
+    "prior_quality_score": 9.62,
+    "prior_recommendation_score": 9.7,
+    "quality_components": {
+      "pedagogy": 9.6,
+      "depth": 9.3,
+      "practice": 9.8,
+      "materials": 9.6,
+      "currency": 9.4,
+      "expertise": 9.8,
+      "accessibility": 8.8
+    },
+    "quality_score": 9.54,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "Excellent project-based AI foundations and still a top recommendation, but current generative-AI breadth is not deep enough to justify the older near-perfect score.",
+    "comparators": [
+      "google-ml-crash-course",
+      "huggingface-agents-course",
+      "openai-agents-workflows"
+    ],
+    "evidence": [
+      "https://cs50.harvard.edu/ai/",
+      "https://cs50.harvard.edu/ai/certificate/"
+    ],
+    "flags": [
+      "reference",
+      "ai",
+      "python-prerequisite",
+      "project-heavy"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-harvard-cs50-sql",
+    "course_id": "harvard-cs50-sql",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://cs50.harvard.edu/sql/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free CS50 Certificate is available after meeting completion requirements; an optional edX verified certificate is separate and paid.",
+    "academic_credits": "No academic credit through the free OCW route; separate paid Harvard enrollment may carry credit.",
+    "self_paced": true,
+    "scope_notes": "Database introduction covering querying, relational modelling, schema design, writing data, views, optimisation, indexing/scaling and a final project.",
+    "prerequisites": "No formal prerequisite is stated on the current course route; basic computing comfort is useful.",
+    "required_resources": "Modern browser and free edX account for submissions; the CS50 environment avoids any paid database software requirement.",
+    "component_evidence": {
+      "pedagogy": "The sequence moves from reading data to relational design, mutation, views, optimisation and scaling, giving database concepts a clear cumulative structure.",
+      "depth": "It goes materially beyond SQL syntax into schema design, indexing, optimisation and scaling while remaining introductory.",
+      "practice": "Repeated problem sets and a final project provide strong hands-on database practice.",
+      "materials": "Lectures, notes, problem specifications and integrated tooling support self-study with low setup friction.",
+      "currency": "SQL and relational fundamentals are durable, though database tooling and scaling practices evolve; the live route remains maintained.",
+      "expertise": "The CS50 teaching team has strong computing and curriculum expertise, with database concepts integrated into the wider CS50 ecosystem.",
+      "accessibility": "The full course and CS50 certificate are free, with browser-based tooling and no paid database service requirement."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.7,
+      "depth": 9.1,
+      "practice": 9.7,
+      "materials": 9.7,
+      "currency": 9.7,
+      "expertise": 9.8,
+      "accessibility": 9.6
+    },
+    "prior_quality_score": 9.58,
+    "prior_recommendation_score": 9.6,
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.1,
+      "practice": 9.7,
+      "materials": 9.5,
+      "currency": 9.4,
+      "expertise": 9.7,
+      "accessibility": 9.5
+    },
+    "quality_score": 9.47,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "A category-leading SQL/database foundation. Recalibration mainly removes legacy near-perfect component assumptions rather than changing its editorial role.",
+    "comparators": [],
+    "evidence": [
+      "https://cs50.harvard.edu/sql/",
+      "https://cs50.harvard.edu/sql/certificate/"
+    ],
+    "flags": [
+      "reference",
+      "sql",
+      "databases",
+      "final-project"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-helsinki-full-stack-open",
+    "course_id": "helsinki-full-stack-open",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://fullstackopen.com/en/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free course certificate is available under the course completion rules.",
+    "academic_credits": "University of Helsinki ECTS credits are available without tuition subject to the course's registration and completion rules.",
+    "self_paced": true,
+    "scope_notes": "Deep modern web-development curriculum covering React, state management, Node.js, testing, GraphQL, TypeScript, containers, CI/CD and relational databases.",
+    "prerequisites": "Prior programming and basic web-development familiarity are expected; this is not designed as a first programming course.",
+    "required_resources": "General-purpose computer, browser, local development tooling and free online services/accounts used by exercises; no tuition or paid course platform is required.",
+    "component_evidence": {
+      "pedagogy": "The curriculum is built around incremental application development, repeatedly extending the same technical skills across frontend, backend, testing and deployment concerns.",
+      "depth": "Its breadth and depth are exceptional for a free web curriculum, reaching testing, TypeScript, containers, CI/CD and database work beyond introductory full-stack material.",
+      "practice": "Exercise-driven progression and substantial application work make practice the dominant learning mode.",
+      "materials": "Detailed written chapters, examples, exercises and maintained supporting repositories form a strong self-study environment.",
+      "currency": "The course is continuously maintained rather than frozen to yearly editions, with recent dependency and framework updates documented.",
+      "expertise": "University of Helsinki course authors and contributors have direct software-engineering and teaching expertise.",
+      "accessibility": "The course and certificate are free, but prior programming knowledge, local tooling and a large workload create real entry friction."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.6,
+      "practice": 10,
+      "materials": 9.7,
+      "currency": 9.8,
+      "expertise": 9.6,
+      "accessibility": 8.8
+    },
+    "prior_quality_score": 9.64,
+    "prior_recommendation_score": 9.9,
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.6,
+      "practice": 9.9,
+      "materials": 9.6,
+      "currency": 9.8,
+      "expertise": 9.6,
+      "accessibility": 8.7
+    },
+    "quality_score": 9.61,
+    "recommendation_score": 9.8,
+    "recommendation_rationale": "Still the strongest high-depth full-stack route in the current pool; only minor score compression was needed to align with the calibrated component scale.",
+    "comparators": [
+      "nand2tetris"
+    ],
+    "evidence": [
+      "https://fullstackopen.com/en/about/",
+      "https://fullstackopen.com/en/",
+      "https://fullstackopen.com/en/part0/general_info/"
+    ],
+    "flags": [
+      "reference",
+      "full-stack",
+      "exercise-heavy",
+      "ects"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-helsinki-python-mooc-2026",
+    "course_id": "helsinki-python-mooc-2026",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://programming-26.mooc.fi/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "A free completion certificate is available after satisfying the exercise and exam requirements.",
+    "academic_credits": "Up to 5+5 University of Helsinki ECTS can be registered subject to the university's stated rules.",
+    "self_paced": false,
+    "scope_notes": "Large 2026 Python sequence corresponding to introductory and advanced programming courses, with extensive exercises, lectures and an exam-based completion path.",
+    "prerequisites": "The introductory half starts without a programming prerequisite; the advanced half builds directly on the earlier material.",
+    "required_resources": "Computer, browser, course exercise environment/account and time for the required exercises and exam; no paid software or tuition is required for the learning route.",
+    "component_evidence": {
+      "pedagogy": "The course builds programming skill through a long cumulative sequence where new Python concepts are immediately reinforced in exercises.",
+      "depth": "Two linked 5-ECTS courses move from beginner syntax and problem solving into more advanced programming topics.",
+      "practice": "Large volumes of automatically checked programming exercises plus an exam make this one of the most practice-intensive beginner-to-intermediate routes.",
+      "materials": "Current 2026 lessons, examples, exercises, recordings and support documentation provide a complete structured route.",
+      "currency": "This is the active 2026 edition with current teaching activity and an explicit 2026 course window.",
+      "expertise": "The University of Helsinki programming curriculum is authored and delivered by experienced computer-science educators.",
+      "accessibility": "The course is free and open broadly, but its fixed 2026 window, exam requirements and substantial workload reduce flexibility versus fully self-paced routes."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.6,
+      "depth": 9.5,
+      "practice": 10,
+      "materials": 9.6,
+      "currency": 10,
+      "expertise": 9.6,
+      "accessibility": 9
+    },
+    "prior_quality_score": 9.67,
+    "prior_recommendation_score": 9.7,
+    "quality_components": {
+      "pedagogy": 9.5,
+      "depth": 9.5,
+      "practice": 9.9,
+      "materials": 9.5,
+      "currency": 10,
+      "expertise": 9.6,
+      "accessibility": 8.9
+    },
+    "quality_score": 9.61,
+    "recommendation_score": 9.7,
+    "recommendation_rationale": "Exceptional long-form Python learning with unusually strong practice and free academic-credit potential; remains a top recommendation after modest calibration.",
+    "comparators": [
+      "harvard-cs50p",
+      "harvard-cs50x"
+    ],
+    "evidence": [
+      "https://programming-26.mooc.fi/",
+      "https://programming-26.mooc.fi/faq/",
+      "https://programming-26.mooc.fi/grading-and-exams/"
+    ],
+    "flags": [
+      "reference",
+      "python",
+      "2026-edition",
+      "ects",
+      "exam"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-portswigger-web-security-academy",
+    "course_id": "portswigger-web-security-academy",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://portswigger.net/web-security",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No free formal certification is included; the separate Burp Suite Certified Practitioner credential requires a paid exam credit and active Burp Suite Professional.",
+    "academic_credits": "No academic credit is verified.",
+    "self_paced": true,
+    "scope_notes": "Continuously updated web-security curriculum with structured learning paths and a large catalogue of interactive vulnerability labs from fundamentals to advanced exploitation.",
+    "prerequisites": "No formal prerequisite is required for the beginner material; advanced paths assume growing web and security knowledge.",
+    "required_resources": "Browser and free Academy account for progress; some labs benefit from Burp Suite, with Community Edition available free, while the separate professional certification requires paid tooling/exam access.",
+    "component_evidence": {
+      "pedagogy": "Learning paths pair concise vulnerability explanations with realistic attack labs, so concepts are learned through exploitation and diagnosis rather than exposition alone.",
+      "depth": "Coverage extends across a very large set of web-security vulnerability classes and advanced attack techniques.",
+      "practice": "The lab catalogue provides exceptional repeated hands-on practice and progression across realistic vulnerable applications.",
+      "materials": "Research articles, explanations, learning paths, labs and tool guidance form a comprehensive specialist learning environment.",
+      "currency": "PortSwigger continuously updates the Academy as web attack techniques evolve, including current emerging vulnerability classes.",
+      "expertise": "Content is produced by PortSwigger's web-security researchers and practitioners, including authors with field-defining application-security expertise.",
+      "accessibility": "Core learning and labs are free, but some tool-centric workflows are easier with Burp and the formal external certification is paid."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.7,
+      "depth": 10,
+      "practice": 10,
+      "materials": 10,
+      "currency": 10,
+      "expertise": 10,
+      "accessibility": 9.5
+    },
+    "prior_quality_score": 9.9,
+    "prior_recommendation_score": 9.9,
+    "quality_components": {
+      "pedagogy": 9.7,
+      "depth": 9.8,
+      "practice": 10,
+      "materials": 9.8,
+      "currency": 10,
+      "expertise": 9.9,
+      "accessibility": 9.4
+    },
+    "quality_score": 9.83,
+    "recommendation_score": 9.8,
+    "recommendation_rationale": "Remains the category leader for hands-on web application security. Its evidence supports an exceptional score, but the recalibration removes unnecessary perfect marks outside practice/currentness.",
+    "comparators": [
+      "cisco-ethical-hacker"
+    ],
+    "evidence": [
+      "https://portswigger.net/web-security",
+      "https://portswigger.net/web-security/learning-paths",
+      "https://portswigger.net/web-security/certification",
+      "https://portswigger.net/web-security/certification/frequently-asked-questions"
+    ],
+    "flags": [
+      "reference",
+      "web-security",
+      "lab-heavy",
+      "continuous-update"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-google-ml-crash-course",
+    "course_id": "google-ml-crash-course",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://developers.google.com/machine-learning/crash-course",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en",
+      "pt-BR"
+    ],
+    "subtitle_languages": [],
+    "credential": "No current completion certificate is documented on the official course route.",
+    "academic_credits": "No academic credit is verified.",
+    "self_paced": true,
+    "scope_notes": "Current modular machine-learning foundation covering linear/logistic models, classification, data, neural networks, embeddings, LLMs, production ML, AutoML and fairness with browser exercises.",
+    "prerequisites": "Comfort with algebra, graphs, statistics and programming is recommended; Python, NumPy and pandas familiarity is expected for exercises, with calculus optional for advanced topics.",
+    "required_resources": "Desktop browser, preferably current Chrome or Firefox; exercises run in Google Colab with no local setup or paid compute required.",
+    "component_evidence": {
+      "pedagogy": "Short conceptual modules combine explanation, interactive visualisations and programming exercises, allowing both sequential study and targeted refresh.",
+      "depth": "The course provides broad practical foundations but intentionally does not teach individual ML APIs or advanced modelling techniques in depth.",
+      "practice": "Browser-based programming exercises reinforce the major concepts with NumPy, pandas and Keras work.",
+      "materials": "Videos, text, interactive visualisations, checks and Colab exercises form a polished self-study package.",
+      "currency": "The refreshed course includes LLMs, production ML, AutoML and fairness and remains actively maintained by Google.",
+      "expertise": "Google's machine-learning education team draws on direct production ML expertise and maintains official technical guidance around the course.",
+      "accessibility": "The course is free, modular and browser-based with no setup, although programming and mathematical prerequisites are real."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.4,
+      "depth": 8.9,
+      "practice": 9.4,
+      "materials": 9.6,
+      "currency": 10,
+      "expertise": 9.8,
+      "accessibility": 9.7
+    },
+    "prior_quality_score": 9.44,
+    "prior_recommendation_score": 9.5,
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 8.9,
+      "practice": 9.4,
+      "materials": 9.6,
+      "currency": 10,
+      "expertise": 9.8,
+      "accessibility": 9.7
+    },
+    "quality_score": 9.44,
+    "recommendation_score": 9.5,
+    "recommendation_rationale": "The existing calibrated score remains well supported: current, broad and interactive, with a useful middle ground between microcourses and deeper project-heavy study.",
+    "comparators": [
+      "harvard-cs50-ai",
+      "kaggle-intro-machine-learning"
+    ],
+    "evidence": [
+      "https://developers.google.com/machine-learning/crash-course",
+      "https://developers.google.com/machine-learning/crash-course/exercises",
+      "https://developers.google.com/machine-learning/crash-course?hl=pt-br"
+    ],
+    "flags": [
+      "reference",
+      "machine-learning",
+      "colab",
+      "current"
+    ],
+    "calibration_outcome": "confirmed",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-mit-18-06sc-linear-algebra",
+    "course_id": "mit-18-06sc-linear-algebra",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completion certificate is provided by MIT OpenCourseWare.",
+    "academic_credits": "No academic credit is awarded through the free OCW route.",
+    "self_paced": true,
+    "scope_notes": "Complete self-study linear-algebra course with Gilbert Strang's lectures, summary notes, problem-solving videos, problem sets and full exams with solutions.",
+    "prerequisites": "Undergraduate mathematical maturity is useful; the course is accessible to learners comfortable with algebra and basic calculus context.",
+    "required_resources": "Browser/PDF/video access and ordinary mathematical working tools; no paid software is required.",
+    "component_evidence": {
+      "pedagogy": "Strang's geometric and application-oriented explanations are reinforced by problem-solving sessions and a coherent progression through the major linear-algebra ideas.",
+      "depth": "The course provides full undergraduate depth across matrix methods, vector spaces, eigenvalues and applications rather than a survey.",
+      "practice": "Problem sets, problem-solving videos and complete examinations with solutions support serious independent practice.",
+      "materials": "Lectures, notes, assignments, exams and solutions make the archive unusually complete for self-study.",
+      "currency": "The 2011 archive is old, but core undergraduate linear algebra is highly stable; age mainly affects presentation/tool context rather than mathematical validity.",
+      "expertise": "Gilbert Strang is a leading linear-algebra educator and researcher, and the MIT OCW package reflects deep subject expertise.",
+      "accessibility": "All core materials are freely accessible without enrollment, though the archive lacks live feedback, credentialing and current course support."
+    },
+    "prior_quality_components": {
+      "pedagogy": 10,
+      "depth": 10,
+      "practice": 9.5,
+      "materials": 10,
+      "currency": 8.8,
+      "expertise": 10,
+      "accessibility": 9.2
+    },
+    "prior_quality_score": 9.74,
+    "prior_recommendation_score": 9.6,
+    "quality_components": {
+      "pedagogy": 9.7,
+      "depth": 9.8,
+      "practice": 9.5,
+      "materials": 9.7,
+      "currency": 8.9,
+      "expertise": 9.8,
+      "accessibility": 9.1
+    },
+    "quality_score": 9.58,
+    "recommendation_score": 9.6,
+    "recommendation_rationale": "Still an exceptional linear-algebra self-study package. Recalibration lowers legacy perfect component scores while preserving its position among the strongest mathematics resources.",
+    "comparators": [
+      "mit-18-01sc-calculus",
+      "mit-18-05-probability-statistics"
+    ],
+    "evidence": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/pages/get-started/"
+    ],
+    "flags": [
+      "reference",
+      "archive",
+      "linear-algebra",
+      "stable-domain"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-yale-game-theory",
+    "course_id": "yale-game-theory",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://oyc.yale.edu/economics/econ-159",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completion certificate is provided by Open Yale Courses.",
+    "academic_credits": "No academic credit is awarded through the public archive.",
+    "self_paced": true,
+    "scope_notes": "Twenty-four-lecture undergraduate game-theory course covering dominance, backward induction, Nash equilibrium, evolutionary stability, commitment, credibility, asymmetric information and signalling.",
+    "prerequisites": "Introductory microeconomics plus comfort with calculus and probability are expected.",
+    "required_resources": "Browser for lectures/transcripts and mathematical working tools; some readings may need to be sourced separately.",
+    "component_evidence": {
+      "pedagogy": "Ben Polak uses repeated games and strategic examples to build formal concepts progressively rather than presenting equilibrium tools in isolation.",
+      "depth": "The lecture sequence reaches substantial undergraduate strategic analysis, including dynamic games, information problems and signalling.",
+      "practice": "The original course includes problem sets and exams, but the public archive cannot reproduce the feedback and assessment environment of the Yale class.",
+      "materials": "Lectures and transcripts are strong, while the supporting self-study package is less complete than modern OCW courses with full solution ecosystems.",
+      "currency": "Core game-theory concepts remain durable, but the 2007 examples and course framing are archival.",
+      "expertise": "Ben Polak is an established Yale economist and game-theory scholar with direct subject expertise.",
+      "accessibility": "The archive is open and self-paced, but mathematical prerequisites, older delivery and limited current learner support reduce accessibility."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.8,
+      "depth": 9.5,
+      "practice": 9.2,
+      "materials": 9.5,
+      "currency": 7.8,
+      "expertise": 10,
+      "accessibility": 8.8
+    },
+    "prior_quality_score": 9.36,
+    "prior_recommendation_score": 9.2,
+    "quality_components": {
+      "pedagogy": 9.4,
+      "depth": 9.3,
+      "practice": 8.8,
+      "materials": 8.8,
+      "currency": 8,
+      "expertise": 9.8,
+      "accessibility": 8.4
+    },
+    "quality_score": 9.05,
+    "recommendation_score": 9,
+    "recommendation_rationale": "A high-quality durable archive, but the current rubric gives less credit to archived assessment and support than the original reference score did.",
+    "comparators": [
+      "mit-14-03-microeconomic-theory-public-policy-2025"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/economics/econ-159"
+    ],
+    "flags": [
+      "reference",
+      "archive",
+      "game-theory",
+      "stable-foundations"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-yale-introduction-psychology",
+    "course_id": "yale-introduction-psychology",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://oyc.yale.edu/introduction-psychology/psyc-110",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completion certificate is provided by Open Yale Courses.",
+    "academic_credits": "No academic credit is awarded through the public archive.",
+    "self_paced": true,
+    "scope_notes": "Broad 2007 introductory psychology lecture survey covering perception, learning, memory, development, emotion, social psychology, mental illness and related foundations.",
+    "prerequisites": "No formal prerequisite is stated for the public lecture archive.",
+    "required_resources": "Browser for lectures/transcripts; assigned books/readings and the original research-participation component are not fully reproduced as a free modern course environment.",
+    "component_evidence": {
+      "pedagogy": "Paul Bloom's lectures are clear, engaging and conceptually well structured, making the archive unusually approachable for a university survey.",
+      "depth": "The course gives meaningful breadth across major psychology areas but reflects the scope and evidence base of a 2007 introductory syllabus.",
+      "practice": "Original essays, exams and experimental participation existed for enrolled students, but the public archive offers limited equivalent assessed practice and no feedback loop.",
+      "materials": "Lectures and transcripts are strong, while some readings and original course activities must be sourced or reconstructed separately.",
+      "currency": "Psychology has materially changed since 2007, including replication evidence and developments across social, cognitive and clinical research; this is the decisive penalty.",
+      "expertise": "Paul Bloom is an established psychology researcher and educator, and the lectures remain strong as historical university teaching.",
+      "accessibility": "The lecture archive is free and easy to watch, but incomplete modern assessment/readings and archival delivery limit its use as a standalone current course."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.7,
+      "depth": 9.2,
+      "practice": 8.2,
+      "materials": 9.3,
+      "currency": 7.2,
+      "expertise": 9.9,
+      "accessibility": 9.1
+    },
+    "prior_quality_score": 9,
+    "prior_recommendation_score": 8.9,
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.9,
+      "practice": 7.2,
+      "materials": 8.5,
+      "currency": 6.5,
+      "expertise": 9.7,
+      "accessibility": 8.6
+    },
+    "quality_score": 8.4,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "Retained as a valuable historical lecture reference, not the default current psychology foundation; Saylor PSYCH101 is the safer current assessed route.",
+    "comparators": [
+      "saylor-psych101-introduction-psychology",
+      "openlearn-psychology-around-world"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/introduction-psychology/psyc-110"
+    ],
+    "flags": [
+      "reference",
+      "archive",
+      "historical-reference",
+      "currency-risk"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-yale-death",
+    "course_id": "yale-death",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://oyc.yale.edu/death/phil-176",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completion certificate is provided by Open Yale Courses.",
+    "academic_credits": "No academic credit is awarded through the public archive.",
+    "self_paced": true,
+    "scope_notes": "Twenty-six-lecture philosophical examination of personal identity, mortality, immortality, the badness of death, suicide and rational attitudes toward dying.",
+    "prerequisites": "No formal prerequisite is stated; comfort with sustained philosophical argument is useful.",
+    "required_resources": "Browser for lectures/transcripts; several assigned books and course-packet readings need to be sourced separately.",
+    "component_evidence": {
+      "pedagogy": "Shelly Kagan develops arguments cumulatively and repeatedly tests intuitions, making difficult metaphysical and ethical questions unusually accessible.",
+      "depth": "The course sustains a full-semester philosophical investigation rather than a survey of disconnected positions.",
+      "practice": "The original course used short papers and discussion, but the public archive does not provide an equivalent feedback or assessed-writing environment.",
+      "materials": "Lectures and transcripts are strong, while some assigned books and packet readings are external to the free archive.",
+      "currency": "The core philosophical arguments are highly stable; archival age matters far less here than in empirical or technical fields.",
+      "expertise": "Shelly Kagan is an established Yale philosopher with direct expertise in ethics and the course's central questions.",
+      "accessibility": "The lectures are freely accessible and conceptually approachable, but missing feedback and external readings reduce standalone-course accessibility."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.6,
+      "depth": 9.6,
+      "practice": 7.8,
+      "materials": 9.1,
+      "currency": 8.3,
+      "expertise": 9.9,
+      "accessibility": 9
+    },
+    "prior_quality_score": 9.06,
+    "prior_recommendation_score": 9,
+    "quality_components": {
+      "pedagogy": 9.3,
+      "depth": 9.3,
+      "practice": 7.4,
+      "materials": 8.5,
+      "currency": 8.5,
+      "expertise": 9.7,
+      "accessibility": 8.6
+    },
+    "quality_score": 8.77,
+    "recommendation_score": 8.8,
+    "recommendation_rationale": "Still a distinctive and rigorous philosophy archive; calibrated downward mainly for the gap between the original seminar practice and the public self-study experience.",
+    "comparators": [
+      "mit-24-00-problems-philosophy"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/death/phil-176"
+    ],
+    "flags": [
+      "reference",
+      "archive",
+      "philosophy",
+      "stable-domain"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-yale-financial-markets-2011",
+    "course_id": "yale-financial-markets-2011",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://oyc.yale.edu/economics/econ-252",
+    "observed_free_access": "F2_CONTENT_ONLY",
+    "observed_status": "active_archive",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No completion certificate is provided by Open Yale Courses.",
+    "academic_credits": "No academic credit is awarded through the public archive.",
+    "self_paced": true,
+    "scope_notes": "2011 undergraduate finance course covering risk, behavioural finance, securities, insurance, banking and market institutions through lectures and original assignments/exams.",
+    "prerequisites": "Elementary algebra and calculus are expected.",
+    "required_resources": "Browser for lectures/transcripts and mathematical working tools; several readings and data examples are archival or externally sourced.",
+    "component_evidence": {
+      "pedagogy": "Robert Shiller connects finance theory to institutions, incentives and behavioural evidence, giving the course a coherent real-world narrative.",
+      "depth": "The course provides substantial breadth across risk, securities, insurance, banking and behavioural finance.",
+      "practice": "The original class included problem sets, midterms and a final, but the public archive does not reproduce a modern assessed feedback environment.",
+      "materials": "Lectures and transcripts remain useful, while readings, institutional examples and market context are partly dated or external.",
+      "currency": "Financial regulation, products, market structure and many real-world examples have changed materially since 2011, requiring current supplementation.",
+      "expertise": "Robert Shiller is a leading economist with exceptional expertise in financial markets and behavioural finance.",
+      "accessibility": "The archive is free, but mathematical prerequisites, external readings and dated institutional context increase learner friction."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.6,
+      "depth": 9.4,
+      "practice": 8.6,
+      "materials": 9.3,
+      "currency": 6.8,
+      "expertise": 10,
+      "accessibility": 8.9
+    },
+    "prior_quality_score": 9.05,
+    "prior_recommendation_score": 8.8,
+    "quality_components": {
+      "pedagogy": 9.2,
+      "depth": 9.1,
+      "practice": 8,
+      "materials": 8.5,
+      "currency": 6.3,
+      "expertise": 9.9,
+      "accessibility": 8.3
+    },
+    "quality_score": 8.61,
+    "recommendation_score": 8.4,
+    "recommendation_rationale": "Retained for durable finance foundations and exceptional teaching, but its recommendation is explicitly archival and should not compete as a modern all-in-one finance curriculum.",
+    "comparators": [
+      "mit-14-454-economic-crises-2026",
+      "khan-financial-literacy"
+    ],
+    "evidence": [
+      "https://oyc.yale.edu/economics/econ-252"
+    ],
+    "flags": [
+      "reference",
+      "archive",
+      "finance",
+      "currency-risk"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-hubspot-digital-marketing",
+    "course_id": "hubspot-digital-marketing",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://academy.hubspot.com/courses/digital-marketing",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free HubSpot Academy certification is available after completing the course requirements.",
+    "academic_credits": "No academic credit is verified.",
+    "self_paced": true,
+    "scope_notes": "Current compact certification covering digital-marketing strategy, content, SEO, email, social media, lead generation, inbound marketing and reporting across roughly ten lessons.",
+    "prerequisites": "No formal prerequisite is required.",
+    "required_resources": "Browser and free HubSpot Academy account; no paid HubSpot subscription or advertising spend is required for the core learning path.",
+    "component_evidence": {
+      "pedagogy": "The course gives beginners a coherent channel-spanning framework from strategy and audience work through execution and reporting.",
+      "depth": "Breadth is useful but the roughly three-and-a-half-hour route cannot provide deep operator-level mastery across every included marketing channel.",
+      "practice": "Quizzes and applied prompts reinforce the material, but no substantial cross-channel capstone or live campaign project is verified.",
+      "materials": "Polished videos, transcripts, examples and integrated certification resources support low-friction self-study.",
+      "currency": "The live Academy route is current, though digital-marketing platforms and tactics change quickly and require ongoing supplementation.",
+      "expertise": "HubSpot Academy has direct professional expertise in inbound and digital marketing, although provider perspective naturally reflects its ecosystem.",
+      "accessibility": "The course is free, self-paced, certificate-bearing and requires only a browser/account, giving it excellent time-to-value."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9,
+      "depth": 8.2,
+      "practice": 9,
+      "materials": 9.1,
+      "currency": 9.6,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "prior_quality_score": 8.95,
+    "prior_recommendation_score": 9.2,
+    "quality_components": {
+      "pedagogy": 8.7,
+      "depth": 8,
+      "practice": 8.3,
+      "materials": 8.9,
+      "currency": 9.2,
+      "expertise": 8.9,
+      "accessibility": 9.7
+    },
+    "quality_score": 8.62,
+    "recommendation_score": 9,
+    "recommendation_rationale": "Remains the broad digital-marketing anchor because of accessibility and scope, but later calibration penalises its limited depth and project practice relative to longer programmes.",
+    "comparators": [
+      "saylor-bus203-marketing",
+      "hubspot-social-media-marketing",
+      "hubspot-digital-advertising"
+    ],
+    "evidence": [
+      "https://academy.hubspot.com/courses/digital-marketing",
+      "https://academy.hubspot.com/courses?price=FREE"
+    ],
+    "flags": [
+      "reference",
+      "digital-marketing",
+      "free-certification",
+      "compact"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-pmi-kickoff",
+    "course_id": "pmi-kickoff",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://www.pmi.org/kickoff/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "A free shareable KICKOFF badge is available on completion.",
+    "academic_credits": "No academic credit is verified.",
+    "self_paced": true,
+    "scope_notes": "Very short interactive introduction to project management covering predictive and agile approaches, practical activities, templates and a shareable badge.",
+    "prerequisites": "No project-management role or prior formal training is required.",
+    "required_resources": "Browser and free PMI account/access to the KICKOFF course; no paid PMI membership or specialist software is required.",
+    "component_evidence": {
+      "pedagogy": "The course focuses on immediate project decisions and lets learners choose predictive or agile framing rather than teaching terminology in isolation.",
+      "depth": "The under-one-hour format is intentionally introductory and cannot substitute for a full project-management curriculum.",
+      "practice": "Interactive activities and reusable templates create useful applied practice for the short duration, but there is no extended project or capstone.",
+      "materials": "Practical templates and concise interactive content are well aligned with the course's rapid onboarding goal.",
+      "currency": "PMI maintains the current course and its agile/predictive framing remains relevant to contemporary project work.",
+      "expertise": "PMI is a primary professional standards body for project management with direct domain expertise.",
+      "accessibility": "The route is free, extremely short, self-paced and requires no paid tooling, producing exceptional low-friction time-to-value."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9,
+      "depth": 7.4,
+      "practice": 9.2,
+      "materials": 9,
+      "currency": 9.6,
+      "expertise": 9.8,
+      "accessibility": 10
+    },
+    "prior_quality_score": 8.91,
+    "prior_recommendation_score": 9,
+    "quality_components": {
+      "pedagogy": 8.8,
+      "depth": 7.3,
+      "practice": 8.5,
+      "materials": 8.8,
+      "currency": 9.4,
+      "expertise": 9.7,
+      "accessibility": 9.9
+    },
+    "quality_score": 8.65,
+    "recommendation_score": 9,
+    "recommendation_rationale": "Recommended as the fastest credible project-management starting point, not as the deepest course; recommendation stays high because its learning role is deliberately narrow.",
+    "comparators": [
+      "saylor-bus402-project-management",
+      "openclassrooms-initiez-vous-gestion-projet"
+    ],
+    "evidence": [
+      "https://www.pmi.org/kickoff/",
+      "https://www.pmi.org/learning/free-online-courses"
+    ],
+    "flags": [
+      "reference",
+      "project-management",
+      "microcourse",
+      "free-badge"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-openai-agents-workflows",
+    "course_id": "openai-agents-workflows",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://openai.com/academy/",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "OpenAI Academy currently issues course completion recognition/certificates for this route; terminology may vary across Academy pathways.",
+    "academic_credits": "No academic credit is verified.",
+    "self_paced": true,
+    "scope_notes": "Current OpenAI Academy course on directing agents, defining context and instructions, reviewing outputs, refining results, delegation/control patterns and reusable agent workflows.",
+    "prerequisites": "No advanced programming prerequisite is verified; familiarity with ChatGPT and basic AI concepts is useful.",
+    "required_resources": "Browser and ChatGPT account; the Academy course itself is free and no paid API spend is required for the core learning route.",
+    "component_evidence": {
+      "pedagogy": "The course is structured around concrete workflow decisions—context, instruction, review, refinement and delegation—rather than generic AI awareness.",
+      "depth": "It provides useful workflow depth for a compact course but is not a comprehensive agent-engineering or software-development curriculum.",
+      "practice": "Hands-on workflow tasks require learners to direct and refine agent behaviour instead of only consuming conceptual material.",
+      "materials": "Academy lessons and task-oriented guidance are concise, practical and integrated into the current OpenAI learning environment.",
+      "currency": "The route is maintained in a very fast-moving area and currently reflects contemporary OpenAI agent/workflow concepts.",
+      "expertise": "The course is produced by teams building and deploying OpenAI models and products, providing direct platform and workflow expertise.",
+      "accessibility": "The course is free, self-paced and browser-based with a standard ChatGPT account and low setup friction."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9,
+      "depth": 8.1,
+      "practice": 9.2,
+      "materials": 9.1,
+      "currency": 10,
+      "expertise": 9.8,
+      "accessibility": 9.8
+    },
+    "prior_quality_score": 9.09,
+    "prior_recommendation_score": 9.4,
+    "quality_components": {
+      "pedagogy": 9,
+      "depth": 8.1,
+      "practice": 9.2,
+      "materials": 9.1,
+      "currency": 10,
+      "expertise": 9.8,
+      "accessibility": 9.8
+    },
+    "quality_score": 9.09,
+    "recommendation_score": 9.4,
+    "recommendation_rationale": "The current score is already consistent with the later rubric: excellent current practical onboarding, with depth deliberately below a full technical agents course.",
+    "comparators": [
+      "huggingface-agents-course"
+    ],
+    "evidence": [
+      "https://openai.com/academy/",
+      "https://help.openai.com/en/articles/20001270-openai-academy-courses",
+      "https://academy.openai.com/public/courses/agents-and-workflows-bieml"
+    ],
+    "flags": [
+      "reference",
+      "agents",
+      "workflows",
+      "fast-moving"
+    ],
+    "calibration_outcome": "confirmed",
+    "is_current": true
+  },
+  {
+    "review_id": "reference-v08-kaggle-intro-machine-learning",
+    "course_id": "kaggle-intro-machine-learning",
+    "reviewed_on": "2026-09-14",
+    "reconciliation_record": "docs/qa-reference-reconciliation-v0.5.md",
+    "canonical_url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+    "observed_free_access": "F0_FULL_CREDENTIAL",
+    "observed_status": "active",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "Free Kaggle Learn completion certificate is available after completing the course.",
+    "academic_credits": "No academic credit is verified.",
+    "self_paced": true,
+    "scope_notes": "Approximately three-hour practical introduction to supervised machine-learning workflows covering model building, validation, under/overfitting, random forests and a competition-style finish.",
+    "prerequisites": "Basic Python familiarity is expected; learners without it should complete introductory Python work first.",
+    "required_resources": "Browser and free Kaggle account; hosted notebooks remove local setup and paid compute requirements for the course exercises.",
+    "component_evidence": {
+      "pedagogy": "Short tutorials alternate directly with notebook exercises, keeping the learning loop focused on applying each modelling concept immediately.",
+      "depth": "The course intentionally prioritises fast onboarding and core supervised-ML workflow over mathematical depth or broad model coverage.",
+      "practice": "Hosted exercises provide repeated hands-on work with real data and model-validation decisions, though the route is still a short microcourse.",
+      "materials": "Concise tutorials, executable notebooks and competition-oriented examples make the course efficient and easy to follow.",
+      "currency": "The core scikit-learn workflow remains relevant, though the course is narrower and less recently refreshed than Google's broader current MLCC.",
+      "expertise": "Kaggle Learn instructors have practical data-science teaching experience and the exercises reflect common applied workflows.",
+      "accessibility": "The course is free, browser-based, short and certificate-bearing, with only a basic Python prerequisite and no local setup."
+    },
+    "prior_quality_components": {
+      "pedagogy": 9.1,
+      "depth": 7.8,
+      "practice": 9.7,
+      "materials": 9,
+      "currency": 9.4,
+      "expertise": 9.1,
+      "accessibility": 9.9
+    },
+    "prior_quality_score": 9.02,
+    "prior_recommendation_score": 9.2,
+    "quality_components": {
+      "pedagogy": 8.9,
+      "depth": 7.6,
+      "practice": 9.4,
+      "materials": 8.8,
+      "currency": 9.3,
+      "expertise": 9,
+      "accessibility": 9.8
+    },
+    "quality_score": 8.83,
+    "recommendation_score": 9,
+    "recommendation_rationale": "Still one of the best low-friction practical ML on-ramps, but the calibrated score now reflects its intentionally narrow three-hour depth and limited breadth.",
+    "comparators": [
+      "google-ml-crash-course",
+      "harvard-cs50-ai"
+    ],
+    "evidence": [
+      "https://www.kaggle.com/learn/intro-to-machine-learning",
+      "https://www.kaggle.com/learn-course-certificates"
+    ],
+    "flags": [
+      "reference",
+      "machine-learning",
+      "microcourse",
+      "hosted-notebooks"
+    ],
+    "calibration_outcome": "recalibrated",
+    "is_current": true
+  }
+]
