@@ -670,6 +670,7 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
     <div class="course-grid catalogue-grid">{cards}</div>
   </main>
   <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>Curated category view generated from canonical data.</p></div><div class="footer-links"><a href="../../courses/">Browse all courses</a></div></div></footer>
+  <script src="../../theme.js" defer></script>
 </body>
 </html>
 """
