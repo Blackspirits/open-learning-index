@@ -1,17 +1,136 @@
 # Open Learning Index
 
-> A rigorously curated, continuously maintained index of the world's best genuinely free courses and open learning experiences.
+> A rigorously curated, continuously maintained index of exceptional free courses and open learning experiences.
 
-**Status:** v0.7 — **the public Open Learning Index is live**, generated deterministically from the canonical repository data, while v0.6 continuous maintenance remains active. The canonical publication set is **142 courses** with **75 F0 / 24 F1 / 43 F2**, including **13 primary-language pt-PT courses**. Current pipeline state remains **216 / 216 `advance` candidates Deep-Reviewed and Phase-4 decided**, with **125 admit / 91 do_not_admit**; exactly **5 `hold`** records remain excluded pending new evidence.
+**[Browse the public index](https://blackspirits.github.io/open-learning-index/)**
 
+[![Validate dataset](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml)
+[![Deploy public index](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml)
 
-## Public catalogue
+## What this project does
 
-**Live site:** https://blackspirits.github.io/open-learning-index/
+The Open Learning Index answers a simple question that ordinary course lists usually do not:
 
-v0.7 is generated from the canonical dataset and deployed through GitHub Pages. Do not edit generated output as source data; `data/courses.json` remains authoritative.
+**Which genuinely free learning resources are good enough to recommend today?**
 
-Build locally:
+Every published course is evaluated with evidence for:
+
+- teaching quality and depth;
+- exercises, projects and assessment;
+- materials and learner autonomy;
+- currentness and maintenance;
+- expertise and credibility;
+- accessibility, language and prerequisites;
+- what is actually free;
+- whether a stronger alternative already exists.
+
+Institutional prestige alone is not enough. Old, incomplete, shallow or technically obsolete courses are penalised or excluded.
+
+## Current publication
+
+As of **2026-09-14**:
+
+| Metric | Current state |
+|---|---:|
+| Canonical published courses | **142** |
+| Primary-language pt-PT courses | **13** |
+| F0 — full course + free credential | **75** |
+| F1 — full assessed learning path | **24** |
+| F2 — full teaching content | **43** |
+| Current advances Deep-Reviewed | **216 / 216** |
+| Current advances Phase-4 decided | **216 / 216** |
+| Holds excluded pending evidence | **5** |
+
+The public site is generated deterministically from the canonical repository data.  
+**`data/courses.json` is the source of truth.**
+
+## What “free” means
+
+| Tier | Meaning | Main ranking |
+|---|---|:---:|
+| **F0** | Full learning path + free provider completion credential | ✅ |
+| **F1** | Full learning path + meaningful free assessment/labs, but no free formal credential | ✅ |
+| **F2** | Substantial complete teaching content, but no free formal completion path | ✅ |
+| **F3** | Preview, trial or partial access only | ❌ |
+
+The project does not treat “free to enrol” or “free trial” as equivalent to a genuinely free course.
+
+## How a course gets into the index
+
+```text
+Discovery
+   ↓
+Shallow Screening
+   ↓
+Deep Review
+   ↓
+Head-to-head Admission
+   ↓
+QA & Publication
+   ↓
+Continuous Maintenance
+```
+
+### 1. Discovery
+
+Serious candidates are collected without premature scoring.
+
+### 2. Shallow Screening
+
+Current access, completeness, language, assessment, credential mechanics, obvious currentness problems and redundancy are checked.
+
+Allowed decisions are only `advance`, `hold` or `reject`.
+
+### 3. Deep Review
+
+Advanced candidates are scored on pedagogy, depth, practice, materials, currency, expertise and accessibility.
+
+**Quality** and **Recommendation** are deliberately separate.
+
+### 4. Head-to-head Admission
+
+A course enters the canonical set only if it is clearly strong enough **and** either beats or materially complements the existing field.
+
+A stronger English course does not automatically make a strong pt-PT alternative redundant when language is a genuine access barrier.
+
+### 5. Continuous Maintenance
+
+Published courses are re-verified on a risk-based schedule. Pricing changes, broken links, retirement, new editions, quality regressions and strong challengers can trigger immediate review.
+
+## Explore the project
+
+| Resource | Purpose |
+|---|---|
+| **[Public catalogue](https://blackspirits.github.io/open-learning-index/)** | Search and filter the published courses |
+| [Methodology](docs/methodology.md) | Scoring model and free-access taxonomy |
+| [Research protocol](docs/research-protocol.md) | Discovery and screening rules |
+| [Deep Review protocol](docs/deep-review-protocol.md) | Evidence and scoring requirements |
+| [Admission protocol](docs/admission-protocol.md) | Comparative Phase-4 rules |
+| [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
+| [Data model](docs/data-model.md) | Canonical fields and invariants |
+| [v0.7 public experience](docs/v0.7-public-experience.md) | Public-site architecture and QA |
+| [Architecture audit](AUDIT.md) | Project architecture decisions and risks |
+
+### Audit trail
+
+The full research history is intentionally public:
+
+- [`data/candidates/`](data/candidates/) — immutable Discovery intake;
+- [`data/screening/`](data/screening/) — Shallow Screening decisions;
+- [`data/reviews/`](data/reviews/) — Deep Review evidence and scores;
+- [`data/admissions/`](data/admissions/) — comparative admission decisions;
+- [`docs/discovery/`](docs/discovery/) — Discovery notes;
+- [`docs/screening/`](docs/screening/) — screening rationale;
+- [`docs/reviews/`](docs/reviews/) — Deep Review reports;
+- [`docs/admissions/`](docs/admissions/) — admission reports.
+
+Nothing needs to be inferred from a hidden spreadsheet or private ranking process.
+
+## Public site
+
+The site is deliberately simple: static, generated from canonical JSON, with no CMS, database, user accounts, analytics or frontend framework runtime in v0.7.
+
+### Build locally
 
 ```bash
 python scripts/build_public_site.py
@@ -20,145 +139,47 @@ python -m http.server 8000 --directory _site
 
 Then open `http://localhost:8000`.
 
-## Goal
+## Validation
 
-Review a broad evidence-based candidate universe across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.
+Repository CI checks the canonical data, generated CSV parity, review freshness and the public-site build.
 
-The original discovery target was **300–500 serious candidates**, later narrowed to roughly 320–350. Completed screening and the final saturation audit superseded that numerical target. The corrective language micro-wave stopped at 290 candidates because Arabic and Mandarin now have serious challengers and further search was increasingly partial, paid, archived or redundant. **Broad and corrective v0.2 discovery are now frozen.**
+Useful local commands:
 
-The project separates **absolute quality** from **recommendation**, records exactly what “free” means, tracks instruction/subtitle languages, and re-verifies courses on a risk-based schedule so the rankings do not become stale.
+```bash
+python scripts/validate.py
+python scripts/generate_csv.py
+python scripts/check_staleness.py
+python scripts/build_public_site.py
+```
 
-## Start here
-
-- [`AUDIT.md`](AUDIT.md) — architecture decisions and risks.
-- [`docs/methodology.md`](docs/methodology.md) — scoring and free-access taxonomy.
-- [`docs/research-protocol.md`](docs/research-protocol.md) — candidate → approved workflow.
-- [`docs/deep-review-protocol.md`](docs/deep-review-protocol.md) — evidence and scoring rules for Phase 3.
-- [`docs/admission-protocol.md`](docs/admission-protocol.md) — comparative admission rules for Phase 4.
-- [`docs/admissions/calibration-01.md`](docs/admissions/calibration-01.md) — mixed Phase 4 calibration with 4 admits and 3 evidence-backed non-admissions.
-- [`docs/admissions/batch-01-computer-science.md`](docs/admissions/batch-01-computer-science.md) — complete Computer Science & Software head-to-head admission pass.
-- [`docs/admissions/batch-02-marketing-sales.md`](docs/admissions/batch-02-marketing-sales.md) — complete Marketing & Sales pass with explicit HubSpot concentration control.
-- [`docs/admissions/batch-03-mathematics.md`](docs/admissions/batch-03-mathematics.md) — complete Mathematics & Statistics pass with explicit redundancy and MIT-concentration control.
-- [`docs/admissions/batch-04-finance-economics.md`](docs/admissions/batch-04-finance-economics.md) — complete Finance & Economics pass with currentness-sensitive finance and policy comparisons.
-- [`docs/admissions/batch-05-business-leadership.md`](docs/admissions/batch-05-business-leadership.md) — complete Business & Entrepreneurship plus Project, Product & Leadership pass with explicit language-access and depth tests.
-- [`docs/admissions/batch-06-natural-sciences.md`](docs/admissions/batch-06-natural-sciences.md) — complete Natural Sciences pass with subject-sensitive archive-age handling and an explicit climate-science coverage gap.
-- [`docs/admissions/batch-07-humanities-philosophy.md`](docs/admissions/batch-07-humanities-philosophy.md) — complete Humanities & Philosophy pass with explicit writing-practice, representation and provider-concentration tests.
-- [`docs/admissions/batch-08-engineering-electronics.md`](docs/admissions/batch-08-engineering-electronics.md) — complete Engineering & Electronics pass with vendor-concentration control and an explicit vendor-neutral engineering coverage gap.
-- [`docs/admissions/batch-09-writing-communication.md`](docs/admissions/batch-09-writing-communication.md) — complete Writing & Communication pass with productive-practice and independent-feedback tests.
-- [`docs/admissions/batch-10-cybersecurity-it.md`](docs/admissions/batch-10-cybersecurity-it.md) — complete Cybersecurity & IT pass with lab-density, currentness and provider-concentration controls.
-- [`docs/admissions/batch-11-ai-data.md`](docs/admissions/batch-11-ai-data.md) — complete AI & Data pass with aggressive currentness, portability and microcourse-concentration controls.
-- [`docs/admissions/batch-12-education-teaching.md`](docs/admissions/batch-12-education-teaching.md) — complete Education & Teaching pass with role differentiation and British Council provider-concentration controls.
-- [`docs/admissions/batch-13-law-public-policy.md`](docs/admissions/batch-13-law-public-policy.md) — complete Law & Public Policy pass with explicit legal-currentness gates and specialist-provider concentration controls.
-- [`docs/admissions/batch-14-languages.md`](docs/admissions/batch-14-languages.md) — complete Languages pass balancing target-language coverage, pathway completeness, sequence logic and provider concentration.
-- [`docs/admissions/batch-15-psychology-behavior.md`](docs/admissions/batch-15-psychology-behavior.md) — complete Psychology & Behaviour pass with currentness-sensitive general-course comparison and specialist-role tests.
-- [`docs/admissions/batch-16-health-medicine.md`](docs/admissions/batch-16-health-medicine.md) — complete Health & Medicine pass with clinical-currentness, professional-role and evidence-completeness gates.
-- [`docs/admissions/batch-17-history-culture.md`](docs/admissions/batch-17-history-culture.md) — complete History & Culture pass with global-coverage, archive-concentration and post-COVID currentness controls.
-- [`docs/admissions/batch-18-arts-design.md`](docs/admissions/batch-18-arts-design.md) — final Phase 4 family pass, completing Arts & Design with creative-practice, sequence and incomplete-course controls.
-- [`docs/admissions/batch-19-maintenance-challengers.md`](docs/admissions/batch-19-maintenance-challengers.md) — first post-v0.5 challenger admission pass, adding optimisation and sales while keeping climate and AI-security gaps explicit.
-- [`docs/admissions/batch-20-maintenance-ibm.md`](docs/admissions/batch-20-maintenance-ibm.md) — comparative decision on the two IBM holds whose learner routes were restored.
-- [`docs/qa-reference-reconciliation-v0.5.md`](docs/qa-reference-reconciliation-v0.5.md) — Phase 5 Gate 1 reconciliation of all 17 pre-existing canonical reference fixtures against the complete admitted set.
-- [`docs/qa-publication-structural-audit-v0.5.md`](docs/qa-publication-structural-audit-v0.5.md) — Phase 5 Gate 2 audit of category/provider concentration, language accessibility, access models and review cadence.
-- [`docs/qa-reverification-01-technical-references.md`](docs/qa-reverification-01-technical-references.md) — Phase 5 Gate 3 batch 01 primary-source re-verification of ten high-volatility technical reference fixtures.
-- [`docs/qa-reverification-02-volatile-admissions.md`](docs/qa-reverification-02-volatile-admissions.md) — Gate 3 batch 02 across agents, developer tooling and Cisco data/security admissions, including a Unity language-accessibility correction.
-- [`docs/qa-reverification-03-health-clinical.md`](docs/qa-reverification-03-health-clinical.md) — Gate 3 batch 03 re-verification of the complete Health & Medicine canonical set, including a WHO credential/access correction.
-- [`docs/qa-reverification-04-law-public-policy.md`](docs/qa-reverification-04-law-public-policy.md) — Gate 3 batch 04 re-verification of the complete Law & Public Policy set, including WIPO/HELP language and credential precision fixes.
-- [`docs/qa-reverification-05-session-fragile.md`](docs/qa-reverification-05-session-fragile.md) — Gate 3 batch 05 re-verification of session-, enrolment- and version-fragile routes.
-- [`docs/qa-publication-readiness-v0.5.md`](docs/qa-publication-readiness-v0.5.md) — final Phase 5 provenance, validator and publication-readiness gate.
-- [`docs/reviews/calibration-pilot-01.md`](docs/reviews/calibration-pilot-01.md) — required mixed 12-course scoring calibration.
-- [`docs/reviews/scale-batch-01.md`](docs/reviews/scale-batch-01.md) — first scaled Deep Review batch across AI/data, software and cybersecurity.
-- [`docs/reviews/scale-batch-02.md`](docs/reviews/scale-batch-02.md) — second scaled Deep Review batch closing major volatile-tech comparison families.
-- [`docs/reviews/scale-batch-03.md`](docs/reviews/scale-batch-03.md) — multisector Deep Review transition across engineering, statistics, education, health, leadership and culture.
-- [`docs/reviews/scale-batch-04.md`](docs/reviews/scale-batch-04.md) — coherent Mathematics & Statistics comparison family with provider-concentration guardrails.
-- [`docs/reviews/scale-batch-05.md`](docs/reviews/scale-batch-05.md) — Health & Psychology Deep Review with currency-sensitive comparisons and explicit evidence gates.
-- [`docs/reviews/scale-batch-06.md`](docs/reviews/scale-batch-06.md) — History & Historical Method comparison family spanning current interactive routes and deep university archives.
-- [`docs/reviews/scale-batch-07.md`](docs/reviews/scale-batch-07.md) — complete Languages-category Deep Review across structured courses, open pathways and specialist language-learning methods.
-- [`docs/reviews/scale-batch-08.md`](docs/reviews/scale-batch-08.md) — complete current Education & Teaching `advance` family after access/currentness maintenance.
-- [`docs/reviews/scale-batch-09.md`](docs/reviews/scale-batch-09.md) — complete current Law & Public Policy `advance` family with strict legal-currentness gates.
-- [`docs/reviews/scale-batch-10.md`](docs/reviews/scale-batch-10.md) — complete current Finance & Economics `advance` family with subject-sensitive currency and jurisdiction checks.
-- [`docs/reviews/scale-batch-11.md`](docs/reviews/scale-batch-11.md) — complete current Business & Entrepreneurship and Project, Product & Leadership `advance` families.
-- [`docs/reviews/scale-batch-12.md`](docs/reviews/scale-batch-12.md) — complete current Natural Sciences `advance` family with subject-sensitive scientific-currentness handling.
-- [`docs/reviews/scale-batch-13.md`](docs/reviews/scale-batch-13.md) — complete current Humanities & Philosophy `advance` family with archive-age, representation and writing-practice checks.
-- [`docs/reviews/scale-batch-14.md`](docs/reviews/scale-batch-14.md) — complete current Engineering & Electronics `advance` family with hardware, vendor-lock and tooling-currentness checks.
-- [`docs/reviews/scale-batch-15.md`](docs/reviews/scale-batch-15.md) — complete current Writing & Communication `advance` family with feedback, practice and communication-currentness checks.
-- [`docs/reviews/scale-batch-16.md`](docs/reviews/scale-batch-16.md) — complete current Cybersecurity & IT `advance` family with lab density, prerequisites, vendor dependence and currentness checks.
-- [`docs/reviews/scale-batch-17.md`](docs/reviews/scale-batch-17.md) — complete current Marketing & Sales `advance` family with fast-moving channel, platform and AI-search currency checks.
-- [`docs/reviews/scale-batch-18.md`](docs/reviews/scale-batch-18.md) — Arts & Design Deep Review for 11 valid current advances, with two newly discovered maintenance blockers kept outside scoring.
-- [`docs/reviews/scale-batch-19.md`](docs/reviews/scale-batch-19.md) — Mathematics & Statistics closure across the final specialist survivors.
-- [`docs/reviews/scale-batch-20.md`](docs/reviews/scale-batch-20.md) — AI & Data closure across the remaining Kaggle microcourses.
-- [`docs/reviews/scale-batch-21.md`](docs/reviews/scale-batch-21.md) — History & Culture closure across the final five ordinary survivors.
-- [`docs/reviews/scale-batch-22.md`](docs/reviews/scale-batch-22.md) — final WHO clinical-trials review and formal Phase 3 closure at 199/199 current advances.
-- [`docs/reviews/scale-batch-23.md`](docs/reviews/scale-batch-23.md) — first maintenance challenger Deep Review across optimisation, climate science, sales and AI red teaming.
-- [`docs/reviews/scale-batch-24.md`](docs/reviews/scale-batch-24.md) — Deep Review of the two IBM SkillsBuild holds after exact learner routes became verifiable.
-- [`docs/maintenance.md`](docs/maintenance.md)
-- [`docs/v0.7-public-experience.md`](docs/v0.7-public-experience.md) — architecture, UX and publication plan for the public index experience tracked in #110. — discovery, re-verification and retirement policy.
-- [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
-- [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
-- [`docs/coverage-audit-v0.2-after-batch-7.md`](docs/coverage-audit-v0.2-after-batch-7.md) — second saturation audit after crossing 300 researched experiences.
-- [`docs/discovery/batch-08.md`](docs/discovery/batch-08.md) — final corrective Arabic/Mandarin micro-discovery; stops early at four candidates.
-- [`docs/discovery/batch-09.md`](docs/discovery/batch-09.md) — first v0.6 targeted challenger scan, restricted to documented coverage gaps.
-- [`docs/screening/shallow-01.md`](docs/screening/shallow-01.md) — first shallow-screening calibration tranche.
-- [`docs/screening/shallow-02.md`](docs/screening/shallow-02.md) — first deliberately selective mixed-provider screening tranche.
-- [`docs/screening/shallow-03.md`](docs/screening/shallow-03.md) — currency-sensitive psychology, health and education screening tranche.
-- [`docs/screening/shallow-04.md`](docs/screening/shallow-04.md) — arts/design, languages and communication screening tranche.
-- [`docs/screening/shallow-05.md`](docs/screening/shallow-05.md) — natural sciences, engineering/electronics and mathematics/statistics screening tranche.
-- [`docs/screening/shallow-06.md`](docs/screening/shallow-06.md) — history/culture, humanities/philosophy, finance/economics and law/public-policy screening tranche.
-- [`docs/screening/shallow-07.md`](docs/screening/shallow-07.md) — computer science/software and AI/data screening tranche.
-- [`docs/screening/shallow-08.md`](docs/screening/shallow-08.md) — history/culture, humanities/philosophy and project/product/leadership screening tranche.
-- [`docs/screening/shallow-09.md`](docs/screening/shallow-09.md) — mathematics/statistics, arts/design, natural sciences and engineering/electronics screening tranche.
-- [`docs/screening/shallow-10.md`](docs/screening/shallow-10.md) — languages, finance/economics, business/entrepreneurship, law/public-policy and writing/communication screening tranche.
-- [`docs/screening/shallow-11.md`](docs/screening/shallow-11.md) — health/medicine, cybersecurity/IT, psychology/behaviour, marketing/sales and education/teaching screening tranche.
-- [`docs/screening/shallow-12.md`](docs/screening/shallow-12.md) — immediate screening of the final corrective Arabic/Mandarin micro-wave.
-- [`docs/screening/hold-resolution-01.md`](docs/screening/hold-resolution-01.md) — resolves objective access, availability, hardware, beta-status and public-completeness blockers.
-- [`docs/screening/hold-resolution-02.md`](docs/screening/hold-resolution-02.md) — resolves the remaining comparative/currentness holds and carries forward only two evidence-constrained cases.
-- [`docs/screening/maintenance-08.md`](docs/screening/maintenance-08.md) — Shallow Screening of the first four post-v0.5 challengers.
-- [`docs/screening/maintenance-09.md`](docs/screening/maintenance-09.md) — evidence-triggered hold resolution: two IBM advances and three currentness rejections.
-- [`docs/coverage-audit-v0.2-final.md`](docs/coverage-audit-v0.2-final.md) — final saturation decision after all original candidates were screened and holds resolved.
-- [`docs/coverage-audit-v0.2-final-snapshot.md`](docs/coverage-audit-v0.2-final-snapshot.md) — generated evidence snapshot behind the final audit.
-- [`data/categories.json`](data/categories.json) — authoritative category registry.
-- [`data/courses.json`](data/courses.json) — approved/reference canonical dataset.
-- [`data/courses.csv`](data/courses.csv) — generated spreadsheet-friendly export.
-- [`data/candidates/`](data/candidates/) — immutable discovery batches.
-- [`data/screening/`](data/screening/) — evidence-backed shallow-screening decision ledger.
-- [`data/reviews/`](data/reviews/) — auditable Deep Review ledger; reviewed candidates are not final admissions by default.
-- [`data/admissions/`](data/admissions/) — auditable Phase 4 head-to-head admission decisions.
-
-## Free access taxonomy
-
-| Code | Meaning | Main ranking |
-|---|---|---:|
-| F0 | Full learning path + free completion credential | ✅ |
-| F1 | Full path + meaningful free assessment/labs | ✅ |
-| F2 | Substantive teaching content free; no free formal completion path | ✅ |
-| F3 | Preview/trial/partial access only | ❌ |
-
-## Review pipeline
-
-1. **Discovery** — collect serious candidates without assigning final scores.
-2. **Shallow screening** — verify access, completeness, evidence, languages, assessment/credential mechanics, obvious currency issues and redundancy.
-3. **Deep review** — score teaching quality, depth, practice, materials, currency, expertise and accessibility with direct alternatives in view.
-4. **Head-to-head admission** — a course enters only if it beats or materially complements the incumbent field.
-5. **Publish and maintain** — global/category rankings plus scheduled re-verification.
-
-Shallow decisions are `advance`, `hold` or `reject`. They are recorded separately from discovery intake so the full research history remains auditable.
+Generated output is disposable. Do not edit `_site/` or `data/courses.csv` as independent sources of truth.
 
 ## Maintenance promise
 
-The index is **not a frozen “Top 100”**.
+The Open Learning Index is **not a frozen “Top 100” list**.
 
-- Automated structural checks: every push/PR.
-- Discovery scan for new candidates: monthly.
-- Fast-moving courses (AI, software, cybersecurity, cloud): usually every 60–90 days.
-- Active general courses: every 120–180 days.
-- Stable archival/fundamental courses: up to 365 days.
-- Full methodology and ranking recalibration: annually.
-- Immediate review when a link breaks, pricing/free access changes, or credible evidence is reported.
+Typical review cadence:
 
-A course that becomes F3-only is removed from the main ranking but kept in history. A course whose review is substantially overdue is flagged stale and can be temporarily excluded until re-verified.
+- AI, software, cybersecurity and other fast-moving fields: **60–90 days**;
+- active general courses: **120–180 days**;
+- stable archival/fundamental courses: up to **365 days**;
+- methodology/ranking recalibration: **annually**;
+- challenger discovery: **targeted and recurring**, not quantity-driven.
 
-## Data philosophy
+A course that becomes paid-only, incomplete, stale or clearly inferior can leave the main ranking while remaining in the audit history.
 
-`courses.json` is the source of truth for approved/reference records. Discovery batches are immutable research intake; `data/screening/` records shallow decisions, `data/reviews/` records Phase 3 deep-review evidence, and `data/admissions/` records Phase 4 comparative decisions. A deep review does not itself promote a candidate into `courses.json`; a validated current `admit` decision authorises that promotion. CSV and future README/site views are generated from canonical data. Never maintain the same facts independently in multiple formats.
+## Project philosophy
+
+- **Quality over quantity.**
+- Evidence over prestige.
+- Currentness matters more in fast-moving fields.
+- Language accessibility matters when quality remains high.
+- Uncertainty is recorded rather than guessed away.
+- New courses should improve the index, not merely make it longer.
+- The repository is the source of truth; the public site is a projection of it.
 
 ## Licensing
 
-Repository code/scripts: MIT. Curated metadata and original editorial annotations: CC BY 4.0. Course materials remain owned/licensed by their respective providers.
+- Repository code and scripts: **MIT**
+- Curated metadata and original editorial annotations: **CC BY 4.0**
+- Course materials remain owned and licensed by their respective providers.
