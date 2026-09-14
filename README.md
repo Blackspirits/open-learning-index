@@ -4,6 +4,20 @@
 
 **Status:** v0.6 — **continuous maintenance is active on top of the publication-ready v0.5 baseline.** The second dedicated pt-PT challenger cycle is complete: **216 / 216 current `advance` candidates are Deep-Reviewed and Phase-4 decided, with 125 admit / 91 do_not_admit**. The canonical publication set is now **142 courses** with **75 F0 / 24 F1 / 43 F2**, including **13 primary-language pt-PT courses**. Exactly **5 `hold`** records remain excluded, and current shallow state is **216 advance / 5 hold / 88 reject** across **309 discovery candidates**. Broad intake remains frozen; monitoring and evidence-backed challengers drive changes.
 
+
+## Public catalogue development
+
+v0.7 public-site work is tracked in issue #110. The public artefact is generated from the canonical dataset; do not edit generated output as source data.
+
+Build locally:
+
+```bash
+python scripts/build_public_site.py
+python -m http.server 8000 --directory _site
+```
+
+Then open `http://localhost:8000`.
+
 ## Goal
 
 Review a broad evidence-based candidate universe across technology, sciences, mathematics, business, finance, law and public policy, education, humanities, arts, psychology, history, languages and other fields, then publish only ~100–150 exceptional resources.

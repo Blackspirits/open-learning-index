@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, sys
+import json, sys, subprocess, tempfile
 from pathlib import Path
 from datetime import date
 
@@ -263,6 +263,22 @@ def main():
                     errors += fail(f'{cid}: admitted quality_components must match current deep review')
         elif in_courses:
             errors += fail(f'{a["admission_id"]}: do_not_admit candidate must not exist in data/courses.json')
+
+    if not errors:
+        with tempfile.TemporaryDirectory(prefix="open-learning-index-public-") as tmp:
+            public_output=Path(tmp)/"site"
+            result=subprocess.run(
+                [
+                    sys.executable,
+                    str(ROOT/"scripts/build_public_site.py"),
+                    "--output",
+                    str(public_output),
+                ],
+                cwd=ROOT,
+                check=False,
+            )
+            if result.returncode != 0:
+                errors += fail("public catalogue build failed")
 
     if errors: return 1
     print(
