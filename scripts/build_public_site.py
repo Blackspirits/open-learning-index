@@ -6,6 +6,7 @@ import json
 import shutil
 import unicodedata
 from collections import Counter
+from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -15,6 +16,7 @@ REVIEWS_DIR = ROOT / "data" / "reviews"
 ADMISSIONS_DIR = ROOT / "data" / "admissions"
 SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
+BASE_URL = "https://blackspirits.github.io/open-learning-index"
 
 ACCESS = {
     "F0_FULL_CREDENTIAL": {
@@ -32,6 +34,50 @@ ACCESS = {
         "label": "Full teaching content",
         "description": "Substantial complete teaching content, but no free formal completion path.",
     },
+}
+
+LANGUAGE_LABELS = {
+    "ar": "Arabic",
+    "az": "Azerbaijani",
+    "bg": "Bulgarian",
+    "cs": "Czech",
+    "de": "German",
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "hy": "Armenian",
+    "it": "Italian",
+    "ja": "Japanese",
+    "ka": "Georgian",
+    "ko": "Korean",
+    "nl": "Dutch",
+    "pl": "Polish",
+    "pt": "Portuguese",
+    "pt-BR": "Português (Brasil)",
+    "pt-PT": "Português (Portugal)",
+    "ro": "Romanian",
+    "ru": "Russian",
+    "sk": "Slovak",
+    "tr": "Turkish",
+    "uk": "Ukrainian",
+    "vi": "Vietnamese",
+    "zh": "Chinese",
+}
+
+CREDENTIAL_LABELS = {
+    "free_provider_certificate": "Free provider completion certificate",
+    "free_statement_of_participation": "Free statement of participation",
+    "academic_completion_route": "Academic completion route",
+    "paid_verified_certificate": "Paid verified certificate",
+    "none": "No free completion credential",
+}
+
+CREDIT_LABELS = {
+    "none": "No academic credit",
+    "none_by_default": "No academic credit by default",
+    "optional_paid_or_external": "Optional paid or external credit route",
+    "free_ects_available": "Free ECTS available",
+    "free_ects_available_subject_to_rules": "Free ECTS available subject to eligibility rules",
 }
 
 
@@ -154,6 +200,306 @@ def editorial_projection(course: dict, reviews: dict, admissions: dict) -> dict:
     return projected
 
 
+def write_text(path: Path, value: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(value, encoding="utf-8")
+
+
+def label_level(value: str) -> str:
+    return " ".join(part.capitalize() for part in str(value or "").split("_"))
+
+
+def label_language(value: str) -> str:
+    return LANGUAGE_LABELS.get(value, value)
+
+
+def readable_id(value: str) -> str:
+    return " ".join(part.capitalize() for part in str(value or "").split("-"))
+
+
+def static_score(label: str, score, tier: str) -> str:
+    return (
+        '<div class="score">'
+        f'<span>{escape(label)}</span><strong>{float(score):.1f}</strong>'
+        f'<small>{escape(tier)}</small></div>'
+    )
+
+
+def static_fact(label: str, value: str) -> str:
+    return f"<div><dt>{escape(label)}</dt><dd>{escape(str(value))}</dd></div>"
+
+
+def render_static_course(course: dict, course_by_id: dict) -> str:
+    editorial = course.get("editorial") or {}
+    review = editorial.get("review") or {}
+    admission = editorial.get("admission") or {}
+    url = f"{BASE_URL}/courses/{course['id']}/"
+    description = course.get("why_recommended", "")
+    languages = " · ".join(
+        label_language(code)
+        for code in [course["primary_language"], *course.get("other_languages", [])]
+    )
+    status = "Archived but still available" if course["status"] == "active_archive" else "Active"
+    certificate = review.get("credential") or CREDENTIAL_LABELS.get(
+        course.get("certificate"), readable_id(course.get("certificate"))
+    )
+    credit = review.get("academic_credits") or CREDIT_LABELS.get(
+        course.get("academic_credits"), readable_id(course.get("academic_credits"))
+    )
+
+    before = []
+    if review.get("prerequisites"):
+        before.append(static_fact("Prerequisites", review["prerequisites"]))
+    if review.get("required_resources"):
+        before.append(static_fact("Required resources", review["required_resources"]))
+    before_html = ""
+    if before or review.get("scope_notes"):
+        before_html = (
+            '<section class="detail-panel"><p class="section-kicker">Preparation</p>'
+            '<h2>Before you start</h2><dl class="facts">'
+            + "".join(before)
+            + "</dl>"
+            + (
+                f'<p class="detail-lead">{escape(review["scope_notes"])}</p>'
+                if review.get("scope_notes")
+                else ""
+            )
+            + "</section>"
+        )
+
+    reference_html = ""
+    if editorial.get("reference_note"):
+        reference_html = (
+            '<section class="detail-panel audit-note"><p class="section-kicker">Audit status</p>'
+            '<h2>Reference-course calibration</h2>'
+            f'<p>{escape(editorial["reference_note"])}</p></section>'
+        )
+
+    component_evidence = review.get("component_evidence") or {}
+    components = []
+    for key, value in course["quality_components"].items():
+        label = key.capitalize()
+        evidence = component_evidence.get(key)
+        components.append(
+            '<div class="component-item"><div class="component-row">'
+            f'<span>{escape(label)}</span>'
+            f'<div class="component-meter" aria-hidden="true"><i style="width:{float(value) * 10}%"></i></div>'
+            f'<strong>{float(value):.1f}</strong></div>'
+            + (
+                f'<p class="component-evidence">{escape(evidence)}</p>'
+                if evidence
+                else ""
+            )
+            + "</div>"
+        )
+
+    score_parts = []
+    if review.get("recommendation_rationale"):
+        score_parts.append(
+            f'<h3>Recommendation rationale</h3><p>{escape(review["recommendation_rationale"])}</p>'
+        )
+    if admission.get("learning_need"):
+        score_parts.append(
+            f'<h3>Learning need</h3><p>{escape(admission["learning_need"])}</p>'
+        )
+    if admission.get("marginal_value"):
+        score_parts.append(
+            f'<h3>Why it adds value</h3><p>{escape(admission["marginal_value"])}</p>'
+        )
+
+    comparison_ids = []
+    for item in [*(admission.get("comparison_set") or []), *(review.get("comparators") or [])]:
+        if item and item != course["id"] and item not in comparison_ids:
+            comparison_ids.append(item)
+    if comparison_ids:
+        rows = []
+        for item in comparison_ids:
+            compared = course_by_id.get(item)
+            if compared:
+                rows.append(
+                    f'<li><a href="../../courses/{escape(item)}/">{escape(compared["title"])}</a></li>'
+                )
+            else:
+                rows.append(f"<li>{escape(readable_id(item))}</li>")
+        score_parts.append(
+            '<h3>Compared against</h3><ul class="comparison-list">'
+            + "".join(rows)
+            + "</ul>"
+        )
+    if admission.get("decision_rationale"):
+        score_parts.append(
+            '<details class="editorial-details"><summary>Admission decision rationale</summary>'
+            f'<p>{escape(admission["decision_rationale"])}</p></details>'
+        )
+    score_context = ""
+    if score_parts:
+        score_context = (
+            '<section class="detail-panel"><p class="section-kicker">Editorial reasoning</p>'
+            '<h2>Why this score</h2>'
+            + "".join(score_parts)
+            + "</section>"
+        )
+
+    evidence_urls = []
+    for evidence_url in [*(review.get("evidence") or []), *(course.get("evidence") or [])]:
+        if evidence_url not in evidence_urls:
+            evidence_urls.append(evidence_url)
+    evidence_items = []
+    for index, evidence_url in enumerate(evidence_urls, 1):
+        try:
+            host = evidence_url.split("/")[2].removeprefix("www.")
+        except IndexError:
+            host = "source"
+        evidence_items.append(
+            f'<li><a href="{escape(evidence_url)}" target="_blank" rel="noopener noreferrer">'
+            f'{escape(host)} · source {index} ↗</a></li>'
+        )
+
+    schema = json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": course["title"],
+            "description": description,
+            "url": url,
+            "sameAs": course["url"],
+            "isAccessibleForFree": True,
+            "inLanguage": [course["primary_language"], *course.get("other_languages", [])],
+            "educationalLevel": label_level(course["level"]),
+            "provider": {"@type": "Organization", "name": course["provider"]},
+        },
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
+
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{escape(description, quote=True)}">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="{escape(url, quote=True)}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{escape(course['title'], quote=True)} · Open Learning Index">
+  <meta property="og:description" content="{escape(description, quote=True)}">
+  <meta property="og:url" content="{escape(url, quote=True)}">
+  <title>{escape(course['title'])} · Open Learning Index</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <script type="application/ld+json">{schema}</script>
+</head>
+<body>
+  <a class="skip-link" href="#course-detail">Skip to course details</a>
+  <header class="detail-hero"><div class="shell">
+    <a class="back-link" href="../../">← Back to catalogue</a>
+    <div class="detail-heading">
+      <p class="eyebrow">Open Learning Index</p>
+      <h1>{escape(course['title'])}</h1>
+      <p class="hero-copy">{escape(course['provider'])}</p>
+      <div class="hero-actions">
+        <a class="button-link" href="{escape(course['url'], quote=True)}" target="_blank" rel="noopener noreferrer">Open official course ↗</a>
+      </div>
+    </div>
+  </div></header>
+  <main id="course-detail" class="shell detail-main">
+    <section class="detail-summary">
+      <div><p class="section-kicker">Editorial view</p><h2>Why this course is here</h2>
+        <p class="detail-lead">{escape(description)}</p></div>
+      <div class="scores detail-scores" aria-label="Course scores">
+        {static_score("Recommendation", course["recommendation_score"], course["recommendation_tier"])}
+        {static_score("Quality", course["quality_score"], course["quality_tier"])}
+      </div>
+    </section>
+    {reference_html}
+    {before_html}
+    <section class="detail-grid" aria-label="Course facts">
+      <article class="detail-panel"><p class="section-kicker">Learning route</p><h2>Course facts</h2>
+        <dl class="facts">
+          {static_fact("Category", course["category_name"])}
+          {static_fact("Level", label_level(course["level"]))}
+          {static_fact("Language", languages)}
+          {static_fact("Format", "Self-paced" if course["self_paced"] else "Scheduled / not self-paced")}
+          {static_fact("Status", status)}
+        </dl>
+      </article>
+      <article class="detail-panel"><p class="section-kicker">Access</p><h2>What is free</h2>
+        <div class="access-callout"><strong>{escape(course["access_short"])} · {escape(course["access_label"])}</strong>
+          <p>{escape(course["access_description"])}</p></div>
+        <dl class="facts">{static_fact("Certificate", certificate)}{static_fact("Academic credit", credit)}</dl>
+      </article>
+    </section>
+    <section class="detail-panel"><p class="section-kicker">Quality</p><h2>Quality components</h2>
+      <p class="muted">Quality measures intrinsic course strength. Recommendation reflects whether this is a strong choice today, including access, currentness and alternatives.</p>
+      <div class="component-grid">{''.join(components)}</div>
+    </section>
+    {score_context}
+    <section class="detail-grid">
+      <article class="detail-panel"><p class="section-kicker">Maintenance</p><h2>Verification</h2>
+        <dl class="facts">
+          {static_fact("Last checked", course["last_verified"])}
+          {static_fact("Next review", course["next_review"])}
+          {static_fact("Review interval", str(course["review_interval_days"]) + " days")}
+        </dl>
+      </article>
+      <article class="detail-panel"><p class="section-kicker">Audit trail</p><h2>Evidence</h2>
+        <p class="muted">Sources used to verify the course and its access model.</p>
+        <ul class="evidence-list">{''.join(evidence_items)}</ul>
+      </article>
+    </section>
+    <div class="detail-actions">
+      <a class="button-link" href="{escape(course['url'], quote=True)}" target="_blank" rel="noopener noreferrer">Open official course ↗</a>
+      <a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Read methodology</a>
+    </div>
+  </main>
+  <footer><div class="shell footer-inner"><p>Open Learning Index · source data and methodology are public and auditable.</p>
+    <a href="https://github.com/Blackspirits/open-learning-index">View source</a></div></footer>
+</body>
+</html>
+"""
+
+
+def render_static_category(category: dict, courses: list[dict]) -> str:
+    url = f"{BASE_URL}/categories/{category['id']}/"
+    rows = sorted(
+        (course for course in courses if course["category"] == category["id"]),
+        key=lambda item: (-float(item["recommendation_score"]), -float(item["quality_score"]), item["title"]),
+    )
+    cards = "".join(
+        '<article class="course-card">'
+        f'<div class="card-topline"><span class="category">{escape(category["name"])}</span></div>'
+        f'<div><h3><a href="../../courses/{escape(course["id"])}/">{escape(course["title"])}</a></h3>'
+        f'<p class="provider">{escape(course["provider"])}</p></div>'
+        f'<div class="scores">{static_score("Recommendation", course["recommendation_score"], course["recommendation_tier"])}'
+        f'{static_score("Quality", course["quality_score"], course["quality_tier"])}</div>'
+        f'<p class="why">{escape(course["why_recommended"])}</p></article>'
+        for course in rows
+    )
+    description = f"Curated free courses in {category['name']} from the Open Learning Index."
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{escape(description, quote=True)}">
+  <link rel="canonical" href="{escape(url, quote=True)}">
+  <meta property="og:title" content="{escape(category['name'], quote=True)} · Open Learning Index">
+  <meta property="og:description" content="{escape(description, quote=True)}">
+  <meta property="og:url" content="{escape(url, quote=True)}">
+  <title>{escape(category['name'])} · Open Learning Index</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header class="detail-hero"><div class="shell">
+    <a class="back-link" href="../../">← Back to catalogue</a>
+    <div class="detail-heading"><p class="eyebrow">Category</p><h1>{escape(category['name'])}</h1>
+      <p class="hero-copy">{len(rows)} curated course{"s" if len(rows) != 1 else ""}, ordered by Recommendation.</p></div>
+  </div></header>
+  <main class="shell detail-main"><div class="course-grid">{cards}</div></main>
+  <footer><div class="shell footer-inner"><p>Open Learning Index · category view generated from canonical data.</p>
+    <a href="../../">Browse all courses</a></div></footer>
+</body>
+</html>
+"""
+
+
 def build(output: Path) -> None:
     courses = json.loads(COURSES.read_text(encoding="utf-8"))
     category_rows = json.loads(CATEGORIES.read_text(encoding="utf-8"))
@@ -206,6 +552,44 @@ def build(output: Path) -> None:
     write_json(output / "data" / "categories.json", category_rows)
     write_json(output / "data" / "meta.json", meta)
 
+    course_by_id = {course["id"]: course for course in public_courses}
+    for course in public_courses:
+        write_text(
+            output / "courses" / course["id"] / "index.html",
+            render_static_course(course, course_by_id),
+        )
+
+    for category in category_rows:
+        write_text(
+            output / "categories" / category["id"] / "index.html",
+            render_static_category(category, public_courses),
+        )
+
+    sitemap_urls = [f"{BASE_URL}/"]
+    sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
+    sitemap_urls.extend(f"{BASE_URL}/categories/{category['id']}/" for category in category_rows)
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{escape(url)}</loc></url>\n" for url in sitemap_urls)
+        + "</urlset>\n"
+    )
+    write_text(output / "sitemap.xml", sitemap)
+    write_text(
+        output / "robots.txt",
+        f"User-agent: *\nAllow: /\nSitemap: {BASE_URL}/sitemap.xml\n",
+    )
+    write_text(
+        output / "404.html",
+        """<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Page not found · Open Learning Index</title>
+<link rel="stylesheet" href="styles.css"></head><body>
+<main class="shell detail-main"><section class="empty"><h1>Page not found</h1>
+<p>That Open Learning Index page does not exist.</p><p><a href="./">Return to the catalogue</a></p>
+</section></main></body></html>""",
+    )
+
     required = [
         output / "index.html",
         output / "app.js",
@@ -214,7 +598,12 @@ def build(output: Path) -> None:
         output / "styles.css",
         output / "data" / "catalog.json",
         output / "data" / "meta.json",
+        output / "sitemap.xml",
+        output / "robots.txt",
+        output / "404.html",
     ]
+    required.extend(output / "courses" / course["id"] / "index.html" for course in public_courses)
+    required.extend(output / "categories" / category["id"] / "index.html" for category in category_rows)
     missing_files = [str(path.relative_to(output)) for path in required if not path.exists()]
     if missing_files:
         raise SystemExit(f"ERROR: public build missing required files: {missing_files}")
