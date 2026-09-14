@@ -201,7 +201,10 @@ function renderCard(course) {
 
       <div class="card-footer">
         <span>Verified ${escapeHtml(formatDate(course.last_verified))}</span>
-        <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer">Open course <span aria-hidden="true">↗</span></a>
+        <span class="card-links">
+          <a href="course.html?id=${encodeURIComponent(course.id)}">Details</a>
+          <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer">Open course <span aria-hidden="true">↗</span></a>
+        </span>
       </div>
     </article>
   `;
