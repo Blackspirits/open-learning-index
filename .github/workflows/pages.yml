@@ -7,6 +7,9 @@ on:
     paths:
       - 'data/courses.json'
       - 'data/categories.json'
+      - 'data/reviews/**'
+      - 'data/reference-reviews.json'
+      - 'data/admissions/**'
       - 'site/**'
       - 'scripts/build_public_site.py'
       - '.github/workflows/pages.yml'

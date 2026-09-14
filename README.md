@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of exceptional free courses and open learning experiences.
 
-**[Browse the public index](https://blackspirits.github.io/open-learning-index/)**
+**[Browse the public index](https://blackspirits.github.io/open-learning-index/)** · **[Português (Portugal)](https://blackspirits.github.io/open-learning-index/pt/)** · [Methodology](docs/methodology.md) · [Contributing](CONTRIBUTING.md)
 
 [![Validate dataset](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml)
 [![Deploy public index](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml)
@@ -102,6 +102,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | Resource | Purpose |
 |---|---|
 | **[Public catalogue](https://blackspirits.github.io/open-learning-index/)** | Search and filter the published courses |
+| **[Catálogo em pt-PT](https://blackspirits.github.io/open-learning-index/pt/)** | European-Portuguese interface for the canonical catalogue |
 | [Methodology](docs/methodology.md) | Scoring model and free-access taxonomy |
 | [Research protocol](docs/research-protocol.md) | Discovery and screening rules |
 | [Deep Review protocol](docs/deep-review-protocol.md) | Evidence and scoring requirements |
@@ -131,11 +132,14 @@ Nothing needs to be inferred from a hidden spreadsheet or private ranking proces
 
 ## Public site
 
-The site remains deliberately simple in v0.8: static, generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime.
+The public experience is now in **v0.9**: a modernised, responsive visual system with English and European-Portuguese catalogue interfaces. It remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime.
+
+The pt-PT route localises the interface. Provider titles and canonical editorial evidence are not silently machine-translated.
 
 ### Build locally
 
 ```bash
+python -m pip install -r requirements-dev.txt
 python scripts/build_public_site.py
 python -m http.server 8000 --directory _site
 ```
@@ -183,6 +187,8 @@ A course that becomes paid-only, incomplete, stale or clearly inferior can leave
 
 ## Licensing
 
-- Repository code and scripts: **MIT**
+- Repository software (including scripts and site implementation): **MIT**
 - Curated metadata and original editorial annotations: **CC BY 4.0**
-- Course materials remain owned and licensed by their respective providers.
+- Third-party course materials, names, logos and trademarks remain subject to their respective owners and licences.
+
+See **[LICENSING.md](LICENSING.md)** for the exact scope.
