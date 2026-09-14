@@ -19,6 +19,17 @@ SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
 BASE_URL = "https://blackspirits.github.io/open-learning-index"
 
+THEME_BOOTSTRAP = """<script>
+try {
+  const saved = localStorage.getItem("oli-theme");
+  const theme = saved === "dark" || saved === "light"
+    ? saved
+    : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+} catch {}
+</script>"""
+
 ACCESS = {
     "F0_FULL_CREDENTIAL": {
         "short": "F0",
@@ -266,11 +277,13 @@ def static_fact(label: str, value: str) -> str:
 
 
 def provider_initials(value: str) -> str:
-    words = [
+    stopwords = {"of", "the", "and", "de", "da", "do", "dos", "das", "e", "et", "la", "le"}
+    all_words = [
         "".join(ch for ch in word if ch.isalnum())
         for word in str(value or "").replace("/", " ").split()
     ]
-    words = [word for word in words if word]
+    all_words = [word for word in all_words if word]
+    words = [word for word in all_words if word.casefold() not in stopwords] or all_words
     if not words:
         return "OLI"
     if len(words) == 1:
@@ -463,7 +476,7 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
             "provider": {"@type": "Organization", "name": course["provider"]},
         },
         ensure_ascii=False,
-    ).replace("</", "<\/")
+    ).replace("</", "<\\/")
 
     return f"""<!doctype html>
 <html lang="en">
@@ -472,6 +485,7 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{escape(description, quote=True)}">
   <meta name="theme-color" content="#ffffff">
+  {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{escape(course['title'], quote=True)} · Open Learning Index">
@@ -494,7 +508,7 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
         <a href="../../#about">About</a>
         <a href="../../#how-it-works">How it works</a>
       </nav>
-      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses">⌕</a><span class="language-switch">◎ EN</span></div>
+      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses">⌕</a><a class="language-switch" href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT" aria-label="Open Portuguese catalogue">◎ EN</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon aria-hidden="true">☾</span></button></div>
     </div>
   </header>
 
@@ -603,6 +617,7 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
     <div><strong>Open Learning Index</strong><p>Source data and methodology are public and auditable.</p></div>
     <div class="footer-links"><a href="../../courses/">Courses</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a></div>
   </div></footer>
+  <script src="../../theme.js" defer></script>
 </body>
 </html>
 """
@@ -627,6 +642,7 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{escape(description, quote=True)}">
   <meta name="theme-color" content="#ffffff">
+  {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
   <meta property="og:title" content="{escape(category['name'], quote=True)} · Open Learning Index">
   <meta property="og:description" content="{escape(description, quote=True)}">
@@ -639,7 +655,7 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
     <div class="shell topbar-inner">
       <a class="brand" href="../../" aria-label="Open Learning Index home"><span class="brand-symbol" aria-hidden="true">↟</span><span>Open Learning Index</span></a>
       <nav class="main-nav" aria-label="Primary navigation"><a href="../../courses/">Courses</a><a class="active" href="../../#categories">Categories</a><a href="../../#about">About</a><a href="../../#how-it-works">How it works</a></nav>
-      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses">⌕</a><span class="language-switch">◎ EN</span></div>
+      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses">⌕</a><a class="language-switch" href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT" aria-label="Open Portuguese catalogue">◎ EN</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon aria-hidden="true">☾</span></button></div>
     </div>
   </header>
   <main class="shell category-page">
@@ -647,6 +663,7 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
     <div class="course-grid catalogue-grid">{cards}</div>
   </main>
   <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>Curated category view generated from canonical data.</p></div><div class="footer-links"><a href="../../courses/">Browse all courses</a></div></div></footer>
+  <script src="../../theme.js" defer></script>
 </body>
 </html>
 """
@@ -749,8 +766,8 @@ def build(output: Path) -> None:
         output / "pt" / "courses" / "index.html",
         output / "assets" / "hero-landscape.svg",
         output / "app.js",
+        output / "theme.js",
         output / "course.html",
-        output / "course.js",
         output / "styles.css",
         output / "data" / "catalog.json",
         output / "data" / "meta.json",
