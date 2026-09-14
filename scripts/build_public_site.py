@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "data" / "courses.json"
 CATEGORIES = ROOT / "data" / "categories.json"
 REVIEWS_DIR = ROOT / "data" / "reviews"
+REFERENCE_REVIEWS = ROOT / "data" / "reference-reviews.json"
 ADMISSIONS_DIR = ROOT / "data" / "admissions"
 SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
@@ -139,30 +140,34 @@ def write_json(path: Path, value) -> None:
     )
 
 
-def load_current_records(directory: Path, date_field: str) -> dict:
-    """Index the latest current ledger record for each candidate ID."""
+def load_current_records(source: Path, date_field: str, id_field: str = "candidate_id") -> dict:
+    """Index the latest current ledger record for each subject ID."""
     index = {}
-    for path in sorted(directory.glob("*.json")):
+    paths = sorted(source.glob("*.json")) if source.is_dir() else ([source] if source.exists() else [])
+    for path in paths:
         rows = json.loads(path.read_text(encoding="utf-8"))
         for row in rows:
             if row.get("is_current") is False:
                 continue
-            candidate_id = row.get("candidate_id")
-            if not candidate_id:
+            subject_id = row.get(id_field)
+            if not subject_id:
                 continue
-            existing = index.get(candidate_id)
+            existing = index.get(subject_id)
             if existing is None or row.get(date_field, "") >= existing.get(date_field, ""):
-                index[candidate_id] = row
+                index[subject_id] = row
     return index
 
 
-def editorial_projection(course: dict, reviews: dict, admissions: dict) -> dict:
-    review = reviews.get(course["id"])
+def editorial_projection(course: dict, reviews: dict, reference_reviews: dict, admissions: dict) -> dict:
+    deep_review = reviews.get(course["id"])
+    reference_review = reference_reviews.get(course["id"])
+    review = deep_review or reference_review
     admission = admissions.get(course["id"])
 
     projected = {
         "review_status": course.get("review_status"),
-        "has_current_deep_review": bool(review),
+        "has_current_deep_review": bool(deep_review),
+        "has_current_reference_review": bool(reference_review),
         "has_current_admission": bool(admission),
     }
 
@@ -190,12 +195,19 @@ def editorial_projection(course: dict, reviews: dict, admissions: dict) -> dict:
             "outcompeted_by_ids": admission.get("outcompeted_by_ids") or [],
         }
 
-    if course.get("review_status") == "reference_verified" and not review:
-        projected["reference_note"] = (
-            "This pre-existing reference course was retained through the v0.5 "
-            "reference-fixture reconciliation and publication QA. It is scheduled "
-            "for one-time recalibration against the current Deep Review / Phase 4 rubric."
-        )
+    if course.get("review_status") == "reference_verified":
+        if reference_review:
+            projected["reference_note"] = (
+                "This pre-existing reference course was retained through the v0.5 "
+                "reference-fixture reconciliation and was recalibrated in v0.8 against "
+                "the current evidence and scoring rubric without rewriting its pipeline history."
+            )
+        else:
+            projected["reference_note"] = (
+                "This pre-existing reference course was retained through the v0.5 "
+                "reference-fixture reconciliation and publication QA. It is scheduled "
+                "for one-time recalibration against the current Deep Review / Phase 4 rubric."
+            )
 
     return projected
 
@@ -505,6 +517,7 @@ def build(output: Path) -> None:
     category_rows = json.loads(CATEGORIES.read_text(encoding="utf-8"))
     categories = {row["id"]: row for row in category_rows}
     reviews = load_current_records(REVIEWS_DIR, "reviewed_on")
+    reference_reviews = load_current_records(REFERENCE_REVIEWS, "reviewed_on", "course_id")
     admissions = load_current_records(ADMISSIONS_DIR, "decided_on")
 
     if output.exists():
@@ -516,7 +529,7 @@ def build(output: Path) -> None:
         if not is_publication_eligible(course):
             continue
         item = build_public_course(course, categories)
-        item["editorial"] = editorial_projection(course, reviews, admissions)
+        item["editorial"] = editorial_projection(course, reviews, reference_reviews, admissions)
         public_courses.append(item)
 
     ids = [course["id"] for course in public_courses]
