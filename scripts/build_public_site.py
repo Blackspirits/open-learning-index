@@ -11,6 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "data" / "courses.json"
 CATEGORIES = ROOT / "data" / "categories.json"
+REVIEWS_DIR = ROOT / "data" / "reviews"
+ADMISSIONS_DIR = ROOT / "data" / "admissions"
 SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
 
@@ -91,20 +93,85 @@ def write_json(path: Path, value) -> None:
     )
 
 
+def load_current_records(directory: Path, date_field: str) -> dict:
+    """Index the latest current ledger record for each candidate ID."""
+    index = {}
+    for path in sorted(directory.glob("*.json")):
+        rows = json.loads(path.read_text(encoding="utf-8"))
+        for row in rows:
+            if row.get("is_current") is False:
+                continue
+            candidate_id = row.get("candidate_id")
+            if not candidate_id:
+                continue
+            existing = index.get(candidate_id)
+            if existing is None or row.get(date_field, "") >= existing.get(date_field, ""):
+                index[candidate_id] = row
+    return index
+
+
+def editorial_projection(course: dict, reviews: dict, admissions: dict) -> dict:
+    review = reviews.get(course["id"])
+    admission = admissions.get(course["id"])
+
+    projected = {
+        "review_status": course.get("review_status"),
+        "has_current_deep_review": bool(review),
+        "has_current_admission": bool(admission),
+    }
+
+    if review:
+        projected["review"] = {
+            "prerequisites": review.get("prerequisites"),
+            "required_resources": review.get("required_resources"),
+            "scope_notes": review.get("scope_notes"),
+            "credential": review.get("credential"),
+            "academic_credits": review.get("academic_credits"),
+            "recommendation_rationale": review.get("recommendation_rationale"),
+            "component_evidence": review.get("component_evidence") or {},
+            "comparators": review.get("comparators") or [],
+            "evidence": review.get("evidence") or [],
+        }
+
+    if admission:
+        projected["admission"] = {
+            "learning_need": admission.get("learning_need"),
+            "decision_rationale": admission.get("decision_rationale"),
+            "marginal_value": admission.get("marginal_value"),
+            "comparison_set": admission.get("comparison_set") or [],
+            "incumbent_ids": admission.get("incumbent_ids") or [],
+            "complements_course_ids": admission.get("complements_course_ids") or [],
+            "outcompeted_by_ids": admission.get("outcompeted_by_ids") or [],
+        }
+
+    if course.get("review_status") == "reference_verified" and not review:
+        projected["reference_note"] = (
+            "This pre-existing reference course was retained through the v0.5 "
+            "reference-fixture reconciliation and publication QA. It is scheduled "
+            "for one-time recalibration against the current Deep Review / Phase 4 rubric."
+        )
+
+    return projected
+
+
 def build(output: Path) -> None:
     courses = json.loads(COURSES.read_text(encoding="utf-8"))
     category_rows = json.loads(CATEGORIES.read_text(encoding="utf-8"))
     categories = {row["id"]: row for row in category_rows}
+    reviews = load_current_records(REVIEWS_DIR, "reviewed_on")
+    admissions = load_current_records(ADMISSIONS_DIR, "decided_on")
 
     if output.exists():
         shutil.rmtree(output)
     shutil.copytree(SITE_SOURCE, output)
 
-    public_courses = [
-        build_public_course(course, categories)
-        for course in courses
-        if is_publication_eligible(course)
-    ]
+    public_courses = []
+    for course in courses:
+        if not is_publication_eligible(course):
+            continue
+        item = build_public_course(course, categories)
+        item["editorial"] = editorial_projection(course, reviews, admissions)
+        public_courses.append(item)
 
     ids = [course["id"] for course in public_courses]
     if len(ids) != len(set(ids)):
