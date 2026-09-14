@@ -717,7 +717,7 @@ def build(output: Path) -> None:
             render_static_category(category, public_courses),
         )
 
-    sitemap_urls = [f"{BASE_URL}/", f"{BASE_URL}/pt/"]
+    sitemap_urls = [f"{BASE_URL}/", f"{BASE_URL}/courses/", f"{BASE_URL}/pt/", f"{BASE_URL}/pt/courses/"]
     sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
     sitemap_urls.extend(f"{BASE_URL}/categories/{category['id']}/" for category in category_rows)
     sitemap = (
@@ -744,6 +744,10 @@ def build(output: Path) -> None:
 
     required = [
         output / "index.html",
+        output / "courses" / "index.html",
+        output / "pt" / "index.html",
+        output / "pt" / "courses" / "index.html",
+        output / "assets" / "hero-landscape.svg",
         output / "app.js",
         output / "course.html",
         output / "course.js",
