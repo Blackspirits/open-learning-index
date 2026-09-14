@@ -2,7 +2,7 @@
 
 > A rigorously curated, continuously maintained index of exceptional free courses and open learning experiences.
 
-**[Browse the public index](https://blackspirits.github.io/open-learning-index/)**
+**[Browse the public index](https://blackspirits.github.io/open-learning-index/)** · **[Português (Portugal)](https://blackspirits.github.io/open-learning-index/pt/)** · [Methodology](docs/methodology.md) · [Contributing](CONTRIBUTING.md)
 
 [![Validate dataset](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml)
 [![Deploy public index](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml)
@@ -101,7 +101,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 
 | Resource | Purpose |
 |---|---|
-| **[Public catalogue](https://blackspirits.github.io/open-learning-index/)** | Search and filter the published courses |
+| **[Public catalogue](https://blackspirits.github.io/open-learning-index/)** | Search and filter the published courses |\n| **[Catálogo em pt-PT](https://blackspirits.github.io/open-learning-index/pt/)** | European-Portuguese interface for the canonical catalogue |
 | [Methodology](docs/methodology.md) | Scoring model and free-access taxonomy |
 | [Research protocol](docs/research-protocol.md) | Discovery and screening rules |
 | [Deep Review protocol](docs/deep-review-protocol.md) | Evidence and scoring requirements |
@@ -131,7 +131,7 @@ Nothing needs to be inferred from a hidden spreadsheet or private ranking proces
 
 ## Public site
 
-The site remains deliberately simple in v0.8: static, generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime.
+The public experience is now in **v0.9**: a modernised, responsive visual system with English and European-Portuguese catalogue interfaces. It remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime.\n\nThe pt-PT route localises the interface. Provider titles and canonical editorial evidence are not silently machine-translated.
 
 ### Build locally
 
