@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Browse all curated free courses in the Open Learning Index.">
   <meta name="theme-color" content="#ffffff">
+  <script>
+    try {
+      const saved = localStorage.getItem("oli-theme");
+      const theme = saved === "dark" || saved === "light"
+        ? saved
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {}
+  </script>
   <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/courses/">
   <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/courses/">
   <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/courses/">
@@ -29,6 +39,7 @@
       <div class="nav-actions">
         <span class="icon-link" aria-hidden="true">⌕</span>
         <a class="language-switch" href="../pt/courses/" lang="pt-PT" hreflang="pt-PT">◎ EN</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon aria-hidden="true">☾</span></button>
       </div>
     </div>
   </header>
@@ -97,6 +108,7 @@
       <div class="footer-links"><a href="../">Home</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a></div>
     </div>
   </footer>
+  <script src="../theme.js" defer></script>
 
   <script src="../app.js" defer></script>
 </body>
