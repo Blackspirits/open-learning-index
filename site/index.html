@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A rigorously curated index of exceptional free courses and open learning experiences.">
   <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open Learning Index">
+  <meta property="og:description" content="A rigorously curated index of exceptional free courses and open learning experiences.">
+  <meta property="og:url" content="https://blackspirits.github.io/open-learning-index/">
   <title>Open Learning Index</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -38,6 +43,7 @@
         <button class="chip" type="button" data-quick="pt-PT">Português (Portugal)</button>
         <button class="chip" type="button" data-quick="F0">Free credential</button>
         <button class="chip" type="button" data-quick="beginner">Beginner-friendly</button>
+        <button class="chip" type="button" data-quick="languages">Language learning</button>
       </div>
     </section>
 
@@ -99,6 +105,15 @@
         </div>
 
         <div class="field">
+          <label for="status">Course status</label>
+          <select id="status" name="status">
+            <option value="">Active &amp; active archive</option>
+            <option value="active">Active</option>
+            <option value="active_archive">Active archive</option>
+          </select>
+        </div>
+
+        <div class="field">
           <label for="sort">Sort by</label>
           <select id="sort" name="sort">
             <option value="recommendation">Recommendation</option>
@@ -111,6 +126,11 @@
         <label class="check">
           <input id="credential" name="credential" type="checkbox" value="1">
           <span>Free credential only</span>
+        </label>
+
+        <label class="check">
+          <input id="credit" name="credit" type="checkbox" value="1">
+          <span>Free academic credit only</span>
         </label>
       </form>
 
