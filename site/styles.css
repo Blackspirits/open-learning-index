@@ -816,3 +816,50 @@ footer {
   margin: 12px 0 0;
   color: var(--muted);
 }
+
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+  margin: 32px 0 48px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.trust-strip h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+}
+
+.trust-copy p:last-of-type {
+  margin-bottom: 10px;
+}
+
+.course-card .scores .score:first-child {
+  flex: 1.2;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line));
+}
+
+.course-card .scores .score:first-child strong {
+  font-size: 1.45rem;
+}
+
+.course-card .scores .score:last-child {
+  flex: 0.8;
+  border: 1px solid var(--line);
+  background: transparent;
+}
+
+.course-card .card-footer {
+  justify-content: flex-end;
+}
+
+@media (max-width: 700px) {
+  .trust-strip {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+}
