@@ -224,7 +224,7 @@ function render(course, allCourses) {
     const items = comparisonIds.map((id) => {
       const compared = courseMap.get(id);
       if (compared) {
-        return `<li><a href="course.html?id=${encodeURIComponent(id)}">${escapeHtml(compared.title)}</a></li>`;
+        return `<li><a href="courses/${encodeURIComponent(id)}/">${escapeHtml(compared.title)}</a></li>`;
       }
       return `<li>${escapeHtml(readableId(id))}</li>`;
     }).join("");
