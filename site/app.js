@@ -190,12 +190,12 @@ function renderCard(course) {
   return `
     <article class="course-card">
       <div class="card-topline">
-        <span class="category">${escapeHtml(course.category_name)}</span>
+        <a class="category" href="categories/${encodeURIComponent(course.category)}/">${escapeHtml(course.category_name)}</a>
         <span class="freshness freshness-${fresh.tone}">${escapeHtml(fresh.label)}</span>
       </div>
 
       <div>
-        <h3><a href="course.html?id=${encodeURIComponent(course.id)}">${escapeHtml(course.title)}</a></h3>
+        <h3><a href="courses/${encodeURIComponent(course.id)}/">${escapeHtml(course.title)}</a></h3>
         <p class="provider">${escapeHtml(course.provider)}</p>
       </div>
 
@@ -216,7 +216,7 @@ function renderCard(course) {
 
       <div class="card-footer">
         <span class="card-links">
-          <a href="course.html?id=${encodeURIComponent(course.id)}" aria-label="Details for ${escapeHtml(course.title)}">Details</a>
+          <a href="courses/${encodeURIComponent(course.id)}/" aria-label="Details for ${escapeHtml(course.title)}">Details</a>
           <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open official course: ${escapeHtml(course.title)}">Open course <span aria-hidden="true">↗</span></a>
         </span>
       </div>
