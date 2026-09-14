@@ -65,6 +65,23 @@ LANGUAGE_LABELS = {
     "zh": "Chinese",
 }
 
+CATEGORY_SEARCH_ALIASES = {
+    "ai-data": "artificial intelligence",
+    "computer-science": "cs coding programming",
+    "cybersecurity-it": "cyber security information security infosec",
+    "math-statistics": "math maths stats",
+    "project-product-leadership": "project management product management pm",
+}
+
+CONTENT_SEARCH_ALIASES = {
+    "machine learning": "ml",
+    "javascript": "js",
+    "user experience": "ux",
+    "user interface": "ui",
+    "search engine optimization": "seo",
+    "search engine optimisation": "seo",
+}
+
 CREDENTIAL_LABELS = {
     "free_provider_certificate": "Free provider completion certificate",
     "free_statement_of_participation": "Free statement of participation",
@@ -128,7 +145,14 @@ def build_public_course(course: dict, categories: dict) -> dict:
         " ".join(course.get("other_languages", [])),
         course.get("why_recommended", ""),
     ]
-    item["search_text"] = normalize_search_text(" ".join(searchable))
+    search_base = normalize_search_text(" ".join(searchable))
+    aliases = [CATEGORY_SEARCH_ALIASES.get(course["category"], "")]
+    aliases.extend(
+        alias
+        for phrase, alias in CONTENT_SEARCH_ALIASES.items()
+        if phrase in search_base
+    )
+    item["search_text"] = normalize_search_text(f"{search_base} {' '.join(aliases)}")
     return item
 
 
