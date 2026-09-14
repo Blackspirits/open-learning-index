@@ -3,174 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Índice rigorosamente curado de cursos gratuitos e recursos de aprendizagem aberta de elevada qualidade.">
-  <meta name="theme-color" content="#08111f">
+  <meta name="description" content="Índice rigorosamente curado dos melhores cursos gratuitos e recursos de aprendizagem aberta.">
+  <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/pt/">
   <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/">
   <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/">
   <link rel="alternate" hreflang="x-default" href="https://blackspirits.github.io/open-learning-index/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Open Learning Index">
-  <meta property="og:description" content="Cursos gratuitos curados, auditáveis e continuamente atualizados.">
-  <meta property="og:url" content="https://blackspirits.github.io/open-learning-index/pt/">
   <title>Open Learning Index · Português</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="site-home" data-locale="pt-PT" data-root="../">
-  <a class="skip-link" href="#results">Saltar para os resultados</a>
+<body data-page="home" data-locale="pt-PT" data-root="../">
+  <a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
 
-  <header class="hero">
-    <div class="shell">
-      <nav class="site-nav" aria-label="Navegação principal">
-        <a class="brand" href="../" aria-label="Página inicial do Open Learning Index">
-          <span class="brand-mark" aria-hidden="true">OLI</span>
-          <span>Open Learning Index</span>
-        </a>
-        <div class="nav-links">
-          <a href="#catalogue">Explorar</a>
-          <a href="#trust-heading">Como funciona</a>
-          <a href="#free-heading">O que significa “gratuito”</a>
-          <a href="../" lang="en" hreflang="en">English</a>
-          <a class="nav-github" href="https://github.com/Blackspirits/open-learning-index">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="./" aria-label="Página inicial do Open Learning Index">
+        <span class="brand-symbol" aria-hidden="true">↟</span>
+        <span>Open Learning Index</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="courses/">Cursos</a>
+        <a href="#categories">Categorias</a>
+        <a href="#about">Sobre</a>
+        <a href="#how-it-works">Como funciona</a>
       </nav>
-
-      <div class="hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">Descoberta de cursos baseada em evidência</p>
-          <h1>Aprende com os melhores <span>cursos gratuitos</span> da web aberta.</h1>
-          <p class="hero-copy">
-            Um índice rigorosamente curado e continuamente mantido para quem procura aprendizagem excelente
-            sem ter de adivinhar o que está atualizado, completo ou é realmente gratuito.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button-link" href="#catalogue">Explorar o catálogo</a>
-            <a class="button-secondary" href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Ler a metodologia <span aria-hidden="true">↗</span></a>
-          </div>
-
-          <div class="hero-badges" aria-label="Princípios do índice">
-            <span>Verificação em fontes primárias</span>
-            <span>Sem falsas promessas de gratuitidade</span>
-            <span>Manutenção contínua</span>
-          </div>
-        </div>
-
-        <aside class="hero-proof" aria-label="Porque confiar no Open Learning Index">
-          <p class="proof-kicker">Porque confiar neste índice?</p>
-          <h2>Não é uma lista de popularidade.</h2>
-          <p class="proof-copy">Cada curso publicado passa por revisão baseada em evidência e comparação com alternativas fortes.</p>
-          <ol class="proof-list">
-            <li><span>01</span><div><strong>Acesso verificado</strong><small>Confirmamos o que é realmente gratuito em vez de o inferir.</small></div></li>
-            <li><span>02</span><div><strong>Qualidade revista</strong><small>Pedagogia, profundidade, prática, materiais e atualidade contam.</small></div></li>
-            <li><span>03</span><div><strong>Alternativas comparadas</strong><small>Um curso tem de justificar o seu lugar no conjunto canónico.</small></div></li>
-          </ol>
-          <div class="hero-stats" aria-label="Estatísticas do índice">
-            <div><strong id="stat-courses">—</strong><span>cursos</span></div>
-            <div><strong id="stat-categories">—</strong><span>categorias</span></div>
-            <div><strong id="stat-languages">—</strong><span>idiomas principais</span></div>
-          </div>
-        </aside>
+      <div class="nav-actions">
+        <a class="icon-link" href="courses/" aria-label="Pesquisar cursos">⌕</a>
+        <a class="language-switch" href="../" lang="en" hreflang="en">◎ PT</a>
       </div>
     </div>
   </header>
 
-  <main class="shell">
-    <section class="quick-views" aria-labelledby="quick-heading">
-      <div>
-        <p class="section-kicker">Começar depressa</p>
-        <h2 id="quick-heading">Encontra o percurso certo mais rapidamente</h2>
-      </div>
-      <div class="chip-row" role="group" aria-label="Filtros rápidos">
-        <button class="chip" type="button" data-quick="all" aria-pressed="true">Todos os cursos</button>
-        <button class="chip" type="button" data-quick="pt-PT" aria-pressed="false">Português (Portugal)</button>
-        <button class="chip" type="button" data-quick="F0" aria-pressed="false">Credencial gratuita</button>
-        <button class="chip" type="button" data-quick="beginner" aria-pressed="false">Adequado a principiantes</button>
-        <button class="chip" type="button" data-quick="languages" aria-pressed="false">Aprendizagem de línguas</button>
-      </div>
-    </section>
-
-    <section class="trust-strip" aria-labelledby="trust-heading">
-      <div>
-        <p class="section-kicker">Como funciona</p>
-        <h2 id="trust-heading">Evidência primeiro. Prestígio depois.</h2>
-      </div>
-      <div class="trust-copy">
-        <p><strong>Recomendação</strong> avalia se esta é uma escolha forte hoje. <strong>Qualidade</strong> mede o curso em si: ensino, profundidade, prática, materiais, atualidade, especialização e acessibilidade.</p>
-        <p>Novos candidatos passam por triagem, Deep Review e admissão comparativa. Os cursos publicados são depois reverificados segundo o risco.</p>
-        <a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Ver a metodologia completa <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section id="catalogue" class="catalogue" aria-labelledby="catalogue-heading">
-      <div class="catalogue-head">
-        <div>
-          <p class="section-kicker">Explorar</p>
-          <h2 id="catalogue-heading">Catálogo de cursos</h2>
-          <p class="section-intro">Filtra o conjunto canónico por tema, idioma, nível, modelo de acesso e avaliação editorial.</p>
-          <p class="muted">A interface está em pt-PT. Títulos e notas editoriais mantêm o idioma canónico para não alterar a evidência publicada.</p>
-        </div>
-        <button id="clear-filters" class="text-button" type="button">Limpar filtros</button>
-      </div>
-
-      <details id="filter-disclosure" class="filter-disclosure" open>
-        <summary>Filtros<span id="active-filter-count" class="filter-count" aria-live="polite"></span></summary>
-        <form class="filters" id="filters" autocomplete="off">
-          <div class="field field-search">
-            <label for="search">Pesquisa</label>
-            <input id="search" name="q" type="search" placeholder="Curso, entidade, tema…">
+  <main id="main-content">
+    <section class="home-hero">
+      <div class="shell hero-frame">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Independente · baseado em evidência · sempre atualizado</p>
+          <h1>Aprendizagem aberta<br>para um futuro melhor</h1>
+          <p class="hero-copy">
+            Uma seleção cuidada dos melhores cursos online gratuitos de todo o mundo.
+            Independente. Baseada em evidência. Continuamente mantida.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="courses/">Explorar cursos <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#how-it-works">Como funciona</a>
           </div>
-
-          <div class="field"><label for="category">Categoria</label><select id="category" name="category"><option value="">Todas as categorias</option></select></div>
-          <div class="field"><label for="language">Idioma</label><select id="language" name="language"><option value="">Todos os idiomas</option></select></div>
-          <div class="field"><label for="level">Nível</label><select id="level" name="level"><option value="">Todos os níveis</option><option value="beginner-friendly">Adequado a principiantes</option></select></div>
-          <div class="field"><label for="access">Acesso gratuito</label><select id="access" name="access"><option value="">F0, F1 e F2</option><option value="F0">F0 — Credencial gratuita</option><option value="F1">F1 — Percurso avaliado gratuito</option><option value="F2">F2 — Conteúdo pedagógico gratuito</option></select></div>
-          <div class="field"><label for="tier">Nível de qualidade</label><select id="tier" name="tier"><option value="">Todos os níveis</option><option value="S+">S+</option><option value="S">S</option><option value="A+">A+</option><option value="A">A</option></select></div>
-          <div class="field"><label for="status">Estado do curso</label><select id="status" name="status"><option value="">Ativos e arquivos ativos</option><option value="active">Ativo</option><option value="active_archive">Arquivado mas disponível</option></select></div>
-          <div class="field"><label for="sort">Ordenar por</label><select id="sort" name="sort"><option value="recommendation">Recomendação</option><option value="quality">Qualidade</option><option value="verified">Verificação mais recente</option><option value="title">Título</option></select></div>
-
-          <label class="check"><input id="credential" name="credential" type="checkbox" value="1"><span>Apenas com credencial gratuita</span></label>
-          <label class="check"><input id="credit" name="credit" type="checkbox" value="1"><span>Apenas com créditos académicos gratuitos</span></label>
-        </form>
-      </details>
-
-      <div class="results-bar">
-        <p id="result-count" aria-live="polite">A carregar cursos…</p>
-        <p class="muted"><strong>Recomendação</strong> = melhor escolha hoje · <strong>Qualidade</strong> = força intrínseca do curso.</p>
+          <div class="home-stats" aria-label="Estatísticas do índice">
+            <div><strong id="stat-courses">—</strong><span>cursos</span></div>
+            <div><strong id="stat-categories">—</strong><span>categorias</span></div>
+            <div><strong id="stat-languages">—</strong><span>idiomas</span></div>
+            <div><strong>100%</strong><span>com acesso gratuito</span></div>
+          </div>
+        </div>
       </div>
-
-      <div id="results" class="course-grid"></div>
-      <div class="show-more-row"><button id="show-more" class="show-more" type="button" hidden>Mostrar mais</button></div>
-      <div id="empty-state" class="empty" hidden><h3>Nenhum curso corresponde a estes filtros.</h3><p>Remove um filtro ou utiliza uma pesquisa mais abrangente.</p></div>
     </section>
 
-    <section class="methodology" aria-labelledby="free-heading">
-      <div class="methodology-heading">
-        <div><p class="section-kicker">Transparente por definição</p><h2 id="free-heading">“Gratuito” tem aqui um significado preciso.</h2></div>
-        <p>Acesso em modo de auditoria, aprendizagem avaliada e credenciais gratuitas não são tratados como a mesma coisa.</p>
+    <section id="about" class="principles-strip">
+      <div class="shell principles-grid">
+        <article><span class="principle-icon">◇</span><div><strong>Curado com rigor</strong><small>Qualidade acima da quantidade</small></div></article>
+        <article><span class="principle-icon">▣</span><div><strong>Baseado em evidência</strong><small>Revisões independentes</small></div></article>
+        <article><span class="principle-icon">◷</span><div><strong>Sempre atualizado</strong><small>Verificação regular</small></div></article>
+        <article><span class="principle-icon">⌘</span><div><strong>Para todos</strong><small>Global e acessível</small></div></article>
       </div>
-      <div class="access-grid">
-        <article><strong>F0</strong><h3>Curso completo + credencial gratuita</h3><p>Percurso completo e uma credencial de conclusão gratuita emitida pelo fornecedor.</p></article>
-        <article><strong>F1</strong><h3>Percurso avaliado completo</h3><p>Avaliação ou laboratórios gratuitos e significativos, sem credencial formal gratuita.</p></article>
-        <article><strong>F2</strong><h3>Conteúdo pedagógico completo</h3><p>Conteúdo pedagógico substancial e completo, mas sem percurso formal de conclusão gratuito.</p></article>
+    </section>
+
+    <section id="categories" class="home-section shell">
+      <div class="section-heading">
+        <div><p class="section-kicker">Explorar por tema</p><h2>Explorar por categoria</h2></div>
+        <a href="courses/">Ver todas as categorias <span aria-hidden="true">→</span></a>
       </div>
-      <p class="methodology-link"><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Ler a metodologia completa no GitHub <span aria-hidden="true">↗</span></a></p>
+      <div id="home-categories" class="category-showcase" aria-live="polite"></div>
+    </section>
+
+    <section class="home-section shell">
+      <div class="section-heading">
+        <div><p class="section-kicker">Escolhas editoriais</p><h2>Cursos em destaque</h2></div>
+        <a href="courses/">Ver todos os cursos <span aria-hidden="true">→</span></a>
+      </div>
+      <div id="featured-courses" class="featured-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="how-it-works" class="home-section shell how-panel">
+      <div><p class="section-kicker">Como funciona</p><h2>Evidência primeiro. Popularidade depois.</h2></div>
+      <div class="how-copy">
+        <p><strong>Recomendação</strong> avalia se um curso é uma escolha forte hoje. <strong>Qualidade</strong> mede o curso em si: ensino, profundidade, prática, materiais, atualidade, especialização e acessibilidade.</p>
+        <p>Cada candidato passa por triagem, Deep Review e admissão comparativa antes de ser publicado. Os cursos publicados são depois reverificados segundo o risco.</p>
+        <a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Ler a metodologia <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="shell footer-inner">
       <div><strong>Open Learning Index</strong><p>Curado, auditável e continuamente mantido.</p></div>
-      <div class="footer-links">
-        <a href="https://github.com/Blackspirits/open-learning-index">Repositório</a>
-        <a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Metodologia</a>
-        <a href="../" lang="en" hreflang="en">English</a>
-        <a href="#catalogue">Catálogo</a>
-      </div>
+      <div class="footer-links"><a href="courses/">Cursos</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../" lang="en" hreflang="en">English</a></div>
     </div>
   </footer>
 
-  <noscript><div class="noscript">Este catálogo necessita de JavaScript para pesquisa e filtros. O conjunto de dados canónico continua disponível no GitHub.</div></noscript>
+  <noscript><div class="noscript">Este site necessita de JavaScript para as listas dinâmicas de cursos. Os dados canónicos continuam disponíveis no GitHub.</div></noscript>
   <script src="../app.js" defer></script>
 </body>
 </html>
