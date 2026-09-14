@@ -18,6 +18,9 @@
         <p class="eyebrow">Open Learning Index</p>
         <h1 id="course-title">Loading course…</h1>
         <p id="course-provider" class="hero-copy"></p>
+        <div class="hero-actions">
+          <a id="official-course-hero" class="button-link" target="_blank" rel="noopener noreferrer">Open official course ↗</a>
+        </div>
       </div>
     </div>
   </header>
@@ -37,6 +40,19 @@
         <div id="detail-scores" class="scores detail-scores" aria-label="Course scores"></div>
       </section>
 
+      <section id="reference-note-panel" class="detail-panel audit-note" hidden aria-labelledby="reference-note-heading">
+        <p class="section-kicker">Audit status</p>
+        <h2 id="reference-note-heading">Reference-course calibration</h2>
+        <p id="reference-note"></p>
+      </section>
+
+      <section id="before-start-panel" class="detail-panel" hidden aria-labelledby="before-start-heading">
+        <p class="section-kicker">Preparation</p>
+        <h2 id="before-start-heading">Before you start</h2>
+        <dl id="before-start" class="facts"></dl>
+        <p id="scope-notes" class="detail-lead"></p>
+      </section>
+
       <section class="detail-grid" aria-label="Course facts">
         <article class="detail-panel">
           <p class="section-kicker">Learning route</p>
@@ -54,8 +70,14 @@
       <section class="detail-panel" aria-labelledby="components-heading">
         <p class="section-kicker">Quality</p>
         <h2 id="components-heading">Quality components</h2>
-        <p class="muted">Quality is scored independently from the present-day Recommendation score.</p>
+        <p class="muted">Quality measures intrinsic course strength. Recommendation reflects whether this is a strong choice today, including access, currentness and alternatives.</p>
         <div id="quality-components" class="component-grid"></div>
+      </section>
+
+      <section id="score-context-panel" class="detail-panel" hidden aria-labelledby="score-context-heading">
+        <p class="section-kicker">Editorial reasoning</p>
+        <h2 id="score-context-heading">Why this score</h2>
+        <div id="score-context"></div>
       </section>
 
       <section class="detail-grid">
@@ -68,6 +90,7 @@
         <article class="detail-panel" aria-labelledby="evidence-heading">
           <p class="section-kicker">Audit trail</p>
           <h2 id="evidence-heading">Evidence</h2>
+          <p class="muted">Sources used to verify the course and its access model.</p>
           <ul id="evidence-list" class="evidence-list"></ul>
         </article>
       </section>
