@@ -78,8 +78,10 @@ function getFormState() {
     level: els.level.value,
     access: els.access.value,
     tier: els.tier.value,
+    status: els.status.value,
     sort: els.sort.value,
     credential: els.credential.checked,
+    credit: els.credit.checked,
   };
 }
 
@@ -90,8 +92,10 @@ function setFormState(params) {
   els.level.value = params.get("level") || "";
   els.access.value = params.get("access") || "";
   els.tier.value = params.get("tier") || "";
+  els.status.value = params.get("status") || "";
   els.sort.value = params.get("sort") || "recommendation";
   els.credential.checked = params.get("credential") === "1";
+  els.credit.checked = params.get("credit") === "1";
 }
 
 function syncUrl(values) {
@@ -134,7 +138,9 @@ function filteredCourses(values) {
     if (values.level && course.level !== values.level) return false;
     if (values.access && course.access_short !== values.access) return false;
     if (values.tier && course.quality_tier !== values.tier) return false;
+    if (values.status && course.status !== values.status) return false;
     if (values.credential && !course.has_free_credential) return false;
+    if (values.credit && !course.has_free_academic_credit) return false;
     return true;
   });
 
@@ -235,6 +241,7 @@ function applyQuick(kind) {
     const beginner = [...els.level.options].find((option) => option.value === "beginner");
     if (beginner) els.level.value = "beginner";
   }
+  if (kind === "languages") els.category.value = "languages";
   render();
 }
 
@@ -247,8 +254,10 @@ async function boot() {
     level: document.querySelector("#level"),
     access: document.querySelector("#access"),
     tier: document.querySelector("#tier"),
+    status: document.querySelector("#status"),
     sort: document.querySelector("#sort"),
     credential: document.querySelector("#credential"),
+    credit: document.querySelector("#credit"),
     clear: document.querySelector("#clear-filters"),
     results: document.querySelector("#results"),
     resultCount: document.querySelector("#result-count"),
