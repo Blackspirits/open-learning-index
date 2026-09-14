@@ -4768,18 +4768,18 @@
     "certificate": "none",
     "academic_credits": "none",
     "self_paced": true,
-    "status": "active",
+    "status": "active_archive",
     "quality_components": {
       "pedagogy": 9,
       "depth": 8.2,
-      "practice": 7.8,
+      "practice": 7.5,
       "materials": 9,
-      "currency": 9.1,
+      "currency": 7.7,
       "expertise": 9.2,
-      "accessibility": 8.5
+      "accessibility": 8
     },
-    "recommendation_score": 9,
-    "why_recommended": "Best current free-content beginner route found for learning European Portuguese: a polished 32-hour, eight-unit University of Porto LMOOC built around everyday communication, language form and Porto-based cultural context.",
+    "recommendation_score": 8.6,
+    "why_recommended": "Strong archived free-content beginner route for European Portuguese: a polished 32-hour, eight-unit University of Porto LMOOC built around everyday communication and Porto-based cultural context, with no current graded or certificate path.",
     "evidence": [
       "https://noticias.up.pt/2024/04/23/mooc-de-iniciacao-a-lingua-portuguesa-esta-mais-internacional-do-que-nunca/",
       "https://www.nau.edu.pt/pt/curso/iniciacao-a-lingua-portuguesa/",
@@ -4787,7 +4787,7 @@
     ],
     "last_verified": "2026-09-14",
     "review_status": "phase4_admitted",
-    "quality_score": 8.61,
+    "quality_score": 8.38,
     "review_interval_days": 120,
     "next_review": "2027-01-12"
   },
