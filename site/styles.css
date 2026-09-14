@@ -764,3 +764,55 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.audit-note {
+  border-color: color-mix(in srgb, var(--warn) 55%, var(--line));
+}
+
+.component-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.component-item:last-child {
+  border-bottom: 0;
+}
+
+.component-evidence {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.comparison-list {
+  margin: 8px 0 18px;
+  padding-left: 20px;
+}
+
+.comparison-list li + li {
+  margin-top: 6px;
+}
+
+.editorial-details {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.editorial-details summary {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.editorial-details p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
