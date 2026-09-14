@@ -73,7 +73,8 @@ The project separates **absolute quality** from **recommendation**, records exac
 - [`docs/reviews/scale-batch-22.md`](docs/reviews/scale-batch-22.md) — final WHO clinical-trials review and formal Phase 3 closure at 199/199 current advances.
 - [`docs/reviews/scale-batch-23.md`](docs/reviews/scale-batch-23.md) — first maintenance challenger Deep Review across optimisation, climate science, sales and AI red teaming.
 - [`docs/reviews/scale-batch-24.md`](docs/reviews/scale-batch-24.md) — Deep Review of the two IBM SkillsBuild holds after exact learner routes became verifiable.
-- [`docs/maintenance.md`](docs/maintenance.md) — discovery, re-verification and retirement policy.
+- [`docs/maintenance.md`](docs/maintenance.md)
+- [`docs/v0.7-public-experience.md`](docs/v0.7-public-experience.md) — architecture, UX and publication plan for the public index experience tracked in #110. — discovery, re-verification and retirement policy.
 - [`docs/data-model.md`](docs/data-model.md) — canonical fields and invariants.
 - [`docs/coverage-audit-v0.2.md`](docs/coverage-audit-v0.2.md) — first formal saturation and coverage audit.
 - [`docs/coverage-audit-v0.2-after-batch-7.md`](docs/coverage-audit-v0.2-after-batch-7.md) — second saturation audit after crossing 300 researched experiences.
