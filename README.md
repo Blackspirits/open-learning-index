@@ -109,7 +109,8 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Admission protocol](docs/admission-protocol.md) | Comparative Phase-4 rules |
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
-| [v0.7 public experience](docs/v0.7-public-experience.md) | Public-site architecture and QA |
+| [v0.8 hardening](docs/v0.8-hardening.md) | Current trust, discovery, accessibility and indexability QA |
+| [v0.7 public experience](docs/v0.7-public-experience.md) | Original public-site architecture decision |
 | [Architecture audit](AUDIT.md) | Project architecture decisions and risks |
 
 ### Audit trail
@@ -130,7 +131,7 @@ Nothing needs to be inferred from a hidden spreadsheet or private ranking proces
 
 ## Public site
 
-The site is deliberately simple: static, generated from canonical JSON, with no CMS, database, user accounts, analytics or frontend framework runtime in v0.7.
+The site remains deliberately simple in v0.8: static, generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime.
 
 ### Build locally
 
