@@ -1000,6 +1000,16 @@ footer {
 
 .back-link:hover { color: #ffffff; }
 
+.detail-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 46px;
+}
+
+.detail-topbar .back-link { margin-bottom: 0; }
+
 .detail-heading {
   max-width: 980px;
 }
