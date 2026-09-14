@@ -188,6 +188,24 @@ h1 {
 
 .chip:hover { border-color: var(--accent); }
 
+.chip[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  color: var(--text);
+}
+
+.filter-disclosure > summary {
+  display: none;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.filter-count {
+  margin-left: 6px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .text-button {
   border-color: transparent;
   background: transparent;
@@ -234,8 +252,12 @@ h1 {
 }
 
 .check input {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.check {
+  min-height: 44px;
 }
 
 .results-bar {
@@ -378,8 +400,30 @@ h1 {
 }
 
 .card-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.show-more-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.show-more {
+  min-height: 44px;
+  cursor: pointer;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.show-more:hover {
+  border-color: var(--accent);
 }
 
 .empty {
@@ -461,9 +505,33 @@ footer {
 
   .chip-row { justify-content: flex-start; }
 
+  .filter-disclosure {
+    margin-top: 20px;
+  }
+
+  .filter-disclosure > summary {
+    display: flex;
+    min-height: 46px;
+    align-items: center;
+    padding: 0 14px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .filter-disclosure[open] > summary {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   .filters {
     grid-template-columns: 1fr;
+    margin-top: 0;
     padding: 14px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .field-search { grid-column: auto; }

@@ -39,11 +39,11 @@
         <h2 id="quick-heading">Useful views</h2>
       </div>
       <div class="chip-row" role="group" aria-label="Quick filters">
-        <button class="chip" type="button" data-quick="all">All courses</button>
-        <button class="chip" type="button" data-quick="pt-PT">Português (Portugal)</button>
-        <button class="chip" type="button" data-quick="F0">Free credential</button>
-        <button class="chip" type="button" data-quick="beginner">Beginner-friendly</button>
-        <button class="chip" type="button" data-quick="languages">Language learning</button>
+        <button class="chip" type="button" data-quick="all" aria-pressed="true">All courses</button>
+        <button class="chip" type="button" data-quick="pt-PT" aria-pressed="false">Português (Portugal)</button>
+        <button class="chip" type="button" data-quick="F0" aria-pressed="false">Free credential</button>
+        <button class="chip" type="button" data-quick="beginner" aria-pressed="false">Beginner-friendly</button>
+        <button class="chip" type="button" data-quick="languages" aria-pressed="false">Language learning</button>
       </div>
     </section>
 
@@ -56,6 +56,8 @@
         <button id="clear-filters" class="text-button" type="button">Clear filters</button>
       </div>
 
+      <details id="filter-disclosure" class="filter-disclosure" open>
+        <summary>Filters<span id="active-filter-count" class="filter-count" aria-live="polite"></span></summary>
       <form class="filters" id="filters" autocomplete="off">
         <div class="field field-search">
           <label for="search">Search</label>
@@ -80,6 +82,7 @@
           <label for="level">Level</label>
           <select id="level" name="level">
             <option value="">All levels</option>
+            <option value="beginner-friendly">Beginner-friendly</option>
           </select>
         </div>
 
@@ -133,13 +136,18 @@
           <span>Free academic credit only</span>
         </label>
       </form>
+      </details>
 
       <div class="results-bar">
         <p id="result-count" aria-live="polite">Loading courses…</p>
         <p class="muted">Recommendation is the default ordering.</p>
       </div>
 
-      <div id="results" class="course-grid" aria-live="polite"></div>
+      <div id="results" class="course-grid"></div>
+
+      <div class="show-more-row">
+        <button id="show-more" class="show-more" type="button" hidden>Show more</button>
+      </div>
 
       <div id="empty-state" class="empty" hidden>
         <h3>No courses match these filters.</h3>
