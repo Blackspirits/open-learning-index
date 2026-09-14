@@ -3,122 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Open Learning Index course details.">
   <meta name="robots" content="noindex,follow">
-  <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#ffffff">
   <title>Course · Open Learning Index</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#course-detail">Skip to course details</a>
-
-  <header class="detail-hero">
-    <div class="shell">
-      <div class="detail-topbar">
-        <a class="brand" href="index.html" aria-label="Open Learning Index home"><span class="brand-mark" aria-hidden="true">OLI</span><span>Open Learning Index</span></a>
-        <a class="back-link" href="index.html">← Back to catalogue</a>
-      </div>
-      <div id="detail-heading" class="detail-heading">
-        <p class="eyebrow">Open Learning Index</p>
-        <h1 id="course-title">Loading course…</h1>
-        <p id="course-provider" class="hero-copy"></p>
-        <div class="hero-actions">
-          <a id="official-course-hero" class="button-link" target="_blank" rel="noopener noreferrer">Open official course ↗</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main id="course-detail" class="shell detail-main">
-    <div id="detail-loading" class="empty">
-      <p>Loading canonical course data…</p>
-    </div>
-
-    <div id="detail-content" hidden>
-      <section class="detail-summary" aria-labelledby="summary-heading">
-        <div>
-          <p class="section-kicker">Editorial view</p>
-          <h2 id="summary-heading">Why this course is here</h2>
-          <p id="course-why" class="detail-lead"></p>
-        </div>
-        <div id="detail-scores" class="scores detail-scores" aria-label="Course scores"></div>
-      </section>
-
-      <section id="reference-note-panel" class="detail-panel audit-note" hidden aria-labelledby="reference-note-heading">
-        <p class="section-kicker">Audit status</p>
-        <h2 id="reference-note-heading">Reference-course calibration</h2>
-        <p id="reference-note"></p>
-      </section>
-
-      <section id="before-start-panel" class="detail-panel" hidden aria-labelledby="before-start-heading">
-        <p class="section-kicker">Preparation</p>
-        <h2 id="before-start-heading">Before you start</h2>
-        <dl id="before-start" class="facts"></dl>
-        <p id="scope-notes" class="detail-lead"></p>
-      </section>
-
-      <section class="detail-grid" aria-label="Course facts">
-        <article class="detail-panel">
-          <p class="section-kicker">Learning route</p>
-          <h2>Course facts</h2>
-          <dl class="facts" id="course-facts"></dl>
-        </article>
-
-        <article class="detail-panel">
-          <p class="section-kicker">Access</p>
-          <h2>What is free</h2>
-          <div id="access-summary"></div>
-        </article>
-      </section>
-
-      <section class="detail-panel" aria-labelledby="components-heading">
-        <p class="section-kicker">Quality</p>
-        <h2 id="components-heading">Quality components</h2>
-        <p class="muted">Quality measures intrinsic course strength. Recommendation reflects whether this is a strong choice today, including access, currentness and alternatives.</p>
-        <div id="quality-components" class="component-grid"></div>
-      </section>
-
-      <section id="score-context-panel" class="detail-panel" hidden aria-labelledby="score-context-heading">
-        <p class="section-kicker">Editorial reasoning</p>
-        <h2 id="score-context-heading">Why this score</h2>
-        <div id="score-context"></div>
-      </section>
-
-      <section class="detail-grid">
-        <article class="detail-panel" aria-labelledby="verification-heading">
-          <p class="section-kicker">Maintenance</p>
-          <h2 id="verification-heading">Verification</h2>
-          <div id="verification-content"></div>
-        </article>
-
-        <article class="detail-panel" aria-labelledby="evidence-heading">
-          <p class="section-kicker">Audit trail</p>
-          <h2 id="evidence-heading">Evidence</h2>
-          <p class="muted">Sources used to verify the course and its access model.</p>
-          <ul id="evidence-list" class="evidence-list"></ul>
-        </article>
-      </section>
-
-      <div class="detail-actions">
-        <a id="official-course" class="button-link" target="_blank" rel="noopener noreferrer">Open official course ↗</a>
-        <a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Read methodology</a>
-      </div>
-    </div>
-
-    <div id="detail-error" class="empty" hidden>
-      <h2>Course not found</h2>
-      <p>This public view could not find that canonical course ID.</p>
-      <a href="index.html">Return to the catalogue</a>
-    </div>
+  <main class="shell course-page">
+    <section class="empty">
+      <h1>Opening course…</h1>
+      <p>The Open Learning Index now uses permanent static course URLs.</p>
+      <p><a href="./">Return home</a></p>
+    </section>
   </main>
-
-  <footer>
-    <div class="shell footer-inner">
-      <p>Open Learning Index · canonical data lives in the public repository.</p>
-      <a href="https://github.com/Blackspirits/open-learning-index">View source</a>
-    </div>
-  </footer>
-
-  <script src="course.js" defer></script>
+  <script>
+    const id = new URLSearchParams(location.search).get("id");
+    if (id && /^[a-z0-9-]+$/.test(id)) {
+      location.replace("courses/" + encodeURIComponent(id) + "/");
+    }
+  </script>
 </body>
 </html>

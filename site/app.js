@@ -1,11 +1,11 @@
 const state = {
   courses: [],
   meta: null,
-  visibleLimit: 24,
+  visibleLimit: 18,
 };
 
-const els = {};
 const pageLocale = document.body.dataset.locale === "pt-PT" ? "pt-PT" : "en";
+const pageType = document.body.dataset.page || "catalogue";
 const rootPath = document.body.dataset.root || "./";
 const isPt = pageLocale === "pt-PT";
 
@@ -36,6 +36,18 @@ const categoryNamesPt = {
   "writing-communication": "Escrita e Comunicação",
 };
 
+const categoryIcons = {
+  "computer-science": "▣",
+  "business-entrepreneurship": "▥",
+  "math-statistics": "∑",
+  "health-medicine": "❤",
+  languages: "▤",
+  "ai-data": "◫",
+  "cybersecurity-it": "⌾",
+  "arts-design": "✦",
+  "education-teaching": "◇",
+};
+
 const levelNamesPt = {
   beginner: "Principiante",
   beginner_to_intermediate: "Principiante a intermédio",
@@ -46,9 +58,9 @@ const levelNamesPt = {
 };
 
 const accessPt = {
-  F0: { label: "Curso completo + credencial gratuita" },
-  F1: { label: "Percurso avaliado gratuito" },
-  F2: { label: "Conteúdo pedagógico gratuito" },
+  F0: "Curso completo + credencial gratuita",
+  F1: "Percurso avaliado gratuito",
+  F2: "Conteúdo pedagógico gratuito",
 };
 
 const displayLanguage = typeof Intl.DisplayNames === "function"
@@ -57,6 +69,15 @@ const displayLanguage = typeof Intl.DisplayNames === "function"
 
 function route(path) {
   return `${rootPath}${path}`;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function labelLanguage(code) {
@@ -74,7 +95,7 @@ function labelCategory(course) {
 
 function labelLevel(value) {
   if (isPt && levelNamesPt[value]) return levelNamesPt[value];
-  return value
+  return String(value || "")
     .split("_")
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(" ");
@@ -92,49 +113,114 @@ function tokenize(value) {
   return normalize(value).match(/[a-z0-9+#.]+/g) || [];
 }
 
-function parseDateOnly(value) {
-  return new Date(value + "T00:00:00Z");
+function initials(provider) {
+  const cleaned = String(provider || "")
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[^A-Za-zÀ-ÿ0-9 ]/g, " ");
+  const words = cleaned.split(/\s+/).filter(Boolean);
+  if (!words.length) return "OLI";
+  if (words.length === 1) return words[0].slice(0, 3).toUpperCase();
+  return words.slice(0, 2).map((word) => word[0]).join("").toUpperCase();
 }
 
-function formatDate(value) {
-  return new Intl.DateTimeFormat(pageLocale, {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC",
-  }).format(parseDateOnly(value));
+function scorePill(course) {
+  return `<span class="score-pill">${Number(course.recommendation_score).toFixed(1)}</span>`;
 }
 
-function freshness(course) {
-  const now = new Date();
-  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-  const next = parseDateOnly(course.next_review).getTime();
-  const days = Math.ceil((next - today) / 86400000);
-  const checked = formatDate(course.last_verified);
-
-  if (isPt) {
-    if (days > 30) return { label: `Verificado ${checked}`, tone: "good" };
-    if (days >= 0) return { label: `Revisão em breve · ${checked}`, tone: "warn" };
-    if (days >= -30) return { label: `Revisão necessária · ${checked}`, tone: "warn" };
-    return { label: `Prioridade de revisão · ${checked}`, tone: "danger" };
-  }
-
-  if (days > 30) return { label: `Checked ${checked}`, tone: "good" };
-  if (days >= 0) return { label: `Check due soon · ${checked}`, tone: "warn" };
-  if (days >= -30) return { label: `Check due · ${checked}`, tone: "warn" };
-  return { label: `Re-check priority · ${checked}`, tone: "danger" };
+function renderMiniCourseCard(course) {
+  const archived = course.status === "active_archive"
+    ? `<span class="mini-tag tag-archive">${isPt ? "Arquivado" : "Archived"}</span>`
+    : "";
+  return `
+    <article class="mini-course-card">
+      <div class="mini-card-top">
+        ${scorePill(course)}
+        <span class="bookmark" aria-hidden="true">♡</span>
+      </div>
+      <div class="provider-mark" aria-hidden="true">${escapeHtml(initials(course.provider))}</div>
+      <h3><a href="${route(`courses/${encodeURIComponent(course.id)}/`)}">${escapeHtml(course.title)}</a></h3>
+      <p class="provider">${escapeHtml(course.provider)}</p>
+      <div class="mini-tags">
+        <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
+        <span class="mini-tag">${escapeHtml(labelLanguage(course.primary_language))}</span>
+        <span class="mini-tag">${escapeHtml(labelLevel(course.level))}</span>
+        ${archived}
+      </div>
+    </article>
+  `;
 }
 
-function escapeHtml(value) {
-  return String(value)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
+function renderHomeCategory(id, name, count) {
+  const icon = categoryIcons[id] || "◇";
+  return `
+    <a class="category-tile" href="${route(`courses/?category=${encodeURIComponent(id)}`)}">
+      <span class="category-icon icon-${escapeHtml(id)}" aria-hidden="true">${escapeHtml(icon)}</span>
+      <strong>${escapeHtml(name)}</strong>
+      <small>${count} ${isPt ? "cursos" : "courses"}</small>
+    </a>
+  `;
 }
 
-function getFormState() {
+function renderHome() {
+  const statCourses = document.querySelector("#stat-courses");
+  const statCategories = document.querySelector("#stat-categories");
+  const statLanguages = document.querySelector("#stat-languages");
+  if (statCourses) statCourses.textContent = state.meta.published_count;
+  if (statCategories) statCategories.textContent = state.meta.category_count;
+  if (statLanguages) statLanguages.textContent = Object.keys(state.meta.language_counts).length;
+
+  const categoryOrder = [
+    "computer-science",
+    "business-entrepreneurship",
+    "math-statistics",
+    "health-medicine",
+    "languages",
+  ];
+  const counts = new Map();
+  state.courses.forEach((course) => counts.set(course.category, (counts.get(course.category) || 0) + 1));
+  const byCategory = new Map(state.courses.map((course) => [course.category, course]));
+  const categories = categoryOrder
+    .filter((id) => byCategory.has(id))
+    .map((id) => {
+      const course = byCategory.get(id);
+      return renderHomeCategory(id, labelCategory(course), counts.get(id) || 0);
+    });
+  document.querySelector("#home-categories").innerHTML = categories.join("");
+
+  const featured = [...state.courses]
+    .filter((course) => course.status === "active")
+    .sort((a, b) =>
+      b.recommendation_score - a.recommendation_score ||
+      b.quality_score - a.quality_score ||
+      a.title.localeCompare(b.title)
+    )
+    .slice(0, 4);
+  document.querySelector("#featured-courses").innerHTML = featured.map(renderMiniCourseCard).join("");
+}
+
+function getCatalogueEls() {
+  return {
+    filters: document.querySelector("#filters"),
+    search: document.querySelector("#search"),
+    category: document.querySelector("#category"),
+    language: document.querySelector("#language"),
+    level: document.querySelector("#level"),
+    access: document.querySelector("#access"),
+    tier: document.querySelector("#tier"),
+    status: document.querySelector("#status"),
+    sort: document.querySelector("#sort"),
+    credential: document.querySelector("#credential"),
+    credit: document.querySelector("#credit"),
+    clear: document.querySelector("#clear-filters"),
+    results: document.querySelector("#results"),
+    resultCount: document.querySelector("#result-count"),
+    empty: document.querySelector("#empty-state"),
+    showMore: document.querySelector("#show-more"),
+    pageCourseCount: document.querySelector("#page-course-count"),
+  };
+}
+
+function getFormState(els) {
   return {
     q: els.search.value.trim(),
     category: els.category.value,
@@ -149,7 +235,7 @@ function getFormState() {
   };
 }
 
-function setFormState(params) {
+function setFormState(els, params) {
   els.search.value = params.get("q") || "";
   els.category.value = params.get("category") || "";
   els.language.value = params.get("language") || "";
@@ -172,7 +258,7 @@ function syncUrl(values) {
   history.replaceState(null, "", query ? `?${query}` : location.pathname);
 }
 
-function populateFilters() {
+function populateFilters(els) {
   const categories = [...new Map(state.courses.map((c) => [c.category, labelCategory(c)])).entries()]
     .sort((a, b) => a[1].localeCompare(b[1], pageLocale));
   const languages = [...new Set(state.courses.flatMap((c) => [c.primary_language, ...c.other_languages]))]
@@ -180,9 +266,9 @@ function populateFilters() {
   const levels = [...new Set(state.courses.map((c) => c.level))]
     .sort((a, b) => labelLevel(a).localeCompare(labelLevel(b), pageLocale));
 
-  for (const [value, label] of categories) els.category.add(new Option(label, value));
-  for (const value of languages) els.language.add(new Option(labelLanguage(value), value));
-  for (const value of levels) els.level.add(new Option(labelLevel(value), value));
+  categories.forEach(([value, label]) => els.category.add(new Option(label, value)));
+  languages.forEach((value) => els.language.add(new Option(labelLanguage(value), value)));
+  levels.forEach((value) => els.level.add(new Option(labelLevel(value), value)));
 }
 
 function filteredCourses(values) {
@@ -212,154 +298,82 @@ function filteredCourses(values) {
   return list.sort(compare);
 }
 
-function scoreBlock(label, score, tier) {
-  return `
-    <div class="score">
-      <span>${escapeHtml(label)}</span>
-      <strong>${Number(score).toFixed(1)}</strong>
-      <small>${escapeHtml(tier)}</small>
-    </div>
-  `;
-}
-
-function renderCard(course) {
-  const fresh = freshness(course);
-  const languages = [course.primary_language, ...course.other_languages].map(labelLanguage).join(" · ");
-  const archive = course.status === "active_archive"
-    ? `<span class="badge badge-neutral">${isPt ? "Arquivado mas disponível" : "Archived but still available"}</span>`
+function renderCatalogueCard(course) {
+  const archived = course.status === "active_archive"
+    ? `<span class="mini-tag tag-archive">${isPt ? "Arquivado" : "Archived"}</span>`
     : "";
-  const credit = course.has_free_academic_credit
-    ? `<span class="badge badge-credit">${isPt ? "Créditos académicos gratuitos" : "Free academic credit"}</span>`
-    : "";
-  const accessLabel = isPt ? (accessPt[course.access_short]?.label || course.access_label) : course.access_label;
-  const recommendationLabel = isPt ? "Recomendação" : "Recommendation";
-  const qualityLabel = isPt ? "Qualidade" : "Quality";
-  const detailsLabel = isPt ? "Detalhes (EN)" : "Details";
-  const openLabel = isPt ? "Abrir curso" : "Open course";
-  const editorialNote = isPt ? '<span class="badge">Nota editorial em inglês</span>' : "";
-
+  const accessText = isPt ? (accessPt[course.access_short] || course.access_label) : course.access_label;
   return `
-    <article class="course-card">
-      <div class="card-topline">
-        <a class="category" href="${route(`categories/${encodeURIComponent(course.category)}/`)}">${escapeHtml(labelCategory(course))}</a>
-        <span class="freshness freshness-${fresh.tone}">${escapeHtml(fresh.label)}</span>
+    <article class="catalogue-card">
+      <div class="catalogue-card-head">
+        ${scorePill(course)}
+        <span class="bookmark" aria-hidden="true">♡</span>
       </div>
-      <div>
-        <h3><a href="${route(`courses/${encodeURIComponent(course.id)}/`)}">${escapeHtml(course.title)}</a></h3>
-        <p class="provider">${escapeHtml(course.provider)}</p>
+      <div class="provider-mark large" aria-hidden="true">${escapeHtml(initials(course.provider))}</div>
+      <h3><a href="${route(`courses/${encodeURIComponent(course.id)}/`)}">${escapeHtml(course.title)}</a></h3>
+      <p class="provider">${escapeHtml(course.provider)}</p>
+      <div class="card-spacer"></div>
+      <div class="mini-tags">
+        <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
+        <span class="mini-tag">${escapeHtml(labelLanguage(course.primary_language))}</span>
+        <span class="mini-tag">${escapeHtml(labelLevel(course.level))}</span>
+        ${archived}
       </div>
-      <div class="badges">
-        <span class="badge">${escapeHtml(labelLevel(course.level))}</span>
-        <span class="badge">${escapeHtml(languages)}</span>
-        <span class="badge badge-access" title="${escapeHtml(course.access_description)}">${escapeHtml(course.access_short)} · ${escapeHtml(accessLabel)}</span>
-        ${archive}
-        ${credit}
-        ${editorialNote}
-      </div>
-      <div class="scores" aria-label="${isPt ? "Avaliações do curso" : "Course scores"}">
-        ${scoreBlock(recommendationLabel, course.recommendation_score, course.recommendation_tier)}
-        ${scoreBlock(qualityLabel, course.quality_score, course.quality_tier)}
-      </div>
-      <p class="why">${escapeHtml(course.why_recommended)}</p>
-      <div class="card-footer">
-        <span class="card-links">
-          <a href="${route(`courses/${encodeURIComponent(course.id)}/`)}" aria-label="${escapeHtml(detailsLabel)}: ${escapeHtml(course.title)}">${detailsLabel}</a>
-          <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(openLabel)}: ${escapeHtml(course.title)}">${openLabel} <span aria-hidden="true">↗</span></a>
-        </span>
+      <div class="access-line" title="${escapeHtml(course.access_description)}">
+        <strong>${escapeHtml(course.access_short)}</strong>
+        <span>${escapeHtml(accessText)}</span>
       </div>
     </article>
   `;
 }
 
-function activeFilterCount(values) {
-  return [values.q, values.category, values.language, values.level, values.access, values.tier, values.status, values.credential, values.credit].filter(Boolean).length;
-}
-
-function updateQuickState(values) {
-  const states = {
-    all: activeFilterCount(values) === 0,
-    "pt-PT": values.language === "pt-PT",
-    F0: values.access === "F0",
-    beginner: values.level === "beginner-friendly",
-    languages: values.category === "languages",
-  };
-  document.querySelectorAll("[data-quick]").forEach((button) => {
-    button.setAttribute("aria-pressed", states[button.dataset.quick] ? "true" : "false");
-  });
-}
-
-function render() {
-  const values = getFormState();
+function renderCatalogue(els) {
+  const values = getFormState(els);
   syncUrl(values);
   const courses = filteredCourses(values);
   const visible = courses.slice(0, state.visibleLimit);
-  const count = activeFilterCount(values);
 
   els.resultCount.textContent = isPt
     ? `${courses.length} curso${courses.length === 1 ? "" : "s"}`
     : `${courses.length} course${courses.length === 1 ? "" : "s"}`;
-  els.activeFilterCount.textContent = count ? (isPt ? ` · ${count} ativo${count === 1 ? "" : "s"}` : ` · ${count} active`) : "";
-  els.results.innerHTML = visible.map(renderCard).join("");
+  els.results.innerHTML = visible.map(renderCatalogueCard).join("");
   els.empty.hidden = courses.length !== 0;
   els.showMore.hidden = visible.length >= courses.length;
+
   if (!els.showMore.hidden) {
     const remaining = courses.length - visible.length;
-    els.showMore.textContent = isPt ? `Mostrar mais · ${remaining} restantes` : `Show more · ${remaining} remaining`;
+    els.showMore.textContent = isPt ? `Mostrar mais · ${remaining}` : `Show more · ${remaining}`;
   }
-  updateQuickState(values);
 }
 
-function clearFilters(options = {}) {
-  const { focusSearch = true } = options;
-  els.filters.reset();
-  els.sort.value = "recommendation";
-  state.visibleLimit = 24;
-  render();
-  if (focusSearch) els.search.focus();
-}
+function bootCatalogue() {
+  const els = getCatalogueEls();
+  els.pageCourseCount.textContent = state.meta.published_count;
+  populateFilters(els);
+  setFormState(els, new URLSearchParams(location.search));
 
-function togglePreset(control, value) {
-  control.value = control.value === value ? "" : value;
-}
+  const rerender = () => {
+    state.visibleLimit = 18;
+    renderCatalogue(els);
+  };
+  els.filters.addEventListener("input", rerender);
+  els.filters.addEventListener("change", rerender);
+  els.clear.addEventListener("click", () => {
+    els.filters.reset();
+    els.sort.value = "recommendation";
+    state.visibleLimit = 18;
+    renderCatalogue(els);
+    els.search.focus();
+  });
+  els.showMore.addEventListener("click", () => {
+    state.visibleLimit += 18;
+    renderCatalogue(els);
+  });
 
-function applyQuick(kind) {
-  state.visibleLimit = 24;
-  if (kind === "all") {
-    clearFilters({ focusSearch: false });
-    return;
-  }
-  if (kind === "pt-PT") togglePreset(els.language, "pt-PT");
-  if (kind === "F0") togglePreset(els.access, "F0");
-  if (kind === "beginner") togglePreset(els.level, "beginner-friendly");
-  if (kind === "languages") togglePreset(els.category, "languages");
-  render();
+  renderCatalogue(els);
 }
 
 async function boot() {
-  Object.assign(els, {
-    filterDisclosure: document.querySelector("#filter-disclosure"),
-    filters: document.querySelector("#filters"),
-    activeFilterCount: document.querySelector("#active-filter-count"),
-    search: document.querySelector("#search"),
-    category: document.querySelector("#category"),
-    language: document.querySelector("#language"),
-    level: document.querySelector("#level"),
-    access: document.querySelector("#access"),
-    tier: document.querySelector("#tier"),
-    status: document.querySelector("#status"),
-    sort: document.querySelector("#sort"),
-    credential: document.querySelector("#credential"),
-    credit: document.querySelector("#credit"),
-    clear: document.querySelector("#clear-filters"),
-    results: document.querySelector("#results"),
-    resultCount: document.querySelector("#result-count"),
-    empty: document.querySelector("#empty-state"),
-    showMore: document.querySelector("#show-more"),
-    statCourses: document.querySelector("#stat-courses"),
-    statCategories: document.querySelector("#stat-categories"),
-    statLanguages: document.querySelector("#stat-languages"),
-  });
-
   try {
     const [catalogResponse, metaResponse] = await Promise.all([
       fetch(route("data/catalog.json")),
@@ -370,46 +384,14 @@ async function boot() {
     state.courses = await catalogResponse.json();
     state.meta = await metaResponse.json();
 
-    els.statCourses.textContent = state.meta.published_count;
-    els.statCategories.textContent = state.meta.category_count;
-    els.statLanguages.textContent = Object.keys(state.meta.language_counts).length;
-
-    populateFilters();
-    setFormState(new URLSearchParams(location.search));
-
-    const resetAndRender = () => {
-      state.visibleLimit = 24;
-      render();
-    };
-    els.filters.addEventListener("input", resetAndRender);
-    els.filters.addEventListener("change", resetAndRender);
-    els.clear.addEventListener("click", () => clearFilters());
-    els.showMore.addEventListener("click", () => {
-      state.visibleLimit += 24;
-      render();
-    });
-
-    document.querySelectorAll("[data-quick]").forEach((button) => {
-      button.addEventListener("click", () => applyQuick(button.dataset.quick));
-    });
-
-    const mobile = window.matchMedia("(max-width: 700px)");
-    const syncDisclosure = () => {
-      if (mobile.matches) els.filterDisclosure.removeAttribute("open");
-      else els.filterDisclosure.setAttribute("open", "");
-    };
-    syncDisclosure();
-    mobile.addEventListener?.("change", syncDisclosure);
-
-    render();
+    if (pageType === "home") renderHome();
+    else bootCatalogue();
   } catch (error) {
     console.error(error);
-    els.resultCount.textContent = isPt ? "Não foi possível carregar o catálogo." : "The catalogue could not be loaded.";
-    els.empty.hidden = false;
-    els.empty.querySelector("h3").textContent = isPt ? "Catálogo indisponível" : "Catalogue unavailable";
-    els.empty.querySelector("p").textContent = isPt
-      ? "Tenta novamente ou consulta o conjunto de dados canónico no GitHub."
-      : "Please try again or use the canonical dataset on GitHub.";
+    const resultCount = document.querySelector("#result-count");
+    const empty = document.querySelector("#empty-state");
+    if (resultCount) resultCount.textContent = isPt ? "Não foi possível carregar o catálogo." : "The catalogue could not be loaded.";
+    if (empty) empty.hidden = false;
   }
 }
 
