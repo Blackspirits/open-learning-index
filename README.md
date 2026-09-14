@@ -1,5 +1,7 @@
 # Open Learning Index
 
+![Open Learning Index banner](assets/open-learning-index-banner.svg)
+
 > A rigorously curated, continuously maintained index of exceptional free courses and open learning experiences.
 
 **[Browse the public index](https://blackspirits.github.io/open-learning-index/)** · **[Português (Portugal)](https://blackspirits.github.io/open-learning-index/pt/)** · [Methodology](docs/methodology.md) · [Contributing](CONTRIBUTING.md)
