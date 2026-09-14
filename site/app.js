@@ -5,18 +5,62 @@ const state = {
 };
 
 const els = {};
+const pageLocale = document.body.dataset.locale === "pt-PT" ? "pt-PT" : "en";
+const rootPath = document.body.dataset.root || "./";
+const isPt = pageLocale === "pt-PT";
 
 const languageNames = {
-  "pt-BR": "Português (Brasil)",
-  "pt-PT": "Português (Portugal)",
+  en: { "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
+  "pt-PT": { "pt-BR": "Português (Brasil)", "pt-PT": "Português (Portugal)" },
+};
+
+const categoryNamesPt = {
+  "ai-data": "IA e Dados",
+  "arts-design": "Artes e Design",
+  "business-entrepreneurship": "Negócios e Empreendedorismo",
+  "computer-science": "Ciência de Computadores e Software",
+  "cybersecurity-it": "Cibersegurança e TI",
+  "education-teaching": "Educação e Ensino",
+  "engineering-electronics": "Engenharia e Eletrónica",
+  "finance-economics": "Finanças e Economia",
+  "health-medicine": "Saúde e Medicina",
+  "history-culture": "História e Cultura",
+  "humanities-philosophy": "Humanidades e Filosofia",
+  languages: "Línguas",
+  "law-public-policy": "Direito e Políticas Públicas",
+  "marketing-sales": "Marketing e Vendas",
+  "math-statistics": "Matemática e Estatística",
+  "natural-sciences": "Ciências Naturais",
+  "project-product-leadership": "Projeto, Produto e Liderança",
+  "psychology-behavior": "Psicologia e Comportamento",
+  "writing-communication": "Escrita e Comunicação",
+};
+
+const levelNamesPt = {
+  beginner: "Principiante",
+  beginner_to_intermediate: "Principiante a intermédio",
+  intermediate: "Intermédio",
+  intermediate_to_advanced: "Intermédio a avançado",
+  advanced: "Avançado",
+  graduate: "Pós-graduação",
+};
+
+const accessPt = {
+  F0: { label: "Curso completo + credencial gratuita" },
+  F1: { label: "Percurso avaliado gratuito" },
+  F2: { label: "Conteúdo pedagógico gratuito" },
 };
 
 const displayLanguage = typeof Intl.DisplayNames === "function"
-  ? new Intl.DisplayNames(["en"], { type: "language" })
+  ? new Intl.DisplayNames([pageLocale], { type: "language" })
   : null;
 
+function route(path) {
+  return `${rootPath}${path}`;
+}
+
 function labelLanguage(code) {
-  if (languageNames[code]) return languageNames[code];
+  if (languageNames[pageLocale]?.[code]) return languageNames[pageLocale][code];
   try {
     return displayLanguage?.of(code) || code;
   } catch {
@@ -24,7 +68,12 @@ function labelLanguage(code) {
   }
 }
 
+function labelCategory(course) {
+  return isPt ? (categoryNamesPt[course.category] || course.category_name) : course.category_name;
+}
+
 function labelLevel(value) {
+  if (isPt && levelNamesPt[value]) return levelNamesPt[value];
   return value
     .split("_")
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
@@ -47,6 +96,15 @@ function parseDateOnly(value) {
   return new Date(value + "T00:00:00Z");
 }
 
+function formatDate(value) {
+  return new Intl.DateTimeFormat(pageLocale, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  }).format(parseDateOnly(value));
+}
+
 function freshness(course) {
   const now = new Date();
   const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
@@ -54,19 +112,17 @@ function freshness(course) {
   const days = Math.ceil((next - today) / 86400000);
   const checked = formatDate(course.last_verified);
 
+  if (isPt) {
+    if (days > 30) return { label: `Verificado ${checked}`, tone: "good" };
+    if (days >= 0) return { label: `Revisão em breve · ${checked}`, tone: "warn" };
+    if (days >= -30) return { label: `Revisão necessária · ${checked}`, tone: "warn" };
+    return { label: `Prioridade de revisão · ${checked}`, tone: "danger" };
+  }
+
   if (days > 30) return { label: `Checked ${checked}`, tone: "good" };
   if (days >= 0) return { label: `Check due soon · ${checked}`, tone: "warn" };
   if (days >= -30) return { label: `Check due · ${checked}`, tone: "warn" };
   return { label: `Re-check priority · ${checked}`, tone: "danger" };
-}
-
-function formatDate(value) {
-  return new Intl.DateTimeFormat(undefined, {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC",
-  }).format(parseDateOnly(value));
 }
 
 function escapeHtml(value) {
@@ -117,27 +173,20 @@ function syncUrl(values) {
 }
 
 function populateFilters() {
-  const categories = [...new Map(state.courses.map((c) => [c.category, c.category_name])).entries()]
-    .sort((a, b) => a[1].localeCompare(b[1]));
+  const categories = [...new Map(state.courses.map((c) => [c.category, labelCategory(c)])).entries()]
+    .sort((a, b) => a[1].localeCompare(b[1], pageLocale));
   const languages = [...new Set(state.courses.flatMap((c) => [c.primary_language, ...c.other_languages]))]
-    .sort((a, b) => labelLanguage(a).localeCompare(labelLanguage(b)));
+    .sort((a, b) => labelLanguage(a).localeCompare(labelLanguage(b), pageLocale));
   const levels = [...new Set(state.courses.map((c) => c.level))]
-    .sort((a, b) => labelLevel(a).localeCompare(labelLevel(b)));
+    .sort((a, b) => labelLevel(a).localeCompare(labelLevel(b), pageLocale));
 
-  for (const [value, label] of categories) {
-    els.category.add(new Option(label, value));
-  }
-  for (const value of languages) {
-    els.language.add(new Option(labelLanguage(value), value));
-  }
-  for (const value of levels) {
-    els.level.add(new Option(labelLevel(value), value));
-  }
+  for (const [value, label] of categories) els.category.add(new Option(label, value));
+  for (const value of languages) els.language.add(new Option(labelLanguage(value), value));
+  for (const value of levels) els.level.add(new Option(labelLevel(value), value));
 }
 
 function filteredCourses(values) {
   const queryTokens = tokenize(values.q);
-
   const list = state.courses.filter((course) => {
     const courseTokens = tokenize(course.search_text);
     if (queryTokens.length && !queryTokens.every((word) => courseTokens.includes(word))) return false;
@@ -175,49 +224,47 @@ function scoreBlock(label, score, tier) {
 
 function renderCard(course) {
   const fresh = freshness(course);
-  const languages = [course.primary_language, ...course.other_languages]
-    .map(labelLanguage)
-    .join(" · ");
-
+  const languages = [course.primary_language, ...course.other_languages].map(labelLanguage).join(" · ");
   const archive = course.status === "active_archive"
-    ? '<span class="badge badge-neutral">Archived but still available</span>'
+    ? `<span class="badge badge-neutral">${isPt ? "Arquivado mas disponível" : "Archived but still available"}</span>`
     : "";
-
   const credit = course.has_free_academic_credit
-    ? '<span class="badge badge-credit">Free academic credit</span>'
+    ? `<span class="badge badge-credit">${isPt ? "Créditos académicos gratuitos" : "Free academic credit"}</span>`
     : "";
+  const accessLabel = isPt ? (accessPt[course.access_short]?.label || course.access_label) : course.access_label;
+  const recommendationLabel = isPt ? "Recomendação" : "Recommendation";
+  const qualityLabel = isPt ? "Qualidade" : "Quality";
+  const detailsLabel = isPt ? "Detalhes (EN)" : "Details";
+  const openLabel = isPt ? "Abrir curso" : "Open course";
+  const editorialNote = isPt ? '<span class="badge">Nota editorial em inglês</span>' : "";
 
   return `
     <article class="course-card">
       <div class="card-topline">
-        <a class="category" href="categories/${encodeURIComponent(course.category)}/">${escapeHtml(course.category_name)}</a>
+        <a class="category" href="${route(`categories/${encodeURIComponent(course.category)}/`)}">${escapeHtml(labelCategory(course))}</a>
         <span class="freshness freshness-${fresh.tone}">${escapeHtml(fresh.label)}</span>
       </div>
-
       <div>
-        <h3><a href="courses/${encodeURIComponent(course.id)}/">${escapeHtml(course.title)}</a></h3>
+        <h3><a href="${route(`courses/${encodeURIComponent(course.id)}/`)}">${escapeHtml(course.title)}</a></h3>
         <p class="provider">${escapeHtml(course.provider)}</p>
       </div>
-
       <div class="badges">
         <span class="badge">${escapeHtml(labelLevel(course.level))}</span>
         <span class="badge">${escapeHtml(languages)}</span>
-        <span class="badge badge-access" title="${escapeHtml(course.access_description)}">${escapeHtml(course.access_short)} · ${escapeHtml(course.access_label)}</span>
+        <span class="badge badge-access" title="${escapeHtml(course.access_description)}">${escapeHtml(course.access_short)} · ${escapeHtml(accessLabel)}</span>
         ${archive}
         ${credit}
+        ${editorialNote}
       </div>
-
-      <div class="scores" aria-label="Course scores">
-        ${scoreBlock("Recommendation", course.recommendation_score, course.recommendation_tier)}
-        ${scoreBlock("Quality", course.quality_score, course.quality_tier)}
+      <div class="scores" aria-label="${isPt ? "Avaliações do curso" : "Course scores"}">
+        ${scoreBlock(recommendationLabel, course.recommendation_score, course.recommendation_tier)}
+        ${scoreBlock(qualityLabel, course.quality_score, course.quality_tier)}
       </div>
-
       <p class="why">${escapeHtml(course.why_recommended)}</p>
-
       <div class="card-footer">
         <span class="card-links">
-          <a href="courses/${encodeURIComponent(course.id)}/" aria-label="Details for ${escapeHtml(course.title)}">Details</a>
-          <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open official course: ${escapeHtml(course.title)}">Open course <span aria-hidden="true">↗</span></a>
+          <a href="${route(`courses/${encodeURIComponent(course.id)}/`)}" aria-label="${escapeHtml(detailsLabel)}: ${escapeHtml(course.title)}">${detailsLabel}</a>
+          <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(openLabel)}: ${escapeHtml(course.title)}">${openLabel} <span aria-hidden="true">↗</span></a>
         </span>
       </div>
     </article>
@@ -225,17 +272,7 @@ function renderCard(course) {
 }
 
 function activeFilterCount(values) {
-  return [
-    values.q,
-    values.category,
-    values.language,
-    values.level,
-    values.access,
-    values.tier,
-    values.status,
-    values.credential,
-    values.credit,
-  ].filter(Boolean).length;
+  return [values.q, values.category, values.language, values.level, values.access, values.tier, values.status, values.credential, values.credit].filter(Boolean).length;
 }
 
 function updateQuickState(values) {
@@ -246,10 +283,8 @@ function updateQuickState(values) {
     beginner: values.level === "beginner-friendly",
     languages: values.category === "languages",
   };
-
   document.querySelectorAll("[data-quick]").forEach((button) => {
-    const active = Boolean(states[button.dataset.quick]);
-    button.setAttribute("aria-pressed", active ? "true" : "false");
+    button.setAttribute("aria-pressed", states[button.dataset.quick] ? "true" : "false");
   });
 }
 
@@ -260,13 +295,16 @@ function render() {
   const visible = courses.slice(0, state.visibleLimit);
   const count = activeFilterCount(values);
 
-  els.resultCount.textContent = `${courses.length} course${courses.length === 1 ? "" : "s"}`;
-  els.activeFilterCount.textContent = count ? ` · ${count} active` : "";
+  els.resultCount.textContent = isPt
+    ? `${courses.length} curso${courses.length === 1 ? "" : "s"}`
+    : `${courses.length} course${courses.length === 1 ? "" : "s"}`;
+  els.activeFilterCount.textContent = count ? (isPt ? ` · ${count} ativo${count === 1 ? "" : "s"}` : ` · ${count} active`) : "";
   els.results.innerHTML = visible.map(renderCard).join("");
   els.empty.hidden = courses.length !== 0;
   els.showMore.hidden = visible.length >= courses.length;
   if (!els.showMore.hidden) {
-    els.showMore.textContent = `Show more · ${courses.length - visible.length} remaining`;
+    const remaining = courses.length - visible.length;
+    els.showMore.textContent = isPt ? `Mostrar mais · ${remaining} restantes` : `Show more · ${remaining} remaining`;
   }
   updateQuickState(values);
 }
@@ -324,8 +362,8 @@ async function boot() {
 
   try {
     const [catalogResponse, metaResponse] = await Promise.all([
-      fetch("data/catalog.json"),
-      fetch("data/meta.json"),
+      fetch(route("data/catalog.json")),
+      fetch(route("data/meta.json")),
     ]);
     if (!catalogResponse.ok || !metaResponse.ok) throw new Error("Failed to load public data");
 
@@ -366,10 +404,12 @@ async function boot() {
     render();
   } catch (error) {
     console.error(error);
-    els.resultCount.textContent = "The catalogue could not be loaded.";
+    els.resultCount.textContent = isPt ? "Não foi possível carregar o catálogo." : "The catalogue could not be loaded.";
     els.empty.hidden = false;
-    els.empty.querySelector("h3").textContent = "Catalogue unavailable";
-    els.empty.querySelector("p").textContent = "Please try again or use the canonical dataset on GitHub.";
+    els.empty.querySelector("h3").textContent = isPt ? "Catálogo indisponível" : "Catalogue unavailable";
+    els.empty.querySelector("p").textContent = isPt
+      ? "Tenta novamente ou consulta o conjunto de dados canónico no GitHub."
+      : "Please try again or use the canonical dataset on GitHub.";
   }
 }
 

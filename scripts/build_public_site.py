@@ -608,7 +608,7 @@ def build(output: Path) -> None:
             render_static_category(category, public_courses),
         )
 
-    sitemap_urls = [f"{BASE_URL}/"]
+    sitemap_urls = [f"{BASE_URL}/", f"{BASE_URL}/pt/"]
     sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
     sitemap_urls.extend(f"{BASE_URL}/categories/{category['id']}/" for category in category_rows)
     sitemap = (
