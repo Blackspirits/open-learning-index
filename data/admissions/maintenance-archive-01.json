@@ -1,0 +1,27 @@
+[
+  {
+    "admission_id": "admission-24-nau-iniciacao-lingua-portuguesa-archive",
+    "candidate_id": "nau-iniciacao-lingua-portuguesa",
+    "review_id": "deep-28-nau-iniciacao-lingua-portuguesa-archive",
+    "decided_on": "2026-09-14",
+    "decision": "admit",
+    "learning_need": "Structured beginner pathway for learning European Portuguese as a target language",
+    "comparison_set": [
+      "dw-nicos-weg-a1-b1",
+      "tv5monde-premiere-classe-french",
+      "minato-marugoto-a1-1-integrated"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The European-Portuguese learning need remains uncovered by another canonical course, so the resource still adds distinct value. Current primary evidence now shows that both the NAU listing and edX session are archived: learners can use surviving teaching materials, but there is no active graded/certificate path and some archive elements may fail. At 8.38 Quality / 8.6 Recommendation it remains worth retaining as an active archive, not presenting as a current live course.",
+    "marginal_value": "Adds the first canonical learn-European-Portuguese pathway, a target-language need not served by any existing course.",
+    "provider_concentration_notes": "Universidade do Porto is not concentrated in the canonical set. Different target languages are treated as distinct learning needs under the Languages admission protocol.",
+    "coverage_notes": "Retains the beginner European-Portuguese target-language slot as an archived-but-available resource while keeping the search open for a strong active F0/F1/F2 challenger.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "openlearn-how-learn-language"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true,
+    "supersedes_admission_id": "admission-22-nau-iniciacao-lingua-portuguesa"
+  }
+]
