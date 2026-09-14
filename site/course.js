@@ -37,6 +37,15 @@ function humanize(value) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function parseDateOnly(value) {
   return new Date(value + "T00:00:00Z");
 }
@@ -65,15 +74,15 @@ function freshness(course) {
 function scoreBlock(label, score, tier) {
   return `
     <div class="score">
-      <span>${label}</span>
+      <span>${escapeHtml(label)}</span>
       <strong>${Number(score).toFixed(1)}</strong>
-      <small>${tier}</small>
+      <small>${escapeHtml(tier)}</small>
     </div>
   `;
 }
 
 function fact(label, value) {
-  return `<div><dt>${label}</dt><dd>${value}</dd></div>`;
+  return `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`;
 }
 
 function render(course) {
@@ -106,8 +115,8 @@ function render(course) {
   const access = document.querySelector("#access-summary");
   access.innerHTML = `
     <div class="access-callout">
-      <strong>${course.access_short} · ${course.access_label}</strong>
-      <p>${course.access_description}</p>
+      <strong>${escapeHtml(course.access_short)} · ${escapeHtml(course.access_label)}</strong>
+      <p>${escapeHtml(course.access_description)}</p>
     </div>
     <dl class="facts">
       ${fact("Certificate", humanize(course.certificate))}
@@ -119,7 +128,7 @@ function render(course) {
   components.innerHTML = Object.entries(course.quality_components)
     .map(([key, value]) => `
       <div class="component-row">
-        <span>${componentLabels[key] || humanize(key)}</span>
+        <span>${escapeHtml(componentLabels[key] || humanize(key))}</span>
         <div class="component-meter" aria-hidden="true"><i style="width:${Number(value) * 10}%"></i></div>
         <strong>${Number(value).toFixed(1)}</strong>
       </div>
@@ -137,7 +146,7 @@ function render(course) {
 
   const evidence = document.querySelector("#evidence-list");
   evidence.innerHTML = course.evidence
-    .map((url, index) => `<li><a href="${url}" target="_blank" rel="noopener noreferrer">Evidence source ${index + 1} ↗</a></li>`)
+    .map((url, index) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Evidence source ${index + 1} ↗</a></li>`)
     .join("");
 
   const official = document.querySelector("#official-course");
