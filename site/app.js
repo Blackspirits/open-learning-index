@@ -52,11 +52,12 @@ function freshness(course) {
   const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
   const next = parseDateOnly(course.next_review).getTime();
   const days = Math.ceil((next - today) / 86400000);
+  const checked = formatDate(course.last_verified);
 
-  if (days > 30) return { label: "Verified", tone: "good" };
-  if (days >= 0) return { label: "Review due soon", tone: "warn" };
-  if (days >= -30) return { label: "Review due", tone: "warn" };
-  return { label: "Priority re-review", tone: "danger" };
+  if (days > 30) return { label: `Checked ${checked}`, tone: "good" };
+  if (days >= 0) return { label: `Check due soon · ${checked}`, tone: "warn" };
+  if (days >= -30) return { label: `Check due · ${checked}`, tone: "warn" };
+  return { label: `Re-check priority · ${checked}`, tone: "danger" };
 }
 
 function formatDate(value) {
@@ -179,7 +180,7 @@ function renderCard(course) {
     .join(" · ");
 
   const archive = course.status === "active_archive"
-    ? '<span class="badge badge-neutral">Active archive</span>'
+    ? '<span class="badge badge-neutral">Archived but still available</span>'
     : "";
 
   const credit = course.has_free_academic_credit
@@ -214,7 +215,6 @@ function renderCard(course) {
       <p class="why">${escapeHtml(course.why_recommended)}</p>
 
       <div class="card-footer">
-        <span>Verified ${escapeHtml(formatDate(course.last_verified))}</span>
         <span class="card-links">
           <a href="course.html?id=${encodeURIComponent(course.id)}" aria-label="Details for ${escapeHtml(course.title)}">Details</a>
           <a href="${escapeHtml(course.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open official course: ${escapeHtml(course.title)}">Open course <span aria-hidden="true">↗</span></a>
