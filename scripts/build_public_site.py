@@ -426,7 +426,10 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
 <body>
   <a class="skip-link" href="#course-detail">Skip to course details</a>
   <header class="detail-hero"><div class="shell">
-    <a class="back-link" href="../../">← Back to catalogue</a>
+    <div class="detail-topbar">
+      <a class="brand" href="../../" aria-label="Open Learning Index home"><span class="brand-mark" aria-hidden="true">OLI</span><span>Open Learning Index</span></a>
+      <a class="back-link" href="../../">← Back to catalogue</a>
+    </div>
     <div class="detail-heading">
       <p class="eyebrow">Open Learning Index</p>
       <h1>{escape(course['title'])}</h1>
@@ -524,7 +527,10 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
 </head>
 <body>
   <header class="detail-hero"><div class="shell">
-    <a class="back-link" href="../../">← Back to catalogue</a>
+    <div class="detail-topbar">
+      <a class="brand" href="../../" aria-label="Open Learning Index home"><span class="brand-mark" aria-hidden="true">OLI</span><span>Open Learning Index</span></a>
+      <a class="back-link" href="../../">← Back to catalogue</a>
+    </div>
     <div class="detail-heading"><p class="eyebrow">Category</p><h1>{escape(category['name'])}</h1>
       <p class="hero-copy">{len(rows)} curated course{"s" if len(rows) != 1 else ""}, ordered by Recommendation.</p></div>
   </div></header>
