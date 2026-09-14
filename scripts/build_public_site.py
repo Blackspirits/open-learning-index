@@ -19,6 +19,17 @@ SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
 BASE_URL = "https://blackspirits.github.io/open-learning-index"
 
+THEME_BOOTSTRAP = """<script>
+try {
+  const saved = localStorage.getItem("oli-theme");
+  const theme = saved === "dark" || saved === "light"
+    ? saved
+    : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+} catch {}
+</script>"""
+
 ACCESS = {
     "F0_FULL_CREDENTIAL": {
         "short": "F0",
@@ -465,7 +476,7 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
             "provider": {"@type": "Organization", "name": course["provider"]},
         },
         ensure_ascii=False,
-    ).replace("</", "<\/")
+    ).replace("</", "<\\/")
 
     return f"""<!doctype html>
 <html lang="en">
@@ -474,16 +485,7 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{escape(description, quote=True)}">
   <meta name="theme-color" content="#ffffff">
-  <script>
-    try {
-      const saved = localStorage.getItem("oli-theme");
-      const theme = saved === "dark" || saved === "light"
-        ? saved
-        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.dataset.theme = theme;
-      document.documentElement.style.colorScheme = theme;
-    } catch {}
-  </script>
+  {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{escape(course['title'], quote=True)} · Open Learning Index">
@@ -640,16 +642,7 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{escape(description, quote=True)}">
   <meta name="theme-color" content="#ffffff">
-  <script>
-    try {
-      const saved = localStorage.getItem("oli-theme");
-      const theme = saved === "dark" || saved === "light"
-        ? saved
-        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      document.documentElement.dataset.theme = theme;
-      document.documentElement.style.colorScheme = theme;
-    } catch {}
-  </script>
+  {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
   <meta property="og:title" content="{escape(category['name'], quote=True)} · Open Learning Index">
   <meta property="og:description" content="{escape(description, quote=True)}">
