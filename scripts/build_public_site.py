@@ -150,9 +150,14 @@ def build(output: Path) -> None:
     if missing_files:
         raise SystemExit(f"ERROR: public build missing required files: {missing_files}")
 
+    try:
+        output_label = output.relative_to(ROOT)
+    except ValueError:
+        output_label = output
+
     print(
         f"Built {len(public_courses)} public courses from {len(courses)} canonical records "
-        f"across {len(category_rows)} categories into {output.relative_to(ROOT)}."
+        f"across {len(category_rows)} categories into {output_label}."
     )
 
 
