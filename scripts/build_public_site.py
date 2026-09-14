@@ -142,6 +142,8 @@ def build(output: Path) -> None:
     required = [
         output / "index.html",
         output / "app.js",
+        output / "course.html",
+        output / "course.js",
         output / "styles.css",
         output / "data" / "catalog.json",
         output / "data" / "meta.json",
