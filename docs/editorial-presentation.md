@@ -14,7 +14,7 @@ Third-party course artwork, logos and trademarks retain their respective owners'
 
 ## Portuguese presentation
 
-`site/locales/pt-PT.json` maps exact public source strings to Portuguese presentation text. It covers titles, descriptions, prerequisites, resources, scope, credential/credit information, recommendation explanations and displayed admission notes. The dictionary began with machine translation of public repository text, followed by terminology corrections, a title review and manual revision of the main CS50 reading path. Long-form translations have not all received an independent linguistic review.
+`site/locales/pt-PT.json` maps exact public source strings to Portuguese presentation text. It covers titles, descriptions, prerequisites, resources, scope, credential/credit information, recommendation explanations and displayed admission notes. The dictionary began with machine translation of public repository text, followed by terminology corrections, a title review and manual revision of the main CS50 reading path. Long-form translations have not all received an independent linguistic review. Known semantic machine-translation failures are treated as defects; regression tests block the confirmed “24-hour”→“24 hours per day” and Quality-component “Currency”→money errors.
 
 `scripts/editorial_presentation.py` makes a deep copy for localised rendering. IDs, URLs, provider names, languages, dates, statuses, access classifications and all scores stay unchanged. Source strings themselves are the lookup keys: changed editorial text fails the build until its translation is added, rather than silently publishing an English paragraph on a Portuguese page.
 
@@ -25,7 +25,7 @@ When updating a course:
 3. Add an official image to the manifest only when its identity, source and presentation are suitable. A missing image automatically uses the editorial panel.
 4. Run the normal validation commands and the presentation tests below.
 
-The public access labels describe what the learner receives. F0/F1/F2 remain canonical filter values and can still occur in the expanded editorial rationale; they are no longer the primary catalogue labels. F3 remains ineligible for publication.
+The public language labels also preserve uncertainty: `pt-PT` and `pt-BR` are named explicitly, while provider-labelled generic `pt` is displayed as “Portuguese (variant unspecified)” / “Português (variante não especificada)”. The public access labels describe what the learner receives. F0/F1/F2 remain canonical filter values and can still occur in the expanded editorial rationale; they are no longer the primary catalogue labels. F3 remains ineligible for publication.
 
 ## Interaction and layout
 
