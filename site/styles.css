@@ -920,10 +920,17 @@ h1, h2, h3 {
 }
 
 .course-provider-line {
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   color: #425c70;
   font-size: 0.77rem;
   font-weight: 700;
+}
+
+.localization-note {
+  max-width: 720px;
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.68rem;
 }
 
 .course-meta-tags {
@@ -1599,6 +1606,7 @@ html[data-theme="dark"] .view-toggle button.active {
 }
 
 html[data-theme="dark"] .course-provider-line,
+html[data-theme="dark"] .localization-note,
 html[data-theme="dark"] .quality-line,
 html[data-theme="dark"] .catalogue-meta p,
 html[data-theme="dark"] .filter-check {

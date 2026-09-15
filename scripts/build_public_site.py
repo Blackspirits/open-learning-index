@@ -261,6 +261,65 @@ def label_language(value: str) -> str:
     return LANGUAGE_LABELS.get(value, value)
 
 
+PT_CATEGORY_LABELS = {
+    "ai-data": "IA e Dados",
+    "arts-design": "Artes e Design",
+    "business-entrepreneurship": "Negócios e Empreendedorismo",
+    "computer-science": "Ciência de Computadores e Software",
+    "cybersecurity-it": "Cibersegurança e TI",
+    "education-teaching": "Educação e Ensino",
+    "engineering-electronics": "Engenharia e Eletrónica",
+    "finance-economics": "Finanças e Economia",
+    "health-medicine": "Saúde e Medicina",
+    "history-culture": "História e Cultura",
+    "humanities-philosophy": "Humanidades e Filosofia",
+    "languages": "Línguas",
+    "law-public-policy": "Direito e Políticas Públicas",
+    "marketing-sales": "Marketing e Vendas",
+    "math-statistics": "Matemática e Estatística",
+    "natural-sciences": "Ciências Naturais",
+    "project-product-leadership": "Projeto, Produto e Liderança",
+    "psychology-behavior": "Psicologia e Comportamento",
+    "writing-communication": "Escrita e Comunicação",
+}
+
+PT_LEVEL_LABELS = {
+    "beginner": "Principiante",
+    "beginner_to_intermediate": "Principiante a intermédio",
+    "beginner_to_advanced": "Principiante a avançado",
+    "intermediate": "Intermédio",
+    "intermediate_to_advanced": "Intermédio a avançado",
+    "advanced": "Avançado",
+    "undergraduate": "Licenciatura",
+    "graduate": "Pós-graduação",
+}
+
+PT_LANGUAGE_LABELS = {
+    "ar": "Árabe",
+    "az": "Azeri",
+    "bg": "Búlgaro",
+    "cs": "Checo",
+    "de": "Alemão",
+    "en": "Inglês",
+    "es": "Espanhol",
+    "fr": "Francês",
+    "hu": "Húngaro",
+    "hy": "Arménio",
+    "ja": "Japonês",
+    "ka": "Georgiano",
+    "ko": "Coreano",
+    "pt": "Português",
+    "pt-BR": "Português (Brasil)",
+    "pt-PT": "Português (Portugal)",
+    "ro": "Romeno",
+    "ru": "Russo",
+    "sk": "Eslovaco",
+    "tr": "Turco",
+    "uk": "Ucraniano",
+    "zh": "Chinês",
+}
+
+
 def readable_id(value: str) -> str:
     return " ".join(part.capitalize() for part in str(value or "").split("-"))
 
@@ -490,6 +549,8 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
   <meta name="theme-color" content="#ffffff">
   {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
+  <link rel="alternate" hreflang="en" href="{escape(url, quote=True)}">
+  <link rel="alternate" hreflang="pt-PT" href="{escape(BASE_URL + "/pt/courses/" + course["id"] + "/", quote=True)}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{escape(course['title'], quote=True)} · Open Learning Index">
   <meta property="og:description" content="{escape(description, quote=True)}">
@@ -625,6 +686,168 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
 </html>
 """
 
+def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: dict) -> str:
+    html = render_static_course(course, course_by_id, candidate_by_id)
+    en_url = f"{BASE_URL}/courses/{course['id']}/"
+    pt_url = f"{BASE_URL}/pt/courses/{course['id']}/"
+    category_pt = PT_CATEGORY_LABELS.get(course["category"], course["category_name"])
+    level_en = label_level(course["level"])
+    level_pt = PT_LEVEL_LABELS.get(course["level"], level_en)
+    language_en = label_language(course["primary_language"])
+    language_pt = PT_LANGUAGE_LABELS.get(course["primary_language"], language_en)
+    languages_en = " · ".join(
+        label_language(code)
+        for code in [course["primary_language"], *course.get("other_languages", [])]
+    )
+    languages_pt = " · ".join(
+        PT_LANGUAGE_LABELS.get(code, label_language(code))
+        for code in [course["primary_language"], *course.get("other_languages", [])]
+    )
+    archived = course["status"] == "active_archive"
+
+    replacements = {
+        '<html lang="en">': '<html lang="pt-PT">',
+        en_url: pt_url,
+        '<link rel="stylesheet" href="../../styles.css">': '<link rel="stylesheet" href="../../../styles.css">',
+        '<script src="../../theme.js" defer></script>': '<script src="../../../theme.js" defer></script>',
+        'Skip to course details': 'Saltar para os detalhes do curso',
+        'aria-label="Primary navigation"': 'aria-label="Navegação principal"',
+        '>Courses</a>': '>Cursos</a>',
+        '>Categories</a>': '>Categorias</a>',
+        '>About</a>': '>Sobre</a>',
+        '>How it works</a>': '>Como funciona</a>',
+        'aria-label="Search courses"': 'aria-label="Pesquisar cursos"',
+        'aria-label="Breadcrumb"': 'aria-label="Navegação estrutural"',
+        '>Home</a>': '>Início</a>',
+        'aria-label="Overall recommendation"': 'aria-label="Recomendação geral"',
+        '<span>Overall recommendation</span>': '<span>Recomendação geral</span>',
+        '<span>Quality</span>': '<span>Qualidade</span>',
+        'aria-label="Course status"': 'aria-label="Estado do curso"',
+        'aria-label="Course page sections"': 'aria-label="Secções da página do curso"',
+        '>Overview</a>': '>Visão geral</a>',
+        '>Details</a>': '>Detalhes</a>',
+        '>Quality</a>': '>Qualidade</a>',
+        '>Evidence</a>': '>Evidência</a>',
+        '>Alternatives</a>': '>Alternativas</a>',
+        '<h2>About this course</h2>': '<h2>Sobre este curso</h2>',
+        '<h2>Before you start</h2>': '<h2>Antes de começar</h2>',
+        '<h3>Prerequisites</h3>': '<h3>Pré-requisitos</h3>',
+        '<h3>Required resources</h3>': '<h3>Recursos necessários</h3>',
+        '<h3>Scope</h3>': '<h3>Âmbito</h3>',
+        '<h3>Course materials</h3>': '<h3>Materiais do curso</h3>',
+        '<h2>What is free</h2>': '<h2>O que é gratuito</h2>',
+        '<strong>Certificate:</strong>': '<strong>Certificado:</strong>',
+        '<strong>Academic credit:</strong>': '<strong>Créditos académicos:</strong>',
+        '<h2>Quality review</h2>': '<h2>Revisão de qualidade</h2>',
+        '<h3>Recommendation rationale</h3>': '<h3>Justificação da recomendação</h3>',
+        '<h3>Learning need</h3>': '<h3>Necessidade de aprendizagem</h3>',
+        '<h3>Why it adds value</h3>': '<h3>Porque acrescenta valor</h3>',
+        '<summary>Admission decision rationale</summary>': '<summary>Justificação da decisão de admissão</summary>',
+        '<h2>Evidence and verification</h2>': '<h2>Evidência e verificação</h2>',
+        'Last checked:': 'Última verificação:',
+        'Next scheduled review:': 'Próxima revisão prevista:',
+        '<h2>Compared against</h2>': '<h2>Comparado com</h2>',
+        'No direct comparator is recorded for this course.': 'Não existe um comparador direto registado para este curso.',
+        '<h2>Course at a glance</h2>': '<h2>Resumo do curso</h2>',
+        '<dt>Provider</dt>': '<dt>Entidade</dt>',
+        '<dt>Language</dt>': '<dt>Idioma</dt>',
+        '<dt>Level</dt>': '<dt>Nível</dt>',
+        '<dt>Status</dt>': '<dt>Estado</dt>',
+        '<dt>Access</dt>': '<dt>Acesso</dt>',
+        '<h2>Related courses</h2>': '<h2>Cursos relacionados</h2>',
+        'Source data and methodology are public and auditable.': 'Os dados de origem e a metodologia são públicos e auditáveis.',
+        '>GitHub</a>': '>GitHub</a>',
+        f'>{course["category_name"]}</a>': f'>{category_pt}</a>',
+        static_tag(course["category_name"], "tag-category"): static_tag(category_pt, "tag-category"),
+        static_tag(language_en): static_tag(language_pt),
+        static_tag(level_en): static_tag(level_pt),
+        '<span>Pedagogy</span>': '<span>Pedagogia</span>',
+        '<span>Depth</span>': '<span>Profundidade</span>',
+        '<span>Practice</span>': '<span>Prática</span>',
+        '<span>Materials</span>': '<span>Materiais</span>',
+        '<span>Currency</span>': '<span>Atualidade</span>',
+        '<span>Expertise</span>': '<span>Especialização</span>',
+        '<span>Accessibility</span>': '<span>Acessibilidade</span>',
+        ' · free</dd>': ' · gratuito</dd>',
+    }
+    for old, new in replacements.items():
+        html = html.replace(old, new)
+
+    html = html.replace(
+        f'<link rel="alternate" hreflang="en" href="{escape(pt_url, quote=True)}">',
+        f'<link rel="alternate" hreflang="en" href="{escape(en_url, quote=True)}">',
+    )
+    html = html.replace(
+        f'<dd>{escape(languages_en)}</dd>',
+        f'<dd>{escape(languages_pt)}</dd>',
+    )
+    html = html.replace(
+        f'<dd>{escape(level_en)}</dd>',
+        f'<dd>{escape(level_pt)}</dd>',
+    )
+
+    access_labels_pt = {
+        "F0": ("Curso completo + credencial gratuita", "Percurso completo com credencial de conclusão gratuita emitida pelo fornecedor."),
+        "F1": ("Percurso avaliado gratuito", "Percurso completo com avaliação gratuita significativa, mas sem credencial formal gratuita."),
+        "F2": ("Conteúdo pedagógico completo", "Conteúdo pedagógico substancial e completo, mas sem percurso formal de conclusão gratuito."),
+    }
+    access_label_pt, access_description_pt = access_labels_pt.get(
+        course["access_short"],
+        (course["access_label"], course["access_description"]),
+    )
+    html = html.replace(course["access_label"], access_label_pt)
+    html = html.replace(course["access_description"], access_description_pt)
+
+    html = html.replace(
+        f'<a href="../../categories/{escape(course["category"])}/">{escape(category_pt)}</a>',
+        f'<a href="../?category={escape(course["category"])}">{escape(category_pt)}</a>',
+    )
+
+    html = html.replace(
+        '<a class="language-switch" href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT" aria-label="Open Portuguese catalogue">◎ EN</a>',
+        f'<a class="language-switch" href="../../../courses/{escape(course["id"])}/" lang="en" hreflang="en" aria-label="Abrir página em inglês">◎ PT</a>',
+    )
+
+    status_en = "Archived but still available" if archived else "Active"
+    status_pt = "Arquivado mas disponível" if archived else "Ativo"
+    html = html.replace(f'<dd>{escape(status_en)}</dd>', f'<dd>{escape(status_pt)}</dd>')
+
+    tag_en = static_tag("Archived" if archived else "Active", "tag-archive" if archived else "")
+    tag_pt = static_tag("Arquivado" if archived else "Ativo", "tag-archive" if archived else "")
+    html = html.replace(tag_en, tag_pt)
+
+    banner_title_en = "This course is archived" if archived else "This course is active"
+    banner_title_pt = "Este curso está arquivado" if archived else "Este curso está ativo"
+    banner_copy_en = (
+        "The course is no longer actively running. Substantial teaching materials may still remain available for reference."
+        if archived
+        else "The canonical route is currently active and has been checked against the published evidence."
+    )
+    banner_copy_pt = (
+        "O curso já não está em funcionamento ativo. Podem continuar disponíveis materiais pedagógicos substanciais para consulta."
+        if archived
+        else "O percurso canónico está atualmente ativo e foi verificado com base na evidência publicada."
+    )
+    banner_button_en = "View archived materials →" if archived else "Open official course →"
+    banner_button_pt = "Ver materiais arquivados →" if archived else "Abrir curso oficial →"
+    html = html.replace(banner_title_en, banner_title_pt)
+    html = html.replace(banner_copy_en, banner_copy_pt)
+    html = html.replace(banner_button_en, banner_button_pt)
+
+    html = html.replace(
+        f'<p class="course-provider-line">{escape(course["provider"])}</p>',
+        f'<p class="course-provider-line">{escape(course["provider"])}</p>'
+        '<p class="localization-note">Interface em português (Portugal). A evidência editorial mantém-se no idioma original para preservar a auditoria.</p>',
+    )
+
+    html = html.replace(
+        f'<a href="../../categories/{escape(course["category"])}/">View more in {escape(course["category_name"])} →</a>',
+        f'<a href="../?category={escape(course["category"])}">Ver mais em {escape(category_pt)} →</a>',
+    )
+
+    return html
+
+
 
 def render_static_category(category: dict, courses: list[dict]) -> str:
     url = f"{BASE_URL}/categories/{category['id']}/"
@@ -737,6 +960,10 @@ def build(output: Path) -> None:
             output / "courses" / course["id"] / "index.html",
             render_static_course(course, course_by_id, candidate_by_id),
         )
+        write_text(
+            output / "pt" / "courses" / course["id"] / "index.html",
+            render_static_course_pt(course, course_by_id, candidate_by_id),
+        )
 
     for category in category_rows:
         write_text(
@@ -746,6 +973,7 @@ def build(output: Path) -> None:
 
     sitemap_urls = [f"{BASE_URL}/", f"{BASE_URL}/courses/", f"{BASE_URL}/pt/", f"{BASE_URL}/pt/courses/"]
     sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
+    sitemap_urls.extend(f"{BASE_URL}/pt/courses/{course['id']}/" for course in public_courses)
     sitemap_urls.extend(f"{BASE_URL}/categories/{category['id']}/" for category in category_rows)
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -786,6 +1014,7 @@ def build(output: Path) -> None:
         output / "404.html",
     ]
     required.extend(output / "courses" / course["id"] / "index.html" for course in public_courses)
+    required.extend(output / "pt" / "courses" / course["id"] / "index.html" for course in public_courses)
     required.extend(output / "categories" / category["id"] / "index.html" for category in category_rows)
     missing_files = [str(path.relative_to(output)) for path in required if not path.exists()]
     if missing_files:
