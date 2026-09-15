@@ -118,6 +118,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
 | [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Current visual, accessibility, localisation and publication QA |
+| [2026-09-15 repository audit](docs/qa-repository-audit-2026-09-15.md) | Current data, Portuguese-language, licensing and publication audit |
 | [v0.8 hardening](docs/v0.8-hardening.md) | Earlier trust, discovery, accessibility and indexability QA |
 | [v0.7 public experience](docs/v0.7-public-experience.md) | Original public-site architecture decision |
 | [Architecture audit](AUDIT.md) | Project architecture decisions and risks |
