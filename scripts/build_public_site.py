@@ -713,6 +713,8 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         '<script src="../../theme.js" defer></script>': '<script src="../../../theme.js" defer></script>',
         'Skip to course details': 'Saltar para os detalhes do curso',
         'aria-label="Primary navigation"': 'aria-label="Navegação principal"',
+        'aria-label="Open navigation"': 'aria-label="Abrir navegação"',
+        'aria-label="Mobile navigation"': 'aria-label="Navegação móvel"',
         '>Courses</a>': '>Cursos</a>',
         '>Categories</a>': '>Categorias</a>',
         '>Principles</a>': '>Princípios</a>',
@@ -807,6 +809,11 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
     html = html.replace(
         f'<a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a>',
         f'<a class="language-switch" href="../../../courses/{escape(course["id"])}/" lang="en" hreflang="en" aria-label="English">EN</a>',
+    )
+
+    html = html.replace(
+        f'<a href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT">Português</a>',
+        f'<a href="../../../courses/{escape(course["id"])}/" lang="en" hreflang="en">English</a>',
     )
 
     status_en = "Archived but still available" if archived else "Active"
