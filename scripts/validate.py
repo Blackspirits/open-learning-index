@@ -19,7 +19,7 @@ REFERENCE_REVIEW_SCHEMA=ROOT/'data/reference-review.schema.json'
 ADMISSION_DIR=ROOT/'data/admissions'
 ADMISSION_SCHEMA=ROOT/'data/admission.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
-LANGUAGE_TAG=re.compile(r'^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*
+LANGUAGE_TAG=re.compile(r'^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$')
 def fail(msg):
     print(f'ERROR: {msg}', file=sys.stderr); return 1
 
