@@ -52,10 +52,12 @@ const categoryIcons = {
 const levelNamesPt = {
   beginner: "Principiante",
   beginner_to_intermediate: "Principiante a intermédio",
+  beginner_to_advanced: "Principiante a avançado",
   intermediate: "Intermédio",
   intermediate_to_advanced: "Intermédio a avançado",
   advanced: "Avançado",
   graduate: "Pós-graduação",
+  undergraduate: "Licenciatura",
 };
 
 const accessPt = {
@@ -172,7 +174,7 @@ function renderHome() {
   const statLanguages = document.querySelector("#stat-languages");
   if (statCourses) statCourses.textContent = state.meta.published_count;
   if (statCategories) statCategories.textContent = state.meta.category_count;
-  if (statLanguages) statLanguages.textContent = Object.keys(state.meta.language_counts).length;
+  if (statLanguages) statLanguages.textContent = state.meta.language_count ?? Object.keys(state.meta.language_counts).length;
 
   const categoryOrder = [
     "computer-science",
