@@ -136,7 +136,9 @@ function initials(provider) {
 }
 
 function scorePill(course) {
-  return `<span class="score-pill">${Number(course.recommendation_score).toFixed(1)}</span>`;
+  const score = Number(course.recommendation_score).toFixed(1);
+  const label = isPt ? `Recomendação ${score} em 10` : `Recommendation ${score} out of 10`;
+  return `<span class="score-pill" aria-label="${label}">${score}</span>`;
 }
 
 function renderMiniCourseCard(course) {
