@@ -805,6 +805,9 @@ h1, h2, h3 {
 }
 
 .more-filters summary {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
   cursor: pointer;
   font-weight: 750;
 }
@@ -1488,8 +1491,16 @@ h1, h2, h3 {
 
   .brand span:last-child { font-size: 0.8rem; }
   .main-nav { display: none; }
-  .mobile-nav { display: block; }
-  .nav-actions { gap: 6px; }
+  .mobile-nav {
+    display: block;
+    order: 3;
+    margin-left: 0;
+  }
+  .nav-actions {
+    order: 2;
+    gap: 6px;
+    margin-left: auto;
+  }
   .icon-link,
   .language-switch,
   .theme-toggle {
