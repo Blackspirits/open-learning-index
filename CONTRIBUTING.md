@@ -86,6 +86,7 @@ python scripts/generate_csv.py
 git diff --exit-code -- data/courses.csv
 python scripts/check_staleness.py
 python scripts/build_public_site.py
+python scripts/validate_public_site.py _site
 ```
 
 For deterministic freshness testing:
@@ -110,7 +111,7 @@ A good PR should:
 - identify affected course IDs;
 - preserve historical records when a decision is superseded;
 - avoid unrelated formatting or refactors;
-- pass the repository validator and deterministic site build;
+- pass the repository validator, deterministic site build and generated-site QA;
 - call out unresolved uncertainty or blockers explicitly.
 
 Do not merge known blockers merely to keep a batch moving.
@@ -126,7 +127,7 @@ The public site is deliberately static and framework-free. Visual improvements a
 - static indexability;
 - the canonical-data/source-of-truth model.
 
-Do not add provider logos, course artwork or other third-party assets unless their reuse rights are verified.
+Do not add provider logos, course artwork or other third-party assets unless their reuse rights are verified. Prefer the project's original SVG icon and visual system when a neutral interface symbol is sufficient.
 
 The pt-PT interface localises UI text. Canonical course titles, provider names and editorial evidence must not be silently machine-translated.
 

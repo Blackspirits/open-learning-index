@@ -30,7 +30,7 @@ Institutional prestige alone is not enough. Old, incomplete, shallow or technica
 
 ## Current publication
 
-As of **2026-09-14**:
+As of **2026-09-15**:
 
 | Metric | Current state |
 |---|---:|
@@ -103,8 +103,11 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 
 | Resource | Purpose |
 |---|---|
-| **[Public catalogue](https://blackspirits.github.io/open-learning-index/)** | Search and filter the published courses |
-| **[Catálogo em pt-PT](https://blackspirits.github.io/open-learning-index/pt/)** | European-Portuguese interface for the canonical catalogue |
+| **[Public index](https://blackspirits.github.io/open-learning-index/)** | Homepage, discovery and editorial context |
+| **[All courses](https://blackspirits.github.io/open-learning-index/courses/)** | Search, filter and rank all published courses |
+| **[Categories](https://blackspirits.github.io/open-learning-index/categories/)** | Browse all 19 canonical learning areas |
+| **[Índice em pt-PT](https://blackspirits.github.io/open-learning-index/pt/)** | European-Portuguese public interface |
+| **[Categorias em pt-PT](https://blackspirits.github.io/open-learning-index/pt/categories/)** | Localised category discovery |
 | [Methodology](docs/methodology.md) | Scoring model and free-access taxonomy |
 | [Research protocol](docs/research-protocol.md) | Discovery and screening rules |
 | [Deep Review protocol](docs/deep-review-protocol.md) | Evidence and scoring requirements |
@@ -112,7 +115,8 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Admission protocol](docs/admission-protocol.md) | Comparative Phase-4 rules |
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
-| [v0.8 hardening](docs/v0.8-hardening.md) | Current trust, discovery, accessibility and indexability QA |
+| [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Current visual, accessibility, localisation and publication QA |
+| [v0.8 hardening](docs/v0.8-hardening.md) | Earlier trust, discovery, accessibility and indexability QA |
 | [v0.7 public experience](docs/v0.7-public-experience.md) | Original public-site architecture decision |
 | [Architecture audit](AUDIT.md) | Project architecture decisions and risks |
 
@@ -134,9 +138,11 @@ Nothing needs to be inferred from a hidden spreadsheet or private ranking proces
 
 ## Public site
 
-The public experience is now in **v0.9**: a modernised, responsive visual system with English and European-Portuguese catalogue interfaces. It remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime.
+The public experience is now in **v0.10**: a modern, responsive light/dark interface with English and European-Portuguese routes for the homepage, catalogue, course details and category discovery.
 
-The pt-PT route localises the interface. Provider titles and canonical editorial evidence are not silently machine-translated.
+The site remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime. Canonical category pages and localized course routes are indexable, and the Pages deployment is gated on generated-site QA.
+
+The pt-PT route localises the interface and controlled taxonomy labels. Provider titles and canonical editorial evidence are not silently machine-translated.
 
 ### Build locally
 
@@ -150,7 +156,7 @@ Then open `http://localhost:8000`.
 
 ## Validation
 
-Repository CI checks the canonical data, generated CSV parity, review freshness and the public-site build.
+Repository CI checks the canonical data, generated CSV parity, review freshness, deterministic public-site generation and the built site's internal routes, locale pairs, canonical URLs, sitemap coverage and required assets.
 
 Useful local commands:
 
@@ -159,6 +165,7 @@ python scripts/validate.py
 python scripts/generate_csv.py
 python scripts/check_staleness.py
 python scripts/build_public_site.py
+python scripts/validate_public_site.py _site
 ```
 
 Generated output is disposable. Do not edit `_site/` or `data/courses.csv` as independent sources of truth.
