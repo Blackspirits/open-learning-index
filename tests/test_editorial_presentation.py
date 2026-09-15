@@ -48,28 +48,31 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertFalse(any('24 horas por dia' in value for value in values))
         self.assertFalse(any('moeda 10.0' in value.lower() or 'moeda 10,0' in value.lower() for value in values))
 
-    def test_both_course_routes_resolve_artwork_from_site_root(self):
+    def test_unverified_third_party_media_falls_back_to_original_editorial_panels(self):
         course = next(c for c in self.courses if c['id'] == 'harvard-cs50x')
         index = {c['id']:c for c in self.courses}
         en = build.render_static_course(course, index, {})
         translated = build.render_static_course_pt(course, index, {})
-        self.assertIn('src="../../assets/courses/harvard-cs50x.webp"', en)
-        self.assertIn('src="../../../assets/courses/harvard-cs50x.webp"', translated)
+        self.assertNotIn('assets/courses/harvard-cs50x.webp', en)
+        self.assertNotIn('assets/courses/harvard-cs50x.webp', translated)
+        self.assertIn('media-editorial', en)
         self.assertNotIn('F0 ·', translated)
         self.assertIn('Título original', translated)
         self.assertIn('CS50: Introdução à ciência de computadores', translated)
         self.assertIn('Ciência de Computadores e Software</a>', translated)
 
-    def test_every_official_image_is_local_attributed_and_within_asset_directory(self):
-        allowed = (ROOT/'site/assets/courses').resolve()
+    def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
-                asset = (ROOT/'site'/media['src']).resolve()
-                asset.relative_to(allowed)
-                self.assertTrue(asset.is_file())
                 self.assertTrue(media['source_page'].startswith('https://'))
                 self.assertTrue(media['source_image'].startswith('https://'))
                 self.assertEqual(len(media['sha256']), 64)
+                self.assertIn(media.get('rights_status'), {'unverified', 'verified_reuse'})
+                if media.get('published'):
+                    self.assertEqual(media.get('rights_status'), 'verified_reuse')
+                    asset = (ROOT/'site'/media['src']).resolve()
+                    asset.relative_to((ROOT/'site/assets/courses').resolve())
+                    self.assertTrue(asset.is_file())
 
     def test_new_course_without_artwork_gets_accessible_editorial_panel(self):
         course = {**self.courses[0], 'id':'new-course-without-artwork', 'provider':'A & B <School>'}
