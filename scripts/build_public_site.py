@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "data" / "courses.json"
 CATEGORIES = ROOT / "data" / "categories.json"
+CANDIDATES = ROOT / "data" / "candidates.json"
 REVIEWS_DIR = ROOT / "data" / "reviews"
 REFERENCE_REVIEWS = ROOT / "data" / "reference-reviews.json"
 ADMISSIONS_DIR = ROOT / "data" / "admissions"
@@ -322,7 +323,7 @@ def static_catalogue_card(course: dict, href_prefix: str = "../") -> str:
     )
 
 
-def render_static_course(course: dict, course_by_id: dict) -> str:
+def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict) -> str:
     editorial = course.get("editorial") or {}
     review = editorial.get("review") or {}
     admission = editorial.get("admission") or {}
@@ -452,7 +453,9 @@ def render_static_course(course: dict, course_by_id: dict) -> str:
                 f'<li><a href="../../courses/{escape(item)}/">{escape(compared["title"])}</a></li>'
             )
         else:
-            comparisons.append(f'<li>{escape(readable_id(item))}</li>')
+            candidate = candidate_by_id.get(item)
+            label = candidate.get("title") if candidate else readable_id(item)
+            comparisons.append(f'<li>{escape(label)}</li>')
 
     banner_title = "This course is archived" if archived else "This course is active"
     banner_copy = (
@@ -671,7 +674,9 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
 def build(output: Path) -> None:
     courses = json.loads(COURSES.read_text(encoding="utf-8"))
     category_rows = json.loads(CATEGORIES.read_text(encoding="utf-8"))
+    candidate_rows = json.loads(CANDIDATES.read_text(encoding="utf-8"))
     categories = {row["id"]: row for row in category_rows}
+    candidate_by_id = {row["id"]: row for row in candidate_rows}
     reviews = load_current_records(REVIEWS_DIR, "reviewed_on")
     reference_reviews = load_current_records(REFERENCE_REVIEWS, "reviewed_on", "course_id")
     admissions = load_current_records(ADMISSIONS_DIR, "decided_on")
@@ -706,7 +711,11 @@ def build(output: Path) -> None:
         raise SystemExit("ERROR: F3 course leaked into public catalogue")
 
     access_counts = Counter(course["access_short"] for course in public_courses)
-    language_counts = Counter(course["primary_language"] for course in public_courses)
+    language_counts = Counter(
+        code
+        for course in public_courses
+        for code in [course["primary_language"], *course.get("other_languages", [])]
+    )
 
     meta = {
         "canonical_count": len(courses),
@@ -714,7 +723,8 @@ def build(output: Path) -> None:
         "category_count": len(category_rows),
         "access_counts": dict(sorted(access_counts.items())),
         "language_counts": dict(sorted(language_counts.items())),
-        "source_files": ["data/courses.json", "data/categories.json"],
+        "language_count": len(language_counts),
+        "source_files": ["data/courses.json", "data/categories.json", "data/candidates.json"],
     }
 
     write_json(output / "data" / "catalog.json", public_courses)
@@ -725,7 +735,7 @@ def build(output: Path) -> None:
     for course in public_courses:
         write_text(
             output / "courses" / course["id"] / "index.html",
-            render_static_course(course, course_by_id),
+            render_static_course(course, course_by_id, candidate_by_id),
         )
 
     for category in category_rows:
@@ -754,7 +764,7 @@ def build(output: Path) -> None:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex"><title>Page not found · Open Learning Index</title>
 <link rel="stylesheet" href="styles.css"></head><body>
-<main class="shell detail-main"><section class="empty"><h1>Page not found</h1>
+<main class="shell course-page"><section class="empty"><h1>Page not found</h1>
 <p>That Open Learning Index page does not exist.</p><p><a href="./">Return to the catalogue</a></p>
 </section></main></body></html>""",
     )
