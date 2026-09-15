@@ -428,8 +428,8 @@ h1, h2, h3 {
 }
 
 .home-stats span {
-  color: rgb(255 255 255 / 0.82);
-  font-size: 0.69rem;
+  color: rgb(255 255 255 / 0.84);
+  font-size: 0.75rem;
 }
 
 .principles-strip {
@@ -496,7 +496,7 @@ h1, h2, h3 {
 }
 
 .section-heading > a {
-  font-size: 0.78rem;
+  font-size: 0.8125rem;
   font-weight: 800;
   text-decoration: none;
 }
@@ -761,12 +761,12 @@ h1, h2, h3 {
 }
 
 .compact-field select {
-  min-height: 36px;
+  min-height: 40px;
   padding: 0 30px 0 11px;
   border-radius: 9px;
   background: var(--surface);
   color: #3d556b;
-  font-size: 0.73rem;
+  font-size: 0.8125rem;
   font-weight: 700;
 }
 
@@ -983,7 +983,7 @@ h1, h2, h3 {
   align-items: center;
   margin-bottom: 22px;
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 .course-breadcrumbs a {
@@ -1286,6 +1286,21 @@ h1, h2, h3 {
 .related-list {
   display: grid;
   gap: 10px;
+}
+
+.related-more {
+  margin: 12px 0 0;
+}
+
+.related-more-link {
+  color: var(--primary-strong);
+  font-size: 0.8125rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.related-more-link:hover {
+  text-decoration: underline;
 }
 
 .related-course {
