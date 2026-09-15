@@ -142,7 +142,9 @@ The public experience is now in **v0.10**: a modern, responsive light/dark inter
 
 The site remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime. Canonical category pages and localized course routes are indexable, and the Pages deployment is gated on generated-site QA.
 
-The pt-PT route localises the interface and controlled taxonomy labels. Provider titles and canonical editorial evidence are not silently machine-translated.
+The pt-PT route localises the interface, taxonomy, course titles and displayed editorial text through a checked-in presentation dictionary. Canonical records and review ledgers remain unchanged. Course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
+
+Course artwork is served locally, with source attribution recorded in an asset manifest. Courses without suitable official artwork use a consistent editorial panel. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, artwork provenance and validation.
 
 ### Build locally
 

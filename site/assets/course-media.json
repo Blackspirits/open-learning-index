@@ -1,0 +1,442 @@
+{
+  "harvard-cs50x": {
+    "src": "assets/courses/harvard-cs50x.webp",
+    "kind": "course",
+    "source_page": "https://pll.harvard.edu/subject/computer-science-0",
+    "source_image": "https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50x_pll.png.webp?itok=uhSyeOsG",
+    "imported_on": "2026-09-15",
+    "sha256": "245a17abddcf601cd6be0890cf1223403ce9e1c7b54077c02ed8ae8e3e8849bd"
+  },
+  "harvard-cs50p": {
+    "src": "assets/courses/harvard-cs50p.webp",
+    "kind": "course",
+    "source_page": "https://pll.harvard.edu/subject/computer-science-0",
+    "source_image": "https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50P_pll.png.webp?itok=IFZgwbdy",
+    "imported_on": "2026-09-15",
+    "sha256": "a4e63b73622252be028e549c45ecfef2eb59c9f087639fde5a62f9e799224115"
+  },
+  "harvard-cs50-ai": {
+    "src": "assets/courses/harvard-cs50-ai.webp",
+    "kind": "course",
+    "source_page": "https://pll.harvard.edu/subject/computer-science-0",
+    "source_image": "https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/course/CS50AI_pll.png.webp?itok=KFKIN30I",
+    "imported_on": "2026-09-15",
+    "sha256": "e0f231c23e65430d6723813ba68bdd0ceb3e540f3047c4a8bd26e62d802ec13d"
+  },
+  "harvard-cs50-sql": {
+    "src": "assets/courses/harvard-cs50-sql.webp",
+    "kind": "course",
+    "source_page": "https://pll.harvard.edu/subject/computer-science-0",
+    "source_image": "https://pll.harvard.edu/sites/default/files/styles/16_9_medium/public/2023-09/cs50sql.png.webp?h=55e4639d&itok=EKIov-KT",
+    "imported_on": "2026-09-15",
+    "sha256": "23927efcacc3423e7ff1e26d71dbe15a2f5ebb7aaf37a2c94364d37f3d216799"
+  },
+  "helsinki-full-stack-open": {
+    "src": "assets/courses/helsinki-full-stack-open.webp",
+    "kind": "course",
+    "source_page": "https://fullstackopen.com/en/",
+    "source_image": "https://fullstackopen.com/static/EYE_green_wide-0a72f74a959f54d0f3e4bb8c67f6f158.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "cc9f2d9822382b5499aa281ec1df6373544f705b7a4e65f873c2ec0a26b1cefa"
+  },
+  "mit-18-06sc-linear-algebra": {
+    "src": "assets/courses/mit-18-06sc-linear-algebra.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+    "source_image": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/ad862b68e2323331fd3ee944ed704f38_18-06scf11.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "d8e9a486bea75753602e2d1ced638dff712f820c189c53d8bc9428284a7b45b1"
+  },
+  "kaggle-intro-machine-learning": {
+    "src": "assets/courses/kaggle-intro-machine-learning.webp",
+    "kind": "provider",
+    "source_page": "https://www.kaggle.com/learn/intro-to-machine-learning",
+    "source_image": "https://www.kaggle.com/static/images/logos/kaggle-logo-opengraph.png",
+    "imported_on": "2026-09-15",
+    "sha256": "7f3484645327a27dcc6b9169db4f2860460a54308383b9d48c47aa7f07c540be"
+  },
+  "mit-6-006-algorithms": {
+    "src": "assets/courses/mit-6-006-algorithms.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/",
+    "source_image": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/1075c5ac06ae4c2cea8c89e9772da78a_6-006f11.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "d8807e078b8b1a4ad53d395409cf40462434c130809436941957d4cd74c3bc37"
+  },
+  "odin-foundations": {
+    "src": "assets/courses/odin-foundations.webp",
+    "kind": "provider",
+    "source_page": "https://www.theodinproject.com/paths/foundations/courses/foundations",
+    "source_image": "https://www.theodinproject.com/assets/og-logo-2bdf3a30.png",
+    "imported_on": "2026-09-15",
+    "sha256": "003bdac3098010b4f1143000a941b80c67eebd74fbc6f36b2e7ef92dd03e8020"
+  },
+  "mit-missing-semester-2026": {
+    "src": "assets/courses/mit-missing-semester-2026.webp",
+    "kind": "course",
+    "source_page": "https://missing.csail.mit.edu/",
+    "source_image": "https://missing.csail.mit.edu/static/assets/thumbnails/default.png",
+    "imported_on": "2026-09-15",
+    "sha256": "b6f519fb031c2076bb45fdcfc8d117388aad575ada3f2abb3721eca918fc91d6"
+  },
+  "mit-18-05-probability-statistics": {
+    "src": "assets/courses/mit-18-05-probability-statistics.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
+    "source_image": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/mit18_05_s22_chp.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "40f60e7b3d292b050ee90f5d96e3d28949f13f8dbbaa19454b0685730d44a3fe"
+  },
+  "mit-18-100a-real-analysis": {
+    "src": "assets/courses/mit-18-100a-real-analysis.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/",
+    "source_image": "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/18-100af20.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "1a2eb11b6e4bb521572fe0c989ab57048c51a5692c31cfeea132093c72d523e8"
+  },
+  "mit-6-042j-math-cs": {
+    "src": "assets/courses/mit-6-042j-math-cs.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/",
+    "source_image": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/6-042js15.jpeg",
+    "imported_on": "2026-09-15",
+    "sha256": "2463f840bfb329ebb4b8b8579086ea9c9a7d1a38a5831a92eea658bf44e99291"
+  },
+  "mit-18-01sc-calculus": {
+    "src": "assets/courses/mit-18-01sc-calculus.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+    "source_image": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/7b739fdc0a8fb0302fdbe037fbaa89a3_CHP_secant.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "f6bd9892c64c779454c3ac98f9dec4571cc4babb33b18f76e39fe1b7fc43746c"
+  },
+  "mit-18-02sc-multivariable-calculus": {
+    "src": "assets/courses/mit-18-02sc-multivariable-calculus.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+    "source_image": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/98f7f76b373d20b5c3f849016d8ff5a1_18-02scf10.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "c07a6c3b408b7afc959e8ac315d49f2a616c1faffa580f55e0e28ae8c79637f2"
+  },
+  "mit-18-03sc-differential-equations": {
+    "src": "assets/courses/mit-18-03sc-differential-equations.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+    "source_image": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/41623c6eccbf82e137bebd7e69b8a4d8_18-03scf11.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "a4e25e1eef0f93f337f732dbaa92727865e82080e21a7662b4b72ad3e1a78f51"
+  },
+  "mru-principles-macroeconomics": {
+    "src": "assets/courses/mru-principles-macroeconomics.webp",
+    "kind": "course",
+    "source_page": "https://learn.mru.org/courses/principles-of-macroeconomics",
+    "source_image": "https://cdn.sanity.io/images/xe9l20jj/production/5056ac556531c129cab72cbcce3757741d2b201b-1920x1080.png",
+    "imported_on": "2026-09-15",
+    "sha256": "3620cd6360d313f35d251d779655510b242580901bfb998480971c396fe21d1d"
+  },
+  "mit-14-03-microeconomic-theory-public-policy-2025": {
+    "src": "assets/courses/mit-14-03-microeconomic-theory-public-policy-2025.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/",
+    "source_image": "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/mit14_03_f25_chpimage.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "0164a67d01d99c4254b8b4fc47a62e185880653ec583cabc34afdcbf51407efe"
+  },
+  "mit-14-454-economic-crises-2026": {
+    "src": "assets/courses/mit-14-454-economic-crises-2026.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/",
+    "source_image": "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/mit14_454_s26_chp.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "fbe946e3d94a52dd10055c046a3ee9a1a22a0ad4b91e1ff0b0e529f8791d5107"
+  },
+  "mit-15-393-nuts-bolts-new-ventures": {
+    "src": "assets/courses/mit-15-393-nuts-bolts-new-ventures.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/",
+    "source_image": "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/mit15_393_iap25_chpimage.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "12cab5a4e96a918fbcfdca6b0c42211287c143fc3c9a659be730c1437e3e065f"
+  },
+  "nau-academia-empreendedorismo": {
+    "src": "assets/courses/nau-academia-empreendedorismo.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/academia-de-empreendedorismo/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/d0/ba/d0bac3fe-2cc3-466b-97a4-1e2adfd30796/startup-3267505_1280.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "e0eeeaa369d75c4a613a10058d4662040505e5d86a27827f40a9bf070e0ee8aa"
+  },
+  "openclassrooms-initiez-vous-gestion-projet": {
+    "src": "assets/courses/openclassrooms-initiez-vous-gestion-projet.webp",
+    "kind": "course",
+    "source_page": "https://openclassrooms.com/fr/courses/8744811-initiez-vous-a-la-gestion-de-projet",
+    "source_image": "https://course.oc-static.com/courses/8744811/8744811_teaser_picture_1764319431.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "0a21783cfbabbcfe87c34e83ccef2b4e2181464a86e813c0998855e7c6f5ec75"
+  },
+  "openclassrooms-manage-team": {
+    "src": "assets/courses/openclassrooms-manage-team.webp",
+    "kind": "course",
+    "source_page": "https://openclassrooms.com/fr/courses/7494031-manage-a-team",
+    "source_image": "https://course.oc-static.com/courses/7494031/7494031_teaser_picture_1680860020.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "333bd24c9253a0c5fbc275e1dd7905efb9beeaee1abdd7e8e9a33512f6cf16bf"
+  },
+  "mit-8-01sc-classical-mechanics": {
+    "src": "assets/courses/mit-8-01sc-classical-mechanics.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+    "source_image": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/424dd4989c1235387a32fbb5a17b80c1_8-01scf16.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "3c1713b34f155fa1bad9a389552e45a2171c29f872d212f9d6461658b6eb32b1"
+  },
+  "mit-5-111sc-chemical-science": {
+    "src": "assets/courses/mit-5-111sc-chemical-science.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
+    "source_image": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/afc26c2e5de67efafa76680f079d1254_5-111scf14.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "ed3ea457cd408e77e95f114d0eaf3b7dfa81792e41bb542581c86033186bf575"
+  },
+  "mit-7-016-intro-biology": {
+    "src": "assets/courses/mit-7-016-intro-biology.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/",
+    "source_image": "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/7518d9c8111daaf0764e4675f60e04ed_7-016f18.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "bdc81908f2696849d6f67f86ec6f55f7ba885828ad491ec675975421713dc2c5"
+  },
+  "mit-24-00-problems-philosophy": {
+    "src": "assets/courses/mit-24-00-problems-philosophy.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/",
+    "source_image": "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/55837ae5c3d82b8c4ac4aba94836f742_24-00f19.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "284ed92d319ce4b9e159bcd4d0dacffe862b2644b732a6ade66b532895d061ce"
+  },
+  "cisco-endpoint-security": {
+    "src": "assets/courses/cisco-endpoint-security.webp",
+    "kind": "course",
+    "source_page": "https://www.netacad.com/courses/endpoint-security",
+    "source_image": "https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/83aab0d6-15f6-11ec-9621-0242ac130002/image.png",
+    "imported_on": "2026-09-15",
+    "sha256": "2d8b0e1b8003108198ccea7e34d211f0071fd21b28fa66e2b110220aff9ae214"
+  },
+  "cisco-network-defense": {
+    "src": "assets/courses/cisco-network-defense.webp",
+    "kind": "course",
+    "source_page": "https://www.netacad.com/courses/network-defense",
+    "source_image": "https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/ce683bb8-1b8a-11ec-9621-0242ac130002/image.png",
+    "imported_on": "2026-09-15",
+    "sha256": "9d9f4646bfffc6650cf7f40f57eeb57f3212d4e5db400b05b66596b9a20c7e31"
+  },
+  "cisco-cyber-threat-management": {
+    "src": "assets/courses/cisco-cyber-threat-management.webp",
+    "kind": "course",
+    "source_page": "https://www.netacad.com/courses/cyber-threat-management",
+    "source_image": "https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/407c875e-1b8b-11ec-9621-0242ac130002/image.png",
+    "imported_on": "2026-09-15",
+    "sha256": "ad38ee5c729e99975049bbbd20053a147a971e59a070a333daf1a143ee2a7a6f"
+  },
+  "cisco-ethical-hacker": {
+    "src": "assets/courses/cisco-ethical-hacker.webp",
+    "kind": "course",
+    "source_page": "https://www.netacad.com/courses/ethical-hacker",
+    "source_image": "https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/fc550241-ee17-45d1-87dd-1046b6aeb89a/image.png",
+    "imported_on": "2026-09-15",
+    "sha256": "0e6683c15d42091127c8104cb8a7493fe36aebb2af0ef1baa3df42676f3defb7"
+  },
+  "cisco-networking-basics": {
+    "src": "assets/courses/cisco-networking-basics.webp",
+    "kind": "course",
+    "source_page": "https://www.netacad.com/courses/networking-basics",
+    "source_image": "https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/37d55b0f-dedd-41ca-a33d-65c01569816b/image.png",
+    "imported_on": "2026-09-15",
+    "sha256": "8540105eae29f0323c2d2e1e271e3dd75798062bd188ef2731a187436da12b25"
+  },
+  "huggingface-agents-course": {
+    "src": "assets/courses/huggingface-agents-course.webp",
+    "kind": "course",
+    "source_page": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+    "source_image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/learn/agents-course/unit0/introduction.png",
+    "imported_on": "2026-09-15",
+    "sha256": "a9e30c7847a6fc65bcac5c20b8537ade16706844ed2aca2b9fdf2943ea69df4c"
+  },
+  "cisco-data-analytics-essentials": {
+    "src": "assets/courses/cisco-data-analytics-essentials.webp",
+    "kind": "course",
+    "source_page": "https://www.netacad.com/courses/data-analytics-essentials",
+    "source_image": "https://www.netacad.com/p/ff9e491c-49be-4734-803e-a79e6e83dab1/ccd24c0e-1253-4cf7-a5b6-30a04c5731d6/image.png",
+    "imported_on": "2026-09-15",
+    "sha256": "3667817d72e84224450516670c88730785a22a625090b9eb19c875f375da95f7"
+  },
+  "dw-nicos-weg-a1-b1": {
+    "src": "assets/courses/dw-nicos-weg-a1-b1.webp",
+    "kind": "course",
+    "source_page": "https://learngerman.dw.com/en/nicos-weg/c-36519789",
+    "source_image": "https://static.dw.com/image/62607222_401.png",
+    "imported_on": "2026-09-15",
+    "sha256": "1fb00d34fa083149156bd5212ff3288235678e9a1f8fa76731c48d1c5ee399c8"
+  },
+  "freecodecamp-a2-english-developers": {
+    "src": "assets/courses/freecodecamp-a2-english-developers.webp",
+    "kind": "provider",
+    "source_page": "https://www.freecodecamp.org/learn/a2-english-for-developers",
+    "source_image": "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png",
+    "imported_on": "2026-09-15",
+    "sha256": "0f3f7a81b11d2ebf8da572c1b9741707ac13a3eb510e4514c9b89ec58b7e04a5"
+  },
+  "freecodecamp-b1-english-developers": {
+    "src": "assets/courses/freecodecamp-b1-english-developers.webp",
+    "kind": "provider",
+    "source_page": "https://www.freecodecamp.org/learn/b1-english-for-developers",
+    "source_image": "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png",
+    "imported_on": "2026-09-15",
+    "sha256": "0f3f7a81b11d2ebf8da572c1b9741707ac13a3eb510e4514c9b89ec58b7e04a5"
+  },
+  "nau-saude-mental-bem-estar-ensino-superior": {
+    "src": "assets/courses/nau-saude-mental-bem-estar-ensino-superior.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/1f/f1/1ff142c4-d4a1-42ab-8569-5d574ebbb42e/saude-mental-bem-estar-ensino-superior.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "871968e09350ee9ff3ad54076882408e85b6008c5e512e183da90100aa80a1ba"
+  },
+  "fao-improving-nutrition-agri-food": {
+    "src": "assets/courses/fao-improving-nutrition-agri-food.webp",
+    "kind": "course",
+    "source_page": "https://elearning.fao.org/course/view.php?id=307",
+    "source_image": "https://elearning.fao.org/pluginfile.php/229646/course/overviewfiles/Improving-Nutrition-through-Agriculture-and-Food-Systems.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "713f3b320a639f33db64d6d45c38f585c5edfe3493dc338d64851d6bf6f48e55"
+  },
+  "fun-la-musique-quelle-histoire": {
+    "src": "assets/courses/fun-la-musique-quelle-histoire.webp",
+    "kind": "course",
+    "source_page": "https://www.fun-mooc.fr/fr/cours/la-musique-quelle-histoire/",
+    "source_image": "https://1c1fef7b-2fa0-455a-987d-673bcdd072ae.svc.edge.scw.cloud/media/filer_public_thumbnails/filer_public/cb/76/cb768252-9a20-40b0-9ed0-6a3829d39d56/couverture_mooc.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "4727dffa7b3908e7bffa6639081a70697f0d975889ea951a400ae1cc3024f40a"
+  },
+  "ableton-learning-music": {
+    "src": "assets/courses/ableton-learning-music.webp",
+    "kind": "course",
+    "source_page": "https://learningmusic.ableton.com/",
+    "source_image": "https://learningmusic.ableton.com/images/og-image.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "3d907e42dd2b4f41c2b61d2bb5cd310df66947405e72b35a088fe61968e83b56"
+  },
+  "musictheory-net-lessons": {
+    "src": "assets/courses/musictheory-net-lessons.webp",
+    "kind": "provider",
+    "source_page": "https://www.musictheory.net/lessons",
+    "source_image": "https://www.musictheory.net/vc/26/0/64e93ece5818d5daebdf4a813fbd21cfb8a5f95d/favicon_256.png",
+    "imported_on": "2026-09-15",
+    "sha256": "48ed9ac64e4ef932a0448b743dea9db3a6eb167ab7c995d392b95757fa31ee7e"
+  },
+  "figma-getting-started-design": {
+    "src": "assets/courses/figma-getting-started-design.webp",
+    "kind": "course",
+    "source_page": "https://www.figma.com/resource-library/getting-started-in-design/",
+    "source_image": "https://cdn.sanity.io/images/599r6htc/regionalized/80e3e2472a0120ed87663cf758f1cbfe9be2be47-2400x1256.png?w=1200&q=70&fit=max&auto=format",
+    "imported_on": "2026-09-15",
+    "sha256": "13e0ccc99ef81b61bb69b0722edf2d34c812b7f5fb9ce71544ee683f8af8fb5b"
+  },
+  "mit-6-7220j-nonlinear-optimization": {
+    "src": "assets/courses/mit-6-7220j-nonlinear-optimization.webp",
+    "kind": "course",
+    "source_page": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/",
+    "source_image": "https://ocw.mit.edu/courses/6-7220j-nonlinear-optimization-spring-2025/mit6_7220_s25.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "3c854de9b4164d1d53dc47379c7fb3cd6f1f70af32d82396c91e54de982f14b5"
+  },
+  "nau-introducao-programacao-conceitos-fundamentais": {
+    "src": "assets/courses/nau-introducao-programacao-conceitos-fundamentais.webp",
+    "kind": "provider",
+    "source_page": "https://www.edx.org/learn/computer-science/fundacao-para-a-ciencia-e-a-tecnologia-introducao-a-programacao-conceitos-fundamentais",
+    "source_image": "https://prod-discovery.edx-cdn.org/organization/logos/ad746a32-a177-4d1c-ac53-dc5436b5a817-8bbbd729965c.png",
+    "imported_on": "2026-09-15",
+    "sha256": "df0af0fab5006cc8385b47327c8d3f5d9de7ee3a80f4667824417e33a1eedb5e"
+  },
+  "nau-algoritmos-complexidade": {
+    "src": "assets/courses/nau-algoritmos-complexidade.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/algoritmos-e-complexidade/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/f1/a5/f1a54b94-7e09-493f-a070-6d9115f4e7f5/algoritmos-e-complexidade.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "0038d4ad87ce4520cc60e07390e0e61e0f2081340e1644a44225bfc0416d101b"
+  },
+  "nau-sustentabilidade-ambiental": {
+    "src": "assets/courses/nau-sustentabilidade-ambiental.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/sustentabilidade-ambiental/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/a4/19/a419b1c3-76ca-4a80-a6b8-7790a97fc4dd/original.png__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "2541dd02a57dc0f3181d58656bb39f1559149cb8e859b45d02901c39dd26de9c"
+  },
+  "nau-lingua-portuguesa-escrita-academica": {
+    "src": "assets/courses/nau-lingua-portuguesa-escrita-academica.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/lingua-portuguesa-em-contexto-de-escrita-academica/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/e4/df/e4df883a-8676-4c39-bc97-17eb1e109bf3/lingua_portuguesa_iul_2583_1200.png__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "11edede93ce97d233e9a12f7a8fb85bc7f4670e7e5c7c2f9a5f3518beffcac1a"
+  },
+  "nau-iniciacao-lingua-portuguesa": {
+    "src": "assets/courses/nau-iniciacao-lingua-portuguesa.webp",
+    "kind": "provider",
+    "source_page": "https://www.edx.org/learn/language/fundacao-para-a-ciencia-e-a-tecnologia-iniciacao-a-lingua-portuguesa",
+    "source_image": "https://prod-discovery.edx-cdn.org/organization/logos/ad746a32-a177-4d1c-ac53-dc5436b5a817-8bbbd729965c.png",
+    "imported_on": "2026-09-15",
+    "sha256": "df0af0fab5006cc8385b47327c8d3f5d9de7ee3a80f4667824417e33a1eedb5e"
+  },
+  "nau-fundamentos-bases-dados": {
+    "src": "assets/courses/nau-fundamentos-bases-dados.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/fundamentos-de-bases-de-dados/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/e6/ee/e6ee1069-7629-483b-a191-623c1a43d225/prodigi-fundamentos-bases-de-dados.png__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "91b275ec124b2a726f2b32fa4ad748bd4d991f95322f47a41b059cfe07d705ad"
+  },
+  "nau-estruturas-dados": {
+    "src": "assets/courses/nau-estruturas-dados.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/estruturas-de-dados/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/37/c7/37c7c8ef-b678-4c7b-8f8d-7325256ba3e9/estrutura-dados.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "e79a839eea628d370f65918c8180903f71fdbfe3afb3e0e1b96160c68ce55e57"
+  },
+  "nau-ciencia-aberta-dados-fair": {
+    "src": "assets/courses/nau-ciencia-aberta-dados-fair.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/ciencia-aberta-e-dados-fair-principios-praticas-e-politicas/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/28/a3/28a3a351-9d83-4e9e-9fe6-4fa5bfa820c8/ciencia-aberta-dados-fair.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "20aa950a96ea7b135986dc1f3008638ace58c5dcaf89be08a006775501e7b211"
+  },
+  "nau-regulacao-digital": {
+    "src": "assets/courses/nau-regulacao-digital.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/regulacao-digital/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/b1/61/b1618dd5-9273-4dfa-b945-af2f0d71083c/regulacao_digital.png__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "4ea2b9a3cc53bbe0482ef105afae220bbf2657fd245f50076c4f587382495b9d"
+  },
+  "nau-responsavel-ciberseguranca": {
+    "src": "assets/courses/nau-responsavel-ciberseguranca.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/responsavel-de-ciberseguranca/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/d2/2a/d22aa3aa-ad6e-4d72-9aaa-8cb70c80ad74/capa_nau_responsavel_ciberseguranca.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "9a7fb36cbd487f96a1ba89b46dfa9aac312e2558c0aa2750a94ddb9079daa7a6"
+  },
+  "nau-ciberseguranca-executivos-nis2": {
+    "src": "assets/courses/nau-ciberseguranca-executivos-nis2.webp",
+    "kind": "course",
+    "source_page": "https://www.nau.edu.pt/pt/curso/ciberseguranca-para-executivos-preparacao-para-a-nis2/",
+    "source_image": "https://nau-prod-richie-nau-media.rgw.nau.fccn.pt/media/filer_public_thumbnails/filer_public/1c/2c/1c2c0556-5413-4086-bf5e-2687975afb4a/thumbnails_nau_executivo_02.jpg__1200x630_q85_crop_replace_alpha-%23FFFFFF_subsampling-2_upscale.jpg",
+    "imported_on": "2026-09-15",
+    "sha256": "effd4866d321a371e96ed5817ec298a4b837bc59d0bec4feeaedb77d192362b5"
+  }
+}
