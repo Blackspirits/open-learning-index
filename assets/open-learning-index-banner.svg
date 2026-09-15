@@ -1,105 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
   <title id="title">Open Learning Index</title>
-  <desc id="desc">Dark navy Open Learning Index banner with blue and cyan accents, evidence badges, and a trust panel matching the public site.</desc>
+  <desc id="desc">Open Learning Index banner matching the public site's light mountain landscape, teal accents and evidence-first visual identity.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#06101d"/>
-      <stop offset="0.52" stop-color="#0a1728"/>
-      <stop offset="1" stop-color="#0d1c31"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c6e7f4"/>
+      <stop offset=".5" stop-color="#e7f5f8"/>
+      <stop offset="1" stop-color="#f8fbfc"/>
     </linearGradient>
-    <linearGradient id="accent" x1="225" y1="170" x2="860" y2="355" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#8eafff"/>
-      <stop offset="1" stop-color="#6ee7df"/>
+    <linearGradient id="far" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9cc7d8"/>
+      <stop offset="1" stop-color="#5d8da4"/>
     </linearGradient>
-    <linearGradient id="panel" x1="1035" y1="92" x2="1455" y2="447" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff" stop-opacity=".105"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity=".035"/>
+    <linearGradient id="mid" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#6f9fb2"/>
+      <stop offset="1" stop-color="#37697d"/>
     </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientTransform="translate(1270 80) rotate(110) scale(360 460)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#10b9c7" stop-opacity=".22"/>
-      <stop offset="1" stop-color="#10b9c7" stop-opacity="0"/>
+    <linearGradient id="near" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#356474"/>
+      <stop offset="1" stop-color="#163b49"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#215362"/>
+      <stop offset="1" stop-color="#0a2a34"/>
+    </linearGradient>
+    <radialGradient id="sun" cx=".78" cy=".16" r=".32">
+      <stop stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset=".4" stop-color="#ffffff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientTransform="translate(280 520) rotate(-34) scale(510 390)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2563eb" stop-opacity=".27"/>
-      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
-      <path d="M46 0H0V46" fill="none" stroke="#ffffff" stroke-opacity=".055"/>
-    </pattern>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000000" flood-opacity=".28"/>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#173847" flood-opacity=".18"/>
     </filter>
   </defs>
 
-  <rect width="1600" height="520" rx="28" fill="url(#bg)"/>
-  <rect width="1600" height="520" rx="28" fill="url(#glowA)"/>
-  <rect width="1600" height="520" rx="28" fill="url(#glowB)"/>
-  <rect width="1600" height="520" rx="28" fill="url(#grid)" opacity=".8"/>
+  <rect width="1600" height="520" rx="30" fill="url(#sky)"/>
+  <rect width="1600" height="520" rx="30" fill="url(#sun)"/>
+  <circle cx="1240" cy="78" r="48" fill="#fff" opacity=".35"/>
 
-  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">
-    <g transform="translate(84 68)">
-      <rect width="48" height="48" rx="14" fill="#2563eb" fill-opacity=".18" stroke="#a8c6ff" stroke-opacity=".32"/>
-      <text x="24" y="30.5" fill="#c9fbff" font-size="13" font-weight="850" text-anchor="middle" letter-spacing="1.3">OLI</text>
-      <text x="65" y="30" fill="#c5d4e9" font-size="17" font-weight="760">OPEN LEARNING INDEX</text>
+  <g fill="#fff" opacity=".48">
+    <path d="M1040 118c34-34 87-36 124-11 21-18 58-16 78 7 42-11 80 18 82 51H1014c1-20 10-35 26-47z"/>
+    <path d="M210 104c26-24 65-26 94-7 16-14 45-13 60 5 31-8 61 13 63 38H191c1-14 7-26 19-36z"/>
+  </g>
+
+  <path d="M0 346 174 238l104 67 152-127 104 68 168-157 122 88 117-82 156 130 118-72 195 137 210-40v270H0z" fill="url(#far)"/>
+  <path d="M0 401 205 282l129 96 184-133 137 110 168-122 113 92 148-135 167 149 171-92 178 130v143H0z" fill="url(#mid)" opacity=".96"/>
+  <path d="M0 448 203 344l143 75 192-89 141 80 180-114 145 112 147-102 188 105 111-52 150 74v87H0z" fill="url(#near)"/>
+  <path d="M0 482 122 438l97 27 96-68 123 63 151-46 123 65 170-79 135 58 150-47 128 51 225-46v104H0z" fill="url(#ground)"/>
+
+  <g opacity=".28" fill="none" stroke="#e9fbfb" stroke-width="3">
+    <path d="M209 281 278 305 430 178"/>
+    <path d="M518 245 655 355 823 233"/>
+    <path d="M1084 190 1251 339 1422 247"/>
+  </g>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <g transform="translate(72 54)">
+      <circle cx="22" cy="22" r="21" fill="#ffffff" fill-opacity=".82" stroke="#109d8f" stroke-width="2"/>
+      <path d="M22 31V13M17 18l5-5 5 5M16 31h12" fill="none" stroke="#0b7f74" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="58" y="28" fill="#0b2632" font-size="19" font-weight="760">Open Learning Index</text>
     </g>
 
-    <text x="84" y="205" fill="#f8fbff" font-size="75" font-weight="850" letter-spacing="-4.2">Open Learning</text>
-    <text x="84" y="282" fill="url(#accent)" font-size="75" font-weight="850" letter-spacing="-4.2">Index</text>
-    <text x="84" y="335" fill="#b9c7db" font-size="25" font-weight="650">Curated. Auditable. Continuously maintained.</text>
-    <text x="84" y="375" fill="#899bb3" font-size="18">Exceptional free learning, verified with evidence.</text>
+    <text x="72" y="168" fill="#0b2632" font-size="64" font-weight="820" letter-spacing="-2.7">Open Learning</text>
+    <text x="72" y="231" fill="#0b2632" font-size="64" font-weight="820" letter-spacing="-2.7">for a Better Tomorrow</text>
+    <text x="72" y="278" fill="#314f5e" font-size="22" font-weight="560">Curated. Evidence-based. Continuously maintained.</text>
 
-    <g transform="translate(84 413)" font-size="14" font-weight="720">
+    <g transform="translate(72 308)">
       <g>
-        <rect width="190" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".11"/>
-        <circle cx="21" cy="19" r="5" fill="#59d8dd"/>
-        <text x="36" y="24" fill="#aebbd0">Primary-source verification</text>
+        <rect width="176" height="40" rx="20" fill="#0c8f81"/>
+        <text x="88" y="25" fill="#fff" font-size="14" font-weight="760" text-anchor="middle">Evidence first</text>
       </g>
-      <g transform="translate(204)">
-        <rect width="151" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".11"/>
-        <circle cx="21" cy="19" r="5" fill="#7fa7ff"/>
-        <text x="36" y="24" fill="#aebbd0">No paywall bait</text>
+      <g transform="translate(190)">
+        <rect width="164" height="40" rx="20" fill="#ffffff" fill-opacity=".86" stroke="#b8d6df"/>
+        <text x="82" y="25" fill="#244555" font-size="14" font-weight="720" text-anchor="middle">Free access</text>
       </g>
-      <g transform="translate(369)">
-        <rect width="183" height="38" rx="19" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".11"/>
-        <circle cx="21" cy="19" r="5" fill="#59d8dd"/>
-        <text x="36" y="24" fill="#aebbd0">Continuously maintained</text>
+      <g transform="translate(368)">
+        <rect width="164" height="40" rx="20" fill="#ffffff" fill-opacity=".86" stroke="#b8d6df"/>
+        <text x="82" y="25" fill="#244555" font-size="14" font-weight="720" text-anchor="middle">EN + pt-PT</text>
       </g>
     </g>
 
-    <g transform="translate(980 72)" filter="url(#shadow)">
-      <rect width="518" height="376" rx="28" fill="url(#panel)" stroke="#ffffff" stroke-opacity=".13"/>
-      <text x="34" y="48" fill="#87dfe4" font-size="13" font-weight="820" letter-spacing="1.55">WHY TRUST THIS INDEX?</text>
-      <text x="34" y="91" fill="#f6f9fd" font-size="31" font-weight="820" letter-spacing="-1.05">Not a popularity list.</text>
-      <text x="34" y="123" fill="#aebdd1" font-size="15">Every published course earns its place.</text>
+    <g transform="translate(1075 82)" filter="url(#shadow)">
+      <rect width="440" height="286" rx="24" fill="#ffffff" fill-opacity=".9" stroke="#c8dfe6"/>
+      <text x="30" y="42" fill="#0c8f81" font-size="13" font-weight="800" letter-spacing="1.2">WHY TRUST THE INDEX?</text>
+      <text x="30" y="82" fill="#0b2632" font-size="29" font-weight="810" letter-spacing="-1">Quality over quantity.</text>
 
-      <g transform="translate(34 153)">
+      <g transform="translate(30 111)">
         <g>
-          <rect width="450" height="56" rx="15" fill="#08182a" fill-opacity=".52" stroke="#ffffff" stroke-opacity=".08"/>
-          <rect x="14" y="12" width="32" height="32" rx="10" fill="#10b9c7" fill-opacity=".12" stroke="#87dfe4" stroke-opacity=".2"/>
-          <path d="m23 28 6 6 10-13" fill="none" stroke="#78e1e5" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
-          <text x="60" y="26" fill="#f6f9fd" font-size="15" font-weight="760">Access verified</text>
-          <text x="60" y="44" fill="#91a2b8" font-size="12.5">What is actually free is checked.</text>
+          <circle cx="17" cy="17" r="17" fill="#dff5ef"/>
+          <path d="m10 18 5 5 9-11" fill="none" stroke="#0c8f81" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="48" y="14" fill="#153541" font-size="15" font-weight="740">Access verified</text>
+          <text x="48" y="33" fill="#5c7480" font-size="12.5">What is actually free is checked.</text>
         </g>
-        <g transform="translate(0 66)">
-          <rect width="450" height="56" rx="15" fill="#08182a" fill-opacity=".52" stroke="#ffffff" stroke-opacity=".08"/>
-          <rect x="14" y="12" width="32" height="32" rx="10" fill="#2563eb" fill-opacity=".16" stroke="#8eafff" stroke-opacity=".22"/>
-          <path d="M22 36h16M22 30h11M22 24h16" fill="none" stroke="#9ebaff" stroke-width="2.2" stroke-linecap="round"/>
-          <text x="60" y="26" fill="#f6f9fd" font-size="15" font-weight="760">Quality reviewed</text>
-          <text x="60" y="44" fill="#91a2b8" font-size="12.5">Pedagogy, depth, practice and currency.</text>
+        <g transform="translate(0 61)">
+          <circle cx="17" cy="17" r="17" fill="#e4f0fb"/>
+          <path d="M9 11h16M9 17h12M9 23h8" fill="none" stroke="#2f83d5" stroke-width="2.1" stroke-linecap="round"/>
+          <text x="48" y="14" fill="#153541" font-size="15" font-weight="740">Quality reviewed</text>
+          <text x="48" y="33" fill="#5c7480" font-size="12.5">Pedagogy, depth, practice and currency.</text>
         </g>
-        <g transform="translate(0 132)">
-          <rect width="450" height="56" rx="15" fill="#08182a" fill-opacity=".52" stroke="#ffffff" stroke-opacity=".08"/>
-          <rect x="14" y="12" width="32" height="32" rx="10" fill="#10b9c7" fill-opacity=".12" stroke="#87dfe4" stroke-opacity=".2"/>
-          <path d="M22 35h16M25 30l5-7 5 4 4-7" fill="none" stroke="#78e1e5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-          <text x="60" y="26" fill="#f6f9fd" font-size="15" font-weight="760">Alternatives compared</text>
-          <text x="60" y="44" fill="#91a2b8" font-size="12.5">Strong challengers are tested head-to-head.</text>
+        <g transform="translate(0 122)">
+          <circle cx="17" cy="17" r="17" fill="#fff0e4"/>
+          <path d="M9 24h16M11 20l5-7 5 4 4-7" fill="none" stroke="#d96f1c" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="48" y="14" fill="#153541" font-size="15" font-weight="740">Alternatives compared</text>
+          <text x="48" y="33" fill="#5c7480" font-size="12.5">Strong challengers are tested head-to-head.</text>
         </g>
-      </g>
-
-      <g transform="translate(34 352)">
-        <rect width="128" height="2" rx="1" fill="#59d8dd" opacity=".75"/>
-        <rect x="136" width="52" height="2" rx="1" fill="#7fa7ff" opacity=".7"/>
-        <rect x="196" width="20" height="2" rx="1" fill="#ffffff" opacity=".22"/>
       </g>
     </g>
   </g>
