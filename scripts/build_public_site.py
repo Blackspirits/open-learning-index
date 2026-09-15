@@ -492,9 +492,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     related_html = "".join(
         '<a class="related-course" href="../../courses/'
         + escape(item["id"])
-        + '/"><span class="related-mark" aria-hidden="true">'
-        + escape(provider_initials(item["provider"]))
-        + '</span><span><strong>'
+        + '/"><span class="related-mark" data-icon="curated" aria-hidden="true"></span><span><strong>'
         + escape(item["title"])
         + '</strong><small>'
         + escape(item["provider"])
@@ -622,19 +620,19 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
   <header class="topbar">
     <div class="shell topbar-inner">
       <a class="brand" href="../../" aria-label="Open Learning Index home">
-        <span class="brand-symbol" aria-hidden="true">↟</span><span>Open Learning Index</span>
+        <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span>
       </a>
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="../../courses/">Courses</a>
-        <a href="../../#categories">Categories</a>
+        <a href="../../categories/">Categories</a>
         <a href="../../#about">Principles</a>
         <a href="../../#how-it-works">How it works</a>
       </nav>
       <details class="mobile-nav">
         <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
-        <nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../#categories">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav>
+        <nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../categories/">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav>
       </details>
-      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses">⌕</a><a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon aria-hidden="true">☾</span></button></div>
+      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
     </div>
   </header>
 
@@ -665,7 +663,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     </section>
 
     <section class="status-banner" aria-label="Course status">
-      <span class="status-banner-icon" aria-hidden="true">▤</span>
+      <span class="status-banner-icon" data-icon="status" aria-hidden="true"></span>
       <div><strong>{escape(banner_title)}</strong><small>{escape(banner_copy)}</small></div>
       <a href="{escape(course["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{escape(banner_button)}</a>
     </section>
@@ -720,11 +718,11 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
         <section class="sidebar-card">
           <h2>Course at a glance</h2>
           <dl class="glance-list">
-            <div><span class="glance-icon" aria-hidden="true">⌂</span><dt>Provider</dt><dd>{escape(course["provider"])}</dd></div>
-            <div><span class="glance-icon" aria-hidden="true">◎</span><dt>Language</dt><dd>{escape(languages)}</dd></div>
-            <div><span class="glance-icon" aria-hidden="true">▥</span><dt>Level</dt><dd>{escape(label_level(course["level"]))}</dd></div>
-            <div><span class="glance-icon" aria-hidden="true">◷</span><dt>Status</dt><dd>{escape(status)}</dd></div>
-            <div><span class="glance-icon" aria-hidden="true">⌘</span><dt>Access</dt><dd>{escape(course["access_short"])} · free</dd></div>
+            <div><span class="glance-icon" data-icon="provider" aria-hidden="true"></span><dt>Provider</dt><dd>{escape(course["provider"])}</dd></div>
+            <div><span class="glance-icon" data-icon="globe" aria-hidden="true"></span><dt>Language</dt><dd>{escape(languages)}</dd></div>
+            <div><span class="glance-icon" data-icon="level" aria-hidden="true"></span><dt>Level</dt><dd>{escape(label_level(course["level"]))}</dd></div>
+            <div><span class="glance-icon" data-icon="clock" aria-hidden="true"></span><dt>Status</dt><dd>{escape(status)}</dd></div>
+            <div><span class="glance-icon" data-icon="access" aria-hidden="true"></span><dt>Access</dt><dd>{escape(course["access_short"])} · free</dd></div>
           </dl>
         </section>
 
@@ -741,6 +739,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     <div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div>
     <div class="footer-links"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT">Português</a></div>
   </div></footer>
+  <script src="../../icons.js" defer></script>
   <script src="../../theme.js" defer></script>
 </body>
 </html>
@@ -769,7 +768,8 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         '<html lang="en">': '<html lang="pt-PT">',
         en_url: pt_url,
         '<link rel="stylesheet" href="../../styles.css">': '<link rel="stylesheet" href="../../../styles.css">',
-        '<script src="../../theme.js" defer></script>': '<script src="../../../theme.js" defer></script>',
+        '<script src="../../theme.js" defer></script>': '<script src="../../../icons.js" defer></script>
+  <script src="../../../theme.js" defer></script>',
         'Skip to course details': 'Saltar para os detalhes do curso',
         'aria-label="Primary navigation"': 'aria-label="Navegação principal"',
         'aria-label="Open navigation"': 'aria-label="Abrir navegação"',
@@ -862,7 +862,7 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
 
     html = html.replace(
         f'<a href="../../categories/{escape(course["category"])}/">{escape(category_pt)}</a>',
-        f'<a href="../?category={escape(course["category"])}">{escape(category_pt)}</a>',
+        f'<a href="../../categories/{escape(course["category"])}/">{escape(category_pt)}</a>',
     )
 
     html = html.replace(
@@ -909,7 +909,7 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
 
     html = html.replace(
         f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">View more in {escape(course["category_name"])} →</a>',
-        f'<a class="related-more-link" href="../?category={escape(course["category"])}">Ver mais em {escape(category_pt)} →</a>',
+        f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">Ver mais em {escape(category_pt)} →</a>',
     )
 
     return html
@@ -946,10 +946,10 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
 <body>
   <header class="topbar">
     <div class="shell topbar-inner">
-      <a class="brand" href="../../" aria-label="Open Learning Index home"><span class="brand-symbol" aria-hidden="true">↟</span><span>Open Learning Index</span></a>
+      <a class="brand" href="../../" aria-label="Open Learning Index home"><span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span></a>
       <nav class="main-nav" aria-label="Primary navigation"><a href="../../courses/">Courses</a><a class="active" href="../../#categories">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav>
-      <details class="mobile-nav"><summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary><nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../#categories">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav></details>
-      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses">⌕</a><a class="language-switch" href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon aria-hidden="true">☾</span></button></div>
+      <details class="mobile-nav"><summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary><nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../categories/">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav></details>
+      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
     </div>
   </header>
   <main class="shell category-page">
@@ -957,6 +957,7 @@ def render_static_category(category: dict, courses: list[dict]) -> str:
     <div class="course-grid catalogue-grid">{cards}</div>
   </main>
   <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div><div class="footer-links"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT">Português</a></div></div></footer>
+  <script src="../../icons.js" defer></script>
   <script src="../../theme.js" defer></script>
 </body>
 </html>
