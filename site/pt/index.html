@@ -34,12 +34,21 @@
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="courses/">Cursos</a>
         <a href="#categories">Categorias</a>
-        <a href="#about">Sobre</a>
+        <a href="#about">Princípios</a>
         <a href="#how-it-works">Como funciona</a>
       </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Abrir navegação"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Navegação móvel">
+          <a href="courses/">Cursos</a>
+          <a href="#categories">Categorias</a>
+          <a href="#about">Princípios</a>
+          <a href="#how-it-works">Como funciona</a>
+        </nav>
+      </details>
       <div class="nav-actions">
         <a class="icon-link" href="courses/" aria-label="Pesquisar cursos">⌕</a>
-        <a class="language-switch" href="../" lang="en" hreflang="en">◎ PT</a>
+        <a class="language-switch" href="../" lang="en" hreflang="en" aria-label="English">EN</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema escuro" title="Usar tema escuro"><span data-theme-icon aria-hidden="true">☾</span></button>
       </div>
     </div>
@@ -53,7 +62,6 @@
           <h1>Aprendizagem aberta<br>para um futuro melhor</h1>
           <p class="hero-copy">
             Uma seleção cuidada dos melhores cursos online gratuitos de todo o mundo.
-            Independente. Baseada em evidência. Continuamente mantida.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="courses/">Explorar cursos <span aria-hidden="true">→</span></a>
@@ -83,7 +91,7 @@
         <div><p class="section-kicker">Explorar por tema</p><h2>Explorar por categoria</h2></div>
         <a href="courses/">Ver todas as categorias <span aria-hidden="true">→</span></a>
       </div>
-      <div id="home-categories" class="category-showcase" aria-live="polite"></div>
+      <div id="home-categories" class="category-showcase"></div>
     </section>
 
     <section class="home-section shell">
@@ -91,7 +99,7 @@
         <div><p class="section-kicker">Escolhas editoriais</p><h2>Cursos em destaque</h2></div>
         <a href="courses/">Ver todos os cursos <span aria-hidden="true">→</span></a>
       </div>
-      <div id="featured-courses" class="featured-grid" aria-live="polite"></div>
+      <div id="featured-courses" class="featured-grid"></div>
     </section>
 
     <section id="how-it-works" class="home-section shell how-panel">
@@ -107,7 +115,7 @@
   <footer class="site-footer">
     <div class="shell footer-inner">
       <div><strong>Open Learning Index</strong><p>Curado, auditável e continuamente mantido.</p></div>
-      <div class="footer-links"><a href="courses/">Cursos</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../" lang="en" hreflang="en">English</a></div>
+      <div class="footer-links"><a href="./">Início</a><a href="courses/">Cursos</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Metodologia</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../" lang="en" hreflang="en">English</a></div>
     </div>
   </footer>
 

@@ -45,9 +45,4 @@
     <path d="M518 323 655 451 823 309"/>
     <path d="M1084 259 1251 433 1422 326"/>
   </g>
-  <g transform="translate(1360 488)">
-    <circle cx="0" cy="-34" r="8" fill="#081f29"/>
-    <path d="M0-25v45M0-12l-17 15M0-10l18 13M0 20l-13 31M0 20l16 31" stroke="#081f29" stroke-width="6" stroke-linecap="round"/>
-    <path d="M24 45h36" stroke="#081f29" stroke-width="5" stroke-linecap="round"/>
-  </g>
 </svg>
