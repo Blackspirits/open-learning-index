@@ -16,6 +16,24 @@
     return storedTheme() || (darkQuery.matches ? "dark" : "light");
   }
 
+  function normalizeLocaleLabels() {
+    const isPtPage = document.documentElement.lang === "pt-PT";
+
+    document.querySelectorAll('a[hreflang="pt-PT"]').forEach((link) => {
+      const label = link.textContent.trim();
+      if (label === "Português") link.textContent = "Português (Portugal)";
+      if (!link.getAttribute("aria-label")) link.setAttribute("aria-label", "Português (Portugal)");
+    });
+
+    if (!isPtPage) {
+      document.querySelectorAll("dd, .mini-tag").forEach((node) => {
+        const label = node.textContent.trim();
+        if (label === "Português (Brasil)") node.textContent = "Portuguese (Brazil)";
+        if (label === "Português (Portugal)") node.textContent = "Portuguese (Portugal)";
+      });
+    }
+  }
+
   function applyTheme(theme) {
     root.dataset.theme = theme;
     root.style.colorScheme = theme;
@@ -60,7 +78,11 @@
     if (!storedTheme()) applyTheme(effectiveTheme());
   });
 
-  document.addEventListener("DOMContentLoaded", () => applyTheme(effectiveTheme()));
+  document.addEventListener("DOMContentLoaded", () => {
+    normalizeLocaleLabels();
+    applyTheme(effectiveTheme());
+  });
+  normalizeLocaleLabels();
   applyTheme(effectiveTheme());
 })();
 
