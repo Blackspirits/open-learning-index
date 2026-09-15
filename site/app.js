@@ -147,9 +147,8 @@ function renderMiniCourseCard(course) {
     <article class="mini-course-card">
       <div class="mini-card-top">
         ${scorePill(course)}
-        <span class="bookmark" aria-hidden="true">♡</span>
+        <span class="score-context">${isPt ? "Recomendação" : "Recommendation"}</span>
       </div>
-      <div class="provider-mark" aria-hidden="true">${escapeHtml(initials(course.provider))}</div>
       <h3><a href="${route(coursePath(course.id))}">${escapeHtml(course.title)}</a></h3>
       <p class="provider">${escapeHtml(course.provider)}</p>
       <div class="mini-tags">
@@ -231,6 +230,10 @@ function getCatalogueEls() {
     showMore: document.querySelector("#show-more"),
     pageCourseCount: document.querySelector("#page-course-count"),
     viewButtons: [...document.querySelectorAll("[data-view]")],
+    filterDisclosure: document.querySelector("#primary-filters"),
+    mobileFilterCount: document.querySelector("#mobile-filter-count"),
+    emptyClear: document.querySelector("#empty-clear-filters"),
+    searchShortcut: document.querySelector("[data-focus-search]"),
   };
 }
 
@@ -321,12 +324,10 @@ function renderCatalogueCard(course) {
     <article class="catalogue-card">
       <div class="catalogue-card-head">
         ${scorePill(course)}
-        <span class="bookmark" aria-hidden="true">♡</span>
+        <span class="score-context">${isPt ? "Recomendação" : "Recommendation"}</span>
       </div>
-      <div class="provider-mark large" aria-hidden="true">${escapeHtml(initials(course.provider))}</div>
       <h3><a href="${route(coursePath(course.id))}">${escapeHtml(course.title)}</a></h3>
       <p class="provider">${escapeHtml(course.provider)}</p>
-      <div class="card-spacer"></div>
       <div class="mini-tags">
         <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
         <span class="mini-tag">${escapeHtml(labelLanguage(course.primary_language))}</span>
@@ -339,6 +340,27 @@ function renderCatalogueCard(course) {
       </div>
     </article>
   `;
+}
+
+function activeFilterCount(values) {
+  return [
+    values.category,
+    values.language,
+    values.level,
+    values.access,
+    values.tier,
+    values.status,
+    values.credential,
+    values.credit,
+  ].filter(Boolean).length;
+}
+
+function resetCatalogue(els, focusSearch = true) {
+  els.filters.reset();
+  els.sort.value = "recommendation";
+  state.visibleLimit = 18;
+  renderCatalogue(els);
+  if (focusSearch) els.search.focus();
 }
 
 function renderCatalogue(els) {
@@ -357,6 +379,10 @@ function renderCatalogue(els) {
   els.resultCount.textContent = isPt
     ? `${courses.length} curso${courses.length === 1 ? "" : "s"}`
     : `${courses.length} course${courses.length === 1 ? "" : "s"}`;
+  if (els.mobileFilterCount) {
+    const count = activeFilterCount(values);
+    els.mobileFilterCount.textContent = count ? ` · ${count}` : "";
+  }
   els.results.innerHTML = visible.map(renderCatalogueCard).join("");
   els.empty.hidden = courses.length !== 0;
   els.showMore.hidden = visible.length >= courses.length;
@@ -385,13 +411,9 @@ function bootCatalogue() {
   };
   els.filters.addEventListener("input", rerender);
   els.filters.addEventListener("change", rerender);
-  els.clear.addEventListener("click", () => {
-    els.filters.reset();
-    els.sort.value = "recommendation";
-    state.visibleLimit = 18;
-    renderCatalogue(els);
-    els.search.focus();
-  });
+  els.clear.addEventListener("click", () => resetCatalogue(els));
+  els.emptyClear?.addEventListener("click", () => resetCatalogue(els));
+  els.searchShortcut?.addEventListener("click", () => els.search.focus());
   els.showMore.addEventListener("click", () => {
     state.visibleLimit += 18;
     renderCatalogue(els);
@@ -406,6 +428,22 @@ function bootCatalogue() {
       }
       renderCatalogue(els);
     });
+  });
+
+  const mobile = window.matchMedia("(max-width: 760px)");
+  const syncMobileLayout = () => {
+    if (els.filterDisclosure) {
+      if (mobile.matches) els.filterDisclosure.removeAttribute("open");
+      else els.filterDisclosure.setAttribute("open", "");
+    }
+    if (mobile.matches && state.viewMode !== "grid") {
+      state.viewMode = "grid";
+    }
+  };
+  syncMobileLayout();
+  mobile.addEventListener?.("change", () => {
+    syncMobileLayout();
+    renderCatalogue(els);
   });
 
   renderCatalogue(els);
