@@ -878,7 +878,7 @@ h1, h2, h3 {
 .catalogue-list .catalogue-card {
   display: grid;
   min-height: 0;
-  grid-template-columns: auto 86px minmax(220px, 1.4fr) minmax(220px, 1fr) auto;
+  grid-template-columns: auto minmax(260px, 1.45fr) minmax(220px, 1fr) auto;
   gap: 14px;
   align-items: center;
 }
@@ -888,13 +888,11 @@ h1, h2, h3 {
 }
 
 .catalogue-list .score-pill { grid-column: 1; grid-row: 1; }
-.catalogue-list .provider-mark.large { grid-column: 2; grid-row: 1; margin: 0; }
-.catalogue-list .catalogue-card h3 { grid-column: 3; grid-row: 1; margin: 0; }
-.catalogue-list .catalogue-card .provider { grid-column: 3; grid-row: 1; margin: 34px 0 0; }
-.catalogue-list .card-spacer { display: none; }
-.catalogue-list .mini-tags { grid-column: 4; grid-row: 1; margin: 0; }
-.catalogue-list .access-line { grid-column: 5; grid-row: 1; margin: 0; padding: 0; border-top: 0; max-width: 170px; }
-.catalogue-list .bookmark { display: none; }
+.catalogue-list .score-context { display: none; }
+.catalogue-list .catalogue-card h3 { grid-column: 2; grid-row: 1; margin: 0; }
+.catalogue-list .catalogue-card .provider { grid-column: 2; grid-row: 1; margin: 34px 0 0; }
+.catalogue-list .mini-tags { grid-column: 3; grid-row: 1; margin: 0; }
+.catalogue-list .access-line { grid-column: 4; grid-row: 1; margin: 0; padding: 0; border-top: 0; max-width: 190px; }
 
 .course-grid.catalogue-grid {
   display: grid;
@@ -1867,7 +1865,6 @@ html[data-theme="dark"] .course-tabs a {
     display: flex;
   }
 
-  .catalogue-list .provider-mark.large,
   .catalogue-list .catalogue-card h3,
   .catalogue-list .catalogue-card .provider,
   .catalogue-list .mini-tags,
@@ -1877,5 +1874,4 @@ html[data-theme="dark"] .course-tabs a {
 
   .catalogue-list .catalogue-card .provider { margin-top: 0; }
   .catalogue-list .access-line { margin-top: 11px; padding-top: 9px; border-top: 1px solid var(--line); max-width: none; }
-  .catalogue-list .bookmark { display: inline; }
 }
