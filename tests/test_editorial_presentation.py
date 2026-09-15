@@ -42,6 +42,12 @@ class EditorialPresentationTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Missing Portuguese'):
             pt('A newly edited sentence without a reviewed translation entry.')
 
+    def test_known_machine_translation_semantic_traps_are_blocked(self):
+        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        values = list(translations.values())
+        self.assertFalse(any('24 horas por dia' in value for value in values))
+        self.assertFalse(any('moeda 10.0' in value.lower() or 'moeda 10,0' in value.lower() for value in values))
+
     def test_both_course_routes_resolve_artwork_from_site_root(self):
         course = next(c for c in self.courses if c['id'] == 'harvard-cs50x')
         index = {c['id']:c for c in self.courses}
