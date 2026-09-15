@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, sys, subprocess, tempfile
+import json, sys, subprocess, tempfile, re
 from pathlib import Path
 from datetime import date
 
@@ -19,6 +19,7 @@ REFERENCE_REVIEW_SCHEMA=ROOT/'data/reference-review.schema.json'
 ADMISSION_DIR=ROOT/'data/admissions'
 ADMISSION_SCHEMA=ROOT/'data/admission.schema.json'
 WEIGHTS={'pedagogy':0.25,'depth':0.20,'practice':0.20,'materials':0.10,'currency':0.10,'expertise':0.10,'accessibility':0.05}
+LANGUAGE_TAG=re.compile(r'^[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*$')
 
 def fail(msg):
     print(f'ERROR: {msg}', file=sys.stderr); return 1
@@ -90,6 +91,16 @@ def main():
             errors += fail(f'{c["id"]}: unknown course category {c["category"]}')
         if c['id'] in ids: errors += fail(f'duplicate course id: {c["id"]}')
         ids.add(c['id'])
+        language_codes=[c['primary_language'], *c.get('other_languages', [])]
+        for language_code in language_codes:
+            if not LANGUAGE_TAG.fullmatch(language_code):
+                errors += fail(f'{c["id"]}: invalid language tag {language_code}')
+        if c['primary_language'] == 'pt':
+            errors += fail(f'{c["id"]}: published primary Portuguese must resolve to pt-PT or pt-BR')
+        if 'pt' in c.get('other_languages', []) and not c.get('language_notes'):
+            errors += fail(f'{c["id"]}: generic pt alternate requires language_notes explaining unresolved regional variant')
+        if c['primary_language'] in c.get('other_languages', []):
+            errors += fail(f'{c["id"]}: primary language duplicated in other_languages')
         if c['url'] in urls: errors += fail(f'duplicate course canonical URL: {c["url"]}')
         urls.add(c['url'])
         calc=round(sum(c['quality_components'][k]*w for k,w in WEIGHTS.items()),2)

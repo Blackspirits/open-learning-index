@@ -11,8 +11,8 @@ const rootPath = document.body.dataset.root || "./";
 const isPt = pageLocale === "pt-PT";
 
 const languageNames = {
-  en: { "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
-  "pt-PT": { "pt-BR": "Português (Brasil)", "pt-PT": "Português (Portugal)" },
+  en: { "pt": "Portuguese (variant unspecified)", "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
+  "pt-PT": { "pt": "Português (variante não especificada)", "pt-BR": "Português (Brasil)", "pt-PT": "Português (Portugal)" },
 };
 
 const categoryNamesPt = {

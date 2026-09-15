@@ -69,7 +69,7 @@ LANGUAGE_LABELS = {
     "ko": "Korean",
     "nl": "Dutch",
     "pl": "Polish",
-    "pt": "Portuguese",
+    "pt": "Portuguese (variant unspecified)",
     "pt-BR": "Português (Brasil)",
     "pt-PT": "Português (Portugal)",
     "ro": "Romanian",
@@ -334,7 +334,7 @@ PT_LANGUAGE_LABELS = {
     "ja": "Japonês",
     "ka": "Georgiano",
     "ko": "Coreano",
-    "pt": "Português",
+    "pt": "Português (variante não especificada)",
     "pt-BR": "Português (Brasil)",
     "pt-PT": "Português (Portugal)",
     "ro": "Romeno",
@@ -619,7 +619,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
         <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
         <nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../categories/">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav>
       </details>
-      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
+      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT-PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
     </div>
   </header>
 
@@ -861,7 +861,7 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
     )
 
     html = html.replace(
-        f'<a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a>',
+        f'<a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT-PT</a>',
         f'<a class="language-switch" href="../../../courses/{escape(course["id"])}/" lang="en" hreflang="en" aria-label="English">EN</a>',
     )
 
@@ -971,7 +971,7 @@ def render_category_directory(category_rows: list[dict], courses: list[dict], pt
     methodology_label = "Metodologia" if pt else "Methodology"
     footer_copy = "Curado, auditável e continuamente mantido." if pt else "Curated, auditable and continuously maintained."
     switch_label = "English" if pt else "Português"
-    switch_short = "EN" if pt else "PT"
+    switch_short = "EN" if pt else "PT-PT"
     switch_lang = "en" if pt else "pt-PT"
     root = "../../" if pt else "../"
     home_href = "../" if pt else "../"
@@ -1069,7 +1069,7 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
     theme_href = "../../../theme.js" if pt else "../../theme.js"
     switch_href = f"../../../categories/{category_id}/" if pt else f"../../pt/categories/{category_id}/"
     switch_label = "English" if pt else "Português"
-    switch_short = "EN" if pt else "PT"
+    switch_short = "EN" if pt else "PT-PT"
     switch_lang = "en" if pt else "pt-PT"
     home_label = "Início" if pt else "Home"
     courses_label = "Cursos" if pt else "Courses"

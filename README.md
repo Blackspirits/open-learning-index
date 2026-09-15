@@ -36,6 +36,8 @@ As of **2026-09-15**:
 |---|---:|
 | Canonical published courses | **142** |
 | Primary-language pt-PT courses | **13** |
+| Alternate pt-BR routes | **1** |
+| Portuguese alternates with unresolved regional variant | **3** |
 | F0 — full course + free credential | **75** |
 | F1 — full assessed learning path | **24** |
 | F2 — full teaching content | **43** |
@@ -116,6 +118,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
 | [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Current visual, accessibility, localisation and publication QA |
+| [2026-09-15 repository audit](docs/qa-repository-audit-2026-09-15.md) | Current data, Portuguese-language, licensing and publication audit |
 | [v0.8 hardening](docs/v0.8-hardening.md) | Earlier trust, discovery, accessibility and indexability QA |
 | [v0.7 public experience](docs/v0.7-public-experience.md) | Original public-site architecture decision |
 | [Architecture audit](AUDIT.md) | Project architecture decisions and risks |
@@ -142,7 +145,7 @@ The public experience is now in **v0.10**: a modern, responsive light/dark inter
 
 The site remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime. Canonical category pages and localized course routes are indexable, and the Pages deployment is gated on generated-site QA.
 
-The pt-PT route localises the interface, taxonomy, course titles and displayed editorial text through a checked-in presentation dictionary. Canonical records and review ledgers remain unchanged. Course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
+The pt-PT route localises the interface, taxonomy, course titles and displayed editorial text through a checked-in presentation dictionary. Course-language metadata distinguishes `pt-PT`, `pt-BR` and provider-labelled generic `pt`; generic Portuguese is shown explicitly as an unresolved regional variant rather than guessed. Canonical records and review ledgers remain unchanged. Course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
 
 Course artwork is served locally, with source attribution recorded in an asset manifest. Courses without suitable official artwork use a consistent editorial panel. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, artwork provenance and validation.
 

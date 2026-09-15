@@ -785,7 +785,8 @@
     "review_status": "phase4_admitted",
     "quality_score": 9.07,
     "review_interval_days": 90,
-    "next_review": "2026-12-12"
+    "next_review": "2026-12-12",
+    "language_notes": "Official Unity Learn currently labels the alternate course language only as “Português”. The provider does not identify a regional variant, so the canonical tag remains generic pt until pt-PT or pt-BR is explicitly evidenced."
   },
   {
     "id": "mit-missing-semester-2026",
@@ -3237,7 +3238,8 @@
     "review_status": "phase4_admitted",
     "quality_score": 8.61,
     "review_interval_days": 90,
-    "next_review": "2026-12-12"
+    "next_review": "2026-12-12",
+    "language_notes": "The current Council of Europe training page lists the HELP course language as POR/Portuguese without a regional variant. Keep generic pt; do not infer pt-PT or pt-BR."
   },
   {
     "id": "coe-help-data-protection-privacy-rights",
@@ -3844,7 +3846,8 @@
     "review_status": "phase4_admitted",
     "quality_score": 8.62,
     "review_interval_days": 90,
-    "next_review": "2026-12-12"
+    "next_review": "2026-12-12",
+    "language_notes": "The current Global Health Training Centre course lists “Português” as an instructional version but does not declare the regional variant. Keep generic pt; do not infer pt-PT or pt-BR."
   },
   {
     "id": "tghn-research-ethics-v2",
