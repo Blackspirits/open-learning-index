@@ -20,6 +20,8 @@ jobs:
       - run: git diff --exit-code -- data/courses.csv
       - name: Build public site
         run: python scripts/build_public_site.py --output /tmp/open-learning-index-site
+      - name: Validate public site
+        run: python scripts/validate_public_site.py /tmp/open-learning-index-site
       - name: Report review freshness
         if: github.event_name != 'schedule'
         run: python scripts/check_staleness.py

@@ -351,6 +351,18 @@ def main():
             )
             if result.returncode != 0:
                 errors += fail("public catalogue build failed")
+            else:
+                qa_result=subprocess.run(
+                    [
+                        sys.executable,
+                        str(ROOT/"scripts/validate_public_site.py"),
+                        str(public_output),
+                    ],
+                    cwd=ROOT,
+                    check=False,
+                )
+                if qa_result.returncode != 0:
+                    errors += fail("generated public-site QA failed")
 
     if errors: return 1
     print(
