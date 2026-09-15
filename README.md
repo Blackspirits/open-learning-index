@@ -147,7 +147,7 @@ The site remains static and is generated from canonical JSON plus validated edit
 
 The pt-PT route localises the interface, taxonomy, course titles and displayed editorial text through a checked-in presentation dictionary. Course-language metadata distinguishes `pt-PT`, `pt-BR` and provider-labelled generic `pt`; generic Portuguese is shown explicitly as an unresolved regional variant rather than guessed. Canonical records and review ledgers remain unchanged. Course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
 
-Course artwork is served locally, with source attribution recorded in an asset manifest. Courses without suitable official artwork use a consistent editorial panel. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, artwork provenance and validation.
+Course cards use original editorial panels by default. Third-party course/provider images are not published unless their reuse rights are explicitly verified; the provenance manifest retains unverified candidates without treating attribution as permission. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, media provenance and validation.
 
 ### Build locally
 
