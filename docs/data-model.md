@@ -20,8 +20,9 @@ Approved/reference records currently use:
 
 - `primary_language` — language of instruction.
 - `other_languages` — alternate instructional versions or clearly identified supported variants.
+- `language_notes` — required on published records when a generic `pt` alternate remains unresolved as pt-PT vs pt-BR.
 
-Keep `pt-PT` and `pt-BR` distinct.
+Keep `pt-PT` and `pt-BR` distinct. A bare `pt` is allowed only for an **alternate** Portuguese instructional version whose provider does not identify the regional variant. It must carry `language_notes` explaining the unresolved provenance. A published course may not use bare `pt` as its primary language.
 
 Shallow-screen records already use explicit `instruction_languages` and `subtitle_languages` arrays because review must not confuse translated subtitles with the language of instruction.
 
@@ -147,4 +148,5 @@ For deep-reviewed approved/finalist records:
 - Scores must remain inside 0–10.
 - Quality Score must equal the weighted components within rounding tolerance.
 - `next_review` must not precede `last_verified`.
+- Published primary Portuguese must be regionalised as `pt-PT` or `pt-BR`; bare `pt` is permitted only as a documented unresolved alternate.
 - F3 courses are not eligible for the main published ranking.
