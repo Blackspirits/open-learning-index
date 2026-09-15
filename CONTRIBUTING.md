@@ -82,6 +82,7 @@ Use Python 3.12 or later.
 
 ```bash
 python -m pip install -r requirements-dev.txt
+python -m unittest discover -s tests -p 'test_*.py'
 python scripts/validate.py
 python scripts/generate_csv.py
 git diff --exit-code -- data/courses.csv
@@ -112,7 +113,7 @@ A good PR should:
 - identify affected course IDs;
 - preserve historical records when a decision is superseded;
 - avoid unrelated formatting or refactors;
-- pass the repository validator, deterministic site build and generated-site QA;
+- pass the repository validator, unit tests, deterministic site build and generated-site QA;
 - call out unresolved uncertainty or blockers explicitly.
 
 Do not merge known blockers merely to keep a batch moving.
@@ -130,7 +131,7 @@ The public site is deliberately static and framework-free. Visual improvements a
 
 Do not add provider logos, course artwork or other third-party assets unless their reuse rights are verified. Prefer the project's original SVG icon and visual system when a neutral interface symbol is sufficient.
 
-The pt-PT interface localises UI text. Canonical course titles, provider names and editorial evidence must not be silently machine-translated.
+The public Portuguese interface is explicitly **pt-PT**. Canonical course facts, URLs, scores and language metadata must never be changed merely to fit the translated presentation. The checked-in presentation dictionary may translate learner-facing titles and editorial text into reviewed European Portuguese while preserving the original course title and canonical evidence. Provider names and other proper names should remain unchanged unless an official localized form is evidenced.
 
 ## Licensing of contributions
 
