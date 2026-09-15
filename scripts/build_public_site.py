@@ -283,6 +283,28 @@ PT_CATEGORY_LABELS = {
     "writing-communication": "Escrita e Comunicação",
 }
 
+CATEGORY_ICON_NAMES = {
+    "ai-data": "ai",
+    "arts-design": "palette",
+    "business-entrepreneurship": "business",
+    "computer-science": "code",
+    "cybersecurity-it": "shield",
+    "education-teaching": "education",
+    "engineering-electronics": "engineering",
+    "finance-economics": "finance",
+    "health-medicine": "health",
+    "history-culture": "history",
+    "humanities-philosophy": "humanities",
+    "languages": "languages",
+    "law-public-policy": "law",
+    "marketing-sales": "marketing",
+    "math-statistics": "math",
+    "natural-sciences": "science",
+    "project-product-leadership": "leadership",
+    "psychology-behavior": "brain",
+    "writing-communication": "writing",
+}
+
 PT_LEVEL_LABELS = {
     "beginner": "Principiante",
     "beginner_to_intermediate": "Principiante a intermédio",
@@ -377,6 +399,43 @@ def static_catalogue_card(course: dict, href_prefix: str = "../") -> str:
         '<div class="access-line">'
         f'<strong>{escape(course["access_short"])}</strong>'
         f'<span>{escape(course["access_label"])}</span></div>'
+        '</article>'
+    )
+
+
+def static_catalogue_card_pt(course: dict, href_prefix: str = "../../") -> str:
+    archive = (
+        static_tag("Arquivado", "tag-archive")
+        if course["status"] == "active_archive"
+        else ""
+    )
+    access_labels = {
+        "F0": "Curso completo + credencial gratuita",
+        "F1": "Percurso avaliado gratuito",
+        "F2": "Conteúdo pedagógico gratuito",
+    }
+    category_name = PT_CATEGORY_LABELS.get(course["category"], course["category_name"])
+    language = PT_LANGUAGE_LABELS.get(
+        course["primary_language"],
+        label_language(course["primary_language"]),
+    )
+    level = PT_LEVEL_LABELS.get(course["level"], label_level(course["level"]))
+    score = float(course["recommendation_score"])
+    return (
+        '<article class="catalogue-card">'
+        '<div class="catalogue-card-head">'
+        f'<span class="score-pill" aria-label="Recomendação {score:.1f} em 10">{score:.1f}</span>'
+        '<span class="score-context">Recomendação</span></div>'
+        f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(course["title"])}</a></h3>'
+        f'<p class="provider">{escape(course["provider"])}</p>'
+        '<div class="mini-tags">'
+        f'{static_tag(category_name, "tag-category")}'
+        f'{static_tag(language)}'
+        f'{static_tag(level)}'
+        f'{archive}</div>'
+        '<div class="access-line">'
+        f'<strong>{escape(course["access_short"])}</strong>'
+        f'<span>{escape(access_labels.get(course["access_short"], course["access_label"]))}</span></div>'
         '</article>'
     )
 
