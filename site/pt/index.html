@@ -28,12 +28,12 @@
   <header class="topbar">
     <div class="shell topbar-inner">
       <a class="brand" href="./" aria-label="Página inicial do Open Learning Index">
-        <span class="brand-symbol" aria-hidden="true">↟</span>
+        <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span>
         <span>Open Learning Index</span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="courses/">Cursos</a>
-        <a href="#categories">Categorias</a>
+        <a href="categories/">Categorias</a>
         <a href="#about">Princípios</a>
         <a href="#how-it-works">Como funciona</a>
       </nav>
@@ -41,15 +41,15 @@
         <summary aria-label="Abrir navegação"><span class="menu-icon" aria-hidden="true"></span></summary>
         <nav aria-label="Navegação móvel">
           <a href="courses/">Cursos</a>
-          <a href="#categories">Categorias</a>
+          <a href="categories/">Categorias</a>
           <a href="#about">Princípios</a>
           <a href="#how-it-works">Como funciona</a>
         </nav>
       </details>
       <div class="nav-actions">
-        <a class="icon-link" href="courses/" aria-label="Pesquisar cursos">⌕</a>
+        <a class="icon-link" href="courses/" aria-label="Pesquisar cursos"><span data-icon="search" aria-hidden="true"></span></a>
         <a class="language-switch" href="../" lang="en" hreflang="en" aria-label="English">EN</a>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema escuro" title="Usar tema escuro"><span data-theme-icon aria-hidden="true">☾</span></button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema escuro" title="Usar tema escuro"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
       </div>
     </div>
   </header>
@@ -79,17 +79,17 @@
 
     <section id="about" class="principles-strip">
       <div class="shell principles-grid">
-        <article><span class="principle-icon">◇</span><div><strong>Curado com rigor</strong><small>Qualidade acima da quantidade</small></div></article>
-        <article><span class="principle-icon">▣</span><div><strong>Baseado em evidência</strong><small>Revisões independentes</small></div></article>
-        <article><span class="principle-icon">◷</span><div><strong>Sempre atualizado</strong><small>Verificação regular</small></div></article>
-        <article><span class="principle-icon">⌘</span><div><strong>Para todos</strong><small>Global e acessível</small></div></article>
+        <article><span class="principle-icon" data-icon="curated" aria-hidden="true"></span><div><strong>Curado com rigor</strong><small>Qualidade acima da quantidade</small></div></article>
+        <article><span class="principle-icon" data-icon="evidence" aria-hidden="true"></span><div><strong>Baseado em evidência</strong><small>Revisões independentes</small></div></article>
+        <article><span class="principle-icon" data-icon="clock" aria-hidden="true"></span><div><strong>Sempre atualizado</strong><small>Verificação regular</small></div></article>
+        <article><span class="principle-icon" data-icon="globe" aria-hidden="true"></span><div><strong>Para todos</strong><small>Global e acessível</small></div></article>
       </div>
     </section>
 
     <section id="categories" class="home-section shell">
       <div class="section-heading">
         <div><p class="section-kicker">Explorar por tema</p><h2>Explorar por categoria</h2></div>
-        <a href="courses/">Ver todas as categorias <span aria-hidden="true">→</span></a>
+        <a href="categories/">Ver todas as categorias <span aria-hidden="true">→</span></a>
       </div>
       <div id="home-categories" class="category-showcase"></div>
     </section>
@@ -120,6 +120,7 @@
   </footer>
 
   <noscript><div class="noscript">Este site necessita de JavaScript para as listas dinâmicas de cursos. Os dados canónicos continuam disponíveis no GitHub.</div></noscript>
+  <script src="../icons.js" defer></script>
   <script src="../theme.js" defer></script>
   <script src="../app.js" defer></script>
 </body>

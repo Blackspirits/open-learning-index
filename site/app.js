@@ -38,15 +38,25 @@ const categoryNamesPt = {
 };
 
 const categoryIcons = {
-  "computer-science": "▣",
-  "business-entrepreneurship": "▥",
-  "math-statistics": "∑",
-  "health-medicine": "❤",
-  languages: "▤",
-  "ai-data": "◫",
-  "cybersecurity-it": "⌾",
-  "arts-design": "✦",
-  "education-teaching": "◇",
+  "computer-science": "code",
+  "business-entrepreneurship": "business",
+  "math-statistics": "math",
+  "health-medicine": "health",
+  languages: "languages",
+  "ai-data": "ai",
+  "cybersecurity-it": "shield",
+  "arts-design": "palette",
+  "education-teaching": "education",
+  "engineering-electronics": "engineering",
+  "finance-economics": "finance",
+  "history-culture": "history",
+  "humanities-philosophy": "humanities",
+  "law-public-policy": "law",
+  "marketing-sales": "marketing",
+  "natural-sciences": "science",
+  "project-product-leadership": "leadership",
+  "psychology-behavior": "brain",
+  "writing-communication": "writing",
 };
 
 const levelNamesPt = {
@@ -164,11 +174,11 @@ function renderMiniCourseCard(course) {
 }
 
 function renderHomeCategory(id, name, count) {
-  const icon = categoryIcons[id] || "◇";
-  const cataloguePath = isPt ? `pt/courses/?category=${encodeURIComponent(id)}` : `courses/?category=${encodeURIComponent(id)}`;
+  const icon = categoryIcons[id] || "curated";
+  const categoryPath = isPt ? `pt/categories/${encodeURIComponent(id)}/` : `categories/${encodeURIComponent(id)}/`;
   return `
-    <a class="category-tile" href="${route(cataloguePath)}">
-      <span class="category-icon icon-${escapeHtml(id)}" aria-hidden="true">${escapeHtml(icon)}</span>
+    <a class="category-tile" href="${route(categoryPath)}">
+      <span class="category-icon icon-${escapeHtml(id)}" data-icon="${escapeHtml(icon)}" aria-hidden="true"></span>
       <strong>${escapeHtml(name)}</strong>
       <small>${count} ${isPt ? "cursos" : "courses"}</small>
     </a>
@@ -199,7 +209,9 @@ function renderHome() {
       const course = byCategory.get(id);
       return renderHomeCategory(id, labelCategory(course), counts.get(id) || 0);
     });
-  document.querySelector("#home-categories").innerHTML = categories.join("");
+  const categoryContainer = document.querySelector("#home-categories");
+  categoryContainer.innerHTML = categories.join("");
+  window.oliHydrateIcons?.(categoryContainer);
 
   const featured = [...state.courses]
     .filter((course) => course.status === "active")

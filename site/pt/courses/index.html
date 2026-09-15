@@ -27,23 +27,23 @@
   <header class="topbar">
     <div class="shell topbar-inner">
       <a class="brand" href="../" aria-label="Página inicial do Open Learning Index">
-        <span class="brand-symbol" aria-hidden="true">↟</span>
+        <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span>
         <span>Open Learning Index</span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
         <a class="active" href="./">Cursos</a>
-        <a href="../#categories">Categorias</a>
+        <a href="../categories/">Categorias</a>
         <a href="../#about">Princípios</a>
         <a href="../#how-it-works">Como funciona</a>
       </nav>
       <details class="mobile-nav">
         <summary aria-label="Abrir navegação"><span class="menu-icon" aria-hidden="true"></span></summary>
-        <nav aria-label="Navegação móvel"><a href="../">Início</a><a href="./">Cursos</a><a href="../#categories">Categorias</a><a href="../#about">Princípios</a><a href="../#how-it-works">Como funciona</a></nav>
+        <nav aria-label="Navegação móvel"><a href="../">Início</a><a href="./">Cursos</a><a href="../categories/">Categorias</a><a href="../#about">Princípios</a><a href="../#how-it-works">Como funciona</a></nav>
       </details>
       <div class="nav-actions">
-        <button class="icon-link" type="button" data-focus-search aria-label="Focar pesquisa">⌕</button>
+        <button class="icon-link" type="button" data-focus-search aria-label="Focar pesquisa"><span data-icon="search" aria-hidden="true"></span></button>
         <a class="language-switch" href="../../courses/" lang="en" hreflang="en" aria-label="English">EN</a>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema escuro" title="Usar tema escuro"><span data-theme-icon aria-hidden="true">☾</span></button>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema escuro" title="Usar tema escuro"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
       </div>
     </div>
   </header>
@@ -60,7 +60,7 @@
       <form id="filters" autocomplete="off">
         <div class="search-row">
           <label class="search-box" for="search">
-            <span aria-hidden="true">⌕</span>
+            <span data-icon="search" aria-hidden="true"></span>
             <span class="sr-only">Pesquisar cursos</span>
             <input id="search" name="q" type="search" placeholder="Pesquisar cursos, temas, entidades…">
           </label>
@@ -94,8 +94,8 @@
     <div class="catalogue-meta">
       <p id="result-count" aria-live="polite">A carregar cursos…</p>
       <div class="view-toggle" aria-label="Modo de visualização">
-        <button type="button" class="active" data-view="grid" aria-pressed="true">▦ Grelha</button>
-        <button type="button" data-view="list" aria-pressed="false">☷ Lista</button>
+        <button type="button" class="active" data-view="grid" aria-pressed="true">Grelha</button>
+        <button type="button" data-view="list" aria-pressed="false">Lista</button>
       </div>
     </div>
 
@@ -118,6 +118,7 @@
       <div class="footer-links"><a href="../">Início</a><a href="./">Cursos</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Metodologia</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../courses/" lang="en" hreflang="en">English</a></div>
     </div>
   </footer>
+  <script src="../../icons.js" defer></script>
   <script src="../../theme.js" defer></script>
 
   <script src="../../app.js" defer></script>

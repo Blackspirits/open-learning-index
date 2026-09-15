@@ -34,7 +34,10 @@
       );
       button.setAttribute("title", button.getAttribute("aria-label"));
       const icon = button.querySelector("[data-theme-icon]");
-      if (icon) icon.textContent = theme === "dark" ? "☀" : "☾";
+      if (icon) {
+        icon.dataset.icon = theme === "dark" ? "sun" : "moon";
+        window.oliHydrateIcons?.(button);
+      }
     });
   }
 
