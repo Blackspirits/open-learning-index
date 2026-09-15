@@ -8,6 +8,8 @@ import unicodedata
 from collections import Counter
 from html import escape
 from pathlib import Path
+from editorial_presentation import localize_course, media_for, media_html, pt
+from editorial_presentation import pt as translate_pt
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "data" / "courses.json"
@@ -378,66 +380,48 @@ def static_tag(value: str, extra: str = "") -> str:
     return f'<span class="{cls}">{escape(value)}</span>'
 
 
-def static_catalogue_card(course: dict, href_prefix: str = "../") -> str:
-    archive = (
-        static_tag("Archived", "tag-archive")
-        if course["status"] == "active_archive"
-        else ""
-    )
+def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False) -> str:
+    title = pt(course["title"]) if is_pt else course["title"]
+    category = PT_CATEGORY_LABELS[course["category"]] if is_pt else course["category_name"]
+    language = PT_LANGUAGE_LABELS.get(course["primary_language"], label_language(course["primary_language"])) if is_pt else label_language(course["primary_language"])
+    language = f"Em {language[0].lower()}{language[1:]}" if is_pt else f"In {language}"
+    level = PT_LEVEL_LABELS.get(course["level"], label_level(course["level"])) if is_pt else label_level(course["level"])
+    access = {"F0":"Curso e credencial gratuitos", "F1":"Percurso completo com avaliação", "F2":"Conteúdos completos gratuitos"}[course["access_short"]] if is_pt else course["access_label"]
+    label = "Recomendação" if is_pt else "Recommendation"
+    score = f'{float(course["recommendation_score"]):.1f}'
+    if is_pt: score = score.replace('.', ',')
+    archive = static_tag("Arquivado" if is_pt else "Archived", "tag-archive") if course["status"] == "active_archive" else ""
+    root = "../" + href_prefix if is_pt else href_prefix
     return (
-        '<article class="catalogue-card">'
-        '<div class="catalogue-card-head">'
-        f'<span class="score-pill" aria-label="Recommendation {float(course["recommendation_score"]):.1f} out of 10">{float(course["recommendation_score"]):.1f}</span>'
-        '<span class="score-context">Recommendation</span></div>'
-        f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(course["title"])}</a></h3>'
-        f'<p class="provider">{escape(course["provider"])}</p>'
-        '<div class="mini-tags">'
-        f'{static_tag(course["category_name"], "tag-category")}'
-        f'{static_tag(label_language(course["primary_language"]))}'
-        f'{static_tag(label_level(course["level"]))}'
-        f'{archive}</div>'
-        '<div class="access-line">'
-        f'<strong>{escape(course["access_short"])}</strong>'
-        f'<span>{escape(course["access_label"])}</span></div>'
-        '</article>'
+        '<article class="catalogue-card">' + media_html(course, root)
+        + '<div class="card-body"><div class="card-heading">'
+        + f'<p class="provider">{escape(course["provider"])}</p>'
+        + f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(title)}</a></h3></div>'
+        + '<div class="catalogue-card-head">'
+        + f'<span class="score-pill" aria-label="{label} {score} / 10">{score}</span>'
+        + f'<span class="score-context">{label}</span></div>'
+        + f'<div class="mini-tags">{static_tag(category, "tag-category")}{static_tag(language)}{static_tag(level)}{archive}</div>'
+        + f'<div class="access-line"><span data-icon="access" aria-hidden="true"></span><span>{escape(access)}</span></div>'
+        + '</div></article>'
     )
 
 
 def static_catalogue_card_pt(course: dict, href_prefix: str = "../../") -> str:
-    archive = (
-        static_tag("Arquivado", "tag-archive")
-        if course["status"] == "active_archive"
-        else ""
-    )
-    access_labels = {
-        "F0": "Curso completo + credencial gratuita",
-        "F1": "Percurso avaliado gratuito",
-        "F2": "Conteúdo pedagógico gratuito",
-    }
-    category_name = PT_CATEGORY_LABELS.get(course["category"], course["category_name"])
-    language = PT_LANGUAGE_LABELS.get(
-        course["primary_language"],
-        label_language(course["primary_language"]),
-    )
-    level = PT_LEVEL_LABELS.get(course["level"], label_level(course["level"]))
-    score = float(course["recommendation_score"])
-    return (
-        '<article class="catalogue-card">'
-        '<div class="catalogue-card-head">'
-        f'<span class="score-pill" aria-label="Recomendação {score:.1f} em 10">{score:.1f}</span>'
-        '<span class="score-context">Recomendação</span></div>'
-        f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(course["title"])}</a></h3>'
-        f'<p class="provider">{escape(course["provider"])}</p>'
-        '<div class="mini-tags">'
-        f'{static_tag(category_name, "tag-category")}'
-        f'{static_tag(language)}'
-        f'{static_tag(level)}'
-        f'{archive}</div>'
-        '<div class="access-line">'
-        f'<strong>{escape(course["access_short"])}</strong>'
-        f'<span>{escape(access_labels.get(course["access_short"], course["access_label"]))}</span></div>'
-        '</article>'
-    )
+    return static_catalogue_card(course, href_prefix, is_pt=True)
+
+
+def original_title_html(course):
+    original = course.get("original_title")
+    if not original or original == course["title"]:
+        return ""
+    # The language of the canonical title can differ from the teaching language.
+    original_language = {
+        'openclassrooms-initiez-vous-gestion-projet': 'fr',
+        'fun-boite-outils-philosophie-politique': 'fr',
+        'fun-la-musique-quelle-histoire': 'fr',
+        'blcu-umoocs-elementary-spoken-chinese': 'zh',
+    }.get(course['id'], 'en')
+    return f'<details class="original-title"><summary>Título original</summary><p lang="{original_language}">{escape(original)}</p></details>'
 
 
 def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict) -> str:
@@ -613,6 +597,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
   <meta property="og:url" content="{escape(url, quote=True)}">
   <title>{escape(course['title'])} · Open Learning Index</title>
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../editorial.css">
   <script type="application/ld+json">{schema}</script>
 </head>
 <body>
@@ -646,6 +631,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     <section class="course-title-grid">
       <div class="course-heading-main">
         <h1>{escape(course["title"])}</h1>
+        {original_title_html(course)}
         <p class="course-provider-line">{escape(course["provider"])}</p>
         <div class="course-meta-tags">
           {static_tag(course["category_name"], "tag-category")}
@@ -681,7 +667,6 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
         <section id="overview" class="content-section">
           <h2>About this course</h2>
           <p>{escape(description)}</p>
-          {f'<p>{escape(review["scope_notes"])}</p>' if review.get("scope_notes") else ""}
         </section>
 
         <section id="details" class="content-section">
@@ -691,7 +676,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
 
         <section class="content-section">
           <h2>What is free</h2>
-          <p><strong>{escape(course["access_short"])} · {escape(course["access_label"])}</strong> — {escape(course["access_description"])}</p>
+          <p><strong>{escape(course["access_label"])}</strong> — {escape(course["access_description"])}</p>
           <p><strong>Certificate:</strong> {escape(certificate)}</p>
           <p><strong>Academic credit:</strong> {escape(credit)}</p>
         </section>
@@ -715,6 +700,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
       </div>
 
       <aside class="course-sidebar">
+        {media_html(course)}
         <section class="sidebar-card">
           <h2>Course at a glance</h2>
           <dl class="glance-list">
@@ -722,7 +708,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
             <div><span class="glance-icon" data-icon="globe" aria-hidden="true"></span><dt>Language</dt><dd>{escape(languages)}</dd></div>
             <div><span class="glance-icon" data-icon="level" aria-hidden="true"></span><dt>Level</dt><dd>{escape(label_level(course["level"]))}</dd></div>
             <div><span class="glance-icon" data-icon="clock" aria-hidden="true"></span><dt>Status</dt><dd>{escape(status)}</dd></div>
-            <div><span class="glance-icon" data-icon="access" aria-hidden="true"></span><dt>Access</dt><dd>{escape(course["access_short"])} · free</dd></div>
+            <div><span class="glance-icon" data-icon="access" aria-hidden="true"></span><dt>Access</dt><dd>{escape(course["access_label"])}</dd></div>
           </dl>
         </section>
 
@@ -746,7 +732,14 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
 """
 
 def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: dict) -> str:
-    html = render_static_course(course, course_by_id, candidate_by_id)
+    course = localize_course(course)
+    localized_courses = {key: {**value, "title": pt(value["title"])} for key, value in course_by_id.items()}
+    localized_candidates = {key: {**value, "title": pt(value["title"])} for key, value in candidate_by_id.items()}
+    html = render_static_course(course, localized_courses, localized_candidates)
+    html = html.replace('src="../../assets/', 'src="../../../assets/')
+    html = html.replace('href="../../editorial.css"', 'href="../../../editorial.css"')
+    for source in [*CREDENTIAL_LABELS.values(), *CREDIT_LABELS.values()]:
+        html = html.replace(escape(source), escape(pt(source)))
     en_url = f"{BASE_URL}/courses/{course['id']}/"
     pt_url = f"{BASE_URL}/pt/courses/{course['id']}/"
     category_pt = PT_CATEGORY_LABELS.get(course["category"], course["category_name"])
@@ -819,7 +812,7 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         'Curated, auditable and continuously maintained.': 'Curado, auditável e continuamente mantido.',
         '>Methodology</a>': '>Metodologia</a>',
         '>GitHub</a>': '>GitHub</a>',
-        f'>{course["category_name"]}</a>': f'>{category_pt}</a>',
+        f'>{escape(course["category_name"])}</a>': f'>{escape(category_pt)}</a>',
         static_tag(course["category_name"], "tag-category"): static_tag(category_pt, "tag-category"),
         static_tag(language_en): static_tag(language_pt),
         static_tag(level_en): static_tag(level_pt),
@@ -902,16 +895,19 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
     html = html.replace(banner_button_en, banner_button_pt)
 
     html = html.replace(
-        f'<p class="course-provider-line">{escape(course["provider"])}</p>',
-        f'<p class="course-provider-line">{escape(course["provider"])}</p>'
-        '<p class="localization-note">Interface em português (Portugal). A evidência editorial mantém-se no idioma original para preservar a auditoria.</p>',
-    )
-
-    html = html.replace(
         f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">View more in {escape(course["category_name"])} →</a>',
         f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">Ver mais em {escape(category_pt)} →</a>',
     )
 
+    html = html.replace(' · source ', ' · fonte ')
+    html = html.replace('No additional preparation requirements are documented.', 'Não estão documentados requisitos de preparação adicionais.')
+    html = html.replace('No related course is currently linked.', 'Não existem cursos relacionados associados.')
+    html = html.replace('Open Learning Index home', 'Página inicial do Open Learning Index')
+    html = html.replace('Use dark theme', 'Usar tema escuro')
+    # Format scores, without changing JSON-LD, URLs, percentages or review dates.
+    import re
+    html = re.sub(r'>([0-9]+)\.([0-9])</strong>', r'>\1,\2</strong>', html)
+    html = re.sub(r'>([0-9]+)\.([0-9])</span>', r'>\1,\2</span>', html)
     return html
 
 
@@ -943,7 +939,7 @@ def render_category_directory(category_rows: list[dict], courses: list[dict], pt
         course_count = counts.get(category_id, 0)
         leader_html = (
             f'<small>{"Mais recomendado" if pt else "Top recommendation"}: '
-            f'<strong>{escape(leader["title"])}</strong></small>'
+            f'<strong>{escape(translate_pt(leader["title"]) if pt else leader["title"])}</strong></small>'
             if leader
             else ""
         )
@@ -1000,6 +996,7 @@ def render_category_directory(category_rows: list[dict], courses: list[dict], pt
   <link rel="alternate" hreflang="pt-PT" href="{escape(canonical_pt, quote=True)}">
   <title>{escape(title)} · Open Learning Index</title>
   <link rel="stylesheet" href="{css_href}">
+  <link rel="stylesheet" href="{css_href.replace("styles.css", "editorial.css")}">
 </head>
 <body>
   <header class="topbar">
@@ -1107,6 +1104,7 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
   <meta property="og:url" content="{escape(url, quote=True)}">
   <title>{escape(category_name)} · Open Learning Index</title>
   <link rel="stylesheet" href="{css_href}">
+  <link rel="stylesheet" href="{css_href.replace("styles.css", "editorial.css")}">
 </head>
 <body>
   <header class="topbar">
@@ -1149,6 +1147,10 @@ def build(output: Path) -> None:
             continue
         item = build_public_course(course, categories)
         item["editorial"] = editorial_projection(course, reviews, reference_reviews, admissions)
+        item["media"] = media_for(item)
+        localized = localize_course(item)
+        item["presentation_pt"] = {"title": localized["title"], "description": localized["why_recommended"]}
+        item["search_text"] += " " + localized["title"] + " " + localized["why_recommended"] + " " + PT_CATEGORY_LABELS[item["category"]]
         public_courses.append(item)
 
     ids = [course["id"] for course in public_courses]
@@ -1260,7 +1262,7 @@ def build(output: Path) -> None:
         output / "pt" / "courses" / "index.html",
         output / "categories" / "index.html",
         output / "pt" / "categories" / "index.html",
-        output / "assets" / "hero-landscape.svg",
+        output / "assets" / "hero-library.webp",
         output / "app.js",
         output / "icons.js",
         output / "theme.js",

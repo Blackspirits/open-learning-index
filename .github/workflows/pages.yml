@@ -12,6 +12,7 @@ on:
       - 'data/admissions/**'
       - 'site/**'
       - 'scripts/build_public_site.py'
+      - 'scripts/editorial_presentation.py'
       - 'scripts/validate_public_site.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:

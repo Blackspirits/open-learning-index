@@ -71,9 +71,9 @@ const levelNamesPt = {
 };
 
 const accessPt = {
-  F0: "Curso completo + credencial gratuita",
-  F1: "Percurso avaliado gratuito",
-  F2: "Conteúdo pedagógico gratuito",
+  F0: "Curso e credencial gratuitos",
+  F1: "Percurso completo com avaliação",
+  F2: "Conteúdos completos gratuitos",
 };
 
 const displayLanguage = typeof Intl.DisplayNames === "function"
@@ -106,6 +106,11 @@ function labelLanguage(code) {
   } catch {
     return code;
   }
+}
+
+function labelCourseLanguage(course) {
+  const label = labelLanguage(course.primary_language);
+  return isPt ? `Em ${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}` : `In ${label}`;
 }
 
 function labelCategory(course) {
@@ -146,31 +151,24 @@ function initials(provider) {
 }
 
 function scorePill(course) {
-  const score = Number(course.recommendation_score).toFixed(1);
+  const score = new Intl.NumberFormat(pageLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(course.recommendation_score);
   const label = isPt ? `Recomendação ${score} em 10` : `Recommendation ${score} out of 10`;
   return `<span class="score-pill" aria-label="${label}">${score}</span>`;
 }
 
+function courseTitle(course) {
+  return isPt ? course.presentation_pt.title : course.title;
+}
+
+function courseMedia(course) {
+  const media = course.media || {};
+  if (media.src) return `<div class="course-media media-${escapeHtml(media.kind)}" aria-hidden="true"><img src="${route(media.src)}" alt="" width="800" height="450" loading="lazy" decoding="async"></div>`;
+  const icon = media.icon || categoryIcons[course.category] || "education";
+  return `<div class="course-media media-editorial media-${escapeHtml(course.category)}" aria-hidden="true"><span class="media-symbol" data-icon="${escapeHtml(icon)}"></span><span class="media-provider-name">${escapeHtml(course.provider)}</span></div>`;
+}
+
 function renderMiniCourseCard(course) {
-  const archived = course.status === "active_archive"
-    ? `<span class="mini-tag tag-archive">${isPt ? "Arquivado" : "Archived"}</span>`
-    : "";
-  return `
-    <article class="mini-course-card">
-      <div class="mini-card-top">
-        ${scorePill(course)}
-        <span class="score-context">${isPt ? "Recomendação" : "Recommendation"}</span>
-      </div>
-      <h3><a href="${route(coursePath(course.id))}">${escapeHtml(course.title)}</a></h3>
-      <p class="provider">${escapeHtml(course.provider)}</p>
-      <div class="mini-tags">
-        <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
-        <span class="mini-tag">${escapeHtml(labelLanguage(course.primary_language))}</span>
-        <span class="mini-tag">${escapeHtml(labelLevel(course.level))}</span>
-        ${archived}
-      </div>
-    </article>
-  `;
+  return renderCatalogueCard(course, "mini-course-card");
 }
 
 function renderHomeCategory(id, name, count) {
@@ -221,7 +219,9 @@ function renderHome() {
       a.title.localeCompare(b.title)
     )
     .slice(0, 4);
-  document.querySelector("#featured-courses").innerHTML = featured.map(renderMiniCourseCard).join("");
+  const container = document.querySelector("#featured-courses");
+  container.innerHTML = featured.map(renderMiniCourseCard).join("");
+  window.oliHydrateIcons?.(container);
 }
 
 function getCatalogueEls() {
@@ -247,6 +247,7 @@ function getCatalogueEls() {
     filterDisclosure: document.querySelector("#primary-filters"),
     mobileFilterCount: document.querySelector("#mobile-filter-count"),
     emptyClear: document.querySelector("#empty-clear-filters"),
+    activeFilters: document.querySelector("#active-filters"),
     searchShortcut: document.querySelector("[data-focus-search]"),
   };
 }
@@ -305,7 +306,7 @@ function populateFilters(els) {
 function filteredCourses(values) {
   const queryTokens = tokenize(values.q);
   const list = state.courses.filter((course) => {
-    const courseTokens = tokenize(course.search_text);
+    const courseTokens = tokenize(`${course.search_text} ${labelCategory(course)} ${labelLanguage(course.primary_language)}`);
     if (queryTokens.length && !queryTokens.every((word) => courseTokens.includes(word))) return false;
     if (values.category && course.category !== values.category) return false;
     if (values.language && course.primary_language !== values.language && !course.other_languages.includes(values.language)) return false;
@@ -323,34 +324,39 @@ function filteredCourses(values) {
     recommendation: (a, b) => b.recommendation_score - a.recommendation_score || b.quality_score - a.quality_score || a.title.localeCompare(b.title),
     quality: (a, b) => b.quality_score - a.quality_score || b.recommendation_score - a.recommendation_score || a.title.localeCompare(b.title),
     verified: (a, b) => b.last_verified.localeCompare(a.last_verified) || b.recommendation_score - a.recommendation_score,
-    title: (a, b) => a.title.localeCompare(b.title),
+    title: (a, b) => courseTitle(a).localeCompare(courseTitle(b), pageLocale),
   }[values.sort] || (() => 0);
 
   return list.sort(compare);
 }
 
-function renderCatalogueCard(course) {
+function renderCatalogueCard(course, className = "catalogue-card") {
   const archived = course.status === "active_archive"
     ? `<span class="mini-tag tag-archive">${isPt ? "Arquivado" : "Archived"}</span>`
     : "";
   const accessText = isPt ? (accessPt[course.access_short] || course.access_label) : course.access_label;
   return `
-    <article class="catalogue-card">
+    <article class="${className}">
+      ${courseMedia(course)}
+      <div class="card-body">
+      <div class="card-heading">
+        <p class="provider">${escapeHtml(course.provider)}</p>
+        <h3><a href="${route(coursePath(course.id))}">${escapeHtml(courseTitle(course))}</a></h3>
+      </div>
       <div class="catalogue-card-head">
         ${scorePill(course)}
         <span class="score-context">${isPt ? "Recomendação" : "Recommendation"}</span>
       </div>
-      <h3><a href="${route(coursePath(course.id))}">${escapeHtml(course.title)}</a></h3>
-      <p class="provider">${escapeHtml(course.provider)}</p>
       <div class="mini-tags">
         <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
-        <span class="mini-tag">${escapeHtml(labelLanguage(course.primary_language))}</span>
+        <span class="mini-tag">${escapeHtml(labelCourseLanguage(course))}</span>
         <span class="mini-tag">${escapeHtml(labelLevel(course.level))}</span>
         ${archived}
       </div>
-      <div class="access-line" title="${escapeHtml(course.access_description)}">
-        <strong>${escapeHtml(course.access_short)}</strong>
+      <div class="access-line">
+        <span data-icon="access" aria-hidden="true"></span>
         <span>${escapeHtml(accessText)}</span>
+      </div>
       </div>
     </article>
   `;
@@ -367,6 +373,27 @@ function activeFilterCount(values) {
     values.credential,
     values.credit,
   ].filter(Boolean).length;
+}
+
+function renderActiveFilters(els, values) {
+  const items = [];
+  for (const key of ["q", "category", "language", "level", "access", "tier", "status", "credential", "credit"]) {
+    if (!values[key]) continue;
+    const control = key === "q" ? els.search : els[key];
+    const fieldLabel = control.labels?.[0]?.textContent.trim() || key;
+    const valueLabel = control.tagName === "SELECT" ? control.selectedOptions[0].textContent : (typeof values[key] === "string" ? values[key] : "");
+    const text = valueLabel ? `${fieldLabel}: ${valueLabel}` : fieldLabel;
+    const label = `${isPt ? "Remover" : "Remove"} ${text}`;
+    items.push(`<button type="button" class="filter-chip" data-remove-filter="${key}" aria-label="${escapeHtml(label)}"><span>${escapeHtml(text)}</span><b aria-hidden="true">×</b></button>`);
+  }
+  els.activeFilters.innerHTML = items.join("");
+  els.clear.hidden = items.length === 0;
+  const languageSwitch = document.querySelector(".language-switch");
+  if (languageSwitch) {
+    const target = new URL(languageSwitch.href);
+    target.search = location.search;
+    languageSwitch.href = target.href;
+  }
 }
 
 function resetCatalogue(els, focusSearch = true) {
@@ -397,7 +424,9 @@ function renderCatalogue(els) {
     const count = activeFilterCount(values);
     els.mobileFilterCount.textContent = count ? ` · ${count}` : "";
   }
-  els.results.innerHTML = visible.map(renderCatalogueCard).join("");
+  els.results.innerHTML = visible.map(course => renderCatalogueCard(course)).join("");
+  window.oliHydrateIcons?.(els.results);
+  renderActiveFilters(els, values);
   els.empty.hidden = courses.length !== 0;
   els.showMore.hidden = visible.length >= courses.length;
 
@@ -423,14 +452,28 @@ function bootCatalogue() {
     state.visibleLimit = 18;
     renderCatalogue(els);
   };
+  els.filters.addEventListener("submit", event => event.preventDefault());
   els.filters.addEventListener("input", rerender);
+  els.sort.addEventListener("change", rerender);
+  els.activeFilters.addEventListener("click", event => {
+    const button = event.target.closest("[data-remove-filter]");
+    if (!button) return;
+    const key = button.dataset.removeFilter;
+    const control = key === "q" ? els.search : els[key];
+    if (control.type === "checkbox") control.checked = false;
+    else control.value = "";
+    rerender();
+    (els.activeFilters.querySelector("button") || els.search).focus();
+  });
   els.filters.addEventListener("change", rerender);
   els.clear.addEventListener("click", () => resetCatalogue(els));
   els.emptyClear?.addEventListener("click", () => resetCatalogue(els));
   els.searchShortcut?.addEventListener("click", () => els.search.focus());
   els.showMore.addEventListener("click", () => {
+    const previousLimit = state.visibleLimit;
     state.visibleLimit += 18;
     renderCatalogue(els);
+    els.results.children[previousLimit]?.querySelector("h3 a")?.focus();
   });
   els.viewButtons.forEach((button) => {
     button.addEventListener("click", () => {
