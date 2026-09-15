@@ -74,6 +74,12 @@ function route(path) {
   return `${rootPath}${path}`;
 }
 
+function coursePath(courseId) {
+  return isPt
+    ? `pt/courses/${encodeURIComponent(courseId)}/`
+    : `courses/${encodeURIComponent(courseId)}/`;
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -144,7 +150,7 @@ function renderMiniCourseCard(course) {
         <span class="bookmark" aria-hidden="true">♡</span>
       </div>
       <div class="provider-mark" aria-hidden="true">${escapeHtml(initials(course.provider))}</div>
-      <h3><a href="${route(`courses/${encodeURIComponent(course.id)}/`)}">${escapeHtml(course.title)}</a></h3>
+      <h3><a href="${route(coursePath(course.id))}">${escapeHtml(course.title)}</a></h3>
       <p class="provider">${escapeHtml(course.provider)}</p>
       <div class="mini-tags">
         <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
@@ -318,7 +324,7 @@ function renderCatalogueCard(course) {
         <span class="bookmark" aria-hidden="true">♡</span>
       </div>
       <div class="provider-mark large" aria-hidden="true">${escapeHtml(initials(course.provider))}</div>
-      <h3><a href="${route(`courses/${encodeURIComponent(course.id)}/`)}">${escapeHtml(course.title)}</a></h3>
+      <h3><a href="${route(coursePath(course.id))}">${escapeHtml(course.title)}</a></h3>
       <p class="provider">${escapeHtml(course.provider)}</p>
       <div class="card-spacer"></div>
       <div class="mini-tags">
