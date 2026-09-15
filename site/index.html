@@ -38,12 +38,21 @@
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="courses/">Courses</a>
         <a href="#categories">Categories</a>
-        <a href="#about">About</a>
+        <a href="#about">Principles</a>
         <a href="#how-it-works">How it works</a>
       </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Mobile navigation">
+          <a href="courses/">Courses</a>
+          <a href="#categories">Categories</a>
+          <a href="#about">Principles</a>
+          <a href="#how-it-works">How it works</a>
+        </nav>
+      </details>
       <div class="nav-actions">
         <a class="icon-link" href="courses/" aria-label="Search courses">⌕</a>
-        <a class="language-switch" href="pt/" lang="pt-PT" hreflang="pt-PT">◎ EN</a>
+        <a class="language-switch" href="pt/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT</a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon aria-hidden="true">☾</span></button>
       </div>
     </div>
@@ -57,7 +66,6 @@
           <h1>Open Learning<br>for a Better Tomorrow</h1>
           <p class="hero-copy">
             A carefully curated index of the best free online courses from around the world.
-            Independent. Evidence-based. Always learning.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="courses/">Explore courses <span aria-hidden="true">→</span></a>
@@ -90,7 +98,7 @@
         </div>
         <a href="courses/">View all categories <span aria-hidden="true">→</span></a>
       </div>
-      <div id="home-categories" class="category-showcase" aria-live="polite"></div>
+      <div id="home-categories" class="category-showcase"></div>
     </section>
 
     <section class="home-section shell">
@@ -101,7 +109,7 @@
         </div>
         <a href="courses/">View all courses <span aria-hidden="true">→</span></a>
       </div>
-      <div id="featured-courses" class="featured-grid" aria-live="polite"></div>
+      <div id="featured-courses" class="featured-grid"></div>
     </section>
 
     <section id="how-it-works" class="home-section shell how-panel">
@@ -121,7 +129,9 @@
     <div class="shell footer-inner">
       <div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div>
       <div class="footer-links">
+        <a href="./">Home</a>
         <a href="courses/">Courses</a>
+        <a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Methodology</a>
         <a href="https://github.com/Blackspirits/open-learning-index">GitHub</a>
         <a href="pt/" lang="pt-PT" hreflang="pt-PT">Português</a>
       </div>
