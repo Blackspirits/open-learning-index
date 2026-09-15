@@ -365,7 +365,7 @@ def static_catalogue_card(course: dict, href_prefix: str = "../") -> str:
     return (
         '<article class="catalogue-card">'
         '<div class="catalogue-card-head">'
-        f'<span class="score-pill">{float(course["recommendation_score"]):.1f}</span>'
+        f'<span class="score-pill" aria-label="Recommendation {float(course["recommendation_score"]):.1f} out of 10">{float(course["recommendation_score"]):.1f}</span>'
         '<span class="score-context">Recommendation</span></div>'
         f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(course["title"])}</a></h3>'
         f'<p class="provider">{escape(course["provider"])}</p>'
