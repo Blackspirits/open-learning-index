@@ -166,9 +166,9 @@ def validate_page(site: Path, page: Path, errors: list[str]) -> PageParser:
                 f"{rel}: canonical mismatch; expected {expected_url}, found {parser.canonicals}",
             )
 
-    if parser.has_data_icon and not any(src.endswith("icons.js") for src in parser.scripts):
+    if parser.has_data_icon and not any(urlsplit(src).path.endswith("icons.js") for src in parser.scripts):
         fail(errors, f"{rel}: data-icon markup requires icons.js")
-    if parser.has_theme_toggle and not any(src.endswith("theme.js") for src in parser.scripts):
+    if parser.has_theme_toggle and not any(urlsplit(src).path.endswith("theme.js") for src in parser.scripts):
         fail(errors, f"{rel}: theme toggle requires theme.js")
 
     for attr, raw_url in parser.links:

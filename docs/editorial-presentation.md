@@ -38,6 +38,8 @@ The public access labels describe what the learner receives. F0/F1/F2 remain can
 
 ## Validation
 
+The build adds content-based revision parameters to local CSS/JavaScript references and to the catalogue/metadata URLs fetched by the app. A catalogue change also changes the app revision, so returning visitors receive matching page assets and data instead of mixing releases from their browser cache. Unchanged builds keep identical URLs.
+
 ```sh
 python -m unittest discover -s tests -p 'test_*.py'
 python scripts/validate.py

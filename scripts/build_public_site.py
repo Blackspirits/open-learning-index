@@ -2,7 +2,9 @@
 """Build the static Open Learning Index public catalogue from canonical data."""
 
 import argparse
+import hashlib
 import json
+import re
 import shutil
 import unicodedata
 from collections import Counter
@@ -1127,6 +1129,32 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
 </html>
 """
 
+def version_public_assets(output: Path) -> None:
+    """Keep each page's scripts, styles and fetched catalogue on one revision."""
+    app_path = output / "app.js"
+    app = app_path.read_text(encoding="utf-8")
+    for name in ("catalog", "meta"):
+        revision = hashlib.sha256((output / "data" / f"{name}.json").read_bytes()).hexdigest()[:16]
+        app = re.sub(
+            rf'"data/{name}\.json(?:\?v=[a-f0-9]+)?"',
+            f'"data/{name}.json?v={revision}"',
+            app,
+        )
+    write_text(app_path, app)
+    revisions = {
+        path.name: hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+        for path in output.iterdir() if path.suffix in {".css", ".js"}
+    }
+    pattern = re.compile(r'((?:src|href)="(?:\.\.?/)*)([^"/?]+\.(?:css|js))(?:\?v=[a-f0-9]+)?"')
+
+    def version_reference(match):
+        prefix, name = match.groups()
+        return f'{prefix}{name}?v={revisions[name]}"' if name in revisions else match.group(0)
+
+    for page in output.rglob("*.html"):
+        write_text(page, pattern.sub(version_reference, page.read_text(encoding="utf-8")))
+
+
 def build(output: Path) -> None:
     courses = json.loads(COURSES.read_text(encoding="utf-8"))
     category_rows = json.loads(CATEGORIES.read_text(encoding="utf-8"))
@@ -1281,6 +1309,8 @@ def build(output: Path) -> None:
     missing_files = [str(path.relative_to(output)) for path in required if not path.exists()]
     if missing_files:
         raise SystemExit(f"ERROR: public build missing required files: {missing_files}")
+
+    version_public_assets(output)
 
     try:
         output_label = output.relative_to(ROOT)
