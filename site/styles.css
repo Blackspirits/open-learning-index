@@ -253,7 +253,7 @@ h1, h2, h3 {
   position: relative;
   z-index: 2;
   width: min(650px, 64%);
-  padding: 58px 0 0 46px;
+  padding: 58px 0 42px 46px;
 }
 
 .eyebrow,
@@ -325,13 +325,14 @@ h1, h2, h3 {
 }
 
 .home-stats {
-  position: absolute;
+  position: static;
   z-index: 3;
-  left: 46px;
-  bottom: 26px;
   display: grid;
-  width: min(580px, calc(100% - 92px));
+  width: min(580px, 100%);
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgb(255 255 255 / 0.28);
   color: white;
 }
 
@@ -504,7 +505,7 @@ h1, h2, h3 {
 }
 
 .mini-course-card {
-  min-height: 265px;
+  min-height: 235px;
   padding: 16px;
 }
 
@@ -548,10 +549,10 @@ h1, h2, h3 {
 }
 
 .provider-mark.large {
-  width: 90px;
-  height: 54px;
-  margin-top: 7px;
-  font-size: 1.3rem;
+  width: 82px;
+  height: 48px;
+  margin-top: 5px;
+  font-size: 1.18rem;
 }
 
 .mini-course-card h3,
@@ -829,7 +830,7 @@ h1, h2, h3 {
 }
 
 .catalogue-card {
-  min-height: 315px;
+  min-height: 270px;
   padding: 14px;
 }
 
@@ -1389,7 +1390,7 @@ h1, h2, h3 {
 
   .hero-copy-block {
     width: 100%;
-    padding: 38px 22px 0;
+    padding: 38px 22px 34px;
   }
 
   .hero-copy-block h1 {
@@ -1397,11 +1398,10 @@ h1, h2, h3 {
   }
 
   .home-stats {
-    left: 22px;
-    bottom: 24px;
-    width: calc(100% - 44px);
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 14px 0;
+    margin-top: 26px;
   }
 
   .home-stats div:nth-child(2) { border-right: 0; }
@@ -1475,7 +1475,7 @@ h1, h2, h3 {
   .language-switch { padding: 0 9px; }
   .brand-symbol { width: 27px; height: 27px; }
   .hero-copy-block { padding-inline: 18px; }
-  .home-stats { left: 18px; width: calc(100% - 36px); }
+  .home-stats { width: 100%; }
   .principles-grid { grid-template-columns: 1fr; }
   .category-showcase { grid-template-columns: 1fr; }
   .compact-field { flex-basis: 100%; }
@@ -1637,7 +1637,15 @@ html[data-theme="dark"] .course-materials-link {
 }
 
 html[data-theme="dark"] .category-icon {
-  filter: saturate(0.92) brightness(0.9);
+  filter: saturate(0.88) brightness(0.82);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.05);
+}
+
+html[data-theme="dark"] .icon-business-entrepreneurship,
+html[data-theme="dark"] .icon-health-medicine,
+html[data-theme="dark"] .icon-math-statistics,
+html[data-theme="dark"] .icon-languages {
+  background: #17313a;
 }
 
 @media (max-width: 760px) {
