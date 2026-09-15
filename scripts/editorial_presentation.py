@@ -37,8 +37,13 @@ def localize_course(course):
     return item
 
 def media_for(course):
-    if course['id'] in MEDIA:
-        record = MEDIA[course['id']]
+    record = MEDIA.get(course['id'])
+    if (
+        record
+        and record.get('published') is True
+        and record.get('rights_status') == 'verified_reuse'
+        and record.get('src')
+    ):
         return {'src':record['src'], 'kind':record['kind']}
     return {'kind':'editorial','icon':ICONS.get(course['category'],'education')}
 

@@ -5,12 +5,12 @@ This update refines the existing static site. It does not alter eligibility, sco
 ## Images
 
 - `site/assets/hero-library.webp`: original generated illustration, encoded at 1536 × 1024, approximately 183 KB. Text remains live HTML; the same image and layout rules serve EN/PT and light/dark. Mobile uses a separate, consistently sized image region.
-- `site/assets/course-media.json`: provenance for 55 selected images observed on official course/provider pages. Records include the page URL, original image URL, import date and original-byte SHA-256.
-- `site/assets/courses/`: locally served WebP copies, downsampled without cropping. Course illustrations and provider branding use separate presentation classes.
-- Courses without suitable official images use the existing category icon system and a typeset provider name in a restrained colour panel. These panels are original UI components, not invented institutional logos.
-- Images are decorative beside the visible title/provider, have empty alt text, reserve their layout space, and load lazily outside the main hero. Browsing does not contact external image hosts.
+- `site/assets/course-media.json` retains provenance for 55 images previously observed on official course/provider pages. Records include the page URL, original image URL, import date, original-byte SHA-256, publication state and rights status.
+- Those 55 third-party images are currently marked `rights_status: unverified` and `published: false`. Their local binary copies are not distributed by the repository or public build.
+- Course cards/details therefore use the original category icon system and a typeset provider name in a restrained editorial panel unless a future media record carries an explicit verified reuse basis.
+- The original generated `site/assets/hero-library.webp` remains project artwork and is unaffected.
 
-Third-party course artwork, logos and trademarks retain their respective owners' rights. They are excluded from the project's MIT and CC BY licences, as described in [LICENSING.md](../LICENSING.md). The provenance manifest identifies the original source; it is not a claim of a new licence or provider endorsement.
+Source provenance alone is not treated as reuse permission. A third-party image can return only after its reuse licence/permission is verified and recorded.
 
 ## Portuguese presentation
 
@@ -22,7 +22,7 @@ When updating a course:
 
 1. Update the canonical course/review through the normal editorial workflow.
 2. Add translations for new or changed displayed strings to the dictionary. Preserve programme brands, identifiers and numerical facts; use European Portuguese.
-3. Add an official image to the manifest only when its identity, source and presentation are suitable. A missing image automatically uses the editorial panel.
+3. Add third-party artwork only when its identity, source, presentation and reuse rights are verified. Record `rights_status: verified_reuse` and `published: true`; otherwise the editorial panel is mandatory.
 4. Run the normal validation commands and the presentation tests below.
 
 The public language labels also preserve uncertainty: `pt-PT` and `pt-BR` are named explicitly, while provider-labelled generic `pt` is displayed as “Portuguese (variant unspecified)” / “Português (variante não especificada)”. The public access labels describe what the learner receives. F0/F1/F2 remain canonical filter values and can still occur in the expanded editorial rationale; they are no longer the primary catalogue labels. F3 remains ineligible for publication.

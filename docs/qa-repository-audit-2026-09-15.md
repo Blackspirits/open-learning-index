@@ -171,6 +171,6 @@ The audit finds three concrete hardening tasks:
 
 1. make generic Portuguese uncertainty explicit — addressed here;
 2. correct known pt-PT semantic translation failures — addressed here;
-3. remove or rights-verify the 55 locally bundled third-party course images — blocker for the next audit PR.
+3. remove or rights-verify the 55 locally bundled third-party course images — **addressed by the follow-up media-rights hardening PR**: all 55 records are now unpublished/unverified and the local binary copies are removed.
 
-After the media-rights gate, the project should return to issue #91 maintenance rather than reopening broad redesign or Discovery.
+With the media-rights gate closed, the project should return to issue #91 maintenance rather than reopening broad redesign or Discovery.
