@@ -62,6 +62,7 @@ Maintenance changes should use current primary evidence and preserve history. Wh
 - Do not infer missing facts from provider reputation or marketing language.
 - Record uncertainty explicitly.
 - Keep pt-PT and pt-BR distinct.
+- Do not convert generic provider-labelled “Português” to pt-PT or pt-BR by inference. On a published record, bare `pt` is allowed only as a documented alternate with `language_notes`; primary Portuguese must be resolved before publication.
 - Avoid affiliate, referral and tracking links.
 - Do not copy provider marketing descriptions into editorial fields.
 
