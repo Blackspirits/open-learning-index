@@ -15,7 +15,9 @@ The standard MIT text is intentionally kept unmodified.
 
 ## Curated metadata and editorial annotations — CC BY 4.0
 
-Original curation produced by this project — including course metadata assembled by the project, review rationale, scoring evidence, comparison notes, original project-created visual identity assets and other original editorial annotations — is made available under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** licence.
+Original curation produced by this project — including course metadata assembled by the project, review rationale, scoring evidence, comparison notes, standalone project-created artwork/visual identity assets and other original editorial annotations — is made available under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** licence.
+
+Software files that implement the visual system, including HTML/CSS/JavaScript and the icon runtime, remain covered by the MIT licence above.
 
 Licence: https://creativecommons.org/licenses/by/4.0/
 
