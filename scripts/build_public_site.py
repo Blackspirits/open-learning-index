@@ -768,8 +768,8 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         '<html lang="en">': '<html lang="pt-PT">',
         en_url: pt_url,
         '<link rel="stylesheet" href="../../styles.css">': '<link rel="stylesheet" href="../../../styles.css">',
-        '<script src="../../theme.js" defer></script>': '<script src="../../../icons.js" defer></script>
-  <script src="../../../theme.js" defer></script>',
+        '<script src="../../icons.js" defer></script>': '<script src="../../../icons.js" defer></script>',
+        '<script src="../../theme.js" defer></script>': '<script src="../../../theme.js" defer></script>',
         'Skip to course details': 'Saltar para os detalhes do curso',
         'aria-label="Primary navigation"': 'aria-label="Navegação principal"',
         'aria-label="Open navigation"': 'aria-label="Abrir navegação"',
@@ -1200,16 +1200,37 @@ def build(output: Path) -> None:
             render_static_course_pt(course, course_by_id, candidate_by_id),
         )
 
+    write_text(
+        output / "categories" / "index.html",
+        render_category_directory(category_rows, public_courses, pt=False),
+    )
+    write_text(
+        output / "pt" / "categories" / "index.html",
+        render_category_directory(category_rows, public_courses, pt=True),
+    )
+
     for category in category_rows:
         write_text(
             output / "categories" / category["id"] / "index.html",
-            render_static_category(category, public_courses),
+            render_static_category(category, public_courses, pt=False),
+        )
+        write_text(
+            output / "pt" / "categories" / category["id"] / "index.html",
+            render_static_category(category, public_courses, pt=True),
         )
 
-    sitemap_urls = [f"{BASE_URL}/", f"{BASE_URL}/courses/", f"{BASE_URL}/pt/", f"{BASE_URL}/pt/courses/"]
+    sitemap_urls = [
+        f"{BASE_URL}/",
+        f"{BASE_URL}/courses/",
+        f"{BASE_URL}/categories/",
+        f"{BASE_URL}/pt/",
+        f"{BASE_URL}/pt/courses/",
+        f"{BASE_URL}/pt/categories/",
+    ]
     sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
     sitemap_urls.extend(f"{BASE_URL}/pt/courses/{course['id']}/" for course in public_courses)
     sitemap_urls.extend(f"{BASE_URL}/categories/{category['id']}/" for category in category_rows)
+    sitemap_urls.extend(f"{BASE_URL}/pt/categories/{category['id']}/" for category in category_rows)
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1237,8 +1258,11 @@ def build(output: Path) -> None:
         output / "courses" / "index.html",
         output / "pt" / "index.html",
         output / "pt" / "courses" / "index.html",
+        output / "categories" / "index.html",
+        output / "pt" / "categories" / "index.html",
         output / "assets" / "hero-landscape.svg",
         output / "app.js",
+        output / "icons.js",
         output / "theme.js",
         output / "course.html",
         output / "styles.css",
@@ -1251,6 +1275,7 @@ def build(output: Path) -> None:
     required.extend(output / "courses" / course["id"] / "index.html" for course in public_courses)
     required.extend(output / "pt" / "courses" / course["id"] / "index.html" for course in public_courses)
     required.extend(output / "categories" / category["id"] / "index.html" for category in category_rows)
+    required.extend(output / "pt" / "categories" / category["id"] / "index.html" for category in category_rows)
     missing_files = [str(path.relative_to(output)) for path in required if not path.exists()]
     if missing_files:
         raise SystemExit(f"ERROR: public build missing required files: {missing_files}")
