@@ -61,6 +61,41 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('CS50: Introdução à ciência de computadores', translated)
         self.assertIn('Ciência de Computadores e Software</a>', translated)
 
+    def test_pt_pt_audit_global_invariants(self):
+        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        legacy_ao90 = (
+            'excepcional', 'excepcionalmente', 'actuais', 'actual', 'activo',
+            'interactivo', 'interactiva', 'interactivos', 'interactivas',
+            'projecto', 'concepção', 'reacção', 'auto-formativo',
+            'co-requisito', 'vídeo-aulas',
+        )
+        for source, value in translations.items():
+            with self.subTest(source=source[:100]):
+                self.assertNotIn('\\u200b', value)
+                lowered = value.lower()
+                for forbidden in legacy_ao90:
+                    self.assertNotIn(forbidden.lower(), lowered)
+                if 'lecture' in source.lower():
+                    self.assertNotIn('palestra', lowered)
+                if 'badge' in source.lower():
+                    self.assertNotIn('crachá', lowered)
+                    self.assertNotIn('selo', lowered)
+                    self.assertNotIn('distintivo', lowered)
+                    if 'emblema' in lowered:
+                        self.assertTrue('emblema digital' in lowered or 'emblemas digitais' in lowered)
+                if source.lower().startswith(('browser', 'web browser')):
+                    self.assertNotIn('Browser', value)
+                if 'european-portuguese' in source.lower():
+                    self.assertNotIn('europeu-português', lowered)
+                    self.assertNotIn('entre europeu e português', lowered)
+                if 'currency' in source.lower():
+                    self.assertNotIn('moeda', lowered)
+                    self.assertNotIn('monetári', lowered)
+                if ('live' in source.lower() and
+                        ('exam' in source.lower() or 'certification' in source.lower())):
+                    self.assertNotIn('ao vivo', lowered)
+                    self.assertNotIn('em direto', lowered)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
