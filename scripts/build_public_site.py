@@ -695,6 +695,14 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
     level_pt = PT_LEVEL_LABELS.get(course["level"], level_en)
     language_en = label_language(course["primary_language"])
     language_pt = PT_LANGUAGE_LABELS.get(course["primary_language"], language_en)
+    languages_en = " · ".join(
+        label_language(code)
+        for code in [course["primary_language"], *course.get("other_languages", [])]
+    )
+    languages_pt = " · ".join(
+        PT_LANGUAGE_LABELS.get(code, label_language(code))
+        for code in [course["primary_language"], *course.get("other_languages", [])]
+    )
     archived = course["status"] == "active_archive"
 
     replacements = {
@@ -764,6 +772,31 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
     }
     for old, new in replacements.items():
         html = html.replace(old, new)
+
+    html = html.replace(
+        f'<link rel="alternate" hreflang="en" href="{escape(pt_url, quote=True)}">',
+        f'<link rel="alternate" hreflang="en" href="{escape(en_url, quote=True)}">',
+    )
+    html = html.replace(
+        f'<dd>{escape(languages_en)}</dd>',
+        f'<dd>{escape(languages_pt)}</dd>',
+    )
+    html = html.replace(
+        f'<dd>{escape(level_en)}</dd>',
+        f'<dd>{escape(level_pt)}</dd>',
+    )
+
+    access_labels_pt = {
+        "F0": ("Curso completo + credencial gratuita", "Percurso completo com credencial de conclusão gratuita emitida pelo fornecedor."),
+        "F1": ("Percurso avaliado gratuito", "Percurso completo com avaliação gratuita significativa, mas sem credencial formal gratuita."),
+        "F2": ("Conteúdo pedagógico completo", "Conteúdo pedagógico substancial e completo, mas sem percurso formal de conclusão gratuito."),
+    }
+    access_label_pt, access_description_pt = access_labels_pt.get(
+        course["access_short"],
+        (course["access_label"], course["access_description"]),
+    )
+    html = html.replace(course["access_label"], access_label_pt)
+    html = html.replace(course["access_description"], access_description_pt)
 
     html = html.replace(
         f'<a href="../../categories/{escape(course["category"])}/">{escape(category_pt)}</a>',
