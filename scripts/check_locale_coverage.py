@@ -95,13 +95,11 @@ def required_editorial_strings() -> dict[str, set[str]]:
 
 
 def read_locale(locale: str) -> dict[str, str]:
-    path = LOCALES / f"{locale}.json"
-    if not path.exists():
+    from editorial_presentation import translations_for
+    try:
+        return translations_for(locale)
+    except ValueError:
         return {}
-    data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict):
-        raise SystemExit(f"ERROR: locale file must be a JSON object: {path}")
-    return data
 
 
 def main() -> int:
