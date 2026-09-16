@@ -47,6 +47,8 @@ jobs:
 
       - name: Enforce pt-PT editorial locale coverage
         run: python scripts/check_locale_coverage.py --locale pt-PT --enforce
+      - name: Enforce Spanish editorial locale coverage
+        run: python scripts/check_locale_coverage.py --locale es --enforce
 
       - name: Validate canonical dataset
         run: python scripts/validate.py
