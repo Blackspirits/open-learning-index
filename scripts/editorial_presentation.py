@@ -16,10 +16,24 @@ _TRANSLATION_CACHE = {}
 
 def translations_for(locale):
     if locale not in _TRANSLATION_CACHE:
-        path = SITE / 'locales' / f'{locale}.json'
-        if not path.exists():
+        single = SITE / 'locales' / f'{locale}.json'
+        fragments = SITE / 'locales' / locale
+        if single.exists():
+            translations = read_map(single)
+        elif fragments.is_dir():
+            translations = {}
+            for path in sorted(fragments.glob('*.json')):
+                chunk = read_map(path)
+                overlap = set(translations).intersection(chunk)
+                if overlap:
+                    raise ValueError(
+                        f'Duplicate {locale} presentation keys across fragments: '
+                        + ', '.join(sorted(overlap)[:5])
+                    )
+                translations.update(chunk)
+        else:
             raise ValueError(f'Unsupported presentation locale: {locale}')
-        _TRANSLATION_CACHE[locale] = read_map(path)
+        _TRANSLATION_CACHE[locale] = translations
     return _TRANSLATION_CACHE[locale]
 
 
