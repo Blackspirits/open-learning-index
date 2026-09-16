@@ -330,6 +330,24 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('--control-border: #526b77;', css)
         self.assertIn('border: 1px solid var(--control-border);', css)
 
+
+    def test_static_catalogue_cards_are_locale_aware_without_pt_wrapper_drift(self):
+        course = self.courses[0]
+        direct = build.static_catalogue_card(course, "../../", locale="pt-PT")
+        wrapped = build.static_catalogue_card_pt(course, "../../")
+        self.assertEqual(direct, wrapped)
+        self.assertIn("Recomendação", direct)
+        self.assertIn("Qualidade", direct)
+        self.assertIn("Verificado", direct)
+
+    def test_static_catalogue_card_english_default_is_preserved(self):
+        course = self.courses[0]
+        html = build.static_catalogue_card(course)
+        self.assertIn("Recommendation", html)
+        self.assertIn("Quality", html)
+        self.assertIn("Verified", html)
+        self.assertNotIn("Recomendação", html)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):

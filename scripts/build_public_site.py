@@ -347,6 +347,81 @@ PT_LANGUAGE_LABELS = {
 }
 
 
+LOCALE_ROUTE_PREFIX = {
+    "en": "",
+    "pt-PT": "pt",
+}
+
+LOCALE_CATEGORY_LABELS = {
+    "pt-PT": PT_CATEGORY_LABELS,
+}
+
+LOCALE_LEVEL_LABELS = {
+    "pt-PT": PT_LEVEL_LABELS,
+}
+
+LOCALE_LANGUAGE_LABELS = {
+    "pt-PT": PT_LANGUAGE_LABELS,
+}
+
+LOCALE_ACCESS_LABELS = {
+    "pt-PT": {
+        "F0": "Curso e credencial gratuitos",
+        "F1": "Percurso completo com avaliação",
+        "F2": "Conteúdos completos gratuitos",
+    },
+}
+
+LOCALE_CARD_COPY = {
+    "en": {
+        "recommendation": "Recommendation",
+        "quality": "Quality",
+        "verified": "Verified",
+        "archived": "Archived",
+        "language_prefix": "In",
+        "decimal": ".",
+    },
+    "pt-PT": {
+        "recommendation": "Recomendação",
+        "quality": "Qualidade",
+        "verified": "Verificado",
+        "archived": "Arquivado",
+        "language_prefix": "Em",
+        "decimal": ",",
+    },
+}
+
+LOCALE_MONTHS = {
+    "en": ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"),
+    "pt-PT": ("jan.", "fev.", "mar.", "abr.", "mai.", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez."),
+}
+
+
+def locale_category_label(course: dict, locale: str) -> str:
+    return LOCALE_CATEGORY_LABELS.get(locale, {}).get(
+        course["category"],
+        course["category_name"],
+    )
+
+
+def locale_level_label(value: str, locale: str) -> str:
+    return LOCALE_LEVEL_LABELS.get(locale, {}).get(value, label_level(value))
+
+
+def locale_language_label(code: str, locale: str) -> str:
+    return LOCALE_LANGUAGE_LABELS.get(locale, {}).get(code, label_language(code))
+
+
+def locale_course_copy(course: dict, locale: str) -> tuple[str, str]:
+    if locale == "en":
+        return course["title"], course["why_recommended"]
+    presentation = (course.get("presentations") or {}).get(locale)
+    if presentation:
+        return presentation["title"], presentation["description"]
+    localized = localize_course(course, locale=locale)
+    return localized["title"], localized["why_recommended"]
+
+
 def readable_id(value: str) -> str:
     return " ".join(part.capitalize() for part in str(value or "").split("-"))
 
@@ -383,32 +458,41 @@ def static_tag(value: str, extra: str = "") -> str:
     return f'<span class="{cls}">{escape(value)}</span>'
 
 
-def format_review_month(value: str, is_pt: bool = False) -> str:
+def format_review_month(value: str, locale: str = "en") -> str:
     year, month, _day = value.split("-")
-    if is_pt:
-        names = ("jan.", "fev.", "mar.", "abr.", "mai.", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez.")
-    else:
-        names = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+    names = LOCALE_MONTHS.get(locale, LOCALE_MONTHS["en"])
     return f"{names[int(month) - 1]} {year}"
 
 
-def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False, show_category: bool = True) -> str:
-    title = pt(course["title"]) if is_pt else course["title"]
-    rationale = pt(course["why_recommended"]) if is_pt else course["why_recommended"]
-    category = PT_CATEGORY_LABELS[course["category"]] if is_pt else course["category_name"]
-    language = PT_LANGUAGE_LABELS.get(course["primary_language"], label_language(course["primary_language"])) if is_pt else label_language(course["primary_language"])
-    language = f"Em {language[0].lower()}{language[1:]}" if is_pt else f"In {language}"
-    level = PT_LEVEL_LABELS.get(course["level"], label_level(course["level"])) if is_pt else label_level(course["level"])
-    access = {"F0":"Curso e credencial gratuitos", "F1":"Percurso completo com avaliação", "F2":"Conteúdos completos gratuitos"}[course["access_short"]] if is_pt else course["access_label"]
-    rec_label = "Recomendação" if is_pt else "Recommendation"
-    quality_label = "Qualidade" if is_pt else "Quality"
-    verified_label = "Verificado" if is_pt else "Verified"
+def static_catalogue_card(
+    course: dict,
+    href_prefix: str = "../",
+    locale: str = "en",
+    show_category: bool = True,
+) -> str:
+    title, rationale = locale_course_copy(course, locale)
+    category = locale_category_label(course, locale)
+    language_label = locale_language_label(course["primary_language"], locale)
+    language_prefix = LOCALE_CARD_COPY.get(locale, LOCALE_CARD_COPY["en"])["language_prefix"]
+    if locale == "pt-PT":
+        language_label = language_label[0].lower() + language_label[1:]
+    language = f"{language_prefix} {language_label}"
+    level = locale_level_label(course["level"], locale)
+    access = LOCALE_ACCESS_LABELS.get(locale, {}).get(
+        course["access_short"],
+        course["access_label"],
+    )
+    copy = LOCALE_CARD_COPY.get(locale, LOCALE_CARD_COPY["en"])
     rec_score = f'{float(course["recommendation_score"]):.1f}'
     quality_score = f'{float(course["quality_score"]):.1f}'
-    if is_pt:
-        rec_score = rec_score.replace(".", ",")
-        quality_score = quality_score.replace(".", ",")
-    archive = static_tag("Arquivado" if is_pt else "Archived", "tag-archive") if course["status"] == "active_archive" else ""
+    if copy["decimal"] != ".":
+        rec_score = rec_score.replace(".", copy["decimal"])
+        quality_score = quality_score.replace(".", copy["decimal"])
+    archive = (
+        static_tag(copy["archived"], "tag-archive")
+        if course["status"] == "active_archive"
+        else ""
+    )
     category_tag = static_tag(category, "tag-category") if show_category else ""
     return (
         '<article class="catalogue-card">'
@@ -416,20 +500,30 @@ def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False, s
         + f'<p class="provider">{escape(course["provider"])}</p>'
         + f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(title)}</a></h3></div>'
         + '<div class="card-score-row">'
-        + f'<span class="card-score card-score-primary" aria-label="{rec_label} {rec_score} / 10"><strong>{rec_score}</strong><small>{rec_label}</small></span>'
-        + f'<span class="card-score" aria-label="{quality_label} {quality_score} / 10"><strong>{quality_score}</strong><small>{quality_label}</small></span>'
+        + f'<span class="card-score card-score-primary" aria-label="{copy["recommendation"]} {rec_score} / 10"><strong>{rec_score}</strong><small>{copy["recommendation"]}</small></span>'
+        + f'<span class="card-score" aria-label="{copy["quality"]} {quality_score} / 10"><strong>{quality_score}</strong><small>{copy["quality"]}</small></span>'
         + static_tag(course["quality_tier"], "tag-tier")
         + '</div>'
         + f'<p class="card-rationale">{escape(rationale)}</p>'
         + f'<div class="mini-tags">{category_tag}{static_tag(language)}{static_tag(level)}{archive}</div>'
         + '<div class="card-footer">'
         + f'<div class="access-line"><span data-icon="access" aria-hidden="true"></span><span>{escape(access)}</span></div>'
-        + f'<span class="verified-line">{verified_label} {escape(format_review_month(course["last_verified"], is_pt))}</span>'
+        + f'<span class="verified-line">{copy["verified"]} {escape(format_review_month(course["last_verified"], locale))}</span>'
         + '</div></div></article>'
     )
 
-def static_catalogue_card_pt(course: dict, href_prefix: str = "../../", show_category: bool = True) -> str:
-    return static_catalogue_card(course, href_prefix, is_pt=True, show_category=show_category)
+
+def static_catalogue_card_pt(
+    course: dict,
+    href_prefix: str = "../../",
+    show_category: bool = True,
+) -> str:
+    return static_catalogue_card(
+        course,
+        href_prefix,
+        locale="pt-PT",
+        show_category=show_category,
+    )
 
 
 def original_title_html(course):
