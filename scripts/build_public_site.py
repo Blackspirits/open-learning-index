@@ -391,7 +391,7 @@ def format_review_month(value: str, is_pt: bool = False) -> str:
     return f"{names[int(month) - 1]} {year}"
 
 
-def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False) -> str:
+def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False, show_category: bool = True) -> str:
     title = pt(course["title"]) if is_pt else course["title"]
     rationale = pt(course["why_recommended"]) if is_pt else course["why_recommended"]
     category = PT_CATEGORY_LABELS[course["category"]] if is_pt else course["category_name"]
@@ -408,6 +408,7 @@ def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False) -
         rec_score = rec_score.replace(".", ",")
         quality_score = quality_score.replace(".", ",")
     archive = static_tag("Arquivado" if is_pt else "Archived", "tag-archive") if course["status"] == "active_archive" else ""
+    category_tag = static_tag(category, "tag-category") if show_category else ""
     return (
         '<article class="catalogue-card">'
         + '<div class="card-body"><div class="card-heading">'
@@ -419,15 +420,15 @@ def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False) -
         + static_tag(course["quality_tier"], "tag-tier")
         + '</div>'
         + f'<p class="card-rationale">{escape(rationale)}</p>'
-        + f'<div class="mini-tags">{static_tag(category, "tag-category")}{static_tag(language)}{static_tag(level)}{archive}</div>'
+        + f'<div class="mini-tags">{category_tag}{static_tag(language)}{static_tag(level)}{archive}</div>'
         + '<div class="card-footer">'
         + f'<div class="access-line"><span data-icon="access" aria-hidden="true"></span><span>{escape(access)}</span></div>'
         + f'<span class="verified-line">{verified_label} {escape(format_review_month(course["last_verified"], is_pt))}</span>'
         + '</div></div></article>'
     )
 
-def static_catalogue_card_pt(course: dict, href_prefix: str = "../../") -> str:
-    return static_catalogue_card(course, href_prefix, is_pt=True)
+def static_catalogue_card_pt(course: dict, href_prefix: str = "../../", show_category: bool = True) -> str:
+    return static_catalogue_card(course, href_prefix, is_pt=True, show_category=show_category)
 
 
 def original_title_html(course):
@@ -520,14 +521,26 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
         if evidence_url not in evidence_urls:
             evidence_urls.append(evidence_url)
     evidence_items = []
-    for index, evidence_url in enumerate(evidence_urls, 1):
+    try:
+        canonical_host = course["url"].split("/")[2].removeprefix("www.")
+    except IndexError:
+        canonical_host = ""
+    for evidence_url in evidence_urls:
         try:
             host = evidence_url.split("/")[2].removeprefix("www.")
         except IndexError:
             host = "source"
+        if host == canonical_host:
+            source_kind = "Course source"
+        elif host == "github.com":
+            source_kind = "Repository source"
+        elif host.startswith("forum.") or ".forum." in host:
+            source_kind = "Community reference"
+        else:
+            source_kind = "Supporting source"
         evidence_items.append(
             f'<li><a href="{escape(evidence_url)}" target="_blank" rel="noopener noreferrer">'
-            f'{escape(host)} · source {index} ↗</a></li>'
+            f'{escape(source_kind)} · {escape(host)} ↗</a></li>'
         )
 
     before_parts = []
@@ -630,12 +643,12 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
       <nav class="main-nav" aria-label="Primary navigation">
         <a href="../../courses/">Courses</a>
         <a href="../../categories/">Categories</a>
-        <a href="../../#about">Principles</a>
+        <a href="../../methodology/">Methodology</a>
         <a href="../../#how-it-works">How it works</a>
       </nav>
       <details class="mobile-nav">
         <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
-        <nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../categories/">Categories</a><a href="../../#about">Principles</a><a href="../../#how-it-works">How it works</a></nav>
+        <nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../#how-it-works">How it works</a></nav>
       </details>
       <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT-PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
     </div>
@@ -679,13 +692,13 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
       <a href="#details">Details</a>
       <a href="#quality">Quality</a>
       <a href="#evidence">Evidence</a>
-      <a href="#alternatives">Alternatives</a>
+      <a href="#alternatives">Compared</a>
     </nav>
 
     <div class="course-layout">
       <div class="course-content">
         <section id="overview" class="content-section">
-          <h2>About this course</h2>
+          <h2>Why we recommend it</h2>
           <p>{escape(description)}</p>
         </section>
 
@@ -743,7 +756,7 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
 
   <footer class="site-footer"><div class="shell footer-inner">
     <div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div>
-    <div class="footer-links"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT">Português</a></div>
+    <div class="footer-links"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../methodology/">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT">Português</a></div>
   </div></footer>
   <script src="../../icons.js" defer></script>
   <script src="../../theme.js" defer></script>
@@ -789,7 +802,7 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         'aria-label="Mobile navigation"': 'aria-label="Navegação móvel"',
         '>Courses</a>': '>Cursos</a>',
         '>Categories</a>': '>Categorias</a>',
-        '>Principles</a>': '>Princípios</a>',
+        '>Methodology</a>': '>Metodologia</a>',
         '>How it works</a>': '>Como funciona</a>',
         'aria-label="Search courses"': 'aria-label="Pesquisar cursos"',
         'aria-label="Breadcrumb"': 'aria-label="Navegação estrutural"',
@@ -803,8 +816,8 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         '>Details</a>': '>Detalhes</a>',
         '>Quality</a>': '>Qualidade</a>',
         '>Evidence</a>': '>Evidência</a>',
-        '>Alternatives</a>': '>Alternativas</a>',
-        '<h2>About this course</h2>': '<h2>Sobre este curso</h2>',
+        '>Compared</a>': '>Comparação</a>',
+        '<h2>Why we recommend it</h2>': '<h2>Porque recomendamos este curso</h2>',
         '<h2>Before you start</h2>': '<h2>Antes de começar</h2>',
         '<h3>Prerequisites</h3>': '<h3>Pré-requisitos</h3>',
         '<h3>Required resources</h3>': '<h3>Recursos necessários</h3>',
@@ -919,7 +932,10 @@ def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: d
         f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">Ver mais em {escape(category_pt)} →</a>',
     )
 
-    html = html.replace(' · source ', ' · fonte ')
+    html = html.replace('Course source', 'Fonte do curso')
+    html = html.replace('Repository source', 'Fonte de repositório')
+    html = html.replace('Community reference', 'Referência da comunidade')
+    html = html.replace('Supporting source', 'Fonte de apoio')
     html = html.replace('No additional preparation requirements are documented.', 'Não estão documentados requisitos de preparação adicionais.')
     html = html.replace('No related course is currently linked.', 'Não existem cursos relacionados associados.')
     html = html.replace('Open Learning Index home', 'Página inicial do Open Learning Index')
@@ -984,7 +1000,7 @@ def render_category_directory(category_rows: list[dict], courses: list[dict], pt
     )
     home_label = "Início" if pt else "Home"
     courses_label = "Cursos" if pt else "Courses"
-    principles_label = "Princípios" if pt else "Principles"
+    principles_label = "Metodologia" if pt else "Methodology"
     how_label = "Como funciona" if pt else "How it works"
     methodology_label = "Metodologia" if pt else "Methodology"
     footer_copy = "Curado, auditável e continuamente mantido." if pt else "Curated, auditable and continuously maintained."
@@ -994,7 +1010,7 @@ def render_category_directory(category_rows: list[dict], courses: list[dict], pt
     root = "../../" if pt else "../"
     home_href = "../" if pt else "../"
     courses_href = "../courses/" if pt else "../courses/"
-    principles_href = "../#about" if pt else "../#about"
+    principles_href = "../methodology/"
     how_href = "../#how-it-works" if pt else "../#how-it-works"
     css_href = "../../styles.css" if pt else "../styles.css"
     icons_href = "../../icons.js" if pt else "../icons.js"
@@ -1048,7 +1064,7 @@ def render_category_directory(category_rows: list[dict], courses: list[dict], pt
   </main>
   <footer class="site-footer"><div class="shell footer-inner">
     <div><strong>Open Learning Index</strong><p>{escape(footer_copy)}</p></div>
-    <div class="footer-links"><a href="{home_href}">{home_label}</a><a href="{courses_href}">{courses_label}</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">{methodology_label}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="{switch_href}" lang="{switch_lang}" hreflang="{switch_lang}">{switch_label}</a></div>
+    <div class="footer-links"><a href="{home_href}">{home_label}</a><a href="{courses_href}">{courses_label}</a><a href="{principles_href}">{methodology_label}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="{switch_href}" lang="{switch_lang}" hreflang="{switch_lang}">{switch_label}</a></div>
   </div></footer>
   <script src="{icons_href}" defer></script>
   <script src="{theme_href}" defer></script>
@@ -1069,7 +1085,7 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
         ),
     )
     cards = "".join(
-        static_catalogue_card_pt(course, "../../") if pt else static_catalogue_card(course, "../../")
+        static_catalogue_card_pt(course, "../../", show_category=False) if pt else static_catalogue_card(course, "../../", show_category=False)
         for course in rows
     )
     url = f"{BASE_URL}/pt/categories/{category_id}/" if pt else f"{BASE_URL}/categories/{category_id}/"
@@ -1080,7 +1096,7 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
     home_href = "../../" if pt else "../../"
     courses_href = "../../courses/" if pt else "../../courses/"
     categories_href = "../"
-    principles_href = "../../#about" if pt else "../../#about"
+    principles_href = "../../methodology/"
     how_href = "../../#how-it-works" if pt else "../../#how-it-works"
     css_href = "../../../styles.css" if pt else "../../styles.css"
     icons_href = "../../../icons.js" if pt else "../../icons.js"
@@ -1092,7 +1108,7 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
     home_label = "Início" if pt else "Home"
     courses_label = "Cursos" if pt else "Courses"
     categories_label = "Categorias" if pt else "Categories"
-    principles_label = "Princípios" if pt else "Principles"
+    principles_label = "Metodologia" if pt else "Methodology"
     how_label = "Como funciona" if pt else "How it works"
     methodology_label = "Metodologia" if pt else "Methodology"
     kicker = "Categoria" if pt else "Category"
@@ -1106,6 +1122,35 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
         if pt
         else f'{len(rows)} curated course{"s" if len(rows) != 1 else ""}, ordered by Recommendation.'
     )
+    freshness_copy = {
+        "fast": (
+            "Área de rápida mudança: estes cursos usam intervalos de revisão mais curtos porque ferramentas, normas ou plataformas podem mudar rapidamente."
+            if pt else
+            "Fast-moving field: courses here use shorter review intervals because tools, standards or platforms can change quickly."
+        ),
+        "medium": (
+            "Área ativamente mantida: acesso, conteúdo e alterações da entidade são reverificados com uma cadência moderada."
+            if pt else
+            "Actively maintained field: access, content and provider changes are re-checked on a moderate cadence."
+        ),
+        "slow": (
+            "Área de fundamentos estáveis: a idade, por si só, não é tratada como defeito, mantendo-se a reverificação do acesso e da qualidade comparativa."
+            if pt else
+            "Foundational field: age alone is not treated as a defect, while access and comparative quality are still re-verified."
+        ),
+    }.get(category.get("freshness"), "")
+    leader = rows[0] if rows else None
+    if leader:
+        leader_title = pt_text = translate_pt(leader["title"]) if pt else leader["title"]
+        leader_rationale = translate_pt(leader["why_recommended"]) if pt else leader["why_recommended"]
+        leader_label = "Começar aqui" if pt else "Start here"
+        leader_href = f'../../pt/courses/{leader["id"]}/' if pt else f'../../courses/{leader["id"]}/'
+        leader_html = (
+            f'<p><strong>{leader_label}:</strong> <a href="{escape(leader_href)}">{escape(leader_title)}</a> — '
+            f'{escape(leader_rationale)}</p>'
+        )
+    else:
+        leader_html = ""
     footer_copy = "Curado, auditável e continuamente mantido." if pt else "Curated, auditable and continuously maintained."
 
     return f"""<!doctype html>
@@ -1138,9 +1183,10 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
   <main class="shell category-page">
     <nav class="course-breadcrumbs" aria-label="{"Navegação estrutural" if pt else "Breadcrumb"}"><a href="{categories_href}">{categories_label}</a><span>›</span><span>{escape(category_name)}</span></nav>
     <header class="category-page-header"><p class="section-kicker">{kicker}</p><h1>{escape(category_name)}</h1><p>{escape(count_copy)}</p></header>
+    <section class="category-context"><p>{escape(freshness_copy)}</p>{leader_html}</section>
     <div class="course-grid catalogue-grid">{cards}</div>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>{escape(footer_copy)}</p></div><div class="footer-links"><a href="{home_href}">{home_label}</a><a href="{courses_href}">{courses_label}</a><a href="{categories_href}">{categories_label}</a><a href="https://github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md">{methodology_label}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="{switch_href}" lang="{switch_lang}" hreflang="{switch_lang}">{switch_label}</a></div></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>{escape(footer_copy)}</p></div><div class="footer-links"><a href="{home_href}">{home_label}</a><a href="{courses_href}">{courses_label}</a><a href="{categories_href}">{categories_label}</a><a href="{principles_href}">{methodology_label}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="{switch_href}" lang="{switch_lang}" hreflang="{switch_lang}">{switch_label}</a></div></div></footer>
   <script src="{icons_href}" defer></script>
   <script src="{theme_href}" defer></script>
 </body>
@@ -1275,6 +1321,8 @@ def build(output: Path) -> None:
         f"{BASE_URL}/pt/",
         f"{BASE_URL}/pt/courses/",
         f"{BASE_URL}/pt/categories/",
+        f"{BASE_URL}/methodology/",
+        f"{BASE_URL}/pt/methodology/",
     ]
     sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
     sitemap_urls.extend(f"{BASE_URL}/pt/courses/{course['id']}/" for course in public_courses)
@@ -1293,13 +1341,31 @@ def build(output: Path) -> None:
     )
     write_text(
         output / "404.html",
-        """<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex"><title>Page not found · Open Learning Index</title>
-<link rel="stylesheet" href="styles.css"></head><body>
-<main class="shell course-page"><section class="empty"><h1>Page not found</h1>
-<p>That Open Learning Index page does not exist.</p><p><a href="./">Return to the catalogue</a></p>
-</section></main></body></html>""",
+        f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  {THEME_BOOTSTRAP}
+  <title>Page not found · Open Learning Index</title>
+  <link rel="stylesheet" href="/open-learning-index/styles.css">
+  <link rel="stylesheet" href="/open-learning-index/editorial.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="topbar"><div class="shell topbar-inner">
+    <a class="brand" href="/open-learning-index/" aria-label="Open Learning Index home"><span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span></a>
+    <nav class="main-nav" aria-label="Primary navigation"><a href="/open-learning-index/">Home</a><a href="/open-learning-index/courses/">Courses</a><a href="/open-learning-index/categories/">Categories</a><a href="/open-learning-index/methodology/">Methodology</a></nav>
+    <div class="nav-actions"><a class="language-switch" href="/open-learning-index/pt/" lang="pt-PT" hreflang="pt-PT">PT-PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
+  </div></header>
+  <main id="main-content" class="shell not-found-page"><section class="empty"><p class="section-kicker">404</p><h1>Page not found</h1><p>That Open Learning Index page does not exist or has moved.</p><div class="methodology-actions"><a class="button button-primary" href="/open-learning-index/courses/">Browse courses</a><a class="button button-ghost" href="/open-learning-index/">Return home</a></div></section></main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div><div class="footer-links"><a href="/open-learning-index/">Home</a><a href="/open-learning-index/courses/">Courses</a><a href="/open-learning-index/methodology/">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a></div></div></footer>
+  <script src="/open-learning-index/icons.js" defer></script>
+  <script src="/open-learning-index/theme.js" defer></script>
+</body>
+</html>""",
     )
 
     required = [
@@ -1309,6 +1375,8 @@ def build(output: Path) -> None:
         output / "pt" / "courses" / "index.html",
         output / "categories" / "index.html",
         output / "pt" / "categories" / "index.html",
+        output / "methodology" / "index.html",
+        output / "pt" / "methodology" / "index.html",
         output / "assets" / "hero-library.webp",
         output / "app.js",
         output / "icons.js",
