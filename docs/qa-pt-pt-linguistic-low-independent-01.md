@@ -14,7 +14,7 @@ Instead, it performs a new independent Low-severity review against the current p
 
 ## Pass 01 findings
 
-The first pass corrects **15 current presentation entries** with high-confidence style, grammar or consistency defects:
+The first pass corrects **19 current presentation entries** with high-confidence style, grammar or consistency defects:
 
 - agreement around course-title references;
 - incomplete phrases such as “four exams and a final” where the source clearly means a final exam;
@@ -25,7 +25,9 @@ The first pass corrects **15 current presentation entries** with high-confidence
 - an awkward person-like rendering of a specialist course;
 - `Relaunch` / `Data Sharing course` left untranslated in running Portuguese prose;
 - technical-gender consistency: **múltiplos/vários frameworks**;
-- terminology consistency: **nuvem** rather than residual **cloud** in Portuguese explanatory prose.
+- terminology consistency: **nuvem** rather than residual **cloud** in Portuguese explanatory prose;
+- residual noun-phrase fragments such as **Atual especialista...** rewritten as explicit **Curso especializado...** descriptions;
+- residual “um final” wording clarified as **exame final** where the source explicitly denotes a final exam.
 
 Course and product names remain unchanged where they function as proper names.
 
