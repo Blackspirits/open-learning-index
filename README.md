@@ -117,7 +117,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Admission protocol](docs/admission-protocol.md) | Comparative Phase-4 rules |
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
-| [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Current visual, accessibility, localisation and publication QA |
+| [v1.0 public release](docs/v1.0-public-release.md) | Final cross-audit reconciliation and public-experience hardening |\n| [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Earlier visual, accessibility, localisation and publication QA |
 | [2026-09-15 repository audit](docs/qa-repository-audit-2026-09-15.md) | Current data, Portuguese-language, licensing and publication audit |
 | [pt-PT linguistic QA 01](docs/qa-pt-pt-linguistic-review-01.md) | Independent full-dictionary review, High-severity remediation and title policy |
 | [pt-PT linguistic QA 02](docs/qa-pt-pt-linguistic-review-02.md) | Medium-pass terminology cleanup plus catalogue level/language presentation QA |
@@ -146,13 +146,13 @@ Nothing needs to be inferred from a hidden spreadsheet or private ranking proces
 
 ## Public site
 
-The public experience is now in **v0.10**: a modern, responsive light/dark interface with English and European-Portuguese routes for the homepage, catalogue, course details and category discovery.
+The public experience is now in **v1.0**: a mature, responsive light/dark publication with English and European-Portuguese routes for the homepage, catalogue, methodology, course details and category discovery.
 
-The site remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime. Canonical category pages and localized course routes are indexable, and the Pages deployment is gated on generated-site QA.
+The site remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime. Canonical category/methodology/course routes are indexable, and the Pages deployment is gated on editorial tests, canonical-data validation and generated-site QA.
 
 The pt-PT route localises the interface, taxonomy, course titles and displayed editorial text through a checked-in presentation dictionary. Course-language metadata distinguishes `pt-PT`, `pt-BR` and provider-labelled generic `pt`; generic Portuguese is shown explicitly as an unresolved regional variant rather than guessed. Canonical records and review ledgers remain unchanged. Course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
 
-Course cards use original editorial panels by default. Third-party course/provider images are not published unless their reuse rights are explicitly verified; the provenance manifest retains unverified candidates without treating attribution as permission. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, media provenance and validation.
+Catalogue cards are comparison-first: Recommendation, Quality, tier, learner-facing rationale, access and verification date are visible without opening every course. Decorative media remains available on detail pages, while third-party course/provider images are not published unless reuse rights are explicitly verified. The provenance manifest retains unverified candidates without treating attribution as permission. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, media provenance and validation.
 
 ### Build locally
 
