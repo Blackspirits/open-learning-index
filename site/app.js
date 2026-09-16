@@ -12,7 +12,7 @@ const isPt = pageLocale === "pt-PT";
 
 const languageNames = {
   en: { "pt": "Portuguese (variant unspecified)", "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
-  "pt-PT": { "pt": "Português (variante não especificada)", "pt-BR": "Português (Brasil)", "pt-PT": "Português (Portugal)" },
+  "pt-PT": { "pt": "português (variante não especificada)", "pt-BR": "português (Brasil)", "pt-PT": "português (Portugal)" },
 };
 
 const categoryNamesPt = {
@@ -69,6 +69,17 @@ const levelNamesPt = {
   graduate: "Pós-graduação",
   undergraduate: "Licenciatura",
 };
+
+const levelOrder = [
+  "beginner",
+  "beginner_to_intermediate",
+  "beginner_to_advanced",
+  "intermediate",
+  "intermediate_to_advanced",
+  "advanced",
+  "undergraduate",
+  "graduate",
+];
 
 const accessPt = {
   F0: "Curso e credencial gratuitos",
@@ -295,8 +306,12 @@ function populateFilters(els) {
     .sort((a, b) => a[1].localeCompare(b[1], pageLocale));
   const languages = [...new Set(state.courses.flatMap((c) => [c.primary_language, ...c.other_languages]))]
     .sort((a, b) => labelLanguage(a).localeCompare(labelLanguage(b), pageLocale));
+  const levelRank = new Map(levelOrder.map((value, index) => [value, index]));
   const levels = [...new Set(state.courses.map((c) => c.level))]
-    .sort((a, b) => labelLevel(a).localeCompare(labelLevel(b), pageLocale));
+    .sort((a, b) =>
+      (levelRank.get(a) ?? Number.MAX_SAFE_INTEGER) - (levelRank.get(b) ?? Number.MAX_SAFE_INTEGER) ||
+      labelLevel(a).localeCompare(labelLevel(b), pageLocale)
+    );
 
   categories.forEach(([value, label]) => els.category.add(new Option(label, value)));
   languages.forEach((value) => els.language.add(new Option(labelLanguage(value), value)));
