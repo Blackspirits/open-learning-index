@@ -12,7 +12,30 @@ const isPt = pageLocale === "pt-PT";
 
 const languageNames = {
   en: { "pt": "Portuguese (variant unspecified)", "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
-  "pt-PT": { "pt": "português (variante não especificada)", "pt-BR": "português (Brasil)", "pt-PT": "português (Portugal)" },
+  "pt-PT": {
+    ar: "árabe",
+    az: "azeri",
+    bg: "búlgaro",
+    cs: "checo",
+    de: "alemão",
+    en: "inglês",
+    es: "espanhol",
+    fr: "francês",
+    hu: "húngaro",
+    hy: "arménio",
+    ja: "japonês",
+    ka: "georgiano",
+    ko: "coreano",
+    pt: "português (variante não especificada)",
+    "pt-BR": "português (Brasil)",
+    "pt-PT": "português (Portugal)",
+    ro: "romeno",
+    ru: "russo",
+    sk: "eslovaco",
+    tr: "turco",
+    uk: "ucraniano",
+    zh: "chinês",
+  },
 };
 
 const categoryNamesPt = {
@@ -73,12 +96,12 @@ const levelNamesPt = {
 const levelOrder = [
   "beginner",
   "beginner_to_intermediate",
-  "beginner_to_advanced",
   "intermediate",
   "intermediate_to_advanced",
   "advanced",
   "undergraduate",
   "graduate",
+  "beginner_to_advanced",
 ];
 
 const accessPt = {
@@ -121,7 +144,11 @@ function labelLanguage(code) {
 
 function labelLanguageOption(code) {
   const label = labelLanguage(code);
-  return isPt ? `${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}` : label;
+  if (!isPt) return label;
+  // Language names are common nouns in Portuguese and are presented
+  // consistently in lower case; region names inside parentheses keep
+  // their proper-name capitalisation.
+  return `${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}`;
 }
 
 function labelCourseLanguage(course) {
@@ -319,7 +346,27 @@ function populateFilters(els) {
 
   categories.forEach(([value, label]) => els.category.add(new Option(label, value)));
   languages.forEach((value) => els.language.add(new Option(labelLanguageOption(value), value)));
-  levels.forEach((value) => els.level.add(new Option(labelLevel(value), value)));
+
+  // Level options are ordered pedagogically rather than alphabetically.
+  // "Beginner-friendly" is a convenience filter, not a canonical level,
+  // so it is separated from the actual progression.
+  const levelPlaceholder = new Option(isPt ? "Nível" : "Level", "");
+  const progressionGroup = document.createElement("optgroup");
+  progressionGroup.label = isPt ? "Progressão" : "Progression";
+  levels
+    .filter((value) => value !== "beginner_to_advanced")
+    .forEach((value) => progressionGroup.append(new Option(labelLevel(value), value)));
+  const broadGroup = document.createElement("optgroup");
+  broadGroup.label = isPt ? "Abrangente" : "Broad range";
+  if (levels.includes("beginner_to_advanced")) {
+    broadGroup.append(new Option(labelLevel("beginner_to_advanced"), "beginner_to_advanced"));
+  }
+  const shortcutGroup = document.createElement("optgroup");
+  shortcutGroup.label = isPt ? "Atalho" : "Shortcut";
+  shortcutGroup.append(
+    new Option(isPt ? "Adequado a principiantes" : "Beginner-friendly", "beginner-friendly")
+  );
+  els.level.replaceChildren(levelPlaceholder, progressionGroup, broadGroup, shortcutGroup);
 }
 
 function filteredCourses(values) {
