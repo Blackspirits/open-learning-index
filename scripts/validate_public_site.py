@@ -238,6 +238,39 @@ def validate_publication_routes(site: Path, errors: list[str]) -> None:
             fail(errors, f"missing methodology route: {rel.as_posix()}")
 
 
+def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
+    catalog_path = site / "data" / "catalog.json"
+    app_path = site / "app.js"
+    if not catalog_path.exists() or not app_path.exists():
+        return
+
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    missing_pt_descriptions = [
+        course.get("id", "<unknown>")
+        for course in catalog
+        if not (course.get("presentation_pt") or {}).get("description")
+    ]
+    if missing_pt_descriptions:
+        fail(
+            errors,
+            "catalogue runtime contract: missing presentation_pt.description for "
+            + ", ".join(missing_pt_descriptions[:10]),
+        )
+
+    app_js = app_path.read_text(encoding="utf-8")
+    if "course.presentation_pt?.description" not in app_js:
+        fail(
+            errors,
+            "catalogue runtime contract: app.js does not consume presentation_pt.description",
+        )
+
+    if "return isPt ? course.presentation_pt.why_recommended" in app_js:
+        fail(
+            errors,
+            "catalogue runtime contract: stale pt-PT rationale field can blank the catalogue",
+        )
+
+
 def validate_locale_pairs(site: Path, pages: dict[Path, PageParser], errors: list[str]) -> None:
     for rel, parser in pages.items():
         rel_posix = rel.as_posix()
@@ -327,6 +360,7 @@ def main() -> int:
         pages[page.relative_to(site)] = parsed
 
     validate_publication_routes(site, errors)
+    validate_catalogue_runtime_contract(site, errors)
     validate_locale_pairs(site, pages, errors)
     validate_sitemap(site, pages, errors)
 
