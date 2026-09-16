@@ -127,12 +127,13 @@ class EditorialPresentationTest(unittest.TestCase):
                 'intermediate',
                 'intermediate_to_advanced',
                 'advanced',
-                'beginner_to_advanced',
                 'undergraduate',
                 'graduate',
+                'beginner_to_advanced',
             ],
         )
         self.assertIn('Progressão', app_js)
+        self.assertIn('Abrangente', app_js)
         self.assertIn('Adequado a principiantes', app_js)
         self.assertIn('optgroup', app_js)
 
