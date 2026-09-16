@@ -413,7 +413,8 @@ function formatReviewMonth(value) {
 }
 
 function courseRationale(course) {
-  return isPt ? course.presentation_pt.why_recommended : course.why_recommended;
+  if (!isPt) return course.why_recommended;
+  return course.presentation_pt?.description || course.presentation_pt?.why_recommended || course.why_recommended;
 }
 
 function renderCatalogueCard(course, className = "catalogue-card") {
