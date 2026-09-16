@@ -1141,10 +1141,10 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
     }.get(category.get("freshness"), "")
     leader = rows[0] if rows else None
     if leader:
-        leader_title = pt_text = translate_pt(leader["title"]) if pt else leader["title"]
+        leader_title = translate_pt(leader["title"]) if pt else leader["title"]
         leader_rationale = translate_pt(leader["why_recommended"]) if pt else leader["why_recommended"]
         leader_label = "Começar aqui" if pt else "Start here"
-        leader_href = f'../../pt/courses/{leader["id"]}/' if pt else f'../../courses/{leader["id"]}/'
+        leader_href = f'../../courses/{leader["id"]}/'
         leader_html = (
             f'<p><strong>{leader_label}:</strong> <a href="{escape(leader_href)}">{escape(leader_title)}</a> — '
             f'{escape(leader_rationale)}</p>'
