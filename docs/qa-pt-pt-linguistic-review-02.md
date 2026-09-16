@@ -75,15 +75,10 @@ It does **not** change:
 - Deep Review or admission evidence;
 - review dates or maintenance cadence.
 
-## Remaining gate
+## Final Medium gate
 
-The original independent audit reported 407 Medium and 141 Low findings. This pass intentionally does not claim that every Medium row has been reconciled merely because broad terminology rules touch many entries.
+This document records the intermediate Medium pass that was merged in #145. The subsequent row-by-row reconciliation is recorded in `qa-pt-pt-linguistic-review-01.md`.
 
-Before declaring Medium complete, perform one final row-by-row reconciliation against the independent audit ledger and record:
+The **407 Medium findings are now reconciled** against the post-High dictionary. Rows already corrected by G1–G14 were counted as covered rather than edited again; residual wording and terminology defects found during the clean reconstruction were corrected before closure.
 
-- fixed;
-- already fixed by a global rule;
-- false positive / intentionally retained terminology;
-- still pending.
-
-Low-severity typography/style findings remain a separate final pass.
+The remaining independent-audit class is **141 Low** findings. Those remain a separate final linguistic pass and must be rechecked against the current dictionary before any change is applied.

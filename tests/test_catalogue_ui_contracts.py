@@ -20,15 +20,19 @@ class CatalogueUiContractsTest(unittest.TestCase):
             [
                 "beginner",
                 "beginner_to_intermediate",
-                "beginner_to_advanced",
                 "intermediate",
                 "intermediate_to_advanced",
                 "advanced",
                 "undergraduate",
                 "graduate",
+                "beginner_to_advanced",
             ],
         )
         self.assertIn("levelRank.get(a)", source)
+        self.assertIn('progressionGroup.label = isPt ? "Progressão" : "Progression"', source)
+        self.assertIn('broadGroup.label = isPt ? "Abrangente" : "Broad range"', source)
+        self.assertIn('shortcutGroup.label = isPt ? "Atalho" : "Shortcut"', source)
+        self.assertIn('"Adequado a principiantes" : "Beginner-friendly"', source)
 
     def test_pt_language_names_are_consistently_lowercase(self):
         source = APP.read_text(encoding="utf-8")
