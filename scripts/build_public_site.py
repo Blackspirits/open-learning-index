@@ -23,6 +23,7 @@ ADMISSIONS_DIR = ROOT / "data" / "admissions"
 SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
 BASE_URL = "https://blackspirits.github.io/open-learning-index"
+SUPPORTED_PRESENTATION_LOCALES = ("pt-PT",)
 
 THEME_BOOTSTRAP = """<script>
 try {
@@ -1240,9 +1241,17 @@ def build(output: Path) -> None:
         item = build_public_course(course, categories)
         item["editorial"] = editorial_projection(course, reviews, reference_reviews, admissions)
         item["media"] = media_for(item)
-        localized = localize_course(item)
-        item["presentation_pt"] = {"title": localized["title"], "description": localized["why_recommended"]}
-        item["search_text"] += " " + localized["title"] + " " + localized["why_recommended"] + " " + PT_CATEGORY_LABELS[item["category"]]
+        item["presentations"] = {}
+        for locale in SUPPORTED_PRESENTATION_LOCALES:
+            localized = localize_course(item, locale=locale)
+            item["presentations"][locale] = {
+                "title": localized["title"],
+                "description": localized["why_recommended"],
+            }
+        # Backwards-compatible projection retained for the current pt-PT frontend.
+        item["presentation_pt"] = dict(item["presentations"]["pt-PT"])
+        pt_presentation = item["presentations"]["pt-PT"]
+        item["search_text"] += " " + pt_presentation["title"] + " " + pt_presentation["description"] + " " + PT_CATEGORY_LABELS[item["category"]]
         public_courses.append(item)
 
     ids = [course["id"] for course in public_courses]
