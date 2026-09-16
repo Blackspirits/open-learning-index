@@ -19,6 +19,7 @@ class EditorialPresentationTest(unittest.TestCase):
         reviews = build.load_current_records(build.REVIEWS_DIR, 'reviewed_on')
         references = build.load_current_records(build.REFERENCE_REVIEWS, 'reviewed_on', 'course_id')
         admissions = build.load_current_records(build.ADMISSIONS_DIR, 'decided_on')
+        cls.reviews = reviews
         cls.courses = []
         for course in courses:
             if build.is_publication_eligible(course):
@@ -188,6 +189,46 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('Abrangente', app_js)
         self.assertIn('Adequado a principiantes', app_js)
         self.assertIn('optgroup', app_js)
+
+
+    def test_english_learner_facing_review_prose_has_no_portuguese_leakage(self):
+        import re
+        # These fields are projected directly into the English course page before
+        # pt-PT localisation. Accented Portuguese tokens here indicate a source-
+        # language boundary regression, not merely an untranslated UI label.
+        portuguese = re.compile(
+            r'\\b(?:nenhum|nenhuma|gratuit[oa]s?|avaliação|certificação|certificado|'
+            r'navegador|aprendentes?|percurso|ensino|conteúdo|pré-requisitos?|'
+            r'créditos? académicos?|línguas?)\\b',
+            flags=re.IGNORECASE,
+        )
+        learner_fields = (
+            'credential',
+            'academic_credits',
+            'scope_notes',
+            'prerequisites',
+            'required_resources',
+            'recommendation_rationale',
+        )
+        for course_id, review in self.reviews.items():
+            for field in learner_fields:
+                value = review.get(field)
+                if not value:
+                    continue
+                with self.subTest(course=course_id, field=field):
+                    self.assertIsNone(
+                        portuguese.search(value),
+                        f'Portuguese leaked into English source field {course_id}.{field}: {value}',
+                    )
+
+    def test_public_course_pages_hide_internal_calibration_jargon(self):
+        index = {course['id']: course for course in self.courses}
+        forbidden = ('pre-pipeline', 'reference-fixture reconciliation', 'recalibration trims')
+        for course in self.courses:
+            html = build.render_static_course(course, index, {})
+            for phrase in forbidden:
+                with self.subTest(course=course['id'], phrase=phrase):
+                    self.assertNotIn(phrase, html.lower())
 
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():

@@ -10,12 +10,12 @@
       "pt-PT"
     ],
     "subtitle_languages": [],
-    "credential": "Certificado de participação gratuito após média mínima de 60% nos testes dos quatro módulos",
-    "academic_credits": "Nenhum crédito académico formal verificado",
+    "credential": "Free certificate of participation after achieving an average of at least 60% across the four module tests",
+    "academic_credits": "No formal academic credit verified",
     "self_paced": true,
-    "scope_notes": "Curso de 12 horas e quatro módulos sobre saúde mental no ensino superior, depressão, ansiedade, comportamentos aditivos, stress, coping, resiliência, Primeira Ajuda em Saúde Mental e recursos de apoio.",
-    "prerequisites": "Sem pré-requisitos formais; dirigido sobretudo a estudantes do ensino superior",
-    "required_resources": "Navegador moderno e conta NAU gratuita para avaliação, acompanhamento e certificação; sem software pago",
+    "scope_notes": "A 12-hour, four-module course on mental health in higher education, depression, anxiety, addictive behaviours, stress, coping, resilience, Mental Health First Aid and support resources.",
+    "prerequisites": "No formal prerequisites; aimed mainly at higher-education students",
+    "required_resources": "Modern browser and a free NAU account for assessment, progress tracking and certification; no paid software required",
     "component_evidence": {
       "pedagogy": "A sequência progride de conceitos e reconhecimento de sinais para gestão de stress, resiliência e intervenção inicial, combinando teoria com abordagens práticas.",
       "depth": "Doze horas dão cobertura substantiva para literacia e resposta inicial, mas não equivalem a formação clínica nem a um curso universitário completo de psicopatologia.",
@@ -36,7 +36,7 @@
     },
     "quality_score": 8.28,
     "recommendation_score": 8.5,
-    "recommendation_rationale": "Forte opção lusófona para literacia e resposta inicial em saúde mental no ensino superior. Não sobe mais porque não é formação clínica e a prática verificada é sobretudo conceptual e baseada em testes.",
+    "recommendation_rationale": "A strong Portuguese-language option for mental-health literacy and initial response in higher education. It ranks lower because it is not clinical training and the verified practice is mostly conceptual and test-based.",
     "comparators": [],
     "evidence": [
       "https://www.nau.edu.pt/pt/curso/saude-mental-e-bem-estar-no-ensino-superior/"
@@ -63,12 +63,12 @@
       "pt"
     ],
     "subtitle_languages": [],
-    "credential": "Certificado gratuito após pelo menos 80% na avaliação final",
-    "academic_credits": "Nenhum crédito académico formal verificado",
+    "credential": "Free certificate after scoring at least 80% on the final assessment",
+    "academic_credits": "No formal academic credit verified",
     "self_paced": true,
-    "scope_notes": "Curso profissional de oito módulos e cerca de 180 minutos, reestruturado para ICH E6(R3), cobrindo princípios GCP, intervenientes, desenho, iniciação, execução, gestão de risco, encerramento e reflexão final.",
+    "scope_notes": "An eight-module professional course of about 180 minutes, restructured for ICH E6(R3), covering GCP principles, stakeholders, study design, initiation, conduct, risk management, close-out and final reflection.",
     "prerequisites": "Concebido também para participantes com menos experiência em investigação clínica",
-    "required_resources": "Navegador moderno e conta TGHN gratuita para progresso e certificação; sem software pago",
+    "required_resources": "Modern browser and a free TGHN account for progress and certification; no paid software required",
     "component_evidence": {
       "pedagogy": "A versão R3 integra os princípios de GCP em situações reais das várias fases da investigação, em vez de os ensinar como regras isoladas.",
       "depth": "Oito módulos cobrem o ciclo essencial de GCP, mas a duração aproximada de três horas limita a profundidade comparativamente a formações extensas.",
@@ -89,7 +89,7 @@
     },
     "quality_score": 8.62,
     "recommendation_score": 9.1,
-    "recommendation_rationale": "Candidato mais forte do lote para uma necessidade profissional bem definida: GCP atualizada para E6(R3). A Recommendation supera a Quality porque a curta duração limita profundidade, mas a atualidade e aplicabilidade são excecionais.",
+    "recommendation_rationale": "The strongest candidate in the batch for a well-defined professional need: current GCP aligned with E6(R3). Recommendation exceeds Quality because the short duration limits depth, while currency and applicability are exceptional.",
     "comparators": [
       "tghn-introduction-gclp",
       "whoacademy-good-practices-clinical-trials"
@@ -116,12 +116,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Certificação gratuita com limiar mínimo de 80%; a página oficial descreve quizzes e certificados por módulo",
-    "academic_credits": "Nenhum crédito académico formal verificado",
+    "credential": "Free certification with an 80% minimum threshold; the official page describes quizzes and certificates for each module",
+    "academic_credits": "No formal academic credit verified",
     "self_paced": true,
     "scope_notes": "Dez módulos de 15 a 30 minutos sobre princípios de ética em investigação, riscos e benefícios, desenho, vulnerabilidade, obrigações perante participantes, envolvimento comunitário, privacidade, consentimento informado e outros dilemas éticos.",
-    "prerequisites": "Sem pré-requisitos formais; orientado a profissionais e investigadores em saúde",
-    "required_resources": "Navegador moderno e conta TGHN gratuita para progresso, quizzes e certificados; sem software pago",
+    "prerequisites": "No formal prerequisites; aimed at health professionals and researchers",
+    "required_resources": "Modern browser and a free TGHN account for progress, quizzes and certificates; no paid software required",
     "component_evidence": {
       "pedagogy": "A estrutura recomenda estudar cada tópico em sequência e fazer o quiz logo após o módulo; os recursos adicionais incluem estudos de caso, referências e documentos-chave.",
       "depth": "Dez módulos cobrem um arco ético amplo e coerente para investigação em saúde, embora cada módulo individual seja relativamente curto.",
@@ -142,7 +142,7 @@
     },
     "quality_score": 8.46,
     "recommendation_score": 8.7,
-    "recommendation_rationale": "Forte recomendação para investigadores e equipas de saúde que precisam de base prática e certificada em ética. Fica abaixo do GCP R3 em atualidade datada e em intensidade de prática.",
+    "recommendation_rationale": "A strong recommendation for researchers and health teams needing a practical, certified foundation in ethics. It sits below GCP R3 for dated currentness evidence and practice intensity.",
     "comparators": [
       "tghn-ich-gcp-e6-r3",
       "tghn-introduction-gclp"
@@ -169,12 +169,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Certificado eletrónico gratuito por módulo após pelo menos 80% no respetivo quiz",
-    "academic_credits": "Nenhum crédito académico formal verificado",
+    "credential": "Free electronic certificate for each module after scoring at least 80% on its quiz",
+    "academic_credits": "No formal academic credit verified",
     "self_paced": true,
     "scope_notes": "Relaunch atualizado do anterior Data Sharing course, com módulo introdutório e seis módulos publicados sobre princípios de partilha, gestão de dados, ética, governança/acesso, qualidade, custos e repositórios; 45 a 60 minutos por módulo.",
     "prerequisites": "Dirigido a investigadores em início de carreira, pós-graduandos e pessoal de apoio; não pretende formar data managers ou estatísticos",
-    "required_resources": "Navegador moderno e conta TGHN gratuita para quizzes e certificados; sem software pago",
+    "required_resources": "Modern browser and a free TGHN account for quizzes and certificates; no paid software required",
     "component_evidence": {
       "pedagogy": "Os módulos podem ser feitos isoladamente ou como percurso interligado e oferecem orientação prática para decisões reais de gestão e partilha de dados de saúde.",
       "depth": "Sete unidades disponíveis dão uma base útil de várias horas, mas o próprio curso limita o objetivo a fundamentos e orientação prática.",
@@ -219,12 +219,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Nenhum credencial formal gratuito verificado independentemente na rota pública",
-    "academic_credits": "Nenhum crédito académico formal verificado",
+    "credential": "No free formal credential independently verified on the public learner route",
+    "academic_credits": "No formal academic credit verified",
     "self_paced": true,
     "scope_notes": "Primeira parte de uma série OMS sobre riscos químicos para profissionais de saúde e emergência; distingue químicos comuns e agentes de guerra, introduz químicos industriais tóxicos e exemplos de libertações acidentais e intencionais.",
-    "prerequisites": "Sem pré-requisitos formais publicados; introdução especializada para profissionais de saúde e emergência",
-    "required_resources": "Navegador com JavaScript e acesso à WHO Academy; inclui uso de ferramenta digital de identificação e mitigação de ameaças químicas",
+    "prerequisites": "No formal prerequisites published; a specialist introduction for health and emergency professionals",
+    "required_resources": "Browser with JavaScript and access to WHO Academy; includes use of a digital tool for identifying and mitigating chemical threats",
     "component_evidence": {
       "pedagogy": "A OMS enquadra Part I como fundação de uma sequência progressiva e liga conceitos de perigo químico a exemplos reais de libertações.",
       "depth": "É uma introdução de âmbito deliberadamente limitado dentro de uma série; não cobre avaliação e resposta operacional completas.",
@@ -245,7 +245,7 @@
     },
     "quality_score": 8.19,
     "recommendation_score": 8,
-    "recommendation_rationale": "Bom curso introdutório para profissionais que precisam de prontidão química, sobretudo pela prática com ferramenta digital e atualidade. A Recommendation é limitada pelo âmbito de Part I e pela fraca transparência pública da plataforma.",
+    "recommendation_rationale": "A good introductory course for professionals who need chemical-hazard readiness, especially because of its digital-tool practice and currency. Recommendation is limited by the scope of Part I and the public platform's limited transparency.",
     "comparators": [
       "whoacademy-chemical-hazards-part-2"
     ],
@@ -273,12 +273,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Statement of Participation e badge digital gratuitos após conclusão e aprovação nos quizzes de badge; 24 pontos CPD indicados",
-    "academic_credits": "Nenhum crédito académico formal; o badge não é acreditado pela Open University",
+    "credential": "Free Statement of Participation and digital badge after completion and passing the badge quizzes; 24 CPD points are stated",
+    "academic_credits": "No formal academic credit; the badge is not accredited by The Open University",
     "self_paced": true,
-    "scope_notes": "Curso de 24 horas e oito semanas sobre testemunho ocular, cognição, memória, erros de identificação, investigação criminal e erros judiciários, usando vídeos de testemunhas e uma investigação aplicada.",
-    "prerequisites": "Nenhum; curso introdutório para interessados em psicologia e/ou investigação criminal",
-    "required_resources": "Navegador moderno; conta OpenLearn gratuita para quizzes, progresso, statement e badge; sem software pago",
+    "scope_notes": "A 24-hour, eight-week course on eyewitness testimony, cognition, memory, identification errors, criminal investigation and miscarriages of justice, using witness videos and an applied investigation.",
+    "prerequisites": "None; an introductory course for learners interested in psychology and/or criminal investigation",
+    "required_resources": "Modern browser; a free OpenLearn account for quizzes, progress, statement and badge; no paid software required",
     "component_evidence": {
       "pedagogy": "A aprendizagem gira em torno de uma investigação aplicada com vídeos de testemunhas, decisões de investigação, explicações psicológicas e reflexão sobre erros judiciários.",
       "depth": "Vinte e quatro horas e oito semanas aprofundam um domínio específico de psicologia forense, com foco consistente em memória, testemunho e investigação.",
@@ -324,12 +324,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Statement of Participation gratuito após conclusão",
-    "academic_credits": "Nenhum crédito académico formal",
+    "credential": "Free Statement of Participation after completion",
+    "academic_credits": "No formal academic credit",
     "self_paced": true,
-    "scope_notes": "Curso introdutório de seis horas, publicado e atualizado em julho de 2025, sobre variação cultural em pensamento, memória e perceção, bem-estar, desenvolvimento infantil e limitações históricas da psicologia WEIRD.",
-    "prerequisites": "Nenhum; nível introdutório",
-    "required_resources": "Navegador moderno; conta OpenLearn gratuita para progresso, statement, quizzes e atividades; materiais descarregáveis em vários formatos",
+    "scope_notes": "A six-hour introductory course, published and updated in July 2025, on cultural variation in thinking, memory and perception, wellbeing, child development and the historical limitations of WEIRD psychology.",
+    "prerequisites": "None; introductory level",
+    "required_resources": "Modern browser; a free OpenLearn account for progress, statement, quizzes and activities; downloadable materials in several formats",
     "component_evidence": {
       "pedagogy": "Usa exemplos culturais concretos para desafiar generalizações e liga cognição, bem-estar, desenvolvimento infantil e história disciplinar à validade intercultural.",
       "depth": "Seis horas dão uma introdução coerente e rara em perspetivas globais, mas não substituem um curso geral de psicologia ou módulo universitário completo.",
@@ -350,7 +350,7 @@
     },
     "quality_score": 8.36,
     "recommendation_score": 8.6,
-    "recommendation_rationale": "Não substitui um curso geral, mas é um complemento de grande valor porque corrige o viés para amostras e conceitos WEIRD. A curta duração limita profundidade, não relevância.",
+    "recommendation_rationale": "It does not replace a general psychology course, but it is a high-value complement because it directly addresses bias toward WEIRD samples and concepts. The short duration limits depth, not relevance.",
     "comparators": [
       "mit-9-00sc-intro-psychology",
       "saylor-psych101-introduction-psychology"
@@ -377,12 +377,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Sem certificado; materiais MIT OpenCourseWare",
-    "academic_credits": "Nenhum crédito académico para estudantes independentes",
+    "credential": "No certificate; MIT OpenCourseWare materials",
+    "academic_credits": "No academic credit for independent learners",
     "self_paced": true,
-    "scope_notes": "Curso universitário completo de introdução à psicologia, explicitamente concebido para autoestudo, cobrindo perceção, emoção, aprendizagem, memória, cognição, desenvolvimento infantil, personalidade, psicopatologia e interação social.",
-    "prerequisites": "Sem pré-requisitos formais; curso undergraduate introdutório",
-    "required_resources": "Navegador, PDF e vídeo; materiais descarregáveis e sem software pago",
+    "scope_notes": "A complete university introduction to psychology explicitly designed for self-study, covering perception, emotion, learning, memory, cognition, child development, personality, psychopathology and social interaction.",
+    "prerequisites": "No formal prerequisites; introductory undergraduate course",
+    "required_resources": "Browser, PDF and video access; downloadable materials and no paid software required",
     "component_evidence": {
       "pedagogy": "Foi desenhado para estudo independente e articula aulas, leituras, Check Yourself com perguntas objetivas e curtas, discussões e recursos adicionais por sessão.",
       "depth": "Cobre um semestre universitário amplo, com forte componente de neurociência e método científico, muito além de cursos introdutórios curtos.",
@@ -403,7 +403,7 @@
     },
     "quality_score": 9.01,
     "recommendation_score": 8.6,
-    "recommendation_rationale": "Melhor pacote pedagógico geral do lote, mas não a melhor recomendação universal em 2026. Para estrutura e prática é excecional; para um primeiro curso atual, Saylor é mais seguro.",
+    "recommendation_rationale": "The strongest overall teaching package in this batch, but not the safest universal recommendation in 2026. It is exceptional for structure and practice; Saylor is the more current first-course choice.",
     "comparators": [
       "saylor-psych101-introduction-psychology",
       "openlearn-psychology-around-world"
@@ -433,12 +433,12 @@
       "en"
     ],
     "subtitle_languages": [],
-    "credential": "Certificado Saylor gratuito após aprovação no Certificate Final Exam com pelo menos 70%",
-    "academic_credits": "O percurso gratuito não concede crédito automaticamente; a opção ACE Recommended Credit exige exame proctorizado com taxa de 5 USD",
+    "credential": "Free Saylor certificate after passing the Certificate Final Exam with at least 70%",
+    "academic_credits": "The free learning route does not automatically grant credit; the ACE Recommended Credit option requires a proctored exam with a USD 5 fee",
     "self_paced": true,
-    "scope_notes": "Curso autoformativo de cerca de 46 horas e onze unidades cobrindo fundamentos científicos, bases biológicas, perceção, aprendizagem, cognição, desenvolvimento, motivação, emoção, personalidade, clínica, social, organizacional e saúde/stress.",
-    "prerequisites": "Sem pré-requisitos formais; curso introdutório",
-    "required_resources": "Navegador ou dispositivo móvel e conta Saylor gratuita para avaliações e exame final; o percurso educativo e certificado não exigem pagamento",
+    "scope_notes": "A self-paced course of about 46 hours and eleven units covering scientific foundations, biological bases, perception, learning, cognition, development, motivation, emotion, personality, clinical, social and organisational psychology, and health/stress.",
+    "prerequisites": "No formal prerequisites; introductory course",
+    "required_resources": "Browser or mobile device and a free Saylor account for assessments and the final exam; the learning route and certificate do not require payment",
     "component_evidence": {
       "pedagogy": "Organiza artigos, aulas e vídeos por resultados de aprendizagem e fornece notas de orientação sobre o que observar e como os recursos se integram.",
       "depth": "Quarenta e seis horas e onze unidades dão cobertura ampla de introdução à psicologia, incluindo métodos, bases biológicas, cognição, desenvolvimento, clínica, social e saúde.",
@@ -459,7 +459,7 @@
     },
     "quality_score": 8.57,
     "recommendation_score": 8.9,
-    "recommendation_rationale": "A recomendação mais equilibrada do lote para uma introdução geral atual: 46 horas, avaliações por unidade, exame e certificado gratuitos e syllabus revisto em 2025. MIT é pedagogicamente mais rico, mas menos atual.",
+    "recommendation_rationale": "The most balanced recommendation in this batch for a current general introduction: 46 hours, unit assessments, a free final exam and certificate, and a syllabus revised in 2025. MIT is pedagogically richer but less current.",
     "comparators": [
       "mit-9-00sc-intro-psychology",
       "openlearn-psychology-around-world"
