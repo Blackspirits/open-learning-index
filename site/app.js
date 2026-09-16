@@ -38,7 +38,7 @@ const languageNames = {
     tr: "turco",
     uk: "ucraniano",
     zh: "chinês",
-  },,
+  },
   es: {
     ar: "árabe", az: "azerí", bg: "búlgaro", cs: "checo", de: "alemán",
     en: "inglés", es: "español", fr: "francés", hu: "húngaro",
