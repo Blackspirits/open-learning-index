@@ -32,7 +32,9 @@ LOCALIZED_FIELDS = {
 def required_editorial_strings() -> dict[str, set[str]]:
     courses = json.loads(build.COURSES.read_text(encoding="utf-8"))
     category_rows = json.loads(build.CATEGORIES.read_text(encoding="utf-8"))
+    candidate_rows = json.loads(build.CANDIDATES.read_text(encoding="utf-8"))
     categories = {row["id"]: row for row in category_rows}
+    candidate_by_id = {row["id"]: row for row in candidate_rows}
     reviews = build.load_current_records(build.REVIEWS_DIR, "reviewed_on")
     reference_reviews = build.load_current_records(
         build.REFERENCE_REVIEWS, "reviewed_on", "course_id"
@@ -40,6 +42,11 @@ def required_editorial_strings() -> dict[str, set[str]]:
     admissions = build.load_current_records(build.ADMISSIONS_DIR, "decided_on")
 
     required: dict[str, set[str]] = {}
+    public_ids = {
+        course["id"]
+        for course in courses
+        if build.is_publication_eligible(course)
+    }
 
     def add(value: str | None, origin: str) -> None:
         if not value:
@@ -61,6 +68,28 @@ def required_editorial_strings() -> dict[str, set[str]]:
             block = item.get("editorial", {}).get(section, {})
             for key in keys:
                 add(block.get(key), f'{course["id"]}.{section}.{key}')
+
+        review = item.get("editorial", {}).get("review", {})
+        admission = item.get("editorial", {}).get("admission", {})
+        comparator_ids = []
+        for candidate_id in [
+            *(admission.get("comparison_set") or []),
+            *(review.get("comparators") or []),
+        ]:
+            if candidate_id and candidate_id != course["id"] and candidate_id not in comparator_ids:
+                comparator_ids.append(candidate_id)
+
+        for candidate_id in comparator_ids:
+            if candidate_id in public_ids:
+                continue
+            candidate = candidate_by_id.get(candidate_id)
+            if candidate:
+                add(candidate.get("title"), f'{course["id"]}.comparator.{candidate_id}')
+
+    for value in build.CREDENTIAL_LABELS.values():
+        add(value, "credential_label")
+    for value in build.CREDIT_LABELS.values():
+        add(value, "credit_label")
 
     return required
 
