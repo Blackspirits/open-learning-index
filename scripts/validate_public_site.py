@@ -230,6 +230,13 @@ def validate_publication_routes(site: Path, errors: list[str]) -> None:
         if not (site / rel).exists():
             fail(errors, f"missing category directory: {rel.as_posix()}")
 
+    for rel in (
+        Path("methodology") / "index.html",
+        Path("pt") / "methodology" / "index.html",
+    ):
+        if not (site / rel).exists():
+            fail(errors, f"missing methodology route: {rel.as_posix()}")
+
 
 def validate_locale_pairs(site: Path, pages: dict[Path, PageParser], errors: list[str]) -> None:
     for rel, parser in pages.items():
@@ -259,6 +266,16 @@ def validate_locale_pairs(site: Path, pages: dict[Path, PageParser], errors: lis
         if rel_posix.startswith("pt/categories/") and rel_posix.endswith("index.html"):
             en_rel = Path(*rel.parts[1:])
             expected_en = f"{BASE_URL}/{en_rel.as_posix()[:-len('index.html')]}"
+            if parser.alternates.get("en") != expected_en:
+                fail(errors, f"{rel_posix}: missing or incorrect English alternate")
+
+        if rel_posix == "methodology/index.html":
+            expected_pt = f"{BASE_URL}/pt/methodology/"
+            if parser.alternates.get("pt-PT") != expected_pt:
+                fail(errors, f"{rel_posix}: missing or incorrect pt-PT alternate")
+
+        if rel_posix == "pt/methodology/index.html":
+            expected_en = f"{BASE_URL}/methodology/"
             if parser.alternates.get("en") != expected_en:
                 fail(errors, f"{rel_posix}: missing or incorrect English alternate")
 
