@@ -290,6 +290,22 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('href="../../methodology/">Methodology</a>', html)
         self.assertNotIn('github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md', html)
 
+
+    def test_pt_catalogue_runtime_uses_generated_presentation_description(self):
+        app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
+        self.assertIn('course.presentation_pt?.description', app_js)
+        self.assertNotIn('return isPt ? course.presentation_pt.why_recommended', app_js)
+
+        for course in self.courses:
+            localized = presentation.localize_course(course)
+            presentation_pt = {
+                'title': localized['title'],
+                'description': localized['why_recommended'],
+            }
+            with self.subTest(course=course['id']):
+                self.assertTrue(presentation_pt['description'])
+                self.assertEqual(presentation_pt['description'], localized['why_recommended'])
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
