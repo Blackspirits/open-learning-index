@@ -442,6 +442,97 @@ LOCALE_MONTHS = {
 }
 
 
+LOCALE_DIRECTORY_COPY = {
+    "en": {
+        "title": "Categories",
+        "areas": "learning areas",
+        "intro": "Explore every area in the index. Each category contains only courses that passed the editorial and verification process.",
+        "top": "Top recommendation",
+        "course": "course",
+        "courses": "courses",
+        "home": "Home",
+        "courses_nav": "Courses",
+        "methodology": "Methodology",
+        "how": "How it works",
+        "footer": "Curated, auditable and continuously maintained.",
+        "primary_nav": "Primary navigation",
+        "mobile_nav": "Mobile navigation",
+        "open_nav": "Open navigation",
+        "search": "Search courses",
+        "theme": "Use dark theme",
+    },
+    "pt-PT": {
+        "title": "Categorias",
+        "areas": "áreas de aprendizagem",
+        "intro": "Explora todas as áreas do índice. Cada categoria reúne apenas cursos que passaram o processo editorial e de verificação.",
+        "top": "Mais recomendado",
+        "course": "curso",
+        "courses": "cursos",
+        "home": "Início",
+        "courses_nav": "Cursos",
+        "methodology": "Metodologia",
+        "how": "Como funciona",
+        "footer": "Curado, auditável e continuamente mantido.",
+        "primary_nav": "Navegação principal",
+        "mobile_nav": "Navegação móvel",
+        "open_nav": "Abrir navegação",
+        "search": "Pesquisar cursos",
+        "theme": "Usar tema escuro",
+    },
+}
+
+LOCALE_CATEGORY_COPY = {
+    "en": {
+        "kicker": "Category",
+        "home": "Home",
+        "courses": "Courses",
+        "categories": "Categories",
+        "methodology": "Methodology",
+        "how": "How it works",
+        "description": "Curated free courses in {category} from the Open Learning Index.",
+        "count_one": "{count} curated course, ordered by Recommendation.",
+        "count_many": "{count} curated courses, ordered by Recommendation.",
+        "start": "Start here",
+        "footer": "Curated, auditable and continuously maintained.",
+        "primary_nav": "Primary navigation",
+        "mobile_nav": "Mobile navigation",
+        "open_nav": "Open navigation",
+        "search": "Search courses",
+        "breadcrumb": "Breadcrumb",
+        "theme": "Use dark theme",
+        "freshness": {
+            "fast": "Fast-moving field: courses here use shorter review intervals because tools, standards or platforms can change quickly.",
+            "medium": "Actively maintained field: access, content and provider changes are re-checked on a moderate cadence.",
+            "slow": "Foundational field: age alone is not treated as a defect, while access and comparative quality are still re-verified.",
+        },
+    },
+    "pt-PT": {
+        "kicker": "Categoria",
+        "home": "Início",
+        "courses": "Cursos",
+        "categories": "Categorias",
+        "methodology": "Metodologia",
+        "how": "Como funciona",
+        "description": "Cursos gratuitos selecionados em {category} no Open Learning Index.",
+        "count_one": "{count} curso selecionado, ordenado por Recomendação.",
+        "count_many": "{count} cursos selecionados, ordenados por Recomendação.",
+        "start": "Começar aqui",
+        "footer": "Curado, auditável e continuamente mantido.",
+        "primary_nav": "Navegação principal",
+        "mobile_nav": "Navegação móvel",
+        "open_nav": "Abrir navegação",
+        "search": "Pesquisar cursos",
+        "breadcrumb": "Navegação estrutural",
+        "theme": "Usar tema escuro",
+        "freshness": {
+            "fast": "Área de rápida mudança: estes cursos usam intervalos de revisão mais curtos porque ferramentas, normas ou plataformas podem mudar rapidamente.",
+            "medium": "Área ativamente mantida: acesso, conteúdo e alterações da entidade são reverificados com uma cadência moderada.",
+            "slow": "Área de fundamentos estáveis: a idade, por si só, não é tratada como defeito, mantendo-se a reverificação do acesso e da qualidade comparativa.",
+        },
+    },
+}
+
+
 def locale_category_label(course: dict, locale: str) -> str:
     return LOCALE_CATEGORY_LABELS.get(locale, {}).get(
         course["category"],
