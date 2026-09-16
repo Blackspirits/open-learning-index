@@ -1300,9 +1300,18 @@ def render_category_directory(
 </html>
 """
 
-def render_static_category(category: dict, courses: list[dict], pt: bool = False) -> str:
+def render_static_category(
+    category: dict,
+    courses: list[dict],
+    locale: str = "en",
+) -> str:
+    copy = LOCALE_CATEGORY_COPY[locale]
+    localized = locale != "en"
+    site_root = "../../../" if localized else "../../"
     category_id = category["id"]
-    category_name = PT_CATEGORY_LABELS.get(category_id, category["name"]) if pt else category["name"]
+    category_stub = {"category": category_id, "category_name": category["name"]}
+    category_name = locale_category_label(category_stub, locale)
+
     rows = sorted(
         (course for course in courses if course["category"] == category_id),
         key=lambda item: (
@@ -1312,76 +1321,50 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
         ),
     )
     cards = "".join(
-        static_catalogue_card_pt(course, "../../", show_category=False) if pt else static_catalogue_card(course, "../../", show_category=False)
+        static_catalogue_card(
+            course,
+            "../../",
+            locale=locale,
+            show_category=False,
+        )
         for course in rows
     )
-    url = f"{BASE_URL}/pt/categories/{category_id}/" if pt else f"{BASE_URL}/categories/{category_id}/"
-    en_url = f"{BASE_URL}/categories/{category_id}/"
-    pt_url = f"{BASE_URL}/pt/categories/{category_id}/"
-    lang = "pt-PT" if pt else "en"
-    root = "../../../" if pt else "../../"
-    home_href = "../../" if pt else "../../"
-    courses_href = "../../courses/" if pt else "../../courses/"
-    categories_href = "../"
-    principles_href = "../../methodology/"
-    how_href = "../../#how-it-works" if pt else "../../#how-it-works"
-    css_href = "../../../styles.css" if pt else "../../styles.css"
-    icons_href = "../../../icons.js" if pt else "../../icons.js"
-    theme_href = "../../../theme.js" if pt else "../../theme.js"
-    switch_href = f"../../../categories/{category_id}/" if pt else f"../../pt/categories/{category_id}/"
-    switch_label = "English" if pt else "Português"
-    switch_short = "EN" if pt else "PT-PT"
-    switch_lang = "en" if pt else "pt-PT"
-    home_label = "Início" if pt else "Home"
-    courses_label = "Cursos" if pt else "Courses"
-    categories_label = "Categorias" if pt else "Categories"
-    principles_label = "Metodologia" if pt else "Methodology"
-    how_label = "Como funciona" if pt else "How it works"
-    methodology_label = "Metodologia" if pt else "Methodology"
-    kicker = "Categoria" if pt else "Category"
-    description = (
-        f"Cursos gratuitos selecionados em {category_name} no Open Learning Index."
-        if pt
-        else f"Curated free courses in {category_name} from the Open Learning Index."
-    )
-    count_copy = (
-        f'{len(rows)} {"curso selecionado" if len(rows) == 1 else "cursos selecionados"}, ordenados por Recomendação.'
-        if pt
-        else f'{len(rows)} curated course{"s" if len(rows) != 1 else ""}, ordered by Recommendation.'
-    )
-    freshness_copy = {
-        "fast": (
-            "Área de rápida mudança: estes cursos usam intervalos de revisão mais curtos porque ferramentas, normas ou plataformas podem mudar rapidamente."
-            if pt else
-            "Fast-moving field: courses here use shorter review intervals because tools, standards or platforms can change quickly."
-        ),
-        "medium": (
-            "Área ativamente mantida: acesso, conteúdo e alterações da entidade são reverificados com uma cadência moderada."
-            if pt else
-            "Actively maintained field: access, content and provider changes are re-checked on a moderate cadence."
-        ),
-        "slow": (
-            "Área de fundamentos estáveis: a idade, por si só, não é tratada como defeito, mantendo-se a reverificação do acesso e da qualidade comparativa."
-            if pt else
-            "Foundational field: age alone is not treated as a defect, while access and comparative quality are still re-verified."
-        ),
-    }.get(category.get("freshness"), "")
+
+    route = f"categories/{category_id}/"
+    url = locale_url(locale, route)
+    locale_hrefs = {}
+    for target in PUBLIC_LOCALES:
+        prefix = LOCALE_META[target]["prefix"]
+        target_route = f"{prefix}/{route}" if prefix else route
+        locale_hrefs[target] = site_root + target_route
+
+    count_template = copy["count_one"] if len(rows) == 1 else copy["count_many"]
+    count_copy = count_template.format(count=len(rows))
+    description = copy["description"].format(category=category_name)
+    freshness_copy = copy["freshness"].get(category.get("freshness"), "")
+
     leader = rows[0] if rows else None
     if leader:
-        leader_title = translate_pt(leader["title"]) if pt else leader["title"]
-        leader_rationale = translate_pt(leader["why_recommended"]) if pt else leader["why_recommended"]
-        leader_label = "Começar aqui" if pt else "Start here"
-        leader_href = f'../../courses/{leader["id"]}/'
+        leader_title, leader_rationale = locale_course_copy(leader, locale)
         leader_html = (
-            f'<p><strong>{leader_label}:</strong> <a href="{escape(leader_href)}">{escape(leader_title)}</a> — '
+            f'<p><strong>{escape(copy["start"])}:</strong> '
+            f'<a href="../../courses/{escape(leader["id"])}/">{escape(leader_title)}</a> — '
             f'{escape(leader_rationale)}</p>'
         )
     else:
         leader_html = ""
-    footer_copy = "Curado, auditável e continuamente mantido." if pt else "Curated, auditable and continuously maintained."
+
+    home_href = "../../"
+    courses_href = "../../courses/"
+    categories_href = "../"
+    methodology_href = "../../methodology/"
+    how_href = "../../#how-it-works"
+    css_href = site_root + "styles.css"
+    icons_href = site_root + "icons.js"
+    theme_href = site_root + "theme.js"
 
     return f"""<!doctype html>
-<html lang="{lang}">
+<html lang="{locale}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1389,8 +1372,7 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
   <meta name="theme-color" content="#ffffff">
   {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
-  <link rel="alternate" hreflang="en" href="{escape(en_url, quote=True)}">
-  <link rel="alternate" hreflang="pt-PT" href="{escape(pt_url, quote=True)}">
+{alternate_links(route)}
   <meta property="og:title" content="{escape(category_name, quote=True)} · Open Learning Index">
   <meta property="og:description" content="{escape(description, quote=True)}">
   <meta property="og:url" content="{escape(url, quote=True)}">
@@ -1402,18 +1384,18 @@ def render_static_category(category: dict, courses: list[dict], pt: bool = False
   <header class="topbar">
     <div class="shell topbar-inner">
       <a class="brand" href="{home_href}" aria-label="Open Learning Index"><span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span></a>
-      <nav class="main-nav" aria-label="{"Navegação principal" if pt else "Primary navigation"}"><a href="{courses_href}">{courses_label}</a><a class="active" href="{categories_href}">{categories_label}</a><a href="{principles_href}">{principles_label}</a><a href="{how_href}">{how_label}</a></nav>
-      <details class="mobile-nav"><summary aria-label="{"Abrir navegação" if pt else "Open navigation"}"><span class="menu-icon" aria-hidden="true"></span></summary><nav aria-label="{"Navegação móvel" if pt else "Mobile navigation"}"><a href="{home_href}">{home_label}</a><a href="{courses_href}">{courses_label}</a><a href="{categories_href}">{categories_label}</a><a href="{principles_href}">{principles_label}</a><a href="{how_href}">{how_label}</a></nav></details>
-      <div class="nav-actions"><a class="icon-link" href="{courses_href}" aria-label="{"Pesquisar cursos" if pt else "Search courses"}"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="{switch_href}" lang="{switch_lang}" hreflang="{switch_lang}" aria-label="{switch_label}">{switch_short}</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="{"Usar tema escuro" if pt else "Use dark theme"}" title="{"Usar tema escuro" if pt else "Use dark theme"}"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
+      <nav class="main-nav" aria-label="{escape(copy["primary_nav"])}"><a href="{courses_href}">{escape(copy["courses"])}</a><a class="active" href="{categories_href}">{escape(copy["categories"])}</a><a href="{methodology_href}">{escape(copy["methodology"])}</a><a href="{how_href}">{escape(copy["how"])}</a></nav>
+      <details class="mobile-nav"><summary aria-label="{escape(copy["open_nav"])}"><span class="menu-icon" aria-hidden="true"></span></summary><nav aria-label="{escape(copy["mobile_nav"])}"><a href="{home_href}">{escape(copy["home"])}</a><a href="{courses_href}">{escape(copy["courses"])}</a><a href="{categories_href}">{escape(copy["categories"])}</a><a href="{methodology_href}">{escape(copy["methodology"])}</a><a href="{how_href}">{escape(copy["how"])}</a></nav></details>
+      <div class="nav-actions"><a class="icon-link" href="{courses_href}" aria-label="{escape(copy["search"])}"><span data-icon="search" aria-hidden="true"></span></a>{language_control(locale, locale_hrefs)}<button class="theme-toggle" type="button" data-theme-toggle aria-label="{escape(copy["theme"])}" title="{escape(copy["theme"])}"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
     </div>
   </header>
   <main class="shell category-page">
-    <nav class="course-breadcrumbs" aria-label="{"Navegação estrutural" if pt else "Breadcrumb"}"><a href="{categories_href}">{categories_label}</a><span>›</span><span>{escape(category_name)}</span></nav>
-    <header class="category-page-header"><p class="section-kicker">{kicker}</p><h1>{escape(category_name)}</h1><p>{escape(count_copy)}</p></header>
+    <nav class="course-breadcrumbs" aria-label="{escape(copy["breadcrumb"])}"><a href="{categories_href}">{escape(copy["categories"])}</a><span>›</span><span>{escape(category_name)}</span></nav>
+    <header class="category-page-header"><p class="section-kicker">{escape(copy["kicker"])}</p><h1>{escape(category_name)}</h1><p>{escape(count_copy)}</p></header>
     <section class="category-context"><p>{escape(freshness_copy)}</p>{leader_html}</section>
     <div class="course-grid catalogue-grid">{cards}</div>
   </main>
-  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>{escape(footer_copy)}</p></div><div class="footer-links"><a href="{home_href}">{home_label}</a><a href="{courses_href}">{courses_label}</a><a href="{categories_href}">{categories_label}</a><a href="{principles_href}">{methodology_label}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="{switch_href}" lang="{switch_lang}" hreflang="{switch_lang}">{switch_label}</a></div></div></footer>
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Open Learning Index</strong><p>{escape(copy["footer"])}</p></div><div class="footer-links"><a href="{home_href}">{escape(copy["home"])}</a><a href="{courses_href}">{escape(copy["courses"])}</a><a href="{categories_href}">{escape(copy["categories"])}</a><a href="{methodology_href}">{escape(copy["methodology"])}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a></div></div></footer>
   <script src="{icons_href}" defer></script>
   <script src="{theme_href}" defer></script>
 </body>
@@ -1542,11 +1524,11 @@ def build(output: Path) -> None:
     for category in category_rows:
         write_text(
             output / "categories" / category["id"] / "index.html",
-            render_static_category(category, public_courses, pt=False),
+            render_static_category(category, public_courses, locale="en"),
         )
         write_text(
             output / "pt" / "categories" / category["id"] / "index.html",
-            render_static_category(category, public_courses, pt=True),
+            render_static_category(category, public_courses, locale="pt-PT"),
         )
 
     sitemap_urls = [
