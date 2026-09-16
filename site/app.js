@@ -229,9 +229,11 @@ function renderHome() {
   const statCourses = document.querySelector("#stat-courses");
   const statCategories = document.querySelector("#stat-categories");
   const statLanguages = document.querySelector("#stat-languages");
+  const statVerified = document.querySelector("#stat-verified");
   if (statCourses) statCourses.textContent = state.meta.published_count;
   if (statCategories) statCategories.textContent = state.meta.category_count;
   if (statLanguages) statLanguages.textContent = state.meta.language_count ?? Object.keys(state.meta.language_counts).length;
+  if (statVerified && state.meta.latest_verification) statVerified.textContent = formatReviewMonth(state.meta.latest_verification);
 
   const categoryOrder = [
     "computer-science",
