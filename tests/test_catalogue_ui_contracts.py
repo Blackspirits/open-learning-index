@@ -38,6 +38,8 @@ class CatalogueUiContractsTest(unittest.TestCase):
         self.assertTrue(values)
         for value in values:
             self.assertEqual(value[0], value[0].lower(), value)
+        self.assertIn("labelLanguageOption(a).localeCompare(labelLanguageOption(b), pageLocale)", source)
+        self.assertIn("new Option(labelLanguageOption(value), value)", source)
 
     def test_static_language_maps_keep_locale_boundaries(self):
         source = BUILDER.read_text(encoding="utf-8")
