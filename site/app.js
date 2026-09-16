@@ -119,9 +119,13 @@ function labelLanguage(code) {
   }
 }
 
+function labelLanguageOption(code) {
+  const label = labelLanguage(code);
+  return isPt ? `${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}` : label;
+}
+
 function labelCourseLanguage(course) {
-  const label = labelLanguage(course.primary_language);
-  return isPt ? `Em ${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}` : `In ${label}`;
+  return isPt ? `Em ${labelLanguageOption(course.primary_language)}` : `In ${labelLanguageOption(course.primary_language)}`;
 }
 
 function labelCategory(course) {
@@ -305,7 +309,7 @@ function populateFilters(els) {
   const categories = [...new Map(state.courses.map((c) => [c.category, labelCategory(c)])).entries()]
     .sort((a, b) => a[1].localeCompare(b[1], pageLocale));
   const languages = [...new Set(state.courses.flatMap((c) => [c.primary_language, ...c.other_languages]))]
-    .sort((a, b) => labelLanguage(a).localeCompare(labelLanguage(b), pageLocale));
+    .sort((a, b) => labelLanguageOption(a).localeCompare(labelLanguageOption(b), pageLocale));
   const levelRank = new Map(levelOrder.map((value, index) => [value, index]));
   const levels = [...new Set(state.courses.map((c) => c.level))]
     .sort((a, b) =>
@@ -314,7 +318,7 @@ function populateFilters(els) {
     );
 
   categories.forEach(([value, label]) => els.category.add(new Option(label, value)));
-  languages.forEach((value) => els.language.add(new Option(labelLanguage(value), value)));
+  languages.forEach((value) => els.language.add(new Option(labelLanguageOption(value), value)));
   levels.forEach((value) => els.level.add(new Option(labelLevel(value), value)));
 }
 
