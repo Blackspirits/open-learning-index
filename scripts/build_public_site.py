@@ -24,6 +24,51 @@ SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
 BASE_URL = "https://blackspirits.github.io/open-learning-index"
 SUPPORTED_PRESENTATION_LOCALES = ("pt-PT",)
+PUBLIC_LOCALES = ("en", *SUPPORTED_PRESENTATION_LOCALES)
+
+LOCALE_META = {
+    "en": {"prefix": "", "label": "English", "short": "EN"},
+    "pt-PT": {"prefix": "pt", "label": "Português (Portugal)", "short": "PT-PT"},
+}
+
+
+def locale_url(locale: str, route: str = "") -> str:
+    prefix = LOCALE_META[locale]["prefix"]
+    base = f"{BASE_URL}/{prefix}/" if prefix else f"{BASE_URL}/"
+    return base + route.lstrip("/")
+
+
+def alternate_links(route: str) -> str:
+    return "\n".join(
+        f'  <link rel="alternate" hreflang="{locale}" '
+        f'href="{escape(locale_url(locale, route), quote=True)}">'
+        for locale in PUBLIC_LOCALES
+    )
+
+
+def language_control(current_locale: str, hrefs: dict[str, str]) -> str:
+    others = [locale for locale in PUBLIC_LOCALES if locale != current_locale]
+    if len(PUBLIC_LOCALES) == 2:
+        locale = others[0]
+        meta = LOCALE_META[locale]
+        return (
+            f'<a class="language-switch" href="{escape(hrefs[locale])}" '
+            f'lang="{locale}" hreflang="{locale}" aria-label="{escape(meta["label"])}">'
+            f'{escape(meta["short"])}</a>'
+        )
+
+    current = LOCALE_META[current_locale]
+    links = "".join(
+        f'<a href="{escape(hrefs[locale])}" lang="{locale}" hreflang="{locale}">'
+        f'{escape(LOCALE_META[locale]["label"])}</a>'
+        for locale in PUBLIC_LOCALES
+    )
+    return (
+        '<details class="language-menu">'
+        f'<summary aria-label="Language">{escape(current["short"])}</summary>'
+        f'<nav aria-label="Language">{links}</nav>'
+        '</details>'
+    )
 
 THEME_BOOTSTRAP = """<script>
 try {
