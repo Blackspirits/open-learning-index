@@ -55,7 +55,7 @@ class EditorialPresentationTest(unittest.TestCase):
             translations_for('zz-ZZ')
 
     def test_known_machine_translation_semantic_traps_are_blocked(self):
-        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        translations = translations_for('pt-PT')
         values = list(translations.values())
         self.assertFalse(any('24 horas por dia' in value for value in values))
         self.assertFalse(any('moeda 10.0' in value.lower() or 'moeda 10,0' in value.lower() for value in values))
@@ -74,7 +74,7 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('Ciência de Computadores e Software</a>', translated)
 
     def test_pt_pt_audit_global_invariants(self):
-        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        translations = translations_for('pt-PT')
         legacy_ao90 = (
             'excepcional', 'excepcionalmente', 'actuais', 'actual', 'activo',
             'interactivo', 'interactiva', 'interactivos', 'interactivas',
@@ -109,7 +109,7 @@ class EditorialPresentationTest(unittest.TestCase):
                     self.assertNotIn('em direto', lowered)
 
     def test_pt_pt_medium_agreement_regressions_are_blocked(self):
-        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        translations = translations_for('pt-PT')
         values = list(translations.values())
         forbidden = (
             'um função',
@@ -125,7 +125,7 @@ class EditorialPresentationTest(unittest.TestCase):
                 self.assertNotIn(bad, value)
 
     def test_pt_pt_low_independent_pass_01_regressions_are_blocked(self):
-        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        translations = translations_for('pt-PT')
         forbidden = (
             'permanece mais ampla',
             'quatro exames e um final',
@@ -147,14 +147,14 @@ class EditorialPresentationTest(unittest.TestCase):
                     self.assertNotIn(bad, value)
 
     def test_pt_pt_low_independent_pass_02_regressions_are_blocked(self):
-        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        translations = translations_for('pt-PT')
         for source, value in translations.items():
             with self.subTest(source=source[:100]):
                 self.assertNotIn('uma curso', value)
                 self.assertNotIn('curso panorâmico completo de ciência política que não é substituída', value)
 
     def test_pt_pt_low_independent_pass_03_regressions_are_blocked(self):
-        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        translations = translations_for('pt-PT')
         for source, value in translations.items():
             with self.subTest(source=source[:100]):
                 self.assertNotIn('(enforcement)', value)
