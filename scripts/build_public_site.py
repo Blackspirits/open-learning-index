@@ -382,31 +382,49 @@ def static_tag(value: str, extra: str = "") -> str:
     return f'<span class="{cls}">{escape(value)}</span>'
 
 
+def format_review_month(value: str, is_pt: bool = False) -> str:
+    year, month, _day = value.split("-")
+    if is_pt:
+        names = ("jan.", "fev.", "mar.", "abr.", "mai.", "jun.", "jul.", "ago.", "set.", "out.", "nov.", "dez.")
+    else:
+        names = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+    return f"{names[int(month) - 1]} {year}"
+
+
 def static_catalogue_card(course: dict, href_prefix: str = "../", is_pt=False) -> str:
     title = pt(course["title"]) if is_pt else course["title"]
+    rationale = pt(course["why_recommended"]) if is_pt else course["why_recommended"]
     category = PT_CATEGORY_LABELS[course["category"]] if is_pt else course["category_name"]
     language = PT_LANGUAGE_LABELS.get(course["primary_language"], label_language(course["primary_language"])) if is_pt else label_language(course["primary_language"])
     language = f"Em {language[0].lower()}{language[1:]}" if is_pt else f"In {language}"
     level = PT_LEVEL_LABELS.get(course["level"], label_level(course["level"])) if is_pt else label_level(course["level"])
     access = {"F0":"Curso e credencial gratuitos", "F1":"Percurso completo com avaliação", "F2":"Conteúdos completos gratuitos"}[course["access_short"]] if is_pt else course["access_label"]
-    label = "Recomendação" if is_pt else "Recommendation"
-    score = f'{float(course["recommendation_score"]):.1f}'
-    if is_pt: score = score.replace('.', ',')
+    rec_label = "Recomendação" if is_pt else "Recommendation"
+    quality_label = "Qualidade" if is_pt else "Quality"
+    verified_label = "Verificado" if is_pt else "Verified"
+    rec_score = f'{float(course["recommendation_score"]):.1f}'
+    quality_score = f'{float(course["quality_score"]):.1f}'
+    if is_pt:
+        rec_score = rec_score.replace(".", ",")
+        quality_score = quality_score.replace(".", ",")
     archive = static_tag("Arquivado" if is_pt else "Archived", "tag-archive") if course["status"] == "active_archive" else ""
-    root = "../" + href_prefix if is_pt else href_prefix
     return (
-        '<article class="catalogue-card">' + media_html(course, root)
+        '<article class="catalogue-card">'
         + '<div class="card-body"><div class="card-heading">'
         + f'<p class="provider">{escape(course["provider"])}</p>'
         + f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(title)}</a></h3></div>'
-        + '<div class="catalogue-card-head">'
-        + f'<span class="score-pill" aria-label="{label} {score} / 10">{score}</span>'
-        + f'<span class="score-context">{label}</span></div>'
+        + '<div class="card-score-row">'
+        + f'<span class="card-score card-score-primary" aria-label="{rec_label} {rec_score} / 10"><strong>{rec_score}</strong><small>{rec_label}</small></span>'
+        + f'<span class="card-score" aria-label="{quality_label} {quality_score} / 10"><strong>{quality_score}</strong><small>{quality_label}</small></span>'
+        + static_tag(course["quality_tier"], "tag-tier")
+        + '</div>'
+        + f'<p class="card-rationale">{escape(rationale)}</p>'
         + f'<div class="mini-tags">{static_tag(category, "tag-category")}{static_tag(language)}{static_tag(level)}{archive}</div>'
+        + '<div class="card-footer">'
         + f'<div class="access-line"><span data-icon="access" aria-hidden="true"></span><span>{escape(access)}</span></div>'
-        + '</div></article>'
+        + f'<span class="verified-line">{verified_label} {escape(format_review_month(course["last_verified"], is_pt))}</span>'
+        + '</div></div></article>'
     )
-
 
 def static_catalogue_card_pt(course: dict, href_prefix: str = "../../") -> str:
     return static_catalogue_card(course, href_prefix, is_pt=True)
