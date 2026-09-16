@@ -96,6 +96,47 @@ class EditorialPresentationTest(unittest.TestCase):
                     self.assertNotIn('ao vivo', lowered)
                     self.assertNotIn('em direto', lowered)
 
+    def test_pt_pt_language_labels_are_complete_and_consistently_lowercase(self):
+        language_codes = {
+            code
+            for course in self.courses
+            for code in [course['primary_language'], *course.get('other_languages', [])]
+        }
+        self.assertTrue(language_codes.issubset(build.PT_LANGUAGE_LABELS))
+        for code in sorted(language_codes):
+            with self.subTest(code=code):
+                label = build.PT_LANGUAGE_LABELS[code]
+                first_alpha = next((char for char in label if char.isalpha()), '')
+                self.assertTrue(first_alpha)
+                self.assertEqual(first_alpha, first_alpha.lower())
+
+    def test_catalogue_level_filter_uses_pedagogical_progression(self):
+        app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
+        match = __import__('re').search(
+            r'const levelOrder = \[(.*?)\];',
+            app_js,
+            flags=__import__('re').S,
+        )
+        self.assertIsNotNone(match)
+        actual = __import__('re').findall(r'"([^"]+)"', match.group(1))
+        self.assertEqual(
+            actual,
+            [
+                'beginner',
+                'beginner_to_intermediate',
+                'intermediate',
+                'intermediate_to_advanced',
+                'advanced',
+                'undergraduate',
+                'graduate',
+                'beginner_to_advanced',
+            ],
+        )
+        self.assertIn('Progressão', app_js)
+        self.assertIn('Abrangente', app_js)
+        self.assertIn('Adequado a principiantes', app_js)
+        self.assertIn('optgroup', app_js)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
