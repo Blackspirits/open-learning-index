@@ -31,7 +31,7 @@
     status: '<rect x="5" y="5" width="14" height="14" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/>',
     provider: '<path d="M4 20h16M6 20V8l6-4 6 4v12M9 11h2M13 11h2M9 15h2M13 15h2"/>',
     level: '<path d="M5 18V9M12 18V5M19 18v-6"/>',
-    access: '<path d="M7 11V8a5 5 0 0 1 10 0v3M6 11h12v9H6Z"/>',
+    access: '<circle cx="12" cy="12" r="8"/><path d="m8.5 12 2.2 2.2 4.8-5"/>',
     arrow: '<path d="M5 12h14M14 7l5 5-5 5"/>'
   };
 
