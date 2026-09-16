@@ -346,7 +346,20 @@ function populateFilters(els) {
 
   categories.forEach(([value, label]) => els.category.add(new Option(label, value)));
   languages.forEach((value) => els.language.add(new Option(labelLanguageOption(value), value)));
-  levels.forEach((value) => els.level.add(new Option(labelLevel(value), value)));
+
+  // Level options are ordered pedagogically rather than alphabetically.
+  // "Beginner-friendly" is a convenience filter, not a canonical level,
+  // so it is separated from the actual progression.
+  const levelPlaceholder = new Option(isPt ? "Nível" : "Level", "");
+  const progressionGroup = document.createElement("optgroup");
+  progressionGroup.label = isPt ? "Progressão" : "Progression";
+  levels.forEach((value) => progressionGroup.append(new Option(labelLevel(value), value)));
+  const shortcutGroup = document.createElement("optgroup");
+  shortcutGroup.label = isPt ? "Atalho" : "Shortcut";
+  shortcutGroup.append(
+    new Option(isPt ? "Adequado a principiantes" : "Beginner-friendly", "beginner-friendly")
+  );
+  els.level.replaceChildren(levelPlaceholder, progressionGroup, shortcutGroup);
 }
 
 function filteredCourses(values) {
