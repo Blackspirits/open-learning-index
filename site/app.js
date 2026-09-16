@@ -99,9 +99,9 @@ const levelOrder = [
   "intermediate",
   "intermediate_to_advanced",
   "advanced",
-  "beginner_to_advanced",
   "undergraduate",
   "graduate",
+  "beginner_to_advanced",
 ];
 
 const accessPt = {
@@ -353,13 +353,20 @@ function populateFilters(els) {
   const levelPlaceholder = new Option(isPt ? "Nível" : "Level", "");
   const progressionGroup = document.createElement("optgroup");
   progressionGroup.label = isPt ? "Progressão" : "Progression";
-  levels.forEach((value) => progressionGroup.append(new Option(labelLevel(value), value)));
+  levels
+    .filter((value) => value !== "beginner_to_advanced")
+    .forEach((value) => progressionGroup.append(new Option(labelLevel(value), value)));
+  const broadGroup = document.createElement("optgroup");
+  broadGroup.label = isPt ? "Abrangente" : "Broad range";
+  if (levels.includes("beginner_to_advanced")) {
+    broadGroup.append(new Option(labelLevel("beginner_to_advanced"), "beginner_to_advanced"));
+  }
   const shortcutGroup = document.createElement("optgroup");
   shortcutGroup.label = isPt ? "Atalho" : "Shortcut";
   shortcutGroup.append(
     new Option(isPt ? "Adequado a principiantes" : "Beginner-friendly", "beginner-friendly")
   );
-  els.level.replaceChildren(levelPlaceholder, progressionGroup, shortcutGroup);
+  els.level.replaceChildren(levelPlaceholder, progressionGroup, broadGroup, shortcutGroup);
 }
 
 function filteredCourses(values) {
