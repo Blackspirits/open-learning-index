@@ -306,6 +306,13 @@ class EditorialPresentationTest(unittest.TestCase):
                 self.assertTrue(presentation_pt['description'])
                 self.assertEqual(presentation_pt['description'], localized['why_recommended'])
 
+
+    def test_functional_control_borders_use_accessible_tokens(self):
+        css = (ROOT / 'site' / 'styles.css').read_text(encoding='utf-8')
+        self.assertIn('--control-border: #7d919c;', css)
+        self.assertIn('--control-border: #526b77;', css)
+        self.assertIn('border: 1px solid var(--control-border);', css)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
