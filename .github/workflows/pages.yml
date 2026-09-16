@@ -13,6 +13,7 @@ on:
       - 'site/**'
       - 'scripts/build_public_site.py'
       - 'scripts/editorial_presentation.py'
+      - 'scripts/check_locale_coverage.py'
       - 'scripts/validate_public_site.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
@@ -43,6 +44,9 @@ jobs:
 
       - name: Test editorial presentation
         run: python -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Enforce pt-PT editorial locale coverage
+        run: python scripts/check_locale_coverage.py --locale pt-PT --enforce
 
       - name: Validate canonical dataset
         run: python scripts/validate.py
