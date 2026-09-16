@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora todos los cursos gratuitos seleccionados en Open Learning Index.">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    try {
+      const saved = localStorage.getItem("oli-theme");
+      const theme = saved === "dark" || saved === "light"
+        ? saved
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {}
+  </script>
+  <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/es/courses/">
+  <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/courses/">
+  <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/courses/">
+  <link rel="alternate" hreflang="es" href="https://blackspirits.github.io/open-learning-index/es/courses/">
+  <title>Todos los Cursos · Open Learning Index</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../editorial.css">
+</head>
+<body data-page="catalogue" data-locale="es" data-root="../../">
+  <a class="skip-link" href="#results">Saltar a los resultados</a>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="../" aria-label="Página inicial de Open Learning Index">
+        <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span>
+        <span>Open Learning Index</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="active" href="./">Cursos</a>
+        <a href="../categories/">Categorías</a>
+        <a href="../methodology/">Metodología</a>
+        <a href="../#how-it-works">Cómo funciona</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Abrir navegación"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Navegación móvil"><a href="../">Inicio</a><a href="./">Cursos</a><a href="../categories/">Categorías</a><a href="../methodology/">Metodología</a><a href="../#how-it-works">Cómo funciona</a></nav>
+      </details>
+      <div class="nav-actions">
+        <button class="icon-link" type="button" data-focus-search aria-label="Enfocar búsqueda"><span data-icon="search" aria-hidden="true"></span></button>
+        <details class="language-menu"><summary aria-label="Idioma">ES</summary><nav aria-label="Idioma"><a href="../../courses/" lang="en" hreflang="en">English</a><a href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT">Português (Portugal)</a><a href="./" lang="es" hreflang="es">Español</a></nav></details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema oscuro" title="Usar tema oscuro"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell catalogue-page">
+    <header class="page-heading">
+      <p class="section-kicker">Catálogo seleccionado</p>
+      <h1>Todos los Cursos</h1>
+      <p>Descubre <strong id="page-course-count">—</strong> cursos online gratuitos de alta calidad, revisados y clasificados de forma independiente.</p>
+    </header>
+
+    <section class="catalogue-toolbar" aria-labelledby="filter-heading">
+      <h2 id="filter-heading" class="sr-only">Filtros de los cursos</h2>
+      <form id="filters" autocomplete="off">
+        <div class="search-row">
+          <label class="search-box" for="search">
+            <span data-icon="search" aria-hidden="true"></span>
+            <span class="sr-only">Buscar cursos</span>
+            <input id="search" name="q" type="search" placeholder="Buscar cursos, temas, entidades…">
+          </label>
+        </div>
+
+        <div class="filter-row">
+          <details id="primary-filters" class="primary-filter-disclosure" open>
+            <summary>Filtros <span id="mobile-filter-count" class="filter-count"></span></summary>
+            <div class="primary-filter-fields">
+              <div class="compact-field"><label for="category">Categoría</label><select id="category" name="category"><option value="">Categoría</option></select></div>
+              <div class="compact-field"><label for="level">Nivel</label><select id="level" name="level"><option value="">Nivel</option></select></div>
+              <div class="compact-field"><label for="language">Idioma del curso</label><select id="language" name="language"><option value="">Idioma del curso</option></select></div>
+              <div class="compact-field"><label for="status">Estado</label><select id="status" name="status"><option value="">Estado</option><option value="active">Activo</option><option value="active_archive">Archivado</option></select></div>
+              <details class="more-filters">
+                <summary>Más filtros</summary>
+                <div class="extra-filter-row">
+                  <div class="compact-field"><label for="access">Acceso gratuito</label><select id="access" name="access"><option value="">Tipo de acceso gratuito</option><option value="F0">Credencial gratuita</option><option value="F1">Itinerario evaluado gratuito</option><option value="F2">Contenido pedagógico gratuito</option></select></div>
+                  <div class="compact-field"><label for="tier">Nivel de calidad</label><select id="tier" name="tier"><option value="">Todos</option><option value="S+">S+</option><option value="S">S</option><option value="A+">A+</option><option value="A">A</option></select></div>
+                  <label class="filter-check"><input id="credential" name="credential" type="checkbox" value="1"> Solo con credencial gratuita</label>
+                  <label class="filter-check"><input id="credit" name="credit" type="checkbox" value="1"> Solo con créditos académicos gratuitos</label>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
+        <div class="active-filter-summary"><div id="active-filters" class="active-filters" aria-label="Filtros activos"></div><button id="clear-filters" class="clear-button" type="button">× Limpiar filtros</button></div>
+      </form>
+    </section>
+
+    <div class="catalogue-meta">
+      <p id="result-count" aria-live="polite">Cargando cursos…</p>
+      <div class="catalogue-display-controls"><div class="compact-field sort-field"><label for="sort">Ordenar por</label><select id="sort" form="filters" name="sort"><option value="recommendation">Recomendación</option><option value="quality">Calidad</option><option value="verified">Verificación reciente</option><option value="title">Título</option></select></div>
+      <div class="view-toggle" aria-label="Modo de visualización">
+        <button type="button" class="active" data-view="grid" aria-pressed="true">Cuadrícula</button>
+        <button type="button" data-view="list" aria-pressed="false">Lista</button>
+      </div>
+      </div>
+    </div>
+
+    <div id="results" class="course-grid catalogue-grid"></div>
+
+    <div class="show-more-row">
+      <button id="show-more" class="show-more" type="button" hidden>Mostrar más</button>
+    </div>
+
+    <div id="empty-state" class="empty" hidden>
+      <h3>Ningún curso coincide con estos filtros.</h3>
+      <p>Elimina un filtro o usa una búsqueda más amplia.</p>
+      <button id="empty-clear-filters" class="button button-primary" type="button">Limpiar todos los filtros</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><strong>Open Learning Index</strong><p>Curado, auditable y mantenido de forma continua.</p></div>
+      <div class="footer-links"><a href="../">Inicio</a><a href="./">Cursos</a><a href="../methodology/">Metodología</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../courses/" lang="en" hreflang="en">English</a></div>
+    </div>
+  </footer>
+  <script src="../../icons.js" defer></script>
+  <script src="../../theme.js" defer></script>
+
+  <script src="../../app.js" defer></script>
+</body>
+</html>
