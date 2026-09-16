@@ -399,6 +399,14 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('hreflang="en"', html)
         self.assertIn('hreflang="pt-PT"', html)
 
+
+    def test_fragmented_locale_dictionary_loads_without_becoming_public(self):
+        from editorial_presentation import translations_for
+        translations = translations_for('es')
+        self.assertEqual(translations['Courses'], 'Cursos')
+        self.assertEqual(translations['Categories'], 'Categorías')
+        self.assertNotIn('es', build.SUPPORTED_PRESENTATION_LOCALES)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
