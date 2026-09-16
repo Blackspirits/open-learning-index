@@ -248,20 +248,20 @@ def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
     missing_pt_descriptions = [
         course.get("id", "<unknown>")
         for course in catalog
-        if not (course.get("presentation_pt") or {}).get("description")
+        if not ((course.get("presentations") or {}).get("pt-PT") or {}).get("description")
     ]
     if missing_pt_descriptions:
         fail(
             errors,
-            "catalogue runtime contract: missing presentation_pt.description for "
+            "catalogue runtime contract: missing presentations.pt-PT.description for "
             + ", ".join(missing_pt_descriptions[:10]),
         )
 
     app_js = app_path.read_text(encoding="utf-8")
-    if "course.presentation_pt?.description" not in app_js:
+    if "course.presentations?.[locale]" not in app_js:
         fail(
             errors,
-            "catalogue runtime contract: app.js does not consume presentation_pt.description",
+            "catalogue runtime contract: app.js does not consume locale-keyed presentation payloads",
         )
 
     if "return isPt ? course.presentation_pt.why_recommended" in app_js:
