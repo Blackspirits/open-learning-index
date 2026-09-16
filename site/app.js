@@ -9,7 +9,8 @@ const pageLocale = document.body.dataset.locale || "en";
 const pageType = document.body.dataset.page || "catalogue";
 const rootPath = document.body.dataset.root || "./";
 const isPt = pageLocale === "pt-PT";
-const localeRoutePrefixes = { en: "", "pt-PT": "pt" };
+const isEs = pageLocale === "es";
+const localeRoutePrefixes = { en: "", "pt-PT": "pt", es: "es" };
 const localeRoutePrefix = localeRoutePrefixes[pageLocale] ?? pageLocale;
 
 const languageNames = {
@@ -38,6 +39,16 @@ const languageNames = {
     uk: "ucraniano",
     zh: "chinês",
   },
+  es: {
+    ar: "árabe", az: "azerí", bg: "búlgaro", cs: "checo", de: "alemán",
+    en: "inglés", es: "español", fr: "francés", hu: "húngaro",
+    hy: "armenio", it: "italiano", ja: "japonés", ka: "georgiano",
+    ko: "coreano", nl: "neerlandés", pl: "polaco",
+    pt: "portugués (variante no especificada)",
+    "pt-BR": "portugués (Brasil)", "pt-PT": "portugués (Portugal)",
+    ro: "rumano", ru: "ruso", sk: "eslovaco", tr: "turco",
+    uk: "ucraniano", vi: "vietnamita", zh: "chino",
+  },
 };
 
 const categoryNamesPt = {
@@ -61,6 +72,30 @@ const categoryNamesPt = {
   "psychology-behavior": "Psicologia e Comportamento",
   "writing-communication": "Escrita e Comunicação",
 };
+
+const categoryNamesEs = {
+  "ai-data": "IA y Datos",
+  "arts-design": "Artes y Diseño",
+  "business-entrepreneurship": "Negocios y Emprendimiento",
+  "computer-science": "Informática y Software",
+  "cybersecurity-it": "Ciberseguridad y TI",
+  "education-teaching": "Educación y Enseñanza",
+  "engineering-electronics": "Ingeniería y Electrónica",
+  "finance-economics": "Finanzas y Economía",
+  "health-medicine": "Salud y Medicina",
+  "history-culture": "Historia y Cultura",
+  "humanities-philosophy": "Humanidades y Filosofía",
+  languages: "Idiomas",
+  "law-public-policy": "Derecho y Políticas Públicas",
+  "marketing-sales": "Marketing y Ventas",
+  "math-statistics": "Matemáticas y Estadística",
+  "natural-sciences": "Ciencias Naturales",
+  "project-product-leadership": "Proyectos, Producto y Liderazgo",
+  "psychology-behavior": "Psicología y Comportamiento",
+  "writing-communication": "Escritura y Comunicación",
+};
+
+const categoryNames = { "pt-PT": categoryNamesPt, es: categoryNamesEs };
 
 const categoryIcons = {
   "computer-science": "code",
@@ -95,6 +130,18 @@ const levelNamesPt = {
   graduate: "Pós-graduação",
 };
 
+const levelNamesEs = {
+  beginner: "Principiante",
+  beginner_to_intermediate: "Principiante a intermedio",
+  beginner_to_advanced: "Principiante a avanzado",
+  intermediate: "Intermedio",
+  intermediate_to_advanced: "Intermedio a avanzado",
+  advanced: "Avanzado",
+  undergraduate: "Grado",
+  graduate: "Posgrado",
+};
+const levelNames = { "pt-PT": levelNamesPt, es: levelNamesEs };
+
 const levelOrder = [
   "beginner",
   "beginner_to_intermediate",
@@ -111,6 +158,41 @@ const accessPt = {
   F1: "Percurso completo com avaliação",
   F2: "Conteúdos completos gratuitos",
 };
+
+const accessEs = {
+  F0: "Curso y credencial gratuitos",
+  F1: "Itinerario completo con evaluación",
+  F2: "Contenido completo gratuito",
+};
+const accessNames = { "pt-PT": accessPt, es: accessEs };
+
+const dynamicCopy = {
+  en: {
+    languagePrefix: "In", recommendation: "Recommendation", quality: "Quality",
+    verified: "Verified", archived: "Archived", remove: "Remove",
+    level: "Level", progression: "Progression", broad: "Broad range",
+    shortcut: "Shortcut", beginnerFriendly: "Beginner-friendly",
+    course: "course", courses: "courses", showMore: "Show more",
+    loadError: "The catalogue could not be loaded.",
+  },
+  "pt-PT": {
+    languagePrefix: "Em", recommendation: "Recomendação", quality: "Qualidade",
+    verified: "Verificado", archived: "Arquivado", remove: "Remover",
+    level: "Nível", progression: "Progressão", broad: "Abrangente",
+    shortcut: "Atalho", beginnerFriendly: "Adequado a principiantes",
+    course: "curso", courses: "cursos", showMore: "Mostrar mais",
+    loadError: "Não foi possível carregar o catálogo.",
+  },
+  es: {
+    languagePrefix: "En", recommendation: "Recomendación", quality: "Calidad",
+    verified: "Verificado", archived: "Archivado", remove: "Eliminar",
+    level: "Nivel", progression: "Progresión", broad: "Amplio",
+    shortcut: "Atajo", beginnerFriendly: "Adecuado para principiantes",
+    course: "curso", courses: "cursos", showMore: "Mostrar más",
+    loadError: "No se pudo cargar el catálogo.",
+  },
+};
+const copy = dynamicCopy[pageLocale] || dynamicCopy.en;
 
 const displayLanguage = typeof Intl.DisplayNames === "function"
   ? new Intl.DisplayNames([pageLocale], { type: "language" })
@@ -145,23 +227,20 @@ function labelLanguage(code) {
 
 function labelLanguageOption(code) {
   const label = labelLanguage(code);
-  if (!isPt) return label;
-  // Language names are common nouns in Portuguese and are presented
-  // consistently in lower case; region names inside parentheses keep
-  // their proper-name capitalisation.
+  if (pageLocale === "en") return label;
   return `${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}`;
 }
 
 function labelCourseLanguage(course) {
-  return isPt ? `Em ${labelLanguageOption(course.primary_language)}` : `In ${labelLanguageOption(course.primary_language)}`;
+  return `${copy.languagePrefix} ${labelLanguageOption(course.primary_language)}`;
 }
 
 function labelCategory(course) {
-  return isPt ? (categoryNamesPt[course.category] || course.category_name) : course.category_name;
+  return categoryNames[pageLocale]?.[course.category] || course.category_name;
 }
 
 function labelLevel(value) {
-  if (isPt && levelNamesPt[value]) return levelNamesPt[value];
+  if (levelNames[pageLocale]?.[value]) return levelNames[pageLocale][value];
   return String(value || "")
     .split("_")
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
@@ -195,7 +274,9 @@ function initials(provider) {
 
 function scorePill(course) {
   const score = new Intl.NumberFormat(pageLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(course.recommendation_score);
-  const label = isPt ? `Recomendação ${score} em 10` : `Recommendation ${score} out of 10`;
+  const label = pageLocale === "en"
+    ? `Recommendation ${score} out of 10`
+    : `${copy.recommendation} ${score} / 10`;
   return `<span class="score-pill" aria-label="${label}">${score}</span>`;
 }
 
@@ -223,12 +304,13 @@ function renderMiniCourseCard(course) {
 
 function renderHomeCategory(id, name, count) {
   const icon = categoryIcons[id] || "curated";
-  const categoryPath = isPt ? `pt/categories/${encodeURIComponent(id)}/` : `categories/${encodeURIComponent(id)}/`;
+  const prefix = localeRoutePrefix ? `${localeRoutePrefix}/` : "";
+  const categoryPath = `${prefix}categories/${encodeURIComponent(id)}/`;
   return `
     <a class="category-tile" href="${route(categoryPath)}">
       <span class="category-icon icon-${escapeHtml(id)}" data-icon="${escapeHtml(icon)}" aria-hidden="true"></span>
       <strong>${escapeHtml(name)}</strong>
-      <small>${count} ${isPt ? "cursos" : "courses"}</small>
+      <small>${count} ${count === 1 ? copy.course : copy.courses}</small>
     </a>
   `;
 }
@@ -360,21 +442,21 @@ function populateFilters(els) {
   // Level options are ordered pedagogically rather than alphabetically.
   // "Beginner-friendly" is a convenience filter, not a canonical level,
   // so it is separated from the actual progression.
-  const levelPlaceholder = new Option(isPt ? "Nível" : "Level", "");
+  const levelPlaceholder = new Option(copy.level, "");
   const progressionGroup = document.createElement("optgroup");
-  progressionGroup.label = isPt ? "Progressão" : "Progression";
+  progressionGroup.label = copy.progression;
   levels
     .filter((value) => value !== "beginner_to_advanced")
     .forEach((value) => progressionGroup.append(new Option(labelLevel(value), value)));
   const broadGroup = document.createElement("optgroup");
-  broadGroup.label = isPt ? "Abrangente" : "Broad range";
+  broadGroup.label = copy.broad;
   if (levels.includes("beginner_to_advanced")) {
     broadGroup.append(new Option(labelLevel("beginner_to_advanced"), "beginner_to_advanced"));
   }
   const shortcutGroup = document.createElement("optgroup");
-  shortcutGroup.label = isPt ? "Atalho" : "Shortcut";
+  shortcutGroup.label = copy.shortcut;
   shortcutGroup.append(
-    new Option(isPt ? "Adequado a principiantes" : "Beginner-friendly", "beginner-friendly")
+    new Option(copy.beginnerFriendly, "beginner-friendly")
   );
   els.level.replaceChildren(levelPlaceholder, progressionGroup, broadGroup, shortcutGroup);
 }
@@ -426,14 +508,14 @@ function courseRationale(course) {
 
 function renderCatalogueCard(course, className = "catalogue-card") {
   const archived = course.status === "active_archive"
-    ? `<span class="mini-tag tag-archive">${isPt ? "Arquivado" : "Archived"}</span>`
+    ? `<span class="mini-tag tag-archive">${copy.archived}</span>`
     : "";
-  const accessText = isPt ? (accessPt[course.access_short] || course.access_label) : course.access_label;
+  const accessText = accessNames[pageLocale]?.[course.access_short] || course.access_label;
   const recScore = new Intl.NumberFormat(pageLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(course.recommendation_score);
   const qualityScore = new Intl.NumberFormat(pageLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(course.quality_score);
-  const recLabel = isPt ? "Recomendação" : "Recommendation";
-  const qualityLabel = isPt ? "Qualidade" : "Quality";
-  const verifiedLabel = isPt ? "Verificado" : "Verified";
+  const recLabel = copy.recommendation;
+  const qualityLabel = copy.quality;
+  const verifiedLabel = copy.verified;
   return `
     <article class="${className}">
       <div class="card-body">
@@ -473,17 +555,16 @@ function renderActiveFilters(els, values) {
     const fieldLabel = control.labels?.[0]?.textContent.trim() || key;
     const valueLabel = control.tagName === "SELECT" ? control.selectedOptions[0].textContent : (typeof values[key] === "string" ? values[key] : "");
     const text = valueLabel ? `${fieldLabel}: ${valueLabel}` : fieldLabel;
-    const label = `${isPt ? "Remover" : "Remove"} ${text}`;
+    const label = `${copy.remove} ${text}`;
     items.push(`<button type="button" class="filter-chip" data-remove-filter="${key}" aria-label="${escapeHtml(label)}"><span>${escapeHtml(text)}</span><b aria-hidden="true">×</b></button>`);
   }
   els.activeFilters.innerHTML = items.join("");
   els.clear.hidden = items.length === 0;
-  const languageSwitch = document.querySelector(".language-switch");
-  if (languageSwitch) {
-    const target = new URL(languageSwitch.href);
+  document.querySelectorAll(".language-switch, .language-menu a").forEach((languageLink) => {
+    const target = new URL(languageLink.href);
     target.search = location.search;
-    languageSwitch.href = target.href;
-  }
+    languageLink.href = target.href;
+  });
 }
 
 function resetCatalogue(els, focusSearch = true) {
@@ -507,9 +588,7 @@ function renderCatalogue(els) {
     button.setAttribute("aria-pressed", active ? "true" : "false");
   });
 
-  els.resultCount.textContent = isPt
-    ? `${courses.length} curso${courses.length === 1 ? "" : "s"}`
-    : `${courses.length} course${courses.length === 1 ? "" : "s"}`;
+  els.resultCount.textContent = `${courses.length} ${courses.length === 1 ? copy.course : copy.courses}`;
   if (els.mobileFilterCount) {
     const count = activeFilterCount(values);
     els.mobileFilterCount.textContent = count ? ` · ${count}` : "";
@@ -522,7 +601,7 @@ function renderCatalogue(els) {
 
   if (!els.showMore.hidden) {
     const remaining = courses.length - visible.length;
-    els.showMore.textContent = isPt ? `Mostrar mais · ${remaining}` : `Show more · ${remaining}`;
+    els.showMore.textContent = `${copy.showMore} · ${remaining}`;
   }
 }
 
@@ -613,7 +692,7 @@ async function boot() {
     console.error(error);
     const resultCount = document.querySelector("#result-count");
     const empty = document.querySelector("#empty-state");
-    if (resultCount) resultCount.textContent = isPt ? "Não foi possível carregar o catálogo." : "The catalogue could not be loaded.";
+    if (resultCount) resultCount.textContent = copy.loadError;
     if (empty) empty.hidden = false;
   }
 }

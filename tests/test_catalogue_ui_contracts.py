@@ -1,4 +1,4 @@
-"""UI contracts for catalogue ordering and pt-PT language presentation."""
+"""UI contracts for catalogue ordering and locale-aware language presentation."""
 from pathlib import Path
 import re
 import unittest
@@ -29,10 +29,13 @@ class CatalogueUiContractsTest(unittest.TestCase):
             ],
         )
         self.assertIn("levelRank.get(a)", source)
-        self.assertIn('progressionGroup.label = isPt ? "Progressão" : "Progression"', source)
-        self.assertIn('broadGroup.label = isPt ? "Abrangente" : "Broad range"', source)
-        self.assertIn('shortcutGroup.label = isPt ? "Atalho" : "Shortcut"', source)
-        self.assertIn('"Adequado a principiantes" : "Beginner-friendly"', source)
+        self.assertIn("progressionGroup.label = copy.progression", source)
+        self.assertIn("broadGroup.label = copy.broad", source)
+        self.assertIn("shortcutGroup.label = copy.shortcut", source)
+        self.assertIn('beginnerFriendly: "Beginner-friendly"', source)
+        self.assertIn('beginnerFriendly: "Adequado a principiantes"', source)
+        self.assertIn('beginnerFriendly: "Adecuado para principiantes"', source)
+        self.assertIn('progression: "Progresión"', source)
 
     def test_pt_language_names_are_consistently_lowercase(self):
         source = APP.read_text(encoding="utf-8")
@@ -49,12 +52,16 @@ class CatalogueUiContractsTest(unittest.TestCase):
         source = BUILDER.read_text(encoding="utf-8")
         en = re.search(r"LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
         pt = re.search(r"PT_LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
+        es = re.search(r"ES_LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
         self.assertIsNotNone(en)
         self.assertIsNotNone(pt)
+        self.assertIsNotNone(es)
         self.assertIn('"pt-BR": "Portuguese (Brazil)"', en.group(1))
         self.assertIn('"pt-PT": "Portuguese (Portugal)"', en.group(1))
         self.assertIn('"pt-BR": "português (Brasil)"', pt.group(1))
         self.assertIn('"pt-PT": "português (Portugal)"', pt.group(1))
+        self.assertIn('"pt-BR": "portugués (Brasil)"', es.group(1))
+        self.assertIn('"pt-PT": "portugués (Portugal)"', es.group(1))
 
 
 if __name__ == "__main__":
