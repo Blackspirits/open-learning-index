@@ -1230,6 +1230,7 @@ def build(output: Path) -> None:
         "access_counts": dict(sorted(access_counts.items())),
         "language_counts": dict(sorted(language_counts.items())),
         "language_count": len(language_counts),
+        "latest_verification": max(course["last_verified"] for course in public_courses),
         "source_files": ["data/courses.json", "data/categories.json", "data/candidates.json"],
     }
 
