@@ -253,6 +253,43 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('access:', icons_js)
         self.assertNotIn('M7 11V8a5 5 0 0 1 10 0v3', icons_js)
 
+
+    def test_category_cards_can_drop_redundant_category_labels(self):
+        course = self.courses[0]
+        normal = build.static_catalogue_card(course)
+        category_page = build.static_catalogue_card(course, show_category=False)
+        self.assertIn('tag-category', normal)
+        self.assertNotIn('tag-category', category_page)
+        self.assertIn(course['why_recommended'], category_page)
+        self.assertIn('verified-line', category_page)
+
+    def test_public_evidence_labels_are_descriptive_not_numbered(self):
+        index = {course['id']: course for course in self.courses}
+        course = next(c for c in self.courses if c.get('editorial', {}).get('review', {}).get('evidence'))
+        html = build.render_static_course(course, index, {})
+        self.assertNotIn(' · source 1', html)
+        self.assertNotIn(' · source 2', html)
+        self.assertRegex(
+            html,
+            r'(Course source|Repository source|Community reference|Supporting source) · ',
+        )
+
+    def test_methodology_routes_exist_in_both_public_locales(self):
+        self.assertTrue((ROOT / 'site' / 'methodology' / 'index.html').is_file())
+        self.assertTrue((ROOT / 'site' / 'pt' / 'methodology' / 'index.html').is_file())
+        en = (ROOT / 'site' / 'methodology' / 'index.html').read_text(encoding='utf-8')
+        pt_page = (ROOT / 'site' / 'pt' / 'methodology' / 'index.html').read_text(encoding='utf-8')
+        self.assertIn('Quality Score', en)
+        self.assertIn('F0', en)
+        self.assertIn('Manutenção contínua', pt_page)
+        self.assertIn('F0', pt_page)
+
+    def test_course_navigation_keeps_methodology_on_site(self):
+        index = {course['id']: course for course in self.courses}
+        html = build.render_static_course(self.courses[0], index, {})
+        self.assertIn('href="../../methodology/">Methodology</a>', html)
+        self.assertNotIn('github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md', html)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):

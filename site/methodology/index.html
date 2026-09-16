@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the Open Learning Index evaluates, ranks and re-verifies free learning resources.">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    try {
+      const saved = localStorage.getItem("oli-theme");
+      const theme = saved === "dark" || saved === "light"
+        ? saved
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {}
+  </script>
+  <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/methodology/">
+  <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/methodology/">
+  <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/methodology/">
+  <title>Methodology · Open Learning Index</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../editorial.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="../" aria-label="Open Learning Index home"><span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span></a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="../courses/">Courses</a>
+        <a href="../categories/">Categories</a>
+        <a class="active" href="./">Methodology</a>
+        <a href="../#how-it-works">How it works</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Mobile navigation"><a href="../">Home</a><a href="../courses/">Courses</a><a href="../categories/">Categories</a><a href="./">Methodology</a><a href="../#how-it-works">How it works</a></nav>
+      </details>
+      <div class="nav-actions">
+        <a class="icon-link" href="../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a>
+        <a class="language-switch" href="../pt/methodology/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT-PT</a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="shell methodology-page">
+    <header class="methodology-header">
+      <p class="section-kicker">How the index works</p>
+      <h1>Methodology</h1>
+      <p>The Open Learning Index publishes a deliberately selective set of free learning resources. Candidates are screened, reviewed with evidence, compared with realistic alternatives and then re-verified on a risk-based schedule.</p>
+    </header>
+
+    <section class="methodology-section">
+      <h2>Two scores, two questions</h2>
+      <div class="methodology-score-grid">
+        <article>
+          <h3>Quality Score</h3>
+          <p><strong>How good is this learning resource on its own terms?</strong></p>
+          <p>The weighted score measures pedagogy, depth, practice, materials, currency, provider expertise and accessibility.</p>
+        </article>
+        <article>
+          <h3>Recommendation Score</h3>
+          <p><strong>How strongly should a learner choose this over realistic alternatives today?</strong></p>
+          <p>This is editorial judgement and may account for prerequisites, time-to-value, friction, duplicated coverage, current availability and stronger alternatives.</p>
+        </article>
+      </div>
+      <div class="methodology-table-wrap">
+        <table class="methodology-table">
+          <thead><tr><th>Quality component</th><th>Weight</th></tr></thead>
+          <tbody>
+            <tr><td>Pedagogy</td><td>25%</td></tr>
+            <tr><td>Depth</td><td>20%</td></tr>
+            <tr><td>Practice</td><td>20%</td></tr>
+            <tr><td>Materials</td><td>10%</td></tr>
+            <tr><td>Currency</td><td>10%</td></tr>
+            <tr><td>Instructor/provider expertise</td><td>10%</td></tr>
+            <tr><td>Accessibility</td><td>5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="methodology-note">Currency is subject-sensitive. A stable mathematics lecture is not penalised merely for age; fast-moving AI, software, security, finance and legal resources are held to a much stricter currentness bar.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Quality tiers</h2>
+      <div class="methodology-tier-grid">
+        <div><strong>S+</strong><span>9.50–10.00</span><small>Reference-level, exceptional</small></div>
+        <div><strong>S</strong><span>9.00–9.49</span><small>Excellent</small></div>
+        <div><strong>A+</strong><span>8.50–8.99</span><small>Strongly recommended</small></div>
+        <div><strong>A</strong><span>8.00–8.49</span><small>Very good</small></div>
+      </div>
+      <p>Resources below A are normally excluded from the published core index.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>What “free” means</h2>
+      <div class="methodology-table-wrap">
+        <table class="methodology-table">
+          <thead><tr><th>Tier</th><th>Learner access</th><th>Published core</th></tr></thead>
+          <tbody>
+            <tr><td><strong>F0</strong></td><td>Complete course/path + free provider completion credential</td><td>Yes</td></tr>
+            <tr><td><strong>F1</strong></td><td>Complete learning path + meaningful free assessment/labs, no free formal credential</td><td>Yes</td></tr>
+            <tr><td><strong>F2</strong></td><td>Substantial complete teaching content, without a free formal completion path</td><td>Yes</td></tr>
+            <tr><td><strong>F3</strong></td><td>Preview, trial, first module only or materially incomplete free access</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Certificates and academic credit are tracked separately. A badge is not academic credit, and neither automatically increases pedagogical quality.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Evidence and admission</h2>
+      <p>Official course and provider documentation is the preferred evidence for access, pricing, credits, languages, course status and syllabus claims. Independent reviews and community discussion can supplement learner-experience evidence, but they are not accepted as the sole proof of pricing, credit or access.</p>
+      <p>Institutional prestige alone is not enough. A course is published only when it is strong enough and either clearly outperforms relevant alternatives or adds a materially different learning path.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Continuous maintenance</h2>
+      <p>Published courses are re-verified according to risk and subject volatility:</p>
+      <ul>
+        <li><strong>60–90 days</strong> for fast-moving areas such as AI, current software, cybersecurity and cloud training.</li>
+        <li><strong>120–180 days</strong> for moderately changing professional fields.</li>
+        <li><strong>365 days</strong> for stable foundational subjects and maintained archival teaching.</li>
+      </ul>
+      <p>Pricing changes, broken links, course retirement, major edition changes, credential changes, quality regressions or a credible new challenger can trigger an immediate review.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Editorial independence and auditability</h2>
+      <p>The contribution rules prohibit affiliate, referral and tracking links. Provider marketing copy is not copied into editorial fields, and provider prestige does not determine admission.</p>
+      <p>The repository is the source of truth. Canonical data, screening decisions, Deep Reviews, admission decisions and maintenance records are versioned publicly so published claims can be audited.</p>
+      <div class="methodology-actions">
+        <a class="button button-primary" href="../courses/">Browse courses</a>
+        <a class="button button-ghost" href="https://github.com/Blackspirits/open-learning-index">View the repository ↗</a>
+        <a class="button button-ghost" href="https://github.com/Blackspirits/open-learning-index/issues">Report an update ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner">
+    <div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div>
+    <div class="footer-links"><a href="../">Home</a><a href="../courses/">Courses</a><a href="../categories/">Categories</a><a href="./">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../pt/methodology/" lang="pt-PT" hreflang="pt-PT">Português</a></div>
+  </div></footer>
+  <script src="../icons.js" defer></script>
+  <script src="../theme.js" defer></script>
+</body>
+</html>
