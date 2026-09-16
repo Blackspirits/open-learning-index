@@ -45,8 +45,63 @@
 .section-kicker { line-height: 1.6; }
 .featured-grid { gap: 20px; }
 
-/* All discovery cards share a stable media slot and a natural text flow. */
-.catalogue-card, .mini-course-card { padding: 0; gap: 0; overflow: hidden; min-height: 0; border-radius: 14px; box-shadow: 0 3px 14px rgb(11 37 56 / .035); }
+/* Discovery cards prioritise comparison data over decorative media. */
+.catalogue-card, .mini-course-card {
+  padding: 0;
+  gap: 0;
+  overflow: hidden;
+  min-height: 0;
+  border-radius: 14px;
+  box-shadow: 0 3px 14px rgb(11 37 56 / .035);
+}
+.card-body { display: flex; flex-direction: column; gap: 13px; padding: 20px; flex: 1; min-width: 0; }
+.card-heading { min-width: 0; }
+.card-heading .provider { margin: 0 0 6px; font-size: .8125rem; line-height: 1.45; color: var(--muted); }
+.card-heading h3 { margin: 0; font-size: 1.125rem; line-height: 1.35; font-weight: 750; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.card-score-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+.card-score { display: inline-flex; align-items: baseline; gap: 5px; color: var(--muted); }
+.card-score strong { color: var(--text-strong); font-size: 1.0625rem; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.card-score small { font-size: .6875rem; font-weight: 650; }
+.card-score-primary strong { color: var(--primary-strong); }
+.tag-tier { color: var(--muted); background: transparent; border-color: var(--line-strong); font-weight: 700; }
+.card-rationale {
+  margin: 0;
+  color: var(--muted);
+  font-size: .8125rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.mini-tags { gap: 5px; margin: 0; }
+.mini-tag { font-size: .75rem; line-height: 1.4; }
+.tag-category { color: #006f62; }
+.card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px 14px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.access-line { display: flex; align-items: center; gap: 8px; font-size: .8125rem; line-height: 1.45; margin: 0; padding: 0; color: var(--text); }
+.access-line [data-icon] { color: var(--primary-strong); flex: none; }
+.access-line .ui-icon { width: 15px; height: 15px; }
+.verified-line { color: var(--muted); font-size: .75rem; line-height: 1.45; white-space: nowrap; }
+.course-grid.catalogue-grid { gap: 20px; }
+.course-grid.catalogue-grid.catalogue-list { grid-template-columns: 1fr; }
+.catalogue-list .catalogue-card { display: block; }
+.catalogue-list .card-body { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 10px 24px; align-items: start; }
+.catalogue-list .card-heading { grid-column: 1; }
+.catalogue-list .card-score-row { grid-column: 2; grid-row: 1; justify-content: flex-end; }
+.catalogue-list .card-rationale { grid-column: 1 / -1; -webkit-line-clamp: 1; }
+.catalogue-list .mini-tags { grid-column: 1; margin: 0; }
+.catalogue-list .card-footer { grid-column: 1 / -1; }
+
+/* Course-detail and provider media remain available where they add context. */
 .course-media { position: relative; display: flex; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; flex: none; background: #e9eeeb; }
 .course-media img { width: 100%; height: 100%; object-fit: contain; }
 .media-editorial { align-items: center; justify-content: space-between; gap: 16px; padding: 24px; background: #e4eee9; color: #224e4b; }
@@ -59,30 +114,6 @@
 .media-math-statistics, .media-engineering-electronics, .media-ai-data, .media-computer-science, .media-cybersecurity-it { background: #e1ebf1; color: #254f6a; }
 .media-health-medicine, .media-psychology-behavior { background: #eee3e2; color: #76514f; }
 .media-languages { background: #ede6d7; color: #685730; }
-.card-body { display: flex; flex-direction: column; gap: 14px; padding: 20px; flex: 1; min-width: 0; }
-.card-heading { min-width: 0; }
-.card-heading .provider { margin: 0 0 7px; font-size: .8125rem; line-height: 1.5; color: var(--muted); }
-.card-heading h3 { margin: 0; font-size: 1.125rem; line-height: 1.35; font-weight: 750; letter-spacing: -.025em; overflow-wrap: anywhere; }
-.catalogue-card-head, .mini-card-top { display: flex; align-items: center; justify-content: flex-start; gap: 9px; margin: 0; }
-.score-pill { min-height: 28px; padding: 4px 9px; font-size: .8125rem; font-variant-numeric: tabular-nums; }
-.score-context { font-size: .75rem; }
-.mini-tags { gap: 5px; margin: auto 0 0; }
-.mini-tag { font-size: .75rem; line-height: 1.4; }
-.tag-category { color: #006f62; }
-.access-line { display: flex; gap: 8px; font-size: .8125rem; line-height: 1.45; margin: 0; padding-top: 12px; color: var(--text); }
-.access-line [data-icon] { color: var(--primary-strong); flex: none; }
-.access-line .ui-icon { width: 15px; height: 15px; }
-.course-grid.catalogue-grid { gap: 20px; }
-.course-grid.catalogue-grid.catalogue-list { grid-template-columns: 1fr; }
-.catalogue-list .catalogue-card { display: grid; grid-template-columns: 180px minmax(0,1fr); align-items: stretch; }
-.catalogue-list .course-media { height: 100%; min-height: 155px; aspect-ratio: auto; }
-.catalogue-list .card-body { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 12px 20px; align-items: start; }
-.catalogue-list .card-heading { grid-column: 1; }
-.catalogue-list .catalogue-card-head { grid-column: 2; grid-row: 1; align-self: center; flex-direction: column; gap: 5px; }
-.catalogue-list .mini-tags { grid-column: 1; margin: 0; }
-.catalogue-list .access-line { grid-column: 1 / -1; border: 0; padding: 0; }
-.catalogue-list .media-editorial { flex-direction: column; align-items: flex-start; justify-content: center; gap: 12px; padding: 18px; }
-.catalogue-list .media-provider-name { max-width: 100%; font-size: .8125rem; }
 
 /* Filter state is explicit, and keyboard focus is visible in both themes. */
 .search-box input::placeholder { color: #627489; opacity: 1; }
@@ -216,7 +247,6 @@ html[data-theme="dark"] .content-section p, html[data-theme="dark"] .content-sec
   .catalogue-list .catalogue-card { display: flex; }
   .catalogue-list .card-body { display: flex; }
   .catalogue-list .catalogue-card-head { flex-direction: row; align-self: auto; }
-  .catalogue-list .course-media { aspect-ratio: 16 / 9; min-height: 0; height: auto; }
   .course-title-grid, .course-layout { grid-template-columns: minmax(0,1fr); gap: 22px; }
   .course-heading-main h1 { font-size: clamp(1.75rem, 6vw, 2.5rem); }
   .course-score-card { width: 100%; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 6px 16px; padding: 16px; }
