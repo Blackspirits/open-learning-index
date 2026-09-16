@@ -10,8 +10,7 @@ import unicodedata
 from collections import Counter
 from html import escape
 from pathlib import Path
-from editorial_presentation import localize_course, media_for, media_html, pt
-from editorial_presentation import pt as translate_pt
+from editorial_presentation import localize_course, media_for, media_html, translate_text
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSES = ROOT / "data" / "courses.json"
@@ -531,6 +530,204 @@ LOCALE_CATEGORY_COPY = {
         },
     },
 }
+
+
+LOCALE_COURSE_COPY = {
+    "en": {
+        "original_title": "Original title",
+        "skip": "Skip to course details",
+        "home_aria": "Open Learning Index home",
+        "primary_nav": "Primary navigation",
+        "open_nav": "Open navigation",
+        "mobile_nav": "Mobile navigation",
+        "home": "Home",
+        "courses": "Courses",
+        "categories": "Categories",
+        "methodology": "Methodology",
+        "how": "How it works",
+        "search": "Search courses",
+        "theme": "Use dark theme",
+        "breadcrumb": "Breadcrumb",
+        "overall_recommendation": "Overall recommendation",
+        "quality": "Quality",
+        "status_aria": "Course status",
+        "sections_aria": "Course page sections",
+        "overview": "Overview",
+        "details": "Details",
+        "evidence": "Evidence",
+        "compared": "Compared",
+        "why_recommend": "Why we recommend it",
+        "before_start": "Before you start",
+        "prerequisites": "Prerequisites",
+        "required_resources": "Required resources",
+        "scope": "Scope",
+        "no_preparation": "No additional preparation requirements are documented.",
+        "what_free": "What is free",
+        "certificate": "Certificate",
+        "academic_credit": "Academic credit",
+        "quality_review": "Quality review",
+        "learning_need": "Learning need",
+        "why_value": "Why it adds value",
+        "admission_rationale": "Admission decision rationale",
+        "evidence_verification": "Evidence and verification",
+        "last_checked": "Last checked",
+        "next_review": "Next scheduled review",
+        "compared_against": "Compared against",
+        "no_comparator": "No direct comparator is recorded for this course.",
+        "course_glance": "Course at a glance",
+        "provider": "Provider",
+        "language": "Language",
+        "level": "Level",
+        "status": "Status",
+        "access": "Access",
+        "related_courses": "Related courses",
+        "no_related": "No related course is currently linked.",
+        "view_more": "View more in {category} →",
+        "footer": "Curated, auditable and continuously maintained.",
+        "course_source": "Course source",
+        "repository_source": "Repository source",
+        "community_reference": "Community reference",
+        "supporting_source": "Supporting source",
+        "active": "Active",
+        "archived": "Archived",
+        "archived_available": "Archived but still available",
+        "banner_active": "This course is active",
+        "banner_archived": "This course is archived",
+        "banner_copy_active": "Verified {verified} · next review {next_review}.",
+        "banner_copy_archived": "Archived but still available · verified {verified} · next review {next_review}.",
+        "button_active": "Open official course →",
+        "button_archived": "View archived materials →",
+    },
+    "pt-PT": {
+        "original_title": "Título original",
+        "skip": "Saltar para os detalhes do curso",
+        "home_aria": "Página inicial do Open Learning Index",
+        "primary_nav": "Navegação principal",
+        "open_nav": "Abrir navegação",
+        "mobile_nav": "Navegação móvel",
+        "home": "Início",
+        "courses": "Cursos",
+        "categories": "Categorias",
+        "methodology": "Metodologia",
+        "how": "Como funciona",
+        "search": "Pesquisar cursos",
+        "theme": "Usar tema escuro",
+        "breadcrumb": "Navegação estrutural",
+        "overall_recommendation": "Recomendação geral",
+        "quality": "Qualidade",
+        "status_aria": "Estado do curso",
+        "sections_aria": "Secções da página do curso",
+        "overview": "Visão geral",
+        "details": "Detalhes",
+        "evidence": "Evidência",
+        "compared": "Comparação",
+        "why_recommend": "Porque recomendamos este curso",
+        "before_start": "Antes de começar",
+        "prerequisites": "Pré-requisitos",
+        "required_resources": "Recursos necessários",
+        "scope": "Âmbito",
+        "no_preparation": "Não estão documentados requisitos de preparação adicionais.",
+        "what_free": "O que é gratuito",
+        "certificate": "Certificado",
+        "academic_credit": "Créditos académicos",
+        "quality_review": "Revisão de qualidade",
+        "learning_need": "Necessidade de aprendizagem",
+        "why_value": "Porque acrescenta valor",
+        "admission_rationale": "Justificação da decisão de admissão",
+        "evidence_verification": "Evidência e verificação",
+        "last_checked": "Última verificação",
+        "next_review": "Próxima revisão prevista",
+        "compared_against": "Comparado com",
+        "no_comparator": "Não existe um comparador direto registado para este curso.",
+        "course_glance": "Resumo do curso",
+        "provider": "Entidade",
+        "language": "Idioma",
+        "level": "Nível",
+        "status": "Estado",
+        "access": "Acesso",
+        "related_courses": "Cursos relacionados",
+        "no_related": "Não existem cursos relacionados associados.",
+        "view_more": "Ver mais em {category} →",
+        "footer": "Curado, auditável e continuamente mantido.",
+        "course_source": "Fonte do curso",
+        "repository_source": "Fonte de repositório",
+        "community_reference": "Referência da comunidade",
+        "supporting_source": "Fonte de apoio",
+        "active": "Ativo",
+        "archived": "Arquivado",
+        "archived_available": "Arquivado mas disponível",
+        "banner_active": "Este curso está ativo",
+        "banner_archived": "Este curso está arquivado",
+        "banner_copy_active": "Verificado em {verified} · próxima revisão {next_review}.",
+        "banner_copy_archived": "Arquivado mas disponível · verificado em {verified} · próxima revisão {next_review}.",
+        "button_active": "Abrir curso oficial →",
+        "button_archived": "Ver materiais arquivados →",
+    },
+}
+
+LOCALE_QUALITY_COMPONENTS = {
+    "en": {
+        "pedagogy": "Pedagogy",
+        "depth": "Depth",
+        "practice": "Practice",
+        "materials": "Materials",
+        "currency": "Currency",
+        "expertise": "Expertise",
+        "accessibility": "Accessibility",
+    },
+    "pt-PT": {
+        "pedagogy": "Pedagogia",
+        "depth": "Profundidade",
+        "practice": "Prática",
+        "materials": "Materiais",
+        "currency": "Atualidade",
+        "expertise": "Especialização",
+        "accessibility": "Acessibilidade",
+    },
+}
+
+LOCALE_ACCESS_DETAIL = {
+    "en": {
+        "F0": (
+            "Full course + free credential",
+            "Complete learning path with a free provider completion credential.",
+        ),
+        "F1": (
+            "Full assessed learning path",
+            "Complete learning path with meaningful free assessment, but no free formal credential.",
+        ),
+        "F2": (
+            "Full teaching content",
+            "Substantial complete teaching content, but no free formal completion path.",
+        ),
+    },
+    "pt-PT": {
+        "F0": (
+            "Curso completo + credencial gratuita",
+            "Percurso completo com credencial de conclusão gratuita emitida pelo fornecedor.",
+        ),
+        "F1": (
+            "Percurso avaliado gratuito",
+            "Percurso completo com avaliação gratuita significativa, mas sem credencial formal gratuita.",
+        ),
+        "F2": (
+            "Conteúdo pedagógico completo",
+            "Conteúdo pedagógico substancial e completo, mas sem percurso formal de conclusão gratuito.",
+        ),
+    },
+}
+
+
+def locale_source_text(text: str, locale: str) -> str:
+    if locale == "en" or not text:
+        return text
+    return translate_text(locale, text)
+
+
+def locale_score(value: float, locale: str) -> str:
+    formatted = f"{float(value):.1f}"
+    decimal = LOCALE_CARD_COPY.get(locale, LOCALE_CARD_COPY["en"])["decimal"]
+    return formatted if decimal == "." else formatted.replace(".", decimal)
 
 
 def locale_category_label(course: dict, locale: str) -> str:
