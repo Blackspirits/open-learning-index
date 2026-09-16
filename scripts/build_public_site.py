@@ -859,37 +859,73 @@ def static_catalogue_card_pt(
     )
 
 
-def original_title_html(course):
+def original_title_html(course: dict, locale: str = "en") -> str:
     original = course.get("original_title")
     if not original or original == course["title"]:
         return ""
-    # The language of the canonical title can differ from the teaching language.
     original_language = {
-        'openclassrooms-initiez-vous-gestion-projet': 'fr',
-        'fun-boite-outils-philosophie-politique': 'fr',
-        'fun-la-musique-quelle-histoire': 'fr',
-        'blcu-umoocs-elementary-spoken-chinese': 'zh',
-    }.get(course['id'], 'en')
-    return f'<details class="original-title"><summary>Título original</summary><p lang="{original_language}">{escape(original)}</p></details>'
+        "openclassrooms-initiez-vous-gestion-projet": "fr",
+        "fun-boite-outils-philosophie-politique": "fr",
+        "fun-la-musique-quelle-histoire": "fr",
+        "blcu-umoocs-elementary-spoken-chinese": "zh",
+    }.get(course["id"], "en")
+    label = LOCALE_COURSE_COPY[locale]["original_title"]
+    return (
+        f'<details class="original-title"><summary>{escape(label)}</summary>'
+        f'<p lang="{original_language}">{escape(original)}</p></details>'
+    )
 
 
-def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict) -> str:
+def render_static_course(
+    course: dict,
+    course_by_id: dict,
+    candidate_by_id: dict,
+    locale: str = "en",
+) -> str:
+    if locale != "en":
+        course = localize_course(course, locale=locale)
+
+    copy = LOCALE_COURSE_COPY[locale]
+    localized = locale != "en"
+    site_root = "../../../" if localized else "../../"
+    route = f"courses/{course['id']}/"
+    url = locale_url(locale, route)
+
+    locale_hrefs = {}
+    for target in PUBLIC_LOCALES:
+        prefix = LOCALE_META[target]["prefix"]
+        target_route = f"{prefix}/{route}" if prefix else route
+        locale_hrefs[target] = site_root + target_route
+
     editorial = course.get("editorial") or {}
     review = editorial.get("review") or {}
     admission = editorial.get("admission") or {}
-    url = f"{BASE_URL}/courses/{course['id']}/"
     description = course.get("why_recommended", "")
+    category_name = locale_category_label(course, locale)
     languages = " · ".join(
-        label_language(code)
+        locale_language_label(code, locale)
         for code in [course["primary_language"], *course.get("other_languages", [])]
     )
+    level = locale_level_label(course["level"], locale)
+
     archived = course["status"] == "active_archive"
-    status = "Archived but still available" if archived else "Active"
-    certificate = review.get("credential") or CREDENTIAL_LABELS.get(
-        course.get("certificate"), readable_id(course.get("certificate"))
+    status = copy["archived_available"] if archived else copy["active"]
+
+    raw_certificate = CREDENTIAL_LABELS.get(
+        course.get("certificate"),
+        readable_id(course.get("certificate")),
     )
-    credit = review.get("academic_credits") or CREDIT_LABELS.get(
-        course.get("academic_credits"), readable_id(course.get("academic_credits"))
+    certificate = review.get("credential") or locale_source_text(raw_certificate, locale)
+
+    raw_credit = CREDIT_LABELS.get(
+        course.get("academic_credits"),
+        readable_id(course.get("academic_credits")),
+    )
+    credit = review.get("academic_credits") or locale_source_text(raw_credit, locale)
+
+    access_label, access_description = LOCALE_ACCESS_DETAIL[locale].get(
+        course["access_short"],
+        (course["access_label"], course["access_description"]),
     )
 
     comparison_ids = []
@@ -904,10 +940,12 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
             related_courses.append(compared)
         if len(related_courses) >= 2:
             break
+
     if len(related_courses) < 2:
         same_category = sorted(
             (
-                item for item in course_by_id.values()
+                item
+                for item in course_by_id.values()
                 if item["id"] != course["id"] and item["category"] == course["category"]
             ),
             key=lambda item: (
@@ -922,25 +960,28 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
             if len(related_courses) >= 2:
                 break
 
-    related_html = "".join(
-        '<a class="related-course" href="../../courses/'
-        + escape(item["id"])
-        + '/"><span class="related-mark" data-icon="curated" aria-hidden="true"></span><span><strong>'
-        + escape(item["title"])
-        + '</strong><small>'
-        + escape(item["provider"])
-        + '</small></span><span class="related-score">'
-        + f'{float(item["recommendation_score"]):.1f}'
-        + '</span></a>'
-        for item in related_courses
-    )
+    related_html_parts = []
+    for item in related_courses:
+        related_title, _ = locale_course_copy(item, locale)
+        related_html_parts.append(
+            '<a class="related-course" href="../../courses/'
+            + escape(item["id"])
+            + '/"><span class="related-mark" data-icon="curated" aria-hidden="true"></span><span><strong>'
+            + escape(related_title)
+            + '</strong><small>'
+            + escape(item["provider"])
+            + '</small></span><span class="related-score">'
+            + locale_score(item["recommendation_score"], locale)
+            + '</span></a>'
+        )
+    related_html = "".join(related_html_parts)
 
-    component_evidence = review.get("component_evidence") or {}
+    component_labels = LOCALE_QUALITY_COMPONENTS[locale]
     components = "".join(
         '<div class="component-item">'
-        f'<span>{escape(key.capitalize())}</span>'
+        f'<span>{escape(component_labels.get(key, key.capitalize()))}</span>'
         f'<div class="component-meter" aria-hidden="true"><i style="width:{float(value) * 10}%"></i></div>'
-        f'<strong>{float(value):.1f}</strong></div>'
+        f'<strong>{locale_score(value, locale)}</strong></div>'
         for key, value in course["quality_components"].items()
     )
 
@@ -948,24 +989,26 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     for evidence_url in [*(review.get("evidence") or []), *(course.get("evidence") or [])]:
         if evidence_url not in evidence_urls:
             evidence_urls.append(evidence_url)
+
     evidence_items = []
     try:
         canonical_host = course["url"].split("/")[2].removeprefix("www.")
     except IndexError:
         canonical_host = ""
+
     for evidence_url in evidence_urls:
         try:
             host = evidence_url.split("/")[2].removeprefix("www.")
         except IndexError:
             host = "source"
         if host == canonical_host:
-            source_kind = "Course source"
+            source_kind = copy["course_source"]
         elif host == "github.com":
-            source_kind = "Repository source"
+            source_kind = copy["repository_source"]
         elif host.startswith("forum.") or ".forum." in host:
-            source_kind = "Community reference"
+            source_kind = copy["community_reference"]
         else:
-            source_kind = "Supporting source"
+            source_kind = copy["supporting_source"]
         evidence_items.append(
             f'<li><a href="{escape(evidence_url)}" target="_blank" rel="noopener noreferrer">'
             f'{escape(source_kind)} · {escape(host)} ↗</a></li>'
@@ -974,34 +1017,30 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     before_parts = []
     if review.get("prerequisites"):
         before_parts.append(
-            f'<h3>Prerequisites</h3><p>{escape(review["prerequisites"])}</p>'
+            f'<h3>{escape(copy["prerequisites"])}</h3><p>{escape(review["prerequisites"])}</p>'
         )
     if review.get("required_resources"):
         before_parts.append(
-            f'<h3>Required resources</h3><p>{escape(review["required_resources"])}</p>'
+            f'<h3>{escape(copy["required_resources"])}</h3><p>{escape(review["required_resources"])}</p>'
         )
     if review.get("scope_notes"):
         before_parts.append(
-            f'<h3>Scope</h3><p>{escape(review["scope_notes"])}</p>'
+            f'<h3>{escape(copy["scope"])}</h3><p>{escape(review["scope_notes"])}</p>'
         )
-    before_html = "".join(before_parts) or "<p>No additional preparation requirements are documented.</p>"
+    before_html = "".join(before_parts) or f'<p>{escape(copy["no_preparation"])}</p>'
 
-    # The public page already uses the canonical learner-facing why_recommended
-    # in the overview. Review rationales may contain calibration / pipeline notes,
-    # so they remain in the auditable review ledger rather than being duplicated
-    # into the learner-facing page.
     score_parts = []
     if admission.get("learning_need"):
         score_parts.append(
-            f'<h3>Learning need</h3><p>{escape(admission["learning_need"])}</p>'
+            f'<h3>{escape(copy["learning_need"])}</h3><p>{escape(admission["learning_need"])}</p>'
         )
     if admission.get("marginal_value"):
         score_parts.append(
-            f'<h3>Why it adds value</h3><p>{escape(admission["marginal_value"])}</p>'
+            f'<h3>{escape(copy["why_value"])}</h3><p>{escape(admission["marginal_value"])}</p>'
         )
     if admission.get("decision_rationale"):
         score_parts.append(
-            '<details class="editorial-details"><summary>Admission decision rationale</summary>'
+            f'<details class="editorial-details"><summary>{escape(copy["admission_rationale"])}</summary>'
             f'<p>{escape(admission["decision_rationale"])}</p></details>'
         )
 
@@ -1009,21 +1048,33 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
     for item in comparison_ids:
         compared = course_by_id.get(item)
         if compared:
+            compared_title, _ = locale_course_copy(compared, locale)
             comparisons.append(
-                f'<li><a href="../../courses/{escape(item)}/">{escape(compared["title"])}</a></li>'
+                f'<li><a href="../../courses/{escape(item)}/">{escape(compared_title)}</a></li>'
             )
         else:
             candidate = candidate_by_id.get(item)
-            label = candidate.get("title") if candidate else readable_id(item)
+            if candidate and candidate.get("title"):
+                label = locale_source_text(candidate["title"], locale)
+            else:
+                label = readable_id(item)
             comparisons.append(f'<li>{escape(label)}</li>')
 
-    banner_title = "This course is archived" if archived else "This course is active"
+    banner_title = copy["banner_archived"] if archived else copy["banner_active"]
     banner_copy = (
-        f"Archived but still available · verified {course['last_verified']} · next review {course['next_review']}."
-        if archived
-        else f"Verified {course['last_verified']} · next review {course['next_review']}."
+        copy["banner_copy_archived"] if archived else copy["banner_copy_active"]
+    ).format(
+        verified=course["last_verified"],
+        next_review=course["next_review"],
     )
-    banner_button = "View archived materials →" if archived else "Open official course →"
+    banner_button = copy["button_archived"] if archived else copy["button_active"]
+
+    recommendation_score = locale_score(course["recommendation_score"], locale)
+    quality_score = locale_score(course["quality_score"], locale)
+    status_tag = static_tag(
+        copy["archived"] if archived else copy["active"],
+        "tag-archive" if archived else "",
+    )
 
     schema = json.dumps(
         {
@@ -1035,14 +1086,24 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
             "sameAs": course["url"],
             "isAccessibleForFree": True,
             "inLanguage": [course["primary_language"], *course.get("other_languages", [])],
-            "educationalLevel": label_level(course["level"]),
+            "educationalLevel": level,
             "provider": {"@type": "Organization", "name": course["provider"]},
         },
         ensure_ascii=False,
     ).replace("</", "<\\/")
 
+    home_href = "../../"
+    courses_href = "../../courses/"
+    categories_href = "../../categories/"
+    methodology_href = "../../methodology/"
+    how_href = "../../#how-it-works"
+    styles_href = site_root + "styles.css"
+    editorial_css_href = site_root + "editorial.css"
+    icons_href = site_root + "icons.js"
+    theme_href = site_root + "theme.js"
+
     return f"""<!doctype html>
-<html lang="en">
+<html lang="{locale}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1050,331 +1111,159 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
   <meta name="theme-color" content="#ffffff">
   {THEME_BOOTSTRAP}
   <link rel="canonical" href="{escape(url, quote=True)}">
-  <link rel="alternate" hreflang="en" href="{escape(url, quote=True)}">
-  <link rel="alternate" hreflang="pt-PT" href="{escape(BASE_URL + "/pt/courses/" + course["id"] + "/", quote=True)}">
+{alternate_links(route)}
   <meta property="og:type" content="website">
   <meta property="og:title" content="{escape(course['title'], quote=True)} · Open Learning Index">
   <meta property="og:description" content="{escape(description, quote=True)}">
   <meta property="og:url" content="{escape(url, quote=True)}">
   <title>{escape(course['title'])} · Open Learning Index</title>
-  <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../../editorial.css">
+  <link rel="stylesheet" href="{styles_href}">
+  <link rel="stylesheet" href="{editorial_css_href}">
   <script type="application/ld+json">{schema}</script>
 </head>
 <body>
-  <a class="skip-link" href="#course-detail">Skip to course details</a>
+  <a class="skip-link" href="#course-detail">{escape(copy["skip"])}</a>
   <header class="topbar">
     <div class="shell topbar-inner">
-      <a class="brand" href="../../" aria-label="Open Learning Index home">
+      <a class="brand" href="{home_href}" aria-label="{escape(copy["home_aria"])}">
         <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span>
       </a>
-      <nav class="main-nav" aria-label="Primary navigation">
-        <a href="../../courses/">Courses</a>
-        <a href="../../categories/">Categories</a>
-        <a href="../../methodology/">Methodology</a>
-        <a href="../../#how-it-works">How it works</a>
+      <nav class="main-nav" aria-label="{escape(copy["primary_nav"])}">
+        <a href="{courses_href}">{escape(copy["courses"])}</a>
+        <a href="{categories_href}">{escape(copy["categories"])}</a>
+        <a href="{methodology_href}">{escape(copy["methodology"])}</a>
+        <a href="{how_href}">{escape(copy["how"])}</a>
       </nav>
       <details class="mobile-nav">
-        <summary aria-label="Open navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
-        <nav aria-label="Mobile navigation"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../categories/">Categories</a><a href="../../methodology/">Methodology</a><a href="../../#how-it-works">How it works</a></nav>
+        <summary aria-label="{escape(copy["open_nav"])}"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="{escape(copy["mobile_nav"])}"><a href="{home_href}">{escape(copy["home"])}</a><a href="{courses_href}">{escape(copy["courses"])}</a><a href="{categories_href}">{escape(copy["categories"])}</a><a href="{methodology_href}">{escape(copy["methodology"])}</a><a href="{how_href}">{escape(copy["how"])}</a></nav>
       </details>
-      <div class="nav-actions"><a class="icon-link" href="../../courses/" aria-label="Search courses"><span data-icon="search" aria-hidden="true"></span></a><a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT-PT</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Use dark theme" title="Use dark theme"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
+      <div class="nav-actions"><a class="icon-link" href="{courses_href}" aria-label="{escape(copy["search"])}"><span data-icon="search" aria-hidden="true"></span></a>{language_control(locale, locale_hrefs)}<button class="theme-toggle" type="button" data-theme-toggle aria-label="{escape(copy["theme"])}" title="{escape(copy["theme"])}"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button></div>
     </div>
   </header>
 
   <main id="course-detail" class="shell course-page">
-    <nav class="course-breadcrumbs" aria-label="Breadcrumb">
-      <a href="../../">Home</a><span>›</span>
-      <a href="../../categories/{escape(course["category"])}/">{escape(course["category_name"])}</a><span>›</span>
+    <nav class="course-breadcrumbs" aria-label="{escape(copy["breadcrumb"])}">
+      <a href="{home_href}">{escape(copy["home"])}</a><span>›</span>
+      <a href="../../categories/{escape(course["category"])}/">{escape(category_name)}</a><span>›</span>
       <span>{escape(course["title"])}</span>
     </nav>
 
     <section class="course-title-grid">
       <div class="course-heading-main">
         <h1>{escape(course["title"])}</h1>
-        {original_title_html(course)}
+        {original_title_html(course, locale)}
         <p class="course-provider-line">{escape(course["provider"])}</p>
         <div class="course-meta-tags">
-          {static_tag(course["category_name"], "tag-category")}
-          {static_tag(label_language(course["primary_language"]))}
-          {static_tag(label_level(course["level"]))}
-          {static_tag("Archived" if archived else "Active", "tag-archive" if archived else "")}
+          {static_tag(category_name, "tag-category")}
+          {static_tag(locale_language_label(course["primary_language"], locale))}
+          {static_tag(level)}
+          {status_tag}
         </div>
       </div>
-      <aside class="course-score-card" aria-label="Overall recommendation">
-        <span>Overall recommendation</span>
-        <div class="course-score-main"><strong>{float(course["recommendation_score"]):.1f}</strong><small>/ 10</small></div>
-        <div class="quality-line"><span>Quality</span><strong>{float(course["quality_score"]):.1f}</strong></div>
+      <aside class="course-score-card" aria-label="{escape(copy["overall_recommendation"])}">
+        <span>{escape(copy["overall_recommendation"])}</span>
+        <div class="course-score-main"><strong>{recommendation_score}</strong><small>/ 10</small></div>
+        <div class="quality-line"><span>{escape(copy["quality"])}</span><strong>{quality_score}</strong></div>
         <div class="score-meter" aria-hidden="true"><i style="width:{float(course["quality_score"]) * 10}%"></i></div>
       </aside>
     </section>
 
-    <section class="status-banner" aria-label="Course status">
+    <section class="status-banner" aria-label="{escape(copy["status_aria"])}">
       <span class="status-banner-icon" data-icon="status" aria-hidden="true"></span>
       <div><strong>{escape(banner_title)}</strong><small>{escape(banner_copy)}</small></div>
       <a href="{escape(course["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{escape(banner_button)}</a>
     </section>
 
-    <nav class="course-tabs" aria-label="Course page sections">
-      <a href="#overview">Overview</a>
-      <a href="#details">Details</a>
-      <a href="#quality">Quality</a>
-      <a href="#evidence">Evidence</a>
-      <a href="#alternatives">Compared</a>
+    <nav class="course-tabs" aria-label="{escape(copy["sections_aria"])}">
+      <a href="#overview">{escape(copy["overview"])}</a>
+      <a href="#details">{escape(copy["details"])}</a>
+      <a href="#quality">{escape(copy["quality"])}</a>
+      <a href="#evidence">{escape(copy["evidence"])}</a>
+      <a href="#alternatives">{escape(copy["compared"])}</a>
     </nav>
 
     <div class="course-layout">
       <div class="course-content">
         <section id="overview" class="content-section">
-          <h2>Why we recommend it</h2>
+          <h2>{escape(copy["why_recommend"])}</h2>
           <p>{escape(description)}</p>
         </section>
 
         <section id="details" class="content-section">
-          <h2>Before you start</h2>
+          <h2>{escape(copy["before_start"])}</h2>
           {before_html}
         </section>
 
         <section class="content-section">
-          <h2>What is free</h2>
-          <p><strong>{escape(course["access_label"])}</strong> — {escape(course["access_description"])}</p>
-          <p><strong>Certificate:</strong> {escape(certificate)}</p>
-          <p><strong>Academic credit:</strong> {escape(credit)}</p>
+          <h2>{escape(copy["what_free"])}</h2>
+          <p><strong>{escape(access_label)}</strong> — {escape(access_description)}</p>
+          <p><strong>{escape(copy["certificate"])}:</strong> {escape(certificate)}</p>
+          <p><strong>{escape(copy["academic_credit"])}:</strong> {escape(credit)}</p>
         </section>
 
         <section id="quality" class="content-section">
-          <h2>Quality review</h2>
+          <h2>{escape(copy["quality_review"])}</h2>
           <div class="quality-panel"><div class="component-grid">{components}</div></div>
           {"".join(score_parts)}
         </section>
 
         <section id="evidence" class="content-section">
-          <h2>Evidence and verification</h2>
-          <p>Last checked: <strong>{escape(course["last_verified"])}</strong> · Next scheduled review: <strong>{escape(course["next_review"])}</strong>.</p>
+          <h2>{escape(copy["evidence_verification"])}</h2>
+          <p>{escape(copy["last_checked"])}: <strong>{escape(course["last_verified"])}</strong> · {escape(copy["next_review"])}: <strong>{escape(course["next_review"])}</strong>.</p>
           <ul class="evidence-list">{"".join(evidence_items)}</ul>
         </section>
 
         <section id="alternatives" class="content-section">
-          <h2>Compared against</h2>
-          {f'<ul class="comparison-list">{"".join(comparisons)}</ul>' if comparisons else '<p>No direct comparator is recorded for this course.</p>'}
+          <h2>{escape(copy["compared_against"])}</h2>
+          {f'<ul class="comparison-list">{"".join(comparisons)}</ul>' if comparisons else f'<p>{escape(copy["no_comparator"])}</p>'}
         </section>
       </div>
 
       <aside class="course-sidebar">
-        {media_html(course)}
+        {media_html(course, root=site_root)}
         <section class="sidebar-card">
-          <h2>Course at a glance</h2>
+          <h2>{escape(copy["course_glance"])}</h2>
           <dl class="glance-list">
-            <div><span class="glance-icon" data-icon="provider" aria-hidden="true"></span><dt>Provider</dt><dd>{escape(course["provider"])}</dd></div>
-            <div><span class="glance-icon" data-icon="globe" aria-hidden="true"></span><dt>Language</dt><dd>{escape(languages)}</dd></div>
-            <div><span class="glance-icon" data-icon="level" aria-hidden="true"></span><dt>Level</dt><dd>{escape(label_level(course["level"]))}</dd></div>
-            <div><span class="glance-icon" data-icon="clock" aria-hidden="true"></span><dt>Status</dt><dd>{escape(status)}</dd></div>
-            <div><span class="glance-icon" data-icon="access" aria-hidden="true"></span><dt>Access</dt><dd>{escape(course["access_label"])}</dd></div>
+            <div><span class="glance-icon" data-icon="provider" aria-hidden="true"></span><dt>{escape(copy["provider"])}</dt><dd>{escape(course["provider"])}</dd></div>
+            <div><span class="glance-icon" data-icon="globe" aria-hidden="true"></span><dt>{escape(copy["language"])}</dt><dd>{escape(languages)}</dd></div>
+            <div><span class="glance-icon" data-icon="level" aria-hidden="true"></span><dt>{escape(copy["level"])}</dt><dd>{escape(level)}</dd></div>
+            <div><span class="glance-icon" data-icon="clock" aria-hidden="true"></span><dt>{escape(copy["status"])}</dt><dd>{escape(status)}</dd></div>
+            <div><span class="glance-icon" data-icon="access" aria-hidden="true"></span><dt>{escape(copy["access"])}</dt><dd>{escape(access_label)}</dd></div>
           </dl>
         </section>
 
         <section class="sidebar-card">
-          <h2>Related courses</h2>
-          <div class="related-list">{related_html or '<p class="muted">No related course is currently linked.</p>'}</div>
-          <p class="related-more"><a class="related-more-link" href="../../categories/{escape(course["category"])}/">View more in {escape(course["category_name"])} →</a></p>
+          <h2>{escape(copy["related_courses"])}</h2>
+          <div class="related-list">{related_html or f'<p class="muted">{escape(copy["no_related"])}</p>'}</div>
+          <p class="related-more"><a class="related-more-link" href="../../categories/{escape(course["category"])}/">{escape(copy["view_more"].format(category=category_name))}</a></p>
         </section>
       </aside>
     </div>
   </main>
 
   <footer class="site-footer"><div class="shell footer-inner">
-    <div><strong>Open Learning Index</strong><p>Curated, auditable and continuously maintained.</p></div>
-    <div class="footer-links"><a href="../../">Home</a><a href="../../courses/">Courses</a><a href="../../methodology/">Methodology</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT">Português</a></div>
+    <div><strong>Open Learning Index</strong><p>{escape(copy["footer"])}</p></div>
+    <div class="footer-links"><a href="{home_href}">{escape(copy["home"])}</a><a href="{courses_href}">{escape(copy["courses"])}</a><a href="{methodology_href}">{escape(copy["methodology"])}</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a></div>
   </div></footer>
-  <script src="../../icons.js" defer></script>
-  <script src="../../theme.js" defer></script>
+  <script src="{icons_href}" defer></script>
+  <script src="{theme_href}" defer></script>
 </body>
 </html>
 """
 
-def render_static_course_pt(course: dict, course_by_id: dict, candidate_by_id: dict) -> str:
-    course = localize_course(course)
-    localized_courses = {key: {**value, "title": pt(value["title"])} for key, value in course_by_id.items()}
-    localized_candidates = {key: {**value, "title": pt(value["title"])} for key, value in candidate_by_id.items()}
-    html = render_static_course(course, localized_courses, localized_candidates)
-    html = html.replace('src="../../assets/', 'src="../../../assets/')
-    html = html.replace('href="../../editorial.css"', 'href="../../../editorial.css"')
-    for source in [*CREDENTIAL_LABELS.values(), *CREDIT_LABELS.values()]:
-        html = html.replace(escape(source), escape(pt(source)))
-    en_url = f"{BASE_URL}/courses/{course['id']}/"
-    pt_url = f"{BASE_URL}/pt/courses/{course['id']}/"
-    category_pt = PT_CATEGORY_LABELS.get(course["category"], course["category_name"])
-    level_en = label_level(course["level"])
-    level_pt = PT_LEVEL_LABELS.get(course["level"], level_en)
-    language_en = label_language(course["primary_language"])
-    language_pt = PT_LANGUAGE_LABELS.get(course["primary_language"], language_en)
-    languages_en = " · ".join(
-        label_language(code)
-        for code in [course["primary_language"], *course.get("other_languages", [])]
+
+def render_static_course_pt(
+    course: dict,
+    course_by_id: dict,
+    candidate_by_id: dict,
+) -> str:
+    return render_static_course(
+        course,
+        course_by_id,
+        candidate_by_id,
+        locale="pt-PT",
     )
-    languages_pt = " · ".join(
-        PT_LANGUAGE_LABELS.get(code, label_language(code))
-        for code in [course["primary_language"], *course.get("other_languages", [])]
-    )
-    archived = course["status"] == "active_archive"
-
-    replacements = {
-        '<html lang="en">': '<html lang="pt-PT">',
-        en_url: pt_url,
-        '<link rel="stylesheet" href="../../styles.css">': '<link rel="stylesheet" href="../../../styles.css">',
-        '<script src="../../icons.js" defer></script>': '<script src="../../../icons.js" defer></script>',
-        '<script src="../../theme.js" defer></script>': '<script src="../../../theme.js" defer></script>',
-        'Skip to course details': 'Saltar para os detalhes do curso',
-        'aria-label="Primary navigation"': 'aria-label="Navegação principal"',
-        'aria-label="Open navigation"': 'aria-label="Abrir navegação"',
-        'aria-label="Mobile navigation"': 'aria-label="Navegação móvel"',
-        '>Courses</a>': '>Cursos</a>',
-        '>Categories</a>': '>Categorias</a>',
-        '>Methodology</a>': '>Metodologia</a>',
-        '>How it works</a>': '>Como funciona</a>',
-        'aria-label="Search courses"': 'aria-label="Pesquisar cursos"',
-        'aria-label="Breadcrumb"': 'aria-label="Navegação estrutural"',
-        '>Home</a>': '>Início</a>',
-        'aria-label="Overall recommendation"': 'aria-label="Recomendação geral"',
-        '<span>Overall recommendation</span>': '<span>Recomendação geral</span>',
-        '<span>Quality</span>': '<span>Qualidade</span>',
-        'aria-label="Course status"': 'aria-label="Estado do curso"',
-        'aria-label="Course page sections"': 'aria-label="Secções da página do curso"',
-        '>Overview</a>': '>Visão geral</a>',
-        '>Details</a>': '>Detalhes</a>',
-        '>Quality</a>': '>Qualidade</a>',
-        '>Evidence</a>': '>Evidência</a>',
-        '>Compared</a>': '>Comparação</a>',
-        '<h2>Why we recommend it</h2>': '<h2>Porque recomendamos este curso</h2>',
-        '<h2>Before you start</h2>': '<h2>Antes de começar</h2>',
-        '<h3>Prerequisites</h3>': '<h3>Pré-requisitos</h3>',
-        '<h3>Required resources</h3>': '<h3>Recursos necessários</h3>',
-        '<h3>Scope</h3>': '<h3>Âmbito</h3>',
-        '<h2>What is free</h2>': '<h2>O que é gratuito</h2>',
-        '<strong>Certificate:</strong>': '<strong>Certificado:</strong>',
-        '<strong>Academic credit:</strong>': '<strong>Créditos académicos:</strong>',
-        '<h2>Quality review</h2>': '<h2>Revisão de qualidade</h2>',
-        '<h3>Recommendation rationale</h3>': '<h3>Justificação da recomendação</h3>',
-        '<h3>Learning need</h3>': '<h3>Necessidade de aprendizagem</h3>',
-        '<h3>Why it adds value</h3>': '<h3>Porque acrescenta valor</h3>',
-        '<summary>Admission decision rationale</summary>': '<summary>Justificação da decisão de admissão</summary>',
-        '<h2>Evidence and verification</h2>': '<h2>Evidência e verificação</h2>',
-        'Last checked:': 'Última verificação:',
-        'Next scheduled review:': 'Próxima revisão prevista:',
-        '<h2>Compared against</h2>': '<h2>Comparado com</h2>',
-        'No direct comparator is recorded for this course.': 'Não existe um comparador direto registado para este curso.',
-        '<h2>Course at a glance</h2>': '<h2>Resumo do curso</h2>',
-        '<dt>Provider</dt>': '<dt>Entidade</dt>',
-        '<dt>Language</dt>': '<dt>Idioma</dt>',
-        '<dt>Level</dt>': '<dt>Nível</dt>',
-        '<dt>Status</dt>': '<dt>Estado</dt>',
-        '<dt>Access</dt>': '<dt>Acesso</dt>',
-        '<h2>Related courses</h2>': '<h2>Cursos relacionados</h2>',
-        'Curated, auditable and continuously maintained.': 'Curado, auditável e continuamente mantido.',
-        '>Methodology</a>': '>Metodologia</a>',
-        '>GitHub</a>': '>GitHub</a>',
-        f'>{escape(course["category_name"])}</a>': f'>{escape(category_pt)}</a>',
-        static_tag(course["category_name"], "tag-category"): static_tag(category_pt, "tag-category"),
-        static_tag(language_en): static_tag(language_pt),
-        static_tag(level_en): static_tag(level_pt),
-        '<span>Pedagogy</span>': '<span>Pedagogia</span>',
-        '<span>Depth</span>': '<span>Profundidade</span>',
-        '<span>Practice</span>': '<span>Prática</span>',
-        '<span>Materials</span>': '<span>Materiais</span>',
-        '<span>Currency</span>': '<span>Atualidade</span>',
-        '<span>Expertise</span>': '<span>Especialização</span>',
-        '<span>Accessibility</span>': '<span>Acessibilidade</span>',
-        ' · free</dd>': ' · gratuito</dd>',
-    }
-    for old, new in replacements.items():
-        html = html.replace(old, new)
-
-    html = html.replace(
-        f'<link rel="alternate" hreflang="en" href="{escape(pt_url, quote=True)}">',
-        f'<link rel="alternate" hreflang="en" href="{escape(en_url, quote=True)}">',
-    )
-    html = html.replace(
-        f'<dd>{escape(languages_en)}</dd>',
-        f'<dd>{escape(languages_pt)}</dd>',
-    )
-    html = html.replace(
-        f'<dd>{escape(level_en)}</dd>',
-        f'<dd>{escape(level_pt)}</dd>',
-    )
-
-    access_labels_pt = {
-        "F0": ("Curso completo + credencial gratuita", "Percurso completo com credencial de conclusão gratuita emitida pelo fornecedor."),
-        "F1": ("Percurso avaliado gratuito", "Percurso completo com avaliação gratuita significativa, mas sem credencial formal gratuita."),
-        "F2": ("Conteúdo pedagógico completo", "Conteúdo pedagógico substancial e completo, mas sem percurso formal de conclusão gratuito."),
-    }
-    access_label_pt, access_description_pt = access_labels_pt.get(
-        course["access_short"],
-        (course["access_label"], course["access_description"]),
-    )
-    html = html.replace(course["access_label"], access_label_pt)
-    html = html.replace(course["access_description"], access_description_pt)
-
-    html = html.replace(
-        f'<a href="../../categories/{escape(course["category"])}/">{escape(category_pt)}</a>',
-        f'<a href="../../categories/{escape(course["category"])}/">{escape(category_pt)}</a>',
-    )
-
-    html = html.replace(
-        f'<a class="language-switch" href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT" aria-label="Português (Portugal)">PT-PT</a>',
-        f'<a class="language-switch" href="../../../courses/{escape(course["id"])}/" lang="en" hreflang="en" aria-label="English">EN</a>',
-    )
-
-    html = html.replace(
-        f'<a href="../../pt/courses/{escape(course["id"])}/" lang="pt-PT" hreflang="pt-PT">Português</a>',
-        f'<a href="../../../courses/{escape(course["id"])}/" lang="en" hreflang="en">English</a>',
-    )
-
-    status_en = "Archived but still available" if archived else "Active"
-    status_pt = "Arquivado mas disponível" if archived else "Ativo"
-    html = html.replace(f'<dd>{escape(status_en)}</dd>', f'<dd>{escape(status_pt)}</dd>')
-
-    tag_en = static_tag("Archived" if archived else "Active", "tag-archive" if archived else "")
-    tag_pt = static_tag("Arquivado" if archived else "Ativo", "tag-archive" if archived else "")
-    html = html.replace(tag_en, tag_pt)
-
-    banner_title_en = "This course is archived" if archived else "This course is active"
-    banner_title_pt = "Este curso está arquivado" if archived else "Este curso está ativo"
-    banner_copy_en = (
-        f"Archived but still available · verified {course['last_verified']} · next review {course['next_review']}."
-        if archived
-        else f"Verified {course['last_verified']} · next review {course['next_review']}."
-    )
-    banner_copy_pt = (
-        f"Arquivado mas disponível · verificado em {course['last_verified']} · próxima revisão {course['next_review']}."
-        if archived
-        else f"Verificado em {course['last_verified']} · próxima revisão {course['next_review']}."
-    )
-    banner_button_en = "View archived materials →" if archived else "Open official course →"
-    banner_button_pt = "Ver materiais arquivados →" if archived else "Abrir curso oficial →"
-    html = html.replace(banner_title_en, banner_title_pt)
-    html = html.replace(banner_copy_en, banner_copy_pt)
-    html = html.replace(banner_button_en, banner_button_pt)
-
-    html = html.replace(
-        f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">View more in {escape(course["category_name"])} →</a>',
-        f'<a class="related-more-link" href="../../categories/{escape(course["category"])}/">Ver mais em {escape(category_pt)} →</a>',
-    )
-
-    html = html.replace('Course source', 'Fonte do curso')
-    html = html.replace('Repository source', 'Fonte de repositório')
-    html = html.replace('Community reference', 'Referência da comunidade')
-    html = html.replace('Supporting source', 'Fonte de apoio')
-    html = html.replace('No additional preparation requirements are documented.', 'Não estão documentados requisitos de preparação adicionais.')
-    html = html.replace('No related course is currently linked.', 'Não existem cursos relacionados associados.')
-    html = html.replace('Open Learning Index home', 'Página inicial do Open Learning Index')
-    html = html.replace('Use dark theme', 'Usar tema escuro')
-    # Format scores, without changing JSON-LD, URLs, percentages or review dates.
-    import re
-    html = re.sub(r'>([0-9]+)\.([0-9])</strong>', r'>\1,\2</strong>', html)
-    html = re.sub(r'>([0-9]+)\.([0-9])</span>', r'>\1,\2</span>', html)
-    return html
-
-
 
 
 def render_category_directory(
