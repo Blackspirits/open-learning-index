@@ -70,15 +70,28 @@ The title-policy ambiguity identified by the review is resolved as follows:
 
 This avoids constructions where translated titles become common nouns (for example, a course title being rendered as “a aula ...”) while preserving learner-friendly display localisation.
 
+## Medium-severity pass
+
+On 2026-09-16 the **407 Medium** findings were reviewed against the post-High dictionary.
+
+The pass used the audit's exact source keys rather than fuzzy matching. Each Medium row was checked against its original bad excerpt and proposed wording. Where an earlier G1–G14 correction had already removed the defect, the row was treated as covered rather than edited a second time. A small number of rows intentionally use wording better than the literal audit proposal while preserving the same correction (for example, avoiding awkward repetition in presentation terminology).
+
+After the pass, **none of the 407 Medium findings retain the audited bad form**.
+
+This pass also standardises two catalogue presentation details:
+
+- proficiency levels are ordered pedagogically rather than alphabetically; the cross-level **beginner-to-advanced** range and the convenience filter **Beginner-friendly / Adequado a principiantes** are separated from the linear progression;
+- pt-PT language names are presented consistently as lower-case common nouns, while proper region names remain capitalised inside qualifiers, e.g. **português (Portugal)** and **português (Brasil)**.
+
 ## Remaining backlog
 
-This gate does **not** claim that all 800 findings are closed. The **407 Medium** and **141 Low** findings remain a deliberate follow-up backlog except where they were included by G1–G14.
+The remaining audit class is **141 Low** findings. Some Low rows may already have been incidentally corrected by the High/G1–G14 or Medium passes, so they must be rechecked against the current dictionary rather than blindly applied.
 
-The next linguistic pass should prioritise:
+The final linguistic pass should prioritise:
 
-- remaining technical/academic terminology;
-- consistent route/pathway terminology, preferring **percurso** where appropriate;
-- application of the title policy to the remaining Medium/Low title-consistency findings;
-- pt-PT score-number formatting consistency in the UI.
+- remaining style, punctuation and minor consistency issues;
+- any residual route/pathway wording, preferring **percurso** where appropriate;
+- remaining title-consistency rows under the documented course-title policy;
+- a final whole-file scan after the Low pass.
 
 No course-content or scoring re-review is implied by this language QA.
