@@ -15,7 +15,9 @@ class EditorialPresentationTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         courses = json.loads(build.COURSES.read_text(encoding='utf-8'))
-        categories = {c['id']:c for c in json.loads(build.CATEGORIES.read_text(encoding='utf-8'))}
+        category_rows = json.loads(build.CATEGORIES.read_text(encoding='utf-8'))
+        categories = {c['id']:c for c in category_rows}
+        cls.category_rows = category_rows
         reviews = build.load_current_records(build.REVIEWS_DIR, 'reviewed_on')
         references = build.load_current_records(build.REFERENCE_REVIEWS, 'reviewed_on', 'course_id')
         admissions = build.load_current_records(build.ADMISSIONS_DIR, 'decided_on')
@@ -347,6 +349,32 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn("Quality", html)
         self.assertIn("Verified", html)
         self.assertNotIn("Recomendação", html)
+
+
+    def test_category_directory_renderer_is_locale_aware(self):
+        en = build.render_category_directory(self.category_rows, self.courses, locale='en')
+        pt_page = build.render_category_directory(self.category_rows, self.courses, locale='pt-PT')
+        self.assertIn('<html lang="en">', en)
+        self.assertIn('<html lang="pt-PT">', pt_page)
+        self.assertIn('<h1>Categories</h1>', en)
+        self.assertIn('<h1>Categorias</h1>', pt_page)
+        self.assertIn('hreflang="en"', en)
+        self.assertIn('hreflang="pt-PT"', en)
+        self.assertIn('href="../../categories/"', pt_page)
+        self.assertIn('>EN</a>', pt_page)
+
+    def test_static_category_renderer_is_locale_aware(self):
+        category = self.category_rows[0]
+        en = build.render_static_category(category, self.courses, locale='en')
+        pt_page = build.render_static_category(category, self.courses, locale='pt-PT')
+        self.assertIn('<html lang="en">', en)
+        self.assertIn('<html lang="pt-PT">', pt_page)
+        self.assertIn('ordered by Recommendation', en)
+        self.assertIn('ordenados por Recomendação', pt_page)
+        self.assertNotIn('tag-category', en)
+        self.assertNotIn('tag-category', pt_page)
+        self.assertIn('hreflang="en"', pt_page)
+        self.assertIn('hreflang="pt-PT"', pt_page)
 
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
