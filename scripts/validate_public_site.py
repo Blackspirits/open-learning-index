@@ -13,6 +13,11 @@ from urllib.parse import unquote, urlsplit
 
 BASE_URL = "https://blackspirits.github.io/open-learning-index"
 BASE_PATH = "/open-learning-index/"
+PUBLIC_LOCALES = {
+    "en": "",
+    "pt-PT": "pt",
+    "es": "es",
+}
 
 
 class PageParser(HTMLParser):
@@ -153,10 +158,15 @@ def validate_page(site: Path, page: Path, errors: list[str]) -> PageParser:
     if parser.h1_count != 1:
         fail(errors, f"{rel}: expected exactly one h1, found {parser.h1_count}")
 
-    if rel.startswith("pt/") and parser.lang != "pt-PT":
-        fail(errors, f"{rel}: pt route must use lang=pt-PT")
-    if not rel.startswith("pt/") and rel not in {"404.html", "course.html"} and parser.lang != "en":
-        fail(errors, f"{rel}: English route must use lang=en")
+    if rel not in {"404.html", "course.html"}:
+        if rel.startswith("pt/"):
+            expected_lang = "pt-PT"
+        elif rel.startswith("es/"):
+            expected_lang = "es"
+        else:
+            expected_lang = "en"
+        if parser.lang != expected_lang:
+            fail(errors, f"{rel}: route must use lang={expected_lang}")
 
     expected_url = expected_url_for_page(site, page)
     if expected_url:
@@ -205,37 +215,26 @@ def validate_publication_routes(site: Path, errors: list[str]) -> None:
     if meta.get("category_count") != len(categories):
         fail(errors, "data/meta.json category_count does not match categories.json")
 
-    for course in catalog:
-        course_id = course["id"]
+    for locale, prefix in PUBLIC_LOCALES.items():
+        locale_root = site / prefix if prefix else site
         for rel in (
-            Path("courses") / course_id / "index.html",
-            Path("pt") / "courses" / course_id / "index.html",
+            Path("index.html"),
+            Path("courses") / "index.html",
+            Path("categories") / "index.html",
+            Path("methodology") / "index.html",
         ):
-            if not (site / rel).exists():
-                fail(errors, f"missing published course route: {rel.as_posix()}")
+            if not (locale_root / rel).exists():
+                fail(errors, f"missing {locale} public route: {(Path(prefix) / rel if prefix else rel).as_posix()}")
 
-    for category in categories:
-        category_id = category["id"]
-        for rel in (
-            Path("categories") / category_id / "index.html",
-            Path("pt") / "categories" / category_id / "index.html",
-        ):
-            if not (site / rel).exists():
-                fail(errors, f"missing category route: {rel.as_posix()}")
+        for course in catalog:
+            rel = Path("courses") / course["id"] / "index.html"
+            if not (locale_root / rel).exists():
+                fail(errors, f"missing {locale} published course route: {(Path(prefix) / rel if prefix else rel).as_posix()}")
 
-    for rel in (
-        Path("categories") / "index.html",
-        Path("pt") / "categories" / "index.html",
-    ):
-        if not (site / rel).exists():
-            fail(errors, f"missing category directory: {rel.as_posix()}")
-
-    for rel in (
-        Path("methodology") / "index.html",
-        Path("pt") / "methodology" / "index.html",
-    ):
-        if not (site / rel).exists():
-            fail(errors, f"missing methodology route: {rel.as_posix()}")
+        for category in categories:
+            rel = Path("categories") / category["id"] / "index.html"
+            if not (locale_root / rel).exists():
+                fail(errors, f"missing {locale} category route: {(Path(prefix) / rel if prefix else rel).as_posix()}")
 
 
 def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
@@ -245,17 +244,18 @@ def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
         return
 
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
-    missing_pt_descriptions = [
-        course.get("id", "<unknown>")
-        for course in catalog
-        if not ((course.get("presentations") or {}).get("pt-PT") or {}).get("description")
-    ]
-    if missing_pt_descriptions:
-        fail(
-            errors,
-            "catalogue runtime contract: missing presentations.pt-PT.description for "
-            + ", ".join(missing_pt_descriptions[:10]),
-        )
+    for locale in ("pt-PT", "es"):
+        missing = [
+            course.get("id", "<unknown>")
+            for course in catalog
+            if not ((course.get("presentations") or {}).get(locale) or {}).get("description")
+        ]
+        if missing:
+            fail(
+                errors,
+                f"catalogue runtime contract: missing presentations.{locale}.description for "
+                + ", ".join(missing[:10]),
+            )
 
     app_js = app_path.read_text(encoding="utf-8")
     if "course.presentations?.[locale]" not in app_js:
@@ -274,43 +274,36 @@ def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
 def validate_locale_pairs(site: Path, pages: dict[Path, PageParser], errors: list[str]) -> None:
     for rel, parser in pages.items():
         rel_posix = rel.as_posix()
-        if rel_posix.startswith("courses/") and rel_posix.endswith("/index.html"):
-            pt_rel = Path("pt") / rel
-            if pt_rel not in pages:
-                fail(errors, f"{rel_posix}: missing pt-PT counterpart")
-            expected_pt = f"{BASE_URL}/pt/{rel_posix[:-len('index.html')]}"
-            if parser.alternates.get("pt-PT") != expected_pt:
-                fail(errors, f"{rel_posix}: missing or incorrect pt-PT alternate")
+        if rel_posix in {"404.html", "course.html"} or not rel_posix.endswith("index.html"):
+            continue
 
-        if rel_posix.startswith("categories/") and rel_posix.endswith("index.html"):
-            pt_rel = Path("pt") / rel
-            if pt_rel not in pages:
-                fail(errors, f"{rel_posix}: missing pt-PT counterpart")
-            expected_pt = f"{BASE_URL}/pt/{rel_posix[:-len('index.html')]}"
-            if parser.alternates.get("pt-PT") != expected_pt:
-                fail(errors, f"{rel_posix}: missing or incorrect pt-PT alternate")
+        parts = rel.parts
+        if parts and parts[0] in {"pt", "es"}:
+            current_prefix = parts[0]
+            route_parts = parts[1:-1]
+        else:
+            current_prefix = ""
+            route_parts = parts[:-1]
 
-        if rel_posix.startswith("pt/courses/") and rel_posix.endswith("/index.html"):
-            en_rel = Path(*rel.parts[1:])
-            expected_en = f"{BASE_URL}/{en_rel.as_posix()[:-len('index.html')]}"
-            if parser.alternates.get("en") != expected_en:
-                fail(errors, f"{rel_posix}: missing or incorrect English alternate")
+        route = "/".join(route_parts)
+        route_suffix = f"{route}/" if route else ""
 
-        if rel_posix.startswith("pt/categories/") and rel_posix.endswith("index.html"):
-            en_rel = Path(*rel.parts[1:])
-            expected_en = f"{BASE_URL}/{en_rel.as_posix()[:-len('index.html')]}"
-            if parser.alternates.get("en") != expected_en:
-                fail(errors, f"{rel_posix}: missing or incorrect English alternate")
+        for locale, prefix in PUBLIC_LOCALES.items():
+            target_rel = Path(prefix) if prefix else Path()
+            if route_parts:
+                target_rel = target_rel.joinpath(*route_parts)
+            target_rel = target_rel / "index.html"
+            if target_rel not in pages:
+                fail(errors, f"{rel_posix}: missing {locale} counterpart {target_rel.as_posix()}")
 
-        if rel_posix == "methodology/index.html":
-            expected_pt = f"{BASE_URL}/pt/methodology/"
-            if parser.alternates.get("pt-PT") != expected_pt:
-                fail(errors, f"{rel_posix}: missing or incorrect pt-PT alternate")
-
-        if rel_posix == "pt/methodology/index.html":
-            expected_en = f"{BASE_URL}/methodology/"
-            if parser.alternates.get("en") != expected_en:
-                fail(errors, f"{rel_posix}: missing or incorrect English alternate")
+            target_base = f"{BASE_URL}/{prefix}/" if prefix else f"{BASE_URL}/"
+            expected = target_base + route_suffix
+            if parser.alternates.get(locale) != expected:
+                fail(
+                    errors,
+                    f"{rel_posix}: missing or incorrect {locale} alternate; "
+                    f"expected {expected}, found {parser.alternates.get(locale)}",
+                )
 
 
 def validate_sitemap(site: Path, pages: dict[Path, PageParser], errors: list[str]) -> None:
