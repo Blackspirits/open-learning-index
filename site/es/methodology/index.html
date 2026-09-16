@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cómo evalúa, clasifica y vuelve a verificar Open Learning Index los recursos de aprendizaje gratuitos.">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    try {
+      const saved = localStorage.getItem("oli-theme");
+      const theme = saved === "dark" || saved === "light"
+        ? saved
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {}
+  </script>
+  <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/es/methodology/">
+  <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/methodology/">
+  <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/methodology/">
+  <link rel="alternate" hreflang="es" href="https://blackspirits.github.io/open-learning-index/es/methodology/">
+  <title>Metodología · Open Learning Index</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../editorial.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="../" aria-label="Página inicial de Open Learning Index"><span class="brand-symbol" data-icon="brand" aria-hidden="true"></span><span>Open Learning Index</span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="../courses/">Cursos</a>
+        <a href="../categories/">Categorías</a>
+        <a class="active" href="./">Metodología</a>
+        <a href="../#how-it-works">Cómo funciona</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Abrir navegación"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Navegación móvil"><a href="../">Inicio</a><a href="../courses/">Cursos</a><a href="../categories/">Categorías</a><a href="./">Metodología</a><a href="../#how-it-works">Cómo funciona</a></nav>
+      </details>
+      <div class="nav-actions">
+        <a class="icon-link" href="../courses/" aria-label="Buscar cursos"><span data-icon="search" aria-hidden="true"></span></a>
+        <details class="language-menu"><summary aria-label="Idioma">ES</summary><nav aria-label="Idioma"><a href="../../methodology/" lang="en" hreflang="en">English</a><a href="../../pt/methodology/" lang="pt-PT" hreflang="pt-PT">Português (Portugal)</a><a href="./" lang="es" hreflang="es">Español</a></nav></details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Usar tema oscuro" title="Usar tema oscuro"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="shell methodology-page">
+    <header class="methodology-header">
+      <p class="section-kicker">Cómo funciona el índice</p>
+      <h1>Metodología</h1>
+      <p>Open Learning Index publica una selección deliberadamente reducida de recursos de aprendizaje gratuitos. Los candidatos se criban, se revisan con evidencia, se comparan con alternativas realistas y después se vuelven a verificar con una frecuencia ajustada al riesgo.</p>
+    </header>
+
+    <section class="methodology-section">
+      <h2>Dos puntuaciones, dos preguntas</h2>
+      <div class="methodology-score-grid">
+        <article>
+          <h3>Puntuación de Calidad</h3>
+          <p><strong>¿Qué calidad tiene este recurso de aprendizaje por sí mismo?</strong></p>
+          <p>La puntuación ponderada mide pedagogía, profundidad, práctica, materiales, actualidad, especialización de la entidad/docente y accesibilidad.</p>
+        </article>
+        <article>
+          <h3>Puntuación de Recomendación</h3>
+          <p><strong>¿Hasta qué punto debería un estudiante elegir este recurso frente a alternativas realistas hoy?</strong></p>
+          <p>Es una valoración editorial y puede considerar prerrequisitos, tiempo hasta obtener valor, fricción, solapamiento, disponibilidad actual y alternativas superiores.</p>
+        </article>
+      </div>
+      <div class="methodology-table-wrap">
+        <table class="methodology-table">
+          <thead><tr><th>Componente de Calidad</th><th>Peso</th></tr></thead>
+          <tbody>
+            <tr><td>Pedagogía</td><td>25%</td></tr>
+            <tr><td>Profundidad</td><td>20%</td></tr>
+            <tr><td>Práctica</td><td>20%</td></tr>
+            <tr><td>Materiales</td><td>10%</td></tr>
+            <tr><td>Actualidad</td><td>10%</td></tr>
+            <tr><td>Especialización de la entidad/docente</td><td>10%</td></tr>
+            <tr><td>Accesibilidad</td><td>5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="methodology-note">La actualidad depende del área. Una clase estable de matemáticas no se penaliza solo por su antigüedad; los recursos de IA, software, seguridad, finanzas y derecho de rápida evolución se someten a un umbral de actualidad mucho más exigente.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Niveles de calidad</h2>
+      <div class="methodology-tier-grid">
+        <div><strong>S+</strong><span>9,50–10,00</span><small>Excepcional, nivel de referencia</small></div>
+        <div><strong>S</strong><span>9,00–9,49</span><small>Excelente</small></div>
+        <div><strong>A+</strong><span>8,50–8,99</span><small>Muy recomendado</small></div>
+        <div><strong>A</strong><span>8,00–8,49</span><small>Muy bueno</small></div>
+      </div>
+      <p>Los recursos por debajo de A normalmente se excluyen del núcleo publicado del índice.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Qué significa «gratuito»</h2>
+      <div class="methodology-table-wrap">
+        <table class="methodology-table">
+          <thead><tr><th>Nivel</th><th>Acceso del estudiante</th><th>Núcleo publicado</th></tr></thead>
+          <tbody>
+            <tr><td><strong>F0</strong></td><td>Curso/itinerario completo + credencial gratuita de finalización de la entidad</td><td>Sí</td></tr>
+            <tr><td><strong>F1</strong></td><td>Itinerario completo + evaluación/laboratorios gratuitos significativos, sin credencial formal gratuita</td><td>Sí</td></tr>
+            <tr><td><strong>F2</strong></td><td>Contenido pedagógico sustancial y completo, sin vía formal gratuita de finalización</td><td>Sí</td></tr>
+            <tr><td><strong>F3</strong></td><td>Vista previa, prueba, solo el primer módulo o acceso gratuito materialmente incompleto</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Los certificados y créditos académicos se registran por separado. Una insignia digital no equivale a crédito académico y ninguno de ellos aumenta automáticamente la calidad pedagógica.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Evidencia y admisión</h2>
+      <p>La documentación oficial del curso y de la entidad es la evidencia preferida para acceso, precio, créditos, idiomas, estado del curso y programa. Las revisiones independientes y la discusión comunitaria pueden complementar la evidencia sobre la experiencia del estudiante, pero no se aceptan como prueba única de precio, créditos o acceso.</p>
+      <p>El prestigio institucional por sí solo no basta. Un curso solo se publica cuando es suficientemente sólido y supera claramente alternativas relevantes o añade un itinerario de aprendizaje materialmente diferente.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Mantenimiento continuo</h2>
+      <p>Los cursos publicados se vuelven a verificar según el riesgo y la velocidad de cambio del área:</p>
+      <ul>
+        <li><strong>60–90 días</strong> para áreas de cambio rápido, como IA, software actual, ciberseguridad y formación en la nube.</li>
+        <li><strong>120–180 días</strong> para áreas profesionales con cambio moderado.</li>
+        <li><strong>365 días</strong> para fundamentos estables y enseñanza universitaria archivada pero mantenida.</li>
+      </ul>
+      <p>Cambios de precio, enlaces rotos, retirada del curso, nuevas ediciones importantes, cambios de credenciales, regresiones de calidad o un nuevo competidor creíble pueden desencadenar una revisión inmediata.</p>
+    </section>
+
+    <section class="methodology-section">
+      <h2>Independencia editorial y auditabilidad</h2>
+      <p>Las reglas de contribución prohíben enlaces de afiliados, referencia y seguimiento. El texto promocional de las entidades no se copia en los campos editoriales y el prestigio de la entidad no determina la admisión.</p>
+      <p>El repositorio es la fuente de verdad. Los datos canónicos, decisiones de cribado, Revisiones Profundas, decisiones de admisión y registros de mantenimiento se versionan públicamente para que las afirmaciones publicadas puedan auditarse.</p>
+      <div class="methodology-actions">
+        <a class="button button-primary" href="../courses/">Explorar cursos</a>
+        <a class="button button-ghost" href="https://github.com/Blackspirits/open-learning-index">Ver el repositorio ↗</a>
+        <a class="button button-ghost" href="https://github.com/Blackspirits/open-learning-index/issues">Comunicar una actualización ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner">
+    <div><strong>Open Learning Index</strong><p>Curado, auditable y mantenido de forma continua.</p></div>
+    <div class="footer-links"><a href="../">Inicio</a><a href="../courses/">Cursos</a><a href="../categories/">Categorías</a><a href="./">Metodología</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../methodology/" lang="en" hreflang="en">English</a></div>
+  </div></footer>
+  <script src="../../icons.js" defer></script>
+  <script src="../../theme.js" defer></script>
+</body>
+</html>
