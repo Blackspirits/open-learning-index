@@ -80,7 +80,7 @@ After the pass, **none of the 407 Medium findings retain the audited bad form**.
 
 This pass also standardises two catalogue presentation details:
 
-- proficiency levels are ordered pedagogically rather than alphabetically, with the convenience filter **Beginner-friendly / Adequado a principiantes** separated from the canonical level progression;
+- proficiency levels are ordered pedagogically rather than alphabetically; the cross-level **beginner-to-advanced** range and the convenience filter **Beginner-friendly / Adequado a principiantes** are separated from the linear progression;
 - pt-PT language names are presented consistently as lower-case common nouns, while proper region names remain capitalised inside qualifiers, e.g. **português (Portugal)** and **português (Brasil)**.
 
 ## Remaining backlog
