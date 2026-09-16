@@ -126,6 +126,8 @@ class EditorialPresentationTest(unittest.TestCase):
             'múltiplas frameworks',
             'várias frameworks',
             'na cloud',
+            'um final com soluções completas',
+            'Atual especialista',
         )
         for source, value in translations.items():
             with self.subTest(source=source[:100]):
