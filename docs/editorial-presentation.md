@@ -27,7 +27,7 @@ When updating a course:
 
 The public language labels also preserve uncertainty: `pt-PT` and `pt-BR` are named explicitly, while provider-labelled generic `pt` is displayed as “Portuguese (variant unspecified)” / “português (variante não especificada)”. In the pt-PT interface, language names are common nouns and therefore use lower case consistently; region names inside qualifiers retain proper-name capitalisation, e.g. **português (Portugal)** and **português (Brasil)**.
 
-Catalogue proficiency levels are ordered by learning progression rather than alphabetically: **beginner → beginner-to-intermediate → intermediate → intermediate-to-advanced → advanced → beginner-to-advanced → undergraduate → graduate**. The cross-level **Beginner-friendly / Adequado a principiantes** option is a shortcut filter, not a canonical level, and is displayed separately.
+Catalogue proficiency levels are ordered by learning progression rather than alphabetically: **beginner → beginner-to-intermediate → intermediate → intermediate-to-advanced → advanced → undergraduate → graduate**. The cross-level **beginner-to-advanced** value is displayed separately as a broad range rather than pretending it is one point on that ladder. **Beginner-friendly / Adequado a principiantes** is a shortcut filter, not a canonical level, and is also displayed separately.
 
 The public access labels describe what the learner receives. F0/F1/F2 remain canonical filter values and can still occur in the expanded editorial rationale; they are no longer the primary catalogue labels. F3 remains ineligible for publication.
 
