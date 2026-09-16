@@ -297,7 +297,7 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertNotIn('return isPt ? course.presentation_pt.why_recommended', app_js)
 
         for course in self.courses:
-            localized = presentation.localize_course(course)
+            localized = localize_course(course)
             presentation_pt = {
                 'title': localized['title'],
                 'description': localized['why_recommended'],
