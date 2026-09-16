@@ -123,6 +123,7 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [pt-PT linguistic QA 02](docs/qa-pt-pt-linguistic-review-02.md) | Medium-pass terminology cleanup plus catalogue level/language presentation QA |
 | [pt-PT linguistic Low independent 01](docs/qa-pt-pt-linguistic-low-independent-01.md) | Current-state Low-severity style/grammar QA after the Medium gate |
 | [pt-PT linguistic Low independent 02](docs/qa-pt-pt-linguistic-low-independent-02.md) | Focused pt-PT agreement scan and residual correction |
+| [pt-PT linguistic Low closeout](docs/qa-pt-pt-linguistic-low-independent-03-closeout.md) | Current-state Low-severity closeout and historical-ledger boundary |
 | [v0.8 hardening](docs/v0.8-hardening.md) | Earlier trust, discovery, accessibility and indexability QA |
 | [v0.7 public experience](docs/v0.7-public-experience.md) | Original public-site architecture decision |
 | [Architecture audit](AUDIT.md) | Project architecture decisions and risks |

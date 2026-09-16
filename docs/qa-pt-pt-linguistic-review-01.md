@@ -87,15 +87,18 @@ This pass also standardises two catalogue presentation details:
 
 A follow-up check of reviewer feedback from the superseded #146 branch found seven grammatical-agreement regressions introduced by systematic terminology replacement, including masculine/feminine agreement around **percurso** and **função**. These were corrected immediately after the clean Medium reconstruction, and targeted regression assertions now block the known malformed forms.
 
-## Remaining backlog
+## Low-severity current-state closeout
 
-The remaining audit class is **141 Low** findings. Some Low rows may already have been incidentally corrected by the High/G1–G14 or Medium passes, so they must be rechecked against the current dictionary rather than blindly applied.
+The original audit reported **141 Low** findings, but its row-level Low ledger was not committed to the repository. The project therefore cannot honestly claim historical 141/141 reconciliation without recovering that evidence.
 
-The final linguistic pass should prioritise:
+On 2026-09-16, three separately documented independent current-state Low passes reviewed the post-Medium dictionary and corrected **26 current presentation values**. The final whole-file scan is clean for the defined Low QA classes: known regression forms, enforced AO90 forms, controlled pt-BR lexical residues, punctuation/spacing, generic English leftovers and controlled article/gender agreement patterns.
 
-- remaining style, punctuation and minor consistency issues;
-- any residual route/pathway wording, preferring **percurso** where appropriate;
-- remaining title-consistency rows under the documented course-title policy;
-- a final whole-file scan after the Low pass.
+Current-state Low QA is therefore closed. Historical row-level Low reconciliation remains evidence debt pending recovery of the original ledger.
+
+See:
+
+- `qa-pt-pt-linguistic-low-independent-01.md`
+- `qa-pt-pt-linguistic-low-independent-02.md`
+- `qa-pt-pt-linguistic-low-independent-03-closeout.md`
 
 No course-content or scoring re-review is implied by this language QA.
