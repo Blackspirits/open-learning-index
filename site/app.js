@@ -5,10 +5,12 @@ const state = {
   viewMode: "grid",
 };
 
-const pageLocale = document.body.dataset.locale === "pt-PT" ? "pt-PT" : "en";
+const pageLocale = document.body.dataset.locale || "en";
 const pageType = document.body.dataset.page || "catalogue";
 const rootPath = document.body.dataset.root || "./";
 const isPt = pageLocale === "pt-PT";
+const localeRoutePrefixes = { en: "", "pt-PT": "pt" };
+const localeRoutePrefix = localeRoutePrefixes[pageLocale] ?? pageLocale;
 
 const languageNames = {
   en: { "pt": "Portuguese (variant unspecified)", "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
@@ -119,9 +121,8 @@ function route(path) {
 }
 
 function coursePath(courseId) {
-  return isPt
-    ? `pt/courses/${encodeURIComponent(courseId)}/`
-    : `courses/${encodeURIComponent(courseId)}/`;
+  const prefix = localeRoutePrefix ? `${localeRoutePrefix}/` : "";
+  return `${prefix}courses/${encodeURIComponent(courseId)}/`;
 }
 
 function escapeHtml(value) {
@@ -198,8 +199,15 @@ function scorePill(course) {
   return `<span class="score-pill" aria-label="${label}">${score}</span>`;
 }
 
+function presentationFor(course, locale = pageLocale) {
+  if (locale === "en") return null;
+  return course.presentations?.[locale]
+    || (locale === "pt-PT" ? course.presentation_pt : null)
+    || null;
+}
+
 function courseTitle(course) {
-  return isPt ? course.presentation_pt.title : course.title;
+  return presentationFor(course)?.title || course.title;
 }
 
 function courseMedia(course) {
@@ -413,8 +421,7 @@ function formatReviewMonth(value) {
 }
 
 function courseRationale(course) {
-  if (!isPt) return course.why_recommended;
-  return course.presentation_pt?.description || course.presentation_pt?.why_recommended || course.why_recommended;
+  return presentationFor(course)?.description || course.why_recommended;
 }
 
 function renderCatalogueCard(course, className = "catalogue-card") {

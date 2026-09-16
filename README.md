@@ -117,7 +117,9 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | [Admission protocol](docs/admission-protocol.md) | Comparative Phase-4 rules |
 | [Maintenance policy](docs/maintenance.md) | Re-verification, challengers and retirement |
 | [Data model](docs/data-model.md) | Canonical fields and invariants |
-| [v1.0 public release](docs/v1.0-public-release.md) | Final cross-audit reconciliation and public-experience hardening |\n| [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Earlier visual, accessibility, localisation and publication QA |
+| [Localisation policy](docs/localisation.md) | Locale architecture, coverage gate and publication rules |
+| [v1.0 public release](docs/v1.0-public-release.md) | Final cross-audit reconciliation and public-experience hardening |
+| [v0.10 public experience hardening](docs/v0.10-public-experience-hardening.md) | Earlier visual, accessibility, localisation and publication QA |
 | [2026-09-15 repository audit](docs/qa-repository-audit-2026-09-15.md) | Current data, Portuguese-language, licensing and publication audit |
 | [pt-PT linguistic QA 01](docs/qa-pt-pt-linguistic-review-01.md) | Independent full-dictionary review, High-severity remediation and title policy |
 | [pt-PT linguistic QA 02](docs/qa-pt-pt-linguistic-review-02.md) | Medium-pass terminology cleanup plus catalogue level/language presentation QA |
