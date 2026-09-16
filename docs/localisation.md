@@ -74,3 +74,8 @@ Terminology that must remain consistent includes:
 - language variants and regional labels.
 
 A translation service with glossary support is preferable for producing draft files because terminology can be controlled, but all public locale files remain checked into the repository and subject to repository QA.
+
+
+### Large locale dictionaries
+
+A locale dictionary may be one `site/locales/<locale>.json` file or deterministic non-overlapping fragments in `site/locales/<locale>/*.json`. Fragment filenames sort lexically and duplicate source keys are a hard error. New large locales should use fragments so translation review can be incremental without enabling partial public routes.
