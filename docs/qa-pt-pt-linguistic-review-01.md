@@ -83,6 +83,10 @@ This pass also standardises two catalogue presentation details:
 - proficiency levels are ordered pedagogically rather than alphabetically; the cross-level **beginner-to-advanced** range and the convenience filter **Beginner-friendly / Adequado a principiantes** are separated from the linear progression;
 - pt-PT language names are presented consistently as lower-case common nouns, while proper region names remain capitalised inside qualifiers, e.g. **português (Portugal)** and **português (Brasil)**.
 
+## Post-merge agreement correction
+
+A follow-up check of reviewer feedback from the superseded #146 branch found seven grammatical-agreement regressions introduced by systematic terminology replacement, including masculine/feminine agreement around **percurso** and **função**. These were corrected immediately after the clean Medium reconstruction, and targeted regression assertions now block the known malformed forms.
+
 ## Remaining backlog
 
 The remaining audit class is **141 Low** findings. Some Low rows may already have been incidentally corrected by the High/G1–G14 or Medium passes, so they must be rechecked against the current dictionary rather than blindly applied.
