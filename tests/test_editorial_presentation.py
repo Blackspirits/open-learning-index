@@ -134,6 +134,13 @@ class EditorialPresentationTest(unittest.TestCase):
                 for bad in forbidden:
                     self.assertNotIn(bad, value)
 
+    def test_pt_pt_low_independent_pass_02_regressions_are_blocked(self):
+        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        for source, value in translations.items():
+            with self.subTest(source=source[:100]):
+                self.assertNotIn('uma curso', value)
+                self.assertNotIn('curso panorâmico completo de ciência política que não é substituída', value)
+
     def test_pt_pt_language_labels_are_complete_and_consistently_lowercase(self):
         language_codes = {
             code
