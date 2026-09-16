@@ -14,7 +14,7 @@ Source provenance alone is not treated as reuse permission. A third-party image 
 
 ## Portuguese presentation
 
-`site/locales/pt-PT.json` maps exact public source strings to Portuguese presentation text. It covers titles, descriptions, prerequisites, resources, scope, credential/credit information, recommendation explanations and displayed admission notes. The dictionary began with machine translation of public repository text, followed by terminology corrections and manual review. On 2026-09-15 the full 1,355-entry dictionary received an independent pt-PT/AO90 linguistic review: 800 findings were recorded across 527 entries (252 High, 407 Medium, 141 Low). The first remediation gate applies every High finding plus the fourteen audited global terminology rules; Medium/Low findings remain an explicit follow-up backlog rather than being treated as resolved. Known semantic machine-translation failures are treated as defects and protected by regression tests.
+`site/locales/pt-PT.json` maps exact public source strings to Portuguese presentation text. It covers titles, descriptions, prerequisites, resources, scope, credential/credit information, recommendation explanations and displayed admission notes. The dictionary began with machine translation of public repository text, followed by terminology corrections and manual review. On 2026-09-15 the full 1,355-entry dictionary received an independent pt-PT/AO90 linguistic review: 800 findings were recorded across 527 entries (252 High, 407 Medium, 141 Low). The first remediation gate applied every High finding plus the fourteen audited global terminology rules. On 2026-09-16 the complete Medium set was rechecked and post-edited; no Medium row retains its audited bad form. Low-severity findings remain the final explicit follow-up class. Known semantic machine-translation failures are treated as defects and protected by regression tests.
 
 `scripts/editorial_presentation.py` makes a deep copy for localised rendering. IDs, URLs, provider names, languages, dates, statuses, access classifications and all scores stay unchanged. Source strings themselves are the lookup keys: changed editorial text fails the build until its translation is added, rather than silently publishing an English paragraph on a Portuguese page.
 
@@ -25,7 +25,11 @@ When updating a course:
 3. Add third-party artwork only when its identity, source, presentation and reuse rights are verified. Record `rights_status: verified_reuse` and `published: true`; otherwise the editorial panel is mandatory.
 4. Run the normal validation commands and the presentation tests below.
 
-The public language labels also preserve uncertainty: `pt-PT` and `pt-BR` are named explicitly, while provider-labelled generic `pt` is displayed as “Portuguese (variant unspecified)” / “Português (variante não especificada)”. The public access labels describe what the learner receives. F0/F1/F2 remain canonical filter values and can still occur in the expanded editorial rationale; they are no longer the primary catalogue labels. F3 remains ineligible for publication.
+The public language labels also preserve uncertainty: `pt-PT` and `pt-BR` are named explicitly, while provider-labelled generic `pt` is displayed as “Portuguese (variant unspecified)” / “português (variante não especificada)”. In the pt-PT interface, language names are common nouns and therefore use lower case consistently; region names inside qualifiers retain proper-name capitalisation, e.g. **português (Portugal)** and **português (Brasil)**.
+
+Catalogue proficiency levels are ordered by learning progression rather than alphabetically: **beginner → beginner-to-intermediate → intermediate → intermediate-to-advanced → advanced → beginner-to-advanced → undergraduate → graduate**. The cross-level **Beginner-friendly / Adequado a principiantes** option is a shortcut filter, not a canonical level, and is displayed separately.
+
+The public access labels describe what the learner receives. F0/F1/F2 remain canonical filter values and can still occur in the expanded editorial rationale; they are no longer the primary catalogue labels. F3 remains ineligible for publication.
 
 ### Course-title policy
 
