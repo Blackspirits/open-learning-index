@@ -208,6 +208,67 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
+.language-menu {
+  position: relative;
+}
+
+.language-menu > summary {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: #395269;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 800;
+  list-style: none;
+}
+
+.language-menu > summary::-webkit-details-marker { display: none; }
+
+.language-menu[open] > summary,
+.language-menu > summary:hover {
+  border-color: var(--control-border);
+  color: var(--primary-strong);
+}
+
+.language-menu > nav {
+  display: none;
+}
+
+.language-menu[open] > nav {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 90;
+  display: grid;
+  min-width: 190px;
+  padding: 7px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.language-menu > nav a {
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-menu > nav a:hover,
+.language-menu > nav a:focus-visible {
+  background: var(--surface-soft);
+  color: var(--primary-strong);
+}
+
 .theme-toggle {
   width: 34px;
   min-height: 34px;
