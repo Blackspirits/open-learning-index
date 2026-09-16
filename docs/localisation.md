@@ -5,7 +5,8 @@ The Open Learning Index treats localisation as an editorial surface, not as a co
 ## Current public locales
 
 - `en` — source/public default;
-- `pt-PT` — complete presentation localisation with checked-in editorial translations.
+- `pt-PT` — complete presentation localisation with checked-in editorial translations;
+- `es` — complete Spanish presentation localisation with checked-in editorial translations.
 
 ## Architecture
 
@@ -19,6 +20,10 @@ The generated public catalogue exposes translations as:
 {
   "presentations": {
     "pt-PT": {
+      "title": "...",
+      "description": "..."
+    },
+    "es": {
       "title": "...",
       "description": "..."
     }
@@ -44,19 +49,20 @@ Use:
 
 ```bash
 python scripts/check_locale_coverage.py --locale pt-PT --enforce
+python scripts/check_locale_coverage.py --locale es --enforce
 ```
 
 For a future locale, a deterministic source template can be generated with:
 
 ```bash
-python scripts/check_locale_coverage.py --locale es --write-template /tmp/es.json
+python scripts/check_locale_coverage.py --locale fr --write-template /tmp/fr.json
 ```
 
 The template contains only strings required by the **current public catalogue**, rather than every historical string ever seen in the repository.
 
 ## Planned order
 
-The preferred next locale is **Spanish (`es`)**, followed by **French (`fr`)** after Spanish has passed full coverage and linguistic QA.
+Spanish (`es`) is now public. The preferred next locale is **French (`fr`)**, using the same coverage, linguistic-QA and generated-route gates before publication.
 
 This ordering is not a commitment to publish incomplete translations. Quality remains more important than locale count.
 
