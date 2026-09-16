@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import build_public_site as build
-from editorial_presentation import localize_course, media_for, media_html, pt, MEDIA
+from editorial_presentation import localize_course, media_for, media_html, pt, translate_text, translations_for, MEDIA
 
 
 class EditorialPresentationTest(unittest.TestCase):
@@ -42,6 +42,15 @@ class EditorialPresentationTest(unittest.TestCase):
     def test_missing_translation_blocks_silent_english_fallback(self):
         with self.assertRaisesRegex(ValueError, 'Missing Portuguese'):
             pt('A newly edited sentence without a reviewed translation entry.')
+
+    def test_localisation_helpers_are_locale_generic_without_changing_pt_pt(self):
+        self.assertIs(translations_for('pt-PT'), translations_for('pt-PT'))
+        source = self.courses[0]['title']
+        self.assertEqual(translate_text('pt-PT', source), pt(source))
+        translated = localize_course(self.courses[0], locale='pt-PT')
+        self.assertEqual(translated['title'], pt(source))
+        with self.assertRaisesRegex(ValueError, 'Unsupported presentation locale'):
+            translations_for('zz-ZZ')
 
     def test_known_machine_translation_semantic_traps_are_blocked(self):
         translations = build.translate_pt.__globals__['TRANSLATIONS']
@@ -291,21 +300,29 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertNotIn('github.com/Blackspirits/open-learning-index/blob/main/docs/methodology.md', html)
 
 
-    def test_pt_catalogue_runtime_uses_generated_presentation_description(self):
+    def test_catalogue_runtime_uses_locale_keyed_presentation_payloads(self):
         app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
-        self.assertIn('course.presentation_pt?.description', app_js)
+        self.assertIn('course.presentations?.[locale]', app_js)
+        self.assertIn('localeRoutePrefixes', app_js)
         self.assertNotIn('return isPt ? course.presentation_pt.why_recommended', app_js)
 
         for course in self.courses:
-            localized = localize_course(course)
-            presentation_pt = {
+            localized = localize_course(course, locale='pt-PT')
+            presentation = {
                 'title': localized['title'],
                 'description': localized['why_recommended'],
             }
             with self.subTest(course=course['id']):
-                self.assertTrue(presentation_pt['description'])
-                self.assertEqual(presentation_pt['description'], localized['why_recommended'])
+                self.assertTrue(presentation['description'])
+                self.assertEqual(presentation['description'], localized['why_recommended'])
 
+
+
+    def test_public_build_declares_locale_keyed_presentations(self):
+        builder = (ROOT / 'scripts' / 'build_public_site.py').read_text(encoding='utf-8')
+        self.assertIn('SUPPORTED_PRESENTATION_LOCALES = ("pt-PT",)', builder)
+        self.assertIn('item["presentations"][locale]', builder)
+        self.assertIn('item["presentation_pt"] = dict(item["presentations"]["pt-PT"])', builder)
 
     def test_functional_control_borders_use_accessible_tokens(self):
         css = (ROOT / 'site' / 'styles.css').read_text(encoding='utf-8')
