@@ -96,6 +96,22 @@ class EditorialPresentationTest(unittest.TestCase):
                     self.assertNotIn('ao vivo', lowered)
                     self.assertNotIn('em direto', lowered)
 
+    def test_pt_pt_medium_agreement_regressions_are_blocked(self):
+        translations = build.translate_pt.__globals__['TRANSLATIONS']
+        values = list(translations.values())
+        forbidden = (
+            'um função',
+            'o seu função',
+            'percurso interativo gratuita',
+            'percurso OCW gratuita',
+            'percurso interativo completo é executada',
+            'percurso de vendas dedicada',
+            'Percurso de segurança de endpoint densa',
+        )
+        for value in values:
+            for bad in forbidden:
+                self.assertNotIn(bad, value)
+
     def test_pt_pt_language_labels_are_complete_and_consistently_lowercase(self):
         language_codes = {
             code
