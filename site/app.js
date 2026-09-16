@@ -66,8 +66,8 @@ const levelNamesPt = {
   intermediate: "Intermédio",
   intermediate_to_advanced: "Intermédio a avançado",
   advanced: "Avançado",
-  graduate: "Pós-graduação",
   undergraduate: "Licenciatura",
+  graduate: "Pós-graduação",
 };
 
 const levelOrder = [
