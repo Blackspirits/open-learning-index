@@ -527,11 +527,11 @@ def render_static_course(course: dict, course_by_id: dict, candidate_by_id: dict
         )
     before_html = "".join(before_parts) or "<p>No additional preparation requirements are documented.</p>"
 
+    # The public page already uses the canonical learner-facing why_recommended
+    # in the overview. Review rationales may contain calibration / pipeline notes,
+    # so they remain in the auditable review ledger rather than being duplicated
+    # into the learner-facing page.
     score_parts = []
-    if review.get("recommendation_rationale"):
-        score_parts.append(
-            f'<h3>Recommendation rationale</h3><p>{escape(review["recommendation_rationale"])}</p>'
-        )
     if admission.get("learning_need"):
         score_parts.append(
             f'<h3>Learning need</h3><p>{escape(admission["learning_need"])}</p>'
