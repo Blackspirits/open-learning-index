@@ -131,7 +131,7 @@ The public site is deliberately static and framework-free. Visual improvements a
 
 Do not add provider logos, course artwork or other third-party assets unless their reuse rights are verified. Prefer the project's original SVG icon and visual system when a neutral interface symbol is sufficient.
 
-The public Portuguese interface is explicitly **pt-PT**. Canonical course facts, URLs, scores and language metadata must never be changed merely to fit the translated presentation. The checked-in presentation dictionary may translate learner-facing titles and editorial text into reviewed European Portuguese while preserving the original course title and canonical evidence. Provider names and other proper names should remain unchanged unless an official localized form is evidenced.
+Public localisation currently includes **pt-PT** and **es**. Canonical course facts, URLs, scores and language metadata must never be changed merely to fit a translated presentation. Checked-in presentation dictionaries may translate learner-facing titles and editorial text into reviewed locale-specific copy while preserving the original course title and canonical evidence. The Portuguese interface is explicitly European Portuguese (pt-PT). Provider names and other proper names should remain unchanged unless an official localised form is evidenced.
 
 ## Licensing of contributions
 
