@@ -1740,10 +1740,21 @@ def build(output: Path) -> None:
                 "title": localized["title"],
                 "description": localized["why_recommended"],
             }
-        # Backwards-compatible projection retained for the current pt-PT frontend.
+        # Backwards-compatible projection retained while the runtime still accepts
+        # the pre-generic Portuguese payload.
         item["presentation_pt"] = dict(item["presentations"]["pt-PT"])
-        pt_presentation = item["presentations"]["pt-PT"]
-        item["search_text"] += " " + pt_presentation["title"] + " " + pt_presentation["description"] + " " + PT_CATEGORY_LABELS[item["category"]]
+        for locale in SUPPORTED_PRESENTATION_LOCALES:
+            presentation = item["presentations"][locale]
+            category_label = LOCALE_CATEGORY_LABELS.get(locale, {}).get(
+                item["category"],
+                item["category_name"],
+            )
+            item["search_text"] += (
+                " " + presentation["title"]
+                + " " + presentation["description"]
+                + " " + category_label
+            )
+        item["search_text"] = normalize_search_text(item["search_text"])
         public_courses.append(item)
 
     ids = [course["id"] for course in public_courses]
@@ -1786,49 +1797,52 @@ def build(output: Path) -> None:
     write_json(output / "data" / "meta.json", meta)
 
     course_by_id = {course["id"]: course for course in public_courses}
-    for course in public_courses:
+    for locale in PUBLIC_LOCALES:
+        prefix = LOCALE_META[locale]["prefix"]
+        locale_root = output / prefix if prefix else output
+
+        for course in public_courses:
+            write_text(
+                locale_root / "courses" / course["id"] / "index.html",
+                render_static_course(
+                    course,
+                    course_by_id,
+                    candidate_by_id,
+                    locale=locale,
+                ),
+            )
+
         write_text(
-            output / "courses" / course["id"] / "index.html",
-            render_static_course(course, course_by_id, candidate_by_id),
-        )
-        write_text(
-            output / "pt" / "courses" / course["id"] / "index.html",
-            render_static_course_pt(course, course_by_id, candidate_by_id),
+            locale_root / "categories" / "index.html",
+            render_category_directory(category_rows, public_courses, locale=locale),
         )
 
-    write_text(
-        output / "categories" / "index.html",
-        render_category_directory(category_rows, public_courses, locale="en"),
-    )
-    write_text(
-        output / "pt" / "categories" / "index.html",
-        render_category_directory(category_rows, public_courses, locale="pt-PT"),
-    )
+        for category in category_rows:
+            write_text(
+                locale_root / "categories" / category["id"] / "index.html",
+                render_static_category(category, public_courses, locale=locale),
+            )
 
-    for category in category_rows:
-        write_text(
-            output / "categories" / category["id"] / "index.html",
-            render_static_category(category, public_courses, locale="en"),
+    sitemap_urls = []
+    for locale in PUBLIC_LOCALES:
+        prefix = LOCALE_META[locale]["prefix"]
+        locale_base = f"{BASE_URL}/{prefix}/" if prefix else f"{BASE_URL}/"
+        sitemap_urls.extend(
+            [
+                locale_base,
+                locale_base + "courses/",
+                locale_base + "categories/",
+                locale_base + "methodology/",
+            ]
         )
-        write_text(
-            output / "pt" / "categories" / category["id"] / "index.html",
-            render_static_category(category, public_courses, locale="pt-PT"),
+        sitemap_urls.extend(
+            locale_base + f"courses/{course['id']}/"
+            for course in public_courses
         )
-
-    sitemap_urls = [
-        f"{BASE_URL}/",
-        f"{BASE_URL}/courses/",
-        f"{BASE_URL}/categories/",
-        f"{BASE_URL}/pt/",
-        f"{BASE_URL}/pt/courses/",
-        f"{BASE_URL}/pt/categories/",
-        f"{BASE_URL}/methodology/",
-        f"{BASE_URL}/pt/methodology/",
-    ]
-    sitemap_urls.extend(f"{BASE_URL}/courses/{course['id']}/" for course in public_courses)
-    sitemap_urls.extend(f"{BASE_URL}/pt/courses/{course['id']}/" for course in public_courses)
-    sitemap_urls.extend(f"{BASE_URL}/categories/{category['id']}/" for category in category_rows)
-    sitemap_urls.extend(f"{BASE_URL}/pt/categories/{category['id']}/" for category in category_rows)
+        sitemap_urls.extend(
+            locale_base + f"categories/{category['id']}/"
+            for category in category_rows
+        )
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -1870,14 +1884,6 @@ def build(output: Path) -> None:
     )
 
     required = [
-        output / "index.html",
-        output / "courses" / "index.html",
-        output / "pt" / "index.html",
-        output / "pt" / "courses" / "index.html",
-        output / "categories" / "index.html",
-        output / "pt" / "categories" / "index.html",
-        output / "methodology" / "index.html",
-        output / "pt" / "methodology" / "index.html",
         output / "assets" / "hero-library.webp",
         output / "app.js",
         output / "icons.js",
@@ -1890,10 +1896,25 @@ def build(output: Path) -> None:
         output / "robots.txt",
         output / "404.html",
     ]
-    required.extend(output / "courses" / course["id"] / "index.html" for course in public_courses)
-    required.extend(output / "pt" / "courses" / course["id"] / "index.html" for course in public_courses)
-    required.extend(output / "categories" / category["id"] / "index.html" for category in category_rows)
-    required.extend(output / "pt" / "categories" / category["id"] / "index.html" for category in category_rows)
+    for locale in PUBLIC_LOCALES:
+        prefix = LOCALE_META[locale]["prefix"]
+        locale_root = output / prefix if prefix else output
+        required.extend(
+            [
+                locale_root / "index.html",
+                locale_root / "courses" / "index.html",
+                locale_root / "categories" / "index.html",
+                locale_root / "methodology" / "index.html",
+            ]
+        )
+        required.extend(
+            locale_root / "courses" / course["id"] / "index.html"
+            for course in public_courses
+        )
+        required.extend(
+            locale_root / "categories" / category["id"] / "index.html"
+            for category in category_rows
+        )
     missing_files = [str(path.relative_to(output)) for path in required if not path.exists()]
     if missing_files:
         raise SystemExit(f"ERROR: public build missing required files: {missing_files}")
