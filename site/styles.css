@@ -9,6 +9,7 @@
   --muted: #617287;
   --line: #dbe5ea;
   --line-strong: #c8d6dd;
+  --control-border: #7d919c;
   --primary: #079a86;
   --primary-strong: #007d6d;
   --primary-soft: #dff5f0;
@@ -57,6 +58,9 @@ summary { font: inherit; }
 button,
 input,
 select { border: 1px solid var(--line); }
+
+input,
+select { border-color: var(--control-border); }
 
 button:focus-visible,
 input:focus-visible,
@@ -745,7 +749,7 @@ h1, h2, h3 {
   align-items: center;
   gap: 10px;
   padding: 0 14px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--control-border);
   border-radius: 10px;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
@@ -1806,6 +1810,7 @@ html[data-theme="dark"] {
   --muted: #99acb8;
   --line: #213842;
   --line-strong: #31505c;
+  --control-border: #526b77;
   --primary: #2ecdb5;
   --primary-strong: #70e5d2;
   --primary-soft: #0e3734;
