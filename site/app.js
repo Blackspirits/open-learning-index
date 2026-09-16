@@ -12,7 +12,7 @@ const isPt = pageLocale === "pt-PT";
 
 const languageNames = {
   en: { "pt": "Portuguese (variant unspecified)", "pt-BR": "Portuguese (Brazil)", "pt-PT": "Portuguese (Portugal)" },
-  "pt-PT": { "pt": "Português (variante não especificada)", "pt-BR": "Português (Brasil)", "pt-PT": "Português (Portugal)" },
+  "pt-PT": { "pt": "português (variante não especificada)", "pt-BR": "português (Brasil)", "pt-PT": "português (Portugal)" },
 };
 
 const categoryNamesPt = {
@@ -66,9 +66,20 @@ const levelNamesPt = {
   intermediate: "Intermédio",
   intermediate_to_advanced: "Intermédio a avançado",
   advanced: "Avançado",
-  graduate: "Pós-graduação",
   undergraduate: "Licenciatura",
+  graduate: "Pós-graduação",
 };
+
+const levelOrder = [
+  "beginner",
+  "beginner_to_intermediate",
+  "beginner_to_advanced",
+  "intermediate",
+  "intermediate_to_advanced",
+  "advanced",
+  "undergraduate",
+  "graduate",
+];
 
 const accessPt = {
   F0: "Curso e credencial gratuitos",
@@ -108,9 +119,13 @@ function labelLanguage(code) {
   }
 }
 
+function labelLanguageOption(code) {
+  const label = labelLanguage(code);
+  return isPt ? `${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}` : label;
+}
+
 function labelCourseLanguage(course) {
-  const label = labelLanguage(course.primary_language);
-  return isPt ? `Em ${label.charAt(0).toLocaleLowerCase(pageLocale)}${label.slice(1)}` : `In ${label}`;
+  return isPt ? `Em ${labelLanguageOption(course.primary_language)}` : `In ${labelLanguageOption(course.primary_language)}`;
 }
 
 function labelCategory(course) {
@@ -294,12 +309,16 @@ function populateFilters(els) {
   const categories = [...new Map(state.courses.map((c) => [c.category, labelCategory(c)])).entries()]
     .sort((a, b) => a[1].localeCompare(b[1], pageLocale));
   const languages = [...new Set(state.courses.flatMap((c) => [c.primary_language, ...c.other_languages]))]
-    .sort((a, b) => labelLanguage(a).localeCompare(labelLanguage(b), pageLocale));
+    .sort((a, b) => labelLanguageOption(a).localeCompare(labelLanguageOption(b), pageLocale));
+  const levelRank = new Map(levelOrder.map((value, index) => [value, index]));
   const levels = [...new Set(state.courses.map((c) => c.level))]
-    .sort((a, b) => labelLevel(a).localeCompare(labelLevel(b), pageLocale));
+    .sort((a, b) =>
+      (levelRank.get(a) ?? Number.MAX_SAFE_INTEGER) - (levelRank.get(b) ?? Number.MAX_SAFE_INTEGER) ||
+      labelLevel(a).localeCompare(labelLevel(b), pageLocale)
+    );
 
   categories.forEach(([value, label]) => els.category.add(new Option(label, value)));
-  languages.forEach((value) => els.language.add(new Option(labelLanguage(value), value)));
+  languages.forEach((value) => els.language.add(new Option(labelLanguageOption(value), value)));
   levels.forEach((value) => els.level.add(new Option(labelLevel(value), value)));
 }
 
