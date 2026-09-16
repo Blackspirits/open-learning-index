@@ -373,7 +373,12 @@ function filteredCourses(values) {
   const queryTokens = tokenize(values.q);
   const list = state.courses.filter((course) => {
     const courseTokens = tokenize(`${course.search_text} ${labelCategory(course)} ${labelLanguage(course.primary_language)}`);
-    if (queryTokens.length && !queryTokens.every((word) => courseTokens.includes(word))) return false;
+    if (
+      queryTokens.length &&
+      !queryTokens.every((word) =>
+        courseTokens.some((token) => token === word || (word.length >= 2 && token.startsWith(word)))
+      )
+    ) return false;
     if (values.category && course.category !== values.category) return false;
     if (values.language && course.primary_language !== values.language && !course.other_languages.includes(values.language)) return false;
     if (values.level === "beginner-friendly" && !["beginner", "beginner_to_intermediate"].includes(course.level)) return false;
@@ -396,49 +401,58 @@ function filteredCourses(values) {
   return list.sort(compare);
 }
 
+function formatReviewMonth(value) {
+  const date = new Date(`${value}T00:00:00Z`);
+  return new Intl.DateTimeFormat(pageLocale, {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+function courseRationale(course) {
+  return isPt ? course.presentation_pt.why_recommended : course.why_recommended;
+}
+
 function renderCatalogueCard(course, className = "catalogue-card") {
   const archived = course.status === "active_archive"
     ? `<span class="mini-tag tag-archive">${isPt ? "Arquivado" : "Archived"}</span>`
     : "";
   const accessText = isPt ? (accessPt[course.access_short] || course.access_label) : course.access_label;
+  const recScore = new Intl.NumberFormat(pageLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(course.recommendation_score);
+  const qualityScore = new Intl.NumberFormat(pageLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(course.quality_score);
+  const recLabel = isPt ? "Recomendação" : "Recommendation";
+  const qualityLabel = isPt ? "Qualidade" : "Quality";
+  const verifiedLabel = isPt ? "Verificado" : "Verified";
   return `
     <article class="${className}">
-      ${courseMedia(course)}
       <div class="card-body">
-      <div class="card-heading">
-        <p class="provider">${escapeHtml(course.provider)}</p>
-        <h3><a href="${route(coursePath(course.id))}">${escapeHtml(courseTitle(course))}</a></h3>
-      </div>
-      <div class="catalogue-card-head">
-        ${scorePill(course)}
-        <span class="score-context">${isPt ? "Recomendação" : "Recommendation"}</span>
-      </div>
-      <div class="mini-tags">
-        <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
-        <span class="mini-tag">${escapeHtml(labelCourseLanguage(course))}</span>
-        <span class="mini-tag">${escapeHtml(labelLevel(course.level))}</span>
-        ${archived}
-      </div>
-      <div class="access-line">
-        <span data-icon="access" aria-hidden="true"></span>
-        <span>${escapeHtml(accessText)}</span>
-      </div>
+        <div class="card-heading">
+          <p class="provider">${escapeHtml(course.provider)}</p>
+          <h3><a href="${route(coursePath(course.id))}">${escapeHtml(courseTitle(course))}</a></h3>
+        </div>
+        <div class="card-score-row">
+          <span class="card-score card-score-primary" aria-label="${recLabel} ${recScore} / 10"><strong>${recScore}</strong><small>${recLabel}</small></span>
+          <span class="card-score" aria-label="${qualityLabel} ${qualityScore} / 10"><strong>${qualityScore}</strong><small>${qualityLabel}</small></span>
+          <span class="mini-tag tag-tier">${escapeHtml(course.quality_tier)}</span>
+        </div>
+        <p class="card-rationale">${escapeHtml(courseRationale(course))}</p>
+        <div class="mini-tags">
+          <span class="mini-tag tag-category">${escapeHtml(labelCategory(course))}</span>
+          <span class="mini-tag">${escapeHtml(labelCourseLanguage(course))}</span>
+          <span class="mini-tag">${escapeHtml(labelLevel(course.level))}</span>
+          ${archived}
+        </div>
+        <div class="card-footer">
+          <div class="access-line">
+            <span data-icon="access" aria-hidden="true"></span>
+            <span>${escapeHtml(accessText)}</span>
+          </div>
+          <span class="verified-line">${verifiedLabel} ${escapeHtml(formatReviewMonth(course.last_verified))}</span>
+        </div>
       </div>
     </article>
   `;
-}
-
-function activeFilterCount(values) {
-  return [
-    values.category,
-    values.language,
-    values.level,
-    values.access,
-    values.tier,
-    values.status,
-    values.credential,
-    values.credit,
-  ].filter(Boolean).length;
 }
 
 function renderActiveFilters(els, values) {
