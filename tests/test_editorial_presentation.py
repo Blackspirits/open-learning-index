@@ -230,6 +230,29 @@ class EditorialPresentationTest(unittest.TestCase):
                 with self.subTest(course=course['id'], phrase=phrase):
                     self.assertNotIn(phrase, html.lower())
 
+
+    def test_catalogue_cards_surface_decision_data_without_decorative_media(self):
+        course = self.courses[0]
+        html = build.static_catalogue_card(course)
+        self.assertIn('card-score-row', html)
+        self.assertIn('card-rationale', html)
+        self.assertIn('verified-line', html)
+        self.assertIn(f'{course["quality_score"]:.1f}', html)
+        self.assertIn(course['quality_tier'], html)
+        self.assertIn(course['why_recommended'], html)
+        self.assertNotIn('course-media', html)
+        self.assertNotIn('media-provider-name', html)
+
+    def test_catalogue_search_supports_prefix_matching(self):
+        app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
+        self.assertIn('token.startsWith(word)', app_js)
+        self.assertIn('word.length >= 2', app_js)
+
+    def test_access_icon_does_not_signal_a_locked_course(self):
+        icons_js = (ROOT / 'site' / 'icons.js').read_text(encoding='utf-8')
+        self.assertIn('access:', icons_js)
+        self.assertNotIn('M7 11V8a5 5 0 0 1 10 0v3', icons_js)
+
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
             with self.subTest(course=course_id):
