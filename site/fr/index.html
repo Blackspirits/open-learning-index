@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Index rigoureusement sélectionné des meilleurs cours gratuits et ressources d’apprentissage ouvert.">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    try {
+      const saved = localStorage.getItem("oli-theme");
+      const theme = saved === "dark" || saved === "light"
+        ? saved
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {}
+  </script>
+  <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/fr/">
+  <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/">
+  <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/">
+  <link rel="alternate" hreflang="es" href="https://blackspirits.github.io/open-learning-index/es/">
+  <link rel="alternate" hreflang="fr" href="https://blackspirits.github.io/open-learning-index/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://blackspirits.github.io/open-learning-index/">
+  <title>Open Learning Index · Français</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../editorial.css">
+</head>
+<body data-page="home" data-locale="fr" data-root="../">
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="./" aria-label="Accueil d’Open Learning Index">
+        <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span>
+        <span>Open Learning Index</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="courses/">Cours</a>
+        <a href="categories/">Catégories</a>
+        <a href="methodology/">Méthodologie</a>
+        <a href="#how-it-works">Comment ça marche</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Ouvrir la navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Navigation mobile">
+          <a href="courses/">Cours</a>
+          <a href="categories/">Catégories</a>
+          <a href="methodology/">Méthodologie</a>
+          <a href="#how-it-works">Comment ça marche</a>
+        </nav>
+      </details>
+      <div class="nav-actions">
+        <a class="icon-link" href="courses/" aria-label="Rechercher des cours"><span data-icon="search" aria-hidden="true"></span></a>
+        <details class="language-menu"><summary aria-label="Langue">FR</summary><nav aria-label="Langue"><a href="../" lang="en" hreflang="en">English</a><a href="../pt/" lang="pt-PT" hreflang="pt-PT">Português (Portugal)</a><a href="../es/" lang="es" hreflang="es">Español</a><a href="./" lang="fr" hreflang="fr">Français</a></nav></details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Utiliser le thème sombre" title="Utiliser le thème sombre"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="home-hero">
+      <div class="shell hero-frame">
+        <div class="hero-art" aria-hidden="true"><img src="../assets/hero-library.webp" alt="" width="1536" height="1024" fetchpriority="high"></div>
+        <div class="hero-copy-block">
+          <p class="eyebrow">Indépendant · fondé sur des preuves · révisé régulièrement</p>
+          <h1>Les meilleurs cours gratuits en ligne,<br>évalués de manière indépendante.</h1>
+          <p class="hero-copy">
+            Apprendre ouvre de nouveaux horizons. Nous vérifions l’accès réellement gratuit, la qualité pédagogique et l’actualité avant qu’un cours n’entre dans l’index.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="courses/">Explorer les cours <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#how-it-works">Comment ça marche</a>
+          </div>
+          <div class="home-stats" aria-label="Statistiques de l’index">
+            <div><strong id="stat-courses">—</strong><span>cours</span></div>
+            <div><strong id="stat-categories">—</strong><span>catégories</span></div>
+            <div><strong id="stat-languages">—</strong><span>langues</span></div>
+            <div><strong id="stat-verified">—</strong><span>dernière vérification</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="principles-strip">
+      <div class="shell principles-grid">
+        <article><span class="principle-icon" data-icon="curated" aria-hidden="true"></span><div><strong>Sélection rigoureuse</strong><small>La qualité avant la quantité</small></div></article>
+        <article><span class="principle-icon" data-icon="evidence" aria-hidden="true"></span><div><strong>Fondé sur des preuves</strong><small>Évaluations indépendantes</small></div></article>
+        <article><span class="principle-icon" data-icon="clock" aria-hidden="true"></span><div><strong>Vérification régulière</strong><small>Fréquence adaptée au risque</small></div></article>
+        <article><span class="principle-icon" data-icon="globe" aria-hidden="true"></span><div><strong>Pour tous</strong><small>Global et accessible</small></div></article>
+      </div>
+    </section>
+
+    <section id="categories" class="home-section shell">
+      <div class="section-heading">
+        <div><p class="section-kicker">Explorer par thème</p><h2>Explorer par catégorie</h2></div>
+        <a href="categories/">Voir toutes les catégories <span aria-hidden="true">→</span></a>
+      </div>
+      <div id="home-categories" class="category-showcase"></div>
+    </section>
+
+    <section class="home-section shell">
+      <div class="section-heading">
+        <div><p class="section-kicker">Sélection éditoriale</p><h2>Cours à la une</h2></div>
+        <a href="courses/">Voir tous les cours <span aria-hidden="true">→</span></a>
+      </div>
+      <div id="featured-courses" class="featured-grid"></div>
+    </section>
+
+    <section id="how-it-works" class="home-section shell how-panel">
+      <div><p class="section-kicker">Comment ça marche</p><h2>Les preuves d’abord. La popularité ensuite.</h2></div>
+      <div class="how-copy">
+        <p><strong>Recommandation</strong> mesure si un cours est un bon choix aujourd’hui. <strong>Qualité</strong> évalue le cours lui-même : pédagogie, profondeur, pratique, ressources, actualité, expertise et accessibilité.</p>
+        <p>Chaque candidat passe par un tri, une évaluation approfondie et une admission comparative avant publication. Les cours publiés sont ensuite revérifiés selon leur niveau de risque.</p>
+        <a href="methodology/">Lire la méthodologie <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><strong>Open Learning Index</strong><p>Sélectionné avec rigueur, auditable et maintenu en continu.</p></div>
+      <div class="footer-links"><a href="./">Accueil</a><a href="courses/">Cours</a><a href="methodology/">Méthodologie</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../" lang="en" hreflang="en">English</a></div>
+    </div>
+  </footer>
+
+  <noscript><div class="noscript">Ce site nécessite JavaScript pour les listes dynamiques de cours. Les données canoniques restent disponibles sur GitHub.</div></noscript>
+  <script src="../icons.js" defer></script>
+  <script src="../theme.js" defer></script>
+  <script src="../app-fr.js" defer></script>
+</body>
+</html>
