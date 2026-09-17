@@ -23,7 +23,8 @@ jobs:
         run: python scripts/check_locale_coverage.py --locale es --enforce
       - name: Enforce French editorial locale coverage
         run: python scripts/check_locale_coverage.py --locale fr --enforce
-      - run: python scripts/validate.py
+      - name: Validate canonical data and generated public site
+        run: python scripts/validate_dataset_public.py
       - run: python scripts/generate_csv.py
       - run: git diff --exit-code -- data/courses.csv
       - name: Build public site
