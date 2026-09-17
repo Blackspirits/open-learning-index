@@ -62,8 +62,55 @@ def validate_runtime_with_french(site: Path, errors: list[str]) -> None:
             )
 
 
+def validate_locale_pairs_with_french(
+    site: Path,
+    pages: dict[Path, validate.PageParser],
+    errors: list[str],
+) -> None:
+    prefixes = {prefix for prefix in validate.PUBLIC_LOCALES.values() if prefix}
+
+    for rel, parser in pages.items():
+        rel_posix = rel.as_posix()
+        if rel_posix in {"404.html", "course.html"} or not rel_posix.endswith("index.html"):
+            continue
+
+        parts = rel.parts
+        if parts and parts[0] in prefixes:
+            route_parts = parts[1:-1]
+        else:
+            route_parts = parts[:-1]
+
+        route = "/".join(route_parts)
+        route_suffix = f"{route}/" if route else ""
+
+        for locale, prefix in validate.PUBLIC_LOCALES.items():
+            target_rel = Path(prefix) if prefix else Path()
+            if route_parts:
+                target_rel = target_rel.joinpath(*route_parts)
+            target_rel = target_rel / "index.html"
+            if target_rel not in pages:
+                validate.fail(
+                    errors,
+                    f"{rel_posix}: missing {locale} counterpart {target_rel.as_posix()}",
+                )
+
+            target_base = (
+                f"{validate.BASE_URL}/{prefix}/"
+                if prefix
+                else f"{validate.BASE_URL}/"
+            )
+            expected = target_base + route_suffix
+            if parser.alternates.get(locale) != expected:
+                validate.fail(
+                    errors,
+                    f"{rel_posix}: missing or incorrect {locale} alternate; "
+                    f"expected {expected}, found {parser.alternates.get(locale)}",
+                )
+
+
 validate.validate_page = validate_page_with_french
 validate.validate_catalogue_runtime_contract = validate_runtime_with_french
+validate.validate_locale_pairs = validate_locale_pairs_with_french
 
 
 if __name__ == "__main__":
