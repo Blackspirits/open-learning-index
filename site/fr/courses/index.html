@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorez tous les cours gratuits sélectionnés dans Open Learning Index.">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    try {
+      const saved = localStorage.getItem("oli-theme");
+      const theme = saved === "dark" || saved === "light"
+        ? saved
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.style.colorScheme = theme;
+    } catch {}
+  </script>
+  <link rel="canonical" href="https://blackspirits.github.io/open-learning-index/fr/courses/">
+  <link rel="alternate" hreflang="en" href="https://blackspirits.github.io/open-learning-index/courses/">
+  <link rel="alternate" hreflang="pt-PT" href="https://blackspirits.github.io/open-learning-index/pt/courses/">
+  <link rel="alternate" hreflang="es" href="https://blackspirits.github.io/open-learning-index/es/courses/">
+  <link rel="alternate" hreflang="fr" href="https://blackspirits.github.io/open-learning-index/fr/courses/">
+  <title>Tous les cours · Open Learning Index</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../editorial.css">
+</head>
+<body data-page="catalogue" data-locale="fr" data-root="../../">
+  <a class="skip-link" href="#results">Aller aux résultats</a>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="../" aria-label="Accueil d’Open Learning Index">
+        <span class="brand-symbol" data-icon="brand" aria-hidden="true"></span>
+        <span>Open Learning Index</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a class="active" href="./">Cours</a>
+        <a href="../categories/">Catégories</a>
+        <a href="../methodology/">Méthodologie</a>
+        <a href="../#how-it-works">Comment ça marche</a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Ouvrir la navigation"><span class="menu-icon" aria-hidden="true"></span></summary>
+        <nav aria-label="Navigation mobile"><a href="../">Accueil</a><a href="./">Cours</a><a href="../categories/">Catégories</a><a href="../methodology/">Méthodologie</a><a href="../#how-it-works">Comment ça marche</a></nav>
+      </details>
+      <div class="nav-actions">
+        <button class="icon-link" type="button" data-focus-search aria-label="Placer le curseur dans la recherche"><span data-icon="search" aria-hidden="true"></span></button>
+        <details class="language-menu"><summary aria-label="Langue">FR</summary><nav aria-label="Langue"><a href="../../courses/" lang="en" hreflang="en">English</a><a href="../../pt/courses/" lang="pt-PT" hreflang="pt-PT">Português (Portugal)</a><a href="../../es/courses/" lang="es" hreflang="es">Español</a><a href="./" lang="fr" hreflang="fr">Français</a></nav></details>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Utiliser le thème sombre" title="Utiliser le thème sombre"><span data-theme-icon data-icon="moon" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell catalogue-page">
+    <header class="page-heading">
+      <p class="section-kicker">Catalogue sélectionné</p>
+      <h1>Tous les cours</h1>
+      <p>Découvrez <strong id="page-course-count">—</strong> cours gratuits en ligne de grande qualité, évalués et classés de manière indépendante.</p>
+    </header>
+
+    <section class="catalogue-toolbar" aria-labelledby="filter-heading">
+      <h2 id="filter-heading" class="sr-only">Filtres des cours</h2>
+      <form id="filters" autocomplete="off">
+        <div class="search-row">
+          <label class="search-box" for="search">
+            <span data-icon="search" aria-hidden="true"></span>
+            <span class="sr-only">Rechercher des cours</span>
+            <input id="search" name="q" type="search" placeholder="Rechercher des cours, thèmes, fournisseurs…">
+          </label>
+        </div>
+
+        <div class="filter-row">
+          <details id="primary-filters" class="primary-filter-disclosure" open>
+            <summary>Filtres <span id="mobile-filter-count" class="filter-count"></span></summary>
+            <div class="primary-filter-fields">
+              <div class="compact-field"><label for="category">Catégorie</label><select id="category" name="category"><option value="">Catégorie</option></select></div>
+              <div class="compact-field"><label for="level">Niveau</label><select id="level" name="level"><option value="">Niveau</option></select></div>
+              <div class="compact-field"><label for="language">Langue du cours</label><select id="language" name="language"><option value="">Langue du cours</option></select></div>
+              <div class="compact-field"><label for="status">Statut</label><select id="status" name="status"><option value="">Statut</option><option value="active">Actif</option><option value="active_archive">Archivé</option></select></div>
+              <details class="more-filters">
+                <summary>Plus de filtres</summary>
+                <div class="extra-filter-row">
+                  <div class="compact-field"><label for="access">Accès gratuit</label><select id="access" name="access"><option value="">Type d’accès gratuit</option><option value="F0">Attestation gratuite</option><option value="F1">Parcours évalué gratuit</option><option value="F2">Contenu pédagogique gratuit</option></select></div>
+                  <div class="compact-field"><label for="tier">Niveau de qualité</label><select id="tier" name="tier"><option value="">Tous</option><option value="S+">S+</option><option value="S">S</option><option value="A+">A+</option><option value="A">A</option></select></div>
+                  <label class="filter-check"><input id="credential" name="credential" type="checkbox" value="1"> Uniquement avec attestation gratuite</label>
+                  <label class="filter-check"><input id="credit" name="credit" type="checkbox" value="1"> Uniquement avec crédits académiques gratuits</label>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
+        <div class="active-filter-summary"><div id="active-filters" class="active-filters" aria-label="Filtres actifs"></div><button id="clear-filters" class="clear-button" type="button">× Effacer les filtres</button></div>
+      </form>
+    </section>
+
+    <div class="catalogue-meta">
+      <p id="result-count" aria-live="polite">Chargement des cours…</p>
+      <div class="catalogue-display-controls"><div class="compact-field sort-field"><label for="sort">Trier par</label><select id="sort" form="filters" name="sort"><option value="recommendation">Recommandation</option><option value="quality">Qualité</option><option value="verified">Vérification récente</option><option value="title">Titre</option></select></div>
+      <div class="view-toggle" aria-label="Mode d’affichage">
+        <button type="button" class="active" data-view="grid" aria-pressed="true">Grille</button>
+        <button type="button" data-view="list" aria-pressed="false">Liste</button>
+      </div>
+      </div>
+    </div>
+
+    <div id="results" class="course-grid catalogue-grid"></div>
+
+    <div class="show-more-row">
+      <button id="show-more" class="show-more" type="button" hidden>Afficher plus</button>
+    </div>
+
+    <div id="empty-state" class="empty" hidden>
+      <h3>Aucun cours ne correspond à ces filtres.</h3>
+      <p>Supprimez un filtre ou élargissez votre recherche.</p>
+      <button id="empty-clear-filters" class="button button-primary" type="button">Effacer tous les filtres</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div><strong>Open Learning Index</strong><p>Sélectionné avec rigueur, auditable et maintenu en continu.</p></div>
+      <div class="footer-links"><a href="../">Accueil</a><a href="./">Cours</a><a href="../methodology/">Méthodologie</a><a href="https://github.com/Blackspirits/open-learning-index">GitHub</a><a href="../../courses/" lang="en" hreflang="en">English</a></div>
+    </div>
+  </footer>
+  <script src="../../icons.js" defer></script>
+  <script src="../../theme.js" defer></script>
+  <script src="../../app-fr.js" defer></script>
+</body>
+</html>
