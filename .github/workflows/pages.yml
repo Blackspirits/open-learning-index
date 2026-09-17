@@ -12,9 +12,11 @@ on:
       - 'data/admissions/**'
       - 'site/**'
       - 'scripts/build_public_site.py'
+      - 'scripts/build_public_site_public.py'
       - 'scripts/editorial_presentation.py'
       - 'scripts/check_locale_coverage.py'
       - 'scripts/validate_public_site.py'
+      - 'scripts/validate_public_site_public.py'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -49,15 +51,17 @@ jobs:
         run: python scripts/check_locale_coverage.py --locale pt-PT --enforce
       - name: Enforce Spanish editorial locale coverage
         run: python scripts/check_locale_coverage.py --locale es --enforce
+      - name: Enforce French editorial locale coverage
+        run: python scripts/check_locale_coverage.py --locale fr --enforce
 
       - name: Validate canonical dataset
         run: python scripts/validate.py
 
       - name: Build public site
-        run: python scripts/build_public_site.py
+        run: python scripts/build_public_site_public.py
 
       - name: Validate public site
-        run: python scripts/validate_public_site.py _site
+        run: python scripts/validate_public_site_public.py _site
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
