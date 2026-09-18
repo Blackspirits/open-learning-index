@@ -17,6 +17,7 @@ PUBLIC_LOCALES = {
     "en": "",
     "pt-PT": "pt",
     "es": "es",
+    "fr": "fr",
 }
 
 
@@ -163,6 +164,8 @@ def validate_page(site: Path, page: Path, errors: list[str]) -> PageParser:
             expected_lang = "pt-PT"
         elif rel.startswith("es/"):
             expected_lang = "es"
+        elif rel.startswith("fr/"):
+            expected_lang = "fr"
         else:
             expected_lang = "en"
         if parser.lang != expected_lang:
@@ -244,7 +247,7 @@ def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
         return
 
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
-    for locale in ("pt-PT", "es"):
+    for locale in ("pt-PT", "es", "fr"):
         missing = [
             course.get("id", "<unknown>")
             for course in catalog
@@ -278,7 +281,7 @@ def validate_locale_pairs(site: Path, pages: dict[Path, PageParser], errors: lis
             continue
 
         parts = rel.parts
-        if parts and parts[0] in {"pt", "es"}:
+        if parts and parts[0] in {"pt", "es", "fr"}:
             current_prefix = parts[0]
             route_parts = parts[1:-1]
         else:
