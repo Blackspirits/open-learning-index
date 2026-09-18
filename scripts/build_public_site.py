@@ -46,6 +46,11 @@ def alternate_links(route: str) -> str:
 
 
 def language_control(current_locale: str, hrefs: dict[str, str]) -> str:
+    aria_label = {
+        "pt-PT": "Idioma",
+        "es": "Idioma",
+        "fr": "Langue",
+    }.get(current_locale, "Language")
     others = [locale for locale in PUBLIC_LOCALES if locale != current_locale]
     if len(PUBLIC_LOCALES) == 2:
         locale = others[0]
@@ -64,8 +69,8 @@ def language_control(current_locale: str, hrefs: dict[str, str]) -> str:
     )
     return (
         '<details class="language-menu">'
-        f'<summary aria-label="Language">{escape(current["short"])}</summary>'
-        f'<nav aria-label="Language">{links}</nav>'
+        f'<summary aria-label="{escape(aria_label)}">{escape(current["short"])}</summary>'
+        f'<nav aria-label="{escape(aria_label)}">{links}</nav>'
         '</details>'
     )
 
