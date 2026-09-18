@@ -5,8 +5,9 @@ The Open Learning Index treats localisation as an editorial surface, not as a co
 ## Current public locales
 
 - `en` — source/public default;
-- `pt-PT` — complete presentation localisation with checked-in editorial translations;
-- `es` — complete Spanish presentation localisation with checked-in editorial translations.
+- `pt-PT` — complete European-Portuguese presentation localisation with checked-in editorial translations;
+- `es` — complete Spanish presentation localisation with checked-in editorial translations;
+- `fr` — complete French presentation localisation with checked-in editorial translations.
 
 ## Architecture
 
@@ -26,12 +27,18 @@ The generated public catalogue exposes translations as:
     "es": {
       "title": "...",
       "description": "..."
+    },
+    "fr": {
+      "title": "...",
+      "description": "..."
     }
   }
 }
 ```
 
 The legacy `presentation_pt` projection is retained temporarily for backwards compatibility and should be removed only after all public consumers have migrated.
+
+`scripts/build_public_site.py` owns the public-locale matrix and generates locale-specific course/category routes, catalogue presentation payloads, canonical URLs, hreflang links and sitemap entries. `scripts/validate_public_site.py` validates the same matrix after generation. A locale is added to that public matrix only after its checked-in dictionary has passed the publication gate.
 
 ## Publication gate for a new locale
 
@@ -50,21 +57,22 @@ Use:
 ```bash
 python scripts/check_locale_coverage.py --locale pt-PT --enforce
 python scripts/check_locale_coverage.py --locale es --enforce
+python scripts/check_locale_coverage.py --locale fr --enforce
 ```
 
 For a future locale, a deterministic source template can be generated with:
 
 ```bash
-python scripts/check_locale_coverage.py --locale fr --write-template /tmp/fr.json
+python scripts/check_locale_coverage.py --locale <locale> --write-template /tmp/<locale>.json
 ```
 
 The template contains only strings required by the **current public catalogue**, rather than every historical string ever seen in the repository.
 
 ## Planned order
 
-Spanish (`es`) is now public. The preferred next locale is **French (`fr`)**, using the same coverage, linguistic-QA and generated-route gates before publication.
+English, European Portuguese, Spanish and French are public. No fifth locale should be added merely to increase language count. A future locale must have a clear accessibility/coverage benefit and pass the same complete editorial and generated-site gates before publication.
 
-This ordering is not a commitment to publish incomplete translations. Quality remains more important than locale count.
+Quality remains more important than locale count.
 
 ## Translation workflow
 
@@ -80,7 +88,6 @@ Terminology that must remain consistent includes:
 - language variants and regional labels.
 
 A translation service with glossary support is preferable for producing draft files because terminology can be controlled, but all public locale files remain checked into the repository and subject to repository QA.
-
 
 ### Large locale dictionaries
 

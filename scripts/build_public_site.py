@@ -22,7 +22,7 @@ ADMISSIONS_DIR = ROOT / "data" / "admissions"
 SITE_SOURCE = ROOT / "site"
 DEFAULT_OUTPUT = ROOT / "_site"
 BASE_URL = "https://blackspirits.github.io/open-learning-index"
-SUPPORTED_PRESENTATION_LOCALES = ("pt-PT", "es")
+SUPPORTED_PRESENTATION_LOCALES = ("pt-PT", "es", "fr")
 PUBLIC_LOCALES = ("en", *SUPPORTED_PRESENTATION_LOCALES)
 
 LOCALE_META = {
@@ -46,6 +46,11 @@ def alternate_links(route: str) -> str:
 
 
 def language_control(current_locale: str, hrefs: dict[str, str]) -> str:
+    aria_label = {
+        "pt-PT": "Idioma",
+        "es": "Idioma",
+        "fr": "Langue",
+    }.get(current_locale, "Language")
     others = [locale for locale in PUBLIC_LOCALES if locale != current_locale]
     if len(PUBLIC_LOCALES) == 2:
         locale = others[0]
@@ -64,8 +69,8 @@ def language_control(current_locale: str, hrefs: dict[str, str]) -> str:
     )
     return (
         '<details class="language-menu">'
-        f'<summary aria-label="Language">{escape(current["short"])}</summary>'
-        f'<nav aria-label="Language">{links}</nav>'
+        f'<summary aria-label="{escape(aria_label)}">{escape(current["short"])}</summary>'
+        f'<nav aria-label="{escape(aria_label)}">{links}</nav>'
         '</details>'
     )
 
@@ -916,6 +921,204 @@ LOCALE_ACCESS_DETAIL["es"] = {
 }
 
 
+# French public-presentation extension. Canonical/editorial records stay unchanged;
+# only learner-facing presentation labels and prose are localised.
+LOCALE_META["fr"] = {"prefix": "fr", "label": "Français", "short": "FR"}
+LOCALE_ROUTE_PREFIX["fr"] = "fr"
+
+FR_CATEGORY_LABELS = {
+    "ai-data": "IA et données",
+    "arts-design": "Arts et design",
+    "business-entrepreneurship": "Entreprise et entrepreneuriat",
+    "computer-science": "Informatique et logiciels",
+    "cybersecurity-it": "Cybersécurité et informatique",
+    "education-teaching": "Éducation et enseignement",
+    "engineering-electronics": "Ingénierie et électronique",
+    "finance-economics": "Finance et économie",
+    "health-medicine": "Santé et médecine",
+    "history-culture": "Histoire et culture",
+    "humanities-philosophy": "Sciences humaines et philosophie",
+    "languages": "Langues",
+    "law-public-policy": "Droit et politiques publiques",
+    "marketing-sales": "Marketing et vente",
+    "math-statistics": "Mathématiques et statistiques",
+    "natural-sciences": "Sciences naturelles",
+    "project-product-leadership": "Projet, produit et leadership",
+    "psychology-behavior": "Psychologie et comportement",
+    "writing-communication": "Écriture et communication",
+}
+FR_LEVEL_LABELS = {
+    "beginner": "Débutant",
+    "beginner_to_intermediate": "Débutant à intermédiaire",
+    "beginner_to_advanced": "Débutant à avancé",
+    "intermediate": "Intermédiaire",
+    "intermediate_to_advanced": "Intermédiaire à avancé",
+    "advanced": "Avancé",
+    "undergraduate": "Premier cycle universitaire",
+    "graduate": "Deuxième/troisième cycle universitaire",
+}
+FR_LANGUAGE_LABELS = {
+    "ar": "arabe", "az": "azéri", "bg": "bulgare", "cs": "tchèque",
+    "de": "allemand", "en": "anglais", "es": "espagnol", "fr": "français",
+    "hu": "hongrois", "hy": "arménien", "it": "italien", "ja": "japonais",
+    "ka": "géorgien", "ko": "coréen", "nl": "néerlandais", "pl": "polonais",
+    "pt": "portugais (variante non précisée)",
+    "pt-BR": "portugais (Brésil)", "pt-PT": "portugais (Portugal)",
+    "ro": "roumain", "ru": "russe", "sk": "slovaque", "tr": "turc",
+    "uk": "ukrainien", "vi": "vietnamien", "zh": "chinois",
+}
+LOCALE_CATEGORY_LABELS["fr"] = FR_CATEGORY_LABELS
+LOCALE_LEVEL_LABELS["fr"] = FR_LEVEL_LABELS
+LOCALE_LANGUAGE_LABELS["fr"] = FR_LANGUAGE_LABELS
+LOCALE_ACCESS_LABELS["fr"] = {
+    "F0": "Cours et attestation gratuits",
+    "F1": "Parcours complet avec évaluation",
+    "F2": "Contenu pédagogique complet et gratuit",
+}
+LOCALE_CARD_COPY["fr"] = {
+    "recommendation": "Recommandation",
+    "quality": "Qualité",
+    "verified": "Vérifié",
+    "archived": "Archivé",
+    "language_prefix": "En",
+    "decimal": ",",
+}
+LOCALE_MONTHS["fr"] = (
+    "janv.", "févr.", "mars", "avr.", "mai", "juin",
+    "juil.", "août", "sept.", "oct.", "nov.", "déc.",
+)
+LOCALE_DIRECTORY_COPY["fr"] = {
+    "title": "Catégories",
+    "areas": "domaines d’apprentissage",
+    "intro": "Explorez tous les domaines de l’index. Chaque catégorie ne contient que des cours ayant passé le processus éditorial et de vérification.",
+    "top": "Meilleure recommandation",
+    "course": "cours",
+    "courses": "cours",
+    "home": "Accueil",
+    "courses_nav": "Cours",
+    "methodology": "Méthodologie",
+    "how": "Fonctionnement",
+    "footer": "Sélectionné avec rigueur, auditable et maintenu en continu.",
+    "primary_nav": "Navigation principale",
+    "mobile_nav": "Navigation mobile",
+    "open_nav": "Ouvrir la navigation",
+    "search": "Rechercher des cours",
+    "theme": "Utiliser le thème sombre",
+}
+LOCALE_CATEGORY_COPY["fr"] = {
+    "kicker": "Catégorie",
+    "home": "Accueil",
+    "courses": "Cours",
+    "categories": "Catégories",
+    "methodology": "Méthodologie",
+    "how": "Fonctionnement",
+    "description": "Cours gratuits sélectionnés en {category} dans Open Learning Index.",
+    "count_one": "{count} cours sélectionné, classé par Recommandation.",
+    "count_many": "{count} cours sélectionnés, classés par Recommandation.",
+    "start": "Commencer ici",
+    "footer": "Sélectionné avec rigueur, auditable et maintenu en continu.",
+    "primary_nav": "Navigation principale",
+    "mobile_nav": "Navigation mobile",
+    "open_nav": "Ouvrir la navigation",
+    "search": "Rechercher des cours",
+    "breadcrumb": "Fil d’Ariane",
+    "theme": "Utiliser le thème sombre",
+    "freshness": {
+        "fast": "Domaine à évolution rapide : les cours utilisent des intervalles de révision plus courts, car les outils, normes ou plateformes peuvent changer rapidement.",
+        "medium": "Domaine activement maintenu : l’accès, le contenu et les changements du fournisseur sont revérifiés à une fréquence modérée.",
+        "slow": "Domaine fondamental stable : l’ancienneté seule n’est pas considérée comme un défaut, tandis que l’accès et la qualité comparative restent revérifiés.",
+    },
+}
+LOCALE_COURSE_COPY["fr"] = {
+    "original_title": "Titre original",
+    "skip": "Aller aux détails du cours",
+    "home_aria": "Accueil d’Open Learning Index",
+    "primary_nav": "Navigation principale",
+    "open_nav": "Ouvrir la navigation",
+    "mobile_nav": "Navigation mobile",
+    "home": "Accueil",
+    "courses": "Cours",
+    "categories": "Catégories",
+    "methodology": "Méthodologie",
+    "how": "Fonctionnement",
+    "search": "Rechercher des cours",
+    "theme": "Utiliser le thème sombre",
+    "breadcrumb": "Fil d’Ariane",
+    "overall_recommendation": "Recommandation générale",
+    "quality": "Qualité",
+    "status_aria": "État du cours",
+    "sections_aria": "Sections de la page du cours",
+    "overview": "Vue d’ensemble",
+    "details": "Détails",
+    "evidence": "Éléments probants",
+    "compared": "Comparaison",
+    "why_recommend": "Pourquoi nous recommandons ce cours",
+    "before_start": "Avant de commencer",
+    "prerequisites": "Prérequis",
+    "required_resources": "Ressources nécessaires",
+    "scope": "Périmètre",
+    "no_preparation": "Aucune exigence de préparation supplémentaire n’est documentée.",
+    "what_free": "Ce qui est gratuit",
+    "certificate": "Attestation",
+    "academic_credit": "Crédits universitaires",
+    "quality_review": "Évaluation de la qualité",
+    "learning_need": "Besoin d’apprentissage",
+    "why_value": "Pourquoi il apporte de la valeur",
+    "admission_rationale": "Justification de la décision d’admission",
+    "evidence_verification": "Éléments probants et vérification",
+    "last_checked": "Dernière vérification",
+    "next_review": "Prochaine révision prévue",
+    "compared_against": "Comparé à",
+    "no_comparator": "Aucun comparateur direct n’est enregistré pour ce cours.",
+    "course_glance": "Le cours en bref",
+    "provider": "Organisme",
+    "language": "Langue",
+    "level": "Niveau",
+    "status": "État",
+    "access": "Accès",
+    "related_courses": "Cours associés",
+    "no_related": "Aucun cours associé n’est actuellement lié.",
+    "view_more": "Voir plus dans {category} →",
+    "footer": "Sélectionné avec rigueur, auditable et maintenu en continu.",
+    "course_source": "Source du cours",
+    "repository_source": "Source du dépôt",
+    "community_reference": "Référence communautaire",
+    "supporting_source": "Source complémentaire",
+    "active": "Actif",
+    "archived": "Archivé",
+    "archived_available": "Archivé mais toujours disponible",
+    "banner_active": "Ce cours est actif",
+    "banner_archived": "Ce cours est archivé",
+    "banner_copy_active": "Vérifié le {verified} · prochaine révision {next_review}.",
+    "banner_copy_archived": "Archivé mais toujours disponible · vérifié le {verified} · prochaine révision {next_review}.",
+    "button_active": "Ouvrir le cours officiel →",
+    "button_archived": "Voir les contenus archivés →",
+}
+LOCALE_QUALITY_COMPONENTS["fr"] = {
+    "pedagogy": "Pédagogie",
+    "depth": "Profondeur",
+    "practice": "Pratique",
+    "materials": "Supports",
+    "currency": "Actualité",
+    "expertise": "Expertise",
+    "accessibility": "Accessibilité",
+}
+LOCALE_ACCESS_DETAIL["fr"] = {
+    "F0": (
+        "Cours complet + attestation gratuite",
+        "Parcours d’apprentissage complet avec une attestation de réussite gratuite délivrée par le fournisseur.",
+    ),
+    "F1": (
+        "Parcours évalué gratuit",
+        "Parcours d’apprentissage complet avec une évaluation gratuite significative, mais sans attestation formelle gratuite.",
+    ),
+    "F2": (
+        "Contenu pédagogique complet",
+        "Contenu pédagogique substantiel et complet, mais sans parcours formel de validation gratuit.",
+    ),
+}
+
+
 def locale_source_text(text: str, locale: str) -> str:
     if locale == "en" or not text:
         return text
@@ -1005,7 +1208,7 @@ def static_catalogue_card(
     category = locale_category_label(course, locale)
     language_label = locale_language_label(course["primary_language"], locale)
     language_prefix = LOCALE_CARD_COPY.get(locale, LOCALE_CARD_COPY["en"])["language_prefix"]
-    if locale in {"pt-PT", "es"}:
+    if locale in {"pt-PT", "es", "fr"}:
         language_label = language_label[0].lower() + language_label[1:]
     language = f"{language_prefix} {language_label}"
     level = locale_level_label(course["level"], locale)

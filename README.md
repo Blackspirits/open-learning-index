@@ -112,6 +112,8 @@ Published courses are re-verified on a risk-based schedule. Pricing changes, bro
 | **[Categorias em pt-PT](https://blackspirits.github.io/open-learning-index/pt/categories/)** | Localised category discovery |
 | **[Índice en español](https://blackspirits.github.io/open-learning-index/es/)** | Spanish public interface |
 | **[Categorías en español](https://blackspirits.github.io/open-learning-index/es/categories/)** | Localised category discovery |
+| **[Index en français](https://blackspirits.github.io/open-learning-index/fr/)** | French public interface |
+| **[Catégories en français](https://blackspirits.github.io/open-learning-index/fr/categories/)** | Localised category discovery |
 | [Methodology](docs/methodology.md) | Scoring model and free-access taxonomy |
 | [Research protocol](docs/research-protocol.md) | Discovery and screening rules |
 | [Deep Review protocol](docs/deep-review-protocol.md) | Evidence and scoring requirements |
@@ -150,11 +152,11 @@ Nothing needs to be inferred from a hidden spreadsheet or private ranking proces
 
 ## Public site
 
-The public experience is now in **v1.0**: a mature, responsive light/dark publication with English and European-Portuguese routes for the homepage, catalogue, methodology, course details and category discovery.
+The public experience is now in **v1.0**: a mature, responsive light/dark publication with English, European-Portuguese, Spanish and French routes for the homepage, catalogue, methodology, course details and category discovery.
 
 The site remains static and is generated from canonical JSON plus validated editorial ledgers, with no CMS, database, user accounts, analytics or frontend framework runtime. Canonical category/methodology/course routes are indexable, and the Pages deployment is gated on editorial tests, canonical-data validation and generated-site QA.
 
-The pt-PT and Spanish routes localise the interface, taxonomy, course titles and displayed editorial text through checked-in presentation dictionaries. Course-language metadata remains canonical and independent of interface language. Portuguese metadata distinguishes `pt-PT`, `pt-BR` and provider-labelled generic `pt`; generic Portuguese is shown explicitly as an unresolved regional variant rather than guessed. Canonical records and review ledgers remain unchanged. Localised course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
+The pt-PT, Spanish and French routes localise the interface, taxonomy, course titles and displayed editorial text through checked-in presentation dictionaries. Course-language metadata remains canonical and independent of interface language. Portuguese metadata distinguishes `pt-PT`, `pt-BR` and provider-labelled generic `pt`; generic Portuguese is shown explicitly as an unresolved regional variant rather than guessed. Canonical records and review ledgers remain unchanged. Localised course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
 
 Catalogue cards are comparison-first: Recommendation, Quality, tier, learner-facing rationale, access and verification date are visible without opening every course. Decorative media remains available on detail pages, while third-party course/provider images are not published unless reuse rights are explicitly verified. The provenance manifest retains unverified candidates without treating attribution as permission. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, media provenance and validation.
 

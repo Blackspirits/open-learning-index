@@ -289,15 +289,19 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertTrue((ROOT / 'site' / 'methodology' / 'index.html').is_file())
         self.assertTrue((ROOT / 'site' / 'pt' / 'methodology' / 'index.html').is_file())
         self.assertTrue((ROOT / 'site' / 'es' / 'methodology' / 'index.html').is_file())
+        self.assertTrue((ROOT / 'site' / 'fr' / 'methodology' / 'index.html').is_file())
         en = (ROOT / 'site' / 'methodology' / 'index.html').read_text(encoding='utf-8')
         pt_page = (ROOT / 'site' / 'pt' / 'methodology' / 'index.html').read_text(encoding='utf-8')
         es_page = (ROOT / 'site' / 'es' / 'methodology' / 'index.html').read_text(encoding='utf-8')
+        fr_page = (ROOT / 'site' / 'fr' / 'methodology' / 'index.html').read_text(encoding='utf-8')
         self.assertIn('Quality Score', en)
         self.assertIn('F0', en)
         self.assertIn('Manutenção contínua', pt_page)
         self.assertIn('F0', pt_page)
         self.assertIn('Mantenimiento continuo', es_page)
         self.assertIn('F0', es_page)
+        self.assertIn('Maintenance continue', fr_page)
+        self.assertIn('F0', fr_page)
 
     def test_course_navigation_keeps_methodology_on_site(self):
         index = {course['id']: course for course in self.courses}
@@ -312,7 +316,7 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('localeRoutePrefixes', app_js)
         self.assertNotIn('return isPt ? course.presentation_pt.why_recommended', app_js)
 
-        for locale in ('pt-PT', 'es'):
+        for locale in ('pt-PT', 'es', 'fr'):
             for course in self.courses:
                 localized = localize_course(course, locale=locale)
                 presentation = {
@@ -327,7 +331,7 @@ class EditorialPresentationTest(unittest.TestCase):
 
     def test_public_build_declares_locale_keyed_presentations(self):
         builder = (ROOT / 'scripts' / 'build_public_site.py').read_text(encoding='utf-8')
-        self.assertIn('SUPPORTED_PRESENTATION_LOCALES = ("pt-PT", "es")', builder)
+        self.assertIn('SUPPORTED_PRESENTATION_LOCALES = ("pt-PT", "es", "fr")', builder)
         self.assertIn('item["presentations"][locale]', builder)
         self.assertIn('item["presentation_pt"] = dict(item["presentations"]["pt-PT"])', builder)
 
@@ -360,36 +364,46 @@ class EditorialPresentationTest(unittest.TestCase):
         en = build.render_category_directory(self.category_rows, self.courses, locale='en')
         pt_page = build.render_category_directory(self.category_rows, self.courses, locale='pt-PT')
         es_page = build.render_category_directory(self.category_rows, self.courses, locale='es')
+        fr_page = build.render_category_directory(self.category_rows, self.courses, locale='fr')
         self.assertIn('<html lang="en">', en)
         self.assertIn('<html lang="pt-PT">', pt_page)
         self.assertIn('<html lang="es">', es_page)
+        self.assertIn('<html lang="fr">', fr_page)
         self.assertIn('<h1>Categories</h1>', en)
         self.assertIn('<h1>Categorias</h1>', pt_page)
         self.assertIn('<h1>Categorías</h1>', es_page)
+        self.assertIn('<h1>Catégories</h1>', fr_page)
         self.assertIn('hreflang="en"', en)
         self.assertIn('hreflang="pt-PT"', en)
         self.assertIn('hreflang="es"', en)
+        self.assertIn('hreflang="fr"', en)
         self.assertIn('href="../../categories/"', pt_page)
         self.assertIn('>English</a>', pt_page)
         self.assertIn('>Español</a>', pt_page)
+        self.assertIn('>Français</a>', pt_page)
 
     def test_static_category_renderer_is_locale_aware(self):
         category = self.category_rows[0]
         en = build.render_static_category(category, self.courses, locale='en')
         pt_page = build.render_static_category(category, self.courses, locale='pt-PT')
         es_page = build.render_static_category(category, self.courses, locale='es')
+        fr_page = build.render_static_category(category, self.courses, locale='fr')
         self.assertIn('<html lang="en">', en)
         self.assertIn('<html lang="pt-PT">', pt_page)
         self.assertIn('<html lang="es">', es_page)
+        self.assertIn('<html lang="fr">', fr_page)
         self.assertIn('ordered by Recommendation', en)
         self.assertIn('ordenados por Recomendação', pt_page)
         self.assertIn('ordenados por Recomendación', es_page)
+        self.assertIn('classés par Recommandation', fr_page)
         self.assertNotIn('tag-category', en)
         self.assertNotIn('tag-category', pt_page)
         self.assertNotIn('tag-category', es_page)
+        self.assertNotIn('tag-category', fr_page)
         self.assertIn('hreflang="en"', pt_page)
         self.assertIn('hreflang="pt-PT"', pt_page)
         self.assertIn('hreflang="es"', pt_page)
+        self.assertIn('hreflang="fr"', pt_page)
 
 
     def test_course_renderer_is_locale_aware_without_pt_wrapper_drift(self):
@@ -414,6 +428,7 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('hreflang="en"', html)
         self.assertIn('hreflang="pt-PT"', html)
         self.assertIn('hreflang="es"', html)
+        self.assertIn('hreflang="fr"', html)
 
     def test_spanish_locale_dictionary_is_complete_and_public(self):
         from editorial_presentation import translations_for
@@ -437,6 +452,28 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('hreflang="en"', html)
         self.assertIn('hreflang="pt-PT"', html)
         self.assertIn('hreflang="es"', html)
+        self.assertIn('hreflang="fr"', html)
+
+    def test_french_locale_dictionary_is_complete_and_public(self):
+        translations = translations_for('fr')
+        self.assertIn('fr', build.SUPPORTED_PRESENTATION_LOCALES)
+        source = self.courses[0]['title']
+        translated = localize_course(self.courses[0], locale='fr')
+        self.assertEqual(translated['title'], translations[source])
+        self.assertTrue(translated['why_recommended'])
+
+    def test_french_course_renderer_is_localised_and_cross_linked(self):
+        index = {course['id']: course for course in self.courses}
+        course = self.courses[0]
+        html = build.render_static_course(course, index, {}, locale='fr')
+        self.assertIn('<html lang="fr">', html)
+        self.assertIn('Recommandation générale', html)
+        self.assertIn('Évaluation de la qualité', html)
+        self.assertIn('Éléments probants et vérification', html)
+        self.assertIn('hreflang="en"', html)
+        self.assertIn('hreflang="pt-PT"', html)
+        self.assertIn('hreflang="es"', html)
+        self.assertIn('hreflang="fr"', html)
 
     def test_course_media_requires_explicit_reuse_rights_before_publication(self):
         for course_id, media in MEDIA.items():
