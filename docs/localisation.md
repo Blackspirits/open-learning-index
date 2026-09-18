@@ -38,7 +38,7 @@ The generated public catalogue exposes translations as:
 
 The legacy `presentation_pt` projection is retained temporarily for backwards compatibility and should be removed only after all public consumers have migrated.
 
-`scripts/build_public_site_public.py` is the publication configuration layer for the complete reviewed locale set. It reuses the stable deterministic builder and enables a locale only after its dictionary has passed the publication gate. `scripts/validate_public_site_public.py` extends generated-site QA to the same public-locale matrix.
+`scripts/build_public_site.py` owns the public-locale matrix and generates locale-specific course/category routes, catalogue presentation payloads, canonical URLs, hreflang links and sitemap entries. `scripts/validate_public_site.py` validates the same matrix after generation. A locale is added to that public matrix only after its checked-in dictionary has passed the publication gate.
 
 ## Publication gate for a new locale
 
