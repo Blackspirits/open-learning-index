@@ -10,7 +10,7 @@ const pageType = document.body.dataset.page || "catalogue";
 const rootPath = document.body.dataset.root || "./";
 const isPt = pageLocale === "pt-PT";
 const isEs = pageLocale === "es";
-const localeRoutePrefixes = { en: "", "pt-PT": "pt", es: "es" };
+const localeRoutePrefixes = { en: "", "pt-PT": "pt", es: "es", fr: "fr" };
 const localeRoutePrefix = localeRoutePrefixes[pageLocale] ?? pageLocale;
 
 const languageNames = {
@@ -48,6 +48,16 @@ const languageNames = {
     "pt-BR": "portugués (Brasil)", "pt-PT": "portugués (Portugal)",
     ro: "rumano", ru: "ruso", sk: "eslovaco", tr: "turco",
     uk: "ucraniano", vi: "vietnamita", zh: "chino",
+  },,
+  fr: {
+    ar: "arabe", az: "azéri", bg: "bulgare", cs: "tchèque", de: "allemand",
+    en: "anglais", es: "espagnol", fr: "français", hu: "hongrois",
+    hy: "arménien", it: "italien", ja: "japonais", ka: "géorgien",
+    ko: "coréen", nl: "néerlandais", pl: "polonais",
+    pt: "portugais (variante non précisée)",
+    "pt-BR": "portugais (Brésil)", "pt-PT": "portugais (Portugal)",
+    ro: "roumain", ru: "russe", sk: "slovaque", tr: "turc",
+    uk: "ukrainien", vi: "vietnamien", zh: "chinois",
   },
 };
 
@@ -95,7 +105,29 @@ const categoryNamesEs = {
   "writing-communication": "Escritura y Comunicación",
 };
 
-const categoryNames = { "pt-PT": categoryNamesPt, es: categoryNamesEs };
+const categoryNamesFr = {
+  "ai-data": "IA et données",
+  "arts-design": "Arts et design",
+  "business-entrepreneurship": "Entreprise et entrepreneuriat",
+  "computer-science": "Informatique et logiciels",
+  "cybersecurity-it": "Cybersécurité et informatique",
+  "education-teaching": "Éducation et enseignement",
+  "engineering-electronics": "Ingénierie et électronique",
+  "finance-economics": "Finance et économie",
+  "health-medicine": "Santé et médecine",
+  "history-culture": "Histoire et culture",
+  "humanities-philosophy": "Sciences humaines et philosophie",
+  languages: "Langues",
+  "law-public-policy": "Droit et politiques publiques",
+  "marketing-sales": "Marketing et vente",
+  "math-statistics": "Mathématiques et statistiques",
+  "natural-sciences": "Sciences naturelles",
+  "project-product-leadership": "Projet, produit et leadership",
+  "psychology-behavior": "Psychologie et comportement",
+  "writing-communication": "Écriture et communication",
+};
+
+const categoryNames = { "pt-PT": categoryNamesPt, es: categoryNamesEs, fr: categoryNamesFr };
 
 const categoryIcons = {
   "computer-science": "code",
@@ -140,7 +172,17 @@ const levelNamesEs = {
   undergraduate: "Grado",
   graduate: "Posgrado",
 };
-const levelNames = { "pt-PT": levelNamesPt, es: levelNamesEs };
+const levelNamesFr = {
+  beginner: "Débutant",
+  beginner_to_intermediate: "Débutant à intermédiaire",
+  beginner_to_advanced: "Débutant à avancé",
+  intermediate: "Intermédiaire",
+  intermediate_to_advanced: "Intermédiaire à avancé",
+  advanced: "Avancé",
+  undergraduate: "Premier cycle universitaire",
+  graduate: "Deuxième/troisième cycle universitaire",
+};
+const levelNames = { "pt-PT": levelNamesPt, es: levelNamesEs, fr: levelNamesFr };
 
 const levelOrder = [
   "beginner",
@@ -164,7 +206,12 @@ const accessEs = {
   F1: "Itinerario completo con evaluación",
   F2: "Contenido completo gratuito",
 };
-const accessNames = { "pt-PT": accessPt, es: accessEs };
+const accessFr = {
+  F0: "Cours et attestation gratuits",
+  F1: "Parcours complet avec évaluation",
+  F2: "Contenu pédagogique complet et gratuit",
+};
+const accessNames = { "pt-PT": accessPt, es: accessEs, fr: accessFr };
 
 const dynamicCopy = {
   en: {
@@ -190,6 +237,14 @@ const dynamicCopy = {
     shortcut: "Atajo", beginnerFriendly: "Adecuado para principiantes",
     course: "curso", courses: "cursos", showMore: "Mostrar más",
     loadError: "No se pudo cargar el catálogo.",
+  },,
+  fr: {
+    languagePrefix: "En", recommendation: "Recommandation", quality: "Qualité",
+    verified: "Vérifié", archived: "Archivé", remove: "Supprimer",
+    level: "Niveau", progression: "Progression", broad: "Étendu",
+    shortcut: "Raccourci", beginnerFriendly: "Adapté aux débutants",
+    course: "cours", courses: "cours", showMore: "Afficher plus",
+    loadError: "Impossible de charger le catalogue.",
   },
 };
 const copy = dynamicCopy[pageLocale] || dynamicCopy.en;
