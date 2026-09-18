@@ -36,6 +36,8 @@ class CatalogueUiContractsTest(unittest.TestCase):
         self.assertIn('beginnerFriendly: "Adequado a principiantes"', source)
         self.assertIn('beginnerFriendly: "Adecuado para principiantes"', source)
         self.assertIn('progression: "Progresión"', source)
+        self.assertIn('beginnerFriendly: "Adapté aux débutants"', source)
+        self.assertIn('progression: "Progression"', source)
 
     def test_pt_language_names_are_consistently_lowercase(self):
         source = APP.read_text(encoding="utf-8")
@@ -53,15 +55,19 @@ class CatalogueUiContractsTest(unittest.TestCase):
         en = re.search(r"LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
         pt = re.search(r"PT_LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
         es = re.search(r"ES_LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
+        fr = re.search(r"FR_LANGUAGE_LABELS = \{(.*?)\n\}", source, re.S)
         self.assertIsNotNone(en)
         self.assertIsNotNone(pt)
         self.assertIsNotNone(es)
+        self.assertIsNotNone(fr)
         self.assertIn('"pt-BR": "Portuguese (Brazil)"', en.group(1))
         self.assertIn('"pt-PT": "Portuguese (Portugal)"', en.group(1))
         self.assertIn('"pt-BR": "português (Brasil)"', pt.group(1))
         self.assertIn('"pt-PT": "português (Portugal)"', pt.group(1))
         self.assertIn('"pt-BR": "portugués (Brasil)"', es.group(1))
         self.assertIn('"pt-PT": "portugués (Portugal)"', es.group(1))
+        self.assertIn('"pt-BR": "portugais (Brésil)"', fr.group(1))
+        self.assertIn('"pt-PT": "portugais (Portugal)"', fr.group(1))
 
 
 if __name__ == "__main__":
