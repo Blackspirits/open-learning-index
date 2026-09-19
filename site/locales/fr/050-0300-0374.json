@@ -70,8 +70,8 @@
   "Browser; video, audio, transcripts and downloadable course materials are freely accessible": "Navigateur ; vidéos, audio, transcriptions et supports de cours téléchargeables sont librement accessibles",
   "Browser; video, audio, transcripts and downloadable problem/exam materials are freely accessible": "Navigateur ; vidéos, audio, transcriptions et supports téléchargeables d’exercices/examens sont librement accessibles",
   "CHEM 125b is not a duplicate of the first semester: it continues into substitution, reaction rates and mechanisms, spectroscopy, synthesis, oxidation/reduction and complex organic molecules, with three midterms and a final. Retaining only 125a would leave the organic sequence incomplete.": "CHEM 125b n’est pas un doublon du premier semestre : il poursuit avec la substitution, les vitesses et mécanismes de réaction, la spectroscopie, la synthèse, l’oxydation/réduction et les molécules organiques complexes, avec trois examens intermédiaires et un examen final. Ne conserver que 125a laisserait la séquence de chimie organique incomplète.",
-  "CS101: Introduction to Programming I": "CS101: Introduction to Programming I",
-  "CS50's Introduction to Artificial Intelligence with Python": "CS50's Introduction to Artificial Intelligence with Python",
-  "CS50's Introduction to Computer Science": "CS50's Introduction to Computer Science",
-  "CS50's Introduction to Databases with SQL": "CS50's Introduction to Databases with SQL"
+  "CS101: Introduction to Programming I": "CS101 : Introduction à la programmation I",
+  "CS50's Introduction to Artificial Intelligence with Python": "Introduction de CS50 à l’intelligence artificielle avec Python",
+  "CS50's Introduction to Computer Science": "Introduction de CS50 à l’informatique",
+  "CS50's Introduction to Databases with SQL": "Introduction de CS50 aux bases de données avec SQL"
 }
