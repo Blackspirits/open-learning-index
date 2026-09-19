@@ -462,6 +462,25 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertEqual(translated['title'], translations[source])
         self.assertTrue(translated['why_recommended'])
 
+    def test_french_descriptive_course_titles_are_localised(self):
+        translations = translations_for('fr')
+        expected = {
+            '18.06SC Linear Algebra': '18.06SC Algèbre linéaire',
+            'Academia de Empreendedorismo': 'Académie de l’entrepreneuriat',
+            'Algoritmos e Complexidade': 'Algorithmes et complexité',
+            'BUS205: Business Law': 'BUS205 : Droit des affaires',
+            "CS50's Introduction to Computer Science": "Introduction de CS50 à l’informatique",
+            'Cibersegurança para Executivos: Preparação para a NIS2': 'Cybersécurité pour cadres dirigeants : préparation à NIS2',
+            'Development Economics': 'Économie du développement',
+            'Estruturas de Dados': 'Structures de données',
+            'Financial Literacy': 'Culture financière',
+            'Fundamentos de Bases de Dados': 'Fondamentaux des bases de données',
+        }
+        for source, translated in expected.items():
+            with self.subTest(source=source):
+                self.assertEqual(translations[source], translated)
+                self.assertNotEqual(translations[source], source)
+
     def test_french_course_renderer_is_localised_and_cross_linked(self):
         index = {course['id']: course for course in self.courses}
         course = self.courses[0]
