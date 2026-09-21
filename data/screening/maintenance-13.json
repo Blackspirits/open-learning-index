@@ -1,0 +1,34 @@
+[
+  {
+    "screen_id": "maintenance-13-fun-hieroglyphes-egyptiens",
+    "candidate_id": "fun-hieroglyphes-egyptiens",
+    "screen_type": "shallow",
+    "decision": "advance",
+    "screened_on": "2026-09-21",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [
+      "fr"
+    ],
+    "credential": "Optional paid FUN certificate (€100); no free formal completion credential verified",
+    "completeness": "complete",
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/"
+    ],
+    "rationale": "The date-triggered blocker is resolved. FUN now identifies the 2026 learner session as running from 21 September 2026 to 28 February 2027, with enrolment open through 1 February 2027 and zero-cost learner access. The official page exposes the complete 20-hour, 10-module pathway, end-of-module self-assessment quizzes, French subtitles and downloadable transcripts. Certification remains an optional paid €100 route and is therefore excluded from the free-access classification. The candidate now has sufficient current access, completeness and assessment evidence for Deep Review.",
+    "flags": [
+      "2026-session-open",
+      "free-learning-access",
+      "module-quizzes",
+      "optional-paid-certificate",
+      "french-subtitles",
+      "specialist-egyptology",
+      "deep-review-required"
+    ],
+    "is_current": true,
+    "supersedes_screen_id": "maintenance-04-fun-hieroglyphes-egyptiens"
+  }
+]
