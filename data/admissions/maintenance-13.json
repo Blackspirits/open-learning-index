@@ -1,0 +1,27 @@
+[
+  {
+    "admission_id": "admission-maintenance-13-fun-hieroglyphes-egyptiens",
+    "candidate_id": "fun-hieroglyphes-egyptiens",
+    "review_id": "deep-maintenance-13-fun-hieroglyphes-egyptiens",
+    "decided_on": "2026-09-23",
+    "decision": "admit",
+    "learning_need": "French-language specialist introduction to Egyptian hieroglyphic writing and contextual inscription reading",
+    "comparison_set": [
+      "yale-clcv-205-ancient-greek-history",
+      "openlearn-what-do-historians-do",
+      "fun-la-musique-quelle-histoire"
+    ],
+    "incumbent_ids": [],
+    "decision_rationale": "The current History & Culture canon has strong broad-history, historical-method and classical-history routes but no direct Egyptology or ancient-writing-system course. This current 20-hour University of Liège/FUN route combines specialist expertise, structured progression, module-level self-assessment and strong accessibility in French. It does not displace the broad category leaders; it earns admission because the learning need and language coverage are materially distinct at a quality level above the bar.",
+    "marginal_value": "Adds the first canonical Egyptology/hieroglyphic-literacy pathway and meaningful French-language specialist coverage, with applied reading practice absent from the existing History & Culture set.",
+    "provider_concentration_notes": "FUN is already represented in History & Culture by a distinct cultural/music-history course; the subject roles do not overlap and provider concentration remains limited.",
+    "coverage_notes": "Complements rather than replaces broad world history, historical method and Ancient Greek history. The narrow specialist scope is justified by unusually strong pedagogy, expertise and applied writing-system practice.",
+    "displaced_course_ids": [],
+    "complements_course_ids": [
+      "yale-clcv-205-ancient-greek-history",
+      "openlearn-what-do-historians-do"
+    ],
+    "outcompeted_by_ids": [],
+    "is_current": true
+  }
+]
