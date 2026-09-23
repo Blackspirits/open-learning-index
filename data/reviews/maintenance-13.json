@@ -1,0 +1,59 @@
+[
+  {
+    "review_id": "deep-maintenance-13-fun-hieroglyphes-egyptiens",
+    "candidate_id": "fun-hieroglyphes-egyptiens",
+    "reviewed_on": "2026-09-23",
+    "canonical_url": "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/",
+    "observed_free_access": "F1_FULL_ASSESSMENTS",
+    "observed_status": "active",
+    "instruction_languages": ["fr"],
+    "subtitle_languages": ["fr"],
+    "credential": "Optional paid FUN certificate (€100); no free formal completion credential verified",
+    "academic_credits": "None verified",
+    "self_paced": false,
+    "scope_notes": "Twenty-hour specialist introduction to Egyptian hieroglyphic writing across an introduction plus ten modules, moving from Champollion and historical/geographical context through hieroglyphic, hieratic, demotic and Coptic writing to phonograms, logograms, classifiers, transliteration and contextual reading, ending with applied reading in the tomb of Amenemope.",
+    "prerequisites": "Open to everyone; no formal prerequisites",
+    "required_resources": "Modern browser for the free FUN learner route; a VR headset or cardboard is desirable, but not stated as mandatory, for improved visibility of the HieroglyphsVR application",
+    "component_evidence": {
+      "pedagogy": "The course progresses from decipherment and contextual foundations into the mechanics of the writing system, then applies those concepts to increasingly complex signs and authentic inscriptions. Interactive maps, museum material, animations, interviews and varied quizzes support the progression.",
+      "depth": "Twenty hours and ten substantive modules provide considerably more than a short cultural overview: learners study writing-system evolution, language context, cursive scripts, phonograms, logograms, semantic and phonetic classifiers, transliteration and contextual reading.",
+      "practice": "Every module ends with varied self-assessment quizzes, and the later modules explicitly move into reading and writing frequent signs and contextual inscription reading. No instructor feedback or free formal graded credential is verified.",
+      "materials": "The official route combines videos, animations, interactive maps, museum examples and quizzes; all videos have French subtitles and downloadable PDF transcripts. Public FUN-hosted transcript assets also expose substantial course content outside the enrolment shell.",
+      "currency": "The 2026 session is currently open from 21 September 2026 to 28 February 2027. The subject matter is comparatively stable, and the active session plus current provider presentation substantially reduce archive/currentness risk.",
+      "expertise": "The course is led by Stéphane Polis, professor in the University of Liège Department of Ancient Studies/Egyptology, with specialist contributors including university Egyptologists and researchers presented throughout the course.",
+      "accessibility": "Learner access is explicitly free, prerequisites are open, every video has French subtitles and a downloadable transcript, and the certificate is clearly optional. The course is French-only and the time-bounded session is less flexible than a permanently self-paced archive."
+    },
+    "quality_components": {
+      "pedagogy": 9.1,
+      "depth": 8.8,
+      "practice": 8.4,
+      "materials": 9.2,
+      "currency": 9.6,
+      "expertise": 9.6,
+      "accessibility": 8.9
+    },
+    "quality_score": 9.08,
+    "recommendation_score": 9.1,
+    "recommendation_rationale": "An unusually strong free specialist introduction to Egyptian hieroglyphs: current, university-led, substantial, practice-bearing and accessible in French with subtitles and transcripts. Its narrow subject and time-bounded FUN session make it a specialist recommendation rather than a broad history default, but the learning need is genuinely distinct from the existing History & Culture canon.",
+    "comparators": [
+      "yale-clcv-205-ancient-greek-history",
+      "openlearn-what-do-historians-do",
+      "fun-la-musique-quelle-histoire"
+    ],
+    "evidence": [
+      "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/",
+      "https://www.fun-mooc.fr/fr/etablissements/universite-de-liege/",
+      "https://lms.fun-mooc.fr/asset-v1%3Aulg%2B108024%2Bsession01%2Btype%40asset%2Bblock/3.2_Hieroglyphes_caracte_ristiques_P1.pdf"
+    ],
+    "flags": [
+      "current-2026-session",
+      "specialist-egyptology",
+      "module-self-assessment",
+      "french-subtitles",
+      "downloadable-transcripts",
+      "optional-paid-certificate",
+      "time-bounded-session"
+    ],
+    "is_current": true
+  }
+]
