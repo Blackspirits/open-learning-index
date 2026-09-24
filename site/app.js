@@ -237,7 +237,7 @@ const dynamicCopy = {
     shortcut: "Atajo", beginnerFriendly: "Adecuado para principiantes",
     course: "curso", courses: "cursos", showMore: "Mostrar más",
     loadError: "No se pudo cargar el catálogo.",
-  },,
+  },
   fr: {
     languagePrefix: "En", recommendation: "Recommandation", quality: "Qualité",
     verified: "Vérifié", archived: "Archivé", remove: "Supprimer",
