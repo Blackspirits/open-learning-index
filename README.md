@@ -4,7 +4,7 @@
 
 > A rigorously curated, continuously maintained index of exceptional free courses and open learning experiences.
 
-**[Browse the public index](https://blackspirits.github.io/open-learning-index/)** · **[Português (Portugal)](https://blackspirits.github.io/open-learning-index/pt/)** · [Methodology](docs/methodology.md) · [Contributing](CONTRIBUTING.md)
+**[Browse the public index](https://blackspirits.github.io/open-learning-index/)** · **[Português (Portugal)](https://blackspirits.github.io/open-learning-index/pt/)** · **[Español](https://blackspirits.github.io/open-learning-index/es/)** · **[Français](https://blackspirits.github.io/open-learning-index/fr/)** · [Methodology](docs/methodology.md) · [Contributing](CONTRIBUTING.md)
 
 [![Validate dataset](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/validate.yml)
 [![Deploy public index](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml/badge.svg)](https://github.com/Blackspirits/open-learning-index/actions/workflows/pages.yml)
@@ -158,7 +158,7 @@ The site remains static and is generated from canonical JSON plus validated edit
 
 The pt-PT, Spanish and French routes localise the interface, taxonomy, course titles and displayed editorial text through checked-in presentation dictionaries. Course-language metadata remains canonical and independent of interface language. Portuguese metadata distinguishes `pt-PT`, `pt-BR` and provider-labelled generic `pt`; generic Portuguese is shown explicitly as an unresolved regional variant rather than guessed. Canonical records and review ledgers remain unchanged. Localised course pages retain the original title, and original evidence is available through the English route and source links. Proper names such as Full Stack Open and KICKOFF are preserved.
 
-Catalogue cards are comparison-first: Recommendation, Quality, tier, learner-facing rationale, access and verification date are visible without opening every course. Decorative media remains available on detail pages, while third-party course/provider images are not published unless reuse rights are explicitly verified. The provenance manifest retains unverified candidates without treating attribution as permission. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, media provenance and validation.
+Catalogue cards are comparison-first: Recommendation, Quality, tier, learner-facing rationale, access and verification date are visible without opening every course. Catalogue and featured-course cards use original editorial category artwork when reusable third-party imagery is not verified; verified reusable media can replace it automatically. Third-party course/provider images remain unpublished unless reuse rights are explicitly confirmed. The provenance manifest retains unverified candidates without treating attribution as permission. See [editorial presentation](docs/editorial-presentation.md) for translation maintenance, media provenance and validation.
 
 ### Build locally
 
