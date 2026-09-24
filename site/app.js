@@ -48,7 +48,7 @@ const languageNames = {
     "pt-BR": "portugués (Brasil)", "pt-PT": "portugués (Portugal)",
     ro: "rumano", ru: "ruso", sk: "eslovaco", tr: "turco",
     uk: "ucraniano", vi: "vietnamita", zh: "chino",
-  },,
+  },
   fr: {
     ar: "arabe", az: "azéri", bg: "bulgare", cs: "tchèque", de: "allemand",
     en: "anglais", es: "espagnol", fr: "français", hu: "hongrois",
@@ -237,7 +237,7 @@ const dynamicCopy = {
     shortcut: "Atajo", beginnerFriendly: "Adecuado para principiantes",
     course: "curso", courses: "cursos", showMore: "Mostrar más",
     loadError: "No se pudo cargar el catálogo.",
-  },,
+  },
   fr: {
     languagePrefix: "En", recommendation: "Recommandation", quality: "Qualité",
     verified: "Vérifié", archived: "Archivé", remove: "Supprimer",

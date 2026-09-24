@@ -45,6 +45,9 @@ jobs:
       - name: Test editorial presentation
         run: python -m unittest discover -s tests -p 'test_*.py'
 
+      - name: Check public JavaScript syntax
+        run: node --check site/app.js && node --check site/icons.js && node --check site/theme.js
+
       - name: Enforce pt-PT editorial locale coverage
         run: python scripts/check_locale_coverage.py --locale pt-PT --enforce
       - name: Enforce Spanish editorial locale coverage
