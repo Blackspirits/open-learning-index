@@ -255,6 +255,11 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn('media-editorial', html)
         self.assertIn('media-provider-name', html)
 
+    def test_catalogue_runtime_helpers_are_defined(self):
+        app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
+        self.assertIn('function activeFilterCount(values)', app_js)
+        self.assertIn('activeFilterCount(values)', app_js)
+
     def test_catalogue_search_supports_prefix_matching(self):
         app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
         self.assertIn('token.startsWith(word)', app_js)
