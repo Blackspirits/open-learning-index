@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -240,6 +241,39 @@ def validate_publication_routes(site: Path, errors: list[str]) -> None:
                 fail(errors, f"missing {locale} category route: {(Path(prefix) / rel if prefix else rel).as_posix()}")
 
 
+def validate_homepage_stats(site: Path, errors: list[str]) -> None:
+    meta_path = site / "data" / "meta.json"
+    if not meta_path.exists():
+        return
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    expected = {
+        "stat-courses": str(meta.get("published_count", "")),
+        "stat-categories": str(meta.get("category_count", "")),
+        "stat-languages": str(meta.get("language_count", "")),
+    }
+    for locale, prefix in PUBLIC_LOCALES.items():
+        homepage = (site / prefix / "index.html") if prefix else (site / "index.html")
+        if not homepage.exists():
+            continue
+        html = homepage.read_text(encoding="utf-8")
+        for element_id, expected_value in expected.items():
+            match = re.search(
+                rf'<strong id="{re.escape(element_id)}">([^<]*)</strong>',
+                html,
+            )
+            if not match:
+                fail(errors, f"{locale} homepage missing {element_id}")
+            elif match.group(1).strip() != expected_value:
+                fail(
+                    errors,
+                    f"{locale} homepage {element_id}={match.group(1).strip()!r}, "
+                    f"expected {expected_value!r}",
+                )
+        verified = re.search(r'<strong id="stat-verified">([^<]*)</strong>', html)
+        if not verified or verified.group(1).strip() in {"", "—"}:
+            fail(errors, f"{locale} homepage latest-verification stat is not prefilled")
+
+
 def validate_catalogue_runtime_contract(site: Path, errors: list[str]) -> None:
     catalog_path = site / "data" / "catalog.json"
     app_path = site / "app.js"
@@ -356,6 +390,7 @@ def main() -> int:
         pages[page.relative_to(site)] = parsed
 
     validate_publication_routes(site, errors)
+    validate_homepage_stats(site, errors)
     validate_catalogue_runtime_contract(site, errors)
     validate_locale_pairs(site, pages, errors)
     validate_sitemap(site, pages, errors)
