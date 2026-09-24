@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import date
 
 ROOT=Path(__file__).resolve().parents[1]
+README=ROOT/'README.md'
 COURSES=ROOT/'data/courses.json'
 COURSE_SCHEMA=ROOT/'data/course.schema.json'
 CATEGORIES=ROOT/'data/categories.json'
@@ -65,6 +66,39 @@ def load_admission_sources():
     if not ADMISSION_DIR.exists():
         return []
     return sorted(ADMISSION_DIR.glob('*.json'))
+
+def validate_readme_snapshot(courses, current_screen_decisions, current_review_candidate_ids, current_admission_candidate_ids):
+    if not README.exists():
+        return fail('README.md is missing')
+
+    metrics={}
+    for line in README.read_text(encoding='utf-8').splitlines():
+        match=re.fullmatch(r'\\|\\s*(.*?)\\s*\\|\\s*\\*\\*(.*?)\\*\\*\\s*\\|', line)
+        if match:
+            metrics[match.group(1)]=match.group(2)
+
+    advances={cid for cid,decision in current_screen_decisions.items() if decision=='advance'}
+    expected={
+        'Canonical published courses': str(len(courses)),
+        'Primary-language pt-PT courses': str(sum(c['primary_language']=='pt-PT' for c in courses)),
+        'Alternate pt-BR routes': str(sum('pt-BR' in c.get('other_languages', []) for c in courses)),
+        'Portuguese alternates with unresolved regional variant': str(sum('pt' in c.get('other_languages', []) for c in courses)),
+        'F0 — full course + free credential': str(sum(c['free_access']=='F0_FULL_CREDENTIAL' for c in courses)),
+        'F1 — full assessed learning path': str(sum(c['free_access']=='F1_FULL_ASSESSMENTS' for c in courses)),
+        'F2 — full teaching content': str(sum(c['free_access']=='F2_CONTENT_ONLY' for c in courses)),
+        'Current advances Deep-Reviewed': f'{len(advances & current_review_candidate_ids)} / {len(advances)}',
+        'Current advances Phase-4 decided': f'{len(advances & current_admission_candidate_ids)} / {len(advances)}',
+        'Holds excluded pending evidence': str(sum(decision=='hold' for decision in current_screen_decisions.values())),
+    }
+
+    errors=0
+    for label,expected_value in expected.items():
+        actual=metrics.get(label)
+        if actual is None:
+            errors += fail(f'README current-publication metric missing: {label}')
+        elif actual != expected_value:
+            errors += fail(f'README current-publication metric {label!r} is {actual!r}, expected {expected_value!r}')
+    return errors
 
 def main():
     errors=0
@@ -346,6 +380,13 @@ def main():
                     errors += fail(f'{cid}: admitted quality_components must match current deep review')
         elif in_courses:
             errors += fail(f'{a["admission_id"]}: do_not_admit candidate must not exist in data/courses.json')
+
+    errors += validate_readme_snapshot(
+        courses,
+        current_screen_decisions,
+        current_review_candidate_ids,
+        current_admission_candidate_ids,
+    )
 
     if not errors:
         with tempfile.TemporaryDirectory(prefix="open-learning-index-public-") as tmp:
