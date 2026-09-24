@@ -1999,6 +1999,28 @@ def build(output: Path) -> None:
     write_json(output / "data" / "categories.json", category_rows)
     write_json(output / "data" / "meta.json", meta)
 
+    # Keep the homepage useful even if JavaScript is unavailable or fails to load.
+    # The runtime still re-hydrates these values from data/meta.json.
+    for locale in PUBLIC_LOCALES:
+        prefix = LOCALE_META[locale]["prefix"]
+        locale_root = output / prefix if prefix else output
+        homepage = locale_root / "index.html"
+        html = homepage.read_text(encoding="utf-8")
+        stat_values = {
+            "stat-courses": str(meta["published_count"]),
+            "stat-categories": str(meta["category_count"]),
+            "stat-languages": str(meta["language_count"]),
+            "stat-verified": format_review_month(meta["latest_verification"], locale),
+        }
+        for element_id, value in stat_values.items():
+            pattern = rf'(<strong id="{re.escape(element_id)}">)[^<]*(</strong>)'
+            html, count = re.subn(pattern, rf'\g<1>{value}\g<2>', html, count=1)
+            if count != 1:
+                raise SystemExit(
+                    f"ERROR: homepage stat placeholder missing for {locale}: {element_id}"
+                )
+        write_text(homepage, html)
+
     course_by_id = {course["id"]: course for course in public_courses}
     for locale in PUBLIC_LOCALES:
         prefix = LOCALE_META[locale]["prefix"]
