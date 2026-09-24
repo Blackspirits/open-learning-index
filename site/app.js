@@ -456,6 +456,11 @@ function getFormState(els) {
   };
 }
 
+function activeFilterCount(values) {
+  return ["q", "category", "language", "level", "access", "tier", "status", "credential", "credit"]
+    .reduce((count, key) => count + (values[key] ? 1 : 0), 0);
+}
+
 function setFormState(els, params) {
   els.search.value = params.get("q") || "";
   els.category.value = params.get("category") || "";
