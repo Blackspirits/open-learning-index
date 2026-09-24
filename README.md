@@ -30,20 +30,20 @@ Institutional prestige alone is not enough. Old, incomplete, shallow or technica
 
 ## Current publication
 
-As of **2026-09-15**:
+As of **2026-09-24**:
 
 | Metric | Current state |
 |---|---:|
-| Canonical published courses | **142** |
+| Canonical published courses | **143** |
 | Primary-language pt-PT courses | **13** |
 | Alternate pt-BR routes | **1** |
 | Portuguese alternates with unresolved regional variant | **3** |
 | F0 — full course + free credential | **75** |
-| F1 — full assessed learning path | **24** |
+| F1 — full assessed learning path | **25** |
 | F2 — full teaching content | **43** |
-| Current advances Deep-Reviewed | **216 / 216** |
-| Current advances Phase-4 decided | **216 / 216** |
-| Holds excluded pending evidence | **5** |
+| Current advances Deep-Reviewed | **217 / 217** |
+| Current advances Phase-4 decided | **217 / 217** |
+| Holds excluded pending evidence | **4** |
 
 The public site is generated deterministically from the canonical repository data.  
 **`data/courses.json` is the source of truth.**
@@ -172,7 +172,7 @@ Then open `http://localhost:8000`.
 
 ## Validation
 
-Repository CI checks the canonical data, generated CSV parity, review freshness, deterministic public-site generation and the built site's internal routes, locale pairs, canonical URLs, sitemap coverage and required assets.
+Repository CI checks the canonical data, generated CSV parity, README publication-snapshot parity, review freshness, deterministic public-site generation and the built site's internal routes, locale pairs, canonical URLs, sitemap coverage and required assets.
 
 Useful local commands:
 
