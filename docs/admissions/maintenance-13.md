@@ -6,7 +6,7 @@ Date: 2026-09-23
 
 `fun-hieroglyphes-egyptiens` — Les hiéroglyphes égyptiens, Université de Liège / FUN MOOC.
 
-Deep Review: **Quality 9.08 / Recommendation 9.1**.
+Deep Review: **Quality 9.0 / Recommendation 9.1**.
 
 ## Comparison set
 
