@@ -37,7 +37,7 @@ Sources:
 | Currency | 9.6 |
 | Expertise | 9.6 |
 | Accessibility | 8.9 |
-| **Quality** | **9.08** |
+| **Quality** | **9.0** |
 | **Recommendation** | **9.1** |
 
 ## Assessment
@@ -48,6 +48,6 @@ The existing History & Culture canon has broad world history, historical method,
 
 ## Deep Review result
 
-**Quality 9.08 / Recommendation 9.1.**
+**Quality 9.0 / Recommendation 9.1.**
 
 Proceed to Phase 4. The head-to-head question is not whether this replaces the broad History leaders; it is whether the distinct Egyptology/hieroglyphic-literacy role clears the project's marginal-value bar without creating unnecessary specialist sprawl.
