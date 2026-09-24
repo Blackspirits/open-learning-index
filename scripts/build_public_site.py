@@ -1203,6 +1203,7 @@ def static_catalogue_card(
     href_prefix: str = "../",
     locale: str = "en",
     show_category: bool = True,
+    media_root: str | None = None,
 ) -> str:
     title, rationale = locale_course_copy(course, locale)
     category = locale_category_label(course, locale)
@@ -1228,8 +1229,11 @@ def static_catalogue_card(
         else ""
     )
     category_tag = static_tag(category, "tag-category") if show_category else ""
+    if media_root is None:
+        media_root = href_prefix
     return (
         '<article class="catalogue-card">'
+        + media_html(course, root=media_root)
         + '<div class="card-body"><div class="card-heading">'
         + f'<p class="provider">{escape(course["provider"])}</p>'
         + f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(title)}</a></h3></div>'
@@ -1813,6 +1817,7 @@ def render_static_category(
             "../../",
             locale=locale,
             show_category=False,
+            media_root=site_root,
         )
         for course in rows
     )
@@ -1998,6 +2003,28 @@ def build(output: Path) -> None:
     write_json(output / "data" / "catalog.json", public_courses)
     write_json(output / "data" / "categories.json", category_rows)
     write_json(output / "data" / "meta.json", meta)
+
+    # Keep the homepage useful even if JavaScript is unavailable or fails to load.
+    # The runtime still re-hydrates these values from data/meta.json.
+    for locale in PUBLIC_LOCALES:
+        prefix = LOCALE_META[locale]["prefix"]
+        locale_root = output / prefix if prefix else output
+        homepage = locale_root / "index.html"
+        html = homepage.read_text(encoding="utf-8")
+        stat_values = {
+            "stat-courses": str(meta["published_count"]),
+            "stat-categories": str(meta["category_count"]),
+            "stat-languages": str(meta["language_count"]),
+            "stat-verified": format_review_month(meta["latest_verification"], locale),
+        }
+        for element_id, value in stat_values.items():
+            pattern = rf'(<strong id="{re.escape(element_id)}">)[^<]*(</strong>)'
+            html, count = re.subn(pattern, rf'\g<1>{value}\g<2>', html, count=1)
+            if count != 1:
+                raise SystemExit(
+                    f"ERROR: homepage stat placeholder missing for {locale}: {element_id}"
+                )
+        write_text(homepage, html)
 
     course_by_id = {course["id"]: course for course in public_courses}
     for locale in PUBLIC_LOCALES:

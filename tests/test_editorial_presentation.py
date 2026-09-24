@@ -242,7 +242,7 @@ class EditorialPresentationTest(unittest.TestCase):
                     self.assertNotIn(phrase, html.lower())
 
 
-    def test_catalogue_cards_surface_decision_data_without_decorative_media(self):
+    def test_catalogue_cards_surface_decision_data_with_rights_safe_editorial_media(self):
         course = self.courses[0]
         html = build.static_catalogue_card(course)
         self.assertIn('card-score-row', html)
@@ -251,8 +251,9 @@ class EditorialPresentationTest(unittest.TestCase):
         self.assertIn(f'{course["quality_score"]:.1f}', html)
         self.assertIn(course['quality_tier'], html)
         self.assertIn(course['why_recommended'], html)
-        self.assertNotIn('course-media', html)
-        self.assertNotIn('media-provider-name', html)
+        self.assertIn('course-media', html)
+        self.assertIn('media-editorial', html)
+        self.assertIn('media-provider-name', html)
 
     def test_catalogue_search_supports_prefix_matching(self):
         app_js = (ROOT / 'site' / 'app.js').read_text(encoding='utf-8')
