@@ -45,7 +45,7 @@
 .section-kicker { line-height: 1.6; }
 .featured-grid { gap: 20px; }
 
-/* Discovery cards prioritise comparison data over decorative media. */
+/* Discovery cards keep comparison data primary while using rights-safe editorial artwork. */
 .catalogue-card, .mini-course-card {
   padding: 0;
   gap: 0;
