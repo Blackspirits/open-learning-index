@@ -6,8 +6,12 @@
     "canonical_url": "https://www.fun-mooc.fr/fr/cours/les-hieroglyphes-egyptiens/",
     "observed_free_access": "F1_FULL_ASSESSMENTS",
     "observed_status": "active",
-    "instruction_languages": ["fr"],
-    "subtitle_languages": ["fr"],
+    "instruction_languages": [
+      "fr"
+    ],
+    "subtitle_languages": [
+      "fr"
+    ],
     "credential": "Optional paid FUN certificate (€100); no free formal completion credential verified",
     "academic_credits": "None verified",
     "self_paced": false,
@@ -32,7 +36,7 @@
       "expertise": 9.6,
       "accessibility": 8.9
     },
-    "quality_score": 9.08,
+    "quality_score": 9,
     "recommendation_score": 9.1,
     "recommendation_rationale": "An unusually strong free specialist introduction to Egyptian hieroglyphs: current, university-led, substantial, practice-bearing and accessible in French with subtitles and transcripts. Its narrow subject and time-bounded FUN session make it a specialist recommendation rather than a broad history default, but the learning need is genuinely distinct from the existing History & Culture canon.",
     "comparators": [
