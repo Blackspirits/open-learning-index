@@ -48,7 +48,7 @@ const languageNames = {
     "pt-BR": "portugués (Brasil)", "pt-PT": "portugués (Portugal)",
     ro: "rumano", ru: "ruso", sk: "eslovaco", tr: "turco",
     uk: "ucraniano", vi: "vietnamita", zh: "chino",
-  },,
+  },
   fr: {
     ar: "arabe", az: "azéri", bg: "bulgare", cs: "tchèque", de: "allemand",
     en: "anglais", es: "espagnol", fr: "français", hu: "hongrois",
