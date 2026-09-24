@@ -25,7 +25,7 @@
       "optional-paid-certificate",
       "specialist-scope"
     ],
-    "is_current": true,
+    "is_current": false,
     "supersedes_screen_id": "shallow-06-fun-hieroglyphes-egyptiens"
   }
 ]
