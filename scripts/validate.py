@@ -73,7 +73,7 @@ def validate_readme_snapshot(courses, current_screen_decisions, current_review_c
 
     metrics={}
     for line in README.read_text(encoding='utf-8').splitlines():
-        match=re.fullmatch(r'\\|\\s*(.*?)\\s*\\|\\s*\\*\\*(.*?)\\*\\*\\s*\\|', line)
+        match=re.fullmatch(r'\|\s*(.*?)\s*\|\s*\*\*(.*?)\*\*\s*\|', line)
         if match:
             metrics[match.group(1)]=match.group(2)
 
