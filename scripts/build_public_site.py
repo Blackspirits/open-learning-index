@@ -1203,6 +1203,7 @@ def static_catalogue_card(
     href_prefix: str = "../",
     locale: str = "en",
     show_category: bool = True,
+    media_root: str | None = None,
 ) -> str:
     title, rationale = locale_course_copy(course, locale)
     category = locale_category_label(course, locale)
@@ -1228,8 +1229,11 @@ def static_catalogue_card(
         else ""
     )
     category_tag = static_tag(category, "tag-category") if show_category else ""
+    if media_root is None:
+        media_root = href_prefix
     return (
         '<article class="catalogue-card">'
+        + media_html(course, root=media_root)
         + '<div class="card-body"><div class="card-heading">'
         + f'<p class="provider">{escape(course["provider"])}</p>'
         + f'<h3><a href="{href_prefix}courses/{escape(course["id"])}/">{escape(title)}</a></h3></div>'
@@ -1813,6 +1817,7 @@ def render_static_category(
             "../../",
             locale=locale,
             show_category=False,
+            media_root=site_root,
         )
         for course in rows
     )
