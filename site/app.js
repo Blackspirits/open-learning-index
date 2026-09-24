@@ -573,6 +573,7 @@ function renderCatalogueCard(course, className = "catalogue-card") {
   const verifiedLabel = copy.verified;
   return `
     <article class="${className}">
+      ${courseMedia(course)}
       <div class="card-body">
         <div class="card-heading">
           <p class="provider">${escapeHtml(course.provider)}</p>
