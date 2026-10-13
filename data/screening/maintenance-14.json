@@ -1,0 +1,28 @@
+[
+  {
+    "screen_id": "maintenance-14-copernicus-understanding-climate-data-2026",
+    "candidate_id": "copernicus-understanding-climate-data-2026",
+    "screen_type": "shallow",
+    "decision": "hold",
+    "screened_on": "2026-10-13",
+    "canonical_url": "https://climate.copernicus.eu/online-course-understanding-climate-data",
+    "observed_free_access": "UNVERIFIED",
+    "instruction_languages": [
+      "en"
+    ],
+    "subtitle_languages": [],
+    "credential": "No current free completion credential verified.",
+    "completeness": "unknown",
+    "evidence": [
+      "https://climate.copernicus.eu/online-course-understanding-climate-data",
+      "https://events.ecmwf.int/event/537/"
+    ],
+    "rationale": "The official Copernicus page describes six self-paced modules available on an ongoing basis and free account registration. The official ECMWF event page also states that enrolment closed on 20 March 2026. A current first-time learner registration route and complete module access cannot be verified without an account. Keep on hold until the provider clarifies whether new learners can enrol and access all modules and quizzes.",
+    "flags": [
+      "climate-data-gap",
+      "registration-contradiction",
+      "learner-access-unverified"
+    ],
+    "is_current": true
+  }
+]
