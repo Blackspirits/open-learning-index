@@ -30,7 +30,7 @@ Institutional prestige alone is not enough. Old, incomplete, shallow or technica
 
 ## Current publication
 
-As of **2026-09-24**:
+As of **2026-10-13**:
 
 | Metric | Current state |
 |---|---:|
@@ -43,7 +43,7 @@ As of **2026-09-24**:
 | F2 — full teaching content | **43** |
 | Current advances Deep-Reviewed | **217 / 217** |
 | Current advances Phase-4 decided | **217 / 217** |
-| Holds excluded pending evidence | **4** |
+| Holds excluded pending evidence | **5** |
 
 The public site is generated deterministically from the canonical repository data.  
 **`data/courses.json` is the source of truth.**

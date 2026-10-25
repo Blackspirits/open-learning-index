@@ -1,0 +1,16 @@
+[
+  {
+    "id": "copernicus-understanding-climate-data-2026",
+    "title": "Understanding Climate Data",
+    "provider": "Copernicus Climate Change Service (C3S) / ECMWF / Wageningen University & Research",
+    "category": "natural-sciences",
+    "primary_language": "en",
+    "url": "https://climate.copernicus.eu/online-course-understanding-climate-data",
+    "apparent_free_access": "UNVERIFIED",
+    "stage": "discovered",
+    "evidence_url": "https://climate.copernicus.eu/online-course-understanding-climate-data",
+    "discovered_on": "2026-10-13",
+    "reason": "Specialist 2026 climate-data foundations route with six advertised self-paced modules, approximately 18–20 hours, quizzes, case studies, observations, modelling, reanalysis, seasonal prediction and climate projections. It addresses the documented climate-science/data interpretation gap with expert ECMWF and Wageningen contributors.",
+    "notes": "Copernicus describes ongoing self-paced availability and a free ECMWF account; an ECMWF course event page separately says enrolment ended on 20 March 2026. The learning platform redirects to ECMWF SSO, preventing an unauthenticated check of current first-time enrolment and all six modules. No current certificate entitlement is claimed. Shallow Screening must resolve the contradiction before any advance."
+  }
+]
